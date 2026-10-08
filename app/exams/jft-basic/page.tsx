@@ -1,13 +1,19 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Section, SectionHeading, Button, Card, Badge, Breadcrumbs, FAQAccordion, Callout } from "@/components/ui";
-import { JFT_PROGRAM, TOPIC_INFO } from "@/lib/exams";
+import { JFT_PROGRAM, TOPIC_INFO, DIAGNOSTIC_QUESTIONS } from "@/lib/exams";
 
 export const metadata: Metadata = {
   title: "JFT-Basic Practice — Everyday Japanese",
   description:
     "Prepare for the JFT-Basic Japanese test with original practice: free 10-question diagnostic, topic-mapped practice with explanations, and timed mocks. Independent preparation, not affiliated with the Japan Foundation.",
 };
+
+const SAMPLE_QUESTION =
+  DIAGNOSTIC_QUESTIONS.find((q) => q.id === "jft-d10") ?? DIAGNOSTIC_QUESTIONS[0];
+const SAMPLE_CORRECT = SAMPLE_QUESTION.options.find(
+  (o) => o.id === SAMPLE_QUESTION.correctId
+);
 
 const FAQS = [
   {
@@ -52,12 +58,13 @@ export default function JftBasicPage() {
             <a href={JFT_PROGRAM.officialUrl} target="_blank" rel="noopener noreferrer" className="font-semibold text-academy-blue hover:underline">
               official JFT-Basic pages
             </a>
+            <span className="sr-only"> (opens in new tab)</span>
             . Exam facts below were verified against those pages on {JFT_PROGRAM.lastVerified}.
           </Callout>
           <div className="mt-6 flex flex-wrap gap-4">
             <Button href="/exams/jft-basic/diagnostic" size="lg">Try free diagnostic</Button>
             <Button href={JFT_PROGRAM.officialUrl} variant="secondary" size="lg">
-              Official exam information ↗
+              Official exam information <span aria-hidden="true">↗</span>
             </Button>
           </div>
         </div>
@@ -140,6 +147,7 @@ export default function JftBasicPage() {
           Source:{" "}
           <a href={JFT_PROGRAM.officialUrl} target="_blank" rel="noopener noreferrer" className="text-academy-blue font-semibold hover:underline">
             Japan Foundation — JFT-Basic official pages
+            <span className="sr-only"> (opens in new tab)</span>
           </a>
           . Re-verified at least every 30 days before publication.
         </p>
@@ -164,22 +172,72 @@ export default function JftBasicPage() {
           <Card>
             <h3 className="font-bold text-ink mb-3">What your result tells you</h3>
             <ul className="space-y-3 text-[15px] text-slate">
-              <li className="flex gap-3"><span className="text-academy-teal font-bold">✓</span> Your score by topic — exactly where you&apos;re strong and where to focus next</li>
-              <li className="flex gap-3"><span className="text-academy-teal font-bold">✓</span> A plain-English (and 日本語) explanation for every single question</li>
-              <li className="flex gap-3"><span className="text-academy-teal font-bold">✓</span> A concrete next step — not a percentile invented to flatter you</li>
+              <li className="flex gap-3"><span className="text-academy-teal font-bold" aria-hidden="true">✓</span> Your score by topic — exactly where you&apos;re strong and where to focus next</li>
+              <li className="flex gap-3"><span className="text-academy-teal font-bold" aria-hidden="true">✓</span> A plain-English (and <span lang="ja">日本語</span>) explanation for every single question</li>
+              <li className="flex gap-3"><span className="text-academy-teal font-bold" aria-hidden="true">✓</span> A concrete next step — not a percentile invented to flatter you</li>
             </ul>
             <h3 className="font-bold text-ink mt-6 mb-3">What it honestly cannot tell you</h3>
             <ul className="space-y-3 text-[15px] text-slate">
-              <li className="flex gap-3"><span className="text-amber-600 font-bold">✗</span> Your official JFT-Basic result or your chances of passing</li>
-              <li className="flex gap-3"><span className="text-amber-600 font-bold">✗</span> Anything about immigration or visa eligibility — ask an expert, not a quiz</li>
+              <li className="flex gap-3"><span className="text-amber-600 font-bold" aria-hidden="true">✗</span> Your official JFT-Basic result or your chances of passing</li>
+              <li className="flex gap-3"><span className="text-amber-600 font-bold" aria-hidden="true">✗</span> Anything about immigration or visa eligibility — ask an expert, not a quiz</li>
             </ul>
           </Card>
         </div>
+        <Card className="mt-10">
+          <div className="flex flex-wrap items-center gap-3 mb-4">
+            <h3 className="font-bold text-ink text-lg">Try one real question</h3>
+            <Badge tone="neutral">Sample · draft, pending SME review</Badge>
+          </div>
+          <p className="text-sm text-slate mb-2">
+            {SAMPLE_QUESTION.topic} — from the free 10-question diagnostic
+          </p>
+          <p className="text-ink leading-relaxed">{SAMPLE_QUESTION.stem}</p>
+          {SAMPLE_QUESTION.stemJp && (
+            <p lang="ja" className="mt-2 text-ink leading-relaxed">
+              {SAMPLE_QUESTION.stemJp}
+            </p>
+          )}
+          <ul className="mt-4 space-y-2">
+            {SAMPLE_QUESTION.options.map((o) => (
+              <li
+                key={o.id}
+                className="border border-border rounded-xl px-4 py-2.5 text-[15px] text-slate"
+              >
+                <span className="font-bold text-ink mr-2">{o.id.toUpperCase()}.</span>
+                {o.text}
+                {o.textJp && <span lang="ja" className="text-ink"> — {o.textJp}</span>}
+              </li>
+            ))}
+          </ul>
+          <details className="mt-4 border border-border rounded-xl px-4 py-3">
+            <summary className="cursor-pointer font-semibold text-academy-blue">
+              Show answer and explanation
+            </summary>
+            <p className="mt-2 text-[15px] text-slate">
+              Correct answer:{" "}
+              <strong className="text-ink">
+                {SAMPLE_CORRECT?.id.toUpperCase()}. {SAMPLE_CORRECT?.text}
+              </strong>
+            </p>
+            <p className="mt-1 text-[15px] text-slate">{SAMPLE_QUESTION.explanation}</p>
+          </details>
+          <p className="mt-4 text-sm text-slate">
+            In the diagnostic this question plays as audio with the transcript shown — the same
+            format across all ten questions.{" "}
+            <Link
+              href="/exams/jft-basic/diagnostic"
+              className="text-academy-blue font-semibold hover:underline"
+            >
+              Try the full diagnostic free
+            </Link>
+            .
+          </p>
+        </Card>
       </Section>
 
       <Section id="pricing">
         <SectionHeading
-          eyebrow="Pilot pricing"
+          eyebrow="Pilot pricing (illustrative)"
           title="Free to start. Priced to finish."
           sub="Pilot prices while the program is in review. Every plan states exactly which reviewed content it unlocks — nothing vague, nothing infinite."
         />
@@ -188,38 +246,41 @@ export default function JftBasicPage() {
             <h3 className="font-bold text-ink text-lg">Free</h3>
             <p className="text-3xl font-extrabold mt-2">₹0</p>
             <ul className="mt-4 space-y-2 text-sm text-slate">
-              <li>✓ 10-question diagnostic</li>
-              <li>✓ Topic breakdown + explanations</li>
-              <li>✓ Sample practice questions</li>
+              <li><span aria-hidden="true">✓ </span>10-question diagnostic</li>
+              <li><span aria-hidden="true">✓ </span>Topic breakdown + explanations</li>
+              <li><span aria-hidden="true">✓ </span>Sample practice questions</li>
             </ul>
             <div className="mt-6"><Button href="/exams/jft-basic/diagnostic" variant="secondary" size="sm">Start free</Button></div>
           </Card>
           <Card className="!border-2 !border-academy-blue relative">
-            <span className="absolute -top-3 left-6 bg-academy-blue text-white text-xs font-bold px-3 py-1 rounded-full">Pilot</span>
+            <span className="absolute -top-3 left-6 bg-academy-blue text-white text-xs font-bold px-3 py-1 rounded-full">Pilot · test mode</span>
             <h3 className="font-bold text-ink text-lg mt-1">60-day pass</h3>
             <p className="text-3xl font-extrabold mt-2">₹699</p>
             <ul className="mt-4 space-y-2 text-sm text-slate">
-              <li>✓ Full topic practice path</li>
-              <li>✓ Timed mock tests</li>
-              <li>✓ Study plan + progress history</li>
-              <li>✓ 60 days access, cancellable</li>
+              <li><span aria-hidden="true">✓ </span>Full topic practice path</li>
+              <li><span aria-hidden="true">✓ </span>Timed mock tests</li>
+              <li><span aria-hidden="true">✓ </span>Study plan + progress history</li>
+              <li><span aria-hidden="true">✓ </span>60 days access, cancellable</li>
             </ul>
-            <div className="mt-6"><Button href="/signup" size="sm">Get the pass</Button></div>
+            <div className="mt-6"><Button href="/signup" size="sm">Join the pilot</Button></div>
           </Card>
-          <Card>
-            <h3 className="font-bold text-ink text-lg">7-day revision</h3>
+          <Card className="relative">
+            <span className="absolute -top-3 left-6 bg-academy-blue text-white text-xs font-bold px-3 py-1 rounded-full">Pilot · test mode</span>
+            <h3 className="font-bold text-ink text-lg mt-1">7-day revision</h3>
             <p className="text-3xl font-extrabold mt-2">₹199</p>
             <ul className="mt-4 space-y-2 text-sm text-slate">
-              <li>✓ Focused revision pack</li>
-              <li>✓ Timed drills</li>
-              <li>✓ 7 days access</li>
+              <li><span aria-hidden="true">✓ </span>Focused revision pack</li>
+              <li><span aria-hidden="true">✓ </span>Timed drills</li>
+              <li><span aria-hidden="true">✓ </span>7 days access</li>
             </ul>
-            <div className="mt-6"><Button href="/signup" variant="secondary" size="sm">Get revision pack</Button></div>
+            <div className="mt-6"><Button href="/signup" variant="secondary" size="sm">Get early access</Button></div>
           </Card>
         </div>
         <p className="text-center text-sm text-slate mt-6 max-w-2xl mx-auto">
-          Checkout is in test mode during the pilot — no real charges. Paid access activates after
-          payment integration completes.
+          Prices shown are illustrative pilot prices — unvalidated test hypotheses, not final
+          pricing; we&apos;ll confirm final prices before any real payment. Checkout is in test
+          mode during the pilot — no real charges. Paid access activates after payment
+          integration completes.
         </p>
       </Section>
 
