@@ -30,6 +30,7 @@ const STATUS_TONES = {
   "practice-ready": "success",
   verified: "info",
   research: "neutral",
+  retired: "warning",
 } as const;
 
 export default async function CategoryPage({ params }: { params: Promise<{ slug: string }> }) {

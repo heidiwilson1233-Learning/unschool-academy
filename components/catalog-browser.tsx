@@ -15,9 +15,10 @@ import {
   type PublicStatus,
 } from "@/lib/catalog";
 
-const STATUS_TONES: Record<PublicStatus, "success" | "info" | "neutral"> = {
+const STATUS_TONES: Record<PublicStatus, "success" | "info" | "neutral" | "warning"> = {
   "practice-ready": "success",
   "verified": "info",
+  "retired": "warning",
   research: "neutral",
 };
 
@@ -109,6 +110,7 @@ export default function CatalogBrowser() {
             <option value="">Any status</option>
             <option value="practice-ready">Practice available</option>
             <option value="verified">Facts verified</option>
+            <option value="retired">Retired / renamed</option>
             <option value="research">Research entry</option>
           </select>
         </div>

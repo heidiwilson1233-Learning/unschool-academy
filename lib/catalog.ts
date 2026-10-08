@@ -48,7 +48,30 @@ export interface ExamOverlay {
   retiredOrRenamed?: string; // note when an exam is retired/renamed
 }
 
-export type PublicStatus = "practice-ready" | "verified" | "research";
+export type PublicStatus = "practice-ready" | "verified" | "research" | "retired";
+
+/* ------------------------------------------------------------------ */
+/* Research validation overlay (2026-10-08 deep-research pass)          */
+/* ------------------------------------------------------------------ */
+
+export type ValidationFlag = "verified-active" | "needs-review" | "retired-or-renamed";
+
+export interface ValidationOverlay {
+  status: ValidationFlag;
+  note: string;
+}
+
+// Per-exam validation flags from research/exam-catalog (10 category files,
+// 2026-10-08). Bundled as JSON so detail pages can label retired/renamed
+// exams honestly instead of presenting them as current.
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const VALIDATION: { researched_at: string; exams: Record<string, { status: ValidationFlag; note: string; file: string }> } =
+  require("@/content/exam-catalog/validation.json");
+
+export function getValidation(id: string): ValidationOverlay | null {
+  const v = VALIDATION.exams[id.trim().toUpperCase()];
+  return v ? { status: v.status, note: v.note } : null;
+}
 
 /* ------------------------------------------------------------------ */
 /* Raw catalog                                                         */
@@ -220,6 +243,9 @@ export function getPublicStatus(entry: ExamEntry): PublicStatus {
   const o = getOverlay(entry.id);
   if (o.practiceReady) return "practice-ready";
   if (o.verifiedAt) return "verified";
+  const v = getValidation(entry.id);
+  if (v?.status === "retired-or-renamed") return "retired";
+  if (v?.status === "verified-active") return "verified";
   return "research";
 }
 
@@ -229,6 +255,8 @@ export function statusLabel(status: PublicStatus): string {
       return "Practice available";
     case "verified":
       return "Facts verified";
+    case "retired":
+      return "Retired / renamed";
     case "research":
       return "Research entry";
   }
