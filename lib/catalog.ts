@@ -13,7 +13,16 @@
  *   exist for an exam that has none.
  */
 
-import rawCatalog from "@/content/exam-catalog/exam_opportunities_500.json";
+import financeBusiness from "@/content/exam-catalog/categories/finance-business.json";
+import globalGraduateEntry from "@/content/exam-catalog/categories/global-graduate-entry.json";
+import healthcareLicensing from "@/content/exam-catalog/categories/healthcare-licensing.json";
+import indiaEntranceGovernment from "@/content/exam-catalog/categories/india-entrance-government.json";
+import internationalSecondary from "@/content/exam-catalog/categories/international-secondary.json";
+import languages from "@/content/exam-catalog/categories/languages.json";
+import lawTeachingPublic from "@/content/exam-catalog/categories/law-teaching-public.json";
+import techCloud from "@/content/exam-catalog/categories/tech-cloud.json";
+import tradesInternationalCareers from "@/content/exam-catalog/categories/trades-international-careers.json";
+import usAdmissionsSchool from "@/content/exam-catalog/categories/us-admissions-school.json";
 
 export interface ExamEntry {
   id: string; // EX-001 … EX-500
@@ -45,7 +54,18 @@ export type PublicStatus = "practice-ready" | "verified" | "research";
 /* Raw catalog                                                         */
 /* ------------------------------------------------------------------ */
 
-const CATALOG = rawCatalog as ExamEntry[];
+const CATALOG = [
+  ...(financeBusiness as ExamEntry[]),
+  ...(globalGraduateEntry as ExamEntry[]),
+  ...(healthcareLicensing as ExamEntry[]),
+  ...(indiaEntranceGovernment as ExamEntry[]),
+  ...(internationalSecondary as ExamEntry[]),
+  ...(languages as ExamEntry[]),
+  ...(lawTeachingPublic as ExamEntry[]),
+  ...(techCloud as ExamEntry[]),
+  ...(tradesInternationalCareers as ExamEntry[]),
+  ...(usAdmissionsSchool as ExamEntry[]),
+];
 
 export function getAllExams(): ExamEntry[] {
   return CATALOG;
