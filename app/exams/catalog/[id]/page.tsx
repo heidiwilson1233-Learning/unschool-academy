@@ -65,7 +65,7 @@ export default async function ExamDetailPage({ params }: { params: Promise<{ id:
             ]}
           />
           <div className="mt-4 flex flex-wrap items-center gap-3">
-            <span className="text-xs font-mono font-bold text-slate/70">{entry.id}</span>
+            <span className="text-xs font-mono font-bold text-slate">{entry.id}</span>
             <Badge tone={statusTone}>{statusLabel(status)}</Badge>
           </div>
           <h1 className="mt-3 text-3xl md:text-4xl font-extrabold tracking-tight text-ink leading-tight">
