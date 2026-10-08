@@ -229,13 +229,29 @@ export function Callout({
 }) {
   const tones = {
     info: "border-academy-blue/30 bg-academy-blue/5",
-    warning: "border-amber-300 bg-amber-50",
+    warning: "border-amber-300/70 bg-amber-50",
     kids: "border-kids-orange/40 bg-kids-cream",
   };
+  const markers = {
+    info: "bg-academy-blue",
+    warning: "bg-amber-500",
+    kids: "bg-kids-orange-deep",
+  };
   return (
-    <div className={`border-l-4 rounded-r-xl p-5 my-6 ${tones[tone]}`}>
-      {title && <p className="font-bold text-ink mb-1">{title}</p>}
-      <div className="text-slate leading-relaxed text-[15px]">{children}</div>
+    <div
+      role="note"
+      className={`border rounded-xl p-5 md:p-6 my-6 ${tones[tone]}`}
+    >
+      <div className="flex items-start gap-3">
+        <span
+          aria-hidden
+          className={`mt-1.5 inline-block h-2 w-2 shrink-0 rounded-full ${markers[tone]}`}
+        />
+        <div>
+          {title && <p className="font-bold text-ink mb-1">{title}</p>}
+          <div className="text-slate leading-relaxed text-[15px]">{children}</div>
+        </div>
+      </div>
     </div>
   );
 }

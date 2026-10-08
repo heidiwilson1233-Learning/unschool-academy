@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ topic: st
   const name = SLUG_TO_TOPIC[topic];
   return {
     title: name ? `${name} — Practice` : "Practice",
-    description: name ? `Practice JFT-Basic ${name} with instant feedback and reviewed explanations.` : "Practice",
+    description: name ? `Practice JFT-Basic ${name} with instant answer checks, one hint per question, and draft explanations pending review by a Japanese subject-matter expert.` : "Practice",
   };
 }
 
