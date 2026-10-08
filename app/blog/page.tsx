@@ -16,10 +16,31 @@ const POSTS = [
     date: "October 2026",
   },
   {
+    slug: "jft-listening-two-plays",
+    badge: "Japanese learning",
+    title: "The two plays you get: how JFT listening actually works",
+    excerpt: "Two plays, no going back. How to split the work: the situation on play one, the turn on play two.",
+    date: "October 2026",
+  },
+  {
     slug: "why-no-percentiles",
     badge: "How we build",
     title: "Why we don't do percentiles",
     excerpt: "A practice score of “top 12%” sounds impressive and means nothing. Here's what honest scoring looks like instead.",
+    date: "October 2026",
+  },
+  {
+    slug: "draft-pending-review",
+    badge: "How we build",
+    title: "What “draft pending review” actually means",
+    excerpt: "The five stages every question travels — and why we label drafts openly instead of hiding them.",
+    date: "October 2026",
+  },
+  {
+    slug: "why-no-scores-kids",
+    badge: "For parents",
+    title: "Why your child doesn't need a score",
+    excerpt: "Scores rank children; evidence informs parents. What we record instead of a number.",
     date: "October 2026",
   },
 ];
@@ -27,7 +48,7 @@ const POSTS = [
 export default function BlogPage() {
   return (
     <>
-      <PageHero eyebrow="Blog" title="Original articles" sub="Written by our content team, reviewed like everything else. No scraped content, no SEO filler." />
+      <PageHero eyebrow="Blog" title="Original articles" sub="Written by our content team, reviewed like everything else. No scraped content, no SEO filler — five pieces we'd stand behind in print." />
       <Section>
         <div className="max-w-3xl mx-auto">
           <Breadcrumbs trail={[{ label: "Home", href: "/" }, { label: "Blog" }]} />
