@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import { Button, Badge, Card, Callout } from "@/components/ui";
-import { recordAttempt } from "@/components/practice-player";
+import { recordAttempt, speakJapanese } from "@/lib/attempts";
 
 type MockQ = {
   id: string;
@@ -21,15 +21,6 @@ type MockResult = {
   details: { id: string; topic: string; correct: boolean; correctLabel: string; correctLabelJp: string | null; explanation: string }[];
   disclaimer: string;
 };
-
-function speakJapanese(text: string) {
-  if (!("speechSynthesis" in window)) return;
-  window.speechSynthesis.cancel();
-  const u = new SpeechSynthesisUtterance(text);
-  u.lang = "ja-JP";
-  u.rate = 0.85;
-  window.speechSynthesis.speak(u);
-}
 
 function fmt(sec: number) {
   const m = Math.floor(sec / 60);

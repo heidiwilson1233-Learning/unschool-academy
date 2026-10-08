@@ -69,7 +69,7 @@ export async function POST(req: Request) {
         ? "Strong everyday foundation. Next: timed mixed practice to build speed and confidence."
         : score >= 5
           ? `Solid start. Focus next on “${weakest.topic}” — short daily practice beats long cramming.`
-          : "Good first step — every learner starts here. Begin with the Conversation and Expression basics, then re-take this diagnostic.",
+          : "Good first step — every learner starts here. Begin with short practice in “${weakest.topic}”, then re-take this diagnostic.",
     disclaimer:
       "This is an unofficial practice score. It measures your performance on these 10 original practice questions and cannot predict an official JFT-Basic result.",
     reviewStatus: "Questions are original drafts pending Japanese SME review.",

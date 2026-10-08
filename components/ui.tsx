@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState, type ReactNode } from "react";
+import { useState, type ReactNode, type Ref } from "react";
 
 /* ---------- Buttons ---------- */
 
@@ -14,6 +14,7 @@ type ButtonProps = {
   onClick?: () => void;
   type?: "button" | "submit";
   disabled?: boolean;
+  ref?: Ref<HTMLButtonElement | HTMLAnchorElement>;
 };
 
 export function Button({
@@ -25,6 +26,7 @@ export function Button({
   onClick,
   type = "button",
   disabled = false,
+  ref,
 }: ButtonProps) {
   const base =
     "inline-flex items-center justify-center gap-2 font-semibold rounded-xl transition-all duration-200 select-none disabled:opacity-50 disabled:cursor-not-allowed";
@@ -43,13 +45,13 @@ export function Button({
   const cls = `${base} ${sizes[size]} ${variants[variant]} ${className}`;
   if (href && !disabled) {
     return (
-      <Link href={href} className={cls} onClick={onClick}>
+      <Link href={href} className={cls} onClick={onClick} ref={ref as Ref<HTMLAnchorElement>}>
         {children}
       </Link>
     );
   }
   return (
-    <button type={type} className={cls} onClick={onClick} disabled={disabled}>
+    <button type={type} className={cls} onClick={onClick} disabled={disabled} ref={ref as Ref<HTMLButtonElement>}>
       {children}
     </button>
   );
