@@ -5,6 +5,7 @@ export const EXAMS_MENU: { heading: string; links: NavLink[] }[] = [
     heading: "Study programs",
     links: [
       { label: "Explore all published exams", href: "/exams", description: "Only verified, live preparation programs" },
+      { label: "Exam catalog — 500 research entries", href: "/exams/catalog", description: "Browse every exam we're researching, honestly labelled" },
       { label: "JFT-Basic practice", href: "/exams/jft-basic", description: "Everyday Japanese — our pilot program" },
       { label: "Japanese learning", href: "/exams/japanese", description: "JFT-Basic vs JLPT, explained honestly" },
     ],
@@ -64,6 +65,7 @@ export const FOOTER_COLUMNS: { heading: string; links: NavLink[] }[] = [
     heading: "Exams",
     links: [
       { label: "Published exams", href: "/exams" },
+      { label: "Exam catalog", href: "/exams/catalog" },
       { label: "JFT-Basic", href: "/exams/jft-basic" },
       { label: "Free diagnostic", href: "/exams/jft-basic/diagnostic" },
       { label: "How scoring works", href: "/exams/how-practice-works" },

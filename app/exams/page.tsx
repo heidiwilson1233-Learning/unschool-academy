@@ -72,6 +72,11 @@ export default function ExamsPage() {
             subject-expert signoff, and a working free sample. Until then it stays in our internal
             research catalogue — never as a thin public page.
           </p>
+          <div className="mt-5">
+            <Button href="/exams/catalog" variant="secondary" size="sm">
+              Browse the 500-exam research catalogue →
+            </Button>
+          </div>
         </Card>
       </Section>
     </>
