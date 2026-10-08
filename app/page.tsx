@@ -57,6 +57,7 @@ export default function HomePage() {
             <Button href="/exams" size="lg">Explore Exams</Button>
             <Button href="/kids" size="lg" variant="kids">Explore Kids</Button>
           </div>
+          <p className="mt-3 text-sm text-slate">Free 10-question diagnostic — no account needed.</p>
         </div>
       </div>
 
@@ -169,7 +170,7 @@ export default function HomePage() {
           <SectionHeading
             eyebrow="Pricing"
             title="Start free. Pay only for depth."
-            sub="The diagnostic and sample quests are free forever — no trial clock, no card required. Paid plans are finite, clearly scoped, and cancellable in two taps."
+            sub="The diagnostic and sample quests are free forever — no trial clock, no card required. Paid plans are finite, clearly scoped, and easy to cancel. Prices shown are illustrative while checkout is in staged testing."
           />
           <div className="grid sm:grid-cols-3 gap-4 max-w-4xl mx-auto text-left">
             <div className="border border-border rounded-2xl p-6">
