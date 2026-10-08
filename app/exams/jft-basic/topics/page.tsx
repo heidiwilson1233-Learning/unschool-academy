@@ -23,8 +23,8 @@ export default function TopicsPage() {
       <PageHero
         eyebrow="JFT-Basic practice"
         tone="exam"
-        title="Practice by topic"
-        sub="Five original questions per topic with instant feedback, hints, and reviewed explanations. Practice mode — answers are revealed as you learn."
+        title="Attack your weakest topic first"
+        sub="Five original questions per topic with instant feedback, progressive hints, and reviewed explanations. Practice mode — answers revealed as you learn, never as a surprise."
       />
       <Section>
         <Breadcrumbs trail={[{ label: "Home", href: "/" }, { label: "Exams", href: "/exams" }, { label: "JFT-Basic", href: "/exams/jft-basic" }, { label: "Topics" }]} />

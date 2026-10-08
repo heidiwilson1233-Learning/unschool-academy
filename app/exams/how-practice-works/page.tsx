@@ -22,7 +22,7 @@ const PRINCIPLES = [
   },
   {
     title: "Explanations teach, not just correct",
-    body: "Every answer explains why the right choice is right and why the wrong ones are wrong — in plain language, with the Japanese you need alongside it.",
+    body: "Every answer explains why the right choice is right and why the tempting wrong ones are wrong — in plain language, with the Japanese you need right alongside it. You leave each question understanding more than when you arrived.",
   },
   {
     title: "Scores are unofficial, always",
@@ -41,7 +41,7 @@ export default function HowPracticeWorksPage() {
         eyebrow="Our method"
         tone="exam"
         title="Practice that respects your intelligence"
-        sub="No inflated claims, no mystery scoring, no 10,000-question dumps. Here's exactly how our practice works — and where its limits are."
+        sub="No inflated claims, no mystery scoring, no 10,000-question dumps of dubious origin. Here's exactly how our practice works — and exactly where its limits are."
       />
       <Section>
         <Breadcrumbs trail={[{ label: "Home", href: "/" }, { label: "Exams", href: "/exams" }, { label: "How practice works" }]} />
@@ -59,11 +59,12 @@ export default function HowPracticeWorksPage() {
       </Section>
       <Section className="!pt-0">
         <div className="max-w-3xl mx-auto">
-          <SectionHeading eyebrow="See for yourself" title="The method, live in 2 minutes" />
+          <SectionHeading eyebrow="See for yourself" title="Don't take our word for it — take the diagnostic" />
           <Card className="text-center !p-10">
             <p className="text-slate max-w-xl mx-auto">
-              The free diagnostic is the method in miniature: real questions, server scoring, topic
-              breakdown, honest explanations. Try it before you believe any of the above.
+              The free diagnostic is the whole method in miniature: real questions, server-side
+              scoring, a topic breakdown, honest explanations. Two minutes from now you&apos;ll know
+              exactly whether we practice what we preach.
             </p>
             <div className="mt-6">
               <Button href="/exams/jft-basic/diagnostic" size="lg">Take the free diagnostic</Button>

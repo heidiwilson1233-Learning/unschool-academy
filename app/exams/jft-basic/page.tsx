@@ -16,7 +16,7 @@ const FAQS = [
   },
   {
     q: "Will my diagnostic score predict my official result?",
-    a: "No. Your score measures performance on our 10 original practice questions. It shows which topics need work; it cannot predict an official JFT-Basic result or any immigration outcome.",
+    a: "No — and anyone who says otherwise is selling you something. Your score measures performance on our 10 original practice questions. It shows which topics need work; it cannot predict an official JFT-Basic result or any immigration outcome.",
   },
   {
     q: "How is JFT-Basic different from JLPT?",
@@ -39,11 +39,12 @@ export default function JftBasicPage() {
             <Badge tone="info">Exam facts verified {JFT_PROGRAM.lastVerified}</Badge>
           </div>
           <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-ink max-w-3xl">
-            JFT-Basic <span className="text-slate font-bold">practice</span>
+            Practice the Japanese you&apos;ll use on Monday morning
           </h1>
           <p className="mt-4 text-lg text-slate max-w-2xl leading-relaxed">
-            {JFT_PROGRAM.tagline}. The JFT-Basic is run by the Japan Foundation and assesses the
-            everyday Japanese needed by people planning to live and work in Japan.
+            {JFT_PROGRAM.tagline}. The JFT-Basic is run by the Japan Foundation for people planning
+            to live and work in Japan — so we drill the everyday language the test actually measures:
+            reading a notice, following a conversation, catching the point of an announcement.
           </p>
           <Callout title="Independent preparation" tone="info">
             Unschool Academy is not affiliated with the Japan Foundation. For official test
@@ -150,8 +151,8 @@ export default function JftBasicPage() {
             <SectionHeading
               align="left"
               eyebrow="Free forever"
-              title="Start with the diagnostic"
-              sub="Ten original questions. Instant topic breakdown. Reviewed explanations. No account, no paywall, no fake result gate."
+              title="Find your level in five minutes"
+              sub="Ten original questions. An instant topic-by-topic breakdown. Reviewed explanations for every answer. No account, no paywall, no fake result gate."
             />
             <div className="flex flex-wrap gap-4">
               <Button href="/exams/jft-basic/diagnostic" size="lg">Start diagnostic</Button>
@@ -163,14 +164,14 @@ export default function JftBasicPage() {
           <Card>
             <h3 className="font-bold text-ink mb-3">What your result tells you</h3>
             <ul className="space-y-3 text-[15px] text-slate">
-              <li className="flex gap-3"><span className="text-academy-teal font-bold">✓</span> Your score by topic — where you're strong, where to focus</li>
-              <li className="flex gap-3"><span className="text-academy-teal font-bold">✓</span> A plain-English (and 日本語) explanation for every question</li>
-              <li className="flex gap-3"><span className="text-academy-teal font-bold">✓</span> A concrete next step, not a percentile pulled from thin air</li>
+              <li className="flex gap-3"><span className="text-academy-teal font-bold">✓</span> Your score by topic — exactly where you&apos;re strong and where to focus next</li>
+              <li className="flex gap-3"><span className="text-academy-teal font-bold">✓</span> A plain-English (and 日本語) explanation for every single question</li>
+              <li className="flex gap-3"><span className="text-academy-teal font-bold">✓</span> A concrete next step — not a percentile invented to flatter you</li>
             </ul>
-            <h3 className="font-bold text-ink mt-6 mb-3">What it cannot tell you</h3>
+            <h3 className="font-bold text-ink mt-6 mb-3">What it honestly cannot tell you</h3>
             <ul className="space-y-3 text-[15px] text-slate">
-              <li className="flex gap-3"><span className="text-amber-600 font-bold">✗</span> Your official JFT-Basic result or pass likelihood</li>
-              <li className="flex gap-3"><span className="text-amber-600 font-bold">✗</span> Anything about immigration or visa eligibility</li>
+              <li className="flex gap-3"><span className="text-amber-600 font-bold">✗</span> Your official JFT-Basic result or your chances of passing</li>
+              <li className="flex gap-3"><span className="text-amber-600 font-bold">✗</span> Anything about immigration or visa eligibility — ask an expert, not a quiz</li>
             </ul>
           </Card>
         </div>
@@ -179,8 +180,8 @@ export default function JftBasicPage() {
       <Section id="pricing">
         <SectionHeading
           eyebrow="Pilot pricing"
-          title="Free diagnostic. Paid depth."
-          sub="Pilot prices while the program is in review. Every plan states exactly what reviewed content it includes."
+          title="Free to start. Priced to finish."
+          sub="Pilot prices while the program is in review. Every plan states exactly which reviewed content it unlocks — nothing vague, nothing infinite."
         />
         <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
           <Card>

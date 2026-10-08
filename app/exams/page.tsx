@@ -13,8 +13,8 @@ export default function ExamsPage() {
       <PageHero
         eyebrow="Unschool Exams"
         tone="exam"
-        title="One exam done well beats fifty done thinly"
-        sub="Every program below is verified, reviewed, and actually built. Our 500-exam research catalogue stays internal — nothing appears here until it passes verification and content review."
+        title="One exam done brilliantly beats fifty done thinly"
+        sub="Every program below is verified, reviewed, and actually built — you can start it right now. Our 500-exam research catalogue stays internal until each program earns its place here."
       >
         <Button href="/exams/jft-basic/diagnostic" size="lg">Try the free diagnostic</Button>
       </PageHero>
@@ -52,8 +52,8 @@ export default function ExamsPage() {
 
           <Card className="flex flex-col justify-center !bg-canvas">
             <EmptyState
-              title="More programs in research"
-              body="JLPT N5/N4 and other exams are being evaluated one at a time — on syllabus stability, licensing, reviewer availability and real demand. We publish only what we've built and reviewed."
+              title="The next program is being earned"
+              body="JLPT N5/N4 and other exams are evaluated one at a time — on syllabus stability, licensing, reviewer availability and real demand. We publish only what we've built and reviewed, never what we've merely listed."
               action={<Button href="/exams/japanese" variant="secondary" size="sm">Japanese learning hub</Button>}
             />
           </Card>

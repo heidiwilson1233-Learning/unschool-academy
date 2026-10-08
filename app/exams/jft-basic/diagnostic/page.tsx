@@ -14,14 +14,14 @@ export default function DiagnosticPage() {
       <div className="bg-gradient-to-b from-academy-blue/10 to-canvas border-b border-border">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12 md:py-16">
           <Breadcrumbs trail={[{ label: "Home", href: "/" }, { label: "Exams", href: "/exams" }, { label: "JFT-Basic", href: "/exams/jft-basic" }, { label: "Free diagnostic" }]} />
-          <p className="text-sm font-bold uppercase tracking-widest text-academy-teal mb-3">Free practice</p>
+          <p className="text-sm font-bold uppercase tracking-widest text-academy-teal mb-3">Free forever · No account</p>
           <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight text-ink">
-            JFT-Basic diagnostic — 10 questions
+            Where does your Japanese actually stand?
           </h1>
           <p className="mt-4 text-lg text-slate leading-relaxed max-w-2xl">
-            Ten original everyday-Japanese questions across four topics. Answer at your own pace —
-            there&apos;s no timer on the diagnostic. Your score is computed on our server and every
-            answer comes with a reviewed explanation.
+            Ten original everyday-Japanese questions across all four official sections. Answer at
+            your own pace — there&apos;s no timer on the diagnostic. Your score is computed on our
+            server, and every answer comes with a reviewed explanation that teaches, not just corrects.
           </p>
           <Callout title="Draft questions, verified exam facts" tone="warning">
             These are original practice questions written for this pilot — still pending review by

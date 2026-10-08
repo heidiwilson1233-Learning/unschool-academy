@@ -14,7 +14,7 @@ export default function JapaneseHubPage() {
         eyebrow="Japanese qualifications"
         tone="exam"
         title="JFT-Basic or JLPT? Choose with clear eyes."
-        sub="Two different tests, different organizers, different purposes. Here's the honest comparison — then pick the path that fits your goal."
+        sub="Two different tests, different organizers, different purposes — and a lot of confused advice online. Here's the honest comparison, grounded in official sources. Then pick the path that fits your goal."
       />
       <Section>
         <Breadcrumbs trail={[{ label: "Home", href: "/" }, { label: "Exams", href: "/exams" }, { label: "Japanese learning" }]} />
@@ -57,9 +57,9 @@ export default function JapaneseHubPage() {
         <Card className="max-w-3xl mx-auto text-center !p-10">
           <h2 className="text-2xl font-extrabold text-ink">Not sure which fits your goal?</h2>
           <p className="text-slate mt-3 max-w-xl mx-auto">
-            If your goal is daily life in Japan, start with JFT-Basic practice. If you need a
-            widely recognized proficiency credential, the JLPT path may fit — and we&apos;ll tell
-            you honestly when our JLPT preparation is actually ready.
+            Moving to Japan for daily life and work? Start with JFT-Basic practice. Need a
+            widely recognized proficiency credential for study or career? The JLPT path may fit —
+            and we&apos;ll tell you honestly the moment our JLPT preparation is actually ready.
           </p>
           <div className="mt-6">
             <Button href="/exams/jft-basic/diagnostic" size="lg">Take the free diagnostic</Button>

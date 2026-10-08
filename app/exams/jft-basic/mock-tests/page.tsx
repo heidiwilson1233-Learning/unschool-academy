@@ -13,8 +13,8 @@ export default function MockTestsPage() {
       <PageHero
         eyebrow="JFT-Basic"
         tone="exam"
-        title="Mock tests, under real conditions"
-        sub="20 original questions. 30 minutes. No hints, no explanations until you submit — and the timer is enforced on our server, not just your screen."
+        title="Feel the clock before the clock matters"
+        sub="20 original questions. 30 minutes. No hints, no explanations until you submit — and the timer is enforced on our server, not just your screen, so there's no cheating it."
       />
       <Section>
         <Breadcrumbs trail={[{ label: "Home", href: "/" }, { label: "Exams", href: "/exams" }, { label: "JFT-Basic", href: "/exams/jft-basic" }, { label: "Mock tests" }]} />
@@ -24,10 +24,11 @@ export default function MockTestsPage() {
               <Badge tone="info">Mock 1</Badge>
               <span className="text-sm font-bold text-slate">⏱ 30 min · 20 questions</span>
             </div>
-            <h2 className="text-2xl font-extrabold text-ink">Everyday Japanese — full set</h2>
+            <h2 className="text-2xl font-extrabold text-ink">Everyday Japanese — the full set</h2>
             <p className="text-slate text-[15px] mt-2 leading-relaxed">
-              All four topics in one sitting: vocabulary, conversation, listening, and reading signs.
-              Answers stay hidden until you submit. Auto-submits when time runs out.
+              All four sections in one sitting: script and vocabulary, conversation, listening,
+              and reading. Answers stay sealed until you submit — or the clock runs out and
+              submits for you.
             </p>
             <ul className="mt-4 space-y-1.5 text-sm text-slate">
               <li>✓ Server-enforced 30-minute limit</li>
