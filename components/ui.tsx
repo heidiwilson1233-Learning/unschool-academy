@@ -265,7 +265,7 @@ export function PageHero({
         {eyebrow && (
           <p
             className={`text-sm font-bold uppercase tracking-widest mb-4 ${
-              tone === "kids" ? "text-kids-orange-ink" : "text-academy-teal"
+              tone === "kids" ? "text-kids-orange-ink" : tone === "exam" ? "text-academy-teal-dark" : "text-academy-teal"
             }`}
           >
             {eyebrow}
