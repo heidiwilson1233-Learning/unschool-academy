@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Section, SectionHeading, Button, Card, Breadcrumbs, PageHero, Callout } from "@/components/ui";
+import { CheckoutButton } from "@/components/checkout-button";
 
 export const metadata: Metadata = {
   title: "Kids Family Plans — Pricing",
@@ -14,7 +15,7 @@ export default function KidsPricingPage() {
         eyebrow="For parents only"
         tone="kids"
         title="Family plans, in plain family terms"
-        sub="Sample quests are free forever — complete ones, never cut off mid-story. Paid plans add reviewed quests and the parent dashboard."
+        sub="Sample quests are free forever — complete stories, never cut off mid-quest to force a payment. Paid plans add the full library of reviewed quests and the parent dashboard."
       />
       <Section>
         <Breadcrumbs trail={[{ label: "Home", href: "/" }, { label: "Kids", href: "/kids" }, { label: "Pricing" }]} />
@@ -40,7 +41,7 @@ export default function KidsPricingPage() {
               <li>✓ Printable activities</li>
               <li>✓ Cancel anytime, no lock-in</li>
             </ul>
-            <div className="mt-6"><Button href="/parent/onboarding" variant="kids" size="sm">Start family plan</Button></div>
+            <div className="mt-6"><CheckoutButton productId="kids-family-monthly" label="Start family plan" /></div>
           </Card>
           <Card>
             <h2 className="font-bold text-ink text-lg">Quest pack</h2>
@@ -50,7 +51,7 @@ export default function KidsPricingPage() {
               <li>✓ Yours forever, no subscription</li>
               <li>✓ Parent dashboard included</li>
             </ul>
-            <div className="mt-6"><Button href="/parent/onboarding" variant="secondary" size="sm">Get the pack</Button></div>
+            <div className="mt-6"><CheckoutButton productId="kids-family-lifetime" label="Get the pack" /></div>
           </Card>
         </div>
         <Callout title="Billing is always adult-only" tone="kids">

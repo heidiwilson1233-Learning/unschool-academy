@@ -27,7 +27,7 @@ export default function WorldPage() {
         eyebrow="The village"
         tone="kids"
         title="Six places, one festival to prepare"
-        sub="The whole village is getting ready for a joyful celebration — and every quest helps. Each location is a teaching setting, not a separate app."
+        sub="The whole village is getting ready for a joyful celebration — and every quest helps get it ready. Each location is a real teaching setting with its own guide, not a separate app to download."
       />
       <Section>
         <Breadcrumbs trail={[{ label: "Home", href: "/" }, { label: "Kids", href: "/kids" }, { label: "Village" }]} />

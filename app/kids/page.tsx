@@ -25,13 +25,14 @@ export default function KidsHomePage() {
                 Unschool Kids · Ages 2 through Grade 5
               </p>
               <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-ink leading-tight">
-                A village where learning is an adventure
+                Where learning feels like an adventure
               </h1>
               <p className="mt-5 text-lg text-slate leading-relaxed max-w-xl">
                 Three friends — <strong className="text-ink">Momo</strong>, <strong className="text-ink">Tara</strong> and{" "}
-                <strong className="text-ink">Bobo</strong> — invite your child to solve little problems in their
-                colourful world: counting mangoes, ordering stories, testing ideas. Real actions, kind
-                feedback, and something to try away from the screen.
+                <strong className="text-ink">Bobo</strong> — invite your child into their village to solve
+                little problems that matter there: counting the mangoes for a festival, putting a
+                runaway story back in order. Real taps, real thinking, kind feedback — and something
+                to try away from the screen when the quest ends.
               </p>
               <div className="mt-7 flex flex-wrap gap-4">
                 <Button href="/kids/sample/momo-mangoes" size="lg" variant="kids">Play a free quest</Button>
@@ -53,8 +54,8 @@ export default function KidsHomePage() {
         <SectionHeading
           tone="kids"
           eyebrow="Six tracks"
-          title="The right world for every age"
-          sub="Each track has its own look, pace and challenges — a 3-year-old and a 5th-grader never see the same game."
+          title="A different world for every age"
+          sub="Each track has its own look, pace and challenges — a 3-year-old counts mangoes with Momo while a 5th-grader reasons with Bobo. Nobody ever sees the wrong game."
         />
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {AGE_TRACKS.map((t) => {
@@ -84,7 +85,7 @@ export default function KidsHomePage() {
           tone="kids"
           eyebrow="The guides"
           title="Meet Momo, Tara & Bobo"
-          sub="Familiar friends, not generic tutors. Each one teaches in their own way — and never makes a child feel small."
+          sub="Familiar friends, not faceless tutors. Momo loves numbers, Tara lives in stories, Bobo questions everything — and none of them ever makes a child feel small."
         />
         <div className="grid md:grid-cols-3 gap-6">
           {Object.values(CHARACTERS).map((c) => {
@@ -110,7 +111,7 @@ export default function KidsHomePage() {
           tone="kids"
           eyebrow="The village"
           title="Six places to explore"
-          sub="Every quest happens somewhere real in the village — and the whole village is getting ready for a festival."
+          sub="Every quest happens somewhere real in the village — Momo's Mango Garden, Tara's Story Tree, Bobo's Discovery Pond — and the whole village is getting ready for a festival."
         />
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {VILLAGE_LOCATIONS.map((v) => {

@@ -18,7 +18,7 @@ const FAQS = [
   },
   {
     q: "How do I know if my child is learning?",
-    a: "The Parent Hub shows observed evidence: which quests were completed, whether each was solved independently or with hints, and whether the skill transferred to a new example. We never show IQ-style scores, rankings, or developmental labels.",
+    a: "The Parent Hub shows observed evidence, not scores: which quests were completed, whether each was solved independently or with hints, and whether the skill transferred to a new example. We never show IQ-style scores, rankings, or developmental labels — your child is not a percentile.",
   },
   {
     q: "Can I delete our data?",
@@ -37,7 +37,7 @@ export default function ForParentsPage() {
         eyebrow="For parents"
         tone="kids"
         title="You stay in charge. Always."
-        sub="Unschool Kids is designed so a parent can trust it completely: minimal data, no commercial pressure on children, and honest evidence of learning."
+        sub="Built for the way parents actually worry: minimal data, zero commercial pressure on your child, and honest evidence of learning — never a black box, never a sales funnel."
       />
       <Section>
         <Breadcrumbs trail={[{ label: "Home", href: "/" }, { label: "Kids", href: "/kids" }, { label: "For parents" }]} />
@@ -45,7 +45,7 @@ export default function ForParentsPage() {
           align="left"
           tone="kids"
           eyebrow="Safety by design"
-          title="What child mode never contains"
+          title="Six things your child will never see here"
         />
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {[

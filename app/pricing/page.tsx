@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Section, SectionHeading, Button, Card, Breadcrumbs, PageHero, Callout } from "@/components/ui";
+import { CheckoutButton } from "@/components/checkout-button";
 
 export const metadata: Metadata = {
   title: "Pricing — Start Free, Pay Only for Depth",
@@ -39,7 +40,7 @@ export default function PricingPage() {
               <li>✓ Study plan + attempt history</li>
               <li>✓ 60 days access · cancel anytime</li>
             </ul>
-            <div className="mt-6"><Button href="/signup" size="sm">Get the pass</Button></div>
+            <div className="mt-6"><CheckoutButton productId="jft-basic-pass" label="Get the pass" /></div>
           </Card>
           <Card>
             <h2 className="font-bold text-ink text-lg">7-day revision</h2>
@@ -49,7 +50,7 @@ export default function PricingPage() {
               <li>✓ Timed drills</li>
               <li>✓ 7 days access</li>
             </ul>
-            <div className="mt-6"><Button href="/signup" variant="secondary" size="sm">Get revision pack</Button></div>
+            <div className="mt-6"><CheckoutButton productId="jft-basic-revision" label="Get revision pack" /></div>
           </Card>
         </div>
 

@@ -39,7 +39,7 @@ export default function CharactersPage() {
         eyebrow="The guides"
         tone="kids"
         title="Meet Momo, Tara & Bobo"
-        sub="Three original friends who teach in their own ways — present across every age track, never locked behind a purchase."
+        sub="Three original friends, each with their own way of teaching — the same familiar faces from age 2 to Grade 5, never locked behind a purchase, never replaced by a trendier mascot."
       />
       <Section>
         <Breadcrumbs trail={[{ label: "Home", href: "/" }, { label: "Kids", href: "/kids" }, { label: "Characters" }]} />
