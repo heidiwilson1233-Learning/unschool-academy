@@ -51,8 +51,8 @@ export default function ExamsDashboard() {
           <Breadcrumbs trail={[{ label: "Home", href: "/" }, { label: "My exam progress" }]} />
           <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight text-ink">My exam progress</h1>
           <p className="mt-3 text-slate max-w-2xl">
-            Your practice history on this device — no account needed. When accounts launch, this
-            history will be importable into your learner profile.
+            Your practice history lives on this device — no account needed. When accounts launch,
+            this history comes with you into your learner profile.
           </p>
         </div>
       </div>
@@ -75,8 +75,8 @@ export default function ExamsDashboard() {
         {totalSessions === 0 ? (
           <Card className="max-w-2xl mx-auto">
             <EmptyState
-              title="No sessions yet"
-              body="Take the free diagnostic or a practice session — your results will appear here with a personal study plan."
+              title="Your journey starts with one diagnostic"
+              body="Ten questions, five minutes — then this page becomes your study coach, pointing at exactly what to practise next."
               action={<Button href="/exams/jft-basic/diagnostic">Start the diagnostic</Button>}
             />
           </Card>

@@ -21,7 +21,7 @@ export default function ParentHubPage() {
         eyebrow="For parents"
         tone="kids"
         title="Parent Hub"
-        sub="Everything about your family's learning in one place — controlled by you, visible only to you."
+        sub="The cockpit for your family's learning — every control, every record, every receipt. Operated by you, visible only to you."
       />
       <Section>
         <div className="max-w-4xl mx-auto">

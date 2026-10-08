@@ -17,7 +17,7 @@ export default async function AccountPage() {
 
   return (
     <>
-      <PageHero eyebrow="Account" title="Your account" sub="Profile, data, and deletion — in one place, in plain language." />
+      <PageHero eyebrow="Account" title="Your account" sub="Profile, learning data, billing, and deletion — no settings maze, no fine print, no dark patterns." />
       <Section>
         <div className="max-w-3xl mx-auto">
           <Breadcrumbs trail={[{ label: "Home", href: "/" }, { label: "Account" }]} />
