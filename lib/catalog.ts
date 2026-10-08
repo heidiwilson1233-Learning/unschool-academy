@@ -115,70 +115,70 @@ export const CATEGORY_META: CategoryMeta[] = [
     name: "Finance & Business",
     tagline: "Professional accountancy and finance qualifications",
     description:
-      "Research entries for global professional papers and certificates — ACCA, CIMA, US CPA, CFA, FRM and India CA tracks. Each paper is listed separately because syllabi, formats and sittings differ per paper.",
+      "The papers that build finance careers — ACCA, CIMA, US CPA, CFA, FRM and India CA, each tracked separately because every paper has its own syllabus, format and sittings.",
   },
   {
     slug: "global-graduate-entry",
     name: "Global Graduate & Entry",
     tagline: "Admissions tests for graduate and professional study",
     description:
-      "Research entries for graduate admissions and aptitude tests — GRE, GMAT, CAT (India), MCAT, LSAT, UCAT and university-specific admissions assessments.",
+      "The gatekeepers of graduate school — GRE, GMAT, CAT (India), MCAT, LSAT, UCAT and university-specific admissions assessments, each with its own logic and traps.",
   },
   {
     slug: "healthcare-licensing",
     name: "Healthcare & Licensing",
     tagline: "Medical, nursing and allied-health licensing exams",
     description:
-      "Research entries for clinical licensing and certification stages — USMLE, NCLEX, NAPLEX, PLAB, MRCP/MRCS and related credential exams across jurisdictions.",
+      "Where the stakes are highest — USMLE, NCLEX, NAPLEX, PLAB, MRCP/MRCS and related credential exams, tracked stage by stage across jurisdictions.",
   },
   {
     slug: "india-entrance-government",
     name: "India Entrance & Government",
     tagline: "Indian entrance examinations, paper by paper",
     description:
-      "Research entries for Indian entrance exams tracked per paper or subject — JEE, NEET, GATE papers, CUET subjects, BITSAT and state CETs.",
+      "India's great academic sorters — JEE, NEET, GATE papers, CUET subjects, BITSAT and state CETs — tracked per paper, because no two papers test the same thing.",
   },
   {
     slug: "international-secondary",
     name: "International Secondary",
     tagline: "IGCSE, AS/A Level and IB Diploma subjects",
     description:
-      "Research entries for international secondary qualifications, tracked per subject — Cambridge IGCSE, International AS & A Level, and IB Diploma Programme subjects at HL/SL.",
+      "The world's classrooms, subject by subject — Cambridge IGCSE, International AS & A Level, and IB Diploma Programme courses at HL and SL.",
   },
   {
     slug: "languages",
     name: "Languages",
     tagline: "Language proficiency exams and official levels",
     description:
-      "Research entries for language proficiency tests — IELTS, TOEFL, JLPT levels N1–N5, JFT-Basic, DELF/DALF, PTE and Cambridge English qualifications.",
+      "Proof you can actually communicate — IELTS, TOEFL, JLPT levels N1–N5, JFT-Basic, DELF/DALF, PTE and Cambridge English qualifications.",
   },
   {
     slug: "law-teaching-public",
     name: "Law, Teaching & Public Service",
     tagline: "Bar, securities, teaching and citizenship tests",
     description:
-      "Research entries for professional licensing components and public tests — bar examinations, securities licenses, teaching credentials (CTET, UGC NET, Praxis) and citizenship tests.",
+      "Licenses to practise and rights to belong — bar examinations, securities licenses, teaching credentials (CTET, UGC NET, Praxis) and citizenship tests.",
   },
   {
     slug: "tech-cloud",
     name: "Tech & Cloud",
     tagline: "Cloud and IT certifications, exam by exam",
     description:
-      "Research entries for technology certifications — AWS, CompTIA and Microsoft (Azure, Microsoft 365, Power Platform, Security) exams. Cloud vendors retire and rename exams often; status is verified per exam.",
+      "The credentials behind the cloud — AWS, CompTIA and Microsoft (Azure, Microsoft 365, Power Platform, Security) exams. Vendors retire and rename these often, so we verify status per exam.",
   },
   {
     slug: "trades-international-careers",
     name: "Trades & International Careers",
     tagline: "Trade assessments, aviation and safety credentials",
     description:
-      "Research entries for skilled-trade and career assessments — EASA Part-66 modules, FAA knowledge tests, NEBOSH, ServSafe and inspector credentials.",
+      "Skilled hands, certified — EASA Part-66 modules, FAA knowledge tests, NEBOSH, ServSafe and inspector credentials for careers that keep the world running.",
   },
   {
     slug: "us-admissions-school",
     name: "US Admissions & School",
     tagline: "SAT, ACT, AP subjects and US school exams",
     description:
-      "Research entries for US admissions and school-level exams — SAT, ACT, PSAT, CLEP and AP subjects tracked individually.",
+      "America's admissions gauntlet — SAT, ACT, PSAT, CLEP and every AP subject tracked individually, because Calculus BC and Art History are different universes.",
   },
 ];
 
