@@ -6,6 +6,7 @@ import {
   getExamById,
   getOverlay,
   getPublicStatus,
+  getValidation,
   statusLabel,
   kindLabel,
   getCategoryByName,
@@ -24,8 +25,8 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   return {
     title: `${entry.exam_or_track} — ${statusLabel(status)} | Unschool Academy`,
     description: `${entry.exam_or_track} (${entry.id}): ${statusLabel(status).toLowerCase()} in Unschool Academy's research catalogue. ${entry.issuing_body}.`,
-    // Research entries are internal working notes, not SEO landing pages.
-    robots: status === "research" ? { index: false, follow: true } : undefined,
+    // Research and retired entries are internal working notes, not SEO landing pages.
+    robots: status === "research" || status === "retired" ? { index: false, follow: true } : undefined,
   };
 }
 
@@ -44,10 +45,11 @@ export default async function ExamDetailPage({ params }: { params: Promise<{ id:
   if (!entry) notFound();
 
   const overlay = getOverlay(entry.id);
+  const validation = getValidation(entry.id);
   const status = getPublicStatus(entry);
   const cat = getCategoryByName(entry.category);
 
-  const statusTone = status === "practice-ready" ? "success" : status === "verified" ? "info" : "neutral";
+  const statusTone = status === "practice-ready" ? "success" : status === "verified" ? "info" : status === "retired" ? "warning" : "neutral";
 
   return (
     <>
@@ -63,7 +65,7 @@ export default async function ExamDetailPage({ params }: { params: Promise<{ id:
             ]}
           />
           <div className="mt-4 flex flex-wrap items-center gap-3">
-            <span className="text-xs font-mono font-bold text-slate/70">{entry.id}</span>
+            <span className="text-xs font-mono font-bold text-slate">{entry.id}</span>
             <Badge tone={statusTone}>{statusLabel(status)}</Badge>
           </div>
           <h1 className="mt-3 text-3xl md:text-4xl font-extrabold tracking-tight text-ink leading-tight">
@@ -78,6 +80,13 @@ export default async function ExamDetailPage({ params }: { params: Promise<{ id:
 
       <Section>
         <div className="max-w-4xl mx-auto">
+          {status === "retired" && (
+            <Callout title="Retired or renamed — verify before planning" tone="warning">
+              Our 2026-10-08 research pass found this exam is retired, renamed, or being phased out.{" "}
+              {validation?.note && <span className="block mt-2 text-slate">{validation.note}</span>}
+              <span className="block mt-2">Do not plan a study schedule around this entry — check the official organizer for the current exam.</span>
+            </Callout>
+          )}
           {status === "research" && (
             <Callout title="Research entry — not a program" tone="warning">
               We are still verifying the facts for this exam. There is <strong>no practice, no mock test, and nothing

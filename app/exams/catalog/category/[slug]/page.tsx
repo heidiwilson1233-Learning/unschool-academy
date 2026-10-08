@@ -30,6 +30,7 @@ const STATUS_TONES = {
   "practice-ready": "success",
   verified: "info",
   research: "neutral",
+  retired: "warning",
 } as const;
 
 export default async function CategoryPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -71,7 +72,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ slug:
               <a key={e.id} href={examUrl(e.id)} className="group">
                 <Card hover className="h-full flex flex-col">
                   <div className="flex items-start justify-between gap-2">
-                    <span className="text-xs font-mono font-bold text-slate/70">{e.id}</span>
+                    <span className="text-xs font-mono font-bold text-slate">{e.id}</span>
                     <Badge tone={STATUS_TONES[st]}>{statusLabel(st)}</Badge>
                   </div>
                   <h2 className="mt-2 font-bold text-ink leading-snug group-hover:text-academy-blue transition-colors">

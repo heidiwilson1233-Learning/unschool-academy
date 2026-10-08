@@ -46,7 +46,7 @@ export default function CatalogHubPage() {
               href={categoryUrl(c.slug)}
               className="rounded-2xl border border-border bg-white p-5 hover:border-academy-blue hover:shadow-md transition-all group"
             >
-              <p className="font-bold text-ink group-hover:text-academy-blue transition-colors">{c.name}</p>
+              <h3 className="font-bold text-ink group-hover:text-academy-blue transition-colors">{c.name}</h3>
               <p className="mt-1 text-sm text-slate">{c.tagline}</p>
             </a>
           ))}
