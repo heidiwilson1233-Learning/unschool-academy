@@ -72,13 +72,13 @@ export function KidsSampler() {
   const done = count === target;
   return (
     <div className="bg-kids-cream border border-kids-orange/30 rounded-2xl p-6 shadow-sm">
-      <p className="text-xs font-bold uppercase tracking-widest text-kids-orange-deep mb-2">
+      <p className="text-xs font-bold uppercase tracking-widest text-kids-orange-ink mb-2">
         Try it — Momo's counting game
       </p>
       <div className="flex items-center gap-4">
         <Momo className="w-20 h-20 shrink-0 animate-idle" />
         <p className="font-semibold text-ink">
-          Momo needs <span className="text-kids-orange-deep font-extrabold">{target} mangoes</span> for
+          Momo needs <span className="text-kids-orange-ink font-extrabold">{target} mangoes</span> for
           the picnic. Tap the basket to add one!
         </p>
       </div>
@@ -104,7 +104,7 @@ export function KidsSampler() {
         )}
       </div>
       {done && (
-        <Link href="/kids/sample/momo-mangoes" className="mt-4 inline-flex font-semibold text-kids-orange-deep hover:underline">
+        <Link href="/kids/sample/momo-mangoes" className="mt-4 inline-flex font-semibold text-kids-orange-ink hover:underline">
           Play the full quest with hints →
         </Link>
       )}

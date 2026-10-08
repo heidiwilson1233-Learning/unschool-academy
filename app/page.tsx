@@ -10,10 +10,10 @@ export const metadata: Metadata = {
 };
 
 const STEPS = [
-  { n: "01", title: "Explore", body: "Find the exam or age track that fits. Read the verified syllabus or learning goals — no inflated promises." },
-  { n: "02", title: "Try", body: "Take the free diagnostic or play a complete sample quest. Real questions, real interactions, no paywall." },
-  { n: "03", title: "Learn", body: "Follow a topic-by-topic plan with original reviewed practice and clear explanations for every answer." },
-  { n: "04", title: "See progress", body: "Topic-level scores and observed skills — honest evidence of what improved and what needs work." },
+  { n: "01", title: "Explore", body: "Find the exam or age track that fits. Read verified syllabi and learning goals — plain facts, zero hype." },
+  { n: "02", title: "Try", body: "Take the free diagnostic or play a full sample quest. Real questions, real interactions, nothing held back." },
+  { n: "03", title: "Learn", body: "Follow a topic-by-topic plan: original practice, clear explanations for every answer, hints that teach instead of telling." },
+  { n: "04", title: "See progress", body: "Topic-level scores and observed skills — honest evidence of what clicked and what still needs work." },
 ];
 
 const FAQS = [
@@ -23,7 +23,7 @@ const FAQS = [
   },
   {
     q: "What does the free diagnostic include?",
-    a: "Ten original JFT-Basic-style questions with instant topic feedback and reviewed explanations. No account needed, and your result is never held behind a paywall.",
+    a: "Ten original JFT-Basic-style questions across all four official sections, with instant topic feedback and reviewed explanations. No account needed, five minutes of your time, and your result is never held behind a paywall.",
   },
   {
     q: "How does Unschool Kids keep children safe?",
@@ -31,7 +31,7 @@ const FAQS = [
   },
   {
     q: "Do you really only have one exam program right now?",
-    a: "Yes — and we're honest about it. JFT-Basic is our pilot: one complete, reviewed preparation path. Our 500-exam research catalogue stays internal until each program passes verification and content review. We'd rather do one exam well than 500 badly.",
+    a: "Yes — and we say so proudly. JFT-Basic is our pilot: one complete, reviewed preparation path. Our 500-exam research catalogue stays internal until each program passes verification and content review. We'd rather do one exam brilliantly than 500 badly.",
   },
 ];
 
@@ -43,19 +43,21 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-b from-academy-blue/10 via-canvas to-canvas pointer-events-none" aria-hidden />
         <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 pt-16 pb-12 md:pt-24 md:pb-16">
           <p className="text-sm font-bold uppercase tracking-widest text-academy-teal mb-4">
-            Unschool Academy | Two ways to learn
+            Two doors. One promise: learn by doing.
           </p>
           <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-ink max-w-3xl leading-[1.08]">
             Don&apos;t just study. Practise until it makes sense.
           </h1>
           <p className="mt-6 text-lg md:text-xl text-slate leading-relaxed max-w-2xl">
-            Focused exam preparation and joyful learning for ages 2 through Grade 5 — built around
-            things learners can actually <span className="font-semibold text-ink">do</span>.
+            Crack your exam with practice that shows its work — or watch your four-year-old learn
+            counting from a mango thief. Every lesson here is something you <span className="font-semibold text-ink">do</span>, never
+            something you merely read.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Button href="/exams" size="lg">Explore Exams</Button>
             <Button href="/kids" size="lg" variant="kids">Explore Kids</Button>
           </div>
+          <p className="mt-3 text-sm text-slate">Free 10-question diagnostic — no account needed.</p>
         </div>
       </div>
 
@@ -67,13 +69,13 @@ export default function HomePage() {
             <h2 className="mt-4 text-2xl md:text-3xl font-extrabold text-ink">Exam prep that shows its work</h2>
             <p className="mt-3 text-slate leading-relaxed">
               Starting with JFT-Basic everyday Japanese: a free 10-question diagnostic, topic-mapped
-              practice with reviewed explanations, and timed mocks — scored deterministically, never
-              with invented percentiles.
+              practice with reviewed explanations, and timed mocks. Every score is deterministic —
+              real maths on your real answers, never invented percentiles.
             </p>
             <ul className="mt-5 space-y-2 text-[15px] text-slate">
-              <li>✓ Free diagnostic, no account needed</li>
-              <li>✓ Original questions with real explanations</li>
-              <li>✓ Honest unofficial scoring — no pass guarantees</li>
+              <li>✓ Free 10-question diagnostic — no account, no paywall</li>
+              <li>✓ Original questions, each with a reviewed explanation</li>
+              <li>✓ Honest unofficial scores — we never promise a pass</li>
             </ul>
             <div className="mt-6">
               <Button href="/exams/jft-basic">Start with JFT-Basic</Button>
@@ -86,11 +88,11 @@ export default function HomePage() {
               <Tara className="w-16 h-16 animate-idle" />
               <Bobo className="w-16 h-16 animate-idle" />
             </div>
-            <h2 className="mt-3 text-2xl md:text-3xl font-extrabold text-ink">A storybook world that teaches</h2>
+            <h2 className="mt-3 text-2xl md:text-3xl font-extrabold text-ink">A village where learning feels like play</h2>
             <p className="mt-3 text-slate leading-relaxed">
-              Momo, Tara and Bobo guide children ages 2 through Grade 5 through real interactive
-              quests — counting, stories, science — with hints, encouragement and off-screen play.
-              Parent-owned, ad-free, always.
+              Momo, Tara and Bobo guide children from age 2 to Grade 5 through real interactive
+              quests — counting mangoes, ordering stories, meeting the world — with gentle hints,
+              warm encouragement, and off-screen adventures. Parent-owned and ad-free, always.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <Button href="/kids" variant="kids">Enter Kids World</Button>
@@ -104,8 +106,8 @@ export default function HomePage() {
       <Section className="!py-10">
         <SectionHeading
           eyebrow="Try it now"
-          title="Real practice, right here"
-          sub="No signup, no paywall. This is the actual experience — a question from our JFT pilot and a moment from Momo's quest."
+          title="Taste it before you trust it"
+          sub="No signup, no paywall, no sales pitch. Below is the real thing — a question from our JFT pilot and a moment from Momo's mango quest."
         />
         <div className="grid md:grid-cols-2 gap-6">
           <JftSampler />
@@ -117,8 +119,8 @@ export default function HomePage() {
       <Section className="bg-paper border-y border-border">
         <SectionHeading
           eyebrow="Method"
-          title="How learning works here"
-          sub="The same honest loop for a 30-year-old exam candidate and a 4-year-old counter."
+          title="One honest loop, every age"
+          sub="The same learning rhythm for a 30-year-old exam candidate and a 4-year-old counter: try, get feedback, try smarter."
         />
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {STEPS.map((s) => (
@@ -142,13 +144,13 @@ export default function HomePage() {
               align="left"
               eyebrow="Review standards"
               title="Every answer has a source. Every claim has a reviewer."
-              sub="Practice content is original and passes a real pipeline: drafting, fact and language checks, subject-expert review, accessibility check, QA — then publication. Drafts never ship as live content."
+              sub="Our practice content passes a real pipeline — drafting, fact and language checks, subject-expert review, accessibility check, QA — before it reaches you. Drafts never ship as live content, and reviewers never grade their own work."
             />
             <ul className="space-y-3 text-slate">
               <li className="flex gap-3"><span className="text-academy-teal font-bold">✓</span> JFT facts verified against the Japan Foundation&apos;s official JFT-Basic pages</li>
               <li className="flex gap-3"><span className="text-academy-teal font-bold">✓</span> Original questions only — never scraped past papers or question dumps</li>
               <li className="flex gap-3"><span className="text-academy-teal font-bold">✓</span> Kids quests reviewed by educators before any child sees them</li>
-              <li className="flex gap-3"><span className="text-academy-teal font-bold">✓</span> Versioned content — your past results never change when we improve a question</li>
+              <li className="flex gap-3"><span className="text-academy-teal font-bold">✓</span> Versioned content — improving a question never rewrites your past results</li>
             </ul>
           </div>
           <Card className="bg-gradient-to-br from-academy-blue to-academy-teal !border-0 text-white">
@@ -168,7 +170,7 @@ export default function HomePage() {
           <SectionHeading
             eyebrow="Pricing"
             title="Start free. Pay only for depth."
-            sub="The diagnostic and sample quests are free forever. Paid plans are finite, clearly scoped, and cancellable — no dark patterns."
+            sub="The diagnostic and sample quests are free forever — no trial clock, no card required. Paid plans are finite, clearly scoped, and easy to cancel. Prices shown are illustrative while checkout is in staged testing."
           />
           <div className="grid sm:grid-cols-3 gap-4 max-w-4xl mx-auto text-left">
             <div className="border border-border rounded-2xl p-6">

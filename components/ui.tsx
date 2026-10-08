@@ -36,7 +36,7 @@ export function Button({
   const variants = {
     primary: "bg-academy-blue text-white hover:bg-academy-blue-dark shadow-sm hover:shadow",
     secondary: "bg-white text-academy-blue border-2 border-academy-blue hover:bg-academy-blue/5",
-    kids: "bg-kids-orange text-ink hover:bg-kids-orange-deep hover:text-white shadow-sm hover:shadow rounded-2xl",
+    kids: "bg-kids-orange text-ink hover:bg-kids-orange-deep hover:text-ink shadow-sm hover:shadow rounded-2xl",
     ghost: "text-academy-blue hover:bg-academy-blue/5",
     dark: "bg-ink text-white hover:bg-academy-blue-dark",
   };
@@ -92,7 +92,7 @@ export function SectionHeading({
       {eyebrow && (
         <p
           className={`text-sm font-bold uppercase tracking-widest mb-3 ${
-            tone === "kids" ? "text-kids-orange-deep" : "text-academy-teal"
+            tone === "kids" ? "text-kids-orange-ink" : "text-academy-teal"
           }`}
         >
           {eyebrow}
@@ -141,7 +141,7 @@ export function Badge({
     info: "bg-academy-blue/10 text-academy-blue",
     success: "bg-academy-teal/10 text-academy-teal-dark",
     warning: "bg-amber-100 text-amber-800",
-    kids: "bg-kids-orange/20 text-kids-orange-deep",
+    kids: "bg-kids-orange/20 text-kids-orange-ink",
     neutral: "bg-slate/10 text-slate",
   };
   return (
@@ -265,7 +265,7 @@ export function PageHero({
         {eyebrow && (
           <p
             className={`text-sm font-bold uppercase tracking-widest mb-4 ${
-              tone === "kids" ? "text-kids-orange-deep" : "text-academy-teal"
+              tone === "kids" ? "text-kids-orange-ink" : "text-academy-teal"
             }`}
           >
             {eyebrow}
