@@ -34,7 +34,7 @@ export default function ResourcesPage() {
       <PageHero
         eyebrow="Resources"
         title="Guides worth your time"
-        sub="Short, human-reviewed explainers tied to real practice — written by our content team, checked like everything else we publish."
+        sub="Short, human-reviewed explainers tied to real questions — each one teaches a pattern you'll meet in practice, not a word list to memorize."
       />
       <Section>
         <Breadcrumbs trail={[{ label: "Home", href: "/" }, { label: "Resources" }]} />

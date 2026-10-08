@@ -40,7 +40,7 @@ export default function HowItWorksPage() {
       <PageHero
         eyebrow="Method"
         title="One honest loop, two kinds of learners"
-        sub="Explore → Try → Learn → See progress. The same cycle drives a JFT-Basic candidate and a 4-year-old — tuned to each."
+        sub="Explore → Try → Learn → See progress. The same learning rhythm drives a JFT-Basic candidate and a four-year-old — tuned to each, honest for both."
       />
       <Section>
         <Breadcrumbs trail={[{ label: "Home", href: "/" }, { label: "How it Works" }]} />

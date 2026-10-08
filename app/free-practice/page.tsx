@@ -14,7 +14,7 @@ export default function FreePracticePage() {
       <PageHero
         eyebrow="Free forever"
         title="Practice first. Decide later."
-        sub="Everything below is genuinely free — no trial timers, no result paywalls. If the free experience doesn't convince you, nothing we sell will."
+        sub="Everything below is genuinely free — no trial timers, no result paywalls, no card details. If the free experience doesn't convince you, nothing we could sell you will."
       />
       <Section>
         <Breadcrumbs trail={[{ label: "Home", href: "/" }, { label: "Free Practice" }]} />

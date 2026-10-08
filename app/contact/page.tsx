@@ -28,7 +28,7 @@ export default function ContactPage() {
 
   return (
     <>
-      <PageHero eyebrow="Support" title="Talk to a human" sub="We reply within 2 business days during the pilot. For children's privacy requests, use the Parent Hub." />
+      <PageHero eyebrow="Support" title="Talk to a human, not a bot maze" sub="Real replies within 2 business days during the pilot — from a person who can actually fix things. For children's privacy requests, use the Parent Hub." />
       <Section>
         <div className="max-w-2xl mx-auto">
           <Breadcrumbs trail={[{ label: "Home", href: "/" }, { label: "Contact" }]} />

@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { redirect } from "next/navigation";
 import { Section, Button, Card, Breadcrumbs, PageHero, Callout } from "@/components/ui";
-import { currentUser, isSupabaseConfigured } from "@/lib/supabase";
+import { isSupabaseConfigured } from "@/lib/supabase";
+import { currentUser } from "@/lib/supabase-server";
 import { SignOutButton } from "@/components/sign-out-button";
 
 export const metadata: Metadata = {

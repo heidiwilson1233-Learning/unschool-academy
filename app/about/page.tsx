@@ -13,7 +13,7 @@ export default function AboutPage() {
       <PageHero
         eyebrow="About"
         title="We help you learn by doing"
-        sub="Unschool Academy is a browser-first practice and learning platform: focused exam preparation for adult learners, imaginative real learning for young children."
+        sub="Unschool Academy is a practice-first learning platform: focused exam preparation for adult learners, imaginative real learning for young children — built around actions, not lectures."
       />
       <Section>
         <Breadcrumbs trail={[{ label: "Home", href: "/" }, { label: "About" }]} />
@@ -21,9 +21,10 @@ export default function AboutPage() {
           <div>
             <SectionHeading align="left" eyebrow="Method" title="Doing beats reading" />
             <p className="text-slate leading-relaxed">
-              Every module answers five questions: who needs this, which skill improves, what the
-              learner actually interacts with, what the source of correctness is, and what progress
-              can legitimately be reported. If a lesson can't answer those, it doesn't ship.
+              Every module must answer five questions before it ships: who needs this, which skill
+              improves, what the learner actually interacts with, what the source of correctness is,
+              and what progress can legitimately be reported. If a lesson can&apos;t answer all five,
+              it doesn&apos;t ship.
             </p>
             <p className="text-slate leading-relaxed mt-4">
               We are online-first by design: discovery, practice, checkout, delivery and support all

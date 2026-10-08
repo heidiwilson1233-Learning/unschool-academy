@@ -14,7 +14,7 @@ export default function PricingPage() {
       <PageHero
         eyebrow="Pricing"
         title="Start free. Pay only for depth."
-        sub="Pilot pricing while programs are in review. Every plan states exactly what reviewed content it includes, how long access lasts, and how to cancel."
+        sub="Pilot pricing while programs are in review. Every plan states exactly what reviewed content it unlocks, how long access lasts, and how to cancel — before you pay a single rupee."
       />
       <Section>
         <Breadcrumbs trail={[{ label: "Home", href: "/" }, { label: "Pricing" }]} />

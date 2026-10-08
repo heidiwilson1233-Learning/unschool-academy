@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getProduct, isPaymentsConfigured, isLiveBillingApproved } from "@/lib/payments";
-import { currentUser } from "@/lib/supabase";
+import { currentUser } from "@/lib/supabase-server";
 
 /**
  * POST /api/checkout/create-order { productId }

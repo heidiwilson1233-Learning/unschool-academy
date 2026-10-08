@@ -34,7 +34,7 @@ export default function FaqPage() {
   const [tab, setTab] = useState<(typeof TABS)[number]>("Exams");
   return (
     <>
-      <PageHero eyebrow="Help" title="Frequently asked questions" sub="Straight answers, organized by topic." />
+      <PageHero eyebrow="Help" title="Frequently asked questions" sub="Straight answers, organized by topic. If yours isn't here, ask us — a human replies within 2 business days." />
       <Section>
         <div className="max-w-3xl mx-auto">
           <Breadcrumbs trail={[{ label: "Home", href: "/" }, { label: "FAQ" }]} />
