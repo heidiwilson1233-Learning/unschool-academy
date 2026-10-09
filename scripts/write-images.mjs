@@ -1,56 +1,46 @@
-/**
- * write-images.mjs — rebuilds binary site imagery from committed base64 blobs.
- *
- * Why this exists: the project's GitHub push route (MCP push_files) only
- * carries text files, so binary WebP illustrations cannot be pushed directly.
- * The originals live as base64 text in image-blobs/ (committed). Blobs larger
- * than the push transport's per-call limit are split into numbered
- * <name>.b64.partN chunks; this script reassembles them in order and decodes
- * each image into public/img/<name>.webp before every build — locally, on CI,
- * and on Vercel (via the `prebuild` npm hook).
- *
- * The blobs are the source of truth. To replace an illustration, drop the new
- * .webp into public/img/, re-encode it into image-blobs/<name>.b64 (splitting
- * into .partN chunks if over ~100KB of text), and commit.
- */
-import { readFileSync, writeFileSync, mkdirSync, readdirSync, existsSync } from "node:fs";
-import { join, dirname, basename } from "node:path";
+// Decodes the base64 image blobs in image-blobs/ into public/img/*.webp.
+// Runs on every build via the "prebuild" hook, because the GitHub push
+// transport is text-only and cannot carry binary files.
+// Each image is exactly one <stem>.b64 file (base64 of the .webp bytes).
+// Files named <stem>.b64.partN are legacy chunk fragments and are ignored.
+import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
+import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const blobsDir = join(root, "image-blobs");
 const outDir = join(root, "public", "img");
 
+const STEMS = [
+  "card-exams",
+  "card-jft",
+  "card-kids",
+  "char-bobo",
+  "char-momo",
+  "char-tara",
+  "discovery-pond",
+  "hero-home",
+  "how-practice",
+  "japanese-hub",
+  "jft-hero",
+  "kids-world",
+  "mango-garden",
+  "mock-tests",
+  "resources",
+  "story-tree",
+];
+
 mkdirSync(outDir, { recursive: true });
 
-const files = readdirSync(blobsDir).filter((f) => f.includes(".b64"));
-// Group chunk files by image stem: "<stem>.b64" or "<stem>.b64.partN".
-const groups = new Map();
-for (const f of files) {
-  const m = f.match(/^(.+)\.b64(\.part(\d+))?$/);
-  if (!m) continue;
-  const stem = m[1];
-  if (!groups.has(stem)) groups.set(stem, []);
-  groups.get(stem).push({ file: f, part: m[3] ? parseInt(m[3], 10) : 0 });
-}
-if (groups.size === 0) {
-  console.log("[write-images] no blobs found, skipping");
-  process.exit(0);
-}
-
-let bytes = 0;
-for (const [stem, parts] of [...groups.entries()].sort()) {
-  parts.sort((a, b) => a.part - b.part);
-  const b64 = parts.map((p) => readFileSync(join(blobsDir, p.file), "utf8")).join("").replace(/\s+/g, "");
-  const data = Buffer.from(b64, "base64");
-  const out = join(outDir, stem + ".webp");
-  // Skip rewrite when the on-disk file already matches (keeps local builds fast).
-  if (existsSync(out) && readFileSync(out).equals(data)) {
-    bytes += data.length;
-    continue;
+let ok = 0;
+for (const stem of STEMS) {
+  const b64 = readFileSync(join(blobsDir, `${stem}.b64`), "utf8").replace(/\s+/g, "");
+  const bytes = Buffer.from(b64, "base64");
+  // sanity: valid WebP starts with RIFF....WEBP
+  if (bytes.subarray(0, 4).toString() !== "RIFF" || bytes.subarray(8, 12).toString() !== "WEBP") {
+    throw new Error(`image-blobs/${stem}.b64 did not decode to valid WebP`);
   }
-  writeFileSync(out, data);
-  bytes += data.length;
-  console.log(`[write-images] wrote public/img/${stem}.webp`);
+  writeFileSync(join(outDir, `${stem}.webp`), bytes);
+  ok++;
 }
-console.log(`[write-images] done: ${groups.size} images, ${(bytes / 1024).toFixed(0)}KB total`);
+console.log(`write-images: decoded ${ok}/${STEMS.length} images to public/img/`);
