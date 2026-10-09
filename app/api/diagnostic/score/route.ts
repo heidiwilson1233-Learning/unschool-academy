@@ -24,8 +24,9 @@ type SkillRow = {
 /**
  * POST /api/diagnostic/score
  * Deterministic server-side scoring. Each option counts equally (1 point).
- * Returns per-topic AND per-skill breakdowns (the skill gap map), plus reviewed
- * explanations. Same honesty contract as the page: unofficial practice score.
+ * Returns per-topic AND per-skill breakdowns (the skill gap map), plus draft
+ * explanations pending SME review. Same honesty contract as the page: unofficial
+ * practice score.
  */
 export async function POST(req: Request) {
   let body: ScoreRequest;
@@ -106,7 +107,7 @@ export async function POST(req: Request) {
   const weakestSkill = needsHelp[0] ?? [...skills].sort((a, b) => a.correct / a.total - b.correct / b.total)[0];
 
   return NextResponse.json({
-    version: "diagnostic-v2-draft",
+    version: "diagnostic-v3-curriculum",
     score,
     total,
     percent: Math.round((score / total) * 100),
@@ -118,8 +119,8 @@ export async function POST(req: Request) {
       score >= 8
         ? "Strong everyday foundation. Next: timed mixed practice to build speed and confidence."
         : score >= 5
-          ? `Solid start. Focus next on “${weakestSkill.label}” — short daily practice beats long cramming.`
-          : `Good first step — every learner starts here. Begin with short practice in “${weakestSkill.label}”, then re-take this diagnostic.`,
+          ? `Solid start. Focus next on “${weakestSkill.label}”. Short daily practice beats long cramming.`
+          : `Good first step. Every learner starts here. Begin with short practice in “${weakestSkill.label}”, then re-take this diagnostic.`,
     disclaimer:
       "This is an unofficial practice score. It measures your performance on these 10 original practice questions and cannot predict an official JFT-Basic result.",
     reviewStatus: "Questions are original drafts pending Japanese SME review.",

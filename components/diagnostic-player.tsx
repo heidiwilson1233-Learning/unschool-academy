@@ -38,6 +38,7 @@ type SkillResult = {
 };
 
 type ScoreResult = {
+  version: string;
   score: number;
   total: number;
   percent: number;
@@ -116,6 +117,9 @@ export default function DiagnosticPlayer() {
         total: d.total,
         at: new Date().toISOString(),
         skills: d.skills.map((s) => ({ skill: s.skill, correct: s.correct, total: s.total })),
+        // Content-schema rule 4: attempts reference the version the learner saw,
+        // so retakes stay comparable when the bank is edited.
+        contentVersion: d.version,
       });
       window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" });
       // WCAG 2.4.3: move focus to the new results region (no visible ring — programmatic focus).
@@ -223,7 +227,7 @@ export default function DiagnosticPlayer() {
         : result.details;
     const placementLine =
       result.percent >= 80
-        ? "Strong start on this sample — time to build speed"
+        ? "Strong start on this sample: time to build speed"
         : `Your starting line: ${weakestSkill.label}`;
 
     return (
@@ -239,7 +243,7 @@ export default function DiagnosticPlayer() {
             </p>
             <p className="mt-2 text-slate">{result.recommendation}</p>
             <p className="mt-3 text-sm text-slate">
-              This measures 10 practice questions, not your ability — practice a topic,
+              This measures 10 practice questions, not your ability. Practice a topic,
               then retake the diagnostic to see your progress.
             </p>
             <Callout title="Honest scoring" tone="info">
@@ -253,7 +257,7 @@ export default function DiagnosticPlayer() {
         <section aria-labelledby="diag-gapmap">
           <h2 id="diag-gapmap" className="text-2xl font-extrabold text-ink mt-10 mb-2">Your skill map</h2>
           <p className="text-slate mb-6 max-w-2xl">
-            Ten questions is a thin sample — treat this as a first pass, not a verdict.
+            Ten questions is a thin sample. Treat this as a first pass, not a verdict.
             Each row is one skill the JFT-Basic tests; practice fixes them weakest-first.
           </p>
           <div className="grid lg:grid-cols-6 gap-6">
@@ -267,7 +271,7 @@ export default function DiagnosticPlayer() {
               </div>
               {needsHelpSkills.length === 0 ? (
                 <p className="py-6 text-slate">
-                  Nothing needs help at this sample size — every skill you tried came back strong.
+                  Nothing needs help at this sample size. Every skill you tried came back strong.
                   The unsampled skills below are still worth a look.
                 </p>
               ) : (
@@ -278,7 +282,7 @@ export default function DiagnosticPlayer() {
                         <p className="text-xs font-bold uppercase tracking-widest text-slate">{String(i + 1).padStart(2, "0")} · {s.topic}</p>
                         <p className="font-bold text-ink mt-1">{s.label}</p>
                         <p className="text-xs text-slate mt-1">
-                          {s.correct} of {s.total} right{s.total === 1 ? " — one question, first pass only" : ""}
+                          {s.correct} of {s.total} right{s.total === 1 ? " (one question: first pass only)" : ""}
                         </p>
                       </div>
                       <div className="flex flex-col items-end gap-2 shrink-0">
@@ -301,7 +305,7 @@ export default function DiagnosticPlayer() {
               <div className="bg-paper border border-border rounded-2xl p-6">
                 <h3 className="font-extrabold text-ink border-b border-border pb-3">Can do</h3>
                 {canDoSkills.length === 0 ? (
-                  <p className="py-4 text-sm text-slate">Not this time — that is what the diagnostic is for.</p>
+                  <p className="py-4 text-sm text-slate">Not this time. That is what the diagnostic is for.</p>
                 ) : (
                   <ul className="divide-y divide-border">
                     {canDoSkills.map((s) => (
@@ -334,10 +338,10 @@ export default function DiagnosticPlayer() {
 
         {/* Review — wrong answers first, correct answers collapsed */}
         <section aria-labelledby="diag-review">
-          <div className="flex flex-wrap items-center justify-between gap-3 mt-10 mb-4">
+          <div className="flex flex-wrap items-center justify-between gap-3 mt-10 mb-2">
             <h2 id="diag-review" className="text-2xl font-extrabold text-ink">Review every question</h2>
             {wrongDetails.length > 0 && (
-              <div className="flex rounded-xl border border-border overflow-hidden" role="group" aria-label="Filter reviewed questions">
+              <div className="flex rounded-xl border border-border overflow-hidden" role="group" aria-label="Filter review questions">
                 {(["wrong", "all"] as const).map((f) => (
                   <button
                     key={f}
@@ -352,6 +356,11 @@ export default function DiagnosticPlayer() {
               </div>
             )}
           </div>
+          {/* Honesty, stated once here so the per-row tag below can stay compact —
+              screen readers hear this sentence once, not ten times. */}
+          <p className="text-xs text-slate mb-4">
+            Every explanation below is a draft pending expert review.
+          </p>
           {wrongDetails.length > 0 && (
             <div className="flex flex-wrap gap-2 mb-4" aria-label="Jump to a missed question">
               {wrongDetails.map((d) => (
@@ -394,6 +403,9 @@ export default function DiagnosticPlayer() {
                     )}
                   </div>
                   <p className="mt-3 text-[15px] text-slate leading-relaxed border-t border-border pt-3">
+                    <span aria-hidden="true" className="mr-2 align-middle">
+                      <Badge tone="warning">Draft</Badge>
+                    </span>
                     <span className="font-semibold text-ink">Why: </span>{d.explanation}
                   </p>
                 </>
@@ -433,15 +445,15 @@ export default function DiagnosticPlayer() {
             <h2 id="diag-plan" className="text-2xl font-extrabold text-ink">Your starter plan</h2>
             <p className="text-slate mt-1 mb-6">
               {needsHelpSkills.length === 0
-                ? "Every sampled skill came back strong — this plan is about staying sharp."
-                : "Built from your answers, weakest skill first — retake the diagnostic anytime to update it."}
+                ? "Every sampled skill came back strong. This plan is about staying sharp."
+                : "Built from your answers, weakest skill first. Retake the diagnostic anytime to update it."}
             </p>
             {needsHelpSkills.length === 0 ? (
               <ol className="space-y-5">
                 <li className="flex gap-4">
                   <span aria-hidden="true" className="w-8 h-8 rounded-full bg-academy-blue text-white font-bold flex items-center justify-center shrink-0">1</span>
                   <div>
-                    <p className="font-bold text-ink">Keep it sharp — timed mixed practice</p>
+                    <p className="font-bold text-ink">Keep it sharp: timed mixed practice</p>
                     <p className="text-sm text-slate mt-1">
                       You cleared every sampled skill. The 30-minute timed mock builds the speed the real test demands.
                     </p>
@@ -470,7 +482,7 @@ export default function DiagnosticPlayer() {
                   <span aria-hidden="true" className="w-8 h-8 rounded-full bg-academy-blue/15 text-academy-blue font-bold flex items-center justify-center shrink-0">3</span>
                   <div>
                     <p className="font-bold text-ink">Retake this diagnostic in a week</p>
-                    <p className="text-sm text-slate mt-1">Same 10 questions — confirm every skill is still in &ldquo;Can do&rdquo;.</p>
+                    <p className="text-sm text-slate mt-1">Same 10 questions: confirm every skill is still in &ldquo;Can do&rdquo;.</p>
                     <div className="mt-2">
                       <Button variant="secondary" size="sm" onClick={() => window.location.reload()}>
                         Retake diagnostic
@@ -484,7 +496,7 @@ export default function DiagnosticPlayer() {
                 <li className="flex gap-4">
                   <span aria-hidden="true" className="w-8 h-8 rounded-full bg-academy-blue text-white font-bold flex items-center justify-center shrink-0">1</span>
                   <div>
-                    <p className="font-bold text-ink">Start with {weakestSkill.label} — 15 minutes a day</p>
+                    <p className="font-bold text-ink">Start with {weakestSkill.label}: 15 minutes a day</p>
                     <p className="text-sm text-slate mt-1">
                       Your weakest skill is your fastest win. ({weakestSkill.topic})
                     </p>
@@ -501,7 +513,7 @@ export default function DiagnosticPlayer() {
                     <div>
                       <p className="font-bold text-ink">Then {secondWeakestSkill.label}</p>
                       <p className="text-sm text-slate mt-1">
-                        Your second-weakest skill — rotate it in after a few days. ({secondWeakestSkill.topic})
+                        Your second-weakest skill: rotate it in after a few days. ({secondWeakestSkill.topic})
                       </p>
                       <div className="mt-2">
                         <Button href={`/exams/jft-basic/practice/${secondWeakestSkill.practiceSlug}`} variant="secondary" size="sm">
@@ -527,7 +539,7 @@ export default function DiagnosticPlayer() {
                   <span aria-hidden="true" className="w-8 h-8 rounded-full bg-academy-blue/15 text-academy-blue font-bold flex items-center justify-center shrink-0">3</span>
                   <div>
                     <p className="font-bold text-ink">Retake this diagnostic in a week</p>
-                    <p className="text-sm text-slate mt-1">Same 10 questions — watch the skills move from &ldquo;Needs help&rdquo; to &ldquo;Can do&rdquo;.</p>
+                    <p className="text-sm text-slate mt-1">Same 10 questions: watch the skills move from &ldquo;Needs help&rdquo; to &ldquo;Can do&rdquo;.</p>
                     <div className="mt-2">
                       <Button variant="secondary" size="sm" onClick={() => window.location.reload()}>
                         Retake diagnostic
@@ -541,7 +553,7 @@ export default function DiagnosticPlayer() {
               Your result is saved on this device automatically — an account keeps it across devices.
             </p>
             <div className="mt-6 flex flex-wrap gap-4">
-              <Button href="/signup">Save your results — create account</Button>
+              <Button href="/signup">Save your results: create account</Button>
               <Button href="/exams/jft-basic" variant="ghost">Back to JFT-Basic</Button>
             </div>
           </Card>

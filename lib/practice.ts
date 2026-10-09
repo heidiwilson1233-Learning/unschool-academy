@@ -7,108 +7,28 @@
  *
  * This module is the delivery layer: it statically imports the curriculum
  * batches (static imports bundle correctly everywhere — fs discovery would
- * break edge routes and Vercel output tracing), validates them once at
- * load, and normalizes them to the player-facing PracticeQuestion shape.
+ * break edge routes and Vercel output tracing) and validates them through
+ * the shared `lib/curriculum.ts` loader. Validation runs at build time:
+ * bad content fails the build, never the learner.
  *
- * Adding a new batch = drop the JSON file + add one import line below.
- * Validation runs at build time: bad content fails the build, never the learner.
+ * Adding a new batch = drop the JSON file + add one entry to BATCHES below.
  *
  * STATUS: every question ships draft — pending Japanese SME review.
  * Nothing here is presented as official JFT-Basic material.
  */
 
-import { DIAGNOSTIC_SKILL_INFO } from "@/lib/exams";
-
-import unitScriptVocab from "@/content/curriculum/jft-basic/units/script-vocabulary/unit.json";
-import unitConversation from "@/content/curriculum/jft-basic/units/conversation-expression/unit.json";
-import unitListening from "@/content/curriculum/jft-basic/units/listening-comprehension/unit.json";
-import unitReading from "@/content/curriculum/jft-basic/units/reading-comprehension/unit.json";
+import { DIAGNOSTIC_QUESTIONS, DIAGNOSTIC_SKILL_INFO } from "@/lib/exams";
+import {
+  UNIT_META,
+  validateCurriculumQuestions,
+  type CurriculumUnitId,
+} from "@/lib/curriculum";
 
 import svBatch0 from "@/content/curriculum/jft-basic/units/script-vocabulary/questions-script-vocabulary-batch0.json";
 import svKanjiBatch1 from "@/content/curriculum/jft-basic/units/script-vocabulary/questions-kanji-reading-batch1.json";
 import ceBatch0 from "@/content/curriculum/jft-basic/units/conversation-expression/questions-conversation-expression-batch0.json";
 import lcBatch0 from "@/content/curriculum/jft-basic/units/listening-comprehension/questions-listening-comprehension-batch0.json";
 import rcBatch0 from "@/content/curriculum/jft-basic/units/reading-comprehension/questions-reading-comprehension-batch0.json";
-
-type RawQuestion = {
-  id: string;
-  skill: string;
-  type: string;
-  difficulty: number;
-  stem: string;
-  stemJp?: string;
-  options: { id: string; text: string; textJp?: string }[];
-  answer: number;
-  explanation: string;
-  hint: string;
-  audioTextJp?: string;
-  source: string;
-  status: string;
-  version: number;
-};
-
-type Batch = { unitId: string; questions: RawQuestion[] };
-
-const UNIT_META: Record<string, { title: PracticeTopic; skills: string[] }> = {
-  "script-vocabulary": { title: unitScriptVocab.title as PracticeTopic, skills: unitScriptVocab.skills },
-  "conversation-expression": { title: unitConversation.title as PracticeTopic, skills: unitConversation.skills },
-  "listening-comprehension": { title: unitListening.title as PracticeTopic, skills: unitListening.skills },
-  "reading-comprehension": { title: unitReading.title as PracticeTopic, skills: unitReading.skills },
-};
-
-const BATCHES: Batch[] = [
-  { unitId: "script-vocabulary", questions: svBatch0 as RawQuestion[] },
-  { unitId: "script-vocabulary", questions: svKanjiBatch1 as RawQuestion[] },
-  { unitId: "conversation-expression", questions: ceBatch0 as RawQuestion[] },
-  { unitId: "listening-comprehension", questions: lcBatch0 as RawQuestion[] },
-  { unitId: "reading-comprehension", questions: rcBatch0 as RawQuestion[] },
-];
-
-function validateAndNormalize(): PracticeQuestion[] {
-  const seen = new Set<string>();
-  const out: PracticeQuestion[] = [];
-  for (const batch of BATCHES) {
-    const meta = UNIT_META[batch.unitId];
-    if (!meta) throw new Error(`[practice] unknown unit "${batch.unitId}" in batch import`);
-    for (const q of batch.questions) {
-      if (!q.id || typeof q.id !== "string") throw new Error("[practice] question missing id");
-      if (seen.has(q.id)) throw new Error(`[practice] duplicate question id "${q.id}"`);
-      seen.add(q.id);
-      if (!q.stem) throw new Error(`[practice] question "${q.id}" missing stem`);
-      if (!Array.isArray(q.options) || q.options.length < 2)
-        throw new Error(`[practice] question "${q.id}" needs at least 2 options`);
-      const optIds = new Set(q.options.map((o) => o.id));
-      if (optIds.size !== q.options.length)
-        throw new Error(`[practice] question "${q.id}" has duplicate option ids`);
-      if (!Number.isInteger(q.answer) || q.answer < 0 || q.answer >= q.options.length)
-        throw new Error(`[practice] question "${q.id}" has out-of-range answer index`);
-      if (!q.explanation || !q.hint)
-        throw new Error(`[practice] question "${q.id}" missing explanation or hint`);
-      if (!meta.skills.includes(q.skill))
-        throw new Error(
-          `[practice] question "${q.id}" skill "${q.skill}" not in unit "${batch.unitId}" skills`
-        );
-      const correctId = q.options[q.answer].id;
-      out.push({
-        id: q.id,
-        topic: meta.title,
-        skill: q.skill,
-        skillLabel: DIAGNOSTIC_SKILL_INFO[q.skill]?.label ?? q.skill,
-        stem: q.stem,
-        stemJp: q.stemJp,
-        options: q.options.map((o) => ({ id: o.id, text: o.text, textJp: o.textJp })),
-        correctId,
-        explanation: q.explanation,
-        hint: q.hint,
-        audioTextJp: q.audioTextJp,
-        version: q.version,
-        status: q.status,
-        source: q.source,
-      });
-    }
-  }
-  return out;
-}
 
 export type PracticeQuestion = {
   id: string;
@@ -139,8 +59,50 @@ export const PRACTICE_TOPICS = [
 
 export type PracticeTopic = (typeof PRACTICE_TOPICS)[number];
 
+const BATCHES: { unitId: CurriculumUnitId; raw: unknown }[] = [
+  { unitId: "script-vocabulary", raw: svBatch0 },
+  { unitId: "script-vocabulary", raw: svKanjiBatch1 },
+  { unitId: "conversation-expression", raw: ceBatch0 },
+  { unitId: "listening-comprehension", raw: lcBatch0 },
+  { unitId: "reading-comprehension", raw: rcBatch0 },
+];
+
 /** The full practice bank, normalized from curriculum JSON. */
-export const PRACTICE_QUESTIONS: PracticeQuestion[] = validateAndNormalize();
+export const PRACTICE_QUESTIONS: PracticeQuestion[] = (() => {
+  const seen = new Set<string>();
+  const out: PracticeQuestion[] = [];
+  for (const batch of BATCHES) {
+    for (const q of validateCurriculumQuestions(batch.raw, { unitId: batch.unitId })) {
+      if (seen.has(q.id))
+        throw new Error(`[practice] duplicate question id "${q.id}" across batches`);
+      seen.add(q.id);
+      out.push({
+        id: q.id,
+        topic: UNIT_META[batch.unitId].title as PracticeTopic,
+        skill: q.skill,
+        skillLabel: DIAGNOSTIC_SKILL_INFO[q.skill]?.label ?? q.skill,
+        stem: q.stem,
+        stemJp: q.stemJp,
+        options: q.options.map((o) => ({ id: o.id, text: o.text, textJp: o.textJp })),
+        correctId: q.options[q.correctIndex].id,
+        explanation: q.explanation,
+        hint: q.hint,
+        audioTextJp: q.audioTextJp,
+        version: q.version,
+        status: q.status,
+        source: q.source,
+      });
+    }
+  }
+  // Cross-bank guard: the diagnostic bank (lib/exams) loads through the same
+  // JSON pipeline — ids must never collide across the two banks.
+  const diagIds = new Set(DIAGNOSTIC_QUESTIONS.map((d) => d.id));
+  for (const q of out) {
+    if (diagIds.has(q.id))
+      throw new Error(`[practice] question id "${q.id}" collides with a diagnostic question id`);
+  }
+  return out;
+})();
 
 export function practiceByTopic(topic: string): PracticeQuestion[] {
   return PRACTICE_QUESTIONS.filter((q) => q.topic === topic);

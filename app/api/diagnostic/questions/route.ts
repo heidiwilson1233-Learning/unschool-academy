@@ -20,7 +20,7 @@ export async function GET() {
     audioTextJp: q.audioTextJp ?? null,
   }));
   return NextResponse.json({
-    version: "diagnostic-v2-draft",
+    version: "diagnostic-v3-curriculum",
     reviewStatus: "draft — pending Japanese SME review",
     total: publicQuestions.length,
     questions: publicQuestions,

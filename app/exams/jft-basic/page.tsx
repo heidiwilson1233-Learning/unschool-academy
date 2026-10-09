@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Section, SectionHeading, Button, Card, Badge, Breadcrumbs, FAQAccordion, Callout } from "@/components/ui";
-import { JFT_PROGRAM, TOPIC_INFO, DIAGNOSTIC_QUESTIONS } from "@/lib/exams";
+import { JFT_PROGRAM, TOPIC_INFO, DIAGNOSTIC_SAMPLE_QUESTION } from "@/lib/exams";
 import { PRACTICE_TOPICS, practiceByTopic, PRACTICE_QUESTIONS, MOCK_QUESTION_IDS } from "@/lib/practice";
 
 /** Live counts from the curriculum bank — never hardcoded. */
@@ -29,8 +29,9 @@ export const metadata: Metadata = {
   },
 };
 
-const SAMPLE_QUESTION =
-  DIAGNOSTIC_QUESTIONS.find((q) => q.id === "jft-d10") ?? DIAGNOSTIC_QUESTIONS[0];
+/* The sample card below shows the deliberately disclosed demo question only —
+   the other 9 diagnostic answer keys stay out of this page's bundle. */
+const SAMPLE_QUESTION = DIAGNOSTIC_SAMPLE_QUESTION;
 const SAMPLE_CORRECT = SAMPLE_QUESTION.options.find(
   (o) => o.id === SAMPLE_QUESTION.correctId
 );
