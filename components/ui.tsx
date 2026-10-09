@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState, type ReactNode, type Ref } from "react";
+import { Art, StagingNote } from "./site-art";
 
 /* ---------- Buttons ---------- */
 
@@ -157,24 +158,45 @@ export function Badge({
 
 /* ---------- FAQ accordion ---------- */
 
-export function FAQAccordion({ items }: { items: { q: string; a: ReactNode }[] }) {
-  const [open, setOpen] = useState<number | null>(0);
+export function FAQAccordion({
+  items,
+  idPrefix = "faq",
+  open: controlledOpen,
+  onOpenChange,
+}: {
+  items: { q: string; a: ReactNode; link?: { label: string; href: string } }[];
+  /** Stable prefix so multiple accordions on one page get unique aria ids. */
+  idPrefix?: string;
+  /** Controlled open index; undefined = uncontrolled (first item open by default). */
+  open?: number | null;
+  onOpenChange?: (open: number | null) => void;
+}) {
+  const [internalOpen, setInternalOpen] = useState<number | null>(0);
+  const open = controlledOpen === undefined ? internalOpen : controlledOpen;
+  const setOpen = (v: number | null) => {
+    if (controlledOpen === undefined) setInternalOpen(v);
+    onOpenChange?.(v);
+  };
   return (
     <div className="divide-y divide-border border-y border-border">
       {items.map((item, i) => {
         const isOpen = open === i;
+        const btnId = `${idPrefix}-btn-${i}`;
+        const panelId = `${idPrefix}-panel-${i}`;
         return (
-          <div key={i}>
+          <div key={i} id={`${idPrefix}-item-${i}`}>
             <button
               type="button"
+              id={btnId}
               onClick={() => setOpen(isOpen ? null : i)}
               aria-expanded={isOpen}
-              className="w-full flex items-center justify-between gap-4 py-5 text-left"
+              aria-controls={panelId}
+              className="w-full flex items-center justify-between gap-4 py-5 text-left focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-academy-teal rounded-lg"
             >
               <span className="font-semibold text-ink text-base md:text-lg">{item.q}</span>
               <span
                 aria-hidden
-                className={`shrink-0 w-8 h-8 rounded-full border border-border flex items-center justify-center text-xl transition-transform duration-200 ${
+                className={`shrink-0 w-8 h-8 rounded-full border border-border flex items-center justify-center text-xl transition-transform duration-200 ease-[var(--ease-signature)] ${
                   isOpen ? "rotate-45 bg-academy-blue text-white border-academy-blue" : "text-slate"
                 }`}
               >
@@ -182,7 +204,24 @@ export function FAQAccordion({ items }: { items: { q: string; a: ReactNode }[] }
               </span>
             </button>
             {isOpen && (
-              <div className="pb-6 text-slate leading-relaxed animate-fade-up">{item.a}</div>
+              <div
+                id={panelId}
+                role="region"
+                aria-labelledby={btnId}
+                className="pb-6 text-slate leading-relaxed faq-reveal"
+              >
+                <div>{item.a}</div>
+                {item.link && (
+                  <p className="mt-3">
+                    <Link
+                      href={item.link.href}
+                      className="font-semibold text-academy-blue hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-academy-teal rounded"
+                    >
+                      {item.link.label} <span aria-hidden>→</span>
+                    </Link>
+                  </p>
+                )}
+              </div>
             )}
           </div>
         );
@@ -264,12 +303,20 @@ export function PageHero({
   sub,
   children,
   tone = "default",
+  art,
+  artAlt = "",
+  artStaging = false,
 }: {
   eyebrow?: string;
   title: ReactNode;
   sub?: ReactNode;
   children?: ReactNode;
   tone?: "default" | "kids" | "exam";
+  /** Optional art-directed image path, e.g. "/img/jft-hero.webp" — renders text-left / art-right per the MD hero spec. */
+  art?: string;
+  artAlt?: string;
+  /** Kids character/scene art stays labeled as staging until illustrator review + IP signoff. */
+  artStaging?: boolean;
 }) {
   const bg =
     tone === "kids"
@@ -280,20 +327,35 @@ export function PageHero({
   return (
     <div className={`${bg} border-b border-border`}>
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-14 md:py-20">
-        {eyebrow && (
-          <p
-            className={`text-sm font-bold uppercase tracking-widest mb-4 ${
-              tone === "kids" ? "text-kids-orange-ink" : tone === "exam" ? "text-academy-teal-dark" : "text-academy-teal"
-            }`}
-          >
-            {eyebrow}
-          </p>
-        )}
-        <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-ink max-w-3xl leading-tight">
-          {title}
-        </h1>
-        {sub && <div className="mt-5 text-lg text-slate leading-relaxed max-w-2xl">{sub}</div>}
-        {children && <div className="mt-8 flex flex-wrap gap-4">{children}</div>}
+        <div className={art ? "grid lg:grid-cols-2 gap-10 items-center" : undefined}>
+          <div>
+            {eyebrow && (
+              <p
+                className={`text-sm font-bold uppercase tracking-widest mb-4 ${
+                  tone === "kids" ? "text-kids-orange-ink" : tone === "exam" ? "text-academy-teal-dark" : "text-academy-teal"
+                }`}
+              >
+                {eyebrow}
+              </p>
+            )}
+            <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-ink max-w-3xl leading-tight">
+              {title}
+            </h1>
+            {sub && <div className="mt-5 text-lg text-slate leading-relaxed max-w-2xl">{sub}</div>}
+            {children && <div className="mt-8 flex flex-wrap gap-4">{children}</div>}
+          </div>
+          {art && (
+            <div>
+              <Art
+                src={art}
+                alt={artAlt}
+                priority
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+              {artStaging && <StagingNote />}
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );

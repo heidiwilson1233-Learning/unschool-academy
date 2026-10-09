@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Binary site imagery is rebuilt from image-blobs/*.b64 by scripts/write-images.mjs
+# (prebuild hook) — the GitHub push route only carries text files.
+/public/img/*.webp

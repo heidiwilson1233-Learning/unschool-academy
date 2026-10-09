@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Section, SectionHeading, Button, Card, FAQAccordion, Badge } from "@/components/ui";
 import { JftSampler, KidsSampler } from "@/components/samplers";
-import { Momo, Tara, Bobo } from "@/components/characters";
 
 export const metadata: Metadata = {
   title: "Unschool Academy — Don't just study. Practise until it makes sense.",
@@ -35,36 +34,55 @@ const FAQS = [
   },
 ];
 
+import { Art, StagingNote } from "@/components/site-art";
+
 export default function HomePage() {
   return (
     <>
-      {/* HERO */}
+      {/* HERO — MD: primary heading left, layered visual samplers right */}
       <div className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-academy-blue/10 via-canvas to-canvas pointer-events-none" aria-hidden />
         <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 pt-16 pb-12 md:pt-24 md:pb-16">
-          <p className="text-sm font-bold uppercase tracking-widest text-academy-teal mb-4">
-            Two doors. One promise: learn by doing.
-          </p>
-          <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-ink max-w-3xl leading-[1.08]">
-            Don&apos;t just study. Practise until it makes sense.
-          </h1>
-          <p className="mt-6 text-lg md:text-xl text-slate leading-relaxed max-w-2xl">
-            Crack your exam with practice that shows its work — or watch your four-year-old learn
-            counting from a mango thief. Every lesson here is something you <span className="font-semibold text-ink">do</span>, never
-            something you merely read.
-          </p>
-          <div className="mt-8 flex flex-wrap gap-4">
-            <Button href="/exams" size="lg">Explore Exams</Button>
-            <Button href="/kids" size="lg" variant="kids">Explore Kids</Button>
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+            <div>
+              <p className="text-sm font-bold uppercase tracking-widest text-academy-teal mb-4">
+                Two doors. One promise: learn by doing.
+              </p>
+              <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-ink leading-[1.08]">
+                Don&apos;t just study. Practise until it makes sense.
+              </h1>
+              <p className="mt-6 text-lg md:text-xl text-slate leading-relaxed">
+                Crack your exam with practice that shows its work — or watch your four-year-old learn
+                counting from a mango thief. Every lesson here is something you <span className="font-semibold text-ink">do</span>, never
+                something you merely read.
+              </p>
+              <div className="mt-8 flex flex-wrap gap-4">
+                <Button href="/exams" size="lg">Explore Exams</Button>
+                <Button href="/kids" size="lg" variant="kids">Explore Kids</Button>
+              </div>
+              <p className="mt-3 text-sm text-slate">Free 10-question diagnostic — no account needed.</p>
+            </div>
+            <Art
+              src="/img/hero-home.webp"
+              alt="A warm study desk at golden hour with floating glass cards showing a Japanese kana chart, a progress ring and an exam timer"
+              priority
+              sizes="(max-width: 1024px) 100vw, 50vw"
+            />
           </div>
-          <p className="mt-3 text-sm text-slate">Free 10-question diagnostic — no account needed.</p>
         </div>
       </div>
 
       {/* TWO PRODUCT CARDS */}
       <Section className="pt-4">
         <div className="grid md:grid-cols-2 gap-6">
-          <Card hover className="relative overflow-hidden">
+          <Card hover className="relative overflow-hidden !p-0">
+            <Art
+              src="/img/card-jft.webp"
+              alt="Study flashcards and an open notebook in warm window light"
+              ratio="card"
+              className="!rounded-none !border-0 !shadow-none"
+            />
+            <div className="p-6 md:p-8">
             <Badge tone="info">Unschool Exams</Badge>
             <h2 className="mt-4 text-2xl md:text-3xl font-extrabold text-ink">Exam prep that shows its work</h2>
             <p className="mt-3 text-slate leading-relaxed">
@@ -80,15 +98,21 @@ export default function HomePage() {
             <div className="mt-6">
               <Button href="/exams/jft-basic">Start with JFT-Basic</Button>
             </div>
-          </Card>
-          <Card hover className="relative overflow-hidden !bg-kids-cream !border-kids-orange/30">
-            <Badge tone="kids">Unschool Kids</Badge>
-            <div className="flex gap-3 mt-4" aria-hidden>
-              <Momo className="w-16 h-16 animate-idle" />
-              <Tara className="w-16 h-16 animate-idle" />
-              <Bobo className="w-16 h-16 animate-idle" />
             </div>
-            <h2 className="mt-3 text-2xl md:text-3xl font-extrabold text-ink">A village where learning feels like play</h2>
+          </Card>
+          <Card hover className="relative overflow-hidden !p-0 !bg-kids-cream !border-kids-orange/30">
+            <div>
+              <Art
+                src="/img/kids-world.webp"
+                alt="The Unschool Kids village: Momo's mango garden, Tara's story tree and Bobo's discovery pond under festival bunting"
+                ratio="card"
+                className="!rounded-none !border-0 !shadow-none"
+              />
+              <StagingNote className="px-6 md:px-8" />
+            </div>
+            <div className="p-6 md:p-8 pt-2">
+            <Badge tone="kids">Unschool Kids</Badge>
+            <h2 className="mt-4 text-2xl md:text-3xl font-extrabold text-ink">A village where learning feels like play</h2>
             <p className="mt-3 text-slate leading-relaxed">
               Momo, Tara and Bobo guide children from age 2 to Grade 5 through real interactive
               quests — counting mangoes, ordering stories, meeting the world — with gentle hints,
@@ -97,6 +121,7 @@ export default function HomePage() {
             <div className="mt-6 flex flex-wrap gap-3">
               <Button href="/kids" variant="kids">Enter Kids World</Button>
               <Button href="/kids/for-parents" variant="ghost">For parents</Button>
+            </div>
             </div>
           </Card>
         </div>

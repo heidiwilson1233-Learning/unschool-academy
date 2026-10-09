@@ -100,6 +100,17 @@ body {
 }
 @media (prefers-reduced-motion: reduce) {
   .animate-fade-up { animation: none; }
+  .faq-reveal { animation: none; }
+}
+
+/* FAQ answer reveal (run 22): masked clip wipe with the signature ease —
+   GPU-only (clip-path + opacity), never the banned fade-up. */
+@keyframes faq-reveal {
+  from { opacity: 0; clip-path: inset(0 0 100% 0); }
+  to { opacity: 1; clip-path: inset(0 0 0 0); }
+}
+.faq-reveal {
+  animation: faq-reveal 240ms var(--ease-signature, cubic-bezier(0.16, 1, 0.3, 1)) both;
 }
 
 /* Mango quest (run 16): GPU-only keyframes, transform/opacity only.

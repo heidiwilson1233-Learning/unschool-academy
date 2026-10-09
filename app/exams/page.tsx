@@ -25,6 +25,8 @@ export default function ExamsPage() {
         tone="exam"
         title="Pass the JFT-Basic with practice that shows its work"
         sub="Every program below is verified, reviewed, and actually built — you can start it right now. Our 500-exam research catalogue is research-labeled and never listed as live until each program earns its place here."
+        art="/img/card-exams.webp"
+        artAlt="An open passport, certificate scroll, pencil and reading glasses arranged on warm paper"
       >
         <Button href="/exams/jft-basic/diagnostic" size="lg">Try the free diagnostic</Button>
         <p className="w-full text-sm text-slate mt-1">Free · 10 questions · 5 minutes · no account needed</p>
