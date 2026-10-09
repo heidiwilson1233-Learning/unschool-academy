@@ -77,7 +77,7 @@ export function CheckoutButton({ productId, label }: { productId: string; label?
       <button
         onClick={buy}
         disabled={state === "busy"}
-        className="rounded-xl bg-academy-blue px-6 py-3 font-bold text-white hover:bg-academy-blue/90 transition-colors disabled:opacity-50 w-full sm:w-auto"
+        className="rounded-xl bg-academy-blue px-6 py-3 font-bold text-white hover:bg-academy-blue/90 transition-colors disabled:opacity-50 w-full sm:w-auto focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-kids-orange-deep"
       >
         {state === "busy" ? "Working…" : label ?? "Buy now"}
       </button>
