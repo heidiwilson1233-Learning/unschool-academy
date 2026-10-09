@@ -13,8 +13,8 @@
   --color-kids-lavender: #b9a5e5;
   --color-kids-lavender-deep: #7a5fc0;
   --color-kids-orange: #f2a66c;
-  --color-kids-orange-deep: #c97a2e;
-  --color-kids-orange-ink: #8a5418;
+  --color-kids-orange-deep: #c97a2e; /* 3.33:1 on white — decorative accents only, never small text */
+  --color-kids-orange-ink: #8a5418; /* 6.25:1 on white — the text-safe orange; NOTE: "ink" is DARKER than "deep" */
   --color-kids-leaf: #8dc6a7;
   --color-kids-leaf-deep: #3f7d5c;
   --color-kids-cream: #fff7e9;
@@ -100,6 +100,48 @@ body {
 }
 @media (prefers-reduced-motion: reduce) {
   .animate-fade-up { animation: none; }
+}
+
+/* Storybook village map (/kids/world): zero-JS SVG.
+   Node hover/active = transform-only (GPU-safe). Halo pulse is the single
+   continuous animation; reveal runs once via view-timeline (progressive
+   enhancement — elements keep their base visible state without timeline support). */
+.village-link { cursor: pointer; }
+.village-node {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+@media (hover: hover) {
+  .village-link:hover .village-node { transform: scale(1.08); }
+}
+.village-link:active .village-node { transform: scale(0.94); }
+.village-link:focus-visible { outline: 3px solid var(--color-kids-orange-deep); outline-offset: 4px; border-radius: 8px; }
+
+@keyframes village-halo {
+  0%, 100% { transform: scale(1); opacity: 0.55; }
+  50% { transform: scale(1.28); opacity: 0; }
+}
+.village-halo {
+  animation: village-halo 2.8s ease-out infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+@keyframes village-rise {
+  from { opacity: 0; transform: translateY(26px); }
+  to { opacity: 1; transform: none; }
+}
+.village-reveal {
+  animation: village-rise 0.9s var(--ease-signature, cubic-bezier(0.16, 1, 0.3, 1)) both;
+  animation-timeline: view();
+  animation-range: entry 0% cover 35%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .village-halo { animation: none; opacity: 0; }
+  .village-reveal { animation: none; }
+  .village-node { transition: none; }
 }
 
 /* Character idle bob */
