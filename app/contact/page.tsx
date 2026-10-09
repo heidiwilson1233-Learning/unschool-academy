@@ -1,87 +1,179 @@
-"use client";
+import type { Metadata } from "next";
+import Link from "next/link";
+import { Section, Breadcrumbs } from "@/components/ui";
+import { ContactForm } from "@/components/contact-form";
+import { ArrowUpRight } from "lucide-react";
 
-import { useState } from "react";
-import { Section, Button, Card, Breadcrumbs, PageHero, Callout } from "@/components/ui";
+export const metadata: Metadata = {
+  title: "Contact support",
+  description:
+    "Contact Unschool Academy: exam practice, kids accounts, billing, or privacy requests. A real person replies within 2 business days during the pilot.",
+  alternates: { canonical: "/contact" },
+  openGraph: {
+    title: "Contact support | Unschool Academy",
+    description:
+      "Exam practice, kids accounts, billing, or privacy requests — a real person replies within 2 business days during the pilot.",
+    type: "website",
+    url: "/contact",
+  },
+  twitter: {
+    card: "summary",
+    title: "Contact support | Unschool Academy",
+    description: "A real person replies within 2 business days during the pilot.",
+  },
+};
+
+/* Inline SVG grain (light surfaces only) — same recipe as sibling pages. */
+const GRAIN =
+  "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>\")";
+
+const TRAIL = [
+  { label: "Home", href: "/" },
+  { label: "Contact" },
+];
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: TRAIL.map((t, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    name: t.label,
+    item: "https://unschool.academy" + (t.href ?? "/contact"),
+  })),
+};
+
+/* Self-serve triage: deflect answerable questions before they become tickets. */
+const TRIAGE = [
+  {
+    label: "Quick question",
+    text: "Most answers are already written up.",
+    href: "/faq",
+    link: "Search the FAQ",
+  },
+  {
+    label: "Billing",
+    text: "Charges, passes, and refund questions.",
+    href: "/legal/refunds",
+    link: "Read the refund policy",
+  },
+  {
+    label: "Kids or parent account",
+    text: "Co-play, safety, and family settings.",
+    href: "/parent",
+    link: "Visit the Parent Hub",
+  },
+  {
+    label: "Privacy or data request",
+    text: "How we collect, use, and delete data.",
+    href: "/legal/child-privacy",
+    link: "Read the privacy policy",
+  },
+];
+
+const DOSSIER: [string, string][] = [
+  ["Replies", "Within 2 business days"],
+  ["Pilot note", "Human-reviewed. No bots."],
+  ["Support hours", "Pilot hours not published yet — email any time."],
+];
 
 export default function ContactPage() {
-  const [form, setForm] = useState({ name: "", email: "", topic: "General", message: "" });
-  const [errors, setErrors] = useState<Record<string, string>>({});
-  const [sent, setSent] = useState(false);
-
-  const submit = (e: React.FormEvent) => {
-    e.preventDefault();
-    const errs: Record<string, string> = {};
-    if (form.name.trim().length < 2) errs.name = "Please enter your name.";
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) errs.email = "Please enter a valid email.";
-    if (form.message.trim().length < 10) errs.message = "Please describe your issue in a little more detail (10+ characters).";
-    setErrors(errs);
-    if (Object.keys(errs).length === 0) {
-      // Pilot: no ticket backend yet — compose a real email the user sends themselves.
-      const subject = encodeURIComponent(`[Unschool Academy] ${form.topic} — ${form.name}`);
-      const body = encodeURIComponent(`${form.message}\n\n— ${form.name} (${form.email})`);
-      window.location.href = `mailto:support@unschool.academy?subject=${subject}&body=${body}`;
-      setSent(true);
-    }
-  };
-
-  const field = "w-full rounded-xl border border-border px-4 py-3 text-base focus:border-academy-blue bg-paper";
-
   return (
     <>
-      <PageHero eyebrow="Support" title="Talk to a human" sub="We reply within 2 business days during the pilot. For children's privacy requests, use the Parent Hub." />
+      {/* Authored hero (server-rendered): type-as-hero, grain + ambient glows, no gradient hero */}
+      <div className="relative overflow-hidden border-b border-border">
+        <div
+          aria-hidden
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            backgroundImage: GRAIN,
+            opacity: 0.16,
+            mixBlendMode: "multiply",
+          }}
+        />
+        <div
+          aria-hidden
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            background:
+              "radial-gradient(42rem 20rem at 18% 0%, rgba(45,127,158,0.14), transparent 70%), radial-gradient(36rem 18rem at 88% 30%, rgba(47,111,181,0.10), transparent 70%)",
+          }}
+        />
+        <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 pt-10 md:pt-14 pb-12 md:pb-16">
+          <Breadcrumbs trail={TRAIL} />
+          <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-academy-teal-dark mb-4">
+            Support
+          </p>
+          <h1 className="text-[clamp(2.75rem,7vw,4.75rem)] font-extrabold tracking-[-0.03em] leading-[1.02] text-ink text-balance max-w-3xl">
+            Talk to a human.
+          </h1>
+          <p className="mt-5 text-lg text-slate leading-relaxed max-w-2xl">
+            No bot maze. Email us any time and a real person replies within 2 business days. For
+            children&rsquo;s privacy requests, visit the{" "}
+            <Link href="/parent" className="text-academy-blue font-semibold hover:underline">
+              Parent Hub
+            </Link>
+            .
+          </p>
+        </div>
+      </div>
+
       <Section>
-        <div className="max-w-2xl mx-auto">
-          <Breadcrumbs trail={[{ label: "Home", href: "/" }, { label: "Contact" }]} />
-          {sent ? (
-            <Card className="text-center !p-10 animate-fade-up">
-              <p className="text-4xl mb-4" aria-hidden>✉️</p>
-              <h2 className="text-2xl font-extrabold text-ink">Your email app should have opened</h2>
-              <p className="text-slate mt-3">
-                During the pilot, support runs through email. Your message was composed and addressed
-                to our support inbox — just hit send. We reply within 2 business days.
-              </p>
-              <div className="mt-6"><Button variant="secondary" onClick={() => setSent(false)}>Write another message</Button></div>
-            </Card>
-          ) : (
-            <Card>
-              <form onSubmit={submit} noValidate>
-                <div className="grid sm:grid-cols-2 gap-4">
-                  <div>
-                    <label htmlFor="c-name" className="block font-semibold text-ink mb-1.5 text-sm">Name</label>
-                    <input id="c-name" className={field} value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} />
-                    {errors.name && <p className="text-sm text-red-600 mt-1">{errors.name}</p>}
-                  </div>
-                  <div>
-                    <label htmlFor="c-email" className="block font-semibold text-ink mb-1.5 text-sm">Email</label>
-                    <input id="c-email" type="email" className={field} value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} />
-                    {errors.email && <p className="text-sm text-red-600 mt-1">{errors.email}</p>}
-                  </div>
-                </div>
-                <div className="mt-4">
-                  <label htmlFor="c-topic" className="block font-semibold text-ink mb-1.5 text-sm">Topic</label>
-                  <select id="c-topic" className={field} value={form.topic} onChange={(e) => setForm({ ...form, topic: e.target.value })}>
-                    <option>General</option>
-                    <option>Exam practice / content issue</option>
-                    <option>Kids / parent account</option>
-                    <option>Billing</option>
-                    <option>Privacy / data request</option>
-                  </select>
-                </div>
-                <div className="mt-4">
-                  <label htmlFor="c-msg" className="block font-semibold text-ink mb-1.5 text-sm">Message</label>
-                  <textarea id="c-msg" rows={5} className={field} value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })} placeholder="What happened? What did you expect?" />
-                  {errors.message && <p className="text-sm text-red-600 mt-1">{errors.message}</p>}
-                </div>
-                <Callout title="Pilot support" tone="info">
-                  Our ticket backend isn't live yet — submitting opens your email app with the message
-                  pre-addressed to support. Nothing is sent silently, and nothing is stored.
-                </Callout>
-                <Button type="submit" size="lg" className="w-full">Send message</Button>
-              </form>
-            </Card>
-          )}
+        <div className="grid gap-10 lg:grid-cols-6 lg:gap-12">
+          {/* Triage rail — first on mobile, sticky on desktop */}
+          <aside className="lg:col-span-2 lg:order-1">
+            <div className="lg:sticky lg:top-24 space-y-10">
+              <nav aria-label="Before you write">
+                <h2 className="font-mono text-[11px] uppercase tracking-[0.22em] text-academy-teal-dark mb-4">
+                  Before you write
+                </h2>
+                <ul className="divide-y divide-border border-y border-border">
+                  {TRIAGE.map((t) => (
+                    <li key={t.label} className="py-4">
+                      <p className="font-bold text-ink text-[15px]">{t.label}</p>
+                      <p className="text-sm text-slate mt-0.5 leading-relaxed">{t.text}</p>
+                      <Link
+                        href={t.href}
+                        className="inline-flex items-center gap-1 text-sm font-semibold text-academy-blue hover:underline mt-1.5"
+                      >
+                        {t.link}
+                        <ArrowUpRight className="h-3.5 w-3.5" aria-hidden />
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+              <div>
+                <h2 className="font-mono text-[11px] uppercase tracking-[0.22em] text-academy-teal-dark mb-4">
+                  What to expect
+                </h2>
+                <dl className="divide-y divide-border border-y border-border">
+                  {DOSSIER.map(([term, desc]) => (
+                    <div key={term} className="py-3 flex gap-4 text-[15px]">
+                      <dt className="w-28 shrink-0 font-semibold text-ink">{term}</dt>
+                      <dd className="text-slate leading-relaxed">{desc}</dd>
+                    </div>
+                  ))}
+                </dl>
+                <p role="note" className="text-sm text-slate leading-relaxed mt-4">
+                  Our ticket backend isn&rsquo;t live yet. Submitting opens your email app with the
+                  message pre-addressed to support. Nothing is sent silently, and nothing is stored.
+                </p>
+              </div>
+            </div>
+          </aside>
+
+          {/* The form — the action side of the dossier */}
+          <div className="lg:col-span-4 lg:order-2">
+            <ContactForm />
+          </div>
         </div>
       </Section>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
     </>
   );
 }
