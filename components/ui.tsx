@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState, type ReactNode } from "react";
+import { useState, type ReactNode, type Ref } from "react";
 
 /* ---------- Buttons ---------- */
 
@@ -14,6 +14,7 @@ type ButtonProps = {
   onClick?: () => void;
   type?: "button" | "submit";
   disabled?: boolean;
+  ref?: Ref<HTMLButtonElement | HTMLAnchorElement>;
 };
 
 export function Button({
@@ -25,9 +26,10 @@ export function Button({
   onClick,
   type = "button",
   disabled = false,
+  ref,
 }: ButtonProps) {
   const base =
-    "inline-flex items-center justify-center gap-2 font-semibold rounded-xl transition-all duration-200 select-none disabled:opacity-50 disabled:cursor-not-allowed";
+    "inline-flex items-center justify-center gap-2 font-semibold rounded-xl transition-[color,background-color,border-color,box-shadow,transform] duration-200 select-none disabled:opacity-50 disabled:cursor-not-allowed focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-academy-teal";
   const sizes = {
     sm: "px-4 py-2 text-sm",
     md: "px-6 py-3 text-base",
@@ -36,20 +38,20 @@ export function Button({
   const variants = {
     primary: "bg-academy-blue text-white hover:bg-academy-blue-dark shadow-sm hover:shadow",
     secondary: "bg-white text-academy-blue border-2 border-academy-blue hover:bg-academy-blue/5",
-    kids: "bg-kids-orange text-ink hover:bg-kids-orange-deep hover:text-ink shadow-sm hover:shadow rounded-2xl",
+    kids: "bg-kids-orange text-ink border-2 border-b-4 border-kids-orange-deep rounded-2xl hover:bg-kids-orange-deep active:translate-y-[3px] active:border-b-2 focus-visible:outline-kids-orange-deep",
     ghost: "text-academy-blue hover:bg-academy-blue/5",
     dark: "bg-ink text-white hover:bg-academy-blue-dark",
   };
   const cls = `${base} ${sizes[size]} ${variants[variant]} ${className}`;
   if (href && !disabled) {
     return (
-      <Link href={href} className={cls} onClick={onClick}>
+      <Link href={href} className={cls} onClick={onClick} ref={ref as Ref<HTMLAnchorElement>}>
         {children}
       </Link>
     );
   }
   return (
-    <button type={type} className={cls} onClick={onClick} disabled={disabled}>
+    <button type={type} className={cls} onClick={onClick} disabled={disabled} ref={ref as Ref<HTMLButtonElement>}>
       {children}
     </button>
   );
@@ -120,7 +122,7 @@ export function Card({
   return (
     <div
       className={`bg-paper border border-border rounded-2xl p-6 md:p-8 shadow-sm ${
-        hover ? "transition-all duration-200 hover:shadow-md hover:-translate-y-0.5" : ""
+        hover ? "transition-[box-shadow,transform] duration-200 ease-[var(--ease-signature)] hover:shadow-md hover:-translate-y-0.5" : ""
       } ${className}`}
     >
       {children}
@@ -227,13 +229,29 @@ export function Callout({
 }) {
   const tones = {
     info: "border-academy-blue/30 bg-academy-blue/5",
-    warning: "border-amber-300 bg-amber-50",
+    warning: "border-amber-300/70 bg-amber-50",
     kids: "border-kids-orange/40 bg-kids-cream",
   };
+  const markers = {
+    info: "bg-academy-blue",
+    warning: "bg-amber-500",
+    kids: "bg-kids-orange-deep",
+  };
   return (
-    <div className={`border-l-4 rounded-r-xl p-5 my-6 ${tones[tone]}`}>
-      {title && <p className="font-bold text-ink mb-1">{title}</p>}
-      <div className="text-slate leading-relaxed text-[15px]">{children}</div>
+    <div
+      role="note"
+      className={`border rounded-xl p-5 md:p-6 my-6 ${tones[tone]}`}
+    >
+      <div className="flex items-start gap-3">
+        <span
+          aria-hidden
+          className={`mt-1.5 inline-block h-2 w-2 shrink-0 rounded-full ${markers[tone]}`}
+        />
+        <div>
+          {title && <p className="font-bold text-ink mb-1">{title}</p>}
+          <div className="text-slate leading-relaxed text-[15px]">{children}</div>
+        </div>
+      </div>
     </div>
   );
 }
