@@ -14,23 +14,27 @@ export type DiagnosticQuestion = {
   correctId: string;
   explanation: string;
   audioTextJp?: string; // spoken via browser TTS in the player; transcript always shown
+  /** Curriculum skill id (content/curriculum/jft-basic taxonomy) — powers the skill gap map. */
+  skill: string;
 };
 
 export const DIAGNOSTIC_QUESTIONS: DiagnosticQuestion[] = [
   {
     id: "jft-d01",
+    skill: "kanji-reading",
     topic: "Script and Vocabulary",
-    stem: "Choose the correct reading of the underlined word: 毎朝７時に起きます。",
+    stem: "Choose the correct reading of 毎朝: 毎朝７時に起きます。",
     options: [
       { id: "a", text: "まいあさ", textJp: "まいあさ" },
       { id: "b", text: "ごとあさ", textJp: "ごとあさ" },
       { id: "c", text: "まいにちあさ", textJp: "まいにちあさ" },
     ],
     correctId: "a",
-    explanation: "毎朝 reads まいあさ (maiasa) — “every morning”. 毎 (every) + 朝 (morning). A daily-routine word you will see constantly in JFT-Basic.",
+    explanation: "毎朝 reads まいあさ (maiasa) — “every morning”. 毎 (every) + 朝 (morning).",
   },
   {
     id: "jft-d02",
+    skill: "expression",
     topic: "Conversation and Expression",
     stem: "It is 8pm. You meet your neighbour in the hallway. What do you say?",
     options: [
@@ -43,6 +47,7 @@ export const DIAGNOSTIC_QUESTIONS: DiagnosticQuestion[] = [
   },
   {
     id: "jft-d03",
+    skill: "information-search",
     topic: "Reading Comprehension",
     stem: "You see this sign at a station: 出口. What does it mean?",
     options: [
@@ -51,10 +56,11 @@ export const DIAGNOSTIC_QUESTIONS: DiagnosticQuestion[] = [
       { id: "c", text: "Ticket gate", textJp: "改札" },
     ],
     correctId: "b",
-    explanation: "出口 (deguchi) means “exit” — 出 (go out) + 口 (mouth/opening). Its opposite, 入口 (iriguchi), means entrance. Station kanji are high-frequency JFT vocabulary.",
+    explanation: "出口 (deguchi) means “exit” — 出 (go out) + 口 (mouth/opening). Its opposite, 入口 (iriguchi), means entrance.",
   },
   {
     id: "jft-d04",
+    skill: "expression",
     topic: "Conversation and Expression",
     stem: "A shop clerk hands you your change and says: ありがとうございました. The natural reply is…",
     options: [
@@ -67,6 +73,7 @@ export const DIAGNOSTIC_QUESTIONS: DiagnosticQuestion[] = [
   },
   {
     id: "jft-d05",
+    skill: "word-usage",
     topic: "Script and Vocabulary",
     stem: "Fill the blank: わたしは 毎日 ___ で 会社に 行きます。",
     options: [
@@ -79,6 +86,7 @@ export const DIAGNOSTIC_QUESTIONS: DiagnosticQuestion[] = [
   },
   {
     id: "jft-d06",
+    skill: "listening-announcements",
     topic: "Listening Comprehension",
     stem: "Listen: 「あしたは あめです。かさを もって いって ください。」 What should you do tomorrow?",
     stemJp: "あしたは あめです。かさを もって いって ください。",
@@ -93,6 +101,7 @@ export const DIAGNOSTIC_QUESTIONS: DiagnosticQuestion[] = [
   },
   {
     id: "jft-d07",
+    skill: "information-search",
     topic: "Reading Comprehension",
     stem: "A notice at your apartment says: ゴミは 火曜日に 出してください. When do you put out the rubbish?",
     options: [
@@ -105,6 +114,7 @@ export const DIAGNOSTIC_QUESTIONS: DiagnosticQuestion[] = [
   },
   {
     id: "jft-d08",
+    skill: "expression",
     topic: "Conversation and Expression",
     stem: "Your coworker says: おつかれさまでした. You are leaving the office. You reply…",
     options: [
@@ -117,6 +127,7 @@ export const DIAGNOSTIC_QUESTIONS: DiagnosticQuestion[] = [
   },
   {
     id: "jft-d09",
+    skill: "word-meaning",
     topic: "Script and Vocabulary",
     stem: "Choose the word that means “cheap / inexpensive”:",
     options: [
@@ -129,6 +140,7 @@ export const DIAGNOSTIC_QUESTIONS: DiagnosticQuestion[] = [
   },
   {
     id: "jft-d10",
+    skill: "listening-conversation",
     topic: "Listening Comprehension",
     stem: "Listen: 「すみません、えきは どこですか。」「まっすぐ いって、ひだりに まがって ください。」 Where is the station?",
     stemJp: "すみません、えきは どこですか。まっすぐ いって、ひだりに まがって ください。",
@@ -149,6 +161,43 @@ export const TOPIC_INFO: Record<DiagnosticQuestion["topic"], string> = {
   "Listening Comprehension": "Understanding everyday conversations, instructions and announcements.",
   "Reading Comprehension": "Understanding letters, notices, explanations and other everyday texts.",
 };
+
+/**
+ * Skill taxonomy for the JFT-Basic diagnostic — mirrors the curriculum units in
+ * content/curriculum/jft-basic (skill ids match the unit.json `skills` lists).
+ * `practiceSlug` routes a skill's "fix it" CTA to the matching practice topic.
+ */
+export const DIAGNOSTIC_SKILL_INFO: Record<
+  string,
+  { label: string; topic: DiagnosticQuestion["topic"]; practiceSlug: string }
+> = {
+  "kanji-reading": { label: "Kanji readings", topic: "Script and Vocabulary", practiceSlug: "vocabulary" },
+  "word-meaning": { label: "Word meanings", topic: "Script and Vocabulary", practiceSlug: "vocabulary" },
+  "word-usage": { label: "Using words in sentences", topic: "Script and Vocabulary", practiceSlug: "vocabulary" },
+  "kanji-meaning-usage": { label: "Kanji meanings", topic: "Script and Vocabulary", practiceSlug: "vocabulary" },
+  "grammar": { label: "Grammar", topic: "Conversation and Expression", practiceSlug: "conversation" },
+  "expression": { label: "Everyday expressions", topic: "Conversation and Expression", practiceSlug: "conversation" },
+  "listening-conversation": { label: "Everyday conversations", topic: "Listening Comprehension", practiceSlug: "listening" },
+  "listening-shops": { label: "Shop exchanges", topic: "Listening Comprehension", practiceSlug: "listening" },
+  "listening-announcements": { label: "Instructions and announcements", topic: "Listening Comprehension", practiceSlug: "listening" },
+  "reading-messages": { label: "Short messages", topic: "Reading Comprehension", practiceSlug: "reading" },
+  "information-search": { label: "Finding information", topic: "Reading Comprehension", practiceSlug: "reading" },
+};
+
+/** Skills in curriculum order, grouped by topic — the gap-map render order. */
+export const DIAGNOSTIC_SKILL_ORDER: string[] = [
+  "kanji-reading",
+  "word-meaning",
+  "word-usage",
+  "kanji-meaning-usage",
+  "grammar",
+  "expression",
+  "listening-conversation",
+  "listening-shops",
+  "listening-announcements",
+  "reading-messages",
+  "information-search",
+];
 
 export const JFT_PROGRAM = {
   slug: "jft-basic",

@@ -9,7 +9,17 @@ export function speakJapanese(text: string) {
   window.speechSynthesis.speak(u);
 }
 
-export function recordAttempt(entry: { kind: string; topic?: string; score: number; total: number; at: string }) {
+export type AttemptSkill = { skill: string; correct: number; total: number };
+
+export function recordAttempt(entry: {
+  kind: string;
+  topic?: string;
+  score: number;
+  total: number;
+  at: string;
+  /** Per-skill results, when the attempt produced them (diagnostic v2) — feeds mastery views. */
+  skills?: AttemptSkill[];
+}) {
   try {
     const key = "ua-attempts";
     const prev = JSON.parse(localStorage.getItem(key) ?? "[]");
