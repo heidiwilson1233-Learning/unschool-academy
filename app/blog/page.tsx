@@ -83,7 +83,7 @@ const POSTS: {
   {
     slug: "jft-listening-two-plays",
     badge: "Japanese learning",
-    title: "The two plays you get: how JFT listening actually works",
+    title: "The Two Plays You Get: How JFT Listening Actually Works",
     excerptText:
       "Two plays, no going back. How to split the work: the situation on play one, the turn on play two.",
     excerpt: (
