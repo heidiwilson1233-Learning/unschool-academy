@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function NoScorePost() {
   return (
     <>
-      <PageHero eyebrow="For parents" title="Why your child doesn't need a score" sub="October 2026 · 3 min read" />
+      <PageHero eyebrow="For parents" title="Why your child doesn't need a score" sub="October 2026 · 2 min read" />
       <Section>
         <article className="max-w-3xl mx-auto">
           <Breadcrumbs trail={[{ label: "Home", href: "/" }, { label: "Blog", href: "/blog" }, { label: "No scores for children" }]} />

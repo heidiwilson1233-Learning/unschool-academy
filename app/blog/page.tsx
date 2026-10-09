@@ -49,7 +49,7 @@ const POSTS: {
         what honest scoring looks like instead.
       </>
     ),
-    readTime: "2 min read",
+    readTime: "1 min read",
   },
   {
     slug: "station-kanji",

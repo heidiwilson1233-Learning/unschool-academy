@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function PercentilesPost() {
   return (
     <>
-      <PageHero eyebrow="How we build" title="Why we don't do percentiles" sub="October 2026 · 3 min read" />
+      <PageHero eyebrow="How we build" title="Why we don't do percentiles" sub="October 2026 · 1 min read" />
       <Section>
         <article className="max-w-3xl mx-auto">
           <Breadcrumbs trail={[{ label: "Home", href: "/" }, { label: "Blog", href: "/blog" }, { label: "Why no percentiles" }]} />

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function ListeningPost() {
   return (
     <>
-      <PageHero eyebrow="Japanese learning" title="The two plays you get" sub="October 2026 · 4 min read" />
+      <PageHero eyebrow="Japanese learning" title="The two plays you get" sub="October 2026 · 2 min read" />
       <Section>
         <article className="max-w-3xl mx-auto">
           <Breadcrumbs trail={[{ label: "Home", href: "/" }, { label: "Blog", href: "/blog" }, { label: "The two plays you get" }]} />
