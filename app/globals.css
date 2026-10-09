@@ -32,6 +32,11 @@
      downloaded weights actually render instead of falling back to system sans. */
   --font-sans: var(--font-noto-sans), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-jp: var(--font-noto-sans-jp), "Noto Sans JP", ui-sans-serif, system-ui, sans-serif;
+
+  /* Editorial display serif: Georgia system stack, zero font-download risk.
+     Run 25 (/blog) deliberately chose this over a next/font serif so the
+     editorial register costs zero runtime and zero build-time network. */
+  --font-display: Georgia, "Times New Roman", "Noto Serif", serif;
 }
 
 html {

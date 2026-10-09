@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import { Section, Breadcrumbs, PageHero } from "@/components/ui";
 
 export const metadata: Metadata = {
-  title: "4 Station Kanji That Unlock the Whole Station",
+  title: "4 Station Kanji That Make Any Japanese Station Readable",
   description: "Learn 出口, 入口, 改札, and 乗換 as pairs — the four kanji compounds that make Japanese stations navigable.",
 };
 
 export default function StationKanjiPost() {
   return (
     <>
-      <PageHero eyebrow="Japanese learning" title="4 station kanji that unlock the whole station" sub="October 2026 · 4 min read · Reviewed draft" />
+      <PageHero eyebrow="Japanese learning" title="4 station kanji that make any Japanese station readable" sub="October 2026 · 2 min read · Reviewed draft" />
       <Section>
         <article className="max-w-3xl mx-auto">
           <Breadcrumbs trail={[{ label: "Home", href: "/" }, { label: "Blog", href: "/blog" }, { label: "Station kanji" }]} />
