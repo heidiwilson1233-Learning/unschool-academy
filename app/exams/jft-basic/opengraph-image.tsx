@@ -1,4 +1,5 @@
 import { ImageResponse } from "next/og";
+import { PRACTICE_QUESTIONS } from "@/lib/practice";
 
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
@@ -50,8 +51,8 @@ export default function OgImage() {
         >
           that shows its work.
         </div>
-        <div style={{ fontSize: 28, color: "#59677c", marginTop: 28 }}>
-          Free 10-question diagnostic · 20 practice questions · 30-minute mock
+        <div style={{ fontSize: 28, color: "#59677c", marginTop: 28, display: "flex" }}>
+          Free 10-question diagnostic · {PRACTICE_QUESTIONS.length} practice questions · 30-minute mock
         </div>
       </div>
     ),

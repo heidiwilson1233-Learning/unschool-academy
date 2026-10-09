@@ -28,5 +28,7 @@ export async function POST(req: Request) {
     correctLabel: correctOption.text,
     correctLabelJp: correctOption.textJp ?? null,
     explanation: q.explanation,
+    version: q.version,
+    status: q.status,
   });
 }

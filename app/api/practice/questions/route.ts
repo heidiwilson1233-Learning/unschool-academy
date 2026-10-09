@@ -18,6 +18,9 @@ export async function GET(req: Request) {
   const questions = practiceByTopic(topic).map((q) => ({
     id: q.id,
     topic: q.topic,
+    skill: q.skill,
+    skillLabel: q.skillLabel,
+    version: q.version,
     stem: q.stem,
     stemJp: q.stemJp ?? null,
     options: q.options.map((o) => ({ id: o.id, text: o.text, textJp: o.textJp ?? null })),
@@ -25,7 +28,7 @@ export async function GET(req: Request) {
     hint: q.hint,
   }));
   return NextResponse.json({
-    version: "practice-v1-draft",
+    version: "practice-v2-curriculum",
     reviewStatus: "draft — pending Japanese SME review",
     topic,
     total: questions.length,

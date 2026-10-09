@@ -1,5 +1,8 @@
 import { NextResponse } from "next/server";
-import { PRACTICE_QUESTIONS } from "@/lib/practice";
+import { mockQuestions } from "@/lib/practice";
+
+/** The timed mock is a curated, frozen set — practice content batches never change it. */
+const MOCK_SET = mockQuestions();
 
 export const MOCK_TIME_LIMIT_SEC = 30 * 60; // 30 minutes
 const GRACE_SEC = 60;
@@ -9,7 +12,7 @@ const GRACE_SEC = 60;
  * Returns a server timestamp; the score endpoint enforces the time limit.
  */
 export async function GET() {
-  const questions = PRACTICE_QUESTIONS.map((q) => ({
+  const questions = MOCK_SET.map((q) => ({
     id: q.id,
     topic: q.topic,
     stem: q.stem,
@@ -51,7 +54,7 @@ export async function POST(req: Request) {
   }
 
   const answers = body.answers ?? {};
-  const details = PRACTICE_QUESTIONS.map((q) => {
+  const details = MOCK_SET.map((q) => {
     const pickedId = answers[q.id] ?? null;
     const correct = pickedId === q.correctId;
     const correctOption = q.options.find((o) => o.id === q.correctId)!;

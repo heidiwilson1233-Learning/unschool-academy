@@ -2,6 +2,10 @@ import type { Metadata } from "next";
 import { Section, Breadcrumbs, Button } from "@/components/ui";
 import { CheckoutButton } from "@/components/checkout-button";
 import { Art, StagingNote } from "@/components/site-art";
+import { PRACTICE_QUESTIONS } from "@/lib/practice";
+
+/** Live practice-bank count from the curriculum — never hardcoded. */
+const PRACTICE_COUNT = PRACTICE_QUESTIONS.length;
 
 const TRAIL = [{ label: "Home", href: "/" }, { label: "Pricing" }];
 
@@ -41,7 +45,7 @@ const GRAIN =
 
 const CONTENT_STATE: Array<[string, string]> = [
   ["Free", "10-question diagnostic. No account needed."],
-  ["Practice bank", "20 original questions. Drafts pending expert review."],
+  ["Practice bank", `${PRACTICE_COUNT} original questions. Drafts pending expert review.`],
   ["Timed mock", "30 minutes, drawn from the same draft set."],
   ["Kids library", "6 quest briefs in the bank. 2 playable today."],
   ["Checkout", "Test mode. No real charges while the pilot runs."],
@@ -215,7 +219,7 @@ export default function PricingPage() {
                   rows={[
                     [
                       "What's included",
-                      "Topic practice path: 20 original questions across 4 topics (drafts pending expert review). 30-minute timed mock drawn from the same draft set. Study plan + attempt history.",
+                      `${PRACTICE_COUNT} original questions across 4 topics (drafts pending expert review). 30-minute timed mock drawn from the same draft set. Study plan + attempt history.`,
                     ],
                     [
                       "Access & billing",

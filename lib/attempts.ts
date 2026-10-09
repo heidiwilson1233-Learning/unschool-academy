@@ -19,6 +19,8 @@ export function recordAttempt(entry: {
   at: string;
   /** Per-skill results, when the attempt produced them (diagnostic v2) — feeds mastery views. */
   skills?: AttemptSkill[];
+  /** Content payload version the learner saw (e.g. "practice-v2-curriculum") — per content-schema rule 4. */
+  contentVersion?: string;
 }) {
   try {
     const key = "ua-attempts";

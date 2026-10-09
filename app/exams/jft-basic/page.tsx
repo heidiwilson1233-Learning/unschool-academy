@@ -2,7 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Section, SectionHeading, Button, Card, Badge, Breadcrumbs, FAQAccordion, Callout } from "@/components/ui";
 import { JFT_PROGRAM, TOPIC_INFO, DIAGNOSTIC_QUESTIONS } from "@/lib/exams";
-import { PRACTICE_TOPICS, practiceByTopic } from "@/lib/practice";
+import { PRACTICE_TOPICS, practiceByTopic, PRACTICE_QUESTIONS, MOCK_QUESTION_IDS } from "@/lib/practice";
+
+/** Live counts from the curriculum bank — never hardcoded. */
+const PRACTICE_COUNT = PRACTICE_QUESTIONS.length;
+const MOCK_COUNT = MOCK_QUESTION_IDS.length;
 import { Art } from "@/components/site-art";
 
 export const metadata: Metadata = {
@@ -13,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "JFT-Basic Practice — Everyday Japanese",
     description:
-      "Free 10-question diagnostic, 20 topic practice questions, and a 30-minute timed mock. Independent JFT-Basic preparation, not affiliated with the Japan Foundation.",
+      `Free 10-question diagnostic, ${PRACTICE_COUNT} topic practice questions, and a 30-minute timed mock. Independent JFT-Basic preparation, not affiliated with the Japan Foundation.`,
     type: "website",
     url: "/exams/jft-basic",
   },
@@ -46,7 +50,7 @@ const FAQS = [
   },
   {
     q: "What do the paid plans include?",
-    a: "The 60-day pilot pass adds the full topic practice path (all four topics, 20 questions) and the 20-question timed mock. All questions are original drafts pending Japanese SME review. Exact question counts are published only for reviewed, live content.",
+    a: `The 60-day pilot pass adds the full topic practice path (all four topics, ${PRACTICE_COUNT} questions) and the ${MOCK_COUNT}-question timed mock. All questions are original drafts pending Japanese SME review. Exact question counts are published only for reviewed, live content.`,
   },
 ];
 
@@ -186,11 +190,11 @@ export default function JftBasicPage() {
             </div>
             <div className="flex items-baseline gap-3">
               <dt className="font-mono text-[11px] font-bold uppercase tracking-[0.18em] text-slate">Practice</dt>
-              <dd className="font-bold text-ink tabular-nums">20 questions · 4 topics</dd>
+              <dd className="font-bold text-ink tabular-nums">{PRACTICE_COUNT} questions · 4 topics</dd>
             </div>
             <div className="flex items-baseline gap-3">
               <dt className="font-mono text-[11px] font-bold uppercase tracking-[0.18em] text-slate">Mock</dt>
-              <dd className="font-bold text-ink tabular-nums">20 questions · 30 minutes</dd>
+              <dd className="font-bold text-ink tabular-nums">{MOCK_COUNT} questions · 30 minutes</dd>
             </div>
           </dl>
         </div>
@@ -483,7 +487,7 @@ export default function JftBasicPage() {
             <dl className="mt-6 border-t border-border divide-y divide-border">
               <div className="py-3.5 flex flex-col sm:flex-row sm:gap-6">
                 <dt className="shrink-0 w-40 font-mono text-[11px] font-bold uppercase tracking-[0.18em] text-slate pt-0.5">What&apos;s included</dt>
-                <dd className="text-[15px] text-slate leading-relaxed">Topic practice path: 20 original questions across 4 topics (drafts pending expert review). 30-minute timed mock drawn from the same draft set.</dd>
+                <dd className="text-[15px] text-slate leading-relaxed">Topic practice path: {PRACTICE_COUNT} original questions across 4 topics (drafts pending expert review). 30-minute timed mock drawn from the same draft set.</dd>
               </div>
               <div className="py-3.5 flex flex-col sm:flex-row sm:gap-6">
                 <dt className="shrink-0 w-40 font-mono text-[11px] font-bold uppercase tracking-[0.18em] text-slate pt-0.5">Roadmap</dt>
@@ -504,7 +508,7 @@ export default function JftBasicPage() {
             </p>
             <ul className="mt-6 space-y-2.5 text-[15px] text-slate">
               <li className="flex gap-3"><span className="text-academy-teal font-bold" aria-hidden="true">✓</span> 10-question diagnostic</li>
-              <li className="flex gap-3"><span className="text-academy-teal font-bold" aria-hidden="true">✓</span> 20 topic practice questions (draft)</li>
+              <li className="flex gap-3"><span className="text-academy-teal font-bold" aria-hidden="true">✓</span> {PRACTICE_COUNT} topic practice questions (draft)</li>
               <li className="flex gap-3"><span className="text-academy-teal font-bold" aria-hidden="true">✓</span> 30-minute timed mock</li>
               <li className="flex gap-3"><span className="text-academy-teal font-bold" aria-hidden="true">✓</span> Topic breakdown + draft explanations</li>
             </ul>
