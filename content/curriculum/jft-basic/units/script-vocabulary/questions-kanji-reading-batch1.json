@@ -1,0 +1,542 @@
+[
+  {
+    "id": "jft-sv-kr-001",
+    "skill": "kanji-reading",
+    "type": "mcq",
+    "difficulty": 1,
+    "stem": "まいにち 図書館で 本を 読みます。Choose the reading of 図書館.",
+    "stemJp": "まいにち ＿＿＿ で 本を 読みます。",
+    "options": [
+      {
+        "id": "a",
+        "text": "toshokan",
+        "textJp": "としょかん"
+      },
+      {
+        "id": "b",
+        "text": "dokushokan",
+        "textJp": "どくしょかん"
+      },
+      {
+        "id": "c",
+        "text": "honya",
+        "textJp": "ほんや"
+      },
+      {
+        "id": "d",
+        "text": "toshiokan",
+        "textJp": "としおかん"
+      }
+    ],
+    "answer": 0,
+    "explanation": "図書館 is read としょかん (toshokan) and means 'library'. 読書館 is not a word; 本屋 (honya) is 'bookstore'.",
+    "hint": "You borrow books here — think としょかん.",
+    "source": "Japan Foundation JFT-Basic official test structure — Script and Vocabulary / Kanji reading category (jpf.go.jp/jft-basic); vocabulary at JF Standard A1-A2",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jft-sv-kr-002",
+    "skill": "kanji-reading",
+    "type": "mcq",
+    "difficulty": 1,
+    "stem": "駅の 前で 友だちに 会いました。Choose the reading of 駅.",
+    "stemJp": "＿＿＿ の 前で 友だちに 会いました。",
+    "options": [
+      {
+        "id": "a",
+        "text": "eki",
+        "textJp": "えき"
+      },
+      {
+        "id": "b",
+        "text": "machi",
+        "textJp": "まち"
+      },
+      {
+        "id": "c",
+        "text": "hashi",
+        "textJp": "はし"
+      },
+      {
+        "id": "d",
+        "text": "michi",
+        "textJp": "みち"
+      }
+    ],
+    "answer": 0,
+    "explanation": "駅 is read えき (eki) and means 'station'. 町 (machi) is 'town', 橋 (hashi) is 'bridge', 道 (michi) is 'road'.",
+    "hint": "Trains stop here — えき.",
+    "source": "Japan Foundation JFT-Basic official test structure — Script and Vocabulary / Kanji reading category (jpf.go.jp/jft-basic); vocabulary at JF Standard A1-A2",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jft-sv-kr-003",
+    "skill": "kanji-reading",
+    "type": "mcq",
+    "difficulty": 1,
+    "stem": "あさ 7時に 朝ごはんを 食べます。Choose the reading of 朝ごはん.",
+    "stemJp": "あさ 7時に ＿＿＿ を 食べます。",
+    "options": [
+      {
+        "id": "a",
+        "text": "asagohan",
+        "textJp": "あさごはん"
+      },
+      {
+        "id": "b",
+        "text": "yuugohan",
+        "textJp": "ゆうごはん"
+      },
+      {
+        "id": "c",
+        "text": "hirugohan",
+        "textJp": "ひるごはん"
+      },
+      {
+        "id": "d",
+        "text": "bangohan",
+        "textJp": "ばんごはん"
+      }
+    ],
+    "answer": 0,
+    "explanation": "朝ごはん is read あさごはん (asagohan) — 'breakfast'. 夕ごはん/晩ごはん is dinner, 昼ごはん is lunch.",
+    "hint": "あさ means morning — so this is the morning meal.",
+    "source": "Japan Foundation JFT-Basic official test structure — Script and Vocabulary / Kanji reading category (jpf.go.jp/jft-basic); vocabulary at JF Standard A1-A2",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jft-sv-kr-004",
+    "skill": "kanji-reading",
+    "type": "mcq",
+    "difficulty": 1,
+    "stem": "びょういんで くすりを もらいました。Choose the reading of 病院.",
+    "stemJp": "＿＿＿ で くすりを もらいました。",
+    "options": [
+      {
+        "id": "a",
+        "text": "byouin",
+        "textJp": "びょういん"
+      },
+      {
+        "id": "b",
+        "text": "gakkou",
+        "textJp": "がっこう"
+      },
+      {
+        "id": "c",
+        "text": "gin-kou",
+        "textJp": "ぎんこう"
+      },
+      {
+        "id": "d",
+        "text": "yuubinkyoku",
+        "textJp": "ゆうびんきょく"
+      }
+    ],
+    "answer": 0,
+    "explanation": "病院 is read びょういん (byouin) — 'hospital'. 学校 (gakkou) is school, 銀行 (ginkou) is bank.",
+    "hint": "You get くすり (medicine) here — びょういん.",
+    "source": "Japan Foundation JFT-Basic official test structure — Script and Vocabulary / Kanji reading category (jpf.go.jp/jft-basic); vocabulary at JF Standard A1-A2",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jft-sv-kr-005",
+    "skill": "kanji-reading",
+    "type": "mcq",
+    "difficulty": 1,
+    "stem": "スーパーで 魚と 肉を 買いました。Choose the reading of 魚.",
+    "stemJp": "スーパーで ＿＿＿ と 肉を 買いました。",
+    "options": [
+      {
+        "id": "a",
+        "text": "sakana",
+        "textJp": "さかな"
+      },
+      {
+        "id": "b",
+        "text": "niku",
+        "textJp": "にく"
+      },
+      {
+        "id": "c",
+        "text": "yasai",
+        "textJp": "やさい"
+      },
+      {
+        "id": "d",
+        "text": "kudamono",
+        "textJp": "くだもの"
+      }
+    ],
+    "answer": 0,
+    "explanation": "魚 is read さかな (sakana) — 'fish'. 肉 (niku) is meat, 野菜 (yasai) is vegetables.",
+    "hint": "It swims — さかな.",
+    "source": "Japan Foundation JFT-Basic official test structure — Script and Vocabulary / Kanji reading category (jpf.go.jp/jft-basic); vocabulary at JF Standard A1-A2",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jft-sv-kr-006",
+    "skill": "kanji-reading",
+    "type": "mcq",
+    "difficulty": 1,
+    "stem": "きのう えいがを 見ました。Choose the reading of 昨日 as used in きのう.",
+    "stemJp": "＿＿＿ えいがを 見ました。(きのう)",
+    "options": [
+      {
+        "id": "a",
+        "text": "kinou",
+        "textJp": "きのう"
+      },
+      {
+        "id": "b",
+        "text": "kyou",
+        "textJp": "きょう"
+      },
+      {
+        "id": "c",
+        "text": "ashita",
+        "textJp": "あした"
+      },
+      {
+        "id": "d",
+        "text": "ototoi",
+        "textJp": "おととい"
+      }
+    ],
+    "answer": 0,
+    "explanation": "昨日 is read きのう (kinou) — 'yesterday'. 今日 (kyou) is today, 明日 (ashita/asu) is tomorrow.",
+    "hint": "The day before today — きのう.",
+    "source": "Japan Foundation JFT-Basic official test structure — Script and Vocabulary / Kanji reading category (jpf.go.jp/jft-basic); vocabulary at JF Standard A1-A2",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jft-sv-kr-007",
+    "skill": "kanji-reading",
+    "type": "mcq",
+    "difficulty": 1,
+    "stem": "へやに つくえと いすが あります。Choose the reading of 部屋.",
+    "stemJp": "＿＿＿ に つくえと いすが あります。",
+    "options": [
+      {
+        "id": "a",
+        "text": "heya",
+        "textJp": "へや"
+      },
+      {
+        "id": "b",
+        "text": "ie",
+        "textJp": "いえ"
+      },
+      {
+        "id": "c",
+        "text": "mise",
+        "textJp": "みせ"
+      },
+      {
+        "id": "d",
+        "text": "oka",
+        "textJp": "おか"
+      }
+    ],
+    "answer": 0,
+    "explanation": "部屋 is read へや (heya) — 'room'. 家 (ie/uchi) is house/home, 店 (mise) is shop.",
+    "hint": "つくえ (desk) and いす (chair) are inside it — へや.",
+    "source": "Japan Foundation JFT-Basic official test structure — Script and Vocabulary / Kanji reading category (jpf.go.jp/jft-basic); vocabulary at JF Standard A1-A2",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jft-sv-kr-008",
+    "skill": "kanji-reading",
+    "type": "mcq",
+    "difficulty": 1,
+    "stem": "でんしゃで がっこうへ 行きます。Choose the reading of 電車.",
+    "stemJp": "＿＿＿ で がっこうへ 行きます。",
+    "options": [
+      {
+        "id": "a",
+        "text": "densha",
+        "textJp": "でんしゃ"
+      },
+      {
+        "id": "b",
+        "text": "jitensha",
+        "textJp": "じてんしゃ"
+      },
+      {
+        "id": "c",
+        "text": "hikouki",
+        "textJp": "ひこうき"
+      },
+      {
+        "id": "d",
+        "text": "fune",
+        "textJp": "ふね"
+      }
+    ],
+    "answer": 0,
+    "explanation": "電車 is read でんしゃ (densha) — 'train'. 自転車 (jitensha) is bicycle, 飛行機 (hikouki) is airplane.",
+    "hint": "It runs on rails — でんしゃ.",
+    "source": "Japan Foundation JFT-Basic official test structure — Script and Vocabulary / Kanji reading category (jpf.go.jp/jft-basic); vocabulary at JF Standard A1-A2",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jft-sv-kr-009",
+    "skill": "kanji-reading",
+    "type": "mcq",
+    "difficulty": 1,
+    "stem": "ははは りょうりが じょうずです。Choose the reading of 母.",
+    "stemJp": "＿＿＿ は りょうりが じょうずです。(はは)",
+    "options": [
+      {
+        "id": "a",
+        "text": "haha",
+        "textJp": "はは"
+      },
+      {
+        "id": "b",
+        "text": "chichi",
+        "textJp": "ちち"
+      },
+      {
+        "id": "c",
+        "text": "ani",
+        "textJp": "あに"
+      },
+      {
+        "id": "d",
+        "text": "ane",
+        "textJp": "あね"
+      }
+    ],
+    "answer": 0,
+    "explanation": "母 is read はは (haha) — 'mother' (humble form). 父 (chichi) is father, 兄 (ani) is older brother.",
+    "hint": "The humble word for one's own mother — はは.",
+    "source": "Japan Foundation JFT-Basic official test structure — Script and Vocabulary / Kanji reading category (jpf.go.jp/jft-basic); vocabulary at JF Standard A1-A2",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jft-sv-kr-010",
+    "skill": "kanji-reading",
+    "type": "mcq",
+    "difficulty": 1,
+    "stem": "にほんごの じしょを 買いました。Choose the reading of 辞書.",
+    "stemJp": "にほんごの ＿＿＿ を 買いました。",
+    "options": [
+      {
+        "id": "a",
+        "text": "jisho",
+        "textJp": "じしょ"
+      },
+      {
+        "id": "b",
+        "text": "zasshi",
+        "textJp": "ざっし"
+      },
+      {
+        "id": "c",
+        "text": "shinbun",
+        "textJp": "しんぶん"
+      },
+      {
+        "id": "d",
+        "text": "tegami",
+        "textJp": "てがみ"
+      }
+    ],
+    "answer": 0,
+    "explanation": "辞書 is read じしょ (jisho) — 'dictionary'. 雑誌 (zasshi) is magazine, 新聞 (shinbun) is newspaper.",
+    "hint": "You look up words in it — じしょ.",
+    "source": "Japan Foundation JFT-Basic official test structure — Script and Vocabulary / Kanji reading category (jpf.go.jp/jft-basic); vocabulary at JF Standard A1-A2",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jft-sv-kr-011",
+    "skill": "kanji-reading",
+    "type": "mcq",
+    "difficulty": 1,
+    "stem": "いぬと ねこが います。Choose the reading of 犬.",
+    "stemJp": "＿＿＿ と ねこが います。",
+    "options": [
+      {
+        "id": "a",
+        "text": "inu",
+        "textJp": "いぬ"
+      },
+      {
+        "id": "b",
+        "text": "neko",
+        "textJp": "ねこ"
+      },
+      {
+        "id": "c",
+        "text": "tori",
+        "textJp": "とり"
+      },
+      {
+        "id": "d",
+        "text": "uma",
+        "textJp": "うま"
+      }
+    ],
+    "answer": 0,
+    "explanation": "犬 is read いぬ (inu) — 'dog'. 猫 (neko) is cat, 鳥 (tori) is bird.",
+    "hint": "It barks — いぬ.",
+    "source": "Japan Foundation JFT-Basic official test structure — Script and Vocabulary / Kanji reading category (jpf.go.jp/jft-basic); vocabulary at JF Standard A1-A2",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jft-sv-kr-012",
+    "skill": "kanji-reading",
+    "type": "mcq",
+    "difficulty": 1,
+    "stem": "みずを 飲みます。Choose the reading of 水.",
+    "stemJp": "＿＿＿ を 飲みます。",
+    "options": [
+      {
+        "id": "a",
+        "text": "mizu",
+        "textJp": "みず"
+      },
+      {
+        "id": "b",
+        "text": "ocha",
+        "textJp": "おちゃ"
+      },
+      {
+        "id": "c",
+        "text": "gyunyu",
+        "textJp": "ぎゅうにゅう"
+      },
+      {
+        "id": "d",
+        "text": "ju-su",
+        "textJp": "ジュース"
+      }
+    ],
+    "answer": 0,
+    "explanation": "水 is read みず (mizu) — 'water'. お茶 (ocha) is tea, 牛乳 (gyuunyu) is milk.",
+    "hint": "The most basic drink — みず.",
+    "source": "Japan Foundation JFT-Basic official test structure — Script and Vocabulary / Kanji reading category (jpf.go.jp/jft-basic); vocabulary at JF Standard A1-A2",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jft-sv-kr-013",
+    "skill": "kanji-reading",
+    "type": "mcq",
+    "difficulty": 1,
+    "stem": "やまの てっぺんまで あるきました。Choose the reading of 山.",
+    "stemJp": "＿＿＿ の てっぺんまで あるきました。",
+    "options": [
+      {
+        "id": "a",
+        "text": "yama",
+        "textJp": "やま"
+      },
+      {
+        "id": "b",
+        "text": "kawa",
+        "textJp": "かわ"
+      },
+      {
+        "id": "c",
+        "text": "umi",
+        "textJp": "うみ"
+      },
+      {
+        "id": "d",
+        "text": "sora",
+        "textJp": "そら"
+      }
+    ],
+    "answer": 0,
+    "explanation": "山 is read やま (yama) — 'mountain'. 川 (kawa) is river, 海 (umi) is sea.",
+    "hint": "You climb to its てっぺん (top) — やま.",
+    "source": "Japan Foundation JFT-Basic official test structure — Script and Vocabulary / Kanji reading category (jpf.go.jp/jft-basic); vocabulary at JF Standard A1-A2",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jft-sv-kr-014",
+    "skill": "kanji-reading",
+    "type": "mcq",
+    "difficulty": 1,
+    "stem": "かれは わたしの 先生です。Choose the reading of 先生.",
+    "stemJp": "かれは わたしの ＿＿＿ です。",
+    "options": [
+      {
+        "id": "a",
+        "text": "sensei",
+        "textJp": "せんせい"
+      },
+      {
+        "id": "b",
+        "text": "gakusei",
+        "textJp": "がくせい"
+      },
+      {
+        "id": "c",
+        "text": "tomodachi",
+        "textJp": "ともだち"
+      },
+      {
+        "id": "d",
+        "text": "kazoku",
+        "textJp": "かぞく"
+      }
+    ],
+    "answer": 0,
+    "explanation": "先生 is read せんせい (sensei) — 'teacher'. 学生 (gakusei) is student, 友達 (tomodachi) is friend.",
+    "hint": "The person who teaches — せんせい.",
+    "source": "Japan Foundation JFT-Basic official test structure — Script and Vocabulary / Kanji reading category (jpf.go.jp/jft-basic); vocabulary at JF Standard A1-A2",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jft-sv-kr-015",
+    "skill": "kanji-reading",
+    "type": "mcq",
+    "difficulty": 1,
+    "stem": "てんきが いいので さんぽします。Choose the reading of 天気.",
+    "stemJp": "＿＿＿ が いいので さんぽします。",
+    "options": [
+      {
+        "id": "a",
+        "text": "tenki",
+        "textJp": "てんき"
+      },
+      {
+        "id": "b",
+        "text": "ame",
+        "textJp": "あめ"
+      },
+      {
+        "id": "c",
+        "text": "kaze",
+        "textJp": "かぜ"
+      },
+      {
+        "id": "d",
+        "text": "yuki",
+        "textJp": "ゆき"
+      }
+    ],
+    "answer": 0,
+    "explanation": "天気 is read てんき (tenki) — 'weather'. 雨 (ame) is rain, 雪 (yuki) is snow.",
+    "hint": "Good or bad, it decides your walk — てんき.",
+    "source": "Japan Foundation JFT-Basic official test structure — Script and Vocabulary / Kanji reading category (jpf.go.jp/jft-basic); vocabulary at JF Standard A1-A2",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  }
+]

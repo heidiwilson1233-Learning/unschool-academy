@@ -1,0 +1,9 @@
+{
+  "id": "jft-basic",
+  "title": "JFT-Basic — Japan Foundation Test for Basic Japanese",
+  "description": "Preparation path for the JFT-Basic (A2-level Japanese). Pilot course.",
+  "skills": ["script-vocabulary", "conversation-expression", "listening-comprehension", "reading-comprehension"],
+  "estimated_hours": 120,
+  "version": 1,
+  "status": "pilot"
+}

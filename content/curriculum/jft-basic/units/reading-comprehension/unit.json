@@ -1,0 +1,8 @@
+{
+  "id": "reading-comprehension",
+  "title": "Reading Comprehension",
+  "description": "Read short letters, messages, notices and find information. ~12 questions on the real test.",
+  "skills": ["reading-messages", "information-search"],
+  "order": 4,
+  "source": "Japan Foundation JFT-Basic official test structure (jpf.go.jp/jft-basic)"
+}

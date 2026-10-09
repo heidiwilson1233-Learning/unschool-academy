@@ -1,0 +1,8 @@
+{
+  "id": "conversation-expression",
+  "title": "Conversation and Expression",
+  "description": "Grammar and expressions for everyday conversation. ~12 questions on the real test.",
+  "skills": ["grammar", "expression"],
+  "order": 2,
+  "source": "Japan Foundation JFT-Basic official test structure (jpf.go.jp/jft-basic)"
+}
