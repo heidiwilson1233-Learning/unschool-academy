@@ -84,13 +84,58 @@ export const AGE_TRACKS: AgeTrack[] = [
   },
 ];
 
+/* Village location metadata — content sourced from blueprint docs/03_KIDS_LEARNING_WORLD.md §3.
+   `detail` is a one-sentence active-verb blurb; `skills` are the MD's skill lists per setting.
+   Playable state is NOT stored here: it is derived in the world page from QUEST_BRIEFS (only K04/K13 playable). */
 export const VILLAGE_LOCATIONS = [
-  { name: "Momo's Mango Garden", purpose: "Numbers and patterns", guide: "momo" as const },
-  { name: "Tara's Story Tree", purpose: "Language and creative stories", guide: "tara" as const },
-  { name: "Bobo's Discovery Pond", purpose: "Observation and science", guide: "bobo" as const },
-  { name: "Shape Workshop", purpose: "Geometry and construction", guide: "momo" as const },
-  { name: "Little Market", purpose: "Measurement and practical maths", guide: "momo" as const },
-  { name: "Kindness Corner", purpose: "Cooperation and feelings", guide: "tara" as const },
+  {
+    name: "Momo's Mango Garden",
+    slug: "mango-garden",
+    purpose: "Numbers and patterns",
+    guide: "momo" as const,
+    detail: "Count real sets of mangoes, share them fairly, and spot the patterns hiding in the fruit trees.",
+    skills: ["Counting", "Sets", "Equal groups", "Fractions"],
+  },
+  {
+    name: "Tara's Story Tree",
+    slug: "story-tree",
+    purpose: "Language and creative stories",
+    guide: "tara" as const,
+    detail: "Order picture cards into stories, play with first sounds, and tell tales of your own.",
+    skills: ["Vocabulary", "First sounds", "Story order", "Comprehension"],
+  },
+  {
+    name: "Bobo's Discovery Pond",
+    slug: "discovery-pond",
+    purpose: "Observation and science",
+    guide: "bobo" as const,
+    detail: "Watch pond life closely, sort what you notice, and test safe little predictions.",
+    skills: ["Observation", "Living things", "Predictions"],
+  },
+  {
+    name: "Shape Workshop",
+    slug: "shape-workshop",
+    purpose: "Geometry and construction",
+    guide: "momo" as const,
+    detail: "Build pictures out of shapes, find the lines of symmetry, and reason with simple tools.",
+    skills: ["Geometry", "Patterns", "Symmetry"],
+  },
+  {
+    name: "Little Market",
+    slug: "little-market",
+    purpose: "Measurement and practical maths",
+    guide: "momo" as const,
+    detail: "Compare amounts, count token coins, and plan a small budget when you're older.",
+    skills: ["Comparing amounts", "Counting money", "Budgets"],
+  },
+  {
+    name: "Kindness Corner",
+    slug: "kindness-corner",
+    purpose: "Cooperation and feelings",
+    guide: "tara" as const,
+    detail: "Practise turn-taking, name big feelings, and learn to ask for help, gently.",
+    skills: ["Turn-taking", "Feelings", "Asking for help"],
+  },
 ];
 
 /** Prototype quest briefs (K01–K24 from the blueprint). Playable ones are implemented; the rest are backlog. */

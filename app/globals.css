@@ -13,8 +13,8 @@
   --color-kids-lavender: #b9a5e5;
   --color-kids-lavender-deep: #7a5fc0;
   --color-kids-orange: #f2a66c;
-  --color-kids-orange-deep: #c97a2e;
-  --color-kids-orange-ink: #8a5418;
+  --color-kids-orange-deep: #c97a2e; /* 3.33:1 on white — decorative accents only, never small text */
+  --color-kids-orange-ink: #8a5418; /* 6.25:1 on white — the text-safe orange; NOTE: "ink" is DARKER than "deep" */
   --color-kids-leaf: #8dc6a7;
   --color-kids-leaf-deep: #3f7d5c;
   --color-kids-cream: #fff7e9;
@@ -23,8 +23,15 @@
   --radius-lg: 20px;
   --radius-xl: 28px;
 
-  --font-sans: "Noto Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
-  --font-jp: "Noto Sans JP", "Noto Sans", ui-sans-serif, system-ui, sans-serif;
+  /* Signature motion: expo-out ease, tokenized so every transition speaks
+     the same language. Durations scale with element size at call sites. */
+  --ease-signature: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* next/font exposes the downloaded families via these variables on <html>;
+     referencing them (not the literal family names) is what makes the
+     downloaded weights actually render instead of falling back to system sans. */
+  --font-sans: var(--font-noto-sans), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-jp: var(--font-noto-sans-jp), "Noto Sans JP", ui-sans-serif, system-ui, sans-serif;
 }
 
 html {
@@ -90,6 +97,95 @@ body {
 }
 .animate-fade-up {
   animation: fade-up 0.5s ease-out both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-up { animation: none; }
+}
+
+/* Mango quest (run 16): GPU-only keyframes, transform/opacity only.
+   quest-pop = back-out overshoot reveal (replaces fade-up in quest panels).
+   mango-pop = spring pop on tapped fruit. node-pulse = current trail node.
+   confetti-fall = celebration burst; pieces are hidden under reduced motion. */
+@keyframes quest-pop {
+  0% { opacity: 0; transform: scale(0.92) translateY(10px); }
+  60% { opacity: 1; transform: scale(1.02) translateY(0); }
+  100% { opacity: 1; transform: scale(1) translateY(0); }
+}
+.quest-pop {
+  animation: quest-pop 0.45s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+@keyframes mango-pop {
+  0% { transform: scale(0.7); }
+  55% { transform: scale(1.18); }
+  100% { transform: scale(1.1); }
+}
+.mango-pop {
+  animation: mango-pop 0.32s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+@keyframes node-pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.1); opacity: 0.85; }
+}
+.node-pulse {
+  animation: node-pulse 1.8s ease-in-out infinite;
+}
+@keyframes confetti-fall {
+  0% { opacity: 1; transform: translate3d(0, -12vh, 0) rotate(0deg); }
+  100% { opacity: 0; transform: translate3d(var(--dx, 0px), 60vh, 0) rotate(var(--rot, 360deg)); }
+}
+.confetti-piece {
+  position: absolute;
+  top: 0;
+  animation: confetti-fall var(--dur, 2600ms) cubic-bezier(0.16, 1, 0.3, 1) var(--delay, 0ms) both;
+  pointer-events: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .quest-pop { animation: none; }
+  .mango-pop { animation: none; }
+  .node-pulse { animation: none; }
+  .confetti-piece { display: none; }
+}
+
+/* Storybook village map (/kids/world): zero-JS SVG.
+   Node hover/active = transform-only (GPU-safe). Halo pulse is the single
+   continuous animation; reveal runs once via view-timeline (progressive
+   enhancement — elements keep their base visible state without timeline support). */
+.village-link { cursor: pointer; }
+.village-node {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+@media (hover: hover) {
+  .village-link:hover .village-node { transform: scale(1.08); }
+}
+.village-link:active .village-node { transform: scale(0.94); }
+.village-link:focus-visible { outline: 3px solid var(--color-kids-orange-deep); outline-offset: 4px; border-radius: 8px; }
+
+@keyframes village-halo {
+  0%, 100% { transform: scale(1); opacity: 0.55; }
+  50% { transform: scale(1.28); opacity: 0; }
+}
+.village-halo {
+  animation: village-halo 2.8s ease-out infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+@keyframes village-rise {
+  from { opacity: 0; transform: translateY(26px); }
+  to { opacity: 1; transform: none; }
+}
+.village-reveal {
+  animation: village-rise 0.9s var(--ease-signature, cubic-bezier(0.16, 1, 0.3, 1)) both;
+  animation-timeline: view();
+  animation-range: entry 0% cover 35%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .village-halo { animation: none; opacity: 0; }
+  .village-reveal { animation: none; }
+  .village-node { transition: none; }
 }
 
 /* Character idle bob */

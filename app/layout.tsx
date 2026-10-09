@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
   description:
     "Unschool Academy helps you learn by doing — focused exam practice for adult learners, imaginative real learning for young children ages 2 through Grade 5.",
-  metadataBase: new URL("https://unschoolacademy.example.com"),
+  metadataBase: new URL("https://unschool.academy"),
   openGraph: {
     type: "website",
     siteName: "Unschool Academy",

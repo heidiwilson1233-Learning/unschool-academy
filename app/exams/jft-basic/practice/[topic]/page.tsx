@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ topic: st
   const name = SLUG_TO_TOPIC[topic];
   return {
     title: name ? `${name} — Practice` : "Practice",
-    description: name ? `Practice JFT-Basic ${name} with instant feedback and reviewed explanations.` : "Practice",
+    description: name ? `Practice JFT-Basic ${name} with instant answer checks, one hint per question, and draft explanations pending review by a Japanese subject-matter expert.` : "Practice",
   };
 }
 
@@ -40,7 +40,7 @@ export default async function PracticeTopicPage({ params }: { params: Promise<{ 
             { label: topicName },
           ]} />
           <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight text-ink">{topicName}</h1>
-          <p className="mt-3 text-slate">Practice mode: check each answer as you go, use hints freely — this is for learning, not testing.</p>
+          <p className="mt-3 text-slate text-lg">Practice mode: check each answer as you go, use hints freely. Wrong answers here are the cheapest lessons you&apos;ll ever buy — this is for learning, not testing.</p>
         </div>
       </div>
       <Section className="!py-10">
