@@ -209,3 +209,53 @@ body {
 .jp {
   font-family: var(--font-jp);
 }
+
+/* How-it-works loop (run 18): zero-JS scroll narrative.
+   One wow section only: a hairline spine fills as the ordered loop scrolls
+   through the viewport, and each step band wipes in with a masked reveal.
+   GPU-cheap (transform/opacity/clip only), progressive enhancement — base
+   states stay visible where view() timelines are unsupported, and all motion
+   is killed under prefers-reduced-motion. */
+@keyframes loop-fill {
+  from { transform: scaleY(0); }
+  to { transform: scaleY(1); }
+}
+.loop-fill {
+  transform: scaleY(1);
+  transform-origin: top;
+  animation: loop-fill linear both;
+  animation-timeline: view();
+  animation-range: cover 0% cover 100%;
+}
+@keyframes loop-rise {
+  from { opacity: 0; clip-path: inset(0 0 100% 0); transform: translateY(18px); }
+  to { opacity: 1; clip-path: inset(0 0 0% 0); transform: none; }
+}
+.step-reveal {
+  animation: loop-rise 0.9s var(--ease-signature, cubic-bezier(0.16, 1, 0.3, 1)) both;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+@supports not (animation-timeline: view()) {
+  .loop-fill, .step-reveal { animation: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .loop-fill, .step-reveal { animation: none; }
+}
+
+/* Resources page (run 21): masked card reveal, single playthrough on load.
+   Masked wipe (never fade-up); transform/opacity/clip are GPU-only.
+   Jittered staggers (52/91ms), never linear 0/100/200. Killed under
+   prefers-reduced-motion — content stays fully visible. */
+@keyframes guide-reveal {
+  from { opacity: 0; transform: translateY(14px); clip-path: inset(0 0 100% 0); }
+  to   { opacity: 1; transform: translateY(0);    clip-path: inset(0 0 0% 0); }
+}
+.guide-reveal {
+  animation: guide-reveal 560ms var(--ease-signature, cubic-bezier(0.16, 1, 0.3, 1)) both;
+}
+.guide-reveal:nth-child(2) { animation-delay: 52ms; }
+.guide-reveal:nth-child(3) { animation-delay: 91ms; }
+@media (prefers-reduced-motion: reduce) {
+  .guide-reveal { animation: none; }
+}
