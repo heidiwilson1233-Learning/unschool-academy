@@ -151,7 +151,7 @@ export default function MangoQuest() {
         <div className="flex items-center gap-3">
           <Momo className="w-14 h-14 animate-idle" />
           <div>
-            <p className="text-xs font-bold uppercase tracking-widest text-kids-orange-deep">K04 · Momo&apos;s Mango Garden</p>
+            <p className="text-xs font-bold uppercase tracking-widest text-kids-orange-ink">K04 · Momo&apos;s Mango Garden</p>
             <h2 className="text-xl font-extrabold text-ink">Three Mangoes for the Picnic</h2>
           </div>
         </div>

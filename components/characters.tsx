@@ -4,9 +4,12 @@
  * Do not treat these as approved final art.
  */
 
-export function Momo({ className = "" }: { className?: string }) {
+import type React from "react";
+
+export function Momo({ className = "", decorative = false, style,
+}: { className?: string; decorative?: boolean; style?: React.CSSProperties }) {
   return (
-    <svg viewBox="0 0 200 200" className={className} role="img" aria-label="Momo, the lavender elephant">
+    <svg viewBox="0 0 200 200" className={className} style={style} {...(decorative ? { "aria-hidden": true } : { role: "img", "aria-label": "Momo, the lavender elephant" })}>
       {/* ears */}
       <ellipse cx="62" cy="92" rx="30" ry="42" fill="#C9B8F0" />
       <ellipse cx="138" cy="92" rx="30" ry="42" fill="#C9B8F0" />
@@ -38,9 +41,10 @@ export function Momo({ className = "" }: { className?: string }) {
   );
 }
 
-export function Tara({ className = "" }: { className?: string }) {
+export function Tara({ className = "", decorative = false, style,
+}: { className?: string; decorative?: boolean; style?: React.CSSProperties }) {
   return (
-    <svg viewBox="0 0 200 200" className={className} role="img" aria-label="Tara, the orange squirrel">
+    <svg viewBox="0 0 200 200" className={className} style={style} {...(decorative ? { "aria-hidden": true } : { role: "img", "aria-label": "Tara, the orange squirrel" })}>
       {/* tail */}
       <path d="M150 170 C 178 160, 186 120, 160 96 C 146 84, 132 88, 134 102 C 136 114, 150 118, 158 132 C 166 146, 160 162, 150 170 Z" fill="#E8894A" />
       <path d="M158 158 C 172 148, 176 126, 160 112" fill="none" stroke="#F2A66C" strokeWidth="8" strokeLinecap="round" />
@@ -75,9 +79,10 @@ export function Tara({ className = "" }: { className?: string }) {
   );
 }
 
-export function Bobo({ className = "" }: { className?: string }) {
+export function Bobo({ className = "", decorative = false, style,
+}: { className?: string; decorative?: boolean; style?: React.CSSProperties }) {
   return (
-    <svg viewBox="0 0 200 200" className={className} role="img" aria-label="Bobo, the mint-green tortoise">
+    <svg viewBox="0 0 200 200" className={className} style={style} {...(decorative ? { "aria-hidden": true } : { role: "img", "aria-label": "Bobo, the mint-green tortoise" })}>
       {/* legs */}
       <ellipse cx="58" cy="160" rx="14" ry="18" fill="#8DC6A7" />
       <ellipse cx="142" cy="160" rx="14" ry="18" fill="#8DC6A7" />
