@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Check } from "lucide-react";
 import StoryQuest from "@/components/story-quest";
 import { Breadcrumbs } from "@/components/ui";
+import { Art, StagingNote } from "@/components/site-art";
 
 const CANONICAL = "https://unschool.academy/kids/sample/tara-story";
 
@@ -121,6 +122,15 @@ export default function StoryQuestPage() {
             </aside>
           </div>
         </section>
+
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <Art
+            src="/img/story-tree.webp"
+            alt="Tara's Story Tree: a giant tree with book-shaped leaves, a treehouse, and Tara the squirrel with her purple sketchbook"
+            sizes="(max-width: 1024px) 100vw, 80vw"
+          />
+          <StagingNote />
+        </div>
 
         <StoryQuest />
       </div>

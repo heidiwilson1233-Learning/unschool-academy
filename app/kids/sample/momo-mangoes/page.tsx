@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Check } from "lucide-react";
 import MangoQuest from "@/components/mango-quest";
 import { Breadcrumbs } from "@/components/ui";
+import { Art, StagingNote } from "@/components/site-art";
 
 const CANONICAL = "https://unschool.academy/kids/sample/momo-mangoes";
 
@@ -120,6 +121,15 @@ export default function MangoQuestPage() {
             </aside>
           </div>
         </section>
+
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <Art
+            src="/img/mango-garden.webp"
+            alt="Momo's Mango Garden: round mango trees heavy with ripe mangoes, woven baskets on soft grass, morning sunlight"
+            sizes="(max-width: 1024px) 100vw, 80vw"
+          />
+          <StagingNote />
+        </div>
 
         <MangoQuest />
       </div>

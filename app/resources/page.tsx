@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Section, Badge, Breadcrumbs, Button } from "@/components/ui";
+import { Art } from "@/components/site-art";
 
 export const metadata: Metadata = {
   title: "Resources — Guides & Topic Explainers",
@@ -91,17 +92,27 @@ export default function ResourcesPage() {
         />
         <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 pt-10 pb-12 md:pt-14 md:pb-16">
           <Breadcrumbs trail={TRAIL} />
-          <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-academy-teal-dark">
-            Resources
-          </p>
-          <h1 className="mt-4 max-w-4xl text-[clamp(2.75rem,7vw,5rem)] font-extrabold leading-[0.95] tracking-[-0.04em] text-ink text-balance">
-            Study guides that teach the pattern
-          </h1>
-          <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate">
-            Sample explanations for JFT-Basic topics, each built around a pattern
-            you will meet in real questions. Every guide is an original draft,
-            clearly labeled until a qualified reviewer approves it.
-          </p>
+          <div className="grid lg:grid-cols-2 gap-10 items-center">
+            <div>
+              <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-academy-teal-dark">
+                Resources
+              </p>
+              <h1 className="mt-4 max-w-4xl text-[clamp(2.75rem,7vw,5rem)] font-extrabold leading-[0.95] tracking-[-0.04em] text-ink text-balance">
+                Study guides that teach the pattern
+              </h1>
+              <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate">
+                Sample explanations for JFT-Basic topics, each built around a pattern
+                you will meet in real questions. Every guide is an original draft,
+                clearly labeled until a qualified reviewer approves it.
+              </p>
+            </div>
+            <Art
+              src="/img/resources.webp"
+              alt="Open notebooks, sticky notes, headphones and a fountain pen arranged on cream paper in morning light"
+              priority
+              sizes="(max-width: 1024px) 100vw, 50vw"
+            />
+          </div>
         </div>
       </section>
 

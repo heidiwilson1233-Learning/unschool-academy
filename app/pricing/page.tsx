@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Section, Breadcrumbs, Button } from "@/components/ui";
 import { CheckoutButton } from "@/components/checkout-button";
+import { Art, StagingNote } from "@/components/site-art";
 
 const TRAIL = [{ label: "Home", href: "/" }, { label: "Pricing" }];
 
@@ -183,6 +184,13 @@ export default function PricingPage() {
             className="md:col-span-4 rounded-2xl border border-border bg-paper overflow-hidden self-start"
           >
             <div className="h-[3px] bg-academy-teal" aria-hidden />
+            <Art
+              src="/img/card-jft.webp"
+              alt="Study flashcards and an open notebook in warm window light"
+              ratio="card"
+              className="!rounded-none !border-0 !shadow-none"
+              sizes="(max-width: 768px) 100vw, 60vw"
+            />
             <div className="p-7 md:p-10">
               <p className="text-xs font-bold uppercase tracking-[0.22em] text-academy-teal-dark">
                 Exam program · JFT-Basic · Pilot
@@ -306,7 +314,17 @@ export default function PricingPage() {
             className="md:col-span-4 rounded-2xl border border-border bg-paper overflow-hidden self-start"
           >
             <div className="h-[3px] bg-kids-orange-deep" aria-hidden />
-            <div className="p-7 md:p-10">
+            <div>
+              <Art
+                src="/img/card-kids.webp"
+                alt="Momo, Tara and Bobo reading picture books together under a round tree"
+                ratio="card"
+                className="!rounded-none !border-0 !shadow-none"
+                sizes="(max-width: 768px) 100vw, 60vw"
+              />
+              <StagingNote className="px-7 md:px-10" />
+            </div>
+            <div className="p-7 md:p-10 pt-2">
               <p className="text-xs font-bold uppercase tracking-[0.22em] text-kids-orange-ink">
                 Kids program · Family plans · Pilot
               </p>

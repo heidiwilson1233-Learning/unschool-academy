@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import MangoQuest from "@/components/mango-quest";
 import { Section, SectionHeading, Button, Card, Badge, Breadcrumbs } from "@/components/ui";
+import { Art, StagingNote } from "@/components/site-art";
 import { Momo, Tara, Bobo, CHARACTERS } from "@/components/characters";
 import { AGE_TRACKS, VILLAGE_LOCATIONS, QUEST_BRIEFS } from "@/lib/kids";
 
@@ -155,15 +156,13 @@ export default function KidsHomePage() {
               </div>
               <p className="mt-5 text-sm text-slate">No ads · No purchases in child mode · Parent-owned accounts</p>
             </div>
-            <div className="relative flex justify-center items-end gap-1 md:gap-3" aria-hidden>
-              {[Momo, Tara, Bobo].map((Art, i) => (
-                <Art
-                  key={i}
-                  decorative
-                  className={`animate-floaty ${i === 1 ? "w-36 h-36 md:w-52 md:h-52 -mb-3" : "w-28 h-28 md:w-40 md:h-40"}`}
-                  style={{ animationDelay: `${-0.6 - i * 1.7}s` }}
-                />
-              ))}
+            <div>
+              <Art
+                src="/img/kids-world.webp"
+                alt="The Unschool Kids village panorama: Momo's mango garden, Tara's story tree with its treehouse, and Bobo's discovery pond under festival bunting"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+              <StagingNote />
             </div>
           </div>
         </div>
