@@ -242,3 +242,20 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .loop-fill, .step-reveal { animation: none; }
 }
+
+/* Resources page (run 21): masked card reveal, single playthrough on load.
+   Masked wipe (never fade-up); transform/opacity/clip are GPU-only.
+   Jittered staggers (52/91ms), never linear 0/100/200. Killed under
+   prefers-reduced-motion — content stays fully visible. */
+@keyframes guide-reveal {
+  from { opacity: 0; transform: translateY(14px); clip-path: inset(0 0 100% 0); }
+  to   { opacity: 1; transform: translateY(0);    clip-path: inset(0 0 0% 0); }
+}
+.guide-reveal {
+  animation: guide-reveal 560ms var(--ease-signature, cubic-bezier(0.16, 1, 0.3, 1)) both;
+}
+.guide-reveal:nth-child(2) { animation-delay: 52ms; }
+.guide-reveal:nth-child(3) { animation-delay: 91ms; }
+@media (prefers-reduced-motion: reduce) {
+  .guide-reveal { animation: none; }
+}
