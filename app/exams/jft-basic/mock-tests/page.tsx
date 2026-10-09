@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Section, Button, Breadcrumbs, Callout } from "@/components/ui";
+import { Art } from "@/components/site-art";
 
 export const metadata: Metadata = {
   title: "JFT-Basic Mock Tests | Timed Practice",
@@ -86,16 +87,26 @@ export default function MockTestsPage() {
         />
         <div aria-hidden className="pointer-events-none absolute inset-0 opacity-[0.16]" style={{ backgroundImage: GRAIN }} />
         <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16 md:py-24">
-          <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-academy-teal-dark mb-4">
-            JFT-Basic · Timed practice
-          </p>
-          <h1 className="max-w-4xl text-5xl md:text-7xl font-extrabold tracking-[-0.04em] leading-[0.95] text-ink text-balance">
-            Feel the clock before the clock matters
-          </h1>
-          <p className="mt-6 max-w-2xl text-lg text-slate leading-relaxed">
-            20 original questions. 30 minutes. No hints, no answers until you submit.
-            The timer runs on our server, not just your screen.
-          </p>
+          <div className="grid lg:grid-cols-2 gap-10 items-center">
+            <div>
+              <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-academy-teal-dark mb-4">
+                JFT-Basic · Timed practice
+              </p>
+              <h1 className="max-w-4xl text-5xl md:text-7xl font-extrabold tracking-[-0.04em] leading-[0.95] text-ink text-balance">
+                Feel the clock before the clock matters
+              </h1>
+              <p className="mt-6 max-w-2xl text-lg text-slate leading-relaxed">
+                20 original questions. 30 minutes. No hints, no answers until you submit.
+                The timer runs on our server, not just your screen.
+              </p>
+            </div>
+            <Art
+              src="/img/mock-tests.webp"
+              alt="Hands on a laptop keyboard, the softly blurred screen glowing with a countdown timer"
+              priority
+              sizes="(max-width: 1024px) 100vw, 50vw"
+            />
+          </div>
         </div>
       </div>
 

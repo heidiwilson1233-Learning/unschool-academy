@@ -82,6 +82,8 @@ export default function HowPracticeWorksPage() {
         tone="exam"
         title="Practice that respects your intelligence"
         sub="No inflated claims, no mystery scoring, no 10,000-question dumps of dubious origin. Here's exactly how our practice works — and exactly where its limits are."
+        art="/img/how-practice.webp"
+        artAlt="A learner writing in a notebook beside a laptop showing a rising progress chart in a warm study corner"
       >
         <Button href="#worked-example" variant="ghost">
           See a worked example

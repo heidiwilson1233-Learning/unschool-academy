@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Section, Button, Badge, Breadcrumbs, PageHero } from "@/components/ui";
-import { Momo, Tara, Bobo } from "@/components/characters";
+import { Section, SectionHeading, Button, Card, Badge, Breadcrumbs, PageHero } from "@/components/ui";
+import { Art, StagingNote } from "@/components/site-art";
 
 export const metadata: Metadata = {
   title: "Meet Momo, Tara & Bobo — Our Learning Guides",
@@ -88,11 +88,13 @@ export default function CharactersPage() {
           >
             <div className="grid gap-6 sm:grid-cols-[auto_1fr] items-start">
               <figure className="text-center">
-                <Momo
-                  decorative
-                  className="w-36 h-36 md:w-48 md:h-48 mx-auto animate-idle transition-transform duration-300 hover:scale-105 hover:-rotate-2"
-                  style={{ animationDelay: "-0.9s" }}
+                <Art
+                  src="/img/char-momo.webp"
+                  alt="Momo, a warm lavender elephant in teal dungarees with a yellow satchel, holding a mango in her trunk"
+                  ratio="portrait"
+                  className="max-w-[240px] mx-auto"
                 />
+                <StagingNote className="text-center" />
                 <figcaption className="mt-3">
                   <h2 id="momo-name" className="text-2xl font-extrabold text-kids-lavender-deep">
                     Momo
@@ -137,11 +139,13 @@ export default function CharactersPage() {
             className="md:col-span-2 md:row-span-2 rounded-3xl border-2 border-kids-leaf-deep/30 bg-white p-6 flex flex-col"
           >
             <figure className="text-center">
-              <Bobo
-                decorative
-                className="w-28 h-28 md:w-36 md:h-36 mx-auto animate-idle transition-transform duration-300 hover:scale-105 hover:rotate-2"
-                style={{ animationDelay: "-2.3s" }}
+              <Art
+                src="/img/char-bobo.webp"
+                alt="Bobo, a mint-green tortoise with a golden-yellow shell with three geometric patches, holding a magnifying glass"
+                ratio="portrait"
+                className="max-w-[200px] mx-auto"
               />
+              <StagingNote className="text-center" />
               <figcaption className="mt-3">
                 <h2 id="bobo-name" className="text-2xl font-extrabold text-kids-leaf-deep">
                   Bobo
@@ -202,11 +206,15 @@ export default function CharactersPage() {
                   </Button>
                 </div>
               </div>
-              <Tara
-                decorative
-                className="w-36 h-36 md:w-44 md:h-44 mx-auto animate-idle transition-transform duration-300 hover:scale-105 hover:rotate-2"
-                style={{ animationDelay: "-1.6s" }}
-              />
+              <figure className="text-center">
+                <Art
+                  src="/img/char-tara.webp"
+                  alt="Tara, a cinnamon-orange squirrel with a turquoise scarf, holding an open purple sketchbook"
+                  ratio="portrait"
+                  className="max-w-[220px] mx-auto"
+                />
+                <StagingNote className="text-center" />
+              </figure>
             </div>
           </article>
 

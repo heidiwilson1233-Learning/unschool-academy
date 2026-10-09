@@ -79,6 +79,8 @@ export default function JapaneseHubPage() {
         tone="exam"
         title="JFT-Basic or JLPT? Choose with clear eyes."
         sub="Two different tests, different organizers, different purposes — and a lot of confused advice online. Here's the honest comparison, grounded in official sources. Then pick the path that fits your goal."
+        art="/img/japanese-hub.webp"
+        artAlt="A calligraphy brush resting on washi paper with ink strokes, a softly blurred kana chart behind"
       />
       <Section>
         <Breadcrumbs trail={[{ label: "Home", href: "/" }, { label: "Exams", href: "/exams" }, { label: "Japanese learning" }]} />

@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState, type ReactNode, type Ref } from "react";
+import { Art, StagingNote } from "./site-art";
 
 /* ---------- Buttons ---------- */
 
@@ -264,12 +265,20 @@ export function PageHero({
   sub,
   children,
   tone = "default",
+  art,
+  artAlt = "",
+  artStaging = false,
 }: {
   eyebrow?: string;
   title: ReactNode;
   sub?: ReactNode;
   children?: ReactNode;
   tone?: "default" | "kids" | "exam";
+  /** Optional art-directed image path, e.g. "/img/jft-hero.webp" — renders text-left / art-right per the MD hero spec. */
+  art?: string;
+  artAlt?: string;
+  /** Kids character/scene art stays labeled as staging until illustrator review + IP signoff. */
+  artStaging?: boolean;
 }) {
   const bg =
     tone === "kids"
@@ -280,20 +289,35 @@ export function PageHero({
   return (
     <div className={`${bg} border-b border-border`}>
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-14 md:py-20">
-        {eyebrow && (
-          <p
-            className={`text-sm font-bold uppercase tracking-widest mb-4 ${
-              tone === "kids" ? "text-kids-orange-ink" : tone === "exam" ? "text-academy-teal-dark" : "text-academy-teal"
-            }`}
-          >
-            {eyebrow}
-          </p>
-        )}
-        <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-ink max-w-3xl leading-tight">
-          {title}
-        </h1>
-        {sub && <div className="mt-5 text-lg text-slate leading-relaxed max-w-2xl">{sub}</div>}
-        {children && <div className="mt-8 flex flex-wrap gap-4">{children}</div>}
+        <div className={art ? "grid lg:grid-cols-2 gap-10 items-center" : undefined}>
+          <div>
+            {eyebrow && (
+              <p
+                className={`text-sm font-bold uppercase tracking-widest mb-4 ${
+                  tone === "kids" ? "text-kids-orange-ink" : tone === "exam" ? "text-academy-teal-dark" : "text-academy-teal"
+                }`}
+              >
+                {eyebrow}
+              </p>
+            )}
+            <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-ink max-w-3xl leading-tight">
+              {title}
+            </h1>
+            {sub && <div className="mt-5 text-lg text-slate leading-relaxed max-w-2xl">{sub}</div>}
+            {children && <div className="mt-8 flex flex-wrap gap-4">{children}</div>}
+          </div>
+          {art && (
+            <div>
+              <Art
+                src={art}
+                alt={artAlt}
+                priority
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+              {artStaging && <StagingNote />}
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );

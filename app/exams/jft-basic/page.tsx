@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Section, SectionHeading, Button, Card, Badge, Breadcrumbs, FAQAccordion, Callout } from "@/components/ui";
 import { JFT_PROGRAM, TOPIC_INFO, DIAGNOSTIC_QUESTIONS } from "@/lib/exams";
+import { Art } from "@/components/site-art";
 
 export const metadata: Metadata = {
   title: "JFT-Basic Practice — Everyday Japanese",
@@ -40,32 +41,42 @@ export default function JftBasicPage() {
       <div className="bg-gradient-to-b from-academy-blue/10 to-canvas border-b border-border">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-12 md:py-16">
           <Breadcrumbs trail={[{ label: "Home", href: "/" }, { label: "Exams", href: "/exams" }, { label: "JFT-Basic" }]} />
-          <div className="flex flex-wrap items-center gap-3 mb-4">
-            <Badge tone="success">Live pilot</Badge>
-            <Badge tone="info">Exam facts verified {JFT_PROGRAM.lastVerified}</Badge>
-          </div>
-          <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-ink max-w-3xl">
-            Practice the Japanese you&apos;ll use on Monday morning
-          </h1>
-          <p className="mt-4 text-lg text-slate max-w-2xl leading-relaxed">
-            {JFT_PROGRAM.tagline}. The JFT-Basic is run by the Japan Foundation for people planning
-            to live and work in Japan — so we drill the everyday language the test actually measures:
-            reading a notice, following a conversation, catching the point of an announcement.
-          </p>
-          <Callout title="Independent preparation" tone="info">
-            Unschool Academy is not affiliated with the Japan Foundation. For official test
-            information, see the{" "}
-            <a href={JFT_PROGRAM.officialUrl} target="_blank" rel="noopener noreferrer" className="font-semibold text-academy-blue hover:underline">
-              official JFT-Basic pages
-            </a>
-            <span className="sr-only"> (opens in new tab)</span>
-            . Exam facts below were verified against those pages on {JFT_PROGRAM.lastVerified}.
-          </Callout>
-          <div className="mt-6 flex flex-wrap gap-4">
-            <Button href="/exams/jft-basic/diagnostic" size="lg">Try free diagnostic</Button>
-            <Button href={JFT_PROGRAM.officialUrl} variant="secondary" size="lg">
-              Official exam information <span aria-hidden="true">↗</span>
-            </Button>
+          <div className="grid lg:grid-cols-2 gap-10 items-center">
+            <div>
+              <div className="flex flex-wrap items-center gap-3 mb-4">
+                <Badge tone="success">Live pilot</Badge>
+                <Badge tone="info">Exam facts verified {JFT_PROGRAM.lastVerified}</Badge>
+              </div>
+              <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-ink max-w-3xl">
+                Practice the Japanese you&apos;ll use on Monday morning
+              </h1>
+              <p className="mt-4 text-lg text-slate max-w-2xl leading-relaxed">
+                {JFT_PROGRAM.tagline}. The JFT-Basic is run by the Japan Foundation for people planning
+                to live and work in Japan — so we drill the everyday language the test actually measures:
+                reading a notice, following a conversation, catching the point of an announcement.
+              </p>
+              <Callout title="Independent preparation" tone="info">
+                Unschool Academy is not affiliated with the Japan Foundation. For official test
+                information, see the{" "}
+                <a href={JFT_PROGRAM.officialUrl} target="_blank" rel="noopener noreferrer" className="font-semibold text-academy-blue hover:underline">
+                  official JFT-Basic pages
+                </a>
+                <span className="sr-only"> (opens in new tab)</span>
+                . Exam facts below were verified against those pages on {JFT_PROGRAM.lastVerified}.
+              </Callout>
+              <div className="mt-6 flex flex-wrap gap-4">
+                <Button href="/exams/jft-basic/diagnostic" size="lg">Try free diagnostic</Button>
+                <Button href={JFT_PROGRAM.officialUrl} variant="secondary" size="lg">
+                  Official exam information <span aria-hidden="true">↗</span>
+                </Button>
+              </div>
+            </div>
+            <Art
+              src="/img/jft-hero.webp"
+              alt="A Tokyo side street at dusk with warm lantern bokeh, a student with a notebook softly out of focus in the foreground"
+              priority
+              sizes="(max-width: 1024px) 100vw, 50vw"
+            />
           </div>
         </div>
       </div>

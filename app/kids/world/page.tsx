@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Section, SectionHeading, Button, Breadcrumbs } from "@/components/ui";
+import { Art, StagingNote } from "@/components/site-art";
 import { Momo, Tara, Bobo } from "@/components/characters";
 import { StorybookVillageMap } from "@/components/village-map";
 import { VILLAGE_LOCATIONS } from "@/lib/kids";
@@ -103,29 +104,41 @@ export default function WorldPage() {
         <div aria-hidden className="absolute -top-32 -left-24 w-[480px] h-[480px] rounded-full bg-kids-orange/25 blur-3xl" />
         <div aria-hidden className="absolute -bottom-40 -right-24 w-[520px] h-[520px] rounded-full bg-kids-lavender/20 blur-3xl" />
         <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 pt-14 pb-12 md:pt-20 md:pb-16">
-          <p className="text-sm font-bold uppercase tracking-[0.2em] text-kids-orange-ink mb-4">
-            The village
-          </p>
-          <h1 className="max-w-4xl text-balance font-extrabold text-ink leading-[0.95] tracking-[-0.03em] text-[clamp(2.75rem,7vw,5.25rem)]">
-            Six storybook places where children learn by{" "}
-            <span className="text-kids-orange-deep">helping out</span>
-          </h1>
-          <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate">
-            The whole village is getting ready for a joyful festival, and every
-            quest pitches in. Each place is a real teaching setting with its own
-            guide. Two quests are playable today; the rest of the village is
-            still being built, and the village never rushes anyone.
-          </p>
-          <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-4">
-            <Button href="/kids/sample/momo-mangoes" variant="kids" size="lg">
-              Play the mango quest
-            </Button>
-            <Link
-              href="/kids/sample/tara-story"
-              className="font-bold text-kids-orange-ink underline decoration-2 underline-offset-4 hover:text-kids-orange-deep"
-            >
-              Start at Tara&rsquo;s Story Tree
-            </Link>
+          <div className="grid lg:grid-cols-2 gap-10 items-center">
+            <div>
+              <p className="text-sm font-bold uppercase tracking-[0.2em] text-kids-orange-ink mb-4">
+                The village
+              </p>
+              <h1 className="max-w-4xl text-balance font-extrabold text-ink leading-[0.95] tracking-[-0.03em] text-[clamp(2.75rem,7vw,5.25rem)]">
+                Six storybook places where children learn by{" "}
+                <span className="text-kids-orange-deep">helping out</span>
+              </h1>
+              <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate">
+                The whole village is getting ready for a joyful festival, and every
+                quest pitches in. Each place is a real teaching setting with its own
+                guide. Two quests are playable today; the rest of the village is
+                still being built, and the village never rushes anyone.
+              </p>
+              <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-4">
+                <Button href="/kids/sample/momo-mangoes" variant="kids" size="lg">
+                  Play the mango quest
+                </Button>
+                <Link
+                  href="/kids/sample/tara-story"
+                  className="font-bold text-kids-orange-ink underline decoration-2 underline-offset-4 hover:text-kids-orange-deep"
+                >
+                  Start at Tara&rsquo;s Story Tree
+                </Link>
+              </div>
+            </div>
+            <div>
+              <Art
+                src="/img/discovery-pond.webp"
+                alt="Bobo's Discovery Pond: a sparkling pond with lily pads where Bobo the tortoise peers through a magnifying glass at a frog"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+              <StagingNote />
+            </div>
           </div>
         </div>
       </header>
