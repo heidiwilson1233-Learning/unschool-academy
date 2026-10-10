@@ -1,12 +1,15 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import { Volume2, Flag, ArrowRight } from "lucide-react";
 import { Button, Badge, Callout, Card } from "@/components/ui";
 import { recordAttempt, speakJapanese } from "@/lib/attempts";
 
 type PublicQuestion = {
   id: string;
   topic: string;
+  skill: string;
+  skillLabel: string;
   stem: string;
   stemJp: string | null;
   options: { id: string; text: string; textJp: string | null }[];
@@ -24,23 +27,28 @@ type ScoreDetail = {
   explanation: string;
 };
 
+type SkillResult = {
+  skill: string;
+  label: string;
+  topic: string;
+  practiceSlug: string;
+  correct: number;
+  total: number;
+  status: "can-do" | "needs-help";
+};
+
 type ScoreResult = {
+  version: string;
   score: number;
   total: number;
   percent: number;
   topics: { topic: string; description: string; correct: number; total: number; needsWork: boolean }[];
+  skills: SkillResult[];
+  unsampledSkills: string[];
   details: ScoreDetail[];
   recommendation: string;
   disclaimer: string;
   reviewStatus: string;
-};
-
-// Topic names come from the server; slugs match app/exams/jft-basic/topics/page.tsx.
-const TOPIC_SLUGS: Record<string, string> = {
-  "Script and Vocabulary": "vocabulary",
-  "Conversation and Expression": "conversation",
-  "Listening Comprehension": "listening",
-  "Reading Comprehension": "reading",
 };
 
 export default function DiagnosticPlayer() {
@@ -56,6 +64,7 @@ export default function DiagnosticPlayer() {
   const [reviewFilter, setReviewFilter] = useState<"wrong" | "all">("wrong");
 
   const resultsRef = useRef<HTMLDivElement>(null);
+  const playerRef = useRef<HTMLDivElement>(null);
   const dialogRef = useRef<HTMLDivElement>(null);
   const keepAnsweringRef = useRef<HTMLButtonElement>(null);
   const cardSeenRef = useRef(false);
@@ -101,8 +110,18 @@ export default function DiagnosticPlayer() {
       setResult(d);
       setReviewFilter(d.details.some((x) => !x.correct) ? "wrong" : "all");
       setConfirming(false);
-      recordAttempt({ kind: "diagnostic", score: d.score, total: d.total, at: new Date().toISOString() });
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      recordAttempt({
+        kind: "diagnostic",
+        score: d.score,
+        total: d.total,
+        at: new Date().toISOString(),
+        skills: d.skills.map((s) => ({ skill: s.skill, correct: s.correct, total: s.total })),
+        // Content-schema rule 4: attempts reference the version the learner saw,
+        // so retakes stay comparable when the bank is edited.
+        contentVersion: d.version,
+      });
+      window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" });
       // WCAG 2.4.3: move focus to the new results region (no visible ring — programmatic focus).
       requestAnimationFrame(() => resultsRef.current?.focus({ preventScroll: true }));
     } catch {
@@ -117,6 +136,9 @@ export default function DiagnosticPlayer() {
     if (!questions || result || confirming) return;
     const onKey = (e: KeyboardEvent) => {
       const target = e.target as HTMLElement | null;
+      // Scope shortcuts to the player: number/arrow keys are SR navigation
+      // keys page-wide, so never hijack keypresses outside the player card.
+      if (playerRef.current && target && !playerRef.current.contains(target)) return;
       // Never hijack keys typed into real form controls.
       if (target?.closest?.('input, select, textarea, [contenteditable="true"]')) {
         // Native radios own arrow keys — don't also jump questions (double-trigger).
@@ -180,9 +202,9 @@ export default function DiagnosticPlayer() {
 
   if (!questions) {
     return (
-      <div aria-live="polite" className="space-y-3">
+      <div aria-live="polite" className="space-y-3 min-h-[520px]">
         {[1, 2, 3].map((i) => (
-          <div key={i} className="h-24 rounded-2xl bg-border/40 animate-pulse" />
+          <div key={i} className="h-24 rounded-2xl bg-border/40" />
         ))}
         <p className="text-slate text-sm">Loading your 10 questions…</p>
       </div>
@@ -191,11 +213,13 @@ export default function DiagnosticPlayer() {
 
   /* ---------- RESULTS ---------- */
   if (result) {
-    const sortedTopics = [...result.topics].sort(
+    const sortedSkills = [...result.skills].sort(
       (a, b) => a.correct / a.total - b.correct / b.total
     );
-    const weakest = sortedTopics[0];
-    const secondWeakest = sortedTopics[1];
+    const needsHelpSkills = sortedSkills.filter((s) => s.status === "needs-help");
+    const canDoSkills = result.skills.filter((s) => s.status === "can-do");
+    const weakestSkill = sortedSkills[0];
+    const secondWeakestSkill = sortedSkills[1];
     const wrongDetails = result.details.filter((d) => !d.correct);
     const shownDetails =
       reviewFilter === "wrong" && wrongDetails.length > 0
@@ -203,11 +227,11 @@ export default function DiagnosticPlayer() {
         : result.details;
     const placementLine =
       result.percent >= 80
-        ? "Strong foundation — time to build speed"
-        : `Your starting line: ${weakest.topic}`;
+        ? "Strong start on this sample: time to build speed"
+        : `Your starting line: ${weakestSkill.label}`;
 
     return (
-      <div className="animate-fade-up" ref={resultsRef} tabIndex={-1}>
+      <div className="guide-reveal" ref={resultsRef} tabIndex={-1}>
         {/* Score hero — growth frame leads, the number follows */}
         <section aria-labelledby="diag-score">
           <h2 id="diag-score" className="sr-only">Your diagnostic results</h2>
@@ -219,7 +243,7 @@ export default function DiagnosticPlayer() {
             </p>
             <p className="mt-2 text-slate">{result.recommendation}</p>
             <p className="mt-3 text-sm text-slate">
-              This measures 10 practice questions, not your ability — practice a topic,
+              This measures 10 practice questions, not your ability. Practice a topic,
               then retake the diagnostic to see your progress.
             </p>
             <Callout title="Honest scoring" tone="info">
@@ -229,54 +253,95 @@ export default function DiagnosticPlayer() {
           </Card>
         </section>
 
-        {/* Topics */}
-        <section aria-labelledby="diag-topics">
-          <h2 id="diag-topics" className="text-2xl font-extrabold text-ink mt-10 mb-2">Your topics</h2>
-          <p className="text-slate mb-4">Tap a topic to start fixing it — practice is free.</p>
-          <div className="grid sm:grid-cols-2 gap-4">
-            {result.topics.map((t) => {
-              const slug = TOPIC_SLUGS[t.topic];
-              return (
-                <Card key={t.topic} className={t.needsWork ? "!border-amber-300" : ""}>
-                  <div className="flex items-start justify-between gap-3">
-                    <div>
-                      <h3 className="font-bold text-ink">{t.topic}</h3>
-                      <p className="text-sm text-slate mt-1">{t.description}</p>
-                    </div>
-                    <span className={`text-2xl font-extrabold ${t.needsWork ? "text-amber-700" : "text-academy-teal-dark"}`}>
-                      {t.correct}/{t.total}
-                    </span>
-                  </div>
-                  <div className="mt-3 h-2 rounded-full bg-border/60 overflow-hidden" role="img" aria-label={`${t.correct} of ${t.total} correct in ${t.topic}`}>
-                    <div
-                      className={`h-full rounded-full ${t.needsWork ? "bg-amber-400" : "bg-academy-teal"}`}
-                      style={{ width: `${(t.correct / t.total) * 100}%` }}
-                    />
-                  </div>
-                  {t.needsWork && (
-                    <>
-                      <p className="mt-2 text-sm font-semibold text-amber-700">Your quickest win — start here</p>
-                      {slug && (
-                        <div className="mt-3">
-                          <Button href={`/exams/jft-basic/practice/${slug}`} variant="secondary" size="sm">
-                            Practice {t.topic} →
-                          </Button>
-                        </div>
-                      )}
-                    </>
-                  )}
-                </Card>
-              );
-            })}
+        {/* Skill gap map — Can Do vs Needs Help, weakest first (portal doctrine move 1). */}
+        <section aria-labelledby="diag-gapmap">
+          <h2 id="diag-gapmap" className="text-2xl font-extrabold text-ink mt-10 mb-2">Your skill map</h2>
+          <p className="text-slate mb-6 max-w-2xl">
+            Ten questions is a thin sample. Treat this as a first pass, not a verdict.
+            Each row is one skill the JFT-Basic tests; practice fixes them weakest-first.
+          </p>
+          <div className="grid lg:grid-cols-6 gap-6">
+            {/* Needs help — the dossier cell (action zone) */}
+            <div className="lg:col-span-4 bg-paper border border-border rounded-2xl p-6 md:p-8">
+              <div className="flex items-baseline justify-between border-b-2 border-ink pb-3">
+                <h3 className="font-extrabold text-ink">Needs help</h3>
+                <p className="text-xs font-bold uppercase tracking-widest text-amber-700">
+                  {needsHelpSkills.length} skill{needsHelpSkills.length === 1 ? "" : "s"} to fix first
+                </p>
+              </div>
+              {needsHelpSkills.length === 0 ? (
+                <p className="py-6 text-slate">
+                  Nothing needs help at this sample size. Every skill you tried came back strong.
+                  The unsampled skills below are still worth a look.
+                </p>
+              ) : (
+                <ul className="divide-y divide-border">
+                  {needsHelpSkills.map((s, i) => (
+                    <li key={s.skill} className="py-4 flex items-start justify-between gap-4">
+                      <div className="min-w-0">
+                        <p className="text-xs font-bold uppercase tracking-widest text-slate">{String(i + 1).padStart(2, "0")} · {s.topic}</p>
+                        <p className="font-bold text-ink mt-1">{s.label}</p>
+                        <p className="text-xs text-slate mt-1">
+                          {s.correct} of {s.total} right{s.total === 1 ? " (one question: first pass only)" : ""}
+                        </p>
+                      </div>
+                      <div className="flex flex-col items-end gap-2 shrink-0">
+                        <span className="text-2xl font-extrabold text-amber-700 tabular-nums">{s.correct}/{s.total}</span>
+                        <a
+                          href={`/exams/jft-basic/practice/${s.practiceSlug}`}
+                          className="inline-flex items-center gap-1.5 text-sm font-bold text-academy-blue hover:underline"
+                          aria-label={`Practice ${s.label}`}
+                        >
+                          Practice <ArrowRight size={14} aria-hidden="true" />
+                        </a>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+            {/* Can do — the quiet rail */}
+            <div className="lg:col-span-2 flex flex-col gap-6">
+              <div className="bg-paper border border-border rounded-2xl p-6">
+                <h3 className="font-extrabold text-ink border-b border-border pb-3">Can do</h3>
+                {canDoSkills.length === 0 ? (
+                  <p className="py-4 text-sm text-slate">Not this time. That is what the diagnostic is for.</p>
+                ) : (
+                  <ul className="divide-y divide-border">
+                    {canDoSkills.map((s) => (
+                      <li key={s.skill} className="py-3">
+                        <p className="font-bold text-ink text-[15px]">{s.label}</p>
+                        <p className="text-xs text-slate mt-0.5">
+                          {s.correct}/{s.total} · {s.topic}
+                        </p>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+              {result.unsampledSkills.length > 0 && (
+                <div className="bg-canvas border border-border rounded-2xl p-6">
+                  <h3 className="font-extrabold text-ink border-b border-border pb-3">Not sampled today</h3>
+                  <ul className="mt-3 space-y-1.5">
+                    {result.unsampledSkills.map((label) => (
+                      <li key={label} className="text-sm text-slate">· {label}</li>
+                    ))}
+                  </ul>
+                  <p className="mt-3 text-xs text-slate">
+                    Ten questions can&apos;t cover every skill. Topic practice does — it is free.
+                  </p>
+                </div>
+              )}
+            </div>
           </div>
         </section>
 
         {/* Review — wrong answers first, correct answers collapsed */}
         <section aria-labelledby="diag-review">
-          <div className="flex flex-wrap items-center justify-between gap-3 mt-10 mb-4">
+          <div className="flex flex-wrap items-center justify-between gap-3 mt-10 mb-2">
             <h2 id="diag-review" className="text-2xl font-extrabold text-ink">Review every question</h2>
             {wrongDetails.length > 0 && (
-              <div className="flex rounded-xl border border-border overflow-hidden" role="group" aria-label="Filter reviewed questions">
+              <div className="flex rounded-xl border border-border overflow-hidden" role="group" aria-label="Filter review questions">
                 {(["wrong", "all"] as const).map((f) => (
                   <button
                     key={f}
@@ -291,13 +356,21 @@ export default function DiagnosticPlayer() {
               </div>
             )}
           </div>
+          {/* Honesty, stated once here so the per-row tag below can stay compact —
+              screen readers hear this sentence once, not ten times. */}
+          <p className="text-xs text-slate mb-4">
+            Every explanation below is a draft pending expert review.
+          </p>
           {wrongDetails.length > 0 && (
             <div className="flex flex-wrap gap-2 mb-4" aria-label="Jump to a missed question">
               {wrongDetails.map((d) => (
                 <button
                   key={d.id}
                   type="button"
-                  onClick={() => document.getElementById(`review-${d.id}`)?.scrollIntoView({ behavior: "smooth", block: "start" })}
+                  onClick={() => {
+                    const rm = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+                    document.getElementById(`review-${d.id}`)?.scrollIntoView({ behavior: rm ? "auto" : "smooth", block: "start" });
+                  }}
                   className="px-3 py-1.5 rounded-lg border border-red-200 bg-red-50 text-sm font-bold text-red-700 hover:bg-red-100"
                 >
                   Q{result.details.indexOf(d) + 1}
@@ -330,6 +403,9 @@ export default function DiagnosticPlayer() {
                     )}
                   </div>
                   <p className="mt-3 text-[15px] text-slate leading-relaxed border-t border-border pt-3">
+                    <span aria-hidden="true" className="mr-2 align-middle">
+                      <Badge tone="warning">Draft</Badge>
+                    </span>
                     <span className="font-semibold text-ink">Why: </span>{d.explanation}
                   </p>
                 </>
@@ -362,64 +438,129 @@ export default function DiagnosticPlayer() {
           </div>
         </section>
 
-        {/* Starter plan — the MD spec's "create plan" next action, built from real results */}
+        {/* Starter plan — the MD spec's "create plan" next action, built from real results.
+            Weak-skills-first: the diagnostic's weakest skill is always step one. */}
         <section aria-labelledby="diag-plan">
           <Card className="mt-10 !p-8">
             <h2 id="diag-plan" className="text-2xl font-extrabold text-ink">Your starter plan</h2>
-            <p className="text-slate mt-1 mb-6">Built from your answers — retake the diagnostic anytime to update it.</p>
-            <ol className="space-y-5">
-              <li className="flex gap-4">
-                <span aria-hidden="true" className="w-8 h-8 rounded-full bg-academy-blue text-white font-bold flex items-center justify-center shrink-0">1</span>
-                <div>
-                  <p className="font-bold text-ink">Start with {weakest.topic} — 15 minutes a day</p>
-                  <p className="text-sm text-slate mt-1">Your weakest area is your fastest win.</p>
-                  {TOPIC_SLUGS[weakest.topic] && (
+            <p className="text-slate mt-1 mb-6">
+              {needsHelpSkills.length === 0
+                ? "Every sampled skill came back strong. This plan is about staying sharp."
+                : "Built from your answers, weakest skill first. Retake the diagnostic anytime to update it."}
+            </p>
+            {needsHelpSkills.length === 0 ? (
+              <ol className="space-y-5">
+                <li className="flex gap-4">
+                  <span aria-hidden="true" className="w-8 h-8 rounded-full bg-academy-blue text-white font-bold flex items-center justify-center shrink-0">1</span>
+                  <div>
+                    <p className="font-bold text-ink">Keep it sharp: timed mixed practice</p>
+                    <p className="text-sm text-slate mt-1">
+                      You cleared every sampled skill. The 30-minute timed mock builds the speed the real test demands.
+                    </p>
                     <div className="mt-2">
-                      <Button href={`/exams/jft-basic/practice/${TOPIC_SLUGS[weakest.topic]}`} size="sm">
-                        Start practicing →
+                      <Button href="/exams/jft-basic/mock-tests" size="sm">
+                        Try a timed mock →
                       </Button>
                     </div>
-                  )}
-                </div>
-              </li>
-              {secondWeakest && secondWeakest.topic !== weakest.topic && (
+                  </div>
+                </li>
                 <li className="flex gap-4">
                   <span aria-hidden="true" className="w-8 h-8 rounded-full bg-academy-blue/15 text-academy-blue font-bold flex items-center justify-center shrink-0">2</span>
                   <div>
-                    <p className="font-bold text-ink">Then {secondWeakest.topic}</p>
-                    <p className="text-sm text-slate mt-1">Your second-weakest area — rotate it in after a few days.</p>
-                    {TOPIC_SLUGS[secondWeakest.topic] && (
-                      <div className="mt-2">
-                        <Button href={`/exams/jft-basic/practice/${TOPIC_SLUGS[secondWeakest.topic]}`} variant="secondary" size="sm">
-                          Practice {secondWeakest.topic} →
-                        </Button>
-                      </div>
-                    )}
+                    <p className="font-bold text-ink">Round out the skills we didn&apos;t sample</p>
+                    <p className="text-sm text-slate mt-1">
+                      Ten questions can&apos;t cover all 11 skills. Topic practice covers every one of them.
+                    </p>
+                    <div className="mt-2">
+                      <Button href="/exams/jft-basic/topics" variant="secondary" size="sm">
+                        Practice by topic →
+                      </Button>
+                    </div>
                   </div>
                 </li>
-              )}
-              <li className="flex gap-4">
-                <span aria-hidden="true" className="w-8 h-8 rounded-full bg-academy-blue/15 text-academy-blue font-bold flex items-center justify-center shrink-0">3</span>
-                <div>
-                  <p className="font-bold text-ink">Retake this diagnostic in a week</p>
-                  <p className="text-sm text-slate mt-1">Same 10 questions — measure exactly how far you&apos;ve come.</p>
-                  <div className="mt-2">
-                    <Button variant="secondary" size="sm" onClick={() => window.location.reload()}>
-                      Retake diagnostic
-                    </Button>
+                <li className="flex gap-4">
+                  <span aria-hidden="true" className="w-8 h-8 rounded-full bg-academy-blue/15 text-academy-blue font-bold flex items-center justify-center shrink-0">3</span>
+                  <div>
+                    <p className="font-bold text-ink">Retake this diagnostic in a week</p>
+                    <p className="text-sm text-slate mt-1">Same 10 questions: confirm every skill is still in &ldquo;Can do&rdquo;.</p>
+                    <div className="mt-2">
+                      <Button variant="secondary" size="sm" onClick={() => window.location.reload()}>
+                        Retake diagnostic
+                      </Button>
+                    </div>
                   </div>
-                </div>
-              </li>
-            </ol>
+                </li>
+              </ol>
+            ) : (
+              <ol className="space-y-5">
+                <li className="flex gap-4">
+                  <span aria-hidden="true" className="w-8 h-8 rounded-full bg-academy-blue text-white font-bold flex items-center justify-center shrink-0">1</span>
+                  <div>
+                    <p className="font-bold text-ink">Start with {weakestSkill.label}: 15 minutes a day</p>
+                    <p className="text-sm text-slate mt-1">
+                      Your weakest skill is your fastest win. ({weakestSkill.topic})
+                    </p>
+                    <div className="mt-2">
+                      <Button href={`/exams/jft-basic/practice/${weakestSkill.practiceSlug}`} size="sm">
+                        Start practicing →
+                      </Button>
+                    </div>
+                  </div>
+                </li>
+                {secondWeakestSkill && secondWeakestSkill.skill !== weakestSkill.skill && (
+                  <li className="flex gap-4">
+                    <span aria-hidden="true" className="w-8 h-8 rounded-full bg-academy-blue/15 text-academy-blue font-bold flex items-center justify-center shrink-0">2</span>
+                    <div>
+                      <p className="font-bold text-ink">Then {secondWeakestSkill.label}</p>
+                      <p className="text-sm text-slate mt-1">
+                        Your second-weakest skill: rotate it in after a few days. ({secondWeakestSkill.topic})
+                      </p>
+                      <div className="mt-2">
+                        <Button href={`/exams/jft-basic/practice/${secondWeakestSkill.practiceSlug}`} variant="secondary" size="sm">
+                          Practice {secondWeakestSkill.label} →
+                        </Button>
+                      </div>
+                    </div>
+                  </li>
+                )}
+                {needsHelpSkills.length > 2 && (
+                  <li className="flex gap-4">
+                    <span aria-hidden="true" className="w-8 h-8 rounded-full bg-academy-blue/15 text-academy-blue font-bold flex items-center justify-center shrink-0">·</span>
+                    <div>
+                      <p className="text-sm text-slate">
+                        Plus {needsHelpSkills.length - 2} more skill{needsHelpSkills.length - 2 === 1 ? "" : "s"} in your{" "}
+                        <a href="#diag-gapmap" className="font-bold text-academy-blue hover:underline">skill map above</a>{" "}
+                        — all weakest-first.
+                      </p>
+                    </div>
+                  </li>
+                )}
+                <li className="flex gap-4">
+                  <span aria-hidden="true" className="w-8 h-8 rounded-full bg-academy-blue/15 text-academy-blue font-bold flex items-center justify-center shrink-0">3</span>
+                  <div>
+                    <p className="font-bold text-ink">Retake this diagnostic in a week</p>
+                    <p className="text-sm text-slate mt-1">Same 10 questions: watch the skills move from &ldquo;Needs help&rdquo; to &ldquo;Can do&rdquo;.</p>
+                    <div className="mt-2">
+                      <Button variant="secondary" size="sm" onClick={() => window.location.reload()}>
+                        Retake diagnostic
+                      </Button>
+                    </div>
+                  </div>
+                </li>
+              </ol>
+            )}
             <p className="mt-6 text-sm text-slate">
               Your result is saved on this device automatically — an account keeps it across devices.
             </p>
             <div className="mt-6 flex flex-wrap gap-4">
-              <Button href="/signup">Save your results — create account</Button>
+              <Button href="/signup">Save your results: create account</Button>
               <Button href="/exams/jft-basic" variant="ghost">Back to JFT-Basic</Button>
             </div>
           </Card>
         </section>
+
+        {/* Optional 2-question exit survey — MD blueprint 07_DIGITAL_GROWTH_AND_FINANCES, line 92. */}
+        <ExitSurvey />
       </div>
     );
   }
@@ -438,7 +579,7 @@ export default function DiagnosticPlayer() {
         role="dialog"
         aria-modal="true"
         aria-labelledby="submit-title"
-        className="bg-paper border border-border rounded-2xl p-6 md:p-8 shadow-sm max-w-lg mx-auto text-center !p-10 animate-fade-up"
+        className="bg-paper border border-border rounded-2xl p-6 md:p-8 shadow-sm max-w-lg mx-auto text-center !p-10 guide-reveal"
       >
         <h2 id="submit-title" className="text-2xl font-extrabold text-ink mb-3">Submit your diagnostic?</h2>
         <p className="text-slate">
@@ -496,7 +637,7 @@ export default function DiagnosticPlayer() {
   const isFlagged = !!flagged[q.id];
 
   return (
-    <div>
+    <div ref={playerRef}>
       {/* Progress + palette */}
       <div className="mb-6">
         <p className="text-sm font-semibold text-slate mb-2" aria-live="polite">
@@ -535,16 +676,16 @@ export default function DiagnosticPlayer() {
       </div>
 
       {/* Question card */}
-      <Card className={`!p-6 md:!p-10${animateCard ? " animate-fade-up" : ""}`} key={q.id}>
+      <Card className={`!p-6 md:!p-10${animateCard ? " guide-reveal" : ""}`} key={q.id}>
         <div className="flex items-center justify-between gap-3">
           <Badge tone="info">{q.topic}</Badge>
           <button
             type="button"
             onClick={() => setFlagged((f) => ({ ...f, [q.id]: !f[q.id] }))}
             aria-pressed={isFlagged}
-            className={`text-sm font-semibold px-3 py-1.5 rounded-lg border ${isFlagged ? "border-amber-400 bg-amber-50 text-amber-700" : "border-border text-slate hover:text-ink"}`}
+            className={`inline-flex items-center gap-1.5 text-sm font-semibold px-3 py-1.5 rounded-lg border ${isFlagged ? "border-amber-400 bg-amber-50 text-amber-700" : "border-border text-slate hover:text-ink"}`}
           >
-            <span aria-hidden="true">{isFlagged ? "★ " : "☆ "}</span>{isFlagged ? "Flagged" : "Flag for review"}
+            <Flag size={14} aria-hidden="true" />{isFlagged ? "Flagged" : "Flag for review"}
           </button>
         </div>
         <h2 className="mt-4 text-xl md:text-2xl font-bold text-ink leading-relaxed">{q.stem}</h2>
@@ -557,7 +698,7 @@ export default function DiagnosticPlayer() {
               size="sm"
               onClick={() => speakJapanese(q.audioTextJp!)}
             >
-              <span aria-hidden="true">🔊</span> Play audio
+              <Volume2 size={15} aria-hidden="true" /> Play audio
             </Button>
             <p className="text-xs text-slate">Transcript always available below — audio is never required.</p>
           </div>
@@ -571,7 +712,7 @@ export default function DiagnosticPlayer() {
               return (
                 <label
                   key={o.id}
-                  className={`w-full text-left px-5 py-4 rounded-xl border-2 transition-all cursor-pointer flex items-start ${
+                  className={`w-full text-left px-5 py-4 rounded-xl border-2 transition-all cursor-pointer flex items-start focus-within:ring-2 focus-within:ring-academy-blue focus-within:ring-offset-2 focus-within:outline-none ${
                     selected
                       ? "border-academy-blue bg-academy-blue/5 shadow-sm"
                       : "border-border hover:border-academy-blue/50 hover:bg-canvas"
@@ -615,5 +756,98 @@ export default function DiagnosticPlayer() {
         )}
       </div>
     </div>
+  );
+}
+
+/**
+ * Optional 2-question exit survey — MD blueprint 07_DIGITAL_GROWTH_AND_FINANCES
+ * calls for exactly these two questions after the adult diagnostic.
+ * Purely optional, dismissible, stored on-device only (no endpoint exists yet).
+ */
+function ExitSurvey() {
+  const [dismissed, setDismissed] = useState(false);
+  const [sent, setSent] = useState(false);
+  const [goal, setGoal] = useState("");
+  const [missing, setMissing] = useState("");
+
+  if (dismissed) return null;
+
+  if (sent) {
+    return (
+      <Card className="mt-8 !p-6 md:!p-8 text-center">
+        <p className="font-bold text-ink">Thanks — that helps us make the diagnostic better.</p>
+        <p className="text-sm text-slate mt-1">Your answers are stored on this device only.</p>
+      </Card>
+    );
+  }
+
+  return (
+    <Card className="mt-8 !p-6 md:!p-8">
+      <div className="flex items-start justify-between gap-4">
+        <div>
+          <h2 className="text-xl font-extrabold text-ink">Two quick questions — optional</h2>
+          <p className="text-sm text-slate mt-1">
+            Help us improve this diagnostic. Skip any question you don&apos;t want to answer.
+          </p>
+        </div>
+        <button
+          type="button"
+          onClick={() => setDismissed(true)}
+          className="text-sm font-bold text-slate hover:text-ink shrink-0 px-2 py-1"
+        >
+          Skip all
+        </button>
+      </div>
+      <div className="mt-5 space-y-4">
+        <div>
+          <label htmlFor="exit-goal" className="block text-sm font-bold text-ink mb-1.5">
+            What were you hoping this would help you do?
+          </label>
+          <input
+            id="exit-goal"
+            type="text"
+            value={goal}
+            onChange={(e) => setGoal(e.target.value)}
+            placeholder="e.g. see if my Japanese is good enough for work"
+            className="w-full rounded-xl border border-border bg-canvas px-4 py-3 text-ink placeholder:text-slate/70 focus:outline-none focus-visible:ring-2 focus-visible:ring-academy-blue"
+          />
+        </div>
+        <div>
+          <label htmlFor="exit-missing" className="block text-sm font-bold text-ink mb-1.5">
+            What was missing?
+          </label>
+          <input
+            id="exit-missing"
+            type="text"
+            value={missing}
+            onChange={(e) => setMissing(e.target.value)}
+            placeholder="e.g. more listening questions"
+            className="w-full rounded-xl border border-border bg-canvas px-4 py-3 text-ink placeholder:text-slate/70 focus:outline-none focus-visible:ring-2 focus-visible:ring-academy-blue"
+          />
+        </div>
+      </div>
+      <div className="mt-5 flex flex-wrap gap-3">
+        <Button
+          size="sm"
+          disabled={!goal.trim() && !missing.trim()}
+          onClick={() => {
+            try {
+              const key = "ua-diagnostic-feedback";
+              const prev = JSON.parse(localStorage.getItem(key) ?? "[]");
+              prev.push({ goal: goal.trim(), missing: missing.trim(), at: new Date().toISOString() });
+              localStorage.setItem(key, JSON.stringify(prev.slice(-20)));
+            } catch {
+              /* storage unavailable — feedback simply isn't saved */
+            }
+            setSent(true);
+          }}
+        >
+          Send feedback
+        </Button>
+        <Button variant="ghost" size="sm" onClick={() => setDismissed(true)}>
+          Skip
+        </Button>
+      </div>
+    </Card>
   );
 }
