@@ -6,12 +6,12 @@ import { CheckoutButton } from "@/components/checkout-button";
 export const metadata: Metadata = {
   title: "Kids Learning Plans & Pricing — Unschool Academy",
   description:
-    "Compare Unschool Kids plans: free sample quests forever, a ₹249/month family plan with every quest plus the parent dashboard, or a ₹399 one-time quest pack. Adult-only billing, cancel anytime.",
+    "Two free sample quests, no account needed. Family Plan: ₹249/month for up to 3 children, or ₹399 one-time Founding plan. Pilot billing, no real charges.",
   alternates: { canonical: "/kids/pricing" },
   openGraph: {
     title: "Kids Learning Plans & Pricing — Unschool Academy",
     description:
-      "Free sample quests forever, or ₹249/month for every quest plus the parent dashboard. Adult-only billing, cancel anytime.",
+      "Two free sample quests, no account needed. ₹249/month family plan for up to 3 children, or ₹399 one-time Founding plan. Pilot billing, no real charges.",
     type: "website",
     url: "/kids/pricing",
   },
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     card: "summary",
     title: "Kids Learning Plans & Pricing — Unschool Academy",
     description:
-      "Free sample quests forever, or ₹249/month for every quest plus the parent dashboard. Adult-only billing.",
+      "Two free sample quests, no account needed. ₹249/month or ₹399 one-time Founding plan. Pilot billing, no real charges.",
   },
 };
 
@@ -41,18 +41,19 @@ const breadcrumbJsonLd = {
 };
 
 const GRAIN =
-  "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>\")";
+  "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/200/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>\")";
 
 const MONTHLY_FEATURES = [
-  "Every quest in the full library, all age tracks",
-  "Child profiles for the whole family — one plan covers every child",
+  "Full access to the quest library as it grows, across every age track. Pilot pricing while it fills out",
+  "Up to 3 child profiles. One plan covers the whole family",
   "Parent dashboard with progress summaries per child",
   "Printable and off-screen activity ideas",
 ];
 
-const PACK_FEATURES = [
-  "A fixed set of quests — yours forever, no subscription",
-  "Parent dashboard included",
+const FOUNDING_FEATURES = [
+  "A fixed set of quests. One payment, no subscription",
+  "Up to 3 child profiles. Siblings included",
+  "Parent dashboard with progress summaries per child",
   "Off-screen activity ideas for every quest",
 ];
 
@@ -66,6 +67,25 @@ function FeatureList({ items }: { items: string[] }) {
         </li>
       ))}
     </ul>
+  );
+}
+
+/** Authored numbered rows for the founding card: deliberately not a twin of the monthly checklist. */
+function NumberedList({ items }: { items: string[] }) {
+  return (
+    <ol className="mt-6 text-[15px] text-slate">
+      {items.map((item, i) => (
+        <li
+          key={item}
+          className="flex items-baseline gap-4 border-b border-border py-3 last:border-b-0"
+        >
+          <span aria-hidden className="font-mono text-xs font-bold text-kids-orange-ink">
+            {String(i + 1).padStart(2, "0")}
+          </span>
+          <span className="leading-relaxed">{item}</span>
+        </li>
+      ))}
+    </ol>
   );
 }
 
@@ -104,8 +124,8 @@ export default function KidsPricingPage() {
           </h1>
           <p className="mt-6 text-lg text-slate leading-relaxed max-w-2xl">
             Sample quests are free, and they are complete stories. No quest is ever cut off
-            mid-story to force a payment. Paid plans add the full library and the parent
-            dashboard.
+            mid-story to force a payment. Paid plans add the full library as it grows and
+            the parent dashboard.
           </p>
         </div>
       </div>
@@ -116,35 +136,38 @@ export default function KidsPricingPage() {
           <div className="flex flex-col md:flex-row md:items-center gap-6">
             <div className="md:flex-1">
               <p className="text-xs font-bold uppercase tracking-[0.22em] text-kids-orange-ink mb-3">
-                Start here — free
+                Start here · free
               </p>
               <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight text-ink">
-                Play a complete sample quest before you decide anything
+                Play two complete sample quests before you decide anything
               </h2>
               <p className="mt-3 text-slate leading-relaxed max-w-xl">
-                One complete sample quest per age track, off-screen activity ideas, and no
-                account needed for samples. Watch your child play — then pick a plan only
-                if the quests feel right.
+                Two complete sample quests: Momo&rsquo;s counting adventure and
+                Tara&rsquo;s story. No account, no card, no paywall mid-story. Watch
+                your child play, then pick a plan only if the quests feel right.
               </p>
             </div>
-            <div className="shrink-0">
+            <div className="shrink-0 flex flex-col gap-3">
               <Button href="/kids/sample/momo-mangoes" variant="kids" size="lg">
-                Play a free quest
+                Play Momo&rsquo;s quest
               </Button>
-              <p className="mt-2 text-sm font-semibold text-ink">
+              <Button href="/kids/sample/tara-story" variant="secondary" size="lg">
+                Play Tara&rsquo;s story
+              </Button>
+              <p className="text-sm font-semibold text-ink">
                 ₹0 <span className="font-normal text-slate">· no card, no account</span>
               </p>
             </div>
           </div>
         </div>
 
-        {/* ---------- Decision aid: one question, two chunky answers ---------- */}
+        {/* ---------- Decision aid: one question, real family math ---------- */}
         <div className="mb-10 md:mb-14">
           <p className="text-xs font-bold uppercase tracking-[0.22em] text-academy-teal-dark mb-4">
             Which plan fits your family?
           </p>
           <h2 className="text-3xl md:text-5xl font-extrabold tracking-[-0.02em] leading-tight text-ink text-balance max-w-3xl">
-            New quests every month, or one set that stays forever?
+            A library that keeps growing, or one set that stays?
           </h2>
           <div className="mt-7 flex flex-col sm:flex-row gap-4">
             <Button href="#plan-monthly" variant="kids" size="lg">
@@ -154,14 +177,41 @@ export default function KidsPricingPage() {
               One forever set
             </Button>
           </div>
+
+          {/* Family math: honest arithmetic straight from the catalog prices */}
+          <dl className="mt-8 grid sm:grid-cols-2 gap-0 max-w-3xl border-t border-b border-border divide-y sm:divide-y-0 sm:divide-x divide-border">
+            <div className="py-5 sm:pr-6">
+              <dt className="text-xs font-bold uppercase tracking-[0.2em] text-slate">
+                Family monthly, with 3 children
+              </dt>
+              <dd
+                className="mt-2 text-4xl font-extrabold tracking-[-0.03em] text-ink"
+                aria-label="83 rupees per child, per month"
+              >
+                ₹83<span className="ml-2 align-middle text-sm font-semibold tracking-normal text-slate">per child, per month</span>
+              </dd>
+            </div>
+            <div className="py-5 sm:pl-6">
+              <dt className="text-xs font-bold uppercase tracking-[0.2em] text-slate">
+                Founding plan, with 3 children
+              </dt>
+              <dd
+                className="mt-2 text-4xl font-extrabold tracking-[-0.03em] text-ink"
+                aria-label="133 rupees per child, one payment"
+              >
+                ₹133<span className="ml-2 align-middle text-sm font-semibold tracking-normal text-slate">per child, one payment</span>
+              </dd>
+            </div>
+          </dl>
           <p className="mt-5 text-[15px] text-slate leading-relaxed max-w-2xl">
-            The ₹399 pack costs about the same as a month and a half of the family plan.
-            Choose monthly if you want new quests and the parent dashboard over time;
-            choose the pack if one complete set is enough.
+            The ₹399 Founding plan costs about as much as a month and a half of the
+            family plan (₹399 ÷ ₹249 ≈ 1.6 months). If your family plays longer than
+            about two months, the Founding plan costs less. Stay monthly if you want
+            the library to keep arriving over time.
           </p>
         </div>
 
-        {/* ---------- Bento: monthly dossier + pack rail ---------- */}
+        {/* ---------- Bento: monthly dossier + founding rail ---------- */}
         <div className="grid md:grid-cols-6 gap-6">
           <article
             id="plan-monthly"
@@ -181,7 +231,10 @@ export default function KidsPricingPage() {
               >
                 Family monthly
               </h2>
-              <p className="mt-4 text-6xl md:text-7xl font-extrabold tracking-[-0.04em] leading-none text-ink">
+              <p
+                className="mt-4 text-6xl md:text-7xl font-extrabold tracking-[-0.04em] leading-none text-ink"
+                aria-label="249 rupees per month"
+              >
                 ₹249
                 <span className="ml-2 align-middle text-base font-semibold tracking-normal text-slate">
                   per month
@@ -196,7 +249,7 @@ export default function KidsPricingPage() {
               <div className="mt-8">
                 <CheckoutButton
                   productId="kids-family-monthly"
-                  label="Continue to parent checkout — ₹249/mo"
+                  label="Continue to parent checkout · ₹249/mo"
                 />
                 <p className="mt-3 text-sm text-slate">
                   Pilot billing: no real charges yet. Cancel anytime from your parent account.
@@ -210,28 +263,34 @@ export default function KidsPricingPage() {
             aria-labelledby="plan-pack-title"
             className="md:col-span-2 scroll-mt-24 rounded-2xl border border-border bg-kids-cream/60 p-7 md:p-8"
           >
+            <p className="text-xs font-bold uppercase tracking-[0.22em] text-kids-orange-ink mb-2">
+              One payment · the ₹399 set
+            </p>
             <h2
               id="plan-pack-title"
               className="text-xl md:text-2xl font-extrabold tracking-tight text-ink"
             >
-              Quest pack
+              Founding plan
             </h2>
-            <p className="mt-3 text-5xl md:text-6xl font-extrabold tracking-[-0.04em] leading-none text-ink">
+            <p
+              className="mt-3 text-5xl md:text-6xl font-extrabold tracking-[-0.04em] leading-none text-ink"
+              aria-label="399 rupees, one time"
+            >
               ₹399
               <span className="ml-2 align-middle text-base font-semibold tracking-normal text-slate">
                 one-time
               </span>
             </p>
-            <div className="mt-6 border-t border-border pt-5">
-              <FeatureList items={PACK_FEATURES} />
+            <div className="mt-2 border-t border-border pt-2">
+              <NumberedList items={FOUNDING_FEATURES} />
             </div>
-            <div className="mt-8">
+            <div className="mt-6">
               <CheckoutButton
                 productId="kids-family-lifetime"
-                label="Buy the quest pack — ₹399"
+                label="Get founding access · ₹399"
               />
               <p className="mt-3 text-sm text-slate">
-                Pilot billing: no real charges yet. Yours forever once paid.
+                Pilot billing: no real charges yet. One payment, no subscription.
               </p>
             </div>
           </article>
@@ -246,10 +305,11 @@ export default function KidsPricingPage() {
                 Billing is always adult-only
               </h2>
               <p className="mt-2 text-slate leading-relaxed text-[15px] max-w-2xl">
-                Pricing, plans, and purchase buttons never appear in the kids&rsquo; area —
-                this page is for parents. Checkout happens on your parent account with
-                clear terms and receipts. Billing is in test mode during the pilot, so
-                no real charges can happen yet.
+                Pricing, plans, and purchase buttons never appear in the kids&rsquo;
+                area. This page is for parents. Checkout happens on your parent
+                account with clear terms. Billing is in test mode during the pilot,
+                so no real charges can happen yet, and you can cancel the monthly
+                plan anytime from your parent account.
               </p>
             </div>
           </div>
