@@ -111,7 +111,7 @@ const POSTS: {
   {
     slug: "why-no-scores-kids",
     badge: "For parents",
-    title: "Why your child doesn't need a score",
+    title: "Why Your Child Doesn't Need a Score",
     excerptText:
       "Scores rank children; evidence informs parents. What we record instead of a number.",
     excerpt: (
