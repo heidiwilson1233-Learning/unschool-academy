@@ -1,13 +1,16 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Section, Breadcrumbs, Button, Callout } from "@/components/ui";
-import { PRACTICE_TOPICS, practiceByTopic } from "@/lib/practice";
+import { PRACTICE_TOPICS, practiceByTopic, PRACTICE_QUESTIONS } from "@/lib/practice";
+
+/** Live practice-bank count — the rows below already render per-topic counts. */
+const PRACTICE_COUNT = PRACTICE_QUESTIONS.length;
 import { TOPIC_INFO } from "@/lib/exams";
 
 export const metadata: Metadata = {
   title: "JFT-Basic Topics — Practice by Topic",
   description:
-    "Free JFT-Basic practice by topic — script and vocabulary, conversation, listening, and reading. Five original draft questions per topic with instant answer checks, one hint per question, and explanations pending review by a Japanese subject-matter expert.",
+    `Free JFT-Basic practice by topic — script and vocabulary, conversation, listening, and reading. ${PRACTICE_COUNT} original draft questions with instant answer checks, one hint per question, and explanations pending review by a Japanese subject-matter expert.`,
 };
 
 const SLUGS: Record<string, string> = {
@@ -81,9 +84,9 @@ export default function TopicsPage() {
             JFT-Basic practice by topic
           </h1>
           <p className="mt-6 text-lg text-slate leading-relaxed max-w-2xl">
-            Five original questions per topic. Check each answer as you go, reveal one hint per
-            question, and read the explanation after every attempt. Practice mode checks answers
-            immediately — mock tests hold them until the end.
+            {PRACTICE_COUNT} original questions across four topics. Check each answer as you
+            go, reveal one hint per question, and read the explanation after every attempt.
+            Practice mode checks answers immediately — mock tests hold them until the end.
           </p>
         </div>
       </div>
@@ -121,6 +124,13 @@ export default function TopicsPage() {
           <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-ink mb-10 md:mb-12">
             Practice each section on its own
           </h2>
+          <p className="text-slate text-[15px] leading-relaxed -mt-6 mb-10 md:mb-12">
+            Prefer the official view first?{" "}
+            <Link href="/exams/jft-basic/syllabus" className="text-academy-blue font-semibold hover:underline">
+              See the full syllabus map
+            </Link>
+            , section by section, skill by skill.
+          </p>
         </div>
 
         <ul className="border-y border-border divide-y divide-border">

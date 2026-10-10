@@ -5,17 +5,20 @@ import { Breadcrumbs, Callout, Section } from "@/components/ui";
 export const metadata: Metadata = {
   title: "Free JFT-Basic Diagnostic — 10 Questions",
   description:
-    "Take the free 10-question JFT-Basic diagnostic: original everyday-Japanese questions, instant topic feedback, reviewed explanations. No account needed.",
+    "Free 10-question JFT-Basic diagnostic: original everyday-Japanese questions, a skill-by-skill gap map, and draft-labeled explanations. No account needed.",
+  alternates: { canonical: "/exams/jft-basic/diagnostic" },
   openGraph: {
     title: "Free JFT-Basic Diagnostic — 10 Questions",
     description:
-      "Take the free 10-question JFT-Basic diagnostic: original everyday-Japanese questions, instant topic feedback, reviewed explanations. No account needed.",
+      "Free 10-question JFT-Basic diagnostic: original everyday-Japanese questions, a skill-by-skill gap map, and draft-labeled explanations. No account needed.",
+    type: "website",
+    url: "/exams/jft-basic/diagnostic",
   },
   twitter: {
     card: "summary",
     title: "Free JFT-Basic Diagnostic — 10 Questions",
     description:
-      "Take the free 10-question JFT-Basic diagnostic: original everyday-Japanese questions, instant topic feedback, reviewed explanations. No account needed.",
+      "Free 10-question JFT-Basic diagnostic: original everyday-Japanese questions, a skill-by-skill gap map, and draft-labeled explanations. No account needed.",
   },
 };
 
@@ -37,40 +40,79 @@ const breadcrumbJsonLd = {
   })),
 };
 
+/* Inline SVG grain (light surfaces only) — same recipe as sibling pages. */
+const GRAIN =
+  "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>\")";
+
 const OUTCOMES = [
-  "Topic-by-topic feedback — see exactly which of the 4 sections need work",
-  "Reviewed explanations — every answer teaches the why",
-  "Your starter plan — concrete next steps from your score",
+  {
+    n: "01",
+    title: "A skill-by-skill gap map",
+    body: "Each question is tagged to the JFT-Basic skill it measures. You get Can Do vs Needs Help, skill by skill.",
+  },
+  {
+    n: "02",
+    title: "Explanations that teach the why",
+    body: "Every answer comes with an explanation, clearly labeled as a draft pending expert review.",
+  },
+  {
+    n: "03",
+    title: "A starter plan, weakest skill first",
+    body: "Concrete next steps from your answers — practice links included, no account needed.",
+  },
 ];
 
 export default function DiagnosticPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
-      <div className="bg-gradient-to-b from-academy-blue/10 to-canvas border-b border-border">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-8 md:py-10">
+      {/* Authored type-as-hero header: grain + ambient radials on a paper surface. */}
+      <div className="relative overflow-hidden border-b border-border">
+        <div
+          aria-hidden
+          className="absolute inset-0 pointer-events-none opacity-[0.18] mix-blend-multiply"
+          style={{ backgroundImage: GRAIN }}
+        />
+        <div
+          aria-hidden
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            background:
+              "radial-gradient(42rem 30rem at 12% -8%, rgba(20,125,117,0.10), transparent 60%), radial-gradient(36rem 26rem at 88% 12%, rgba(49,91,135,0.10), transparent 60%)",
+          }}
+        />
+        <div className="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12 md:py-16">
           <Breadcrumbs trail={TRAIL} />
-          <p className="text-sm font-bold uppercase tracking-widest text-academy-teal mb-3">Free · No account</p>
-          <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight text-ink">
+          <p className="guide-reveal text-[11px] font-bold uppercase tracking-[0.2em] text-academy-teal-dark mb-4">
+            Free · No account
+          </p>
+          <h1 className="guide-reveal font-display text-[clamp(2.5rem,6vw,4.25rem)] leading-[1.02] tracking-[-0.03em] text-balance text-ink">
             Where does your Japanese actually stand?
           </h1>
-          <p className="mt-3 text-lg text-slate leading-relaxed max-w-2xl">
+          <p className="guide-reveal mt-4 text-lg text-slate leading-relaxed max-w-2xl">
             10 original everyday-Japanese questions · about 5 minutes · no timer · no account.
           </p>
-          <ul className="mt-4 space-y-2">
+          <ul className="guide-reveal mt-8 border-t-2 border-ink">
             {OUTCOMES.map((o) => (
-              <li key={o} className="flex items-start gap-2 text-slate">
-                <span aria-hidden="true" className="text-academy-teal-dark font-bold">✓</span>
-                <span>{o}</span>
+              <li key={o.n} className="flex gap-5 py-4 border-b border-border">
+                <span aria-hidden="true" className="text-xs font-bold tracking-widest text-slate pt-1 shrink-0">
+                  {o.n}
+                </span>
+                <div>
+                  <p className="font-bold text-ink">{o.title}</p>
+                  <p className="text-sm text-slate mt-1 leading-relaxed">{o.body}</p>
+                </div>
               </li>
             ))}
           </ul>
-          <Callout title="Draft questions, verified exam facts" tone="warning">
-            These are original practice questions written for this pilot — still pending review by
-            a qualified Japanese-language reviewer. The official exam facts on this site were
-            verified against the Japan Foundation&apos;s JFT-Basic pages on 2026-10-08. Your score
-            is an unofficial practice measure — it cannot predict an official result.
-          </Callout>
+          <div className="guide-reveal mt-6">
+            <Callout title="Draft questions, verified exam facts" tone="warning">
+              These are original practice questions written for this pilot — still pending review by
+              a qualified Japanese-language reviewer. The official exam facts on this site were
+              verified against the Japan Foundation&apos;s JFT-Basic pages on 2026-10-08. Your score
+              is an unofficial practice measure — it cannot predict an official result.
+            </Callout>
+          </div>
         </div>
       </div>
       <Section className="!py-10">
