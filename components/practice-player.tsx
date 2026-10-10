@@ -1,12 +1,16 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
+import { Check, Lightbulb, RotateCcw, Volume2, X } from "lucide-react";
 import { Button, Badge, Card } from "@/components/ui";
-import { speakJapanese, recordAttempt } from "@/lib/attempts";
+import { speakJapanese, recordAttempt, type AttemptSkill } from "@/lib/attempts";
 
 type PracticeQ = {
   id: string;
   topic: string;
+  skill: string;
+  skillLabel: string;
+  version: number;
   stem: string;
   stemJp: string | null;
   options: { id: string; text: string; textJp: string | null }[];
@@ -20,10 +24,14 @@ type CheckResult = {
   correctLabel: string;
   correctLabelJp: string | null;
   explanation: string;
+  version: number;
 };
+
+type SkillTally = { label: string; correct: number; total: number };
 
 export default function PracticePlayer({ topic }: { topic: string }) {
   const [questions, setQuestions] = useState<PracticeQ[] | null>(null);
+  const [contentVersion, setContentVersion] = useState<string | null>(null);
   const [loadError, setLoadError] = useState(false);
   const [index, setIndex] = useState(0);
   const [picked, setPicked] = useState<string | null>(null);
@@ -33,6 +41,7 @@ export default function PracticePlayer({ topic }: { topic: string }) {
   const [score, setScore] = useState(0);
   const [hintsUsed, setHintsUsed] = useState(0);
   const [finished, setFinished] = useState(false);
+  const skillTallies = useRef<Record<string, SkillTally>>({});
 
   useEffect(() => {
     fetch(`/api/practice/questions?topic=${encodeURIComponent(topic)}`)
@@ -40,7 +49,10 @@ export default function PracticePlayer({ topic }: { topic: string }) {
         if (!r.ok) throw new Error("load failed");
         return r.json();
       })
-      .then((d) => setQuestions(d.questions))
+      .then((d) => {
+        setQuestions(d.questions);
+        setContentVersion(d.version ?? null);
+      })
       .catch(() => setLoadError(true));
   }, [topic]);
 
@@ -54,19 +66,45 @@ export default function PracticePlayer({ topic }: { topic: string }) {
         body: JSON.stringify({ questionId: questions[index].id, optionId: picked }),
       });
       const d = await r.json();
+      const q = questions[index];
       setResult(d);
-      if (d.correct) setScore((s) => s + 1);
+      // Tally per-skill results — feeds the mastery dashboard and the session report.
+      const tally = skillTallies.current[q.skill] ?? { label: q.skillLabel, correct: 0, total: 0 };
+      tally.total += 1;
+      if (d.correct) {
+        tally.correct += 1;
+        setScore((s) => s + 1);
+      }
+      skillTallies.current[q.skill] = tally;
     } finally {
       setChecking(false);
     }
   }, [questions, index, picked]);
 
+  const finishSession = useCallback(() => {
+    if (!questions) return;
+    const skills: AttemptSkill[] = Object.entries(skillTallies.current).map(([skill, t]) => ({
+      skill,
+      correct: t.correct,
+      total: t.total,
+    }));
+    recordAttempt({
+      kind: "practice",
+      topic,
+      score,
+      total: questions.length,
+      at: new Date().toISOString(),
+      skills,
+      contentVersion: contentVersion ?? undefined,
+    });
+    setFinished(true);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [questions, score, topic, contentVersion]);
+
   const next = () => {
     if (!questions) return;
     if (index + 1 >= questions.length) {
-      setFinished(true);
-      recordAttempt({ kind: "practice", topic, score, total: questions.length, at: new Date().toISOString() });
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      finishSession();
     } else {
       setIndex((i) => i + 1);
       setPicked(null);
@@ -86,8 +124,7 @@ export default function PracticePlayer({ topic }: { topic: string }) {
   }
   if (!questions) {
     return (
-      <div aria-live="polite" className="space-y-3">
-        {[1, 2, 3].map((i) => <div key={i} className="h-24 rounded-2xl bg-border/40 animate-pulse" />)}
+      <div aria-live="polite">
         <p className="text-slate text-sm">Loading practice questions…</p>
       </div>
     );
@@ -95,17 +132,64 @@ export default function PracticePlayer({ topic }: { topic: string }) {
 
   if (finished) {
     const pct = Math.round((score / questions.length) * 100);
+    const skillRows = Object.entries(skillTallies.current)
+      .map(([skill, t]) => ({ skill, ...t, rate: t.total ? t.correct / t.total : 0 }))
+      .sort((a, b) => a.rate - b.rate || a.total - b.total);
+    const weakest = skillRows[0];
     return (
-      <Card className="text-center !p-10 animate-fade-up">
+      <Card className="text-center !p-10">
         <Badge tone={pct >= 70 ? "success" : pct >= 40 ? "warning" : "neutral"}>Session complete</Badge>
-        <p className="mt-6 text-6xl font-extrabold text-ink">{score}<span className="text-2xl text-slate font-semibold">/{questions.length}</span></p>
+        <p className="mt-6 font-display text-7xl tracking-[-0.03em] text-ink tabular-nums">
+          {score}<span className="text-3xl text-slate font-semibold">/{questions.length}</span>
+        </p>
         <p className="mt-3 text-slate">
           {pct >= 80 ? "Excellent — this topic is becoming solid." : pct >= 50 ? "Good progress. Review the ones you missed below, then try again tomorrow." : "Every expert started here. Re-read the explanations, then try another session."}
         </p>
-        <p className="mt-2 text-sm text-slate">Hints used: {hintsUsed} · Saved to your progress on this device.</p>
+
+        {/* ---------- Per-skill report: the practice engine feeds the mastery dashboard ---------- */}
+        <div className="mt-8 text-left">
+          <h2 className="font-mono text-[11px] font-bold uppercase tracking-[0.22em] text-slate">
+            Skill breakdown
+          </h2>
+          <ul className="mt-3 border-t border-border divide-y divide-border">
+            {skillRows.map((row) => (
+              <li key={row.skill} className="py-3 flex items-center gap-4">
+                <span className="flex-1 min-w-0">
+                  <span className="block text-[15px] font-semibold text-ink">{row.label}</span>
+                  <span
+                    className="mt-1.5 block h-1.5 rounded-full bg-border/60 overflow-hidden"
+                    role="progressbar"
+                    aria-label={`${row.label} accuracy`}
+                    aria-valuenow={Math.round(row.rate * 100)}
+                    aria-valuemin={0}
+                    aria-valuemax={100}
+                  >
+                    <span
+                      className="block h-full bg-academy-teal rounded-full"
+                      style={{ width: `${Math.round(row.rate * 100)}%` }}
+                    />
+                  </span>
+                </span>
+                <span className="shrink-0 text-sm font-bold text-slate tabular-nums">
+                  {row.correct}/{row.total}
+                </span>
+              </li>
+            ))}
+          </ul>
+          {weakest && weakest.rate < 1 && (
+            <p className="mt-4 text-[15px] text-slate leading-relaxed">
+              Weakest here: <span className="font-semibold text-ink">{weakest.label}</span> — a free
+              diagnostic maps exactly these gaps to a starter plan.
+            </p>
+          )}
+        </div>
+
+        <p className="mt-6 text-sm text-slate">Hints used: {hintsUsed} · Saved to your progress on this device.</p>
         <div className="mt-6 flex flex-wrap gap-3 justify-center">
-          <Button onClick={() => window.location.reload()}>Practice again</Button>
-          <Button href="/exams/jft-basic/topics" variant="secondary">Choose another topic</Button>
+          <Button onClick={() => window.location.reload()}>
+            <RotateCcw size={16} aria-hidden /> Practice again
+          </Button>
+          <Button href="/exams/jft-basic/diagnostic" variant="secondary">Map my gaps</Button>
           <Button href="/app/exams" variant="ghost">My progress →</Button>
         </div>
       </Card>
@@ -121,18 +205,21 @@ export default function PracticePlayer({ topic }: { topic: string }) {
           Question {index + 1} of {questions.length} · Score so far: {score}
         </p>
         <div className="h-2 rounded-full bg-border/60 overflow-hidden">
-          <div className="h-full bg-academy-teal rounded-full transition-all" style={{ width: `${(index / questions.length) * 100}%` }} />
+          <div className="h-full bg-academy-teal rounded-full transition-[width] duration-300 ease-signature" style={{ width: `${(index / questions.length) * 100}%` }} />
         </div>
       </div>
 
-      <Card className="!p-6 md:!p-10 animate-fade-up" key={q.id}>
-        <Badge tone="info">{q.topic}</Badge>
+      <Card className="!p-6 md:!p-10 faq-reveal" key={q.id}>
+        <div className="flex flex-wrap items-center gap-3">
+          <Badge tone="info">{q.topic}</Badge>
+          <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-slate">{q.skillLabel}</span>
+        </div>
         <h2 className="mt-4 text-xl md:text-2xl font-bold text-ink leading-relaxed">{q.stem}</h2>
         {q.stemJp && <p className="jp mt-2 text-lg text-slate">{q.stemJp}</p>}
         {q.audioTextJp && (
           <div className="mt-4">
             <Button variant="secondary" size="sm" onClick={() => speakJapanese(q.audioTextJp!)}>
-              <span aria-hidden>🔊</span> Replay audio
+              <Volume2 size={16} aria-hidden /> Replay audio
             </Button>
           </div>
         )}
@@ -151,7 +238,7 @@ export default function PracticePlayer({ topic }: { topic: string }) {
                 aria-checked={selected}
                 disabled={disabled}
                 onClick={() => setPicked(o.id)}
-                className={`w-full text-left px-5 py-4 rounded-xl border-2 transition-all disabled:cursor-default ${
+                className={`w-full text-left px-5 py-4 rounded-xl border-2 transition-colors duration-200 ease-signature active:scale-[0.99] disabled:cursor-default ${
                   isCorrectOpt
                     ? "border-academy-teal bg-academy-teal/10"
                     : isWrongPick
@@ -164,17 +251,21 @@ export default function PracticePlayer({ topic }: { topic: string }) {
                 <span className="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-slate/10 text-sm font-bold text-slate mr-3" aria-hidden>{oi + 1}</span>
                 <span className="jp text-lg font-semibold text-ink">{o.textJp ?? o.text}</span>
                 {o.textJp && o.textJp !== o.text && <span className="block text-sm text-slate mt-1 ml-10">{o.text}</span>}
-                {isCorrectOpt && <span className="ml-3 text-sm font-bold text-academy-teal-dark">✓</span>}
-                {isWrongPick && <span className="ml-3 text-sm font-bold text-red-600">✗</span>}
+                {isCorrectOpt && <Check size={16} className="inline-block ml-3 text-academy-teal-dark" aria-label="Correct option" />}
+                {isWrongPick && <X size={16} className="inline-block ml-3 text-red-600" aria-label="Incorrect pick" />}
               </button>
             );
           })}
         </div>
 
         {result ? (
-          <div className="mt-6 border-t border-border pt-5 animate-fade-up">
-            <p className={`font-extrabold text-lg ${result.correct ? "text-academy-teal-dark" : "text-red-700"}`}>
-              {result.correct ? "✓ Correct" : `✗ Not quite — the answer is “${result.correctLabel}”`}
+          <div className="mt-6 border-t border-border pt-5 faq-reveal">
+            <p className={`font-extrabold text-lg flex items-center gap-2 ${result.correct ? "text-academy-teal-dark" : "text-red-700"}`}>
+              {result.correct ? (
+                <><Check size={20} aria-hidden /> Correct</>
+              ) : (
+                <><X size={20} aria-hidden /> Not quite — the answer is “{result.correctLabel}”</>
+              )}
             </p>
             <p className="mt-2 text-[15px] text-slate leading-relaxed">
               <span className="font-semibold text-ink">Why: </span>{result.explanation}
@@ -188,13 +279,13 @@ export default function PracticePlayer({ topic }: { topic: string }) {
               <button
                 type="button"
                 onClick={() => { setShowHint(true); setHintsUsed((h) => h + 1); }}
-                className="px-4 py-3 rounded-xl border-2 border-dashed border-border text-slate font-semibold hover:border-academy-teal hover:text-academy-teal-dark"
+                className="inline-flex items-center gap-2 px-4 py-3 rounded-xl border-2 border-dashed border-border text-slate font-semibold transition-colors duration-200 hover:border-academy-teal hover:text-academy-teal-dark active:scale-[0.98]"
               >
-                💡 Show hint
+                <Lightbulb size={16} aria-hidden /> Show hint
               </button>
             ) : (
-              <p className="text-sm text-slate bg-academy-teal/5 border border-academy-teal/20 rounded-xl px-4 py-2.5" role="status">
-                💡 {q.hint}
+              <p className="inline-flex items-start gap-2 text-sm text-slate bg-academy-teal/5 border border-academy-teal/20 rounded-xl px-4 py-2.5" role="status">
+                <Lightbulb size={16} aria-hidden className="shrink-0 mt-0.5" /> {q.hint}
               </p>
             )}
           </div>
