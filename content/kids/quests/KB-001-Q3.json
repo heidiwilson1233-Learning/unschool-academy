@@ -6,17 +6,71 @@
   "track": "school-starters",
   "character": "momo",
   "title": "Count the Clever Rabbits",
+  "objective_id": "numbers.counting.to10",
   "objective": "Count to 10 with one-to-one correspondence using story objects.",
   "difficulty": 1,
+  "prerequisites": [],
+  "assets": {
+    "art": [],
+    "audio": []
+  },
+  "primary_language": "en",
+  "secondary_language": null,
+  "narration": {
+    "mode": "live-tts",
+    "voice_reviewed": false
+  },
   "story_beats": [
-    { "text": "Momo trumpets happily! 'The clever rabbits are hiding in the forest. Let's count how many came to the meeting — tap each rabbit ONCE!'" }
+    {
+      "text": "Momo trumpets happily! 'The clever rabbits are hiding in the forest. Let's count how many came to the meeting — tap each rabbit ONCE!'"
+    }
   ],
   "interactions": [
-    { "type": "count-tap", "prompt": "Tap each rabbit to count them. How many rabbits?", "target_count": 7, "options": ["5", "7", "9"], "correct": 1 },
-    { "type": "count-tap", "prompt": "Three more rabbits hop in! Now how many?", "target_count": 10, "options": ["8", "9", "10"], "correct": 2 }
+    {
+      "type": "count-tap",
+      "template": "select-objects",
+      "prompt": "Tap each rabbit to count them. How many rabbits?",
+      "options": [
+        "5",
+        "7",
+        "9"
+      ],
+      "correct": 1,
+      "target_count": 7,
+      "answer_rule": {
+        "kind": "count-match"
+      }
+    },
+    {
+      "type": "count-tap",
+      "template": "select-objects",
+      "prompt": "Three more rabbits hop in! Now how many?",
+      "options": [
+        "8",
+        "9",
+        "10"
+      ],
+      "correct": 2,
+      "target_count": 10,
+      "answer_rule": {
+        "kind": "count-match"
+      }
+    }
   ],
-  "feedback": { "correct": "Perfect counting! Momo is doing a happy trunk-dance!", "retry": "Let's count slowly together — tap each rabbit one time. One... two..." },
+  "hint_sequence": [
+    "Hear the question again, slowly.",
+    "Look at each choice, one by one.",
+    "Momo points at the two closest choices."
+  ],
+  "transfer_question": "Count a different group of things at home. How many?",
+  "feedback": {
+    "correct": "Perfect counting! Momo is doing a happy trunk-dance!",
+    "retry": "Let's count slowly together — tap each rabbit one time. One... two..."
+  },
   "off_screen": "Count 10 things in your room. Can you find 10 spoons? 10 books?",
   "parent_note": "Maths: counting to 10, one-to-one correspondence, adding small groups.",
-  "status": "draft-pending-educator-review"
+  "duration_target": 6,
+  "content_reviewer": null,
+  "review_status": "draft-pending-educator-review",
+  "published_version": 0
 }

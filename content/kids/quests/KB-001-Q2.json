@@ -6,18 +6,72 @@
   "track": "school-starters",
   "character": "tara",
   "title": "The Friends Who Helped",
+  "objective_id": "values.kindness.helping",
   "objective": "Recognize helping behavior: identify when a character helps a friend and choose to help in a scenario.",
   "difficulty": 1,
+  "prerequisites": [],
+  "assets": {
+    "art": [],
+    "audio": []
+  },
+  "primary_language": "en",
+  "secondary_language": null,
+  "narration": {
+    "mode": "live-tts",
+    "voice_reviewed": false
+  },
   "story_beats": [
-    { "text": "In the Panchatantra, a little mouse chewed through a net to free the lion. The lion had laughed at the tiny mouse — but the mouse helped anyway." },
-    { "text": "Tara closes her sketchbook. 'Helping doesn't need you to be big. It needs you to CARE. Let's practise!'" }
+    {
+      "text": "In the Panchatantra, a little mouse chewed through a net to free the lion. The lion had laughed at the tiny mouse — but the mouse helped anyway."
+    },
+    {
+      "text": "Tara closes her sketchbook. 'Helping doesn't need you to be big. It needs you to CARE. Let's practise!'"
+    }
   ],
   "interactions": [
-    { "type": "tap-choice", "prompt": "Your friend drops their crayons. What do you do?", "options": ["Help pick them up", "Keep drawing", "Hide the crayons"], "correct": 0 },
-    { "type": "tap-choice", "prompt": "The mouse helped the lion even though the lion laughed at him. That was...", "options": ["Kind", "Silly", "Scary"], "correct": 0 }
+    {
+      "type": "tap-choice",
+      "template": "select-objects",
+      "prompt": "Your friend drops their crayons. What do you do?",
+      "options": [
+        "Help pick them up",
+        "Keep drawing",
+        "Hide the crayons"
+      ],
+      "correct": 0,
+      "answer_rule": {
+        "kind": "single-choice"
+      }
+    },
+    {
+      "type": "tap-choice",
+      "template": "select-objects",
+      "prompt": "The mouse helped the lion even though the lion laughed at him. That was...",
+      "options": [
+        "Kind",
+        "Silly",
+        "Scary"
+      ],
+      "correct": 0,
+      "answer_rule": {
+        "kind": "single-choice"
+      }
+    }
   ],
-  "feedback": { "correct": "You chose kindness — just like the little mouse!", "retry": "Hmm, what would the kind mouse do? Try again!" },
+  "hint_sequence": [
+    "Hear the question again, slowly.",
+    "Look at each choice, one by one.",
+    "Tara points at the two closest choices."
+  ],
+  "transfer_question": "Tell a grown-up about a time you helped — or could help — a friend.",
+  "feedback": {
+    "correct": "You chose kindness — just like the little mouse!",
+    "retry": "Hmm, what would the kind mouse do? Try again!"
+  },
   "off_screen": "Do one helpful thing today without being asked. Notice how it feels.",
   "parent_note": "Values: helping, kindness. Scenario-based moral reasoning.",
-  "status": "draft-pending-educator-review"
+  "duration_target": 6,
+  "content_reviewer": null,
+  "review_status": "draft-pending-educator-review",
+  "published_version": 0
 }

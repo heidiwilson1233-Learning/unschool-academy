@@ -6,17 +6,69 @@
   "track": "school-starters",
   "character": "momo",
   "title": "How Much Did He Eat?",
+  "objective_id": "numbers.counting.compare-5",
   "objective": "Count sets 1–5 and compare quantities (more/less).",
   "difficulty": 1,
+  "prerequisites": [],
+  "assets": {
+    "art": [],
+    "audio": []
+  },
+  "primary_language": "en",
+  "secondary_language": null,
+  "narration": {
+    "mode": "live-tts",
+    "voice_reviewed": false
+  },
   "story_beats": [
-    { "text": "Momo peers at the story. 'That caterpillar ate SO much! Let's count his food — tap each fruit!'" }
+    {
+      "text": "Momo peers at the story. 'That caterpillar ate SO much! Let's count his food — tap each fruit!'"
+    }
   ],
   "interactions": [
-    { "type": "count-tap", "prompt": "He ate 1 apple, 2 pears, 3 plums. Which day did he eat the MOST?", "options": ["Monday (1 apple)", "Tuesday (2 pears)", "Wednesday (3 plums)"], "correct": 2 },
-    { "type": "tap-choice", "prompt": "If he eats 4 strawberries and 2 oranges, which is MORE?", "options": ["Strawberries", "Oranges", "Same"], "correct": 0 }
+    {
+      "type": "tap-choice",
+      "template": "select-objects",
+      "prompt": "He ate 1 apple, 2 pears, 3 plums. Which day did he eat the MOST?",
+      "options": [
+        "Monday (1 apple)",
+        "Tuesday (2 pears)",
+        "Wednesday (3 plums)"
+      ],
+      "correct": 2,
+      "answer_rule": {
+        "kind": "single-choice"
+      }
+    },
+    {
+      "type": "tap-choice",
+      "template": "select-objects",
+      "prompt": "If he eats 4 strawberries and 2 oranges, which is MORE?",
+      "options": [
+        "Strawberries",
+        "Oranges",
+        "Same"
+      ],
+      "correct": 0,
+      "answer_rule": {
+        "kind": "single-choice"
+      }
+    }
   ],
-  "feedback": { "correct": "Brilliant! You compared like a mathematician!", "retry": "Count each group slowly. Which pile is bigger?" },
+  "hint_sequence": [
+    "Hear the question again, slowly.",
+    "Look at each choice, one by one.",
+    "Momo points at the two closest choices."
+  ],
+  "transfer_question": "Compare two groups of fruit at home: which has more?",
+  "feedback": {
+    "correct": "Brilliant! You compared like a mathematician!",
+    "retry": "Count each group slowly. Which pile is bigger?"
+  },
   "off_screen": "At dinner, count how many rotis or spoons are on the table. Who has more?",
   "parent_note": "Maths: counting sets, comparing quantities (more/less).",
-  "status": "draft-pending-educator-review"
+  "duration_target": 6,
+  "content_reviewer": null,
+  "review_status": "draft-pending-educator-review",
+  "published_version": 0
 }

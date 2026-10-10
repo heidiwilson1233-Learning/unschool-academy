@@ -6,18 +6,83 @@
   "track": "adventure-club",
   "character": "bobo",
   "title": "Four Seasons Mystery",
+  "objective_id": "world.seasons.clues",
   "objective": "Name the four seasons and match seasonal clues (clothes, weather, nature).",
   "difficulty": 1,
+  "prerequisites": [],
+  "assets": {
+    "art": [],
+    "audio": []
+  },
+  "primary_language": "en",
+  "secondary_language": null,
+  "narration": {
+    "mode": "live-tts",
+    "voice_reviewed": false
+  },
   "story_beats": [
-    { "text": "Bobo found four photographs — but the labels fell off! 'What do you NOTICE in each picture?'" }
+    {
+      "text": "Bobo found four photographs — but the labels fell off! 'What do you NOTICE in each picture?'"
+    }
   ],
   "interactions": [
-    { "type": "tap-choice", "prompt": "Trees are bare and everyone's wearing sweaters. Which season?", "options": ["Winter", "Summer", "Monsoon"], "correct": 0 },
-    { "type": "tap-choice", "prompt": "Mangoes are ripe and the sun is blazing. Which season?", "options": ["Summer", "Winter", "Autumn"], "correct": 0 },
-    { "type": "tap-choice", "prompt": "Leaves turn red and fall. Which season?", "options": ["Autumn", "Spring", "Winter"], "correct": 0 }
+    {
+      "type": "tap-choice",
+      "template": "select-objects",
+      "prompt": "Trees are bare and everyone's wearing sweaters. Which season?",
+      "options": [
+        "Winter",
+        "Summer",
+        "Monsoon"
+      ],
+      "correct": 0,
+      "answer_rule": {
+        "kind": "single-choice"
+      }
+    },
+    {
+      "type": "tap-choice",
+      "template": "select-objects",
+      "prompt": "Mangoes are ripe and the sun is blazing. Which season?",
+      "options": [
+        "Summer",
+        "Winter",
+        "Autumn"
+      ],
+      "correct": 0,
+      "answer_rule": {
+        "kind": "single-choice"
+      }
+    },
+    {
+      "type": "tap-choice",
+      "template": "select-objects",
+      "prompt": "Leaves turn red and fall. Which season?",
+      "options": [
+        "Autumn",
+        "Spring",
+        "Winter"
+      ],
+      "correct": 0,
+      "answer_rule": {
+        "kind": "single-choice"
+      }
+    }
   ],
-  "feedback": { "correct": "Season detective! Bobo is filing this case as SOLVED!", "retry": "Look at the clues — clothes, trees, sun. What do they tell you?" },
+  "hint_sequence": [
+    "Hear the question again, slowly.",
+    "Look at each choice, one by one.",
+    "Bobo points at the two closest choices."
+  ],
+  "transfer_question": "What season is it right now? Name two clues you can see.",
+  "feedback": {
+    "correct": "Season detective! Bobo is filing this case as SOLVED!",
+    "retry": "Look at the clues — clothes, trees, sun. What do they tell you?"
+  },
   "off_screen": "Look out of the window. Which season is it? Find 3 clues.",
   "parent_note": "Science: seasons, observation, evidence-based reasoning.",
-  "status": "draft-pending-educator-review"
+  "duration_target": 8,
+  "content_reviewer": null,
+  "review_status": "draft-pending-educator-review",
+  "published_version": 0
 }

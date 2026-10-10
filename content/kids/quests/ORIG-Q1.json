@@ -6,17 +6,71 @@
   "track": "school-starters",
   "character": "momo",
   "title": "Momo's Mango Count",
+  "objective_id": "numbers.counting.to20",
   "objective": "Count to 20 with one-to-one correspondence.",
   "difficulty": 1,
+  "prerequisites": [],
+  "assets": {
+    "art": [],
+    "audio": []
+  },
+  "primary_language": "en",
+  "secondary_language": null,
+  "narration": {
+    "mode": "live-tts",
+    "voice_reviewed": false
+  },
   "story_beats": [
-    { "text": "Momo's mango tree is FULL today! 'Let's count the mangoes together — tap each one, nice and slow!'" }
+    {
+      "text": "Momo's mango tree is FULL today! 'Let's count the mangoes together — tap each one, nice and slow!'"
+    }
   ],
   "interactions": [
-    { "type": "count-tap", "prompt": "Tap each mango. How many?", "target_count": 12, "options": ["10", "12", "14"], "correct": 1 },
-    { "type": "count-tap", "prompt": "Momo shakes the tree — 5 more fall! Now?", "target_count": 17, "options": ["15", "16", "17"], "correct": 2 }
+    {
+      "type": "count-tap",
+      "template": "select-objects",
+      "prompt": "Tap each mango. How many?",
+      "options": [
+        "10",
+        "12",
+        "14"
+      ],
+      "correct": 1,
+      "target_count": 12,
+      "answer_rule": {
+        "kind": "count-match"
+      }
+    },
+    {
+      "type": "count-tap",
+      "template": "select-objects",
+      "prompt": "Momo shakes the tree — 5 more fall! Now?",
+      "options": [
+        "15",
+        "16",
+        "17"
+      ],
+      "correct": 2,
+      "target_count": 17,
+      "answer_rule": {
+        "kind": "count-match"
+      }
+    }
   ],
-  "feedback": { "correct": "17 mangoes! Momo is impressed — and a little hungry!", "retry": "Slow down, counter! Tap each mango exactly once." },
+  "hint_sequence": [
+    "Hear the question again, slowly.",
+    "Look at each choice, one by one.",
+    "Momo points at the two closest choices."
+  ],
+  "transfer_question": "Count the fruit in your kitchen. How many altogether?",
+  "feedback": {
+    "correct": "17 mangoes! Momo is impressed — and a little hungry!",
+    "retry": "Slow down, counter! Tap each mango exactly once."
+  },
   "off_screen": "Count the fruits in your kitchen. How many altogether?",
   "parent_note": "Maths: counting to 20, adding small groups.",
-  "status": "draft-pending-educator-review"
+  "duration_target": 6,
+  "content_reviewer": null,
+  "review_status": "draft-pending-educator-review",
+  "published_version": 0
 }

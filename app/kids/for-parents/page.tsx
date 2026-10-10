@@ -495,6 +495,29 @@ export default function ForParentsPage() {
           </div>
         </div>
       </Section>
+
+      {/* Build plan — the charter makes promises; the roadmap shows the process */}
+      <Section>
+        <div className="rounded-2xl border border-border bg-paper p-6 md:p-8">
+          <div className="flex flex-wrap items-center justify-between gap-4">
+            <div className="max-w-xl">
+              <p className="font-mono text-[11px] font-bold uppercase tracking-[0.2em] text-kids-leaf-deep">
+                The build plan
+              </p>
+              <p className="mt-2 text-lg font-extrabold tracking-tight text-ink">
+                See how the fifteen prototype quests get built.
+              </p>
+              <p className="mt-1 text-sm leading-relaxed text-slate">
+                Four reusable templates, fifteen reviewed briefs, and what &ldquo;reviewed&rdquo;
+                actually means before anything goes playable.
+              </p>
+            </div>
+            <Button href="/kids/roadmap" variant="secondary">
+              Read the prototype plan
+            </Button>
+          </div>
+        </div>
+      </Section>
     </>
   );
 }

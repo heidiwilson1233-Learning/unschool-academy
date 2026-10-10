@@ -212,30 +212,10 @@ export const VILLAGE_LOCATIONS = [
   },
 ];
 
-/** Quest data model. Quests live as JSON under content/kids/quests/ and are rendered by /kids/quest/[id]. */
-export type KidQuest = {
-  id: string;
-  book_id: string | null; // null = original (not from a book)
-  quest_type: string; // one of BOOK_QUEST_TYPES
-  subject: string; // one of KID_SUBJECTS slugs
-  track: string; // one of AGE_TRACKS slugs
-  character: "momo" | "tara" | "bobo";
-  title: string;
-  objective: string;
-  difficulty: 1 | 2 | 3;
-  story_beats: { text: string; art_note?: string }[];
-  interactions: {
-    type: "tap-choice" | "count-tap" | "order" | "speak-repeat" | "draw";
-    prompt: string;
-    options?: string[];
-    correct?: number;
-    target_count?: number;
-  }[];
-  feedback: { correct: string; retry: string };
-  off_screen: string;
-  parent_note: string;
-  status: "draft-pending-educator-review" | "reviewed";
-};
+/** Quest data model. Quests live as JSON under content/kids/quests/ and are rendered by /kids/quest/[id].
+ *  Schema v2 + validator SSOT live in lib/quest-engine.ts (doc 03 §6). Re-exported here so existing
+ *  imports (`@/lib/kids`) keep working. */
+export type { KidQuest, QuestInteraction, QuestTemplate, QuestTemplateId, ReviewStatus } from "./quest-engine";
 
 export const TRACK_SLUGS = ["school-starters", "adventure-club", "quest-makers", "young-explorers"] as const;
 

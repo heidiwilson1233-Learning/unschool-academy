@@ -6,20 +6,78 @@
   "track": "school-starters",
   "character": "tara",
   "title": "The Very Hungry Caterpillar",
+  "objective_id": "words.comprehension.caterpillar-order",
   "objective": "Follow a story in order: days of the week and what the caterpillar ate.",
   "difficulty": 1,
+  "prerequisites": [],
+  "assets": {
+    "art": [],
+    "audio": []
+  },
+  "primary_language": "en",
+  "secondary_language": null,
+  "narration": {
+    "mode": "live-tts",
+    "voice_reviewed": false
+  },
   "story_beats": [
-    { "text": "On Sunday, a tiny egg hatched. Out came a very hungry caterpillar!" },
-    { "text": "On Monday he ate ONE apple. On Tuesday he ate TWO pears. On Wednesday he ate THREE plums." },
-    { "text": "On Thursday, Friday and Saturday he ate LOTS of food — and got a tummy ache!" },
-    { "text": "Then he built a cocoon... and out came a beautiful BUTTERFLY!" }
+    {
+      "text": "On Sunday, a tiny egg hatched. Out came a very hungry caterpillar!"
+    },
+    {
+      "text": "On Monday he ate ONE apple. On Tuesday he ate TWO pears. On Wednesday he ate THREE plums."
+    },
+    {
+      "text": "On Thursday, Friday and Saturday he ate LOTS of food — and got a tummy ache!"
+    },
+    {
+      "text": "Then he built a cocoon... and out came a beautiful BUTTERFLY!"
+    }
   ],
   "interactions": [
-    { "type": "order", "prompt": "Put the days in order: what did he eat first?", "options": ["Apple (Monday)", "Pears (Tuesday)", "Plums (Wednesday)"], "correct": 0 },
-    { "type": "tap-choice", "prompt": "What did the caterpillar become at the end?", "options": ["A butterfly", "A bigger egg", "A bird"], "correct": 0 }
+    {
+      "type": "order",
+      "template": "sequence",
+      "prompt": "Put the days in order: what did he eat first?",
+      "options": [
+        "Apple (Monday)",
+        "Pears (Tuesday)",
+        "Plums (Wednesday)"
+      ],
+      "correct": 0,
+      "answer_rule": {
+        "kind": "sequence-exact"
+      }
+    },
+    {
+      "type": "tap-choice",
+      "template": "select-objects",
+      "prompt": "What did the caterpillar become at the end?",
+      "options": [
+        "A butterfly",
+        "A bigger egg",
+        "A bird"
+      ],
+      "correct": 0,
+      "answer_rule": {
+        "kind": "single-choice"
+      }
+    }
   ],
-  "feedback": { "correct": "You followed the whole story! Tara is clapping with her tail!", "retry": "Let's listen again — what happened FIRST? The apple came on Monday!" },
+  "hint_sequence": [
+    "Hear the story again from the start.",
+    "Which happened first? Start there.",
+    "Tara places the first card for you."
+  ],
+  "transfer_question": "Retell the caterpillar's week in your own words, in order.",
+  "feedback": {
+    "correct": "You followed the whole story! Tara is clapping with her tail!",
+    "retry": "Let's listen again — what happened FIRST? The apple came on Monday!"
+  },
   "off_screen": "Draw the caterpillar AND the butterfly. Which one do you like more?",
   "parent_note": "Comprehension: sequencing, days of the week, story recall.",
-  "status": "draft-pending-educator-review"
+  "duration_target": 6,
+  "content_reviewer": null,
+  "review_status": "draft-pending-educator-review",
+  "published_version": 0
 }

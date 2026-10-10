@@ -6,19 +6,80 @@
   "track": "school-starters",
   "character": "tara",
   "title": "Gruffalo Words",
+  "objective_id": "words.vocabulary.gruffalo-words",
   "objective": "Learn descriptive words: terrible, tusks, claws, brave, clever.",
   "difficulty": 1,
+  "prerequisites": [],
+  "assets": {
+    "art": [],
+    "audio": []
+  },
+  "primary_language": "en",
+  "secondary_language": null,
+  "narration": {
+    "mode": "live-tts",
+    "voice_reviewed": false
+  },
   "story_beats": [
-    { "text": "Tara shivers playfully. 'The Gruffalo has TERRIBLE tusks and TERRIBLE claws! Terrible means very, very scary!'" },
-    { "text": "But the little mouse was CLEVER — he tricked the Gruffalo with his smart ideas!" }
+    {
+      "text": "Tara shivers playfully. 'The Gruffalo has TERRIBLE tusks and TERRIBLE claws! Terrible means very, very scary!'"
+    },
+    {
+      "text": "But the little mouse was CLEVER — he tricked the Gruffalo with his smart ideas!"
+    }
   ],
   "interactions": [
-    { "type": "tap-choice", "prompt": "Which word means 'very scary'?", "options": ["Terrible", "Tiny", "Sweet"], "correct": 0 },
-    { "type": "tap-choice", "prompt": "The mouse tricked the Gruffalo. The mouse was...", "options": ["Clever", "Sleepy", "Hungry"], "correct": 0 },
-    { "type": "speak-repeat", "prompt": "Say it loud: 'Terrible tusks!'" }
+    {
+      "type": "tap-choice",
+      "template": "select-objects",
+      "prompt": "Which word means 'very scary'?",
+      "options": [
+        "Terrible",
+        "Tiny",
+        "Sweet"
+      ],
+      "correct": 0,
+      "answer_rule": {
+        "kind": "single-choice"
+      }
+    },
+    {
+      "type": "tap-choice",
+      "template": "select-objects",
+      "prompt": "The mouse tricked the Gruffalo. The mouse was...",
+      "options": [
+        "Clever",
+        "Sleepy",
+        "Hungry"
+      ],
+      "correct": 0,
+      "answer_rule": {
+        "kind": "single-choice"
+      }
+    },
+    {
+      "type": "speak-repeat",
+      "template": null,
+      "prompt": "Say it loud: 'Terrible tusks!'",
+      "answer_rule": {
+        "kind": "open"
+      }
+    }
   ],
-  "feedback": { "correct": "Wonderful words! Your vocabulary is growing like the deep dark wood!", "retry": "Listen to the story again — terrible means VERY scary!" },
+  "hint_sequence": [
+    "Hear the question again, slowly.",
+    "Look at each choice, one by one.",
+    "Tara points at the two closest choices."
+  ],
+  "transfer_question": "Use the word 'brave' in a sentence about yourself.",
+  "feedback": {
+    "correct": "Wonderful words! Your vocabulary is growing like the deep dark wood!",
+    "retry": "Listen to the story again — terrible means VERY scary!"
+  },
   "off_screen": "Make your own terrible face in the mirror. Roar!",
   "parent_note": "Vocabulary: terrible, tusks, claws, brave, clever. Descriptive language.",
-  "status": "draft-pending-educator-review"
+  "duration_target": 6,
+  "content_reviewer": null,
+  "review_status": "draft-pending-educator-review",
+  "published_version": 0
 }

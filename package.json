@@ -2,12 +2,13 @@
   "name": "build",
   "version": "0.1.0",
   "private": true,
+  "engines": { "node": ">=22.6" },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "prebuild": "node scripts/write-images.mjs && node scripts/validate-curriculum.mjs"
+    "prebuild": "node scripts/write-images.mjs && node scripts/validate-curriculum.mjs && node scripts/validate-kids-quests.mjs"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.7",
