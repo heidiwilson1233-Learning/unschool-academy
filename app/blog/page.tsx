@@ -54,7 +54,7 @@ const POSTS: {
   {
     slug: "station-kanji",
     badge: "Japanese learning",
-    title: "4 station kanji that make any Japanese station readable",
+    title: "4 Station Kanji That Make Any Japanese Station Readable",
     excerptText:
       "出口, 入口, 改札, 乗換: learn these four as pairs and any Japanese station starts reading itself to you.",
     excerpt: (

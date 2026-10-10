@@ -119,13 +119,12 @@ export default function StationKanjiPost() {
 
       <Section>
         <article className="max-w-3xl mx-auto">
-          <Badge tone="warning">Draft — pending expert review</Badge>
+          <Badge tone="warning">Draft: pending expert review</Badge>
 
           <div className="mt-6 space-y-5 text-slate leading-relaxed text-[17px]">
             <p>
-              Most station signs reuse the same few kanji compounds. Learn four of them as{" "}
-              <em>pairs</em>, each with its opposite, and the signs stop looking like walls of
-              ink.
+              Most station signs reuse the same few kanji compounds. Learn four of them, the first
+              two as an opposite pair, and the signs stop looking like walls of ink.
             </p>
           </div>
 
@@ -194,15 +193,17 @@ export default function StationKanjiPost() {
               >
                 Reading Comprehension practice topic
               </Link>
-              . It tests exactly these compounds in realistic notices.
+              : reading kanji like these in realistic notices.
             </p>
           </div>
 
-          {/* Active recall, not a summary: tap to reveal. */}
+          {/* Active recall, not a summary: reveal to check. */}
           <div className="mt-8 rounded-2xl border border-border bg-paper p-5 md:p-6">
-            <p className="font-bold text-ink">Test yourself: can you read these three signs?</p>
+            <h2 className="font-bold text-ink text-xl">
+              Test yourself: can you read these three signs?
+            </h2>
             <p className="mt-1 text-[15px] text-slate">
-              Try before you peek. Tap a sign to reveal the answer.
+              Try before you peek. Reveal each sign to check your answer.
             </p>
             <div className="mt-4 grid gap-3 sm:grid-cols-3">
               <details className="rounded-xl border border-border p-4">
@@ -211,12 +212,12 @@ export default function StationKanjiPost() {
                     改札
                   </span>
                   <span className="mt-2 block text-xs font-semibold uppercase tracking-wide text-slate">
-                    Tap to reveal
+                    Reveal the answer
                   </span>
                 </summary>
                 <p className="mt-2 text-center text-[15px] text-slate">
-                  <strong className="text-ink">Ticket gate.</strong> The barrier you tap your IC
-                  card through.
+                  <strong className="text-ink">Ticket gate (kaisatsu).</strong> The barrier you
+                  tap your IC card through.
                 </p>
               </details>
               <details className="rounded-xl border border-border p-4">
@@ -225,11 +226,12 @@ export default function StationKanjiPost() {
                     乗換
                   </span>
                   <span className="mt-2 block text-xs font-semibold uppercase tracking-wide text-slate">
-                    Tap to reveal
+                    Reveal the answer
                   </span>
                 </summary>
                 <p className="mt-2 text-center text-[15px] text-slate">
-                  <strong className="text-ink">Transfer.</strong> Changing trains, not stations.
+                  <strong className="text-ink">Transfer (norikae).</strong> Changing trains, not
+                  stations.
                 </p>
               </details>
               <details className="rounded-xl border border-border p-4">
@@ -238,18 +240,19 @@ export default function StationKanjiPost() {
                     出口
                   </span>
                   <span className="mt-2 block text-xs font-semibold uppercase tracking-wide text-slate">
-                    Tap to reveal
+                    Reveal the answer
                   </span>
                 </summary>
                 <p className="mt-2 text-center text-[15px] text-slate">
-                  <strong className="text-ink">Exit.</strong> 出 is “go out”, 口 is the opening.
+                  <strong className="text-ink">Exit (deguchi).</strong> 出 is “go out”, 口 is the
+                  opening.
                 </p>
               </details>
             </div>
           </div>
 
           {/* Discovery: real relationships, editorial rows. */}
-          <nav aria-label="Keep reading" className="mt-12">
+          <nav aria-label="More to read" className="mt-12">
             <h2 className="text-2xl font-bold text-ink">Keep reading</h2>
             <ul className="mt-4 border-t border-border">
               <li className="border-b border-border">
@@ -263,7 +266,7 @@ export default function StationKanjiPost() {
                       Practise these compounds
                     </span>
                     <span className="block text-[15px]">
-                      Reading Comprehension questions on exactly these kanji.
+                      Reading Comprehension questions on kanji like these.
                     </span>
                   </span>
                 </Link>
@@ -302,17 +305,18 @@ export default function StationKanjiPost() {
         </article>
       </Section>
 
-      {/* Frictionless close: the product sells itself before any account. */}
+      {/* Frictionless close: the diagnostic is the canonical zero-friction entry —
+          one close, one destination (sibling-post convention). */}
       <Section>
         <div className="max-w-3xl mx-auto rounded-2xl border border-border bg-paper p-6 md:p-8 flex flex-col md:flex-row md:items-center gap-5">
           <div className="flex-1">
-            <h2 className="text-xl font-bold text-ink">Read the station for real</h2>
+            <h2 className="text-xl font-bold text-ink">Take the free diagnostic</h2>
             <p className="mt-2 text-slate text-[16px]">
-              Try these compounds in Reading Comprehension practice. Free, no account needed.
+              Ten questions, five minutes, no account needed.
             </p>
           </div>
-          <Button href="/exams/jft-basic/topics" className="shrink-0">
-            Practise these kanji
+          <Button href="/exams/jft-basic/diagnostic" className="shrink-0">
+            Take the free diagnostic
           </Button>
         </div>
       </Section>
