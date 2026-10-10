@@ -1,0 +1,20 @@
+{
+  "catalog_id": "EX-186",
+  "description": "Preparation path for JEE Main Paper 1 (B.E./B.Tech): 25 questions per paper (20 MCQ + 5 numerical), +4 / -1 marking, 3-hour CBT. Content built unit-by-unit from the official NTA syllabus. Physics: Mechanics. Mathematics: Algebra.",
+  "estimated_hours": 180,
+  "id": "jee-main",
+  "skills": [
+    "kinematics",
+    "newtons-laws",
+    "work-energy-power",
+    "rotational-motion",
+    "gravitation",
+    "quadratic-equations",
+    "sequences-series",
+    "complex-numbers",
+    "matrices-determinants-basics"
+  ],
+  "status": "in-progress",
+  "title": "JEE Main Paper 1 — Physics & Mathematics",
+  "version": 2
+}

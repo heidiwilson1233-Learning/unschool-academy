@@ -1,0 +1,872 @@
+[
+ {
+  "answer": 0,
+  "difficulty": 1,
+  "explanation": "The passage states: 'A green roof is created by covering part or all of a building's roof with soil and plants.' The statement says the same thing in different words.",
+  "hint": "Look at the second sentence of the passage — how is a green roof made?",
+  "id": "ielts-rd-tfng-001",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "True"
+   },
+   {
+    "id": "b",
+    "text": "False"
+   },
+   {
+    "id": "c",
+    "text": "Not Given"
+   }
+  ],
+  "passage": "Rooftop gardens, sometimes called green roofs, are becoming a familiar sight in several large cities. A green roof is created by covering part or all of a building's roof with soil and plants. Supporters argue that they cool the surrounding air: plants release water vapour through their leaves, a process known as transpiration, which lowers the temperature of the air above the roof. A study carried out in Chicago in 2019 compared two neighbouring office buildings, one with a green roof and one with a conventional dark roof. On the hottest summer days, the surface of the green roof was up to 30 degrees cooler than the conventional roof. The researchers also recorded lower indoor temperatures in the building below the green roof, which reduced the need for air conditioning during the afternoon. However, installing a green roof is expensive, and the building must be strong enough to support the extra weight of soil and water. For this reason, engineers recommend a structural survey before any installation begins.",
+  "skill": "tfng",
+  "source": "Original practice passage authored for Unschool Academy; True/False/Not Given rules per the official IELTS Reading test format (ielts.org — British Council / IDP / Cambridge English)",
+  "status": "draft-pending-sme-review",
+  "stem": "A green roof is made by covering a roof with soil and plants.",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 0,
+  "difficulty": 1,
+  "explanation": "The passage says: 'On the hottest summer days, the surface of the green roof was up to 30 degrees cooler than the conventional roof.' This matches the statement.",
+  "hint": "Find the sentence about the Chicago study and the hottest summer days.",
+  "id": "ielts-rd-tfng-002",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "True"
+   },
+   {
+    "id": "b",
+    "text": "False"
+   },
+   {
+    "id": "c",
+    "text": "Not Given"
+   }
+  ],
+  "passage": "Rooftop gardens, sometimes called green roofs, are becoming a familiar sight in several large cities. A green roof is created by covering part or all of a building's roof with soil and plants. Supporters argue that they cool the surrounding air: plants release water vapour through their leaves, a process known as transpiration, which lowers the temperature of the air above the roof. A study carried out in Chicago in 2019 compared two neighbouring office buildings, one with a green roof and one with a conventional dark roof. On the hottest summer days, the surface of the green roof was up to 30 degrees cooler than the conventional roof. The researchers also recorded lower indoor temperatures in the building below the green roof, which reduced the need for air conditioning during the afternoon. However, installing a green roof is expensive, and the building must be strong enough to support the extra weight of soil and water. For this reason, engineers recommend a structural survey before any installation begins.",
+  "skill": "tfng",
+  "source": "Original practice passage authored for Unschool Academy; True/False/Not Given rules per the official IELTS Reading test format (ielts.org — British Council / IDP / Cambridge English)",
+  "status": "draft-pending-sme-review",
+  "stem": "In the Chicago study, the green roof surface was cooler than the conventional roof on hot days.",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 1,
+  "difficulty": 1,
+  "explanation": "The passage says the green roof 'reduced the need for air conditioning' — it lowered the need, not increased it. The statement says the opposite, so it is False.",
+  "hint": "Did the need for air conditioning go up or down? Read that sentence carefully.",
+  "id": "ielts-rd-tfng-003",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "True"
+   },
+   {
+    "id": "b",
+    "text": "False"
+   },
+   {
+    "id": "c",
+    "text": "Not Given"
+   }
+  ],
+  "passage": "Rooftop gardens, sometimes called green roofs, are becoming a familiar sight in several large cities. A green roof is created by covering part or all of a building's roof with soil and plants. Supporters argue that they cool the surrounding air: plants release water vapour through their leaves, a process known as transpiration, which lowers the temperature of the air above the roof. A study carried out in Chicago in 2019 compared two neighbouring office buildings, one with a green roof and one with a conventional dark roof. On the hottest summer days, the surface of the green roof was up to 30 degrees cooler than the conventional roof. The researchers also recorded lower indoor temperatures in the building below the green roof, which reduced the need for air conditioning during the afternoon. However, installing a green roof is expensive, and the building must be strong enough to support the extra weight of soil and water. For this reason, engineers recommend a structural survey before any installation begins.",
+  "skill": "tfng",
+  "source": "Original practice passage authored for Unschool Academy; True/False/Not Given rules per the official IELTS Reading test format (ielts.org — British Council / IDP / Cambridge English)",
+  "status": "draft-pending-sme-review",
+  "stem": "The green roof increased the building's need for air conditioning.",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 1,
+  "difficulty": 1,
+  "explanation": "The passage states that 'installing a green roof is expensive.' Saying it is free directly contradicts this.",
+  "hint": "What does the passage say about the cost of installation?",
+  "id": "ielts-rd-tfng-004",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "True"
+   },
+   {
+    "id": "b",
+    "text": "False"
+   },
+   {
+    "id": "c",
+    "text": "Not Given"
+   }
+  ],
+  "passage": "Rooftop gardens, sometimes called green roofs, are becoming a familiar sight in several large cities. A green roof is created by covering part or all of a building's roof with soil and plants. Supporters argue that they cool the surrounding air: plants release water vapour through their leaves, a process known as transpiration, which lowers the temperature of the air above the roof. A study carried out in Chicago in 2019 compared two neighbouring office buildings, one with a green roof and one with a conventional dark roof. On the hottest summer days, the surface of the green roof was up to 30 degrees cooler than the conventional roof. The researchers also recorded lower indoor temperatures in the building below the green roof, which reduced the need for air conditioning during the afternoon. However, installing a green roof is expensive, and the building must be strong enough to support the extra weight of soil and water. For this reason, engineers recommend a structural survey before any installation begins.",
+  "skill": "tfng",
+  "source": "Original practice passage authored for Unschool Academy; True/False/Not Given rules per the official IELTS Reading test format (ielts.org — British Council / IDP / Cambridge English)",
+  "status": "draft-pending-sme-review",
+  "stem": "Green roofs are free to install.",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 2,
+  "difficulty": 1,
+  "explanation": "The passage mentions green roofs in 'several large cities' but says nothing about small villages. With no information either way, the answer is Not Given.",
+  "hint": "Does the passage mention villages at all? Base your answer only on the text.",
+  "id": "ielts-rd-tfng-005",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "True"
+   },
+   {
+    "id": "b",
+    "text": "False"
+   },
+   {
+    "id": "c",
+    "text": "Not Given"
+   }
+  ],
+  "passage": "Rooftop gardens, sometimes called green roofs, are becoming a familiar sight in several large cities. A green roof is created by covering part or all of a building's roof with soil and plants. Supporters argue that they cool the surrounding air: plants release water vapour through their leaves, a process known as transpiration, which lowers the temperature of the air above the roof. A study carried out in Chicago in 2019 compared two neighbouring office buildings, one with a green roof and one with a conventional dark roof. On the hottest summer days, the surface of the green roof was up to 30 degrees cooler than the conventional roof. The researchers also recorded lower indoor temperatures in the building below the green roof, which reduced the need for air conditioning during the afternoon. However, installing a green roof is expensive, and the building must be strong enough to support the extra weight of soil and water. For this reason, engineers recommend a structural survey before any installation begins.",
+  "skill": "tfng",
+  "source": "Original practice passage authored for Unschool Academy; True/False/Not Given rules per the official IELTS Reading test format (ielts.org — British Council / IDP / Cambridge English)",
+  "status": "draft-pending-sme-review",
+  "stem": "The passage says green roofs are common in small villages.",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 0,
+  "difficulty": 1,
+  "explanation": "The passage says: 'One group then slept for eight hours' after memorising the word pairs. This matches the statement.",
+  "hint": "How long did the first group sleep? Find the exact number.",
+  "id": "ielts-rd-tfng-006",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "True"
+   },
+   {
+    "id": "b",
+    "text": "False"
+   },
+   {
+    "id": "c",
+    "text": "Not Given"
+   }
+  ],
+  "passage": "Scientists have long suspected a link between sleep and memory, and recent experiments have strengthened this view. In a 2021 study at a German university, two groups of students were asked to memorise a list of 40 pairs of words. One group then slept for eight hours, while the other stayed awake and went about its normal day. When both groups were tested the following evening, the group that had slept remembered an average of 28 word pairs, compared with 21 for the group that had stayed awake. The researchers concluded that sleep helps the brain to organise and store new information. Interestingly, the benefit was greatest for the word pairs that students had found most difficult during the learning session. The team now plans to investigate whether shorter naps produce a similar effect, although no results have been published yet.",
+  "skill": "tfng",
+  "source": "Original practice passage authored for Unschool Academy; True/False/Not Given rules per the official IELTS Reading test format (ielts.org — British Council / IDP / Cambridge English)",
+  "status": "draft-pending-sme-review",
+  "stem": "One group of students slept for eight hours after memorising the words.",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 1,
+  "difficulty": 1,
+  "explanation": "The passage gives the numbers: the sleeping group remembered 28 word pairs, the awake group remembered 21. So the awake group remembered fewer, not more — the statement is False.",
+  "hint": "Compare the two numbers: 28 and 21. Which group remembered more?",
+  "id": "ielts-rd-tfng-007",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "True"
+   },
+   {
+    "id": "b",
+    "text": "False"
+   },
+   {
+    "id": "c",
+    "text": "Not Given"
+   }
+  ],
+  "passage": "Scientists have long suspected a link between sleep and memory, and recent experiments have strengthened this view. In a 2021 study at a German university, two groups of students were asked to memorise a list of 40 pairs of words. One group then slept for eight hours, while the other stayed awake and went about its normal day. When both groups were tested the following evening, the group that had slept remembered an average of 28 word pairs, compared with 21 for the group that had stayed awake. The researchers concluded that sleep helps the brain to organise and store new information. Interestingly, the benefit was greatest for the word pairs that students had found most difficult during the learning session. The team now plans to investigate whether shorter naps produce a similar effect, although no results have been published yet.",
+  "skill": "tfng",
+  "source": "Original practice passage authored for Unschool Academy; True/False/Not Given rules per the official IELTS Reading test format (ielts.org — British Council / IDP / Cambridge English)",
+  "status": "draft-pending-sme-review",
+  "stem": "The group that stayed awake remembered more word pairs.",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 0,
+  "difficulty": 1,
+  "explanation": "The passage states: 'The researchers concluded that sleep helps the brain to organise and store new information.' This agrees with the statement.",
+  "hint": "What did the researchers conclude? Look for the word 'concluded'.",
+  "id": "ielts-rd-tfng-008",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "True"
+   },
+   {
+    "id": "b",
+    "text": "False"
+   },
+   {
+    "id": "c",
+    "text": "Not Given"
+   }
+  ],
+  "passage": "Scientists have long suspected a link between sleep and memory, and recent experiments have strengthened this view. In a 2021 study at a German university, two groups of students were asked to memorise a list of 40 pairs of words. One group then slept for eight hours, while the other stayed awake and went about its normal day. When both groups were tested the following evening, the group that had slept remembered an average of 28 word pairs, compared with 21 for the group that had stayed awake. The researchers concluded that sleep helps the brain to organise and store new information. Interestingly, the benefit was greatest for the word pairs that students had found most difficult during the learning session. The team now plans to investigate whether shorter naps produce a similar effect, although no results have been published yet.",
+  "skill": "tfng",
+  "source": "Original practice passage authored for Unschool Academy; True/False/Not Given rules per the official IELTS Reading test format (ielts.org — British Council / IDP / Cambridge English)",
+  "status": "draft-pending-sme-review",
+  "stem": "The researchers believe sleep helps the brain store new information.",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 2,
+  "difficulty": 1,
+  "explanation": "The passage describes a study at 'a German university' — one university. It never mentions three countries, so there is no information to judge the statement: Not Given.",
+  "hint": "How many universities or countries does the passage mention? Do not use outside knowledge.",
+  "id": "ielts-rd-tfng-009",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "True"
+   },
+   {
+    "id": "b",
+    "text": "False"
+   },
+   {
+    "id": "c",
+    "text": "Not Given"
+   }
+  ],
+  "passage": "Scientists have long suspected a link between sleep and memory, and recent experiments have strengthened this view. In a 2021 study at a German university, two groups of students were asked to memorise a list of 40 pairs of words. One group then slept for eight hours, while the other stayed awake and went about its normal day. When both groups were tested the following evening, the group that had slept remembered an average of 28 word pairs, compared with 21 for the group that had stayed awake. The researchers concluded that sleep helps the brain to organise and store new information. Interestingly, the benefit was greatest for the word pairs that students had found most difficult during the learning session. The team now plans to investigate whether shorter naps produce a similar effect, although no results have been published yet.",
+  "skill": "tfng",
+  "source": "Original practice passage authored for Unschool Academy; True/False/Not Given rules per the official IELTS Reading test format (ielts.org — British Council / IDP / Cambridge English)",
+  "status": "draft-pending-sme-review",
+  "stem": "The study was carried out in three different countries.",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 1,
+  "difficulty": 1,
+  "explanation": "The passage says the team 'plans to investigate' naps and that 'no results have been published yet.' Claiming results are already published contradicts this.",
+  "hint": "Have the nap results been published, or are they only planned?",
+  "id": "ielts-rd-tfng-010",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "True"
+   },
+   {
+    "id": "b",
+    "text": "False"
+   },
+   {
+    "id": "c",
+    "text": "Not Given"
+   }
+  ],
+  "passage": "Scientists have long suspected a link between sleep and memory, and recent experiments have strengthened this view. In a 2021 study at a German university, two groups of students were asked to memorise a list of 40 pairs of words. One group then slept for eight hours, while the other stayed awake and went about its normal day. When both groups were tested the following evening, the group that had slept remembered an average of 28 word pairs, compared with 21 for the group that had stayed awake. The researchers concluded that sleep helps the brain to organise and store new information. Interestingly, the benefit was greatest for the word pairs that students had found most difficult during the learning session. The team now plans to investigate whether shorter naps produce a similar effect, although no results have been published yet.",
+  "skill": "tfng",
+  "source": "Original practice passage authored for Unschool Academy; True/False/Not Given rules per the official IELTS Reading test format (ielts.org — British Council / IDP / Cambridge English)",
+  "status": "draft-pending-sme-review",
+  "stem": "Results about short naps have already been published.",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 0,
+  "difficulty": 1,
+  "explanation": "The passage says: 'most wild bee species are solitary' — solitary means living alone, not in colonies. The statement agrees.",
+  "hint": "What does 'solitary' mean here? Check the sentence about wild bee species.",
+  "id": "ielts-rd-tfng-011",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "True"
+   },
+   {
+    "id": "b",
+    "text": "False"
+   },
+   {
+    "id": "c",
+    "text": "Not Given"
+   }
+  ],
+  "passage": "Wild bees are among the most effective pollinators of crops and wildflowers, yet their numbers have fallen sharply in many regions. Unlike honeybees, which live in large managed colonies, most wild bee species are solitary, with each female building her own nest. Researchers believe the main cause of the decline is the loss of flower-rich habitats: as meadows are converted to farmland or housing, bees struggle to find enough food through the spring and summer. Pesticides are also thought to play a role, although the evidence is less clear. In Britain, a nationwide survey found that the ranges of one-third of wild bee species shrank between 1980 and 2010. Conservation groups now encourage gardeners to plant native wildflowers and to leave small areas of bare ground, where many solitary bees prefer to nest.",
+  "skill": "tfng",
+  "source": "Original practice passage authored for Unschool Academy; True/False/Not Given rules per the official IELTS Reading test format (ielts.org — British Council / IDP / Cambridge English)",
+  "status": "draft-pending-sme-review",
+  "stem": "Most wild bee species live alone rather than in colonies.",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 0,
+  "difficulty": 1,
+  "explanation": "The passage states: 'Researchers believe the main cause of the decline is the loss of flower-rich habitats.' This matches the statement exactly.",
+  "hint": "What do researchers believe is the main cause? Find the word 'main'.",
+  "id": "ielts-rd-tfng-012",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "True"
+   },
+   {
+    "id": "b",
+    "text": "False"
+   },
+   {
+    "id": "c",
+    "text": "Not Given"
+   }
+  ],
+  "passage": "Wild bees are among the most effective pollinators of crops and wildflowers, yet their numbers have fallen sharply in many regions. Unlike honeybees, which live in large managed colonies, most wild bee species are solitary, with each female building her own nest. Researchers believe the main cause of the decline is the loss of flower-rich habitats: as meadows are converted to farmland or housing, bees struggle to find enough food through the spring and summer. Pesticides are also thought to play a role, although the evidence is less clear. In Britain, a nationwide survey found that the ranges of one-third of wild bee species shrank between 1980 and 2010. Conservation groups now encourage gardeners to plant native wildflowers and to leave small areas of bare ground, where many solitary bees prefer to nest.",
+  "skill": "tfng",
+  "source": "Original practice passage authored for Unschool Academy; True/False/Not Given rules per the official IELTS Reading test format (ielts.org — British Council / IDP / Cambridge English)",
+  "status": "draft-pending-sme-review",
+  "stem": "The main cause of the decline is thought to be the loss of flower-rich habitats.",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 2,
+  "difficulty": 1,
+  "explanation": "The passage says wild bees are 'among the most effective pollinators' but never compares honeybees and wild bees directly, and never calls honeybees the most effective. No information: Not Given.",
+  "hint": "Does the passage rank honeybees against wild bees? Read only what is written.",
+  "id": "ielts-rd-tfng-013",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "True"
+   },
+   {
+    "id": "b",
+    "text": "False"
+   },
+   {
+    "id": "c",
+    "text": "Not Given"
+   }
+  ],
+  "passage": "Wild bees are among the most effective pollinators of crops and wildflowers, yet their numbers have fallen sharply in many regions. Unlike honeybees, which live in large managed colonies, most wild bee species are solitary, with each female building her own nest. Researchers believe the main cause of the decline is the loss of flower-rich habitats: as meadows are converted to farmland or housing, bees struggle to find enough food through the spring and summer. Pesticides are also thought to play a role, although the evidence is less clear. In Britain, a nationwide survey found that the ranges of one-third of wild bee species shrank between 1980 and 2010. Conservation groups now encourage gardeners to plant native wildflowers and to leave small areas of bare ground, where many solitary bees prefer to nest.",
+  "skill": "tfng",
+  "source": "Original practice passage authored for Unschool Academy; True/False/Not Given rules per the official IELTS Reading test format (ielts.org — British Council / IDP / Cambridge English)",
+  "status": "draft-pending-sme-review",
+  "stem": "Honeybees are the most effective pollinators mentioned in the passage.",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 0,
+  "difficulty": 1,
+  "explanation": "The passage says: 'the ranges of one-third of wild bee species shrank between 1980 and 2010.' 'Got smaller' is a paraphrase of 'shrank' — the statement agrees.",
+  "hint": "Find the sentence about Britain and one-third of species. What happened to their ranges?",
+  "id": "ielts-rd-tfng-014",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "True"
+   },
+   {
+    "id": "b",
+    "text": "False"
+   },
+   {
+    "id": "c",
+    "text": "Not Given"
+   }
+  ],
+  "passage": "Wild bees are among the most effective pollinators of crops and wildflowers, yet their numbers have fallen sharply in many regions. Unlike honeybees, which live in large managed colonies, most wild bee species are solitary, with each female building her own nest. Researchers believe the main cause of the decline is the loss of flower-rich habitats: as meadows are converted to farmland or housing, bees struggle to find enough food through the spring and summer. Pesticides are also thought to play a role, although the evidence is less clear. In Britain, a nationwide survey found that the ranges of one-third of wild bee species shrank between 1980 and 2010. Conservation groups now encourage gardeners to plant native wildflowers and to leave small areas of bare ground, where many solitary bees prefer to nest.",
+  "skill": "tfng",
+  "source": "Original practice passage authored for Unschool Academy; True/False/Not Given rules per the official IELTS Reading test format (ielts.org — British Council / IDP / Cambridge English)",
+  "status": "draft-pending-sme-review",
+  "stem": "In Britain, the ranges of one-third of wild bee species got smaller between 1980 and 2010.",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 1,
+  "difficulty": 1,
+  "explanation": "The passage says conservation groups encourage gardeners 'to leave small areas of bare ground, where many solitary bees prefer to nest.' Telling gardeners to remove all bare ground is the opposite — False.",
+  "hint": "Do the groups want bare ground kept or removed?",
+  "id": "ielts-rd-tfng-015",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "True"
+   },
+   {
+    "id": "b",
+    "text": "False"
+   },
+   {
+    "id": "c",
+    "text": "Not Given"
+   }
+  ],
+  "passage": "Wild bees are among the most effective pollinators of crops and wildflowers, yet their numbers have fallen sharply in many regions. Unlike honeybees, which live in large managed colonies, most wild bee species are solitary, with each female building her own nest. Researchers believe the main cause of the decline is the loss of flower-rich habitats: as meadows are converted to farmland or housing, bees struggle to find enough food through the spring and summer. Pesticides are also thought to play a role, although the evidence is less clear. In Britain, a nationwide survey found that the ranges of one-third of wild bee species shrank between 1980 and 2010. Conservation groups now encourage gardeners to plant native wildflowers and to leave small areas of bare ground, where many solitary bees prefer to nest.",
+  "skill": "tfng",
+  "source": "Original practice passage authored for Unschool Academy; True/False/Not Given rules per the official IELTS Reading test format (ielts.org — British Council / IDP / Cambridge English)",
+  "status": "draft-pending-sme-review",
+  "stem": "Conservation groups tell gardeners to remove all bare ground.",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 0,
+  "difficulty": 1,
+  "explanation": "The passage opens with: 'an estimated eight million tonnes of plastic waste enter the world's oceans' each year. The statement matches.",
+  "hint": "What is the yearly figure given in the first sentence?",
+  "id": "ielts-rd-tfng-016",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "True"
+   },
+   {
+    "id": "b",
+    "text": "False"
+   },
+   {
+    "id": "c",
+    "text": "Not Given"
+   }
+  ],
+  "passage": "Each year, an estimated eight million tonnes of plastic waste enter the world's oceans, where currents gather much of it into vast rotating patches of debris. In 2018, a Dutch non-profit organisation launched a floating barrier designed to collect this plastic. The 600-metre-long barrier uses the ocean's own currents to funnel floating debris towards a central collection point, from where ships periodically remove it. During its first year of operation, the system collected over 100,000 kilograms of plastic, although its founders admit this is a tiny fraction of the total. Critics argue that the barrier may also trap marine animals, and that preventing plastic from entering the sea in the first place would be more effective. The organisation has announced plans to expand the system, but has not said how the expansion will be funded.",
+  "skill": "tfng",
+  "source": "Original practice passage authored for Unschool Academy; True/False/Not Given rules per the official IELTS Reading test format (ielts.org — British Council / IDP / Cambridge English)",
+  "status": "draft-pending-sme-review",
+  "stem": "About eight million tonnes of plastic enter the oceans every year.",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 0,
+  "difficulty": 1,
+  "explanation": "The passage says the barrier 'uses the ocean's own currents to funnel floating debris towards a central collection point.' This agrees with the statement.",
+  "hint": "What powers the barrier — engines, or something natural? Read the third sentence.",
+  "id": "ielts-rd-tfng-017",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "True"
+   },
+   {
+    "id": "b",
+    "text": "False"
+   },
+   {
+    "id": "c",
+    "text": "Not Given"
+   }
+  ],
+  "passage": "Each year, an estimated eight million tonnes of plastic waste enter the world's oceans, where currents gather much of it into vast rotating patches of debris. In 2018, a Dutch non-profit organisation launched a floating barrier designed to collect this plastic. The 600-metre-long barrier uses the ocean's own currents to funnel floating debris towards a central collection point, from where ships periodically remove it. During its first year of operation, the system collected over 100,000 kilograms of plastic, although its founders admit this is a tiny fraction of the total. Critics argue that the barrier may also trap marine animals, and that preventing plastic from entering the sea in the first place would be more effective. The organisation has announced plans to expand the system, but has not said how the expansion will be funded.",
+  "skill": "tfng",
+  "source": "Original practice passage authored for Unschool Academy; True/False/Not Given rules per the official IELTS Reading test format (ielts.org — British Council / IDP / Cambridge English)",
+  "status": "draft-pending-sme-review",
+  "stem": "The barrier collects plastic using the ocean's own currents.",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 1,
+  "difficulty": 1,
+  "explanation": "The passage says the collected plastic was 'a tiny fraction of the total.' Claiming it removed all the ocean's plastic is the opposite — False.",
+  "hint": "Was it 'a tiny fraction' or 'all' of the plastic?",
+  "id": "ielts-rd-tfng-018",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "True"
+   },
+   {
+    "id": "b",
+    "text": "False"
+   },
+   {
+    "id": "c",
+    "text": "Not Given"
+   }
+  ],
+  "passage": "Each year, an estimated eight million tonnes of plastic waste enter the world's oceans, where currents gather much of it into vast rotating patches of debris. In 2018, a Dutch non-profit organisation launched a floating barrier designed to collect this plastic. The 600-metre-long barrier uses the ocean's own currents to funnel floating debris towards a central collection point, from where ships periodically remove it. During its first year of operation, the system collected over 100,000 kilograms of plastic, although its founders admit this is a tiny fraction of the total. Critics argue that the barrier may also trap marine animals, and that preventing plastic from entering the sea in the first place would be more effective. The organisation has announced plans to expand the system, but has not said how the expansion will be funded.",
+  "skill": "tfng",
+  "source": "Original practice passage authored for Unschool Academy; True/False/Not Given rules per the official IELTS Reading test format (ielts.org — British Council / IDP / Cambridge English)",
+  "status": "draft-pending-sme-review",
+  "stem": "In its first year, the system removed all the plastic in the ocean.",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 0,
+  "difficulty": 1,
+  "explanation": "The passage says: 'Critics argue that the barrier may also trap marine animals.' This matches the statement.",
+  "hint": "What do the critics worry the barrier might do to animals?",
+  "id": "ielts-rd-tfng-019",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "True"
+   },
+   {
+    "id": "b",
+    "text": "False"
+   },
+   {
+    "id": "c",
+    "text": "Not Given"
+   }
+  ],
+  "passage": "Each year, an estimated eight million tonnes of plastic waste enter the world's oceans, where currents gather much of it into vast rotating patches of debris. In 2018, a Dutch non-profit organisation launched a floating barrier designed to collect this plastic. The 600-metre-long barrier uses the ocean's own currents to funnel floating debris towards a central collection point, from where ships periodically remove it. During its first year of operation, the system collected over 100,000 kilograms of plastic, although its founders admit this is a tiny fraction of the total. Critics argue that the barrier may also trap marine animals, and that preventing plastic from entering the sea in the first place would be more effective. The organisation has announced plans to expand the system, but has not said how the expansion will be funded.",
+  "skill": "tfng",
+  "source": "Original practice passage authored for Unschool Academy; True/False/Not Given rules per the official IELTS Reading test format (ielts.org — British Council / IDP / Cambridge English)",
+  "status": "draft-pending-sme-review",
+  "stem": "Critics worry the barrier might trap sea animals.",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 2,
+  "difficulty": 1,
+  "explanation": "The passage says the organisation 'has not said how the expansion will be funded' and gives no date for completion. There is no information about next year — Not Given.",
+  "hint": "Does the passage give any date for the expansion? Stick to the text.",
+  "id": "ielts-rd-tfng-020",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "True"
+   },
+   {
+    "id": "b",
+    "text": "False"
+   },
+   {
+    "id": "c",
+    "text": "Not Given"
+   }
+  ],
+  "passage": "Each year, an estimated eight million tonnes of plastic waste enter the world's oceans, where currents gather much of it into vast rotating patches of debris. In 2018, a Dutch non-profit organisation launched a floating barrier designed to collect this plastic. The 600-metre-long barrier uses the ocean's own currents to funnel floating debris towards a central collection point, from where ships periodically remove it. During its first year of operation, the system collected over 100,000 kilograms of plastic, although its founders admit this is a tiny fraction of the total. Critics argue that the barrier may also trap marine animals, and that preventing plastic from entering the sea in the first place would be more effective. The organisation has announced plans to expand the system, but has not said how the expansion will be funded.",
+  "skill": "tfng",
+  "source": "Original practice passage authored for Unschool Academy; True/False/Not Given rules per the official IELTS Reading test format (ielts.org — British Council / IDP / Cambridge English)",
+  "status": "draft-pending-sme-review",
+  "stem": "The organisation will finish the expansion next year.",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 0,
+  "difficulty": 1,
+  "explanation": "The passage opens: 'The Silk Road was not a single road but a network of trade routes.' The statement agrees.",
+  "hint": "Was it 'a single road' or 'a network'? Check the first sentence.",
+  "id": "ielts-rd-tfng-021",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "True"
+   },
+   {
+    "id": "b",
+    "text": "False"
+   },
+   {
+    "id": "c",
+    "text": "Not Given"
+   }
+  ],
+  "passage": "The Silk Road was not a single road but a network of trade routes linking China with the Mediterranean world for more than 1,500 years. Caravans carried silk, spices, and precious stones westward, while glass, wool, and gold travelled east. Few merchants completed the entire journey; instead, goods changed hands many times at busy market towns along the way. The routes also carried ideas: Buddhism spread from India to China along these paths, and papermaking technology eventually reached Europe the same way. Trade declined in the 1400s, partly because sea routes offered a faster and cheaper way to move goods. Along with goods, the routes carried new foods, animals, and craft techniques in both directions, quietly changing diets and workshops in distant lands. Today, several countries are investing in new rail and road links across Central Asia, which some commentators have nicknamed the 'New Silk Road'. Whether these modern routes will reshape trade as profoundly as the old ones remains to be seen.",
+  "skill": "tfng",
+  "source": "Original practice passage authored for Unschool Academy; True/False/Not Given rules per the official IELTS Reading test format (ielts.org — British Council / IDP / Cambridge English)",
+  "status": "draft-pending-sme-review",
+  "stem": "The Silk Road was a network of trade routes, not a single road.",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 1,
+  "difficulty": 1,
+  "explanation": "The passage says: 'Few merchants completed the entire journey.' Claiming most merchants travelled the whole route is the opposite — False.",
+  "hint": "How many merchants completed the entire journey — few or most?",
+  "id": "ielts-rd-tfng-022",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "True"
+   },
+   {
+    "id": "b",
+    "text": "False"
+   },
+   {
+    "id": "c",
+    "text": "Not Given"
+   }
+  ],
+  "passage": "The Silk Road was not a single road but a network of trade routes linking China with the Mediterranean world for more than 1,500 years. Caravans carried silk, spices, and precious stones westward, while glass, wool, and gold travelled east. Few merchants completed the entire journey; instead, goods changed hands many times at busy market towns along the way. The routes also carried ideas: Buddhism spread from India to China along these paths, and papermaking technology eventually reached Europe the same way. Trade declined in the 1400s, partly because sea routes offered a faster and cheaper way to move goods. Along with goods, the routes carried new foods, animals, and craft techniques in both directions, quietly changing diets and workshops in distant lands. Today, several countries are investing in new rail and road links across Central Asia, which some commentators have nicknamed the 'New Silk Road'. Whether these modern routes will reshape trade as profoundly as the old ones remains to be seen.",
+  "skill": "tfng",
+  "source": "Original practice passage authored for Unschool Academy; True/False/Not Given rules per the official IELTS Reading test format (ielts.org — British Council / IDP / Cambridge English)",
+  "status": "draft-pending-sme-review",
+  "stem": "Most merchants travelled the entire route from start to finish.",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 0,
+  "difficulty": 1,
+  "explanation": "The passage says caravans 'carried silk, spices, and precious stones westward.' The statement agrees.",
+  "hint": "Which goods travelled westward? List them from the passage.",
+  "id": "ielts-rd-tfng-023",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "True"
+   },
+   {
+    "id": "b",
+    "text": "False"
+   },
+   {
+    "id": "c",
+    "text": "Not Given"
+   }
+  ],
+  "passage": "The Silk Road was not a single road but a network of trade routes linking China with the Mediterranean world for more than 1,500 years. Caravans carried silk, spices, and precious stones westward, while glass, wool, and gold travelled east. Few merchants completed the entire journey; instead, goods changed hands many times at busy market towns along the way. The routes also carried ideas: Buddhism spread from India to China along these paths, and papermaking technology eventually reached Europe the same way. Trade declined in the 1400s, partly because sea routes offered a faster and cheaper way to move goods. Along with goods, the routes carried new foods, animals, and craft techniques in both directions, quietly changing diets and workshops in distant lands. Today, several countries are investing in new rail and road links across Central Asia, which some commentators have nicknamed the 'New Silk Road'. Whether these modern routes will reshape trade as profoundly as the old ones remains to be seen.",
+  "skill": "tfng",
+  "source": "Original practice passage authored for Unschool Academy; True/False/Not Given rules per the official IELTS Reading test format (ielts.org — British Council / IDP / Cambridge English)",
+  "status": "draft-pending-sme-review",
+  "stem": "Silk and spices were carried westward along the routes.",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 0,
+  "difficulty": 1,
+  "explanation": "The passage says trade declined 'partly because sea routes offered a faster and cheaper way to move goods.' This matches the statement.",
+  "hint": "Why did trade decline in the 1400s? Find the word 'partly'.",
+  "id": "ielts-rd-tfng-024",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "True"
+   },
+   {
+    "id": "b",
+    "text": "False"
+   },
+   {
+    "id": "c",
+    "text": "Not Given"
+   }
+  ],
+  "passage": "The Silk Road was not a single road but a network of trade routes linking China with the Mediterranean world for more than 1,500 years. Caravans carried silk, spices, and precious stones westward, while glass, wool, and gold travelled east. Few merchants completed the entire journey; instead, goods changed hands many times at busy market towns along the way. The routes also carried ideas: Buddhism spread from India to China along these paths, and papermaking technology eventually reached Europe the same way. Trade declined in the 1400s, partly because sea routes offered a faster and cheaper way to move goods. Along with goods, the routes carried new foods, animals, and craft techniques in both directions, quietly changing diets and workshops in distant lands. Today, several countries are investing in new rail and road links across Central Asia, which some commentators have nicknamed the 'New Silk Road'. Whether these modern routes will reshape trade as profoundly as the old ones remains to be seen.",
+  "skill": "tfng",
+  "source": "Original practice passage authored for Unschool Academy; True/False/Not Given rules per the official IELTS Reading test format (ielts.org — British Council / IDP / Cambridge English)",
+  "status": "draft-pending-sme-review",
+  "stem": "Trade declined partly because sea routes were faster and cheaper.",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 2,
+  "difficulty": 1,
+  "explanation": "The passage only says 'several countries are investing in new rail and road links.' It never says the project is finished, so there is no information — Not Given.",
+  "hint": "Does the passage say the new links are finished, or only that countries are investing?",
+  "id": "ielts-rd-tfng-025",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "True"
+   },
+   {
+    "id": "b",
+    "text": "False"
+   },
+   {
+    "id": "c",
+    "text": "Not Given"
+   }
+  ],
+  "passage": "The Silk Road was not a single road but a network of trade routes linking China with the Mediterranean world for more than 1,500 years. Caravans carried silk, spices, and precious stones westward, while glass, wool, and gold travelled east. Few merchants completed the entire journey; instead, goods changed hands many times at busy market towns along the way. The routes also carried ideas: Buddhism spread from India to China along these paths, and papermaking technology eventually reached Europe the same way. Trade declined in the 1400s, partly because sea routes offered a faster and cheaper way to move goods. Along with goods, the routes carried new foods, animals, and craft techniques in both directions, quietly changing diets and workshops in distant lands. Today, several countries are investing in new rail and road links across Central Asia, which some commentators have nicknamed the 'New Silk Road'. Whether these modern routes will reshape trade as profoundly as the old ones remains to be seen.",
+  "skill": "tfng",
+  "source": "Original practice passage authored for Unschool Academy; True/False/Not Given rules per the official IELTS Reading test format (ielts.org — British Council / IDP / Cambridge English)",
+  "status": "draft-pending-sme-review",
+  "stem": "The passage states that the New Silk Road is already finished.",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 0,
+  "difficulty": 1,
+  "explanation": "The passage defines it: 'Vertical farming — growing crops in stacked layers inside buildings.' The statement matches.",
+  "hint": "How does the passage itself define vertical farming?",
+  "id": "ielts-rd-tfng-026",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "True"
+   },
+   {
+    "id": "b",
+    "text": "False"
+   },
+   {
+    "id": "c",
+    "text": "Not Given"
+   }
+  ],
+  "passage": "Vertical farming — growing crops in stacked layers inside buildings — promises to produce food close to where it is eaten. Because the plants grow indoors under LED lights, farmers can control temperature, humidity, and light precisely, and harvests are possible all year round. The method uses far less water than traditional farming, since water is recycled through the system rather than lost to the soil. At present, however, vertical farms mostly grow leafy greens and herbs; crops such as wheat and rice, which need large areas and long growing seasons, remain uneconomical to produce this way. The electricity needed for lighting is another concern, although some operators now run their farms on renewable energy. Supporters predict that as LED technology improves and energy costs fall, a wider range of crops will become viable.",
+  "skill": "tfng",
+  "source": "Original practice passage authored for Unschool Academy; True/False/Not Given rules per the official IELTS Reading test format (ielts.org — British Council / IDP / Cambridge English)",
+  "status": "draft-pending-sme-review",
+  "stem": "Vertical farming means growing crops in stacked layers inside buildings.",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 0,
+  "difficulty": 1,
+  "explanation": "The passage says: 'harvests are possible all year round.' This agrees with the statement.",
+  "hint": "When are harvests possible — one season, or all year?",
+  "id": "ielts-rd-tfng-027",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "True"
+   },
+   {
+    "id": "b",
+    "text": "False"
+   },
+   {
+    "id": "c",
+    "text": "Not Given"
+   }
+  ],
+  "passage": "Vertical farming — growing crops in stacked layers inside buildings — promises to produce food close to where it is eaten. Because the plants grow indoors under LED lights, farmers can control temperature, humidity, and light precisely, and harvests are possible all year round. The method uses far less water than traditional farming, since water is recycled through the system rather than lost to the soil. At present, however, vertical farms mostly grow leafy greens and herbs; crops such as wheat and rice, which need large areas and long growing seasons, remain uneconomical to produce this way. The electricity needed for lighting is another concern, although some operators now run their farms on renewable energy. Supporters predict that as LED technology improves and energy costs fall, a wider range of crops will become viable.",
+  "skill": "tfng",
+  "source": "Original practice passage authored for Unschool Academy; True/False/Not Given rules per the official IELTS Reading test format (ielts.org — British Council / IDP / Cambridge English)",
+  "status": "draft-pending-sme-review",
+  "stem": "Vertical farms can harvest crops all year round.",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 1,
+  "difficulty": 1,
+  "explanation": "The passage says the method 'uses far less water than traditional farming.' Claiming it uses more water is the opposite — False.",
+  "hint": "Does it use 'far less' or 'more' water than traditional farming?",
+  "id": "ielts-rd-tfng-028",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "True"
+   },
+   {
+    "id": "b",
+    "text": "False"
+   },
+   {
+    "id": "c",
+    "text": "Not Given"
+   }
+  ],
+  "passage": "Vertical farming — growing crops in stacked layers inside buildings — promises to produce food close to where it is eaten. Because the plants grow indoors under LED lights, farmers can control temperature, humidity, and light precisely, and harvests are possible all year round. The method uses far less water than traditional farming, since water is recycled through the system rather than lost to the soil. At present, however, vertical farms mostly grow leafy greens and herbs; crops such as wheat and rice, which need large areas and long growing seasons, remain uneconomical to produce this way. The electricity needed for lighting is another concern, although some operators now run their farms on renewable energy. Supporters predict that as LED technology improves and energy costs fall, a wider range of crops will become viable.",
+  "skill": "tfng",
+  "source": "Original practice passage authored for Unschool Academy; True/False/Not Given rules per the official IELTS Reading test format (ielts.org — British Council / IDP / Cambridge English)",
+  "status": "draft-pending-sme-review",
+  "stem": "Vertical farming uses more water than traditional farming.",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 1,
+  "difficulty": 1,
+  "explanation": "The passage says vertical farms 'mostly grow leafy greens and herbs' and that wheat and rice 'remain uneconomical to produce this way.' The statement is the opposite — False.",
+  "hint": "What do vertical farms mostly grow — greens, or wheat and rice?",
+  "id": "ielts-rd-tfng-029",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "True"
+   },
+   {
+    "id": "b",
+    "text": "False"
+   },
+   {
+    "id": "c",
+    "text": "Not Given"
+   }
+  ],
+  "passage": "Vertical farming — growing crops in stacked layers inside buildings — promises to produce food close to where it is eaten. Because the plants grow indoors under LED lights, farmers can control temperature, humidity, and light precisely, and harvests are possible all year round. The method uses far less water than traditional farming, since water is recycled through the system rather than lost to the soil. At present, however, vertical farms mostly grow leafy greens and herbs; crops such as wheat and rice, which need large areas and long growing seasons, remain uneconomical to produce this way. The electricity needed for lighting is another concern, although some operators now run their farms on renewable energy. Supporters predict that as LED technology improves and energy costs fall, a wider range of crops will become viable.",
+  "skill": "tfng",
+  "source": "Original practice passage authored for Unschool Academy; True/False/Not Given rules per the official IELTS Reading test format (ielts.org — British Council / IDP / Cambridge English)",
+  "status": "draft-pending-sme-review",
+  "stem": "At present, vertical farms mainly grow wheat and rice.",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 2,
+  "difficulty": 1,
+  "explanation": "The passage discusses electricity costs as a concern but never gives the exact cost of building a vertical farm. No information — Not Given.",
+  "hint": "Does the passage mention any exact building cost? Do not guess.",
+  "id": "ielts-rd-tfng-030",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "True"
+   },
+   {
+    "id": "b",
+    "text": "False"
+   },
+   {
+    "id": "c",
+    "text": "Not Given"
+   }
+  ],
+  "passage": "Vertical farming — growing crops in stacked layers inside buildings — promises to produce food close to where it is eaten. Because the plants grow indoors under LED lights, farmers can control temperature, humidity, and light precisely, and harvests are possible all year round. The method uses far less water than traditional farming, since water is recycled through the system rather than lost to the soil. At present, however, vertical farms mostly grow leafy greens and herbs; crops such as wheat and rice, which need large areas and long growing seasons, remain uneconomical to produce this way. The electricity needed for lighting is another concern, although some operators now run their farms on renewable energy. Supporters predict that as LED technology improves and energy costs fall, a wider range of crops will become viable.",
+  "skill": "tfng",
+  "source": "Original practice passage authored for Unschool Academy; True/False/Not Given rules per the official IELTS Reading test format (ielts.org — British Council / IDP / Cambridge English)",
+  "status": "draft-pending-sme-review",
+  "stem": "The passage gives the exact cost of building a vertical farm.",
+  "type": "mcq",
+  "version": 1
+ }
+]
