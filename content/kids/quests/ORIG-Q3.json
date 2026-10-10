@@ -1,0 +1,23 @@
+{
+  "id": "ORIG-Q3",
+  "book_id": null,
+  "quest_type": "create-quest",
+  "subject": "create",
+  "track": "school-starters",
+  "character": "tara",
+  "title": "Draw Your Own Story",
+  "objective": "Create an original 3-part drawing story: beginning, middle, end.",
+  "difficulty": 1,
+  "story_beats": [
+    { "text": "Tara opens a fresh page in her sketchbook. 'Every story has three parts: a BEGINNING, a MIDDLE, and an END. Today, YOU are the storyteller!'" }
+  ],
+  "interactions": [
+    { "type": "draw", "prompt": "Draw the BEGINNING: who is your story about?" },
+    { "type": "draw", "prompt": "Draw the MIDDLE: what happens to them?" },
+    { "type": "draw", "prompt": "Draw the END: how does it finish?" }
+  ],
+  "feedback": { "correct": "What a story! Tara is saving it in her sketchbook of young authors!", "retry": "Every drawing is a good drawing. Keep going!" },
+  "off_screen": "Tell your story to someone at home using your three drawings.",
+  "parent_note": "Creativity: narrative structure (beginning/middle/end), self-expression.",
+  "status": "draft-pending-educator-review"
+}

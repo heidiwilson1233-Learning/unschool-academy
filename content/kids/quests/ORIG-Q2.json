@@ -1,0 +1,23 @@
+{
+  "id": "ORIG-Q2",
+  "book_id": null,
+  "quest_type": "wonder-quest",
+  "subject": "world",
+  "track": "adventure-club",
+  "character": "bobo",
+  "title": "Four Seasons Mystery",
+  "objective": "Name the four seasons and match seasonal clues (clothes, weather, nature).",
+  "difficulty": 1,
+  "story_beats": [
+    { "text": "Bobo found four photographs — but the labels fell off! 'What do you NOTICE in each picture?'" }
+  ],
+  "interactions": [
+    { "type": "tap-choice", "prompt": "Trees are bare and everyone's wearing sweaters. Which season?", "options": ["Winter", "Summer", "Monsoon"], "correct": 0 },
+    { "type": "tap-choice", "prompt": "Mangoes are ripe and the sun is blazing. Which season?", "options": ["Summer", "Winter", "Autumn"], "correct": 0 },
+    { "type": "tap-choice", "prompt": "Leaves turn red and fall. Which season?", "options": ["Autumn", "Spring", "Winter"], "correct": 0 }
+  ],
+  "feedback": { "correct": "Season detective! Bobo is filing this case as SOLVED!", "retry": "Look at the clues — clothes, trees, sun. What do they tell you?" },
+  "off_screen": "Look out of the window. Which season is it? Find 3 clues.",
+  "parent_note": "Science: seasons, observation, evidence-based reasoning.",
+  "status": "draft-pending-educator-review"
+}

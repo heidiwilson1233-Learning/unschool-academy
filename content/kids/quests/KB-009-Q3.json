@@ -1,0 +1,23 @@
+{
+  "id": "KB-009-Q3",
+  "book_id": "KB-009",
+  "quest_type": "wonder-quest",
+  "subject": "world",
+  "track": "school-starters",
+  "character": "bobo",
+  "title": "From Crawler to Flyer",
+  "objective": "Observe and name the life-cycle stages: egg → caterpillar → cocoon → butterfly.",
+  "difficulty": 1,
+  "story_beats": [
+    { "text": "Bobo lifts his magnifier. 'What do you NOTICE? The caterpillar didn't stay a caterpillar. It CHANGED!'" },
+    { "text": "First an egg. Then a hungry caterpillar. Then a quiet cocoon. Then — a butterfly with wings!" }
+  ],
+  "interactions": [
+    { "type": "order", "prompt": "Put the life cycle in order!", "options": ["Egg", "Caterpillar", "Cocoon", "Butterfly"], "correct": 0 },
+    { "type": "tap-choice", "prompt": "Inside the cocoon, the caterpillar is...", "options": ["Changing", "Sleeping forever", "Eating"], "correct": 0 }
+  ],
+  "feedback": { "correct": "You noticed the great change! Bobo is writing it in his notebook!", "retry": "Look carefully — what came FIRST? The tiny egg!" },
+  "off_screen": "Find a picture of a butterfly. What colours are its wings?",
+  "parent_note": "Science: life cycles, observation, sequencing natural change.",
+  "status": "draft-pending-educator-review"
+}

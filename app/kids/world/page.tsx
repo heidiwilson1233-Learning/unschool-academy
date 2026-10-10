@@ -68,7 +68,7 @@ const GUIDE_TINT = {
   bobo: "bg-kids-leaf/15 border-kids-leaf-deep/40",
 } as const;
 
-/* Playable state derived from QUEST_BRIEFS (lib/kids.ts): only K04 (Mango Garden)
+/* Playable quests live as JSON under content/kids/quests/ and render at /kids/quest/[id] (book-grown quests)
    and K13 (Story Tree) are playable:true. Every other location is an
    honestly-labelled concept — no dead "play" buttons anywhere on this page. */
 const QUEST_FOR_LOCATION: Record<string, { title: string; route: string }> = {

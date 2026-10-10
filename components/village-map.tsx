@@ -21,7 +21,7 @@ type Location = {
 const CharArt = { momo: Momo, tara: Tara, bobo: Bobo };
 
 /* Map positions (800×520 viewBox) + playable state.
-   Playable state is derived from QUEST_BRIEFS in lib/kids.ts — only K04
+   Playable quests live as JSON under content/kids/quests/ and render at /kids/quest/[id]
    (Mango Garden) and K13 (Story Tree) are playable:true. Keep in sync there. */
 const NODES: Array<{ slug: string; label: string; x: number; y: number; playable: boolean }> = [
   { slug: "mango-garden", label: "Mango Garden", x: 105, y: 128, playable: true },

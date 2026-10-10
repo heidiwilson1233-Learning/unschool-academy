@@ -1,0 +1,23 @@
+{
+  "id": "KB-001-Q2",
+  "book_id": "KB-001",
+  "quest_type": "value-quest",
+  "subject": "values",
+  "track": "school-starters",
+  "character": "tara",
+  "title": "The Friends Who Helped",
+  "objective": "Recognize helping behavior: identify when a character helps a friend and choose to help in a scenario.",
+  "difficulty": 1,
+  "story_beats": [
+    { "text": "In the Panchatantra, a little mouse chewed through a net to free the lion. The lion had laughed at the tiny mouse — but the mouse helped anyway." },
+    { "text": "Tara closes her sketchbook. 'Helping doesn't need you to be big. It needs you to CARE. Let's practise!'" }
+  ],
+  "interactions": [
+    { "type": "tap-choice", "prompt": "Your friend drops their crayons. What do you do?", "options": ["Help pick them up", "Keep drawing", "Hide the crayons"], "correct": 0 },
+    { "type": "tap-choice", "prompt": "The mouse helped the lion even though the lion laughed at him. That was...", "options": ["Kind", "Silly", "Scary"], "correct": 0 }
+  ],
+  "feedback": { "correct": "You chose kindness — just like the little mouse!", "retry": "Hmm, what would the kind mouse do? Try again!" },
+  "off_screen": "Do one helpful thing today without being asked. Notice how it feels.",
+  "parent_note": "Values: helping, kindness. Scenario-based moral reasoning.",
+  "status": "draft-pending-educator-review"
+}
