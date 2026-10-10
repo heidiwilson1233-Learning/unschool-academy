@@ -6,18 +6,65 @@
   "track": "school-starters",
   "character": "tara",
   "title": "Draw Your Own Story",
+  "objective_id": "create.storytelling.draw-3-part",
   "objective": "Create an original 3-part drawing story: beginning, middle, end.",
   "difficulty": 1,
+  "prerequisites": [],
+  "assets": {
+    "art": [],
+    "audio": []
+  },
+  "primary_language": "en",
+  "secondary_language": null,
+  "narration": {
+    "mode": "live-tts",
+    "voice_reviewed": false
+  },
   "story_beats": [
-    { "text": "Tara opens a fresh page in her sketchbook. 'Every story has three parts: a BEGINNING, a MIDDLE, and an END. Today, YOU are the storyteller!'" }
+    {
+      "text": "Tara opens a fresh page in her sketchbook. 'Every story has three parts: a BEGINNING, a MIDDLE, and an END. Today, YOU are the storyteller!'"
+    }
   ],
   "interactions": [
-    { "type": "draw", "prompt": "Draw the BEGINNING: who is your story about?" },
-    { "type": "draw", "prompt": "Draw the MIDDLE: what happens to them?" },
-    { "type": "draw", "prompt": "Draw the END: how does it finish?" }
+    {
+      "type": "draw",
+      "template": null,
+      "prompt": "Draw the BEGINNING: who is your story about?",
+      "answer_rule": {
+        "kind": "open"
+      }
+    },
+    {
+      "type": "draw",
+      "template": null,
+      "prompt": "Draw the MIDDLE: what happens to them?",
+      "answer_rule": {
+        "kind": "open"
+      }
+    },
+    {
+      "type": "draw",
+      "template": null,
+      "prompt": "Draw the END: how does it finish?",
+      "answer_rule": {
+        "kind": "open"
+      }
+    }
   ],
-  "feedback": { "correct": "What a story! Tara is saving it in her sketchbook of young authors!", "retry": "Every drawing is a good drawing. Keep going!" },
+  "hint_sequence": [
+    "Try any way you like — there is no wrong start.",
+    "Tara shows one example.",
+    "Copy the example, then make it yours."
+  ],
+  "transfer_question": "Tell your three-part story aloud to someone at home.",
+  "feedback": {
+    "correct": "What a story! Tara loves your ending — tell it to someone at home!",
+    "retry": "Every drawing is a good drawing. Keep going!"
+  },
   "off_screen": "Tell your story to someone at home using your three drawings.",
   "parent_note": "Creativity: narrative structure (beginning/middle/end), self-expression.",
-  "status": "draft-pending-educator-review"
+  "duration_target": 8,
+  "content_reviewer": null,
+  "review_status": "draft-pending-educator-review",
+  "published_version": 0
 }

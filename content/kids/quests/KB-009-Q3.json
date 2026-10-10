@@ -6,18 +6,73 @@
   "track": "school-starters",
   "character": "bobo",
   "title": "From Crawler to Flyer",
+  "objective_id": "world.life-cycles.butterfly",
   "objective": "Observe and name the life-cycle stages: egg → caterpillar → cocoon → butterfly.",
   "difficulty": 1,
+  "prerequisites": [],
+  "assets": {
+    "art": [],
+    "audio": []
+  },
+  "primary_language": "en",
+  "secondary_language": null,
+  "narration": {
+    "mode": "live-tts",
+    "voice_reviewed": false
+  },
   "story_beats": [
-    { "text": "Bobo lifts his magnifier. 'What do you NOTICE? The caterpillar didn't stay a caterpillar. It CHANGED!'" },
-    { "text": "First an egg. Then a hungry caterpillar. Then a quiet cocoon. Then — a butterfly with wings!" }
+    {
+      "text": "Bobo lifts his magnifier. 'What do you NOTICE? The caterpillar didn't stay a caterpillar. It CHANGED!'"
+    },
+    {
+      "text": "First an egg. Then a hungry caterpillar. Then a quiet cocoon. Then — a butterfly with wings!"
+    }
   ],
   "interactions": [
-    { "type": "order", "prompt": "Put the life cycle in order!", "options": ["Egg", "Caterpillar", "Cocoon", "Butterfly"], "correct": 0 },
-    { "type": "tap-choice", "prompt": "Inside the cocoon, the caterpillar is...", "options": ["Changing", "Sleeping forever", "Eating"], "correct": 0 }
+    {
+      "type": "order",
+      "template": "sequence",
+      "prompt": "Put the life cycle in order!",
+      "options": [
+        "Egg",
+        "Caterpillar",
+        "Cocoon",
+        "Butterfly"
+      ],
+      "correct": 0,
+      "answer_rule": {
+        "kind": "sequence-exact"
+      }
+    },
+    {
+      "type": "tap-choice",
+      "template": "select-objects",
+      "prompt": "Inside the cocoon, the caterpillar is...",
+      "options": [
+        "Changing",
+        "Sleeping forever",
+        "Eating"
+      ],
+      "correct": 0,
+      "answer_rule": {
+        "kind": "single-choice"
+      }
+    }
   ],
-  "feedback": { "correct": "You noticed the great change! Bobo is writing it in his notebook!", "retry": "Look carefully — what came FIRST? The tiny egg!" },
+  "hint_sequence": [
+    "Hear the story again from the start.",
+    "Which happened first? Start there.",
+    "Bobo places the first card for you."
+  ],
+  "transfer_question": "Draw the life cycle of a plant or animal you know.",
+  "feedback": {
+    "correct": "You noticed the great change! Bobo is writing it in his notebook!",
+    "retry": "Look carefully — what came FIRST? The tiny egg!"
+  },
   "off_screen": "Find a picture of a butterfly. What colours are its wings?",
   "parent_note": "Science: life cycles, observation, sequencing natural change.",
-  "status": "draft-pending-educator-review"
+  "duration_target": 6,
+  "content_reviewer": null,
+  "review_status": "draft-pending-educator-review",
+  "published_version": 0
 }
