@@ -1,0 +1,962 @@
+[
+  {
+    "id": "cfa-qm-tvm-001",
+    "skill": "time-value-of-money",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "You invest $1,000 today at 5% annual interest, compounded annually. What is the future value after 3 years?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$1,150.00"
+      },
+      {
+        "id": "b",
+        "text": "$1,050.00"
+      },
+      {
+        "id": "c",
+        "text": "$1,215.51"
+      },
+      {
+        "id": "d",
+        "text": "$1,157.63"
+      }
+    ],
+    "answer": 3,
+    "explanation": "FV = PV \u00d7 (1 + r)^n = 1,000 \u00d7 (1.05)^3 = 1,000 \u00d7 1.157625 = $1,157.63. The $1,150.00 distractor is simple-interest thinking (1,000 + 3\u00d750).",
+    "hint": "Compound: multiply by 1.05 three times, not once.",
+    "source": "Original question authored for Unschool Academy; TVM formulas per standard finance references and CFA Institute public LOS topic headings (cfainstitute.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-tvm-002",
+    "skill": "time-value-of-money",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "What is the future value of $5,000 invested for 5 years at 8% compounded annually?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$6,934.27"
+      },
+      {
+        "id": "b",
+        "text": "$7,500.00"
+      },
+      {
+        "id": "c",
+        "text": "$7,346.64"
+      },
+      {
+        "id": "d",
+        "text": "$7,000.00"
+      }
+    ],
+    "answer": 2,
+    "explanation": "FV = 5,000 \u00d7 (1.08)^5 = 5,000 \u00d7 1.469328 = $7,346.64.",
+    "hint": "Five years of 8% compounding on $5,000 \u2014 apply (1.08)^5.",
+    "source": "Original question authored for Unschool Academy; TVM formulas per standard finance references and CFA Institute public LOS topic headings (cfainstitute.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-tvm-003",
+    "skill": "time-value-of-money",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "$2,500 is invested at 6% compounded annually for 10 years. What is it worth at the end?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$4,771.65"
+      },
+      {
+        "id": "b",
+        "text": "$4,477.12"
+      },
+      {
+        "id": "c",
+        "text": "$4,000.00"
+      },
+      {
+        "id": "d",
+        "text": "$4,354.52"
+      }
+    ],
+    "answer": 1,
+    "explanation": "FV = 2,500 \u00d7 (1.06)^10 = 2,500 \u00d7 1.790848 = $4,477.12.",
+    "hint": "Ten compounding periods \u2014 (1.06)^10 \u2248 1.79.",
+    "source": "Original question authored for Unschool Academy; TVM formulas per standard finance references and CFA Institute public LOS topic headings (cfainstitute.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-tvm-004",
+    "skill": "time-value-of-money",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "You will receive $10,000 in 5 years. If the discount rate is 7%, what is its present value?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$7,129.86"
+      },
+      {
+        "id": "b",
+        "text": "$7,500.00"
+      },
+      {
+        "id": "c",
+        "text": "$6,500.00"
+      },
+      {
+        "id": "d",
+        "text": "$7,129.68"
+      }
+    ],
+    "answer": 0,
+    "explanation": "PV = FV \u00f7 (1 + r)^n = 10,000 \u00f7 (1.07)^5 = 10,000 \u00f7 1.402552 = $7,129.86.",
+    "hint": "Discount $10,000 back 5 years at 7% \u2014 divide by (1.07)^5.",
+    "source": "Original question authored for Unschool Academy; TVM formulas per standard finance references and CFA Institute public LOS topic headings (cfainstitute.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-tvm-005",
+    "skill": "time-value-of-money",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "What is the present value of $50,000 to be received 10 years from now at a 6% discount rate?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$25,000.00"
+      },
+      {
+        "id": "b",
+        "text": "$29,524.67"
+      },
+      {
+        "id": "c",
+        "text": "$30,000.00"
+      },
+      {
+        "id": "d",
+        "text": "$27,919.74"
+      }
+    ],
+    "answer": 3,
+    "explanation": "PV = 50,000 \u00f7 (1.06)^10 = 50,000 \u00f7 1.790848 = $27,919.74.",
+    "hint": "Ten years of discounting at 6% roughly halves the value \u2014 compute 50,000 \u00f7 1.7908.",
+    "source": "Original question authored for Unschool Academy; TVM formulas per standard finance references and CFA Institute public LOS topic headings (cfainstitute.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-tvm-006",
+    "skill": "time-value-of-money",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "What is the present value of $1,000 due in 2 years if the discount rate is 4%?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$960.00"
+      },
+      {
+        "id": "b",
+        "text": "$1,000.00"
+      },
+      {
+        "id": "c",
+        "text": "$924.56"
+      },
+      {
+        "id": "d",
+        "text": "$920.00"
+      }
+    ],
+    "answer": 2,
+    "explanation": "PV = 1,000 \u00f7 (1.04)^2 = 1,000 \u00f7 1.0816 = $924.56.",
+    "hint": "Two years back at 4% \u2014 divide by 1.0816.",
+    "source": "Original question authored for Unschool Academy; TVM formulas per standard finance references and CFA Institute public LOS topic headings (cfainstitute.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-tvm-007",
+    "skill": "time-value-of-money",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "You deposit $1,000 at the END of each year for 5 years at 6%. What is the future value (ordinary annuity)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$6,308.12"
+      },
+      {
+        "id": "b",
+        "text": "$5,637.09"
+      },
+      {
+        "id": "c",
+        "text": "$5,000.00"
+      },
+      {
+        "id": "d",
+        "text": "$5,975.32"
+      }
+    ],
+    "answer": 1,
+    "explanation": "FVA = PMT \u00d7 [((1+r)^n \u2212 1) \u00f7 r] = 1,000 \u00d7 [((1.06)^5 \u2212 1) \u00f7 0.06] = 1,000 \u00d7 5.637093 = $5,637.09. The $5,975.32 option is the annuity-due value \u2014 the first deposit here earns no interest in year 1.",
+    "hint": "End-of-year deposits: use the ordinary-annuity FV factor 5.6371.",
+    "source": "Original question authored for Unschool Academy; TVM formulas per standard finance references and CFA Institute public LOS topic headings (cfainstitute.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-tvm-008",
+    "skill": "time-value-of-money",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "What is the future value of a 10-year ordinary annuity of $500 per year at 5%?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$6,288.95"
+      },
+      {
+        "id": "b",
+        "text": "$5,000.00"
+      },
+      {
+        "id": "c",
+        "text": "$6,603.39"
+      },
+      {
+        "id": "d",
+        "text": "$5,772.59"
+      }
+    ],
+    "answer": 0,
+    "explanation": "FVA = 500 \u00d7 [((1.05)^10 \u2212 1) \u00f7 0.05] = 500 \u00d7 12.577893 = $6,288.95.",
+    "hint": "Annuity FV factor for 5%, 10 periods is 12.5779 \u2014 multiply by 500.",
+    "source": "Original question authored for Unschool Academy; TVM formulas per standard finance references and CFA Institute public LOS topic headings (cfainstitute.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-tvm-009",
+    "skill": "time-value-of-money",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "What is the present value of a 5-year ordinary annuity of $1,000 per year at 6%?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$5,000.00"
+      },
+      {
+        "id": "b",
+        "text": "$4,465.11"
+      },
+      {
+        "id": "c",
+        "text": "$3,790.79"
+      },
+      {
+        "id": "d",
+        "text": "$4,212.36"
+      }
+    ],
+    "answer": 3,
+    "explanation": "PVA = PMT \u00d7 [(1 \u2212 (1+r)^\u2212n) \u00f7 r] = 1,000 \u00d7 [(1 \u2212 1.06^\u22125) \u00f7 0.06] = 1,000 \u00d7 4.212364 = $4,212.36.",
+    "hint": "Annuity PV factor for 6%, 5 periods is 4.2124.",
+    "source": "Original question authored for Unschool Academy; TVM formulas per standard finance references and CFA Institute public LOS topic headings (cfainstitute.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-tvm-010",
+    "skill": "time-value-of-money",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "A 4-year ordinary annuity pays $2,500 per year. At 7%, what is its present value?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$8,000.00"
+      },
+      {
+        "id": "b",
+        "text": "$9,197.13"
+      },
+      {
+        "id": "c",
+        "text": "$8,468.03"
+      },
+      {
+        "id": "d",
+        "text": "$10,000.00"
+      }
+    ],
+    "answer": 2,
+    "explanation": "PVA = 2,500 \u00d7 [(1 \u2212 1.07^\u22124) \u00f7 0.07] = 2,500 \u00d7 3.387211 = $8,468.03.",
+    "hint": "Annuity PV factor for 7%, 4 periods is 3.3872.",
+    "source": "Original question authored for Unschool Academy; TVM formulas per standard finance references and CFA Institute public LOS topic headings (cfainstitute.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-tvm-011",
+    "skill": "time-value-of-money",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "You deposit $1,000 at the BEGINNING of each year for 5 years at 6%. What is the future value (annuity due)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$6,331.84"
+      },
+      {
+        "id": "b",
+        "text": "$5,975.32"
+      },
+      {
+        "id": "c",
+        "text": "$5,637.09"
+      },
+      {
+        "id": "d",
+        "text": "$5,000.00"
+      }
+    ],
+    "answer": 1,
+    "explanation": "Annuity due = ordinary annuity \u00d7 (1 + r) = 5,637.09 \u00d7 1.06 = $5,975.32. Each payment gets one extra period of interest.",
+    "hint": "Beginning-of-year = ordinary annuity \u00d7 1.06.",
+    "source": "Original question authored for Unschool Academy; TVM formulas per standard finance references and CFA Institute public LOS topic headings (cfainstitute.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-tvm-012",
+    "skill": "time-value-of-money",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "What is the present value of a 5-year annuity due of $1,000 per year at 6%?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$4,465.11"
+      },
+      {
+        "id": "b",
+        "text": "$4,212.36"
+      },
+      {
+        "id": "c",
+        "text": "$5,000.00"
+      },
+      {
+        "id": "d",
+        "text": "$4,733.02"
+      }
+    ],
+    "answer": 0,
+    "explanation": "Annuity-due PV = ordinary-annuity PV \u00d7 (1 + r) = 4,212.36 \u00d7 1.06 = $4,465.11.",
+    "hint": "Beginning-of-year payments: multiply the ordinary PV by 1.06.",
+    "source": "Original question authored for Unschool Academy; TVM formulas per standard finance references and CFA Institute public LOS topic headings (cfainstitute.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-tvm-013",
+    "skill": "time-value-of-money",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "What is the present value of a perpetuity paying $500 per year forever at an 8% discount rate?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$4,000"
+      },
+      {
+        "id": "b",
+        "text": "$5,000"
+      },
+      {
+        "id": "c",
+        "text": "$10,000"
+      },
+      {
+        "id": "d",
+        "text": "$6,250"
+      }
+    ],
+    "answer": 3,
+    "explanation": "PV of perpetuity = PMT \u00f7 r = 500 \u00f7 0.08 = $6,250.",
+    "hint": "Perpetuity value is just the payment divided by the rate.",
+    "source": "Original question authored for Unschool Academy; TVM formulas per standard finance references and CFA Institute public LOS topic headings (cfainstitute.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-tvm-014",
+    "skill": "time-value-of-money",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "An endowment of $20,000 earns 5% per year forever. What annual amount can it pay out indefinitely?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$2,000"
+      },
+      {
+        "id": "b",
+        "text": "$4,000"
+      },
+      {
+        "id": "c",
+        "text": "$1,000"
+      },
+      {
+        "id": "d",
+        "text": "$400"
+      }
+    ],
+    "answer": 2,
+    "explanation": "PMT = PV \u00d7 r = 20,000 \u00d7 0.05 = $1,000 per year, forever.",
+    "hint": "Rearrange the perpetuity formula: payment = value \u00d7 rate.",
+    "source": "Original question authored for Unschool Academy; TVM formulas per standard finance references and CFA Institute public LOS topic headings (cfainstitute.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-tvm-015",
+    "skill": "time-value-of-money",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "$1,000 is invested at a 12% nominal rate compounded quarterly for 1 year. What is the future value?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$1,100.00"
+      },
+      {
+        "id": "b",
+        "text": "$1,125.51"
+      },
+      {
+        "id": "c",
+        "text": "$1,120.00"
+      },
+      {
+        "id": "d",
+        "text": "$1,126.25"
+      }
+    ],
+    "answer": 1,
+    "explanation": "Quarterly rate = 12% \u00f7 4 = 3%; FV = 1,000 \u00d7 (1.03)^4 = $1,125.51.",
+    "hint": "Quarterly means 3% per quarter for 4 quarters.",
+    "source": "Original question authored for Unschool Academy; TVM formulas per standard finance references and CFA Institute public LOS topic headings (cfainstitute.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-tvm-016",
+    "skill": "time-value-of-money",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "What is the effective annual rate (EAR) of a 12% nominal rate compounded monthly?",
+    "options": [
+      {
+        "id": "a",
+        "text": "12.68%"
+      },
+      {
+        "id": "b",
+        "text": "12.00%"
+      },
+      {
+        "id": "c",
+        "text": "12.55%"
+      },
+      {
+        "id": "d",
+        "text": "13.00%"
+      }
+    ],
+    "answer": 0,
+    "explanation": "EAR = (1 + 0.12/12)^12 \u2212 1 = (1.01)^12 \u2212 1 = 12.6825% \u2248 12.68%.",
+    "hint": "Monthly compounding: (1.01)^12 \u2212 1.",
+    "source": "Original question authored for Unschool Academy; TVM formulas per standard finance references and CFA Institute public LOS topic headings (cfainstitute.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-tvm-017",
+    "skill": "time-value-of-money",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "$5,000 is invested at a 6% nominal rate compounded semiannually for 2 years. What is the future value?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$5,600.00"
+      },
+      {
+        "id": "b",
+        "text": "$5,618.00"
+      },
+      {
+        "id": "c",
+        "text": "$5,650.00"
+      },
+      {
+        "id": "d",
+        "text": "$5,627.54"
+      }
+    ],
+    "answer": 3,
+    "explanation": "Semiannual rate = 3%; FV = 5,000 \u00d7 (1.03)^4 = $5,627.54.",
+    "hint": "Semiannual: 3% per half-year, 4 periods.",
+    "source": "Original question authored for Unschool Academy; TVM formulas per standard finance references and CFA Institute public LOS topic headings (cfainstitute.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-tvm-018",
+    "skill": "time-value-of-money",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Using the Rule of 72, approximately how long does it take money to double at 8% annual interest?",
+    "options": [
+      {
+        "id": "a",
+        "text": "7.2 years"
+      },
+      {
+        "id": "b",
+        "text": "12 years"
+      },
+      {
+        "id": "c",
+        "text": "9 years"
+      },
+      {
+        "id": "d",
+        "text": "8 years"
+      }
+    ],
+    "answer": 2,
+    "explanation": "Rule of 72: years to double \u2248 72 \u00f7 rate = 72 \u00f7 8 = 9 years.",
+    "hint": "Divide 72 by the interest rate.",
+    "source": "Original question authored for Unschool Academy; TVM formulas per standard finance references and CFA Institute public LOS topic headings (cfainstitute.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-tvm-019",
+    "skill": "time-value-of-money",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "$2,000 is invested at 5% SIMPLE interest for 3 years. What is the ending value?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$2,500"
+      },
+      {
+        "id": "b",
+        "text": "$2,300"
+      },
+      {
+        "id": "c",
+        "text": "$2,315.25"
+      },
+      {
+        "id": "d",
+        "text": "$2,000"
+      }
+    ],
+    "answer": 1,
+    "explanation": "Simple interest: 2,000 \u00d7 (1 + 0.05 \u00d7 3) = 2,000 \u00d7 1.15 = $2,300. (The $2,315.25 option is the compounded value \u2014 simple interest earns no interest-on-interest.)",
+    "hint": "Simple interest: principal \u00d7 (1 + rate \u00d7 years).",
+    "source": "Original question authored for Unschool Academy; TVM formulas per standard finance references and CFA Institute public LOS topic headings (cfainstitute.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-tvm-020",
+    "skill": "time-value-of-money",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "What is the future value of $3,000 invested at 4% compounded annually for 7 years?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$3,947.80"
+      },
+      {
+        "id": "b",
+        "text": "$3,840.00"
+      },
+      {
+        "id": "c",
+        "text": "$4,197.91"
+      },
+      {
+        "id": "d",
+        "text": "$3,600.00"
+      }
+    ],
+    "answer": 0,
+    "explanation": "FV = 3,000 \u00d7 (1.04)^7 = 3,000 \u00d7 1.315932 = $3,947.80.",
+    "hint": "(1.04)^7 \u2248 1.316 \u2014 multiply by 3,000.",
+    "source": "Original question authored for Unschool Academy; TVM formulas per standard finance references and CFA Institute public LOS topic headings (cfainstitute.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-tvm-021",
+    "skill": "time-value-of-money",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "All else equal, if the discount rate increases, the present value of a future cash flow:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Increases"
+      },
+      {
+        "id": "b",
+        "text": "Stays the same"
+      },
+      {
+        "id": "c",
+        "text": "Doubles"
+      },
+      {
+        "id": "d",
+        "text": "Decreases"
+      }
+    ],
+    "answer": 3,
+    "explanation": "PV = FV \u00f7 (1+r)^n. A larger r makes the denominator bigger, so PV falls. Higher required return = lower value today.",
+    "hint": "Think: demanding a higher return means you'll pay less today.",
+    "source": "Original question authored for Unschool Academy; TVM formulas per standard finance references and CFA Institute public LOS topic headings (cfainstitute.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-tvm-022",
+    "skill": "time-value-of-money",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Compared with an ordinary annuity, an annuity due (same payment, rate, periods) has a:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Equal present value"
+      },
+      {
+        "id": "b",
+        "text": "Zero present value"
+      },
+      {
+        "id": "c",
+        "text": "Higher present value"
+      },
+      {
+        "id": "d",
+        "text": "Lower present value"
+      }
+    ],
+    "answer": 2,
+    "explanation": "Annuity-due payments arrive one period earlier, so each is discounted one period less: PV_due = PV_ordinary \u00d7 (1+r) > PV_ordinary.",
+    "hint": "Earlier cash flows are worth more \u2014 annuity-due payments come earlier.",
+    "source": "Original question authored for Unschool Academy; TVM formulas per standard finance references and CFA Institute public LOS topic headings (cfainstitute.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-tvm-023",
+    "skill": "time-value-of-money",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "A 12% nominal rate compounded quarterly gives an effective annual rate that is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Equal to 3%"
+      },
+      {
+        "id": "b",
+        "text": "Greater than 12%"
+      },
+      {
+        "id": "c",
+        "text": "Equal to 12%"
+      },
+      {
+        "id": "d",
+        "text": "Less than 12%"
+      }
+    ],
+    "answer": 1,
+    "explanation": "More frequent compounding earns interest on interest within the year, so EAR > nominal rate whenever compounding is more frequent than annual.",
+    "hint": "Does intra-year compounding add extra growth? Yes.",
+    "source": "Original question authored for Unschool Academy; TVM formulas per standard finance references and CFA Institute public LOS topic headings (cfainstitute.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-tvm-024",
+    "skill": "time-value-of-money",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "The core principle of the time value of money is that:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A dollar today is worth more than a dollar in the future"
+      },
+      {
+        "id": "b",
+        "text": "A dollar in the future is worth more than a dollar today"
+      },
+      {
+        "id": "c",
+        "text": "Money has the same value at all points in time"
+      },
+      {
+        "id": "d",
+        "text": "Interest rates are always positive"
+      }
+    ],
+    "answer": 0,
+    "explanation": "Money today can be invested to earn a return, so a dollar now exceeds a dollar later in value. This is why we discount future cash flows.",
+    "hint": "What can you do with a dollar today that you can't do with a future dollar?",
+    "source": "Original question authored for Unschool Academy; TVM formulas per standard finance references and CFA Institute public LOS topic headings (cfainstitute.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-tvm-025",
+    "skill": "time-value-of-money",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Compounding moves a value ___ in time; discounting moves a value ___ in time.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Backward; forward"
+      },
+      {
+        "id": "b",
+        "text": "Forward; forward"
+      },
+      {
+        "id": "c",
+        "text": "Backward; backward"
+      },
+      {
+        "id": "d",
+        "text": "Forward; backward"
+      }
+    ],
+    "answer": 3,
+    "explanation": "Compounding grows a present value forward to a future value; discounting brings a future value backward to a present value.",
+    "hint": "Compound = grow forward. Discount = bring back.",
+    "source": "Original question authored for Unschool Academy; TVM formulas per standard finance references and CFA Institute public LOS topic headings (cfainstitute.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-tvm-026",
+    "skill": "time-value-of-money",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "With compound interest (vs simple interest at the same rate), the investment grows:",
+    "options": [
+      {
+        "id": "a",
+        "text": "At the same rate"
+      },
+      {
+        "id": "b",
+        "text": "Only in the first year"
+      },
+      {
+        "id": "c",
+        "text": "Faster, because interest earns interest"
+      },
+      {
+        "id": "d",
+        "text": "Slower, because of fees"
+      }
+    ],
+    "answer": 2,
+    "explanation": "Compound interest applies the rate to accumulated interest each period (interest-on-interest); simple interest applies it to principal only.",
+    "hint": "Which one lets interest itself earn interest?",
+    "source": "Original question authored for Unschool Academy; TVM formulas per standard finance references and CFA Institute public LOS topic headings (cfainstitute.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-tvm-027",
+    "skill": "time-value-of-money",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "In an ordinary annuity, the first payment occurs:",
+    "options": [
+      {
+        "id": "a",
+        "text": "After the last period"
+      },
+      {
+        "id": "b",
+        "text": "At the end of the first period"
+      },
+      {
+        "id": "c",
+        "text": "At the beginning of the first period"
+      },
+      {
+        "id": "d",
+        "text": "Immediately today"
+      }
+    ],
+    "answer": 1,
+    "explanation": "Ordinary (deferred) annuity: payments at period-ends. Annuity due: payments at period-beginnings.",
+    "hint": "Ordinary = end-of-period payments.",
+    "source": "Original question authored for Unschool Academy; TVM formulas per standard finance references and CFA Institute public LOS topic headings (cfainstitute.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-tvm-028",
+    "skill": "time-value-of-money",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "If two investments have the same cash flows but one compounds monthly and the other annually at the same nominal rate, the monthly one ends with:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A higher future value"
+      },
+      {
+        "id": "b",
+        "text": "A lower future value"
+      },
+      {
+        "id": "c",
+        "text": "The same future value"
+      },
+      {
+        "id": "d",
+        "text": "Half the future value"
+      }
+    ],
+    "answer": 0,
+    "explanation": "More frequent compounding at the same nominal rate produces a higher EAR and hence a higher FV.",
+    "hint": "Same nominal rate \u2014 which compounding frequency grows more?",
+    "source": "Original question authored for Unschool Academy; TVM formulas per standard finance references and CFA Institute public LOS topic headings (cfainstitute.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-tvm-029",
+    "skill": "time-value-of-money",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "When the compounding frequency is annual, the nominal rate and the effective annual rate are:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The nominal is higher"
+      },
+      {
+        "id": "b",
+        "text": "The effective is higher"
+      },
+      {
+        "id": "c",
+        "text": "Unrelated"
+      },
+      {
+        "id": "d",
+        "text": "Equal"
+      }
+    ],
+    "answer": 3,
+    "explanation": "With one compounding period per year there is no intra-year compounding, so EAR = nominal rate.",
+    "hint": "Annual compounding means no extra intra-year growth.",
+    "source": "Original question authored for Unschool Academy; TVM formulas per standard finance references and CFA Institute public LOS topic headings (cfainstitute.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-tvm-030",
+    "skill": "time-value-of-money",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "You are offered $1,000 today or $1,100 in one year. At a 5% discount rate, which is worth more?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They are exactly equal"
+      },
+      {
+        "id": "b",
+        "text": "Cannot be determined"
+      },
+      {
+        "id": "c",
+        "text": "$1,100 in one year"
+      },
+      {
+        "id": "d",
+        "text": "$1,000 today"
+      }
+    ],
+    "answer": 2,
+    "explanation": "PV of $1,100 = 1,100 \u00f7 1.05 = $1,047.62 > $1,000. The future payment's present value exceeds cash today, so take the $1,100.",
+    "hint": "Discount the $1,100 back one year at 5% and compare.",
+    "source": "Original question authored for Unschool Academy; TVM formulas per standard finance references and CFA Institute public LOS topic headings (cfainstitute.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  }
+]

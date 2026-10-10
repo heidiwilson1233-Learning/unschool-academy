@@ -1,0 +1,104 @@
+[
+  {
+    "video_url": "https://www.youtube.com/watch?v=uJMmHX8JLRo",
+    "platform": "youtube",
+    "title": "GRE & GMAT Quant Foundations: Number Properties, Arithmetic, Algebra, Ratios & Percent",
+    "channel": "FreeStudy Hub",
+    "duration": null,
+    "duration_note": "Duration not verified at curation time — check before publishing.",
+    "lesson_topic": "arithmetic-basics",
+    "level": "L1",
+    "transcript_key_points": [
+      "Integers, positive/negative numbers, even/odd",
+      "Prime numbers, factors, multiples",
+      "Exponents & powers basics",
+      "Ratios, proportions, percent increase/decrease"
+    ],
+    "attached_question_ids": [
+      "gre-q-ab-001",
+      "gre-q-ab-007",
+      "gre-q-ab-013",
+      "gre-q-ab-027",
+      "gre-q-ab-005",
+      "gre-q-ab-011",
+      "gre-q-ab-017",
+      "gre-q-ab-028"
+    ],
+    "credit": "Free educational video by FreeStudy Hub — embedded with attribution; not our content."
+  },
+  {
+    "video_url": "https://www.youtube.com/watch?v=ghaX10mqPjo",
+    "platform": "youtube",
+    "title": "GRE/GMAT Quant Mastery Part 1: Exponents to Percent (Visual Method)",
+    "channel": "FreeStudy Hub",
+    "duration": null,
+    "duration_note": "Duration not verified at curation time — check before publishing.",
+    "lesson_topic": "arithmetic-basics",
+    "level": "L1",
+    "transcript_key_points": [
+      "Exponents & properties of numbers (visual approach)",
+      "Percent as a shaded grid — ETS trap questions explained",
+      "Percent word problems made obvious"
+    ],
+    "attached_question_ids": [
+      "gre-q-ab-004",
+      "gre-q-ab-010",
+      "gre-q-ab-015",
+      "gre-q-ab-020",
+      "gre-q-ab-026",
+      "gre-q-ab-030",
+      "gre-q-ab-005",
+      "gre-q-ab-022"
+    ],
+    "credit": "Free educational video by FreeStudy Hub — embedded with attribution; not our content."
+  },
+  {
+    "video_url": "https://www.youtube.com/watch?v=VmmaNm5RyvI",
+    "platform": "youtube",
+    "title": "GMAT/GRE Quant Made Visual: Absolute Value, Ratios, Exponents & Discounts",
+    "channel": "FreeStudy Hub",
+    "duration": null,
+    "duration_note": "Duration not verified at curation time — check before publishing.",
+    "lesson_topic": "arithmetic-basics",
+    "level": "L1",
+    "transcript_key_points": [
+      "Testing integer exponents via plug-in",
+      "Discount → unit rate → scale-up problem chain"
+    ],
+    "attached_question_ids": [
+      "gre-q-ab-028",
+      "gre-q-ab-030",
+      "gre-q-ab-004"
+    ],
+    "credit": "Free educational video by FreeStudy Hub — embedded with attribution; not our content."
+  },
+  {
+    "video_url": "https://www.youtube.com/watch?v=z6lbrzaCbdk",
+    "platform": "youtube",
+    "title": "GRE Math Lessons, Test Preparation Review, Practice Questions, Tips, Tricks, Strategies",
+    "channel": "The Organic Chemistry Tutor",
+    "duration": null,
+    "duration_note": "Long-form review (~5h51m) — use timestamped segments per the split-long-topics rule; duration not verified at curation time.",
+    "lesson_topic": "arithmetic-basics",
+    "level": "L1",
+    "transcript_key_points": [
+      "Fractions: adding, subtracting, multiplying, dividing",
+      "Improper fractions and mixed numbers",
+      "Decimal to fraction conversions",
+      "Percent word problems"
+    ],
+    "attached_question_ids": [
+      "gre-q-ab-002",
+      "gre-q-ab-008",
+      "gre-q-ab-014",
+      "gre-q-ab-019",
+      "gre-q-ab-025",
+      "gre-q-ab-029",
+      "gre-q-ab-003",
+      "gre-q-ab-009",
+      "gre-q-ab-016",
+      "gre-q-ab-024"
+    ],
+    "credit": "Free educational video by The Organic Chemistry Tutor — embedded with attribution; not our content."
+  }
+]

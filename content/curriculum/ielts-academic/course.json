@@ -1,0 +1,32 @@
+{
+  "catalog_id": "EX-288",
+  "description": "Preparation course for the IELTS Academic test (British Council / IDP / Cambridge): 2h45m, four sections — Listening, Reading, Writing, Speaking — band score 0-9. This course builds section skills in official test order, with researched practice content.",
+  "estimated_hours": 120,
+  "id": "ielts-academic",
+  "skills": [
+    "skimming",
+    "scanning",
+    "tfng",
+    "ynng",
+    "matching-headings",
+    "matching-information",
+    "matching-features",
+    "matching-sentence-endings",
+    "multiple-choice",
+    "sentence-completion",
+    "summary-completion",
+    "short-answer",
+    "diagram-labelling",
+    "reading-time-management",
+    "task1-overview",
+    "task1-trends",
+    "task1-comparison",
+    "task2-structure",
+    "task2-opinion"
+  ],
+  "source": "IELTS test format documentation — ielts.org (British Council / IDP / Cambridge English)",
+  "status": "draft-pending-sme-review",
+  "tier": 1,
+  "title": "IELTS Academic",
+  "version": 2
+}
