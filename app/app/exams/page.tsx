@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { Section, Button, Card, Badge, Breadcrumbs } from "@/components/ui";
-import { PRACTICE_TOPICS } from "@/lib/practice";
+import { PRACTICE_TOPICS } from "@/lib/practice-meta";
 
 type Attempt = { kind: string; topic?: string; score: number; total: number; at: string };
 

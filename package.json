@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "prebuild": "node scripts/write-images.mjs"
+    "prebuild": "node scripts/write-images.mjs && node scripts/validate-curriculum.mjs"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.7",

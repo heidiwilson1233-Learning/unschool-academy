@@ -58,6 +58,8 @@ function loadDiagnosticQuestions(): DiagnosticQuestion[] {
     const topic = UNIT_META[batch.unitId].title as DiagnosticQuestion["topic"];
     for (const q of validateCurriculumQuestions(batch.raw, {
       unitId: batch.unitId,
+      // Explicit: the generic validator takes no implicit per-exam defaults.
+      skills: UNIT_META[batch.unitId].skills,
       requireOrder: true,
     })) {
       out.push({
