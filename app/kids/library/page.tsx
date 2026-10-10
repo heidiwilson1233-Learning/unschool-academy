@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { promises as fs } from "fs";
+import fs from "fs";
 import path from "path";
 import { Section, SectionHeading, Card, Badge, Breadcrumbs } from "@/components/ui";
 import { ENDLESS_MODEL } from "@/lib/kids";
@@ -14,20 +14,20 @@ export const metadata: Metadata = {
 
 type Book = { id: string; title: string; author?: string; age: string; origin: string; themes: string[] };
 
-async function loadBooks(): Promise<{ books: Book[]; target: number }> {
+function loadBooks(): { books: Book[]; target: number } {
   const p = path.join(process.cwd(), "content", "kids", "books-500.json");
-  const raw = await fs.readFile(p, "utf-8");
+  const raw = fs.readFileSync(p, "utf-8");
   const data = JSON.parse(raw);
   return { books: data.books, target: data.target };
 }
 
-async function questCountForBook(bookId: string): Promise<number> {
+function questCountForBook(bookId: string): number {
   const dir = path.join(process.cwd(), "content", "kids", "quests");
   try {
-    const files = await fs.readdir(dir);
+    const files = fs.readdirSync(dir);
     let n = 0;
     for (const f of files) {
-      const q = JSON.parse(await fs.readFile(path.join(dir, f), "utf-8"));
+      const q = JSON.parse(fs.readFileSync(path.join(dir, f), "utf-8"));
       if (q.book_id === bookId) n++;
     }
     return n;
@@ -38,9 +38,9 @@ async function questCountForBook(bookId: string): Promise<number> {
 
 const QUEST_KINDS = ["Read-aloud", "Vocabulary", "Comprehension", "Value quest", "Math-in-story", "Wonder quest", "Create"];
 
-export default async function LibraryPage() {
-  const { books, target } = await loadBooks();
-  const counts = await Promise.all(books.map((b) => questCountForBook(b.id)));
+export default function LibraryPage() {
+  const { books, target } = loadBooks();
+  const counts = books.map((b) => questCountForBook(b.id));
 
   return (
     <>

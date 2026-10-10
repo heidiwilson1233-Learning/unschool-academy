@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { promises as fs } from "fs";
+import fs from "fs";
 import path from "path";
 import { Section, SectionHeading, Button, Card, Badge, Breadcrumbs, Callout } from "@/components/ui";
 import { Momo, Tara, Bobo, CHARACTERS } from "@/components/characters";
@@ -29,17 +29,17 @@ const SUBJECT_EMOJI: Record<string, string> = {
   create: "🎨",
 };
 
-async function questCount(): Promise<number> {
+function questCount(): number {
   try {
     const dir = path.join(process.cwd(), "content", "kids", "quests");
-    return (await fs.readdir(dir)).filter((f) => f.endsWith(".json")).length;
+    return fs.readdirSync(dir).filter((f) => f.endsWith(".json")).length;
   } catch {
     return 0;
   }
 }
 
-export default async function KidsPage() {
-  const live = await questCount();
+export default function KidsPage() {
+  const live = questCount();
 
   return (
     <>
