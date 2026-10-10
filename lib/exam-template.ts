@@ -65,6 +65,7 @@ export interface ExamFeatures {
   mockTests: boolean;
   topics: boolean;
   syllabus: boolean;
+  answers: boolean;
 }
 
 export type ExamStatus = "pilot" | "in-progress" | "draft-pending-sme-review" | "unknown";
@@ -303,6 +304,7 @@ export function getExamPageData(slug: string): ExamPageData | null {
     mockTests: feature("mock-tests"),
     topics: feature("topics"),
     syllabus: feature("syllabus"),
+    answers: feature("answers"),
   };
 
   /* Offers — MD-backed prices only, declared in course.json --------- */

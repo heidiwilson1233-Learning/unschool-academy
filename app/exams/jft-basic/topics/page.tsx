@@ -173,6 +173,29 @@ export default function TopicsPage() {
           })}
         </ul>
 
+        {/* Answers portal discovery — the explanation index, per skill */}
+        <div className="mt-10 border border-border rounded-2xl p-6 md:p-8 flex flex-wrap items-center gap-x-8 gap-y-4">
+          <div className="flex-1 min-w-60">
+            <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-slate font-mono">
+              Answers portal
+            </p>
+            <p className="mt-2 text-lg font-bold text-ink">
+              Every question, explained.
+            </p>
+            <p className="mt-1 text-[15px] text-slate leading-relaxed">
+              Browse all {PRACTICE_COUNT} draft explanations by skill — hint first, then the
+              answer and why it works.
+            </p>
+          </div>
+          <Link
+            href="/exams/jft-basic/answers"
+            aria-label={`Browse all ${PRACTICE_COUNT} explanations by skill`}
+            className="inline-flex items-center gap-2 rounded-xl border-2 border-ink px-5 py-3 font-bold text-ink transition-transform duration-200 ease-signature motion-safe:hover:-translate-y-0.5 motion-safe:active:translate-y-0 motion-safe:active:scale-[0.98] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-academy-blue"
+          >
+            Browse explanations <span aria-hidden="true">→</span>
+          </Link>
+        </div>
+
         <Callout title="Draft content — under expert review" tone="warning">
           These questions and their explanations are original drafts, written for practice and
           currently awaiting review by a Japanese subject-matter expert. They are not official

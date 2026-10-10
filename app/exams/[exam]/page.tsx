@@ -97,6 +97,13 @@ function featureCells(data: ExamPageData): {
       payoff: `${data.questionCount} draft questions with explanations`,
       href: `/exams/${data.slug}/practice`,
     });
+  if (f.answers)
+    cells.push({
+      key: "answers",
+      name: "Answers & explanations",
+      payoff: `${data.questionCount} draft explanations with hints, searchable by skill`,
+      href: `/exams/${data.slug}/answers`,
+    });
   if (f.topics)
     cells.push({
       key: "topics",
@@ -170,6 +177,7 @@ export default async function ExamTemplatePage({
   const freeRail: string[] = [];
   if (data.features.diagnostic) freeRail.push(`${data.diagnosticCount}-question diagnostic`);
   if (data.features.practice) freeRail.push(`${data.questionCount} draft practice questions`);
+  if (data.features.answers) freeRail.push("Answer index with hints");
   if (data.features.mockTests) freeRail.push("Timed mock");
   if (data.features.topics) freeRail.push("Topic index");
   if (data.features.syllabus) freeRail.push("Syllabus map");

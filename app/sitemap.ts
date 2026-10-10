@@ -49,5 +49,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     });
   }
+  /* Answers portal index (the 95 draft [id] pages are noindex by design —
+     they stay out of the sitemap). */
+  entries.push({
+    url: `${base}/exams/jft-basic/answers`,
+    lastModified: now,
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+  });
   return entries;
 }

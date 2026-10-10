@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import Link from "next/link";
 import { Check, Lightbulb, RotateCcw, Volume2, X } from "lucide-react";
 import { Button, Badge, Card } from "@/components/ui";
 import { speakJapanese, recordAttempt, type AttemptSkill } from "@/lib/attempts";
@@ -42,8 +43,22 @@ export default function PracticePlayer({ topic }: { topic: string }) {
   const [hintsUsed, setHintsUsed] = useState(0);
   const [finished, setFinished] = useState(false);
   const skillTallies = useRef<Record<string, SkillTally>>({});
+  const missesRef = useRef<string[]>([]);
+  /* Previously-missed ids (from earlier sessions on this device). Answering
+     one correctly now records it as `cleared` — the review deck's
+     resolution signal. */
+  const priorMissesRef = useRef<Set<string>>(new Set());
+  const clearedRef = useRef<string[]>([]);
 
   useEffect(() => {
+    try {
+      const prev = JSON.parse(localStorage.getItem("ua-attempts") ?? "[]");
+      const missed = new Set<string>();
+      for (const a of prev) for (const id of a.misses ?? []) missed.add(id);
+      priorMissesRef.current = missed;
+    } catch {
+      priorMissesRef.current = new Set();
+    }
     fetch(`/api/practice/questions?topic=${encodeURIComponent(topic)}`)
       .then((r) => {
         if (!r.ok) throw new Error("load failed");
@@ -74,6 +89,13 @@ export default function PracticePlayer({ topic }: { topic: string }) {
       if (d.correct) {
         tally.correct += 1;
         setScore((s) => s + 1);
+      } else {
+        // Error log (answers portal): collect missed question ids for the review deck.
+        if (!missesRef.current.includes(q.id)) missesRef.current.push(q.id);
+      }
+      // Resolution signal: a previously-missed question answered correctly now.
+      if (d.correct && priorMissesRef.current.has(q.id) && !clearedRef.current.includes(q.id)) {
+        clearedRef.current.push(q.id);
       }
       skillTallies.current[q.skill] = tally;
     } finally {
@@ -96,6 +118,8 @@ export default function PracticePlayer({ topic }: { topic: string }) {
       at: new Date().toISOString(),
       skills,
       contentVersion: contentVersion ?? undefined,
+      misses: missesRef.current.length > 0 ? [...missesRef.current] : undefined,
+      cleared: clearedRef.current.length > 0 ? [...clearedRef.current] : undefined,
     });
     setFinished(true);
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -270,6 +294,17 @@ export default function PracticePlayer({ topic }: { topic: string }) {
             <p className="mt-2 text-[15px] text-slate leading-relaxed">
               <span className="font-semibold text-ink">Why: </span>{result.explanation}
             </p>
+            {!result.correct && (
+              <p className="mt-3">
+                <Link
+                  href={`/exams/jft-basic/answers/${q.id}`}
+                  aria-label="Full explanation for this question"
+                  className="inline-flex items-center gap-1 text-[15px] font-semibold text-academy-blue hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-academy-blue rounded"
+                >
+                  Full explanation <span aria-hidden="true">→</span>
+                </Link>
+              </p>
+            )}
             <div className="mt-5"><Button onClick={next} size="lg">{index + 1 >= questions.length ? "See my session result" : "Next question →"}</Button></div>
           </div>
         ) : (

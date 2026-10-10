@@ -21,11 +21,30 @@ export function recordAttempt(entry: {
   skills?: AttemptSkill[];
   /** Content payload version the learner saw (e.g. "practice-v2-curriculum") — per content-schema rule 4. */
   contentVersion?: string;
+  /**
+   * Question ids the learner missed this session — feeds the error-log
+   * review deck (answers portal). Capped to the last 30 ids so the
+   * localStorage payload stays small on low-end devices.
+   */
+  misses?: string[];
+  /**
+   * Previously-missed question ids answered correctly in this session —
+   * the resolution signal that lets the review deck clear items
+   * (encouragement: the deck shrinks as you learn). Capped like misses.
+   */
+  cleared?: string[];
 }) {
   try {
     const key = "ua-attempts";
     const prev = JSON.parse(localStorage.getItem(key) ?? "[]");
-    prev.push(entry);
+    const cap = (ids: string[] | undefined) => {
+      const kept = (ids ?? []).slice(-30);
+      return kept.length > 0 ? kept : undefined;
+    };
+    const entryToStore = { ...entry, misses: cap(entry.misses), cleared: cap(entry.cleared) };
+    if (!entryToStore.misses) delete entryToStore.misses;
+    if (!entryToStore.cleared) delete entryToStore.cleared;
+    prev.push(entryToStore);
     localStorage.setItem(key, JSON.stringify(prev.slice(-50)));
   } catch {
     /* storage unavailable — session simply isn't saved */
