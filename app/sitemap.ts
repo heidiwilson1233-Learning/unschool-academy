@@ -30,14 +30,30 @@ const STATIC_ROUTES = [
   "/legal/terms",
 ];
 
+/**
+ * Legal pages are staged drafts pending legal review — they change on
+ * legal-review cycles, not weekly. Marking them yearly/0.4 keeps the sitemap
+ * honest about cadence instead of implying they update like product pages.
+ */
+const LEGAL_ROUTES = new Set([
+  "/legal/accessibility",
+  "/legal/child-privacy",
+  "/legal/exam-trademarks",
+  "/legal/privacy",
+  "/legal/refunds",
+  "/legal/terms",
+]);
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://unschool.academy";
   const now = new Date();
   const entries: MetadataRoute.Sitemap = STATIC_ROUTES.map((route) => ({
     url: `${base}${route}`,
     lastModified: now,
-    changeFrequency: "weekly" as const,
-    priority: route === "" ? 1 : 0.7,
+    changeFrequency: (LEGAL_ROUTES.has(route) ? "yearly" : "weekly") as
+      | "yearly"
+      | "weekly",
+    priority: route === "" ? 1 : LEGAL_ROUTES.has(route) ? 0.4 : 0.7,
   }));
   for (const slug of listExamSlugs()) {
     const data = getExamPageData(slug);
