@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   /* Layout template appends " | Unschool Academy" — 55 chars rendered. */
   title: "Practise Until It Makes Sense",
   description:
-    "Focused exam preparation and joyful learning for ages 2 through Grade 5 — built around things learners can actually do.",
+    "Focused exam preparation and joyful learning for ages 5 through Grade 5 — built around things learners can actually do.",
   alternates: { canonical: "/" },
   twitter: { card: "summary_large_image" },
 };
@@ -20,8 +20,8 @@ const GRAIN =
 
 /* Honest numbers: every figure is computed from the build's own content files. */
 const PROOF = [
-  { n: "10", label: "Free diagnostic questions — JFT-Basic · no account, no paywall" },
-  { n: "01", label: "Exam program in pilot — JFT-Basic diagnostic live" },
+  { n: "10", label: "Free JFT-Basic diagnostic · no account, no paywall" },
+  { n: "01", label: "Pilot program · JFT-Basic diagnostic live" },
   {
     n: `${PICKER_DATA.totalDraftQuestions}+`,
     label: `Draft questions in research — ${PICKER_DATA.totalResearchExams} exams, labelled draft pending expert review`,
@@ -54,7 +54,9 @@ const FAQS = [
   },
 ];
 
-/* JSON-LD is exactly parallel to the rendered content. */
+/* One source for the picker's heading id — the figure's aria-labelledby and the
+   picker's headingId prop must never diverge (C P2). */
+const PICKER_HEADING_ID = "exam-goal-picker-heading";
 const breadcrumbJsonLd = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -108,25 +110,22 @@ export default function HomePage() {
                 </span>
               </h1>
               <p className="mt-6 max-w-xl text-lg md:text-xl text-slate leading-relaxed">
-                Focused exam preparation and joyful learning for ages 2 through Grade 5, built around
+                Focused exam preparation and joyful learning for ages 5 through Grade 5, built around
                 things learners can actually do.
               </p>
+              {/* Primary CTA is the free diagnostic (portal move 8: the acquisition funnel);
+                  the picker handles discovery, so it sits at secondary weight. */}
               <div className="mt-8 flex flex-wrap gap-4">
-                <Button href="#exam-picker" size="lg">Pick your exam</Button>
+                <Button href="/exams/jft-basic/diagnostic" size="lg">See where you stand</Button>
+                <Button href="#exam-picker" size="lg" variant="secondary">Pick your exam</Button>
                 <Button href="/kids" size="lg" variant="secondary">Visit Kids World</Button>
               </div>
-              <p className="mt-5 text-[15px]">
-                <a
-                  href="/exams/jft-basic/diagnostic"
-                  aria-describedby="diagnostic-note"
-                  className="font-semibold text-academy-blue underline underline-offset-4 decoration-academy-blue/40 hover:decoration-academy-blue rounded focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-academy-teal"
-                >
-                  Try the live diagnostic — JFT-Basic
-                </a>
-                <span className="text-slate"> — free, 10 questions, no account.</span>
+              <p className="mt-4 max-w-xl text-[15px] text-slate">
+                Free JFT-Basic diagnostic: 10 questions, about five minutes, no account. Your gaps,
+                topic by topic, with a starter plan.
               </p>
               <p id="diagnostic-note" className="sr-only">
-                Our first live diagnostic is JFT-Basic. The other exams shown are in research and have no diagnostic yet.
+                JFT-Basic is our first live diagnostic. The other exams shown are in research and have no diagnostic yet.
               </p>
             </div>
             <div className="lg:col-span-5">
@@ -134,24 +133,24 @@ export default function HomePage() {
                   pattern 10 (real product UI) preserved, sampler moved to /free-practice. */}
               <figure
                 id="exam-picker"
-                aria-labelledby="exam-goal-picker-heading"
-                className="motion-safe:md:-rotate-1 motion-safe:hover:rotate-0 transition-transform duration-500 ease-[var(--ease-signature)]"
+                aria-labelledby={PICKER_HEADING_ID}
+                className="picker-frame scroll-mt-[140px]"
               >
                 <div className="rounded-2xl border border-border bg-paper shadow-[0_24px_60px_-28px_rgba(21,34,59,0.35)] overflow-hidden">
                   <div className="flex items-center gap-1.5 border-b border-border bg-canvas px-4 py-3">
                     <span aria-hidden className="h-2.5 w-2.5 rounded-full bg-border" />
                     <span aria-hidden className="h-2.5 w-2.5 rounded-full bg-border" />
                     <span aria-hidden className="h-2.5 w-2.5 rounded-full bg-border" />
-                    <span className="ml-2 rounded-full bg-border/50 px-3 py-1 font-mono text-[11px] text-slate">
+                    <span aria-hidden="true" className="ml-2 rounded-full bg-border/50 px-3 py-1 font-mono text-[11px] text-slate">
                       unschool.academy
                     </span>
                   </div>
                   <div className="bg-canvas p-4 md:p-5">
-                    <ExamGoalPicker data={PICKER_DATA} headingId="exam-goal-picker-heading" />
+                    <ExamGoalPicker data={PICKER_DATA} headingId={PICKER_HEADING_ID} />
                   </div>
                 </div>
                 <figcaption className="mt-3 font-mono text-[11px] uppercase tracking-[0.18em] text-slate">
-                  One live program today, ten more in research. Pick a goal to see what&apos;s real.
+                  One live program today, {PICKER_DATA.totalResearchExams} more being built into full programs. Choose one to see its status.
                 </figcaption>
               </figure>
             </div>
@@ -193,7 +192,7 @@ export default function HomePage() {
                 </h2>
                 <p className="mt-3 text-slate leading-relaxed max-w-xl">
                   JFT-Basic is live in pilot: a free 10-question diagnostic today, with the full
-                  practice path in staged review. Behind it, ten more exam programs are being
+                  practice path in staged review. Behind it, {PICKER_DATA.totalResearchExams} more exam programs are being
                   researched question by question — each one sourced, labelled, and reviewed
                   before it ever reaches you.
                 </p>
@@ -212,7 +211,7 @@ export default function HomePage() {
                   </li>
                 </ul>
                 <p className="mt-4 font-mono text-[11px] uppercase tracking-[0.18em] text-slate">
-                  Pilot · JFT-Basic · 10 exams in research
+                  Pilot · JFT-Basic · {PICKER_DATA.totalResearchExams} exams in research
                 </p>
                 <div className="mt-6 flex flex-wrap gap-3">
                   <Button href="/exams/catalog">Find your exam</Button>
@@ -236,7 +235,7 @@ export default function HomePage() {
                   A village where learning feels like play
                 </h2>
                 <p className="mt-3 text-slate leading-relaxed text-[15px]">
-                  Momo, Tara and Bobo guide children from age 2 to Grade 5 through real interactive
+                  Momo, Tara and Bobo guide children ages 5 through Grade 5 through real interactive
                   quests — counting mangoes, ordering stories, meeting the world. Parent-owned and
                   ad-free, always.
                 </p>
@@ -404,7 +403,7 @@ export default function HomePage() {
         <SectionHeading
           eyebrow="The Unschool Method"
           title="A path, not a pile."
-          sub="500 exams in research. A 500-book library in progress. One architecture: hierarchy, loop, levels. Here is how learning actually works here."
+          sub="500 exams in the research catalogue. A 500-book library in progress. One architecture: hierarchy, loop, levels. Here is how learning actually works here."
         />
         <dl className="divide-y divide-border border-y border-border">
           <div className="py-6 md:py-7 grid md:grid-cols-[14rem_1fr] gap-1 md:gap-8">

@@ -19,7 +19,7 @@
 "use client";
 
 import Link from "next/link";
-import { useId, useState } from "react";
+import { useEffect, useId, useState } from "react";
 import type { PickerData } from "@/lib/picker";
 
 const STORAGE_KEY = "unschool-goal-interest";
@@ -43,7 +43,13 @@ function writeInterests(slugs: string[]) {
 }
 
 function NotifyToggle({ slug, title }: { slug: string; title: string }) {
-  const [saved, setSaved] = useState<boolean>(() => readInterests().includes(slug));
+  /* SSR-safe: localStorage is read only after mount, so the server HTML and the
+     first client render always agree — no hydration mismatch for returning
+     visitors who already saved an interest. */
+  const [saved, setSaved] = useState<boolean>(false);
+  useEffect(() => {
+    setSaved(readInterests().includes(slug));
+  }, [slug]);
   const toggle = () => {
     const current = readInterests();
     const next = current.includes(slug) ? current.filter((s) => s !== slug) : [...current, slug];
@@ -88,8 +94,9 @@ export function ExamGoalPicker({ data, headingId = "exam-goal-picker-heading" }:
         Find your exam
       </h2>
 
-      {/* Pinned live pilot — the only exam with a real diagnostic today. */}
-      <div className="mt-4 border-y-2 border-academy-teal/70 py-4">
+      {/* Pinned live pilot — the only exam with a real diagnostic today.
+          Hairline rules (editorial), never a colored rail. */}
+      <div className="mt-4 border-y border-border py-4">
         <p className="font-mono text-[11px] font-bold uppercase tracking-[0.18em] text-academy-teal-dark">
           <span className="sr-only">Status: </span>Live pilot
         </p>
@@ -106,19 +113,23 @@ export function ExamGoalPicker({ data, headingId = "exam-goal-picker-heading" }:
             href="/exams/jft-basic/diagnostic"
             className="font-semibold text-academy-blue underline underline-offset-4 decoration-academy-blue/40 hover:decoration-academy-blue rounded focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-academy-teal"
           >
-            Take the free 10-question diagnostic
+            Check where you stand
           </Link>
-          <span className="text-slate"> — no account, five minutes.</span>
+          <span className="text-slate"> — 10 free questions, about five minutes, no account. Your gaps, topic by topic, with a starter plan.</span>
         </p>
         <p className="mt-1 font-mono text-[11px] uppercase tracking-[0.14em] text-slate">
           Practice + mocks — in staged review
         </p>
       </div>
 
-      {/* Research pipeline tabs. */}
+      {/* Research pipeline tabs. Keyboard users get an sr-only hint for the APG keys. */}
+      <p id={`picker-keys-${uid}`} className="sr-only">
+        Use the left and right arrow keys to move between exam categories.
+      </p>
       <div
         role="tablist"
         aria-label="Exam categories in research"
+        aria-describedby={`picker-keys-${uid}`}
         className="mt-4 flex gap-1 overflow-x-auto border-b border-border"
       >
         {categories.map((cat, i) => (
@@ -129,6 +140,7 @@ export function ExamGoalPicker({ data, headingId = "exam-goal-picker-heading" }:
             id={`picker-tab-${uid}-${i}`}
             aria-selected={i === active}
             aria-controls={`picker-panel-${uid}-${i}`}
+            aria-label={`${cat.label}, ${cat.exams.length} ${cat.exams.length === 1 ? "exam" : "exams"} in research`}
             tabIndex={i === active ? 0 : -1}
             onClick={() => setActive(i)}
             onKeyDown={(e) => onKeyDown(e, i)}
@@ -148,7 +160,7 @@ export function ExamGoalPicker({ data, headingId = "exam-goal-picker-heading" }:
         Showing {activeCat.exams.length} {activeCat.exams.length === 1 ? "exam" : "exams"} in {activeCat.label}.
       </p>
 
-      <div className="min-h-[300px] md:min-h-[340px]">
+      <div className="min-h-[180px]">
         {categories.map((cat, i) => (
           <div
             key={cat.label}
@@ -156,6 +168,9 @@ export function ExamGoalPicker({ data, headingId = "exam-goal-picker-heading" }:
             id={`picker-panel-${uid}-${i}`}
             aria-labelledby={`picker-tab-${uid}-${i}`}
             hidden={i !== active}
+            /* Masked wipe on panel enter (GPU-only clip-path, never fade-up).
+               The animation re-runs each time a panel leaves display:none. */
+            className={i === active ? "tab-panel-wipe" : undefined}
           >
             <ul className="divide-y divide-border">
               {cat.exams.map((exam) => (

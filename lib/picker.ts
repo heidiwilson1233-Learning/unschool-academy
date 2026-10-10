@@ -66,21 +66,16 @@ const CATEGORY_OF: Record<string, string> = {
 
 const CATEGORY_ORDER = ["India", "Languages", "Grad & Admissions", "Finance", "Tech"];
 
-/* Course files missing catalog_id but present in the exam-catalog data. */
-const CATALOG_ID_FALLBACK: Record<string, string> = { "neet-ug": "EX-194" };
-
+/* Catalog code comes from each course.json's catalog_id field (data, not code) —
+   a missing id means no code cell, never a wrong link. */
 function catalogIdFor(slug: string): string | undefined {
   try {
     const course = JSON.parse(readFileSync(join(CURRICULUM_DIR, slug, "course.json"), "utf8"));
     if (typeof course.catalog_id === "string" && course.catalog_id.trim()) return course.catalog_id.trim();
   } catch {
-    /* fall through */
+    /* missing/unreadable course.json: no code shown, row still listed honestly */
   }
-  return CATALOG_ID_FALLBACK[slug];
-}
-
-export function examCodeFor(slug: string): string | undefined {
-  return catalogIdFor(slug);
+  return undefined;
 }
 
 function countDraftQuestions(slug: string): number {

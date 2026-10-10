@@ -190,9 +190,10 @@ export function FAQAccordion({
               id={btnId}
               onClick={() => setOpen(isOpen ? null : i)}
               aria-expanded={isOpen}
-              /* Run 29 (a11y P1): never point aria-controls at an unmounted
-                 panel — wire it only when the panel is in the tree. */
-              aria-controls={isOpen ? panelId : undefined}
+              /* Run 43: panels are always in the DOM (hidden when closed) so the answers
+                 JSON-LD advertises are present for crawlers — aria-controls stays wired
+                 in both states (APG accordion pattern). */
+              aria-controls={panelId}
               className="w-full flex items-center justify-between gap-4 py-5 text-left focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-academy-teal rounded-lg"
             >
               <span className="font-semibold text-ink text-base md:text-lg">{item.q}</span>
@@ -205,26 +206,26 @@ export function FAQAccordion({
                 +
               </span>
             </button>
-            {isOpen && (
-              <div
-                id={panelId}
-                role="region"
-                aria-labelledby={btnId}
-                className="pb-6 text-slate leading-relaxed faq-reveal"
-              >
-                <div>{item.a}</div>
-                {item.link && (
-                  <p className="mt-3">
-                    <Link
-                      href={item.link.href}
-                      className="font-semibold text-academy-blue hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-academy-teal rounded"
-                    >
-                      {item.link.label} <span aria-hidden>→</span>
-                    </Link>
-                  </p>
-                )}
-              </div>
-            )}
+            <div
+              id={panelId}
+              role="region"
+              aria-labelledby={btnId}
+              hidden={!isOpen}
+              /* The wipe re-runs each time the panel leaves display:none. */
+              className={`pb-6 text-slate leading-relaxed ${isOpen ? "faq-reveal" : ""}`}
+            >
+              <div>{item.a}</div>
+              {item.link && (
+                <p className="mt-3">
+                  <Link
+                    href={item.link.href}
+                    className="font-semibold text-academy-blue hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-academy-teal rounded"
+                  >
+                    {item.link.label} <span aria-hidden>→</span>
+                  </Link>
+                </p>
+              )}
+            </div>
           </div>
         );
       })}
