@@ -26,6 +26,7 @@ import {
 
 import svBatch0 from "@/content/curriculum/jft-basic/units/script-vocabulary/questions-script-vocabulary-batch0.json";
 import svKanjiBatch1 from "@/content/curriculum/jft-basic/units/script-vocabulary/questions-kanji-reading-batch1.json";
+import svWordBatch1 from "@/content/curriculum/jft-basic/units/script-vocabulary/questions-word-meaning-usage-batch1.json";
 import ceBatch0 from "@/content/curriculum/jft-basic/units/conversation-expression/questions-conversation-expression-batch0.json";
 import lcBatch0 from "@/content/curriculum/jft-basic/units/listening-comprehension/questions-listening-comprehension-batch0.json";
 import rcBatch0 from "@/content/curriculum/jft-basic/units/reading-comprehension/questions-reading-comprehension-batch0.json";
@@ -62,6 +63,7 @@ export type PracticeTopic = (typeof PRACTICE_TOPICS)[number];
 const BATCHES: { unitId: CurriculumUnitId; raw: unknown }[] = [
   { unitId: "script-vocabulary", raw: svBatch0 },
   { unitId: "script-vocabulary", raw: svKanjiBatch1 },
+  { unitId: "script-vocabulary", raw: svWordBatch1 },
   { unitId: "conversation-expression", raw: ceBatch0 },
   { unitId: "listening-comprehension", raw: lcBatch0 },
   { unitId: "reading-comprehension", raw: rcBatch0 },
