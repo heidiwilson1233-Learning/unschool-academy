@@ -40,7 +40,7 @@ const POSTS: {
   {
     slug: "why-no-percentiles",
     badge: "How we build",
-    title: "Why we don't do percentiles",
+    title: "Why We Don't Do Percentiles",
     excerptText:
       "A practice score of “top 12%” sounds impressive and means nothing. Here's what honest scoring looks like instead.",
     excerpt: (
