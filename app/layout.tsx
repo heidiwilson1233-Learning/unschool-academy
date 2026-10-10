@@ -24,14 +24,14 @@ export const metadata: Metadata = {
     template: "%s | Unschool Academy",
   },
   description:
-    "Unschool Academy helps you learn by doing — focused exam practice for adult learners, imaginative real learning for young children ages 2 through Grade 5.",
+    "Unschool Academy helps you learn by doing — focused exam practice for adult learners, imaginative real learning for young children ages 5 through Grade 5.",
   metadataBase: new URL("https://unschool.academy"),
   openGraph: {
     type: "website",
     siteName: "Unschool Academy",
     title: "Unschool Academy — Practice until it makes sense",
     description:
-      "Focused exam preparation and joyful learning for ages 2 through Grade 5 — built around things learners can actually do.",
+      "Focused exam preparation and joyful learning for ages 5 through Grade 5 — built around things learners can actually do.",
   },
   robots: { index: true, follow: true },
 };
