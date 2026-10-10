@@ -2,9 +2,17 @@
 
 import { useEffect, useRef, useState } from "react";
 import { Section, Button, Card, Badge, Breadcrumbs } from "@/components/ui";
-import { PRACTICE_TOPICS } from "@/lib/practice";
+import { PRACTICE_TOPICS } from "@/lib/practice-meta";
 
-type Attempt = { kind: string; topic?: string; score: number; total: number; at: string };
+type Attempt = {
+  kind: string;
+  topic?: string;
+  score: number;
+  total: number;
+  at: string;
+  misses?: string[];
+  cleared?: string[];
+};
 
 const SLUGS: Record<string, string> = {
   "Script and Vocabulary": "vocabulary",
@@ -32,6 +40,7 @@ function kindLabel(a: Attempt) {
 
 export default function ExamsDashboard() {
   const [attempts, setAttempts] = useState<Attempt[] | null>(null);
+  const [manualCleared, setManualCleared] = useState<string[]>([]);
   const [confirming, setConfirming] = useState(false);
   const clearBtnRef = useRef<HTMLButtonElement>(null);
   const confirmBtnRef = useRef<HTMLButtonElement>(null);
@@ -43,6 +52,12 @@ export default function ExamsDashboard() {
       setAttempts(Array.isArray(raw) ? raw : []);
     } catch {
       setAttempts([]);
+    }
+    try {
+      const clearedRaw = JSON.parse(localStorage.getItem("ua-answers-cleared") ?? "[]");
+      setManualCleared(Array.isArray(clearedRaw) ? clearedRaw.filter((x) => typeof x === "string") : []);
+    } catch {
+      setManualCleared([]);
     }
   }, []);
 
@@ -156,6 +171,12 @@ export default function ExamsDashboard() {
       }
     }
   });
+
+  /* Error-log review deck: missed ids not yet cleared (answers portal). */
+  const clearedIds = new Set<string>(manualCleared);
+  for (const a of valid) for (const id of a.cleared ?? []) clearedIds.add(id);
+  const openMisses = new Set<string>();
+  for (const a of valid) for (const id of a.misses ?? []) if (!clearedIds.has(id)) openMisses.add(id);
 
   const studyPlan =
     weakest && weakest.score! < 80 ? (
@@ -277,6 +298,21 @@ export default function ExamsDashboard() {
                     </p>
                   )}
                 </Card>
+
+                {/* Review deck — only when there are open misses */}
+                {openMisses.size > 0 && (
+                  <div className="col-span-6 border border-academy-teal/30 bg-academy-teal/5 rounded-2xl px-6 py-5 flex flex-wrap items-center gap-x-6 gap-y-3">
+                    <p className="flex-1 min-w-52 text-[15px] text-ink leading-relaxed">
+                      <span className="font-bold">Review your misses ({openMisses.size})</span>
+                      <span className="text-slate">
+                        {" "}— questions waiting for a second look in your review deck.
+                      </span>
+                    </p>
+                    <Button href="/exams/jft-basic/answers/review" variant="secondary">
+                      Open review deck
+                    </Button>
+                  </div>
+                )}
 
                 {/* Topic mastery */}
                 <Card className="col-span-6 md:col-span-4 !shadow-none">
