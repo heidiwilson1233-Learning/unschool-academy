@@ -4,15 +4,27 @@ import { Section, Breadcrumbs, PageHero } from "@/components/ui";
 export function LegalPage({
   title,
   updated,
+  updatedDateTime = "2026-10",
   children,
 }: {
   title: string;
   updated: string;
+  /** Machine-readable month of the last update, e.g. "2026-10". */
+  updatedDateTime?: string;
   children: ReactNode;
 }) {
   return (
     <>
-      <PageHero eyebrow="Legal" title={title} sub={`Last updated: ${updated}. Plain-language summary first, details below.`} />
+      <PageHero
+        eyebrow="Legal"
+        title={title}
+        sub={
+          <>
+            Last updated: <time dateTime={updatedDateTime}>{updated}</time>. Plain-language
+            summary first, details below.
+          </>
+        }
+      />
       <Section>
         <div className="max-w-3xl mx-auto">
           <Breadcrumbs trail={[{ label: "Home", href: "/" }, { label: title }]} />

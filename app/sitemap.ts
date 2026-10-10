@@ -22,6 +22,12 @@ const STATIC_ROUTES = [
   "/resources",
   "/search",
   "/contact",
+  "/legal/accessibility",
+  "/legal/child-privacy",
+  "/legal/exam-trademarks",
+  "/legal/privacy",
+  "/legal/refunds",
+  "/legal/terms",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
