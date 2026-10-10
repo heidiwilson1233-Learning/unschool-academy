@@ -12,6 +12,7 @@ const STATIC_ROUTES = [
   "/exams",
   "/exams/catalog",
   "/exams/how-practice-works",
+  "/exams/tiers",
   "/faq",
   "/free-practice",
   "/how-it-works",

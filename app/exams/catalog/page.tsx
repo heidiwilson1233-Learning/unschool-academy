@@ -22,18 +22,18 @@ const rows = getCatalogRows();
 const practiceReady = getPracticeReadyEntries();
 
 export const metadata: Metadata = {
-  title: "Exam Catalog — 500 Research Entries, Honestly Labelled",
-  description: `Browse 500 exam tracks by category, region and status. ${counts.verified} facts verified, ${counts.retired} retired or renamed — every research entry labeled as what it is.`,
+  title: `Exam Catalog — ${counts.total} Research Entries, Honestly Labelled`,
+  description: `Browse ${counts.total} exam tracks by category, region and status. ${counts.verified} facts verified, ${counts.retired} retired or renamed — every research entry labeled as what it is.`,
   alternates: { canonical: "/exams/catalog" },
   openGraph: {
-    title: "Exam Catalog — 500 Research Entries, Honestly Labelled",
+    title: `Exam Catalog — ${counts.total} Research Entries, Honestly Labelled`,
     description: `${counts.total} exam and preparation tracks cataloged by category, region and status. An entry is a research target — not a promise.`,
     type: "website",
     url: "/exams/catalog",
   },
   twitter: {
     card: "summary",
-    title: "Exam Catalog — 500 Research Entries, Honestly Labelled",
+    title: `Exam Catalog — ${counts.total} Research Entries, Honestly Labelled`,
     description: `${counts.total} research entries by category, region and status — honestly labeled, never sold as available programs.`,
   },
 };
@@ -116,12 +116,12 @@ export default function CatalogHubPage() {
               lineHeight: 1.05,
             }}
           >
-            500 exams, cataloged honestly.
+            {counts.total} exams, cataloged honestly.
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate">
-            Our research backlog, made visible: 500 exam and preparation tracks across 10
-            categories. An entry is a research target, not a promise. Exactly one so far,
-            JFT-Basic (EX-299), has real practice on this site.{" "}
+            Our research backlog, made visible: {counts.total} exam and preparation tracks across{" "}
+            {CATEGORY_META.length} categories. An entry is a research target, not a promise.
+            Exactly one so far, JFT-Basic (EX-299), has real practice on this site.{" "}
             <Link href="/how-it-works" className="font-semibold text-academy-blue hover:underline">
               See how we verify
               <span aria-hidden="true"> →</span>
@@ -140,6 +140,13 @@ export default function CatalogHubPage() {
             <span className="font-bold text-academy-teal">
               {counts.practiceReady} practice available
             </span>
+          </p>
+          <p className="mt-4 text-sm text-slate">
+            The catalog is only half the story.{" "}
+            <Link href="/exams/tiers" className="font-semibold text-academy-blue hover:underline">
+              See the tier plan: which 50 exams we build first
+              <span aria-hidden="true"> →</span>
+            </Link>
           </p>
           <div className="mt-6">
             <Button href="#practice-now" variant="secondary" size="sm">
