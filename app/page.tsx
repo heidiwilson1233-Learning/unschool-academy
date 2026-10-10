@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Section, SectionHeading, Button, FAQAccordion, Badge } from "@/components/ui";
-import { JftSampler, KidsSampler } from "@/components/samplers";
+import { KidsSampler } from "@/components/samplers";
+import { ExamGoalPicker } from "@/components/exam-picker";
+import { PICKER_DATA } from "@/lib/picker";
 import { Art, StagingNote } from "@/components/site-art";
 
 export const metadata: Metadata = {
@@ -16,11 +18,14 @@ export const metadata: Metadata = {
 const GRAIN =
   "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>\")";
 
-/* Honest numbers: every figure is verifiable in the MD blueprint or the build. */
+/* Honest numbers: every figure is computed from the build's own content files. */
 const PROOF = [
-  { n: "10", label: "Free diagnostic questions — no account, no paywall" },
-  { n: "01", label: "Live exam program — JFT-Basic, in pilot" },
-  { n: "500", label: "Exams in the research catalogue — kept internal until each passes verification" },
+  { n: "10", label: "Free diagnostic questions — JFT-Basic · no account, no paywall" },
+  { n: "01", label: "Exam program in pilot — JFT-Basic diagnostic live" },
+  {
+    n: `${PICKER_DATA.totalDraftQuestions}+`,
+    label: `Draft questions in research — ${PICKER_DATA.totalResearchExams} exams, labelled draft pending expert review`,
+  },
 ];
 
 const STEPS = [
@@ -77,8 +82,9 @@ const faqJsonLd = {
 export default function HomePage() {
   return (
     <>
-      {/* HERO — MD wireframe: primary heading left, layered visual sampler right.
-          Type-as-hero carries it (no AI-image hero, no flat gradient wash). */}
+      {/* HERO — de-JFT: the right panel is now the exam-goal picker (portal moves
+          8 + 10: frictionless entry + discovery), not a single-exam sampler.
+          Type-as-hero carries the left; the picker is the signature interaction. */}
       <div className="relative overflow-hidden">
         <div
           aria-hidden
@@ -90,7 +96,7 @@ export default function HomePage() {
         />
         <div aria-hidden className="absolute inset-0 pointer-events-none opacity-60" style={{ backgroundImage: GRAIN }} />
         <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 pt-16 pb-12 md:pt-24 md:pb-16">
-          <div className="grid lg:grid-cols-12 gap-10 lg:gap-8 items-center">
+          <div className="grid lg:grid-cols-12 gap-10 lg:gap-8 items-start">
             <div className="lg:col-span-7">
               <p className="text-xs font-bold uppercase tracking-[0.22em] text-academy-teal-dark mb-6">
                 Unschool Academy | Two ways to learn
@@ -102,47 +108,56 @@ export default function HomePage() {
                 </span>
               </h1>
               <p className="mt-6 max-w-xl text-lg md:text-xl text-slate leading-relaxed">
-                Focused exam preparation and joyful learning for ages 2 through Grade 5—built around
+                Focused exam preparation and joyful learning for ages 2 through Grade 5, built around
                 things learners can actually do.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
-                <Button href="/exams" size="lg">Explore Exams</Button>
-                <Button href="/kids" size="lg" variant="kids">Visit Kids World</Button>
+                <Button href="#exam-picker" size="lg">Pick your exam</Button>
+                <Button href="/kids" size="lg" variant="secondary">Visit Kids World</Button>
               </div>
-              <p className="mt-4 text-[15px]">
+              <p className="mt-5 text-[15px]">
                 <a
                   href="/exams/jft-basic/diagnostic"
+                  aria-describedby="diagnostic-note"
                   className="font-semibold text-academy-blue underline underline-offset-4 decoration-academy-blue/40 hover:decoration-academy-blue rounded focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-academy-teal"
                 >
-                  Take the free 10-question diagnostic
+                  Try the live diagnostic — JFT-Basic
                 </a>
-                <span className="text-slate"> — no account needed.</span>
+                <span className="text-slate"> — free, 10 questions, no account.</span>
+              </p>
+              <p id="diagnostic-note" className="sr-only">
+                Our first live diagnostic is JFT-Basic. The other exams shown are in research and have no diagnostic yet.
               </p>
             </div>
             <div className="lg:col-span-5">
-              {/* Real product UI in a browser frame — the actual practice, not a stock hero. */}
-              <figure className="motion-safe:md:-rotate-1 motion-safe:hover:rotate-0 transition-transform duration-500 ease-[var(--ease-signature)]">
+              {/* The picker as a working console inside the browser frame —
+                  pattern 10 (real product UI) preserved, sampler moved to /free-practice. */}
+              <figure
+                id="exam-picker"
+                aria-labelledby="exam-goal-picker-heading"
+                className="motion-safe:md:-rotate-1 motion-safe:hover:rotate-0 transition-transform duration-500 ease-[var(--ease-signature)]"
+              >
                 <div className="rounded-2xl border border-border bg-paper shadow-[0_24px_60px_-28px_rgba(21,34,59,0.35)] overflow-hidden">
                   <div className="flex items-center gap-1.5 border-b border-border bg-canvas px-4 py-3">
                     <span aria-hidden className="h-2.5 w-2.5 rounded-full bg-border" />
                     <span aria-hidden className="h-2.5 w-2.5 rounded-full bg-border" />
                     <span aria-hidden className="h-2.5 w-2.5 rounded-full bg-border" />
                     <span className="ml-2 rounded-full bg-border/50 px-3 py-1 font-mono text-[11px] text-slate">
-                      unschool.academy/free-practice
+                      unschool.academy
                     </span>
                   </div>
                   <div className="bg-canvas p-4 md:p-5">
-                    <JftSampler />
+                    <ExamGoalPicker data={PICKER_DATA} headingId="exam-goal-picker-heading" />
                   </div>
                 </div>
                 <figcaption className="mt-3 font-mono text-[11px] uppercase tracking-[0.18em] text-slate">
-                  Live sample — a real question from the draft bank. No signup.
+                  One live program today, ten more in research. Pick a goal to see what&apos;s real.
                 </figcaption>
               </figure>
             </div>
           </div>
 
-          {/* Honest numbers — every figure verifiable in the blueprint or the build. */}
+          {/* Honest numbers — computed from the build's content files at build time. */}
           <dl className="mt-14 md:mt-20 grid grid-cols-3 gap-4 md:gap-8 border-y border-border py-8">
             {PROOF.map((p) => (
               <div key={p.n}>
@@ -160,7 +175,7 @@ export default function HomePage() {
       </div>
 
       {/* TWO DOORS — bento: institutional dossier (col-span-4) vs tactile kids cell (col-span-2).
-          Split visual registers per audience, per the skill. */}
+          Exams door reframed for the pipeline: one pilot program, ten in research. */}
       <Section className="!py-14 md:!py-20">
         <ul className="grid md:grid-cols-6 gap-6 list-none p-0 m-0">
           <li className="md:col-span-4">
@@ -177,9 +192,10 @@ export default function HomePage() {
                   Exam prep that shows its work
                 </h2>
                 <p className="mt-3 text-slate leading-relaxed max-w-xl">
-                  Starting with JFT-Basic everyday Japanese: a free 10-question diagnostic, topic-mapped
-                  practice (explanations labelled as drafts pending expert review), and timed mocks. Every
-                  score is deterministic — real maths on your real answers, never invented percentiles.
+                  JFT-Basic is live in pilot: a free 10-question diagnostic today, with the full
+                  practice path in staged review. Behind it, ten more exam programs are being
+                  researched question by question — each one sourced, labelled, and reviewed
+                  before it ever reaches you.
                 </p>
                 <ul className="mt-6 divide-y divide-border border-y border-border">
                   <li className="py-3.5 flex gap-4 text-[15px]">
@@ -196,10 +212,10 @@ export default function HomePage() {
                   </li>
                 </ul>
                 <p className="mt-4 font-mono text-[11px] uppercase tracking-[0.18em] text-slate">
-                  Pilot · JFT-Basic · Official facts verified
+                  Pilot · JFT-Basic · 10 exams in research
                 </p>
                 <div className="mt-6 flex flex-wrap gap-3">
-                  <Button href="/exams/jft-basic">Start with JFT-Basic</Button>
+                  <Button href="/exams/catalog">Find your exam</Button>
                   <Button href="/exams/how-practice-works" variant="ghost">How practice works</Button>
                 </div>
               </div>
@@ -241,7 +257,7 @@ export default function HomePage() {
         </ul>
       </Section>
 
-      {/* KIDS SAMPLER — the JFT sampler lives in the hero; each product sampled once. */}
+      {/* KIDS SAMPLER — each product sampled once on this page; the exam sampler lives on /free-practice. */}
       <Section className="!py-14 md:!py-20">
         <SectionHeading
           align="left"
@@ -382,39 +398,40 @@ export default function HomePage() {
         </div>
       </Section>
 
-      {/* METHOD — the learning architecture, promoted on-site */}
+      {/* METHOD — the learning architecture, promoted on-site.
+          Editorial hairline rows instead of three identical cards (slop audit). */}
       <Section className="!pt-0 !pb-14 md:!pb-20">
         <SectionHeading
           eyebrow="The Unschool Method"
           title="A path, not a pile."
-          sub="506 exams. 500 books. One architecture: hierarchy → loop → levels. Here's how learning actually works here."
+          sub="500 exams in research. A 500-book library in progress. One architecture: hierarchy, loop, levels. Here is how learning actually works here."
         />
-        <div className="grid md:grid-cols-3 gap-4">
-          <div className="rounded-2xl border border-border bg-paper p-6">
-            <p className="text-xs font-bold uppercase tracking-[0.18em] text-academy-teal-dark">Structure</p>
-            <p className="mt-2 text-xl font-extrabold text-ink">Exam → skill → level</p>
-            <p className="mt-2 text-slate text-sm leading-relaxed">
+        <dl className="divide-y divide-border border-y border-border">
+          <div className="py-6 md:py-7 grid md:grid-cols-[14rem_1fr] gap-1 md:gap-8">
+            <dt className="font-mono text-[11px] font-bold uppercase tracking-[0.22em] text-academy-teal-dark pt-1.5">Structure</dt>
+            <dd className="text-slate leading-relaxed">
+              <strong className="font-bold text-ink">Exam <span aria-hidden>→</span> skill <span aria-hidden>→</span> level.</strong>{" "}
               Every exam breaks into subjects, parts, skills and four levels — L1 Foundation to L4 Exam mastery.
-              You never face "10,000 questions." You face your next 10.
-            </p>
+              You never face &ldquo;10,000 questions.&rdquo; You face your next 10.
+            </dd>
           </div>
-          <div className="rounded-2xl border border-border bg-paper p-6">
-            <p className="text-xs font-bold uppercase tracking-[0.18em] text-academy-teal-dark">Loop</p>
-            <p className="mt-2 text-xl font-extrabold text-ink">Diagnose → master → prove</p>
-            <p className="mt-2 text-slate text-sm leading-relaxed">
+          <div className="py-6 md:py-7 grid md:grid-cols-[14rem_1fr] gap-1 md:gap-8">
+            <dt className="font-mono text-[11px] font-bold uppercase tracking-[0.22em] text-academy-teal-dark pt-1.5">Loop</dt>
+            <dd className="text-slate leading-relaxed">
+              <strong className="font-bold text-ink">Diagnose <span aria-hidden>→</span> master <span aria-hidden>→</span> prove.</strong>{" "}
               A 7-step loop: diagnose your level, learn, practice, understand every mistake,
               retain with spaced repetition, master the skill, prove it in mocks.
-            </p>
+            </dd>
           </div>
-          <div className="rounded-2xl border border-border bg-paper p-6">
-            <p className="text-xs font-bold uppercase tracking-[0.18em] text-academy-teal-dark">Kids</p>
-            <p className="mt-2 text-xl font-extrabold text-ink">500 books → quests</p>
-            <p className="mt-2 text-slate text-sm leading-relaxed">
+          <div className="py-6 md:py-7 grid md:grid-cols-[14rem_1fr] gap-1 md:gap-8">
+            <dt className="font-mono text-[11px] font-bold uppercase tracking-[0.22em] text-academy-teal-dark pt-1.5">Kids</dt>
+            <dd className="text-slate leading-relaxed">
+              <strong className="font-bold text-ink">500 books <span aria-hidden>→</span> quests.</strong>{" "}
               From age 5: Momo, Tara and Bobo turn beloved stories into quests across 5 subjects.
               Adaptive, no fail states, 15 minutes then off-screen play.
-            </p>
+            </dd>
           </div>
-        </div>
+        </dl>
         <div className="mt-8 text-center">
           <Button href="/how-it-works" size="lg" variant="primary">See the full method</Button>
         </div>
