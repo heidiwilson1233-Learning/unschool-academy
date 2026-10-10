@@ -1,0 +1,8 @@
+{
+  "id": "script-vocabulary",
+  "title": "Script and Vocabulary",
+  "description": "Read Japanese texts used in everyday situations; basic vocabulary and usage. ~12 questions on the real test.",
+  "skills": ["word-meaning", "word-usage", "kanji-reading", "kanji-meaning-usage"],
+  "order": 1,
+  "source": "Japan Foundation JFT-Basic official test structure (jpf.go.jp/jft-basic)"
+}

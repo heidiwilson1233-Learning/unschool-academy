@@ -1,0 +1,962 @@
+[
+  {
+    "answer": 0,
+    "difficulty": 1,
+    "explanation": "Step 1: Blood has two parts — plasma (the fluid) and formed elements (RBCs, WBCs, platelets). Step 2: Formed elements make up about 44–45% of blood volume. Step 3: The rest, about 55%, is plasma. The 90% figure is the water content *of plasma itself*, not of blood — a common mix-up.",
+    "hint": "More than half of your blood is the straw-coloured fluid.",
+    "id": "neet-bio-hp-circ-001",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "About 55%"
+      },
+      {
+        "id": "b",
+        "text": "About 45%"
+      },
+      {
+        "id": "c",
+        "text": "About 90%"
+      },
+      {
+        "id": "d",
+        "text": "About 10%"
+      }
+    ],
+    "skill": "body-fluids-circulation",
+    "source": "NCERT Class 11 Biology, Chapter 18 — Body Fluids and Circulation (§18.1.1 Plasma)",
+    "status": "draft-pending-sme-review",
+    "stem": "Approximately what percentage of human blood volume is made up of plasma?",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 1,
+    "difficulty": 1,
+    "explanation": "Step 1: Plasma proteins are fibrinogen, globulins and albumins. Step 2: Albumins are the most abundant — they maintain osmotic (oncotic) balance. Step 3: Fibrinogen is for clotting and globulins for defence, but both are less abundant. Step 4: Haemoglobin is inside red blood cells, not a plasma protein; keratin is in skin/hair.",
+    "hint": "It keeps water inside the blood vessels by maintaining osmotic balance.",
+    "id": "neet-bio-hp-circ-002",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fibrinogen"
+      },
+      {
+        "id": "b",
+        "text": "Albumin"
+      },
+      {
+        "id": "c",
+        "text": "Haemoglobin"
+      },
+      {
+        "id": "d",
+        "text": "Keratin"
+      }
+    ],
+    "skill": "body-fluids-circulation",
+    "source": "NCERT Class 11 Biology, Chapter 18 — Body Fluids and Circulation (§18.1.1 Plasma)",
+    "status": "draft-pending-sme-review",
+    "stem": "Which is the most abundant protein found in human blood plasma?",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 2,
+    "difficulty": 1,
+    "explanation": "Step 1: RBCs are formed in red bone marrow in adults. Step 2: Because they lack a nucleus, they cannot repair themselves and wear out. Step 3: Their average functional life is about 120 days (roughly 4 months), after which they are destroyed in the spleen.",
+    "hint": "About four months — they wear out because they have no nucleus to repair themselves.",
+    "id": "neet-bio-hp-circ-003",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "30 days"
+      },
+      {
+        "id": "b",
+        "text": "60 days"
+      },
+      {
+        "id": "c",
+        "text": "120 days"
+      },
+      {
+        "id": "d",
+        "text": "365 days"
+      }
+    ],
+    "skill": "body-fluids-circulation",
+    "source": "NCERT Class 11 Biology, Chapter 18 — Body Fluids and Circulation (§18.1.2 Formed elements)",
+    "status": "draft-pending-sme-review",
+    "stem": "The average life span of a human red blood cell (erythrocyte) is about",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 3,
+    "difficulty": 1,
+    "explanation": "Step 1: In most mammals, mature RBCs lose their nucleus during development. Step 2: This gives them a biconcave shape with more surface area and more room for haemoglobin. Step 3: They still have a cell membrane and haemoglobin — those are essential. (Their lack of mitochondria is also true, but the defining textbook feature is the absent nucleus.)",
+    "hint": "Something nearly every other cell has — the RBC gave it up to carry more haemoglobin.",
+    "id": "neet-bio-hp-circ-004",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "a cell membrane"
+      },
+      {
+        "id": "b",
+        "text": "haemoglobin"
+      },
+      {
+        "id": "c",
+        "text": "mitochondria only"
+      },
+      {
+        "id": "d",
+        "text": "a nucleus"
+      }
+    ],
+    "skill": "body-fluids-circulation",
+    "source": "NCERT Class 11 Biology, Chapter 18 — Body Fluids and Circulation (§18.1.2 Formed elements)",
+    "status": "draft-pending-sme-review",
+    "stem": "Mature mammalian red blood cells are unusual because they lack",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 1,
+    "difficulty": 1,
+    "explanation": "Step 1: ABO grouping depends on antigens (sugar polymers) on the RBC surface. Step 2: Group O RBCs carry neither A nor B antigens. Step 3: So when O blood is given to anyone, there are no foreign A/B antigens for the recipient's antibodies to attack. (Note: O plasma does contain anti-A and anti-B antibodies, which is why the donation is as packed cells in practice.)",
+    "hint": "It is about what is MISSING from the surface of their red cells.",
+    "id": "neet-bio-hp-circ-005",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "carry both A and B antibodies"
+      },
+      {
+        "id": "b",
+        "text": "carry neither A nor B antigens"
+      },
+      {
+        "id": "c",
+        "text": "carry the Rh antigen"
+      },
+      {
+        "id": "d",
+        "text": "clot faster than other groups"
+      }
+    ],
+    "skill": "body-fluids-circulation",
+    "source": "NCERT Class 11 Biology, Chapter 18 — Body Fluids and Circulation (§18.1.3 Blood groups)",
+    "status": "draft-pending-sme-review",
+    "stem": "A person with blood group O is called a universal donor because their red blood cells",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 3,
+    "difficulty": 1,
+    "explanation": "Step 1: AB red cells carry both A and B antigens, so the person's immune system tolerates both. Step 2: Their plasma therefore contains neither anti-A nor anti-B antibodies. Step 3: With no antibodies to attack donor cells, blood from any ABO group can be received safely.",
+    "hint": "Receiving is safe when your plasma has nothing that attacks the donor's cells.",
+    "id": "neet-bio-hp-circ-006",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "their RBCs have no antigens"
+      },
+      {
+        "id": "b",
+        "text": "their plasma has both anti-A and anti-B antibodies"
+      },
+      {
+        "id": "c",
+        "text": "their plasma has no antibodies at all"
+      },
+      {
+        "id": "d",
+        "text": "their plasma has neither anti-A nor anti-B antibodies"
+      }
+    ],
+    "skill": "body-fluids-circulation",
+    "source": "NCERT Class 11 Biology, Chapter 18 — Body Fluids and Circulation (§18.1.3 Blood groups)",
+    "status": "draft-pending-sme-review",
+    "stem": "A person with AB blood group can receive blood from all groups (universal recipient) because",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 0,
+    "difficulty": 1,
+    "explanation": "Step 1: Injury releases thromboplastin, which converts inactive prothrombin into thrombin (calcium ions are needed here). Step 2: Thrombin, the active enzyme, converts soluble fibrinogen into insoluble fibrin threads. Step 3: Fibrin threads trap platelets and cells, forming the clot. Heparin prevents clotting; serotonin is released by platelets but is not the converting enzyme.",
+    "hint": "The active enzyme's name starts with 'thr-' and it acts on fibrinogen.",
+    "id": "neet-bio-hp-circ-007",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "thrombin"
+      },
+      {
+        "id": "b",
+        "text": "prothrombin"
+      },
+      {
+        "id": "c",
+        "text": "heparin"
+      },
+      {
+        "id": "d",
+        "text": "serotonin"
+      }
+    ],
+    "skill": "body-fluids-circulation",
+    "source": "NCERT Class 11 Biology, Chapter 18 — Body Fluids and Circulation (§18.1.4 Coagulation of blood)",
+    "status": "draft-pending-sme-review",
+    "stem": "During blood clotting, fibrinogen is converted into fibrin threads by the enzyme",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 2,
+    "difficulty": 1,
+    "explanation": "Step 1: Platelets are not whole cells — they are fragments pinched off from large bone marrow cells. Step 2: Those parent cells are megakaryocytes. Step 3: Erythroblasts make RBCs; lymphocytes and monocytes are types of white blood cells, not platelet parents.",
+    "hint": "The parent cell's name contains 'mega' — it is a giant cell.",
+    "id": "neet-bio-hp-circ-008",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "erythroblasts"
+      },
+      {
+        "id": "b",
+        "text": "lymphocytes"
+      },
+      {
+        "id": "c",
+        "text": "megakaryocytes"
+      },
+      {
+        "id": "d",
+        "text": "monocytes"
+      }
+    ],
+    "skill": "body-fluids-circulation",
+    "source": "NCERT Class 11 Biology, Chapter 18 — Body Fluids and Circulation (§18.1.2 Formed elements)",
+    "status": "draft-pending-sme-review",
+    "stem": "Blood platelets (thrombocytes) are cell fragments produced from special cells in the bone marrow called",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 3,
+    "difficulty": 1,
+    "explanation": "Step 1: Platelets (1,50,000–3,50,000 per mm³ of blood) release clotting factors at injury sites. Step 2: They help convert prothrombin to thrombin and form the platelet plug of a clot. Step 3: Oxygen transport is the RBC's job (haemoglobin); fighting infection is the WBC's job.",
+    "hint": "Think of what stops the bleeding when you get a small cut.",
+    "id": "neet-bio-hp-circ-009",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "transport of oxygen"
+      },
+      {
+        "id": "b",
+        "text": "fighting infections"
+      },
+      {
+        "id": "c",
+        "text": "transport of hormones"
+      },
+      {
+        "id": "d",
+        "text": "blood clotting"
+      }
+    ],
+    "skill": "body-fluids-circulation",
+    "source": "NCERT Class 11 Biology, Chapter 18 — Body Fluids and Circulation (§18.1.2 Formed elements)",
+    "status": "draft-pending-sme-review",
+    "stem": "The main function of blood platelets in the human body is",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 1,
+    "difficulty": 1,
+    "explanation": "Step 1: The WBC differential count is: neutrophils 60–65%, lymphocytes 20–25%, monocytes 6–8%, eosinophils 2–3%, basophils 0.5–1%. Step 2: Neutrophils, the phagocytic granulocytes, are clearly the largest share — about two-thirds of all leucocytes.",
+    "hint": "They make up about two-thirds of all white blood cells and eat up germs.",
+    "id": "neet-bio-hp-circ-010",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "Lymphocyte"
+      },
+      {
+        "id": "b",
+        "text": "Neutrophil"
+      },
+      {
+        "id": "c",
+        "text": "Monocyte"
+      },
+      {
+        "id": "d",
+        "text": "Basophil"
+      }
+    ],
+    "skill": "body-fluids-circulation",
+    "source": "NCERT Class 11 Biology, Chapter 18 — Body Fluids and Circulation (§18.1.2 Formed elements)",
+    "status": "draft-pending-sme-review",
+    "stem": "Which type of white blood cell is the most abundant in human blood?",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 0,
+    "difficulty": 1,
+    "explanation": "Step 1: Unlike RBCs, WBCs (leucocytes) are colourless because they lack haemoglobin. Step 2: They are nucleated — every WBC has a nucleus (round, lobed or kidney-shaped). Step 3: Their count (6000–8000/mm³) is far lower than RBCs (5–5.5 million/mm³), and their job is defence, not oxygen transport.",
+    "hint": "Think of the one thing RBCs famously lack.",
+    "id": "neet-bio-hp-circ-011",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "have a nucleus"
+      },
+      {
+        "id": "b",
+        "text": "contain haemoglobin"
+      },
+      {
+        "id": "c",
+        "text": "outnumber red blood cells"
+      },
+      {
+        "id": "d",
+        "text": "are red in colour"
+      }
+    ],
+    "skill": "body-fluids-circulation",
+    "source": "NCERT Class 11 Biology, Chapter 18 — Body Fluids and Circulation (§18.1.2 Formed elements)",
+    "status": "draft-pending-sme-review",
+    "stem": "Unlike red blood cells, human white blood cells",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 2,
+    "difficulty": 1,
+    "explanation": "Step 1: As blood flows through capillaries, water and small solutes filter out into tissue spaces — this is tissue (interstitial) fluid. Step 2: Most of it re-enters capillaries, but some enters lymph capillaries and becomes lymph. Step 3: Plasma stays inside blood vessels; cerebrospinal fluid is around the brain and spinal cord.",
+    "hint": "It starts as fluid that leaks out of capillaries into the spaces between cells.",
+    "id": "neet-bio-hp-circ-012",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "blood plasma directly"
+      },
+      {
+        "id": "b",
+        "text": "cerebrospinal fluid"
+      },
+      {
+        "id": "c",
+        "text": "tissue (interstitial) fluid"
+      },
+      {
+        "id": "d",
+        "text": "synovial fluid"
+      }
+    ],
+    "skill": "body-fluids-circulation",
+    "source": "NCERT Class 11 Biology, Chapter 18 — Body Fluids and Circulation (§18.2 Lymph)",
+    "status": "draft-pending-sme-review",
+    "stem": "Lymph (tissue fluid) is formed from",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 0,
+    "difficulty": 1,
+    "explanation": "Step 1: In open circulation, blood is pumped into open spaces (haemocoel/sinuses) and bathes tissues directly. Step 2: This is the pattern in arthropods (cockroach, prawn) and molluscs. Step 3: Earthworms, fishes and humans all have closed circulation, where blood stays inside vessels.",
+    "hint": "Think of the insect whose blood bathes its organs directly in open spaces.",
+    "id": "neet-bio-hp-circ-013",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "cockroach"
+      },
+      {
+        "id": "b",
+        "text": "earthworm"
+      },
+      {
+        "id": "c",
+        "text": "fish"
+      },
+      {
+        "id": "d",
+        "text": "human"
+      }
+    ],
+    "skill": "body-fluids-circulation",
+    "source": "NCERT Class 11 Biology, Chapter 18 — Body Fluids and Circulation (§18.3.1 Circulatory pathways)",
+    "status": "draft-pending-sme-review",
+    "stem": "An open circulatory system, in which blood bathes the tissues directly, is found in",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 1,
+    "difficulty": 1,
+    "explanation": "Step 1: Double circulation means blood passes through the heart twice per cycle — pulmonary and systemic circuits. Step 2: In mammals and birds the heart is fully four-chambered, so oxygenated and deoxygenated blood never mix. Step 3: Fishes have single circulation; amphibians and most reptiles have incomplete double circulation with mixing.",
+    "hint": "Only animals with a completely four-chambered heart keep the two bloods fully separate.",
+    "id": "neet-bio-hp-circ-014",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "fishes"
+      },
+      {
+        "id": "b",
+        "text": "mammals and birds"
+      },
+      {
+        "id": "c",
+        "text": "amphibians"
+      },
+      {
+        "id": "d",
+        "text": "reptiles"
+      }
+    ],
+    "skill": "body-fluids-circulation",
+    "source": "NCERT Class 11 Biology, Chapter 18 — Body Fluids and Circulation (§18.3.1 Circulatory pathways)",
+    "status": "draft-pending-sme-review",
+    "stem": "Complete double circulation, with no mixing of oxygenated and deoxygenated blood, occurs in",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 3,
+    "difficulty": 1,
+    "explanation": "Step 1: The human heart has two upper receiving chambers (atria) and two lower pumping chambers (ventricles). Step 2: Right atrium and right ventricle handle deoxygenated blood; left atrium and left ventricle handle oxygenated blood. Step 3: The atria are separated by the inter-atrial septum and the ventricles by the inter-ventricular septum.",
+    "hint": "Two up, two down — count them.",
+    "id": "neet-bio-hp-circ-015",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "2"
+      },
+      {
+        "id": "b",
+        "text": "3"
+      },
+      {
+        "id": "c",
+        "text": "5"
+      },
+      {
+        "id": "d",
+        "text": "4"
+      }
+    ],
+    "skill": "body-fluids-circulation",
+    "source": "NCERT Class 11 Biology, Chapter 18 — Body Fluids and Circulation (§18.3.2 Human circulatory system)",
+    "status": "draft-pending-sme-review",
+    "stem": "How many chambers does the human heart have?",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 0,
+    "difficulty": 1,
+    "explanation": "Step 1: The heartbeat is initiated by a patch of nodal tissue — the sino-atrial node (SAN). Step 2: SAN generates the maximum number of action potentials, so it sets the rhythm — hence 'pacemaker'. Step 3: AVN only relays and delays the impulse; the bundle of His and Purkinje fibres only distribute it to the ventricles.",
+    "hint": "It generates the most action potentials, so it sets the pace.",
+    "id": "neet-bio-hp-circ-016",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "sino-atrial node (SAN)"
+      },
+      {
+        "id": "b",
+        "text": "atrio-ventricular node (AVN)"
+      },
+      {
+        "id": "c",
+        "text": "bundle of His"
+      },
+      {
+        "id": "d",
+        "text": "Purkinje fibres"
+      }
+    ],
+    "skill": "body-fluids-circulation",
+    "source": "NCERT Class 11 Biology, Chapter 18 — Body Fluids and Circulation (§18.3.4 Regulation of cardiac activity)",
+    "status": "draft-pending-sme-review",
+    "stem": "The natural pacemaker of the human heart is the",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 1,
+    "difficulty": 1,
+    "explanation": "Step 1: Atrioventricular valves guard the openings between atria and ventricles. Step 2: On the right side this valve has three flaps — tricuspid; on the left it has two — bicuspid/mitral. Step 3: Semilunar valves are at the exits of the ventricles (aorta, pulmonary trunk), not between atrium and ventricle.",
+    "hint": "Right side = three flaps; left side = two flaps.",
+    "id": "neet-bio-hp-circ-017",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "bicuspid (mitral) valve"
+      },
+      {
+        "id": "b",
+        "text": "tricuspid valve"
+      },
+      {
+        "id": "c",
+        "text": "aortic semilunar valve"
+      },
+      {
+        "id": "d",
+        "text": "pulmonary semilunar valve"
+      }
+    ],
+    "skill": "body-fluids-circulation",
+    "source": "NCERT Class 11 Biology, Chapter 18 — Body Fluids and Circulation (§18.3.2 Human circulatory system)",
+    "status": "draft-pending-sme-review",
+    "stem": "The valve present between the right atrium and the right ventricle is the",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 2,
+    "difficulty": 1,
+    "explanation": "Step 1: On the left side, the atrioventricular opening is guarded by the bicuspid (mitral) valve — 'bi' means two flaps. Step 2: It lets blood flow from left atrium to left ventricle and prevents backflow. Step 3: Tricuspid is the right-side counterpart; semilunar valves guard the aortic and pulmonary exits.",
+    "hint": "'Bi' = two flaps, and it sits on the left side.",
+    "id": "neet-bio-hp-circ-018",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "tricuspid valve"
+      },
+      {
+        "id": "b",
+        "text": "aortic semilunar valve"
+      },
+      {
+        "id": "c",
+        "text": "bicuspid (mitral) valve"
+      },
+      {
+        "id": "d",
+        "text": "pulmonary semilunar valve"
+      }
+    ],
+    "skill": "body-fluids-circulation",
+    "source": "NCERT Class 11 Biology, Chapter 18 — Body Fluids and Circulation (§18.3.2 Human circulatory system)",
+    "status": "draft-pending-sme-review",
+    "stem": "The bicuspid (mitral) valve is located between the",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 3,
+    "difficulty": 1,
+    "explanation": "Step 1: The general rule is arteries carry oxygenated blood, but there are two famous exceptions. Step 2: The pulmonary artery carries deoxygenated blood from the right ventricle to the lungs. Step 3: The aorta and coronary arteries carry oxygenated blood; the pulmonary vein carries oxygenated blood from lungs to heart.",
+    "hint": "It is the famous exception to the 'arteries carry oxygenated blood' rule.",
+    "id": "neet-bio-hp-circ-019",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "aorta"
+      },
+      {
+        "id": "b",
+        "text": "coronary artery"
+      },
+      {
+        "id": "c",
+        "text": "pulmonary vein"
+      },
+      {
+        "id": "d",
+        "text": "pulmonary artery"
+      }
+    ],
+    "skill": "body-fluids-circulation",
+    "source": "NCERT Class 11 Biology, Chapter 18 — Body Fluids and Circulation (§18.3.2 Human circulatory system)",
+    "status": "draft-pending-sme-review",
+    "stem": "Which of the following blood vessels carries deoxygenated blood?",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 0,
+    "difficulty": 1,
+    "explanation": "Step 1: Pulmonary veins bring oxygenated blood from the lungs to the left atrium — the second famous exception (veins usually carry deoxygenated blood). Step 2: Vena cavae bring deoxygenated blood to the right atrium; the pulmonary artery takes deoxygenated blood to the lungs.",
+    "hint": "It is the mirror-image exception: a vein carrying oxygen-rich blood, from lungs to heart.",
+    "id": "neet-bio-hp-circ-020",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "pulmonary vein"
+      },
+      {
+        "id": "b",
+        "text": "superior vena cava"
+      },
+      {
+        "id": "c",
+        "text": "pulmonary artery"
+      },
+      {
+        "id": "d",
+        "text": "inferior vena cava"
+      }
+    ],
+    "skill": "body-fluids-circulation",
+    "source": "NCERT Class 11 Biology, Chapter 18 — Body Fluids and Circulation (§18.3.2 Human circulatory system)",
+    "status": "draft-pending-sme-review",
+    "stem": "Which blood vessel carries oxygenated blood from the lungs to the left atrium?",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 1,
+    "difficulty": 1,
+    "explanation": "Step 1: The aorta is the largest artery in the body. Step 2: It receives oxygenated blood from the left ventricle and distributes it to the entire body via systemic circulation. Step 3: The pulmonary trunk goes to the lungs (deoxygenated); vena cavae bring deoxygenated blood back to the heart.",
+    "hint": "The biggest artery, leaving the left ventricle for the whole body.",
+    "id": "neet-bio-hp-circ-021",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "pulmonary trunk"
+      },
+      {
+        "id": "b",
+        "text": "aorta"
+      },
+      {
+        "id": "c",
+        "text": "superior vena cava"
+      },
+      {
+        "id": "d",
+        "text": "pulmonary artery"
+      }
+    ],
+    "skill": "body-fluids-circulation",
+    "source": "NCERT Class 11 Biology, Chapter 18 — Body Fluids and Circulation (§18.3.2 Human circulatory system)",
+    "status": "draft-pending-sme-review",
+    "stem": "The largest artery, which carries oxygenated blood from the left ventricle to the body, is the",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 2,
+    "difficulty": 1,
+    "explanation": "Step 1: Heart sounds are 'lubb' (first) and 'dubb' (second). Step 2: 'Lubb' is produced at the start of ventricular systole when the atrioventricular (tricuspid + bicuspid) valves slam shut. Step 3: 'Dubb' comes later, from semilunar valve closure; the sounds are valve closures, not muscle contraction or blood rushing.",
+    "hint": "First sound = the AV valves shutting as the ventricles start to squeeze.",
+    "id": "neet-bio-hp-circ-022",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "contraction of atrial muscles"
+      },
+      {
+        "id": "b",
+        "text": "closure of semilunar valves"
+      },
+      {
+        "id": "c",
+        "text": "closure of atrioventricular valves"
+      },
+      {
+        "id": "d",
+        "text": "rushing of blood into the aorta"
+      }
+    ],
+    "skill": "body-fluids-circulation",
+    "source": "NCERT Class 11 Biology, Chapter 18 — Body Fluids and Circulation (§18.3.3 Cardiac cycle and ECG)",
+    "status": "draft-pending-sme-review",
+    "stem": "The first heart sound ('lubb') is produced by the",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 0,
+    "difficulty": 1,
+    "explanation": "Step 1: Blood pressure is measured as systolic/diastolic in mm Hg. Step 2: The normal healthy value is 120/80 — 120 systolic (ventricular contraction), 80 diastolic (relaxation). Step 3: 140/90 or above is hypertension; 90/60 would be low.",
+    "hint": "120 over 80 — the textbook normal.",
+    "id": "neet-bio-hp-circ-023",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "120/80 mm Hg"
+      },
+      {
+        "id": "b",
+        "text": "140/90 mm Hg"
+      },
+      {
+        "id": "c",
+        "text": "80/120 mm Hg"
+      },
+      {
+        "id": "d",
+        "text": "90/60 mm Hg"
+      }
+    ],
+    "skill": "body-fluids-circulation",
+    "source": "NCERT Class 11 Biology, Chapter 18 — Body Fluids and Circulation (§18.4 Disorders of circulatory system)",
+    "status": "draft-pending-sme-review",
+    "stem": "The normal blood pressure of a healthy adult human is",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 1,
+    "difficulty": 1,
+    "explanation": "Step 1: One cardiac cycle = one full heartbeat (systole + diastole of all chambers). Step 2: At a resting heart rate of 72 beats per minute, each beat takes 60 ÷ 72 ≈ 0.8 seconds. Step 3: Within it: atrial systole ~0.1 s, ventricular systole ~0.3 s, joint diastole ~0.4 s.",
+    "hint": "72 beats a minute — divide 60 seconds by 72.",
+    "id": "neet-bio-hp-circ-024",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "0.1 seconds"
+      },
+      {
+        "id": "b",
+        "text": "0.8 seconds"
+      },
+      {
+        "id": "c",
+        "text": "1.2 seconds"
+      },
+      {
+        "id": "d",
+        "text": "72 seconds"
+      }
+    ],
+    "skill": "body-fluids-circulation",
+    "source": "NCERT Class 11 Biology, Chapter 18 — Body Fluids and Circulation (§18.3.3 Cardiac cycle and ECG)",
+    "status": "draft-pending-sme-review",
+    "stem": "In a healthy resting adult, the duration of one cardiac cycle is about",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 3,
+    "difficulty": 1,
+    "explanation": "Step 1: Heart rate is counted from the SAN's rhythm at rest. Step 2: The normal resting range is about 72 beats per minute (60–100 is the wider normal band; NCERT uses 72). Step 3: 120 would be a racing heart (exercise/fear); 40–50 is unusually slow for a resting adult.",
+    "hint": "NCERT's standard resting figure — roughly once per second, a bit faster.",
+    "id": "neet-bio-hp-circ-025",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "40 beats/min"
+      },
+      {
+        "id": "b",
+        "text": "120 beats/min"
+      },
+      {
+        "id": "c",
+        "text": "50 beats/min"
+      },
+      {
+        "id": "d",
+        "text": "72 beats/min"
+      }
+    ],
+    "skill": "body-fluids-circulation",
+    "source": "NCERT Class 11 Biology, Chapter 18 — Body Fluids and Circulation (§18.3.3 Cardiac cycle and ECG)",
+    "status": "draft-pending-sme-review",
+    "stem": "The average resting heart rate of a healthy adult human is about",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 2,
+    "difficulty": 1,
+    "explanation": "Step 1: A portal vein is one that begins in capillaries and ends in capillaries (rather than going straight to the heart). Step 2: The hepatic portal vein collects blood from the intestine and delivers it to the liver first, so nutrients can be processed/stored. Step 3: Renal vein goes kidney → vena cava; pulmonary vein goes lungs → heart.",
+    "hint": "Intestine first, liver second — nutrients get processed before reaching the heart.",
+    "id": "neet-bio-hp-circ-026",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "kidney to heart"
+      },
+      {
+        "id": "b",
+        "text": "lungs to heart"
+      },
+      {
+        "id": "c",
+        "text": "intestine to liver"
+      },
+      {
+        "id": "d",
+        "text": "liver to heart"
+      }
+    ],
+    "skill": "body-fluids-circulation",
+    "source": "NCERT Class 11 Biology, Chapter 18 — Body Fluids and Circulation (§18.3.1 Circulatory pathways)",
+    "status": "draft-pending-sme-review",
+    "stem": "The hepatic portal vein carries blood from the",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 0,
+    "difficulty": 1,
+    "explanation": "Step 1: Fats digested in the intestine are absorbed into tiny lymph vessels called lacteals in the villi. Step 2: From lacteals the fatty lymph (chyle) drains into the lymphatic system and eventually the bloodstream. Step 3: Glucose and amino acids go directly into blood capillaries; lacteals are specifically the fat route.",
+    "hint": "Tiny lymph vessels in the villi — their name comes from the milky fluid they carry.",
+    "id": "neet-bio-hp-circ-027",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "fats"
+      },
+      {
+        "id": "b",
+        "text": "glucose"
+      },
+      {
+        "id": "c",
+        "text": "amino acids"
+      },
+      {
+        "id": "d",
+        "text": "minerals"
+      }
+    ],
+    "skill": "body-fluids-circulation",
+    "source": "NCERT Class 11 Biology, Chapter 18 — Body Fluids and Circulation (§18.2 Lymph)",
+    "status": "draft-pending-sme-review",
+    "stem": "The lacteals present in the intestinal villi are specialised for the absorption of",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 1,
+    "difficulty": 1,
+    "explanation": "Step 1: Each RBC contains about 270 million haemoglobin molecules. Step 2: Haemoglobin binds oxygen in the lungs (forming oxyhaemoglobin) and releases it in tissues. Step 3: Plasma carries dissolved nutrients and proteins, not oxygen; myoglobin is the muscle counterpart; fibrinogen is for clotting.",
+    "hint": "The red pigment — 'haemo' = blood, 'globin' = protein.",
+    "id": "neet-bio-hp-circ-028",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "plasma albumin"
+      },
+      {
+        "id": "b",
+        "text": "haemoglobin"
+      },
+      {
+        "id": "c",
+        "text": "fibrinogen"
+      },
+      {
+        "id": "d",
+        "text": "myoglobin"
+      }
+    ],
+    "skill": "body-fluids-circulation",
+    "source": "NCERT Class 11 Biology, Chapter 18 — Body Fluids and Circulation (§18.1.2 Formed elements)",
+    "status": "draft-pending-sme-review",
+    "stem": "Oxygen is transported in blood mainly bound to the pigment",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 3,
+    "difficulty": 1,
+    "explanation": "Step 1: The left ventricle pumps oxygenated blood through the aorta to the entire body — the longest, highest-resistance circuit. Step 2: The right ventricle only pumps to the nearby lungs (low pressure). Step 3: Thicker muscle = stronger contraction; the wall thickness matches the workload, not the number of valves or speed.",
+    "hint": "Which side has the harder job — pumping to the lungs next door, or to the whole body?",
+    "id": "neet-bio-hp-circ-029",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "it receives blood first"
+      },
+      {
+        "id": "b",
+        "text": "it pumps blood to the entire body"
+      },
+      {
+        "id": "c",
+        "text": "it contains more valves"
+      },
+      {
+        "id": "d",
+        "text": "it beats faster than the right ventricle"
+      }
+    ],
+    "skill": "body-fluids-circulation",
+    "source": "NCERT Class 11 Biology, Chapter 18 — Body Fluids and Circulation (§18.3.2 Human circulatory system)",
+    "status": "draft-pending-sme-review",
+    "stem": "The muscular wall of the left ventricle is thicker than that of the right ventricle because",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 2,
+    "difficulty": 1,
+    "explanation": "Step 1: Deoxygenated blood returns via vena cavae to the right atrium. Step 2: It passes the tricuspid valve into the right ventricle. Step 3: From there it exits through the pulmonary semilunar valve into the pulmonary artery toward the lungs. Any other order breaks the one-way flow.",
+    "hint": "Right atrium → tricuspid → right ventricle → lungs.",
+    "id": "neet-bio-hp-circ-030",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "Right atrium → bicuspid valve → left ventricle → aorta"
+      },
+      {
+        "id": "b",
+        "text": "Right ventricle → tricuspid valve → right atrium → pulmonary vein"
+      },
+      {
+        "id": "c",
+        "text": "Vena cava → right atrium → tricuspid valve → right ventricle → pulmonary artery"
+      },
+      {
+        "id": "d",
+        "text": "Pulmonary vein → left atrium → tricuspid valve → right ventricle"
+      }
+    ],
+    "skill": "body-fluids-circulation",
+    "source": "NCERT Class 11 Biology, Chapter 18 — Body Fluids and Circulation (§18.3.2 Human circulatory system)",
+    "status": "draft-pending-sme-review",
+    "stem": "Which sequence correctly traces the path of deoxygenated blood through the heart to the lungs?",
+    "type": "mcq",
+    "version": 1
+  }
+]

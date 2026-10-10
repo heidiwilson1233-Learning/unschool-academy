@@ -1,0 +1,15 @@
+{
+  "description": "NEET UG Biology (Botany + Zoology) and Chemistry preparation: NCERT Class 11 & 12 based syllabus maps, researched question banks, and curated free video lessons. All content is draft-pending-SME-review until expert-verified.",
+  "estimated_hours": 200,
+  "id": "neet-ug",
+  "skills": [
+    "human-physiology",
+    "mole-concept",
+    "stoichiometry-basics",
+    "concentration-terms"
+  ],
+  "source": "NMC NEET-UG syllabus (nmc.org.in); NCERT Class 11 & 12 Biology",
+  "status": "in-progress",
+  "title": "NEET UG — Biology (Botany + Zoology)",
+  "version": 1
+}

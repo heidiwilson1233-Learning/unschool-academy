@@ -1,0 +1,1052 @@
+[
+  {
+    "answer": 2,
+    "difficulty": 1,
+    "explanation": "荷物 (nimotsu) means luggage. Coin lockers at stations are where travellers store bags they do not want to carry.",
+    "hint": "You would not want to carry it all day sightseeing.",
+    "id": "jft-sv-wm-001",
+    "options": [
+      {
+        "id": "a",
+        "text": "platform",
+        "textJp": "ホーム"
+      },
+      {
+        "id": "b",
+        "text": "timetable",
+        "textJp": "時刻表"
+      },
+      {
+        "id": "c",
+        "text": "luggage",
+        "textJp": "荷物"
+      },
+      {
+        "id": "d",
+        "text": "ticket",
+        "textJp": "切符"
+      }
+    ],
+    "skill": "word-meaning",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Script and Vocabulary / Word meaning category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Vocabulary at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "えきの コインロッカーに 荷物を あずけました。Choose the meaning of 荷物.",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 0,
+    "difficulty": 2,
+    "explanation": "においがする describes a smell reaching you from somewhere — here, from the kitchen. あじ (taste) is what you sense while eating, which has not happened.",
+    "hint": "You notice it in the air before you taste anything.",
+    "id": "jft-sv-wu-009",
+    "options": [
+      {
+        "id": "a",
+        "text": "におい",
+        "textJp": "におい"
+      },
+      {
+        "id": "b",
+        "text": "あじ",
+        "textJp": "あじ"
+      },
+      {
+        "id": "c",
+        "text": "おと",
+        "textJp": "おと"
+      },
+      {
+        "id": "d",
+        "text": "かたち",
+        "textJp": "かたち"
+      }
+    ],
+    "skill": "word-usage",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Script and Vocabulary / Word usage category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Vocabulary at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "Fill the blank: キッチンから カレーの いい ___ が します。",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 3,
+    "difficulty": 1,
+    "explanation": "ちこく (chikoku) means being late, usually for work or school. The train delay explains why it happened.",
+    "hint": "The train was delayed, so what happened to the meeting?",
+    "id": "jft-sv-wm-002",
+    "options": [
+      {
+        "id": "a",
+        "text": "was early",
+        "textJp": "早くつく"
+      },
+      {
+        "id": "b",
+        "text": "was absent",
+        "textJp": "休む"
+      },
+      {
+        "id": "c",
+        "text": "was lost",
+        "textJp": "まよう"
+      },
+      {
+        "id": "d",
+        "text": "was late",
+        "textJp": "遅刻する"
+      }
+    ],
+    "skill": "word-meaning",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Script and Vocabulary / Word meaning category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Vocabulary at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "電車が おくれて、かいぎに ちこくしました。Choose the meaning of ちこくしました.",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 0,
+    "difficulty": 2,
+    "explanation": "お金がかかる (okane ga kakaru) is the fixed collocation for something costing money. The subject is the money itself, so が marks it.",
+    "hint": "The subject is お金 (money). Which verb describes money being needed?",
+    "id": "jft-sv-wu-010",
+    "options": [
+      {
+        "id": "a",
+        "text": "かかります",
+        "textJp": "かかります"
+      },
+      {
+        "id": "b",
+        "text": "つかいます",
+        "textJp": "つかいます"
+      },
+      {
+        "id": "c",
+        "text": "はいります",
+        "textJp": "はいります"
+      },
+      {
+        "id": "d",
+        "text": "でます",
+        "textJp": "でます"
+      }
+    ],
+    "skill": "word-usage",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Script and Vocabulary / Word usage category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Vocabulary at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "Fill the blank: りょこうは お金が ___ ます。",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 0,
+    "difficulty": 1,
+    "explanation": "かぜをひく (kaze o hiku) is the fixed expression for catching a cold. Going to bed early is the natural follow-up.",
+    "hint": "Why would someone go to bed early?",
+    "id": "jft-sv-wm-003",
+    "options": [
+      {
+        "id": "a",
+        "text": "caught a cold",
+        "textJp": "かぜをひく"
+      },
+      {
+        "id": "b",
+        "text": "took medicine",
+        "textJp": "くすりをのむ"
+      },
+      {
+        "id": "c",
+        "text": "saw a doctor",
+        "textJp": "医者にみせる"
+      },
+      {
+        "id": "d",
+        "text": "felt dizzy",
+        "textJp": "めまいがする"
+      }
+    ],
+    "skill": "word-meaning",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Script and Vocabulary / Word meaning category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Vocabulary at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "かぜを ひきましたので、きのうは はやく ねました。Choose the meaning of かぜを ひきました。",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 3,
+    "difficulty": 1,
+    "explanation": "やくそくをまもる (yakusoku o mamoru) means to keep a promise. You keep promises made with friends.",
+    "hint": "Which of these is something you keep with a friend?",
+    "id": "jft-sv-wu-011",
+    "options": [
+      {
+        "id": "a",
+        "text": "でんわ",
+        "textJp": "でんわ"
+      },
+      {
+        "id": "b",
+        "text": "てがみ",
+        "textJp": "てがみ"
+      },
+      {
+        "id": "c",
+        "text": "しゃしん",
+        "textJp": "しゃしん"
+      },
+      {
+        "id": "d",
+        "text": "やくそく",
+        "textJp": "やくそく"
+      }
+    ],
+    "skill": "word-usage",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Script and Vocabulary / Word usage category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Vocabulary at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "Fill the blank: ともだちとの ___ を まもりました。",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 0,
+    "difficulty": 1,
+    "explanation": "さがす (sagasu) means to look for or search. Losing a key is exactly when you do this.",
+    "hint": "You lost the key. What are you doing in the room now?",
+    "id": "jft-sv-wm-004",
+    "options": [
+      {
+        "id": "a",
+        "text": "looking for",
+        "textJp": "さがす"
+      },
+      {
+        "id": "b",
+        "text": "cleaning up",
+        "textJp": "かたづける"
+      },
+      {
+        "id": "c",
+        "text": "giving up",
+        "textJp": "あきらめる"
+      },
+      {
+        "id": "d",
+        "text": "waiting for",
+        "textJp": "まつ"
+      }
+    ],
+    "skill": "word-meaning",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Script and Vocabulary / Word meaning category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Vocabulary at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "かぎを なくしたので、へやの中で さがしています。Choose the meaning of さがしています。",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 1,
+    "difficulty": 1,
+    "explanation": "はやく (hayaku) is the adverb form of the i-adjective はやい. Adverbs ending in く modify verbs like ねる (sleep).",
+    "hint": "The word modifies ねる (to sleep). Which form fits before a verb?",
+    "id": "jft-sv-wu-012",
+    "options": [
+      {
+        "id": "a",
+        "text": "はや",
+        "textJp": "はや"
+      },
+      {
+        "id": "b",
+        "text": "はやく",
+        "textJp": "はやく"
+      },
+      {
+        "id": "c",
+        "text": "はやい",
+        "textJp": "はやい"
+      },
+      {
+        "id": "d",
+        "text": "はやさ",
+        "textJp": "はやさ"
+      }
+    ],
+    "skill": "word-usage",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Script and Vocabulary / Word usage category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Vocabulary at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "Fill the blank: あしたは はやく おきるので、___ ねましょう。",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 3,
+    "difficulty": 1,
+    "explanation": "わすれる (wasureru) means to forget, including leaving something behind. The umbrella stayed in the train.",
+    "hint": "The umbrella is still in the train. What did the person do?",
+    "id": "jft-sv-wm-005",
+    "options": [
+      {
+        "id": "a",
+        "text": "broke",
+        "textJp": "こわす"
+      },
+      {
+        "id": "b",
+        "text": "sold",
+        "textJp": "うる"
+      },
+      {
+        "id": "c",
+        "text": "lent",
+        "textJp": "かす"
+      },
+      {
+        "id": "d",
+        "text": "forgot",
+        "textJp": "わすれる"
+      }
+    ],
+    "skill": "word-meaning",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Script and Vocabulary / Word meaning category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Vocabulary at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "かさを 電車の 中に わすれました。Choose the meaning of わすれました.",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 0,
+    "difficulty": 1,
+    "explanation": "あかるい (akarui) is the plain i-adjective form used at the end of a sentence with です. ひろくて connects the two adjectives.",
+    "hint": "The sentence ends with です. Which adjective form goes right before it?",
+    "id": "jft-sv-wu-013",
+    "options": [
+      {
+        "id": "a",
+        "text": "あかるい",
+        "textJp": "あかるい"
+      },
+      {
+        "id": "b",
+        "text": "あかるく",
+        "textJp": "あかるく"
+      },
+      {
+        "id": "c",
+        "text": "あかるさ",
+        "textJp": "あかるさ"
+      },
+      {
+        "id": "d",
+        "text": "あかり",
+        "textJp": "あかり"
+      }
+    ],
+    "skill": "word-usage",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Script and Vocabulary / Word usage category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Vocabulary at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "Fill the blank: この へやは ひろくて、___ です。",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 0,
+    "difficulty": 1,
+    "explanation": "しめきり (shimekiri) means deadline, the date something must be finished by.",
+    "hint": "Friday is the date. What does that date represent for the report?",
+    "id": "jft-sv-wm-006",
+    "options": [
+      {
+        "id": "a",
+        "text": "deadline",
+        "textJp": "しめきり"
+      },
+      {
+        "id": "b",
+        "text": "title",
+        "textJp": "だいめい"
+      },
+      {
+        "id": "c",
+        "text": "meeting",
+        "textJp": "かいぎ"
+      },
+      {
+        "id": "d",
+        "text": "holiday",
+        "textJp": "きゅうじつ"
+      }
+    ],
+    "skill": "word-meaning",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Script and Vocabulary / Word meaning category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Vocabulary at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "この レポートの しめきりは 金曜日です。Choose the meaning of しめきり.",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 2,
+    "difficulty": 1,
+    "explanation": "びょうきになる (byouki ni naru) is the fixed expression for falling ill. なる with に describes a change of state.",
+    "hint": "The child changed from healthy to sick. Which verb shows a change of state?",
+    "id": "jft-sv-wu-014",
+    "options": [
+      {
+        "id": "a",
+        "text": "ありました",
+        "textJp": "ありました"
+      },
+      {
+        "id": "b",
+        "text": "いました",
+        "textJp": "いました"
+      },
+      {
+        "id": "c",
+        "text": "なりました",
+        "textJp": "なりました"
+      },
+      {
+        "id": "d",
+        "text": "しました",
+        "textJp": "しました"
+      }
+    ],
+    "skill": "word-usage",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Script and Vocabulary / Word usage category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Vocabulary at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "Fill the blank: こどもが びょうきに ___ ました。",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 2,
+    "difficulty": 1,
+    "explanation": "けがをする (kega o suru) means to get injured. It happened to the leg during soccer.",
+    "hint": "What happened to the leg during the game?",
+    "id": "jft-sv-wm-007",
+    "options": [
+      {
+        "id": "a",
+        "text": "won a prize",
+        "textJp": "しょうをとる"
+      },
+      {
+        "id": "b",
+        "text": "took a break",
+        "textJp": "やすむ"
+      },
+      {
+        "id": "c",
+        "text": "got injured",
+        "textJp": "けがをする"
+      },
+      {
+        "id": "d",
+        "text": "felt tired",
+        "textJp": "つかれる"
+      }
+    ],
+    "skill": "word-meaning",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Script and Vocabulary / Word meaning category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Vocabulary at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "サッカーで あしに けがを しました。Choose the meaning of けがを しました.",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 2,
+    "difficulty": 1,
+    "explanation": "ばったりあう is the fixed expression for running into someone unexpectedly. Only あう fits with ばったり — the other verbs cannot take it.",
+    "hint": "The particle に marks a person. Which verb meets a person?",
+    "id": "jft-sv-wu-015",
+    "options": [
+      {
+        "id": "a",
+        "text": "ききました",
+        "textJp": "ききました"
+      },
+      {
+        "id": "b",
+        "text": "はなしました",
+        "textJp": "はなしました"
+      },
+      {
+        "id": "c",
+        "text": "あいました",
+        "textJp": "あいました"
+      },
+      {
+        "id": "d",
+        "text": "みました",
+        "textJp": "みました"
+      }
+    ],
+    "skill": "word-usage",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Script and Vocabulary / Word usage category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Vocabulary at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "Fill the blank: えきの まえで ともだちに ばったり ___ ました。",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 1,
+    "difficulty": 1,
+    "explanation": "しゅうりする (shuuri suru) means to repair. A broken watch goes to a shop for this.",
+    "hint": "The watch was broken. What does the shop do to it?",
+    "id": "jft-sv-wm-008",
+    "options": [
+      {
+        "id": "a",
+        "text": "cleaned",
+        "textJp": "あらう"
+      },
+      {
+        "id": "b",
+        "text": "repaired",
+        "textJp": "しゅうりする"
+      },
+      {
+        "id": "c",
+        "text": "threw away",
+        "textJp": "すてる"
+      },
+      {
+        "id": "d",
+        "text": "bought",
+        "textJp": "かう"
+      }
+    ],
+    "skill": "word-meaning",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Script and Vocabulary / Word meaning category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Vocabulary at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "こわれた とけいを お店で しゅうりしました。Choose the meaning of しゅうりしました.",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 1,
+    "difficulty": 1,
+    "explanation": "かぜをひく (kaze o hiku) is the fixed collocation for catching a cold. Medicine is のむ (drink/take), food is たべる.",
+    "hint": "かぜ (a cold) pairs with one specific verb.",
+    "id": "jft-sv-wu-001",
+    "options": [
+      {
+        "id": "a",
+        "text": "あるきました",
+        "textJp": "あるきました"
+      },
+      {
+        "id": "b",
+        "text": "ひきました",
+        "textJp": "ひきました"
+      },
+      {
+        "id": "c",
+        "text": "のみました",
+        "textJp": "のみました"
+      },
+      {
+        "id": "d",
+        "text": "たべました",
+        "textJp": "たべました"
+      }
+    ],
+    "skill": "word-usage",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Script and Vocabulary / Word usage category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Vocabulary at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "Fill the blank: かぜを ___ ました。",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 2,
+    "difficulty": 1,
+    "explanation": "やくそく (yakusoku) means a promise or an appointment to meet. Going to a movie with a friend is planned this way.",
+    "hint": "What do you make with a friend before going to a movie together?",
+    "id": "jft-sv-wm-009",
+    "options": [
+      {
+        "id": "a",
+        "text": "invitation",
+        "textJp": "しょうたい"
+      },
+      {
+        "id": "b",
+        "text": "farewell",
+        "textJp": "わかれ"
+      },
+      {
+        "id": "c",
+        "text": "promise / plan to meet",
+        "textJp": "やくそく"
+      },
+      {
+        "id": "d",
+        "text": "ticket",
+        "textJp": "チケット"
+      }
+    ],
+    "skill": "word-meaning",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Script and Vocabulary / Word meaning category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Vocabulary at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "ともだちと 映画を 見に 行く やくそくを しました。Choose the meaning of やくそく。",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 2,
+    "difficulty": 1,
+    "explanation": "てがみをだす (tegami o dasu) means to post or send a letter. That is what you do at a post office.",
+    "hint": "What do you do with a letter at the post office?",
+    "id": "jft-sv-wu-002",
+    "options": [
+      {
+        "id": "a",
+        "text": "すてました",
+        "textJp": "すてました"
+      },
+      {
+        "id": "b",
+        "text": "つくりました",
+        "textJp": "つくりました"
+      },
+      {
+        "id": "c",
+        "text": "だしました",
+        "textJp": "だしました"
+      },
+      {
+        "id": "d",
+        "text": "とりました",
+        "textJp": "とりました"
+      }
+    ],
+    "skill": "word-usage",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Script and Vocabulary / Word usage category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Vocabulary at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "Fill the blank: ゆうびんきょくで てがみを ___ ました。",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 0,
+    "difficulty": 2,
+    "explanation": "つごうがわるい (tsugou ga warui) means the timing or circumstances are inconvenient, so you cannot go. It is the standard polite reason for declining.",
+    "hint": "The person cannot go tomorrow. What is the usual polite reason?",
+    "id": "jft-sv-wm-010",
+    "options": [
+      {
+        "id": "a",
+        "text": "inconvenient / not possible",
+        "textJp": "つごうがわるい"
+      },
+      {
+        "id": "b",
+        "text": "feeling unwell",
+        "textJp": "ぐあいがわるい"
+      },
+      {
+        "id": "c",
+        "text": "bad weather",
+        "textJp": "てんきがわるい"
+      },
+      {
+        "id": "d",
+        "text": "out of money",
+        "textJp": "お金がない"
+      }
+    ],
+    "skill": "word-meaning",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Script and Vocabulary / Word meaning category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Vocabulary at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "あしたは つごうが わるいので、行けません。Choose the meaning of つごうが わるい.",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 2,
+    "difficulty": 1,
+    "explanation": "エアコンをつける (eakon o tsukeru) means to turn on the air conditioner. When it is hot, you turn it on, not off.",
+    "hint": "It is hot. Do you turn the air conditioner on or off?",
+    "id": "jft-sv-wu-003",
+    "options": [
+      {
+        "id": "a",
+        "text": "あけて",
+        "textJp": "あけて"
+      },
+      {
+        "id": "b",
+        "text": "しめて",
+        "textJp": "しめて"
+      },
+      {
+        "id": "c",
+        "text": "つけて",
+        "textJp": "つけて"
+      },
+      {
+        "id": "d",
+        "text": "きって",
+        "textJp": "きって"
+      }
+    ],
+    "skill": "word-usage",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Script and Vocabulary / Word usage category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Vocabulary at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "Fill the blank: あついので、エアコンを ___ ください。",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 1,
+    "difficulty": 1,
+    "explanation": "りょうきん (ryoukin) means the fee or charge you pay to use a facility. The pool costs 500 yen.",
+    "hint": "500 yen is what you pay. What is that payment called?",
+    "id": "jft-sv-wm-011",
+    "options": [
+      {
+        "id": "a",
+        "text": "salary",
+        "textJp": "きゅうりょう"
+      },
+      {
+        "id": "b",
+        "text": "fee / charge",
+        "textJp": "りょうきん"
+      },
+      {
+        "id": "c",
+        "text": "discount",
+        "textJp": "わりびき"
+      },
+      {
+        "id": "d",
+        "text": "refund",
+        "textJp": "へんきん"
+      }
+    ],
+    "skill": "word-meaning",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Script and Vocabulary / Word meaning category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Vocabulary at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "この プールの りょうきんは 500円です。Choose the meaning of りょうきん.",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 1,
+    "difficulty": 1,
+    "explanation": "かさをさす (kasa o sasu) is the fixed collocation for opening or holding up an umbrella. Rain starting is when you do it.",
+    "hint": "Rain started. What do you do with an umbrella?",
+    "id": "jft-sv-wu-004",
+    "options": [
+      {
+        "id": "a",
+        "text": "たちました",
+        "textJp": "たちました"
+      },
+      {
+        "id": "b",
+        "text": "さしました",
+        "textJp": "さしました"
+      },
+      {
+        "id": "c",
+        "text": "きりました",
+        "textJp": "きりました"
+      },
+      {
+        "id": "d",
+        "text": "のみました",
+        "textJp": "のみました"
+      }
+    ],
+    "skill": "word-usage",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Script and Vocabulary / Word usage category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Vocabulary at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "Fill the blank: あめが ふって きたので、かさを ___ ました。",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 1,
+    "difficulty": 2,
+    "explanation": "ことわる (kotowaru) means to decline or refuse an invitation. Since the person cannot go, declining is the natural result.",
+    "hint": "The person cannot go to the party. What did they do with the invitation?",
+    "id": "jft-sv-wm-012",
+    "options": [
+      {
+        "id": "a",
+        "text": "forgot",
+        "textJp": "わすれる"
+      },
+      {
+        "id": "b",
+        "text": "declined",
+        "textJp": "ことわる"
+      },
+      {
+        "id": "c",
+        "text": "accepted",
+        "textJp": "うける"
+      },
+      {
+        "id": "d",
+        "text": "postponed",
+        "textJp": "のばす"
+      }
+    ],
+    "skill": "word-meaning",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Script and Vocabulary / Word meaning category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Vocabulary at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "行けないので、パーティーの さそいを ことわりました。Choose the meaning of ことわりました.",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 3,
+    "difficulty": 1,
+    "explanation": "写真をとる (shashin o toru) means to take a photo, and てもいいですか asks permission. すわる (to sit) cannot take a photo as its object.",
+    "hint": "Which verb pairs with 写真 (photo)?",
+    "id": "jft-sv-wu-005",
+    "options": [
+      {
+        "id": "a",
+        "text": "すわっても",
+        "textJp": "すわっても"
+      },
+      {
+        "id": "b",
+        "text": "よんでも",
+        "textJp": "よんでも"
+      },
+      {
+        "id": "c",
+        "text": "きいても",
+        "textJp": "きいても"
+      },
+      {
+        "id": "d",
+        "text": "とっても",
+        "textJp": "とっても"
+      }
+    ],
+    "skill": "word-usage",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Script and Vocabulary / Word usage category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Vocabulary at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "Fill the blank: 写真を ___ も いいですか。",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 3,
+    "difficulty": 1,
+    "explanation": "なおす (naosu) means to fix or correct. The person fixed the part they got wrong.",
+    "hint": "There was a mistake. What do you do to a mistake?",
+    "id": "jft-sv-wm-013",
+    "options": [
+      {
+        "id": "a",
+        "text": "erased",
+        "textJp": "けす"
+      },
+      {
+        "id": "b",
+        "text": "copied",
+        "textJp": "うつす"
+      },
+      {
+        "id": "c",
+        "text": "read aloud",
+        "textJp": "よむ"
+      },
+      {
+        "id": "d",
+        "text": "corrected",
+        "textJp": "なおす"
+      }
+    ],
+    "skill": "word-meaning",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Script and Vocabulary / Word meaning category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Vocabulary at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "まちがえた ところを もう一度 なおしました。Choose the meaning of なおしました.",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 3,
+    "difficulty": 1,
+    "explanation": "メールをおくる (meeru o okuru) means to send an email. でんわをかける (make a call) pairs with phone, not email.",
+    "hint": "No phone, so the message goes by email. Which verb sends it?",
+    "id": "jft-sv-wu-006",
+    "options": [
+      {
+        "id": "a",
+        "text": "とって",
+        "textJp": "とって"
+      },
+      {
+        "id": "b",
+        "text": "かけて",
+        "textJp": "かけて"
+      },
+      {
+        "id": "c",
+        "text": "きって",
+        "textJp": "きって"
+      },
+      {
+        "id": "d",
+        "text": "おくって",
+        "textJp": "おくって"
+      }
+    ],
+    "skill": "word-usage",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Script and Vocabulary / Word usage category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Vocabulary at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "Fill the blank: でんわが ないので、メールを ___ ください。",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 0,
+    "difficulty": 1,
+    "explanation": "あんない (annai) means guidance or information that shows you the way. At a station it points you to the platform.",
+    "hint": "You look at it to find which platform to go to.",
+    "id": "jft-sv-wm-014",
+    "options": [
+      {
+        "id": "a",
+        "text": "information / guidance signs",
+        "textJp": "あんない"
+      },
+      {
+        "id": "b",
+        "text": "announcement",
+        "textJp": "ほうそう"
+      },
+      {
+        "id": "c",
+        "text": "advertisement",
+        "textJp": "こうこく"
+      },
+      {
+        "id": "d",
+        "text": "warning",
+        "textJp": "ちゅうい"
+      }
+    ],
+    "skill": "word-meaning",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Script and Vocabulary / Word meaning category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Vocabulary at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "えきの あんないを 見て、ホームに 行きました。Choose the meaning of あんない.",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 3,
+    "difficulty": 1,
+    "explanation": "まどをしめる (mado o shimeru) means to close the window. When it is cold, you close it. つける and きる pair with appliances like lights and air conditioners, not windows.",
+    "hint": "It is cold. What do you do to the window?",
+    "id": "jft-sv-wu-007",
+    "options": [
+      {
+        "id": "a",
+        "text": "あけて",
+        "textJp": "あけて"
+      },
+      {
+        "id": "b",
+        "text": "つけて",
+        "textJp": "つけて"
+      },
+      {
+        "id": "c",
+        "text": "きって",
+        "textJp": "きって"
+      },
+      {
+        "id": "d",
+        "text": "しめて",
+        "textJp": "しめて"
+      }
+    ],
+    "skill": "word-usage",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Script and Vocabulary / Word usage category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Vocabulary at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "Fill the blank: さむいので、まどを ___ ください。",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 1,
+    "difficulty": 2,
+    "explanation": "まにあう (maniau) means to make it in time. Hurrying is exactly what lets you catch the last train.",
+    "hint": "The person hurried. Did that help with the last train?",
+    "id": "jft-sv-wm-015",
+    "options": [
+      {
+        "id": "a",
+        "text": "ran after it",
+        "textJp": "おいかける"
+      },
+      {
+        "id": "b",
+        "text": "made it in time",
+        "textJp": "まにあう"
+      },
+      {
+        "id": "c",
+        "text": "missed it",
+        "textJp": "のがす"
+      },
+      {
+        "id": "d",
+        "text": "waited for it",
+        "textJp": "まつ"
+      }
+    ],
+    "skill": "word-meaning",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Script and Vocabulary / Word meaning category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Vocabulary at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "いそいだので、さいしゅう電車に まにあいました。Choose the meaning of まにあいました.",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 2,
+    "difficulty": 1,
+    "explanation": "メガネをかける (megane o kakeru) is the fixed verb for wearing glasses. Clothes are きる, shoes are はく, hats are かぶる.",
+    "hint": "Each thing you wear has its own verb. Which verb wears glasses?",
+    "id": "jft-sv-wu-008",
+    "options": [
+      {
+        "id": "a",
+        "text": "はいています",
+        "textJp": "はいています"
+      },
+      {
+        "id": "b",
+        "text": "かぶっています",
+        "textJp": "かぶっています"
+      },
+      {
+        "id": "c",
+        "text": "かけています",
+        "textJp": "かけています"
+      },
+      {
+        "id": "d",
+        "text": "きています",
+        "textJp": "きています"
+      }
+    ],
+    "skill": "word-usage",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Script and Vocabulary / Word usage category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Vocabulary at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "Fill the blank: メガネを ___.",
+    "type": "mcq",
+    "version": 1
+  }
+]

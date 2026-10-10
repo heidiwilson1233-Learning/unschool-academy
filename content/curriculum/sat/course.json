@@ -1,0 +1,22 @@
+{
+  "catalog_id": "EX-500",
+  "description": "Preparation path for the SAT Math section (digital SAT): 44 questions across 2 modules of 35 minutes each; ~75% four-option multiple-choice, ~25% student-produced response; calculator permitted throughout; no penalty for wrong answers. This unit covers the Algebra domain (~35% of Math): linear equations, functions, systems, and inequalities — sourced from College Board's published content domains. Reading & Writing unit added: Standard English Conventions (subject-verb agreement, verb tense, pronoun clarity) and Information and Ideas (main idea, inference) — per College Board's digital SAT Reading and Writing content domains (Craft and Structure ~13-15 Qs; Information and Ideas ~12-14; Standard English Conventions ~11-15; Expression of Ideas ~8-12).",
+  "estimated_hours": 120,
+  "id": "sat",
+  "skills": [
+    "linear-equations-one-variable",
+    "linear-equations-two-variables",
+    "linear-functions",
+    "systems-two-linear-equations",
+    "linear-inequalities",
+    "linear-models",
+    "subject-verb-agreement",
+    "verb-tense",
+    "pronoun-clarity",
+    "main-idea",
+    "inference"
+  ],
+  "status": "in-progress",
+  "title": "SAT — Math: Algebra + Reading & Writing",
+  "version": 2
+}
