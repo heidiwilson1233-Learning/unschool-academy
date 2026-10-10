@@ -145,7 +145,7 @@ export const CATEGORY_META: CategoryMeta[] = [
     name: "Global Graduate & Entry",
     tagline: "Admissions tests for graduate and professional study",
     description:
-      "The gatekeepers of graduate school — GRE, GMAT, CAT (India), MCAT, LSAT, UCAT and university-specific admissions assessments, each with its own logic and traps.",
+      "The gatekeepers of graduate school — GRE, GMAT, CAT (India), MCAT, LSAT, UCAT and university-specific admissions assessments, each with its own format and scoring logic.",
   },
   {
     slug: "healthcare-licensing",
@@ -159,7 +159,7 @@ export const CATEGORY_META: CategoryMeta[] = [
     name: "India Entrance & Government",
     tagline: "Indian entrance examinations, paper by paper",
     description:
-      "India's great academic sorters — JEE, NEET, GATE papers, CUET subjects, BITSAT and state CETs — tracked per paper, because no two papers test the same thing.",
+      "India's great academic sorters: JEE, NEET, GATE papers, CUET subjects, BITSAT and state CETs. Tracked per paper, because no two papers test the same thing.",
   },
   {
     slug: "international-secondary",
@@ -180,7 +180,7 @@ export const CATEGORY_META: CategoryMeta[] = [
     name: "Law, Teaching & Public Service",
     tagline: "Bar, securities, teaching and citizenship tests",
     description:
-      "Licenses to practise and rights to belong — bar examinations, securities licenses, teaching credentials (CTET, UGC NET, Praxis) and citizenship tests.",
+      "Bar examinations, securities licences, teaching credentials (CTET, UGC NET, Praxis) and citizenship tests — the exams that licence a practice or open the door to a country.",
   },
   {
     slug: "tech-cloud",
@@ -201,7 +201,7 @@ export const CATEGORY_META: CategoryMeta[] = [
     name: "US Admissions & School",
     tagline: "SAT, ACT, AP subjects and US school exams",
     description:
-      "America's admissions gauntlet — SAT, ACT, PSAT, CLEP and every AP subject tracked individually, because Calculus BC and Art History are different universes.",
+      "America's admissions gauntlet — SAT, ACT, PSAT, CLEP and every AP subject tracked individually, because Calculus BC and Art History test nothing alike.",
   },
 ];
 
@@ -294,6 +294,113 @@ export function kindLabel(kind: string): string {
     .split("_")
     .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
     .join(" ");
+}
+
+/* ------------------------------------------------------------------ */
+/* Catalog summary helpers (run 42 — honest counts, computed not hardcoded) */
+/* ------------------------------------------------------------------ */
+
+export interface CatalogStatusCounts {
+  total: number;
+  practiceReady: number;
+  verified: number;
+  research: number;
+  retired: number;
+}
+
+/** Counts over the live catalog: every number on /exams/catalog comes from here. */
+export function getCatalogStatusCounts(): CatalogStatusCounts {
+  const counts: CatalogStatusCounts = {
+    total: 0,
+    practiceReady: 0,
+    verified: 0,
+    research: 0,
+    retired: 0,
+  };
+  for (const e of CATALOG) {
+    counts.total++;
+    const st = getPublicStatus(e);
+    if (st === "practice-ready") counts.practiceReady++;
+    else if (st === "verified") counts.verified++;
+    else if (st === "research") counts.research++;
+    else counts.retired++;
+  }
+  return counts;
+}
+
+export interface PracticeReadyEntry {
+  id: string;
+  name: string;
+  href: string;
+}
+
+/** Entries with real practice on the site (derived from OVERLAYS, never hardcoded). */
+export function getPracticeReadyEntries(): PracticeReadyEntry[] {
+  return Object.entries(OVERLAYS)
+    .filter(([, o]) => o.practiceReady)
+    .map(([id, o]) => {
+      const entry = CATALOG.find((e) => e.id === id.toUpperCase());
+      return { id, name: entry?.exam_or_track ?? id, href: o.practiceHref ?? examUrl(id) };
+    });
+}
+
+export interface CategoryStatusCounts {
+  total: number;
+  verified: number;
+  practiceReady: number;
+  retired: number;
+}
+
+/** Per-category counts for the "Browse by category" ledger rows. */
+export function getCategoryStatusCounts(categoryName: string): CategoryStatusCounts {
+  const counts: CategoryStatusCounts = { total: 0, verified: 0, practiceReady: 0, retired: 0 };
+  for (const e of getExamsByCategory(categoryName)) {
+    counts.total++;
+    const st = getPublicStatus(e);
+    if (st === "practice-ready") counts.practiceReady++;
+    else if (st === "verified") counts.verified++;
+    else if (st === "retired") counts.retired++;
+  }
+  return counts;
+}
+
+/* ------------------------------------------------------------------ */
+/* Client-safe row projection (run 42 perf)                             */
+/*                                                                     */
+/* lib/catalog.ts statically imports ~212KB of category JSON plus       */
+/* ~100KB validation.json. The "use client" CatalogBrowser only needs  */
+/* a slim projection with statuses precomputed server-side, so this    */
+/* type + builder keep the dataset and validation notes out of the      */
+/* client bundle (~65% smaller raw payload). Pure + serializable: safe  */
+/* as RSC props into the client component.                             */
+/* ------------------------------------------------------------------ */
+
+export interface CatalogRow {
+  id: string;
+  categoryName: string;
+  region: string;
+  name: string;
+  issuingBody: string;
+  examFamily: string;
+  kind: string;
+  status: PublicStatus;
+  statusLabel: string;
+  href: string;
+}
+
+export function getCatalogRows(): CatalogRow[] {
+  return CATALOG.map((e) => ({
+    id: e.id,
+    categoryName: e.category,
+    region: e.region,
+    name: e.exam_or_track,
+    issuingBody: e.issuing_body,
+    examFamily: e.exam_family,
+    kind: kindLabel(e.kind),
+    status: getPublicStatus(e),
+    statusLabel: statusLabel(getPublicStatus(e)),
+    href: examUrl(e.id),
+  }));
 }
 
 /* ------------------------------------------------------------------ */
