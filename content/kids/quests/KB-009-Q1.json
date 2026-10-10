@@ -1,0 +1,25 @@
+{
+  "id": "KB-009-Q1",
+  "book_id": "KB-009",
+  "quest_type": "read-aloud",
+  "subject": "words",
+  "track": "school-starters",
+  "character": "tara",
+  "title": "The Very Hungry Caterpillar",
+  "objective": "Follow a story in order: days of the week and what the caterpillar ate.",
+  "difficulty": 1,
+  "story_beats": [
+    { "text": "On Sunday, a tiny egg hatched. Out came a very hungry caterpillar!" },
+    { "text": "On Monday he ate ONE apple. On Tuesday he ate TWO pears. On Wednesday he ate THREE plums." },
+    { "text": "On Thursday, Friday and Saturday he ate LOTS of food — and got a tummy ache!" },
+    { "text": "Then he built a cocoon... and out came a beautiful BUTTERFLY!" }
+  ],
+  "interactions": [
+    { "type": "order", "prompt": "Put the days in order: what did he eat first?", "options": ["Apple (Monday)", "Pears (Tuesday)", "Plums (Wednesday)"], "correct": 0 },
+    { "type": "tap-choice", "prompt": "What did the caterpillar become at the end?", "options": ["A butterfly", "A bigger egg", "A bird"], "correct": 0 }
+  ],
+  "feedback": { "correct": "You followed the whole story! Tara is clapping with her tail!", "retry": "Let's listen again — what happened FIRST? The apple came on Monday!" },
+  "off_screen": "Draw the caterpillar AND the butterfly. Which one do you like more?",
+  "parent_note": "Comprehension: sequencing, days of the week, story recall.",
+  "status": "draft-pending-educator-review"
+}

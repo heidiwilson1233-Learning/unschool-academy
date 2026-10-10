@@ -1,0 +1,25 @@
+{
+  "id": "KB-001-Q1",
+  "book_id": "KB-001",
+  "quest_type": "vocabulary",
+  "subject": "words",
+  "track": "school-starters",
+  "character": "tara",
+  "title": "Clever Words from the Forest",
+  "objective": "Learn and use 6 new words from the Panchatantra: clever, forest, trick, friend, brave, share.",
+  "difficulty": 1,
+  "story_beats": [
+    { "text": "Tara opens her sketchbook. 'The Panchatantra is full of clever animals — and clever WORDS! Let's collect six of them today.'" },
+    { "text": "'First word: CLEVER. Clever means thinking of a smart idea. The rabbit was clever when he tricked the lion!'" },
+    { "text": "'Now YOU try. I will show you three pictures — tap the one that shows something clever.'" }
+  ],
+  "interactions": [
+    { "type": "tap-choice", "prompt": "Which picture shows something CLEVER?", "options": ["A rabbit digging a tunnel to escape", "A rock sitting still", "A cloud floating by"], "correct": 0 },
+    { "type": "tap-choice", "prompt": "BRAVE means not afraid to do the right thing. Who was brave?", "options": ["The mouse who helped the lion", "The leaf that fell down", "The stone by the river"], "correct": 0 },
+    { "type": "speak-repeat", "prompt": "Say it with me: 'I can be clever AND kind!'" }
+  ],
+  "feedback": { "correct": "Yes! You are collecting clever words like acorns!", "retry": "Good try! Listen again — clever means a SMART idea. Which picture shows a smart idea?" },
+  "off_screen": "Tonight, tell someone at home about one clever thing YOU did today.",
+  "parent_note": "Vocabulary: clever, brave (+ forest, trick, friend, share in story). Listening + speaking.",
+  "status": "draft-pending-educator-review"
+}

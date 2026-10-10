@@ -1,0 +1,23 @@
+{
+  "id": "KB-015-Q2",
+  "book_id": "KB-015",
+  "quest_type": "comprehension",
+  "subject": "words",
+  "track": "adventure-club",
+  "character": "tara",
+  "title": "Who Tricked Whom?",
+  "objective": "Track character plans across a story: identify the mouse's trick and why it worked.",
+  "difficulty": 2,
+  "story_beats": [
+    { "text": "The mouse told each animal: 'There's a Gruffalo coming — and he wants to eat YOU!' The animals ran away." },
+    { "text": "Then the mouse met the REAL Gruffalo. 'Follow me,' said the mouse, 'and see how everyone is afraid of ME!'" }
+  ],
+  "interactions": [
+    { "type": "tap-choice", "prompt": "Why did the animals run away?", "options": ["The mouse scared them with the Gruffalo story", "They were late for dinner", "It started raining"], "correct": 0 },
+    { "type": "tap-choice", "prompt": "The mouse's trick worked because...", "options": ["He used what the animals feared", "He was bigger than them", "He sang a song"], "correct": 0 }
+  ],
+  "feedback": { "correct": "You saw right through the trick — like the clever mouse!", "retry": "Think: what did the mouse SAY to each animal? That's the key!" },
+  "off_screen": "Tell the Gruffalo story to someone, but change the ending. What happens?",
+  "parent_note": "Comprehension: inference, character motivation, cause and effect.",
+  "status": "draft-pending-educator-review"
+}

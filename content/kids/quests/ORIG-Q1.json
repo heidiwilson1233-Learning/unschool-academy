@@ -1,0 +1,22 @@
+{
+  "id": "ORIG-Q1",
+  "book_id": null,
+  "quest_type": "math-in-story",
+  "subject": "numbers",
+  "track": "school-starters",
+  "character": "momo",
+  "title": "Momo's Mango Count",
+  "objective": "Count to 20 with one-to-one correspondence.",
+  "difficulty": 1,
+  "story_beats": [
+    { "text": "Momo's mango tree is FULL today! 'Let's count the mangoes together — tap each one, nice and slow!'" }
+  ],
+  "interactions": [
+    { "type": "count-tap", "prompt": "Tap each mango. How many?", "target_count": 12, "options": ["10", "12", "14"], "correct": 1 },
+    { "type": "count-tap", "prompt": "Momo shakes the tree — 5 more fall! Now?", "target_count": 17, "options": ["15", "16", "17"], "correct": 2 }
+  ],
+  "feedback": { "correct": "17 mangoes! Momo is impressed — and a little hungry!", "retry": "Slow down, counter! Tap each mango exactly once." },
+  "off_screen": "Count the fruits in your kitchen. How many altogether?",
+  "parent_note": "Maths: counting to 20, adding small groups.",
+  "status": "draft-pending-educator-review"
+}

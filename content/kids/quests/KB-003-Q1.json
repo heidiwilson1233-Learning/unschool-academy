@@ -1,0 +1,23 @@
+{
+  "id": "KB-003-Q1",
+  "book_id": "KB-003",
+  "quest_type": "value-quest",
+  "subject": "values",
+  "track": "quest-makers",
+  "character": "tara",
+  "title": "The Blue Umbrella's Lesson",
+  "objective": "Understand generosity: why Binya sharing her umbrella mattered more than owning it.",
+  "difficulty": 2,
+  "story_beats": [
+    { "text": "Binya had a beautiful blue umbrella — the prettiest in the village. Everyone wanted it." },
+    { "text": "In the end, Binya gave her umbrella to someone who needed it more. She felt happier than when she owned it." }
+  ],
+  "interactions": [
+    { "type": "tap-choice", "prompt": "Why did Binya feel happy after giving away her umbrella?", "options": ["Sharing made someone else happy too", "She got a new umbrella", "Everyone forgot about it"], "correct": 0 },
+    { "type": "tap-choice", "prompt": "You have one chocolate and a friend has none. The generous choice is...", "options": ["Share it", "Eat it quickly", "Hide it"], "correct": 0 }
+  ],
+  "feedback": { "correct": "You understand what Binya learned — sharing multiplies happiness!", "retry": "Think about how the OTHER person felt. What would kindness do?" },
+  "off_screen": "Give something of yours to someone today — a toy, a drawing, your time.",
+  "parent_note": "Values: generosity, empathy, understanding others' feelings.",
+  "status": "draft-pending-educator-review"
+}

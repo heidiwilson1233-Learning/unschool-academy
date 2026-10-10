@@ -1,0 +1,24 @@
+{
+  "id": "KB-015-Q1",
+  "book_id": "KB-015",
+  "quest_type": "vocabulary",
+  "subject": "words",
+  "track": "school-starters",
+  "character": "tara",
+  "title": "Gruffalo Words",
+  "objective": "Learn descriptive words: terrible, tusks, claws, brave, clever.",
+  "difficulty": 1,
+  "story_beats": [
+    { "text": "Tara shivers playfully. 'The Gruffalo has TERRIBLE tusks and TERRIBLE claws! Terrible means very, very scary!'" },
+    { "text": "But the little mouse was CLEVER — he tricked the Gruffalo with his smart ideas!" }
+  ],
+  "interactions": [
+    { "type": "tap-choice", "prompt": "Which word means 'very scary'?", "options": ["Terrible", "Tiny", "Sweet"], "correct": 0 },
+    { "type": "tap-choice", "prompt": "The mouse tricked the Gruffalo. The mouse was...", "options": ["Clever", "Sleepy", "Hungry"], "correct": 0 },
+    { "type": "speak-repeat", "prompt": "Say it loud: 'Terrible tusks!'" }
+  ],
+  "feedback": { "correct": "Wonderful words! Your vocabulary is growing like the deep dark wood!", "retry": "Listen to the story again — terrible means VERY scary!" },
+  "off_screen": "Make your own terrible face in the mirror. Roar!",
+  "parent_note": "Vocabulary: terrible, tusks, claws, brave, clever. Descriptive language.",
+  "status": "draft-pending-educator-review"
+}
