@@ -1,0 +1,602 @@
+[
+  {
+    "id": "jee-ma-alg-qe-001",
+    "skill": "quadratic-equations",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Which of the following is a quadratic equation?",
+    "options": [
+      "x³ + 2x = 5",
+      "x² − 5x + 6 = 0",
+      "1/x + x = 2",
+      "√x + 3 = 0"
+    ],
+    "answer": 1,
+    "explanation": "A quadratic equation has the standard form ax² + bx + c = 0 with a ≠ 0. Only option 2 is a polynomial equation of degree 2: x² − 5x + 6 = 0. Option 1 is cubic, option 3 is not a polynomial (1/x term), option 4 involves a square root of x.",
+    "hint": "Look for the equation where the highest power of x is exactly 2.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Quadratic Equations); NTA JEE Main 2026 Unit 2 — quadratic equations in real and complex number system, relations between roots and coefficients, nature of roots",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-qe-002",
+    "skill": "quadratic-equations",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "The equation (x + 2)(x − 3) = 5 in standard form ax² + bx + c = 0 is:",
+    "options": [
+      "x² − x − 11 = 0",
+      "x² + x − 11 = 0",
+      "x² − x + 11 = 0",
+      "x² − 5x − 11 = 0"
+    ],
+    "answer": 0,
+    "explanation": "Expand: (x + 2)(x − 3) = x² − 3x + 2x − 6 = x² − x − 6. So x² − x − 6 = 5. Subtract 5: x² − x − 11 = 0.",
+    "hint": "Expand the brackets first, then move 5 to the left side.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Quadratic Equations); NTA JEE Main 2026 Unit 2 — quadratic equations in real and complex number system, relations between roots and coefficients, nature of roots",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-qe-003",
+    "skill": "quadratic-equations",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "The discriminant of 2x² + 5x + 2 = 0 is:",
+    "options": [
+      "9",
+      "33",
+      "−9",
+      "41"
+    ],
+    "answer": 0,
+    "explanation": "D = b² − 4ac = (5)² − 4(2)(2) = 25 − 16 = 9.",
+    "hint": "D = b² − 4ac. Here a = 2, b = 5, c = 2.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Quadratic Equations); NTA JEE Main 2026 Unit 2 — quadratic equations in real and complex number system, relations between roots and coefficients, nature of roots",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-qe-004",
+    "skill": "quadratic-equations",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "The nature of the roots of x² + 4x + 4 = 0 is:",
+    "options": [
+      "real and distinct",
+      "real and equal",
+      "no real roots",
+      "one root is zero"
+    ],
+    "answer": 1,
+    "explanation": "D = b² − 4ac = 16 − 4(1)(4) = 16 − 16 = 0. When D = 0 the roots are real and equal (a repeated root, x = −2).",
+    "hint": "Compute b² − 4ac. What does D = 0 tell you?",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Quadratic Equations); NTA JEE Main 2026 Unit 2 — quadratic equations in real and complex number system, relations between roots and coefficients, nature of roots",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-qe-005",
+    "skill": "quadratic-equations",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "The nature of the roots of 3x² − 2x + 5 = 0 is:",
+    "options": [
+      "real and distinct",
+      "real and equal",
+      "no real roots",
+      "roots are both zero"
+    ],
+    "answer": 2,
+    "explanation": "D = b² − 4ac = (−2)² − 4(3)(5) = 4 − 60 = −56 < 0. A negative discriminant means the equation has no real roots (the roots are complex).",
+    "hint": "Compute b² − 4ac and check its sign.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Quadratic Equations); NTA JEE Main 2026 Unit 2 — quadratic equations in real and complex number system, relations between roots and coefficients, nature of roots",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-qe-006",
+    "skill": "quadratic-equations",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "The roots of x² − 7x + 12 = 0 are:",
+    "options": [
+      "3 and 4",
+      "−3 and −4",
+      "3 and −4",
+      "6 and 2"
+    ],
+    "answer": 0,
+    "explanation": "Factorise: x² − 7x + 12 = (x − 3)(x − 4). Setting each factor to zero gives x = 3 or x = 4. Check: 3 + 4 = 7 = −b/a and 3 × 4 = 12 = c/a. ✓",
+    "hint": "Find two numbers that add to 7 and multiply to 12.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Quadratic Equations); NTA JEE Main 2026 Unit 2 — quadratic equations in real and complex number system, relations between roots and coefficients, nature of roots",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-qe-007",
+    "skill": "quadratic-equations",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "The sum of the roots of 2x² − 8x + 6 = 0 is:",
+    "options": [
+      "4",
+      "−4",
+      "3",
+      "−3"
+    ],
+    "answer": 0,
+    "explanation": "Sum of roots = −b/a = −(−8)/2 = 8/2 = 4. Check: dividing by 2 gives x² − 4x + 3 = (x − 1)(x − 3), roots 1 and 3, sum = 4. ✓",
+    "hint": "Use −b/a. Watch the sign of b.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Quadratic Equations); NTA JEE Main 2026 Unit 2 — quadratic equations in real and complex number system, relations between roots and coefficients, nature of roots",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-qe-008",
+    "skill": "quadratic-equations",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "The product of the roots of 3x² + 5x − 2 = 0 is:",
+    "options": [
+      "−2/3",
+      "2/3",
+      "−5/3",
+      "5/3"
+    ],
+    "answer": 0,
+    "explanation": "Product of roots = c/a = (−2)/3 = −2/3. Check: roots are x = [−5 ± √(25 + 24)]/6 = [−5 ± 7]/6, i.e. 1/3 and −2; product = −2/3. ✓",
+    "hint": "Use c/a. Here c is negative.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Quadratic Equations); NTA JEE Main 2026 Unit 2 — quadratic equations in real and complex number system, relations between roots and coefficients, nature of roots",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-qe-009",
+    "skill": "quadratic-equations",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "A quadratic equation whose roots are 2 and −5 is:",
+    "options": [
+      "x² + 3x − 10 = 0",
+      "x² − 3x − 10 = 0",
+      "x² + 3x + 10 = 0",
+      "x² − 7x + 10 = 0"
+    ],
+    "answer": 0,
+    "explanation": "Sum = 2 + (−5) = −3, product = 2 × (−5) = −10. Equation: x² − (sum)x + product = x² + 3x − 10 = 0. Check by substitution: x = 2 → 4 + 6 − 10 = 0 ✓; x = −5 → 25 − 15 − 10 = 0 ✓.",
+    "hint": "Use x² − (sum of roots)x + (product of roots) = 0.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Quadratic Equations); NTA JEE Main 2026 Unit 2 — quadratic equations in real and complex number system, relations between roots and coefficients, nature of roots",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-qe-010",
+    "skill": "quadratic-equations",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "The roots of x² − 9 = 0 are:",
+    "options": [
+      "3 and 3",
+      "3 and −3",
+      "−3 and −3",
+      "9 and −9"
+    ],
+    "answer": 1,
+    "explanation": "x² = 9, so x = ±3. Check: (3)² − 9 = 0 ✓ and (−3)² − 9 = 0 ✓.",
+    "hint": "Move 9 to the right side, then take square roots — both signs.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Quadratic Equations); NTA JEE Main 2026 Unit 2 — quadratic equations in real and complex number system, relations between roots and coefficients, nature of roots",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-qe-011",
+    "skill": "quadratic-equations",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "The roots of 5x² = 20 are:",
+    "options": [
+      "2 and 2",
+      "4 and −4",
+      "2 and −2",
+      "5 and 4"
+    ],
+    "answer": 2,
+    "explanation": "Divide by 5: x² = 4, so x = ±2. Check: 5(2)² = 20 ✓ and 5(−2)² = 20 ✓.",
+    "hint": "Divide first, then take ± square root.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Quadratic Equations); NTA JEE Main 2026 Unit 2 — quadratic equations in real and complex number system, relations between roots and coefficients, nature of roots",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-qe-012",
+    "skill": "quadratic-equations",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "If one root of x² + kx + 6 = 0 is 2, then k equals:",
+    "options": [
+      "−5",
+      "5",
+      "−3",
+      "3"
+    ],
+    "answer": 0,
+    "explanation": "Substitute x = 2: (2)² + k(2) + 6 = 0 → 4 + 2k + 6 = 0 → 2k = −10 → k = −5. Check: x² − 5x + 6 = (x − 2)(x − 3) = 0, roots 2 and 3. ✓",
+    "hint": "A root satisfies the equation — substitute x = 2 and solve for k.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Quadratic Equations); NTA JEE Main 2026 Unit 2 — quadratic equations in real and complex number system, relations between roots and coefficients, nature of roots",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-qe-013",
+    "skill": "quadratic-equations",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "The discriminant of x² − 10x + 25 = 0 is:",
+    "options": [
+      "0",
+      "100",
+      "−100",
+      "50"
+    ],
+    "answer": 0,
+    "explanation": "D = b² − 4ac = (−10)² − 4(1)(25) = 100 − 100 = 0. So the roots are real and equal (x = 5, repeated).",
+    "hint": "b² − 4ac with a = 1, b = −10, c = 25.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Quadratic Equations); NTA JEE Main 2026 Unit 2 — quadratic equations in real and complex number system, relations between roots and coefficients, nature of roots",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-qe-014",
+    "skill": "quadratic-equations",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "For what value of k does kx² − 4x + 1 = 0 have equal roots?",
+    "options": [
+      "4",
+      "−4",
+      "2",
+      "16"
+    ],
+    "answer": 0,
+    "explanation": "Equal roots need D = 0: b² − 4ac = (−4)² − 4(k)(1) = 16 − 4k = 0 → 4k = 16 → k = 4. Check: 4x² − 4x + 1 = (2x − 1)² = 0, root x = 1/2 repeated. ✓",
+    "hint": "Set the discriminant equal to zero and solve for k.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Quadratic Equations); NTA JEE Main 2026 Unit 2 — quadratic equations in real and complex number system, relations between roots and coefficients, nature of roots",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-qe-015",
+    "skill": "quadratic-equations",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "The roots of x² + x − 6 = 0 are:",
+    "options": [
+      "2 and −3",
+      "−2 and 3",
+      "6 and −1",
+      "−6 and 1"
+    ],
+    "answer": 0,
+    "explanation": "Factorise: x² + x − 6 = (x + 3)(x − 2). Roots: x = 2 or x = −3. Check: 2 + (−3) = −1 = −b/a ✓; 2 × (−3) = −6 = c/a ✓.",
+    "hint": "Find two numbers that multiply to −6 and add to +1.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Quadratic Equations); NTA JEE Main 2026 Unit 2 — quadratic equations in real and complex number system, relations between roots and coefficients, nature of roots",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-qe-016",
+    "skill": "quadratic-equations",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "The sum of the roots of x² + 3x − 10 = 0 is:",
+    "options": [
+      "−3",
+      "3",
+      "−10",
+      "10"
+    ],
+    "answer": 0,
+    "explanation": "Sum = −b/a = −3/1 = −3. Check: roots are x = [−3 ± √(9 + 40)]/2 = [−3 ± 7]/2, i.e. 2 and −5; sum = −3. ✓",
+    "hint": "−b/a — here b = +3, so the sum is −3.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Quadratic Equations); NTA JEE Main 2026 Unit 2 — quadratic equations in real and complex number system, relations between roots and coefficients, nature of roots",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-qe-017",
+    "skill": "quadratic-equations",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "The product of the roots of x² − 6x + 9 = 0 is:",
+    "options": [
+      "9",
+      "−9",
+      "6",
+      "−6"
+    ],
+    "answer": 0,
+    "explanation": "Product = c/a = 9/1 = 9. Check: x² − 6x + 9 = (x − 3)² = 0, root 3 (repeated); 3 × 3 = 9. ✓",
+    "hint": "c/a — straightforward here.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Quadratic Equations); NTA JEE Main 2026 Unit 2 — quadratic equations in real and complex number system, relations between roots and coefficients, nature of roots",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-qe-018",
+    "skill": "quadratic-equations",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "A quadratic equation with roots −1 and −4 is:",
+    "options": [
+      "x² + 5x + 4 = 0",
+      "x² − 5x + 4 = 0",
+      "x² + 5x − 4 = 0",
+      "x² − 3x − 4 = 0"
+    ],
+    "answer": 0,
+    "explanation": "Sum = −1 + (−4) = −5, product = (−1)(−4) = 4. Equation: x² − (sum)x + product = x² + 5x + 4 = 0. Check: (x + 1)(x + 4) = x² + 5x + 4 ✓.",
+    "hint": "Sum and product first, then x² − (sum)x + product = 0.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Quadratic Equations); NTA JEE Main 2026 Unit 2 — quadratic equations in real and complex number system, relations between roots and coefficients, nature of roots",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-qe-019",
+    "skill": "quadratic-equations",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "The nature of the roots of x² + 2x + 10 = 0 is:",
+    "options": [
+      "real and distinct",
+      "real and equal",
+      "no real roots",
+      "one real, one complex"
+    ],
+    "answer": 2,
+    "explanation": "D = b² − 4ac = 4 − 4(1)(10) = 4 − 40 = −36 < 0. Negative discriminant → no real roots.",
+    "hint": "Compute b² − 4ac and check its sign.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Quadratic Equations); NTA JEE Main 2026 Unit 2 — quadratic equations in real and complex number system, relations between roots and coefficients, nature of roots",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-qe-020",
+    "skill": "quadratic-equations",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "The discriminant of 4x² − 12x + 9 = 0 is:",
+    "options": [
+      "0",
+      "144",
+      "−144",
+      "72"
+    ],
+    "answer": 0,
+    "explanation": "D = b² − 4ac = (−12)² − 4(4)(9) = 144 − 144 = 0. Roots are real and equal: (2x − 3)² = 0, x = 3/2 repeated.",
+    "hint": "b² − 4ac with a = 4, b = −12, c = 9.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Quadratic Equations); NTA JEE Main 2026 Unit 2 — quadratic equations in real and complex number system, relations between roots and coefficients, nature of roots",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-qe-021",
+    "skill": "quadratic-equations",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "If α and β are the roots of x² − 5x + 6 = 0, then α + β equals:",
+    "options": [
+      "5",
+      "−5",
+      "6",
+      "−6"
+    ],
+    "answer": 0,
+    "explanation": "α + β = −b/a = 5. Check: roots are 2 and 3, and 2 + 3 = 5. ✓",
+    "hint": "The sum of the roots formula, −b/a.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Quadratic Equations); NTA JEE Main 2026 Unit 2 — quadratic equations in real and complex number system, relations between roots and coefficients, nature of roots",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-qe-022",
+    "skill": "quadratic-equations",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "The roots of 2x² + 7x + 3 = 0 are:",
+    "options": [
+      "−1/2 and −3",
+      "1/2 and 3",
+      "−1/2 and 3",
+      "−7 and −3"
+    ],
+    "answer": 0,
+    "explanation": "D = 49 − 24 = 25. x = [−7 ± 5]/4 → x = −2/4 = −1/2 or x = −12/4 = −3. Check: 2(−1/2)² + 7(−1/2) + 3 = 1/2 − 7/2 + 3 = 0 ✓.",
+    "hint": "Use the quadratic formula: x = [−b ± √(b²−4ac)] / 2a.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Quadratic Equations); NTA JEE Main 2026 Unit 2 — quadratic equations in real and complex number system, relations between roots and coefficients, nature of roots",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-qe-023",
+    "skill": "quadratic-equations",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "The value(s) of k for which x² + 2kx + 9 = 0 has equal roots is/are:",
+    "options": [
+      "k = 3 or k = −3",
+      "k = 3 only",
+      "k = −3 only",
+      "k = 9"
+    ],
+    "answer": 0,
+    "explanation": "D = 0: (2k)² − 4(1)(9) = 4k² − 36 = 0 → k² = 9 → k = ±3. Check k = 3: x² + 6x + 9 = (x + 3)² ✓; k = −3: x² − 6x + 9 = (x − 3)² ✓.",
+    "hint": "Set D = 0. Remember k² = 9 gives two values.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Quadratic Equations); NTA JEE Main 2026 Unit 2 — quadratic equations in real and complex number system, relations between roots and coefficients, nature of roots",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-qe-024",
+    "skill": "quadratic-equations",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "The roots of 3x² − 6 = 0 are:",
+    "options": [
+      "√2 and −√2",
+      "√6 and −√6",
+      "2 and −2",
+      "√3 and −√3"
+    ],
+    "answer": 0,
+    "explanation": "3x² = 6 → x² = 2 → x = ±√2. Check: 3(√2)² − 6 = 6 − 6 = 0 ✓.",
+    "hint": "Isolate x² first, then take ± square root.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Quadratic Equations); NTA JEE Main 2026 Unit 2 — quadratic equations in real and complex number system, relations between roots and coefficients, nature of roots",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-qe-025",
+    "skill": "quadratic-equations",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Writing 2x + 5 = x² in standard form gives:",
+    "options": [
+      "x² − 2x − 5 = 0",
+      "x² + 2x − 5 = 0",
+      "x² − 2x + 5 = 0",
+      "−x² + 2x + 5 = 0"
+    ],
+    "answer": 0,
+    "explanation": "Move everything to one side: 0 = x² − 2x − 5, i.e. x² − 2x − 5 = 0.",
+    "hint": "Bring all terms to the left, keeping x² positive.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Quadratic Equations); NTA JEE Main 2026 Unit 2 — quadratic equations in real and complex number system, relations between roots and coefficients, nature of roots",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-qe-026",
+    "skill": "quadratic-equations",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "The product of the roots of 5x² − 3x + 1 = 0 is:",
+    "options": [
+      "1/5",
+      "−1/5",
+      "3/5",
+      "−3/5"
+    ],
+    "answer": 0,
+    "explanation": "Product = c/a = 1/5. (Note D = 9 − 20 = −11 < 0, so the roots are complex — but the product formula still holds.)",
+    "hint": "c/a. The discriminant doesn't change the product rule.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Quadratic Equations); NTA JEE Main 2026 Unit 2 — quadratic equations in real and complex number system, relations between roots and coefficients, nature of roots",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-qe-027",
+    "skill": "quadratic-equations",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "The sum of a number and its square is 20. The quadratic equation for the number x is:",
+    "options": [
+      "x² + x − 20 = 0",
+      "x² − x − 20 = 0",
+      "x² + x + 20 = 0",
+      "2x² = 20"
+    ],
+    "answer": 0,
+    "explanation": "'A number and its square' = x + x². 'Sum is 20' → x + x² = 20 → x² + x − 20 = 0. Check: roots 4 and −5; 4 + 16 = 20 ✓; −5 + 25 = 20 ✓.",
+    "hint": "Translate words to algebra: number = x, its square = x².",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Quadratic Equations); NTA JEE Main 2026 Unit 2 — quadratic equations in real and complex number system, relations between roots and coefficients, nature of roots",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-qe-028",
+    "skill": "quadratic-equations",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "The discriminant of x² + 6x + 8 = 0 is:",
+    "options": [
+      "4",
+      "68",
+      "−4",
+      "32"
+    ],
+    "answer": 0,
+    "explanation": "D = b² − 4ac = 36 − 4(1)(8) = 36 − 32 = 4. Roots: x = [−6 ± 2]/2 = −2 or −4 (real and distinct).",
+    "hint": "b² − 4ac with a = 1, b = 6, c = 8.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Quadratic Equations); NTA JEE Main 2026 Unit 2 — quadratic equations in real and complex number system, relations between roots and coefficients, nature of roots",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-qe-029",
+    "skill": "quadratic-equations",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "The roots of x² − 3x − 10 = 0 are:",
+    "options": [
+      "5 and −2",
+      "−5 and 2",
+      "10 and −1",
+      "−10 and 1"
+    ],
+    "answer": 0,
+    "explanation": "Factorise: x² − 3x − 10 = (x − 5)(x + 2). Roots: 5 and −2. Check: 5 + (−2) = 3 = −b/a ✓; 5 × (−2) = −10 = c/a ✓.",
+    "hint": "Two numbers that multiply to −10 and add to −3.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Quadratic Equations); NTA JEE Main 2026 Unit 2 — quadratic equations in real and complex number system, relations between roots and coefficients, nature of roots",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-qe-030",
+    "skill": "quadratic-equations",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "If one root of 2x² − 5x + k = 0 is 3, then k equals:",
+    "options": [
+      "−3",
+      "3",
+      "−9",
+      "9"
+    ],
+    "answer": 0,
+    "explanation": "Substitute x = 3: 2(9) − 5(3) + k = 18 − 15 + k = 3 + k = 0 → k = −3. Check: 2x² − 5x − 3 = (2x + 1)(x − 3), roots 3 and −1/2. ✓",
+    "hint": "Substitute the known root and solve for k.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Quadratic Equations); NTA JEE Main 2026 Unit 2 — quadratic equations in real and complex number system, relations between roots and coefficients, nature of roots",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  }
+]
