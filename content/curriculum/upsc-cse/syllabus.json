@@ -1,0 +1,151 @@
+{
+  "exam": "upsc-cse",
+  "source": "https://upsc.gov.in",
+  "sourceNote": "Stage structure, paper names, marks, qualifying rules, and the GS topic lists below follow the UPSC Civil Services Examination official notification syllabus (verified 2026-10-11 against the published notification text). Stage purposes and coverage summaries are our paraphrase. Skill labels, levels, and the study order are ours, not the Commission's.",
+  "stages": [
+    {
+      "order": 1,
+      "papers": [
+        {
+          "detail": "100 questions · 2 hours · counts toward the Prelims cutoff",
+          "marks": "200",
+          "name": "General Studies Paper I",
+          "scoring": "2 marks per question; one-third of the marks deducted for each wrong answer"
+        },
+        {
+          "detail": "80 questions · 2 hours · qualifying: 33% minimum required",
+          "marks": "200",
+          "name": "Civil Services Aptitude Test (Paper II)",
+          "scoring": "2.5 marks per question; one-third of the marks deducted for each wrong answer"
+        }
+      ],
+      "role": "Screening test. Prelims marks decide who reaches the Mains; they do not count toward the final merit.",
+      "stage": "Preliminary Examination",
+      "syllabusTopics": [
+        "Current events of national and international importance",
+        "History of India and the Indian National Movement",
+        "Indian and World Geography: physical, social, economic",
+        "Indian Polity and Governance: Constitution, political system, Panchayati Raj, public policy, rights issues",
+        "Economic and Social Development: sustainable development, poverty, inclusion, demographics, social sector initiatives",
+        "General issues on environmental ecology, biodiversity and climate change",
+        "General Science"
+      ]
+    },
+    {
+      "order": 2,
+      "papers": [
+        {
+          "detail": "Qualifying: 25% minimum required; not counted for merit",
+          "marks": "300",
+          "name": "Paper A — Indian Language"
+        },
+        {
+          "detail": "Qualifying: 25% minimum required; not counted for merit",
+          "marks": "300",
+          "name": "Paper B — English"
+        },
+        {
+          "detail": "Counts for merit",
+          "marks": "250",
+          "name": "Paper I — Essay"
+        },
+        {
+          "coverage": "Indian heritage and culture, history, geography",
+          "detail": "Counts for merit",
+          "marks": "250",
+          "name": "Paper II — General Studies I"
+        },
+        {
+          "coverage": "Constitution, polity, governance, social justice, international relations",
+          "detail": "Counts for merit",
+          "marks": "250",
+          "name": "Paper III — General Studies II"
+        },
+        {
+          "coverage": "Economy, technology, environment, security, disaster management",
+          "detail": "Counts for merit",
+          "marks": "250",
+          "name": "Paper IV — General Studies III"
+        },
+        {
+          "coverage": "Ethics, integrity, aptitude",
+          "detail": "Counts for merit",
+          "marks": "250",
+          "name": "Paper V — General Studies IV"
+        },
+        {
+          "detail": "Counts for merit",
+          "marks": "250",
+          "name": "Paper VI — Optional Subject, Paper 1"
+        },
+        {
+          "detail": "Counts for merit",
+          "marks": "250",
+          "name": "Paper VII — Optional Subject, Paper 2"
+        }
+      ],
+      "role": "Descriptive papers. Seven papers count for merit (1750 marks); two language papers are qualifying only.",
+      "stage": "Main Examination"
+    },
+    {
+      "order": 3,
+      "papers": [
+        {
+          "detail": "Counts for merit. Final total: 2025 marks (1750 written + 275 interview)",
+          "marks": "275",
+          "name": "Interview"
+        }
+      ],
+      "role": "A conversation, not a written paper. No fixed syllabus; the board assesses personality, communication, and awareness of the world around you.",
+      "stage": "Personality Test (Interview)"
+    }
+  ],
+  "status": "draft-pending-sme-review",
+  "units": [
+    {
+      "mapsTo": [
+        "Prelims GS Paper I: Indian Polity and Governance",
+        "Mains GS Paper II: Constitution, Polity, Governance"
+      ],
+      "order": 1,
+      "skills": [
+        {
+          "id": "constitution-making",
+          "level": "L1",
+          "sequence": 1,
+          "why": "The Assembly's debates explain why the Constitution says what it says. Learn the story before the articles."
+        },
+        {
+          "id": "preamble",
+          "level": "L1",
+          "sequence": 2,
+          "why": "The Preamble is the Constitution's mission statement. The exam tests its exact words and what each one means."
+        },
+        {
+          "id": "fundamental-rights",
+          "level": "L2",
+          "sequence": 3,
+          "why": "The highest-weight Polity topic: six rights, their articles, and the writs that enforce them."
+        },
+        {
+          "id": "dpsp",
+          "level": "L2",
+          "sequence": 4,
+          "why": "Directive Principles complete the picture. Read them against Fundamental Rights, the way the exam frames questions."
+        },
+        {
+          "id": "union-government-basics",
+          "level": "L3",
+          "sequence": 5,
+          "why": "President, Parliament, the executive: how the Union actually runs, in the order the Constitution builds it."
+        }
+      ],
+      "unit": "polity-fundamentals",
+      "stageKeys": [
+        "prelims",
+        "mains"
+      ]
+    }
+  ],
+  "version": 1
+}
