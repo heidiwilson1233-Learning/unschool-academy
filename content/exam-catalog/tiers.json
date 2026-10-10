@@ -1,0 +1,101 @@
+{
+  "_comment": "Exam tier rollout plan — MD doc 11 §2/§10 (content strategy). Tier 1 = the 50 exams chosen to build first (tier list pinned 2026-10-10). demand_rank 'Tier 1' in the MD is a tier label, not an intra-tier ordering: rows are grouped by category, never ranked. Tier 2/3 have no published exam assignments yet.",
+  "honest_rate": {
+    "questions_per_day": 360,
+    "tier1_question_weeks": 10
+  },
+  "tier1_exam_pages": {
+    "EX-299": "/exams/jft-basic",
+    "EX-501": "/exams/upsc-cse",
+    "EX-502": "/exams/ssc-cgl"
+  },
+  "tier1_ids": [
+    "EX-501",
+    "EX-502",
+    "EX-503",
+    "EX-504",
+    "EX-186",
+    "EX-184",
+    "EX-194",
+    "EX-080",
+    "EX-152",
+    "EX-160",
+    "EX-171",
+    "EX-330",
+    "EX-331",
+    "EX-336",
+    "EX-042",
+    "EX-288",
+    "EX-289",
+    "EX-287",
+    "EX-300",
+    "EX-299",
+    "EX-298",
+    "EX-297",
+    "EX-260",
+    "EX-262",
+    "EX-271",
+    "EX-500",
+    "EX-450",
+    "EX-067",
+    "EX-075",
+    "EX-082",
+    "EX-098",
+    "EX-052",
+    "EX-136",
+    "EX-192",
+    "EX-026",
+    "EX-032",
+    "EX-008",
+    "EX-011",
+    "EX-020",
+    "EX-036",
+    "EX-322",
+    "EX-366",
+    "EX-362",
+    "EX-392",
+    "EX-379",
+    "EX-376",
+    "EX-368",
+    "EX-505",
+    "EX-506",
+    "EX-346"
+  ],
+  "tiers": {
+    "1": {
+      "criteria": "Highest demand: the 50 exams we build first",
+      "exams": 50,
+      "per_exam": {
+        "lessons": 50,
+        "mocks": 5,
+        "questions": 500
+      }
+    },
+    "2": {
+      "criteria": "Strong regional and professional demand",
+      "exams": 150,
+      "note": "Exam assignments not yet published.",
+      "per_exam": {
+        "lessons": 20,
+        "mocks": 2,
+        "questions": 200
+      }
+    },
+    "3": {
+      "criteria": "Full catalog coverage",
+      "exams": 306,
+      "note": "Exam assignments not yet published. The plan's table lists 300 Tier-3 exams; its volume math uses 306 (50 + 150 + 306 = 506). This page uses 306 so the totals add up.",
+      "per_exam": {
+        "lessons": "syllabus map",
+        "mocks": 1,
+        "questions": 50
+      }
+    }
+  },
+  "volume_targets": {
+    "tier1_questions": 25000,
+    "tier2_questions": 30000,
+    "tier3_questions": 15300,
+    "total_questions": 70300
+  }
+}
