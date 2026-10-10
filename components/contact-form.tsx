@@ -10,6 +10,7 @@ const TOPICS = [
   "Kids or parent account",
   "Billing",
   "Privacy or data request",
+  "Accessibility",
 ] as const;
 
 const SUPPORT_EMAIL = "support@unschool.academy";

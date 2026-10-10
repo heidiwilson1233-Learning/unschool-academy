@@ -1,19 +1,13 @@
 "use client";
 
 import { useEffect, useMemo, useState, useTransition } from "react";
-import { Card, Badge, EmptyState } from "@/components/ui";
-import {
-  getAllExams,
-  getCategories,
-  getRegions,
-  getKinds,
-  getPublicStatus,
-  statusLabel,
-  kindLabel,
-  examUrl,
-  getCategoryByName,
-  type PublicStatus,
-} from "@/lib/catalog";
+import Link from "next/link";
+import { Badge, EmptyState } from "@/components/ui";
+import type { CatalogRow, PublicStatus } from "@/lib/catalog";
+
+/* NOTE: this component receives precomputed CatalogRow[] as RSC props.
+   It must never import from "@/lib/catalog" beyond types — the full
+   500-entry dataset + validation.json stay server-side (run 42 perf). */
 
 const STATUS_TONES: Record<PublicStatus, "success" | "info" | "neutral" | "warning"> = {
   "practice-ready": "success",
@@ -24,7 +18,7 @@ const STATUS_TONES: Record<PublicStatus, "success" | "info" | "neutral" | "warni
 
 const PAGE_SIZE = 24;
 
-export default function CatalogBrowser() {
+export default function CatalogBrowser({ rows }: { rows: CatalogRow[] }) {
   const [queryInput, setQueryInput] = useState("");
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState("");
@@ -45,25 +39,36 @@ export default function CatalogBrowser() {
     return () => clearTimeout(t);
   }, [queryInput, startTransition]);
 
-  const exams = useMemo(() => getAllExams(), []);
-  const categories = useMemo(() => getCategories(), []);
-  const regions = useMemo(() => getRegions(), []);
-  const kinds = useMemo(() => getKinds(), []);
+  const categories = useMemo(() => {
+    const seen: string[] = [];
+    for (const r of rows) if (!seen.includes(r.categoryName)) seen.push(r.categoryName);
+    return seen;
+  }, [rows]);
+  const regions = useMemo(() => {
+    const seen: string[] = [];
+    for (const r of rows) if (!seen.includes(r.region)) seen.push(r.region);
+    return seen.sort();
+  }, [rows]);
+  const kinds = useMemo(() => {
+    const seen: string[] = [];
+    for (const r of rows) if (!seen.includes(r.kind)) seen.push(r.kind);
+    return seen.sort();
+  }, [rows]);
 
   const results = useMemo(() => {
     const q = query.trim().toLowerCase();
-    return exams.filter((e) => {
-      if (category && e.category !== category) return false;
-      if (region && e.region !== region) return false;
-      if (kind && e.kind !== kind) return false;
-      if (status && getPublicStatus(e) !== status) return false;
+    return rows.filter((r) => {
+      if (category && r.categoryName !== category) return false;
+      if (region && r.region !== region) return false;
+      if (kind && r.kind !== kind) return false;
+      if (status && r.status !== status) return false;
       if (q) {
-        const hay = `${e.id} ${e.exam_or_track} ${e.issuing_body} ${e.exam_family} ${e.category}`.toLowerCase();
+        const hay = `${r.id} ${r.name} ${r.issuingBody} ${r.examFamily} ${r.categoryName}`.toLowerCase();
         if (!hay.includes(q)) return false;
       }
       return true;
     });
-  }, [exams, query, category, region, kind, status]);
+  }, [rows, query, category, region, kind, status]);
 
   const clearAll = () => {
     setQueryInput("");
@@ -85,7 +90,14 @@ export default function CatalogBrowser() {
 
   const gotoPage = (p: number) => {
     startTransition(() => setPage(Math.min(Math.max(1, p), totalPages)));
-    document.getElementById("catalog-results")?.scrollIntoView({ block: "start", behavior: "smooth" });
+    const reduced =
+      typeof window !== "undefined" &&
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    document
+      .getElementById("catalog-results")
+      ?.scrollIntoView({ block: "start", behavior: reduced ? "auto" : "smooth" });
+    // Move focus to the results so keyboard/screen-reader users land with the new list.
+    document.getElementById("catalog-results-heading")?.focus({ preventScroll: true });
   };
 
   // Windowed page numbers: 1 … current±2 … last
@@ -141,7 +153,7 @@ export default function CatalogBrowser() {
             <option value="">All track types</option>
             {kinds.map((k) => (
               <option key={k} value={k}>
-                {kindLabel(k)}
+                {k}
               </option>
             ))}
           </select>
@@ -151,7 +163,7 @@ export default function CatalogBrowser() {
             value={status}
             onChange={(e) => startTransition(() => { setStatus(e.target.value as "" | PublicStatus); setPage(1); })}
           >
-            <option value="">Any status</option>
+            <option value="">All statuses</option>
             <option value="practice-ready">Practice available</option>
             <option value="verified">Facts verified</option>
             <option value="retired">Retired / renamed</option>
@@ -160,66 +172,75 @@ export default function CatalogBrowser() {
         </div>
       </div>
 
-      <h2 className="sr-only">Results</h2>
-
       {/* Result count */}
       <div className="mt-6 flex items-center justify-between" id="catalog-results">
+        <h2 id="catalog-results-heading" tabIndex={-1} className="sr-only outline-none">
+          Results
+        </h2>
         <p className="text-sm text-slate" role="status" aria-live="polite">
           Showing <strong className="text-ink">{rangeStart}–{rangeEnd}</strong> of{" "}
           <strong className="text-ink">{results.length}</strong> entries
         </p>
         {hasFilters && (
           <button onClick={clearAll} className="text-sm text-academy-blue font-semibold hover:underline">
-            Clear filters
+            Clear all filters
           </button>
         )}
       </div>
 
-      {/* Results */}
+      {/* Results: hairline editorial rows, not marketing cards (run 42) */}
       {results.length === 0 ? (
         <div className="mt-6">
           <EmptyState
-            title="No entries match"
-            body="Try a shorter search term or clear a filter. Every entry is found by name, ID, issuer or category."
+            title="No entries match those filters"
+            body={
+              <>
+                Try fewer filters, or a shorter search term. Every entry is found by name,
+                ID, issuer, or category. Or skip the catalog — the one program with real
+                practice is ready now:{" "}
+                <Link href="/exams/jft-basic/diagnostic" className="font-semibold text-academy-blue hover:underline">
+                  take the free JFT-Basic diagnostic
+                </Link>
+                .
+              </>
+            }
             action={
               <button onClick={clearAll} className="text-academy-blue font-semibold hover:underline">
-                Clear all filters →
+                Clear all filters <span aria-hidden="true">→</span>
               </button>
             }
           />
         </div>
       ) : (
         <>
-          <div className="mt-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {pageItems.map((e) => {
-              const st = getPublicStatus(e);
-              const cat = getCategoryByName(e.category);
-              return (
-                <a key={e.id} href={examUrl(e.id)} className="group">
-                  <Card hover className="h-full flex flex-col">
-                    <div className="flex items-start justify-between gap-2">
-                      <span className="text-xs font-mono font-bold text-slate">{e.id}</span>
-                      <Badge tone={STATUS_TONES[st]}>{statusLabel(st)}</Badge>
-                    </div>
-                  <h3 className="mt-2 font-bold text-ink leading-snug group-hover:text-academy-blue transition-colors">
-                    {e.exam_or_track}
-                  </h3>
-                  <p className="mt-1 text-sm text-slate">
-                    {e.issuing_body}
-                    {e.issuing_body !== e.exam_family ? ` · ${e.exam_family}` : ""}
-                  </p>
-                  <div className="mt-3 flex flex-wrap gap-1.5 text-xs">
-                    <span className="px-2 py-0.5 rounded-full bg-academy-blue/10 text-academy-blue font-semibold">
-                      {cat?.name ?? e.category}
+          <ul className="mt-4 divide-y divide-border border-y border-border" aria-label="Catalog entries">
+            {pageItems.map((r) => (
+              <li key={r.id}>
+                <Link
+                  href={r.href}
+                  aria-label={`${r.name}, ${r.statusLabel}`}
+                  className="group flex items-baseline gap-3 sm:gap-5 py-3.5 transition-colors hover:bg-canvas/60 active:bg-canvas focus-visible:outline-none"
+                >
+                  <span aria-hidden="true" className="font-mono text-xs font-bold text-slate w-14 shrink-0">
+                    {r.id}
+                  </span>
+                  <span className="min-w-0 flex-1">
+                    <span className="block font-bold text-ink leading-snug group-hover:text-academy-blue transition-colors">
+                      {r.name}
                     </span>
-                    <span className="px-2 py-0.5 rounded-full bg-slate/10 text-slate font-semibold">{e.region}</span>
-                    <span className="px-2 py-0.5 rounded-full bg-slate/10 text-slate font-semibold">{kindLabel(e.kind)}</span>
-                  </div>
-                </Card>
-              </a>
-            );
-          })}
-          </div>
+                    <span className="mt-0.5 block truncate text-sm text-slate">
+                      {r.issuingBody}
+                      {r.issuingBody !== r.examFamily ? ` · ${r.examFamily}` : ""}
+                    </span>
+                  </span>
+                  <span className="hidden sm:block shrink-0 text-xs font-semibold text-slate">
+                    {r.kind}
+                  </span>
+                  <Badge tone={STATUS_TONES[r.status]}>{r.statusLabel}</Badge>
+                </Link>
+              </li>
+            ))}
+          </ul>
           {totalPages > 1 && (
             <nav aria-label="Catalog pages" className="mt-8 flex items-center justify-center gap-1.5 flex-wrap">
               <button
