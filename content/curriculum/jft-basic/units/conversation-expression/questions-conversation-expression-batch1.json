@@ -1,0 +1,1052 @@
+[
+  {
+    "answer": 1,
+    "difficulty": 1,
+    "explanation": "で marks the place where an action happens — the talking happens in the meeting room. を marks a direct object, に marks a destination or target, へ marks direction of movement.",
+    "hint": "The meeting room is where the talking happens. Which particle marks the place of an action?",
+    "id": "jft-ce-gr-001",
+    "options": [
+      {
+        "id": "a",
+        "text": "に",
+        "textJp": "に"
+      },
+      {
+        "id": "b",
+        "text": "で",
+        "textJp": "で"
+      },
+      {
+        "id": "c",
+        "text": "を",
+        "textJp": "を"
+      },
+      {
+        "id": "d",
+        "text": "へ",
+        "textJp": "へ"
+      }
+    ],
+    "skill": "grammar",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Conversation and Expression / Grammar category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Grammar at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "かいぎしつ___はなしを します。Choose the particle.",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 2,
+    "difficulty": 1,
+    "explanation": "ぜひ、おねがいします accepts an invitation warmly — 'I'd love to, please count me in.' The other options refuse, and いやです is rude.",
+    "hint": "You want to go. Accept with enthusiasm.",
+    "id": "jft-ce-ex-001",
+    "options": [
+      {
+        "id": "a",
+        "text": "いいえ、しません",
+        "textJp": "いいえ、しません"
+      },
+      {
+        "id": "b",
+        "text": "ざんねんです",
+        "textJp": "ざんねんです"
+      },
+      {
+        "id": "c",
+        "text": "ぜひ、おねがいします",
+        "textJp": "ぜひ、おねがいします"
+      },
+      {
+        "id": "d",
+        "text": "いやです",
+        "textJp": "いやです"
+      }
+    ],
+    "skill": "expression",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Conversation and Expression / Expression category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Expressions at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "A: 「今度の 日よう日、テニスを しませんか。」B: ___。(You want to go.)",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 3,
+    "difficulty": 1,
+    "explanation": "まがる is a u-verb: the る changes to って, giving まがって. まがりて mixes in the masu-stem, and the other two are not valid forms.",
+    "hint": "U-verbs ending in る change to って in the te-form.",
+    "id": "jft-ce-gr-002",
+    "options": [
+      {
+        "id": "a",
+        "text": "まがっって",
+        "textJp": "まがっって"
+      },
+      {
+        "id": "b",
+        "text": "まがりて",
+        "textJp": "まがりて"
+      },
+      {
+        "id": "c",
+        "text": "まがて",
+        "textJp": "まがて"
+      },
+      {
+        "id": "d",
+        "text": "まがって",
+        "textJp": "まがって"
+      }
+    ],
+    "skill": "grammar",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Conversation and Expression / Grammar category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Grammar at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "かどを ___ ください。Choose the correct te-form of まがる (to turn).",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 3,
+    "difficulty": 1,
+    "explanation": "ざんねんですが、あしたはつごうがわるいです refuses politely with a reason — 'that's a shame, but tomorrow is inconvenient for me.' いいえ、しません is blunt and rude.",
+    "hint": "You cannot go. Refuse politely and give a reason.",
+    "id": "jft-ce-ex-002",
+    "options": [
+      {
+        "id": "a",
+        "text": "いいえ、しません",
+        "textJp": "いいえ、しません"
+      },
+      {
+        "id": "b",
+        "text": "いいですよ",
+        "textJp": "いいですよ"
+      },
+      {
+        "id": "c",
+        "text": "ぜひ",
+        "textJp": "ぜひ"
+      },
+      {
+        "id": "d",
+        "text": "ざんねんですが、あしたは つごうが わるいです",
+        "textJp": "ざんねんですが、あしたはつごうがわるいです"
+      }
+    ],
+    "skill": "expression",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Conversation and Expression / Expression category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Expressions at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "A: 「あした いっしょに えいがを 見ませんか。」You cannot go. B: ___。",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 0,
+    "difficulty": 1,
+    "explanation": "ないでください means 'please do not' — すわないでください = please do not smoke. すわなくて is the wrong connector, すわない alone cannot join ください, and すわんで is not a valid form.",
+    "hint": "'Please do not' uses the nai-form plus で.",
+    "id": "jft-ce-gr-003",
+    "options": [
+      {
+        "id": "a",
+        "text": "すわないで",
+        "textJp": "すわないで"
+      },
+      {
+        "id": "b",
+        "text": "すわなくて",
+        "textJp": "すわなくて"
+      },
+      {
+        "id": "c",
+        "text": "すわんで",
+        "textJp": "すわんで"
+      },
+      {
+        "id": "d",
+        "text": "すわない",
+        "textJp": "すわない"
+      }
+    ],
+    "skill": "grammar",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Conversation and Expression / Grammar category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Grammar at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "ここで たばこを ___ ください。Choose the form meaning 'please do not smoke'.",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 3,
+    "difficulty": 1,
+    "explanation": "これをください = 'please give me this one' — the standard way to ask a shop clerk for an item. あげます gives away from you, もらいます/くれます point the receiving direction the wrong way.",
+    "hint": "You want the clerk to give it to you. Which verb points toward you?",
+    "id": "jft-ce-ex-003",
+    "options": [
+      {
+        "id": "a",
+        "text": "これを くれます",
+        "textJp": "これをくれます"
+      },
+      {
+        "id": "b",
+        "text": "これを あげます",
+        "textJp": "これをあげます"
+      },
+      {
+        "id": "c",
+        "text": "これを もらいます",
+        "textJp": "これをもらいます"
+      },
+      {
+        "id": "d",
+        "text": "これを ください",
+        "textJp": "これをください"
+      }
+    ],
+    "skill": "expression",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Conversation and Expression / Expression category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Expressions at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "シャツを 買いたいです。店員に 言います:「___」",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 1,
+    "difficulty": 1,
+    "explanation": "た-form + ことがあります expresses past experience: たべたことがあります = 'I have eaten (sushi) before.' The plain, te, and masu forms cannot build this pattern.",
+    "hint": "Talking about experience uses the past (た) form.",
+    "id": "jft-ce-gr-004",
+    "options": [
+      {
+        "id": "a",
+        "text": "たべます",
+        "textJp": "たべます"
+      },
+      {
+        "id": "b",
+        "text": "たべた",
+        "textJp": "たべた"
+      },
+      {
+        "id": "c",
+        "text": "たべる",
+        "textJp": "たべる"
+      },
+      {
+        "id": "d",
+        "text": "たべて",
+        "textJp": "たべて"
+      }
+    ],
+    "skill": "grammar",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Conversation and Expression / Grammar category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Grammar at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "すしを ___ ことが あります。'I have eaten sushi before.'",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 1,
+    "difficulty": 1,
+    "explanation": "いくらですか asks the price. いくつですか asks how many, なんですか asks what it is, and いくらです is a statement, not a question.",
+    "hint": "Asking the price needs a question word and a question ending.",
+    "id": "jft-ce-ex-004",
+    "options": [
+      {
+        "id": "a",
+        "text": "なんですか",
+        "textJp": "なんですか"
+      },
+      {
+        "id": "b",
+        "text": "いくらですか",
+        "textJp": "いくらですか"
+      },
+      {
+        "id": "c",
+        "text": "いくらです",
+        "textJp": "いくらです"
+      },
+      {
+        "id": "d",
+        "text": "いくつですか",
+        "textJp": "いくつですか"
+      }
+    ],
+    "skill": "expression",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Conversation and Expression / Expression category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Expressions at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "店で ねだんを ききます。「すみません、これは ___。」",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 2,
+    "difficulty": 1,
+    "explanation": "The potential form of はなす (to speak) is はなせる, so 'can speak' is はなせます. はなれます is the potential of はなれる (to be separated) — a different verb entirely.",
+    "hint": "Can speak = the potential form of はなす.",
+    "id": "jft-ce-gr-005",
+    "options": [
+      {
+        "id": "a",
+        "text": "はなしています",
+        "textJp": "はなしています"
+      },
+      {
+        "id": "b",
+        "text": "はなれます",
+        "textJp": "はなれます"
+      },
+      {
+        "id": "c",
+        "text": "はなせます",
+        "textJp": "はなせます"
+      },
+      {
+        "id": "d",
+        "text": "はなります",
+        "textJp": "はなります"
+      }
+    ],
+    "skill": "grammar",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Conversation and Expression / Grammar category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Grammar at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "にほんごを すこし ___。'I can speak a little Japanese.'",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 2,
+    "difficulty": 1,
+    "explanation": "とってもいいですか asks for permission — 'may I take photos here?' とってください asks someone else to take a photo for you, and とらないでください tells someone not to take photos.",
+    "hint": "Asking permission = てもいいですか.",
+    "id": "jft-ce-ex-005",
+    "options": [
+      {
+        "id": "a",
+        "text": "とらないでください",
+        "textJp": "とらないでください"
+      },
+      {
+        "id": "b",
+        "text": "とりますか",
+        "textJp": "とりますか"
+      },
+      {
+        "id": "c",
+        "text": "とっても いいですか",
+        "textJp": "とってもいいですか"
+      },
+      {
+        "id": "d",
+        "text": "とってください",
+        "textJp": "とってください"
+      }
+    ],
+    "skill": "expression",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Conversation and Expression / Expression category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Expressions at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "きれいな にわで 写真を とりたいです。「ここで 写真を ___.」",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 1,
+    "difficulty": 1,
+    "explanation": "てもらう (to have someone do something for you) follows the te-form: つくってもらいました = 'I had my mother make a cake.' The masu-stem, plain, and ta forms cannot join もらう.",
+    "hint": "もらいました follows the て form.",
+    "id": "jft-ce-gr-006",
+    "options": [
+      {
+        "id": "a",
+        "text": "つくり",
+        "textJp": "つくり"
+      },
+      {
+        "id": "b",
+        "text": "つくって",
+        "textJp": "つくって"
+      },
+      {
+        "id": "c",
+        "text": "つくった",
+        "textJp": "つくった"
+      },
+      {
+        "id": "d",
+        "text": "つくる",
+        "textJp": "つくる"
+      }
+    ],
+    "skill": "grammar",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Conversation and Expression / Grammar category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Grammar at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "わたしは 母に ケーキを ___ もらいました。",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 1,
+    "difficulty": 1,
+    "explanation": "田中さんをおねがいします is the standard phone expression for asking to speak to someone — literally 'Mr. Tanaka, please.' The other options are ungrammatical after を in this context.",
+    "hint": "On the phone, you 'request' the person you want to speak to.",
+    "id": "jft-ce-ex-006",
+    "options": [
+      {
+        "id": "a",
+        "text": "いますか",
+        "textJp": "いますか"
+      },
+      {
+        "id": "b",
+        "text": "おねがいします",
+        "textJp": "おねがいします"
+      },
+      {
+        "id": "c",
+        "text": "ください",
+        "textJp": "ください"
+      },
+      {
+        "id": "d",
+        "text": "もうします",
+        "textJp": "もうします"
+      }
+    ],
+    "skill": "expression",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Conversation and Expression / Expression category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Expressions at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "会社に 電話を かけました。「もしもし、山田ですが、田中さんを ___。」",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 0,
+    "difficulty": 1,
+    "explanation": "なければなりません expresses obligation: おきなければなりません = 'I must get up.' The negative te-form, plain negative, and positive conditional cannot complete this pattern.",
+    "hint": "'Must' = the negative conditional plus なりません.",
+    "id": "jft-ce-gr-007",
+    "options": [
+      {
+        "id": "a",
+        "text": "おきなければ",
+        "textJp": "おきなければ"
+      },
+      {
+        "id": "b",
+        "text": "おきなくて",
+        "textJp": "おきなくて"
+      },
+      {
+        "id": "c",
+        "text": "おきない",
+        "textJp": "おきない"
+      },
+      {
+        "id": "d",
+        "text": "おきれば",
+        "textJp": "おきれば"
+      }
+    ],
+    "skill": "grammar",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Conversation and Expression / Grammar category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Grammar at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "あしたは はやく ___ なりません。'I must get up early tomorrow.'",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 1,
+    "difficulty": 1,
+    "explanation": "おじゃまします is said when entering someone else's home — 'sorry to intrude.' ただいま/いってきます are for your own home, and おかえり is what the person inside says.",
+    "hint": "You are entering someone else's space.",
+    "id": "jft-ce-ex-007",
+    "options": [
+      {
+        "id": "a",
+        "text": "ただいま",
+        "textJp": "ただいま"
+      },
+      {
+        "id": "b",
+        "text": "おじゃまします",
+        "textJp": "おじゃまします"
+      },
+      {
+        "id": "c",
+        "text": "いってきます",
+        "textJp": "いってきます"
+      },
+      {
+        "id": "d",
+        "text": "おかえり",
+        "textJp": "おかえり"
+      }
+    ],
+    "skill": "expression",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Conversation and Expression / Expression category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Expressions at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "友だちの 家に 来ました。ドアが あきました。「___」",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 1,
+    "difficulty": 1,
+    "explanation": "かもしれません follows the plain form, and the rain is tomorrow, so the non-past plain form ふる is correct. The masu-form cannot attach to かもしれません, and ふった puts the rain in the past.",
+    "hint": "かもしれません attaches to the plain form, and the rain is tomorrow.",
+    "id": "jft-ce-gr-008",
+    "options": [
+      {
+        "id": "a",
+        "text": "ふりかもしれません",
+        "textJp": "ふりかもしれません"
+      },
+      {
+        "id": "b",
+        "text": "ふるかもしれません",
+        "textJp": "ふるかもしれません"
+      },
+      {
+        "id": "c",
+        "text": "ふったかもしれません",
+        "textJp": "ふったかもしれません"
+      },
+      {
+        "id": "d",
+        "text": "ふりますかもしれません",
+        "textJp": "ふりますかもしれません"
+      }
+    ],
+    "skill": "grammar",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Conversation and Expression / Grammar category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Grammar at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "あしたは あめが ___。'It might rain tomorrow.'",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 0,
+    "difficulty": 1,
+    "explanation": "てつだいましょうか offers your help — 'shall I help?' てつだいませんか would ask THEM to help, and てつだってください asks them to help you — the direction is backwards.",
+    "hint": "You are offering, not asking. ましょうか offers; ませんか invites them.",
+    "id": "jft-ce-ex-008",
+    "options": [
+      {
+        "id": "a",
+        "text": "てつだいましょうか",
+        "textJp": "てつだいましょうか"
+      },
+      {
+        "id": "b",
+        "text": "てつだってください",
+        "textJp": "てつだってください"
+      },
+      {
+        "id": "c",
+        "text": "てつだいませんか",
+        "textJp": "てつだいませんか"
+      },
+      {
+        "id": "d",
+        "text": "てつだいますか",
+        "textJp": "てつだいますか"
+      }
+    ],
+    "skill": "expression",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Conversation and Expression / Expression category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Expressions at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "ともだちが 重い にもつを 持っています。てつだいたいです。「___」",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 0,
+    "difficulty": 1,
+    "explanation": "すぎる (too much) attaches to the verb stem: たべすぎる, past tense たべすぎました. It never follows the plain or masu forms.",
+    "hint": "'Too much' = verb stem + すぎる.",
+    "id": "jft-ce-gr-009",
+    "options": [
+      {
+        "id": "a",
+        "text": "たべすぎました",
+        "textJp": "たべすぎました"
+      },
+      {
+        "id": "b",
+        "text": "たべすぎますでした",
+        "textJp": "たべすぎますでした"
+      },
+      {
+        "id": "c",
+        "text": "たべましたすぎ",
+        "textJp": "たべましたすぎ"
+      },
+      {
+        "id": "d",
+        "text": "たべるすぎました",
+        "textJp": "たべるすぎました"
+      }
+    ],
+    "skill": "grammar",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Conversation and Expression / Grammar category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Grammar at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "きのう ケーキを ___。'I ate too much cake yesterday.'",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 2,
+    "difficulty": 1,
+    "explanation": "いたい (painful) takes が: あたまがいたいです = 'my head hurts.' を and に cannot mark the hurting body part, and いたくです is not a valid adjective form.",
+    "hint": "Pain uses が: あたまがいたい.",
+    "id": "jft-ce-ex-009",
+    "options": [
+      {
+        "id": "a",
+        "text": "あたまが いたくです",
+        "textJp": "あたまがいたくです"
+      },
+      {
+        "id": "b",
+        "text": "あたまを いたいです",
+        "textJp": "あたまをいたいです"
+      },
+      {
+        "id": "c",
+        "text": "あたまが いたいです",
+        "textJp": "あたまがいたいです"
+      },
+      {
+        "id": "d",
+        "text": "あたまに いたいです",
+        "textJp": "あたまにいたいです"
+      }
+    ],
+    "skill": "expression",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Conversation and Expression / Expression category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Expressions at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "びょういんで、先生が ききました:「どうしましたか。」あなた:「___」",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 2,
+    "difficulty": 2,
+    "explanation": "ほしい expresses your own desire: カメラがほしいです. ほしがっています describes someone else's desire, ほしくないです contradicts the request to buy it, and ほしいくないです is a misspelling.",
+    "hint": "You want it yourself, and you are asking for it. Whose desire does each word describe?",
+    "id": "jft-ce-gr-010",
+    "options": [
+      {
+        "id": "a",
+        "text": "ほしがっています",
+        "textJp": "ほしがっています"
+      },
+      {
+        "id": "b",
+        "text": "ほしくないです",
+        "textJp": "ほしくないです"
+      },
+      {
+        "id": "c",
+        "text": "ほしいです",
+        "textJp": "ほしいです"
+      },
+      {
+        "id": "d",
+        "text": "ほしいくないです",
+        "textJp": "ほしいくないです"
+      }
+    ],
+    "skill": "grammar",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Conversation and Expression / Grammar category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Grammar at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "友だちに 言いました:「わたしは 新しい カメラが ___。たんじょうびに 買ってください。」",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 3,
+    "difficulty": 1,
+    "explanation": "もうけっこうです politely declines more food — 'I'm fine, thank you.' The first two options ask for more, and いいえ、ぜんぜん is unnatural here.",
+    "hint": "You have had enough. Refuse politely.",
+    "id": "jft-ce-ex-010",
+    "options": [
+      {
+        "id": "a",
+        "text": "まだ 食べたいです",
+        "textJp": "まだたべたいです"
+      },
+      {
+        "id": "b",
+        "text": "いいえ、ぜんぜん",
+        "textJp": "いいえ、ぜんぜん"
+      },
+      {
+        "id": "c",
+        "text": "もう 少し ください",
+        "textJp": "もうすこしください"
+      },
+      {
+        "id": "d",
+        "text": "もう けっこうです",
+        "textJp": "もうけっこうです"
+      }
+    ],
+    "skill": "expression",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Conversation and Expression / Expression category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Expressions at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "A: 「もう 少し いかがですか。」B: ___。(You have had enough.)",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 3,
+    "difficulty": 1,
+    "explanation": "た-form + ほうがいいです gives advice: やすんだほうがいいです = 'you should rest.' The plain, te, and masu-stem forms cannot build this pattern.",
+    "hint": "Advice uses the past form + ほうがいい.",
+    "id": "jft-ce-gr-011",
+    "options": [
+      {
+        "id": "a",
+        "text": "やすみ",
+        "textJp": "やすみ"
+      },
+      {
+        "id": "b",
+        "text": "やすんで",
+        "textJp": "やすんで"
+      },
+      {
+        "id": "c",
+        "text": "やすむ",
+        "textJp": "やすむ"
+      },
+      {
+        "id": "d",
+        "text": "やすんだ",
+        "textJp": "やすんだ"
+      }
+    ],
+    "skill": "grammar",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Conversation and Expression / Grammar category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Grammar at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "かぜを ひきました。___ ほうが いいです。'You should rest.'",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 0,
+    "difficulty": 1,
+    "explanation": "どこですか asks where the station is. The other question words ask what, when, and who — none of which gets you directions.",
+    "hint": "You need a place. Which question word asks for a place?",
+    "id": "jft-ce-ex-011",
+    "options": [
+      {
+        "id": "a",
+        "text": "どこですか",
+        "textJp": "どこですか"
+      },
+      {
+        "id": "b",
+        "text": "いつですか",
+        "textJp": "いつですか"
+      },
+      {
+        "id": "c",
+        "text": "なんですか",
+        "textJp": "なんですか"
+      },
+      {
+        "id": "d",
+        "text": "だれですか",
+        "textJp": "だれですか"
+      }
+    ],
+    "skill": "expression",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Conversation and Expression / Expression category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Expressions at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "みちが わかりません。「すみません、えきは ___。」",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 3,
+    "difficulty": 2,
+    "explanation": "ふまれる is the passive of ふむ (to step on): あしをふまれました = 'my foot was stepped on.' いたかったです (it hurt) shows you received the action, so the active ふみました would mean you stepped on them.",
+    "hint": "You were hurt — you received the action, not the one doing it.",
+    "id": "jft-ce-gr-012",
+    "options": [
+      {
+        "id": "a",
+        "text": "ふみました",
+        "textJp": "ふみました"
+      },
+      {
+        "id": "b",
+        "text": "ふませました",
+        "textJp": "ふませました"
+      },
+      {
+        "id": "c",
+        "text": "ふみます",
+        "textJp": "ふみます"
+      },
+      {
+        "id": "d",
+        "text": "ふまれました",
+        "textJp": "ふまれました"
+      }
+    ],
+    "skill": "grammar",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Conversation and Expression / Grammar category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Grammar at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "電車で となりの 人に あしを ___。いたかったです。",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 0,
+    "difficulty": 2,
+    "explanation": "Refusing a superior needs the softest phrase: すみません、けっこうです. いいえ、いりません is too blunt for a boss, いただきます accepts, and だいじょうぶです is too casual here.",
+    "hint": "Refusing your boss needs the softest, most apologetic phrase.",
+    "id": "jft-ce-ex-012",
+    "options": [
+      {
+        "id": "a",
+        "text": "すみません、けっこうです",
+        "textJp": "すみません、けっこうです"
+      },
+      {
+        "id": "b",
+        "text": "いただきます",
+        "textJp": "いただきます"
+      },
+      {
+        "id": "c",
+        "text": "だいじょうぶです",
+        "textJp": "だいじょうぶです"
+      },
+      {
+        "id": "d",
+        "text": "いいえ、いりません",
+        "textJp": "いいえ、いりません"
+      }
+    ],
+    "skill": "expression",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Conversation and Expression / Expression category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Expressions at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "部長が 「これ、食べて。」と 言いました。あなたは いりません。「___」",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 0,
+    "difficulty": 1,
+    "explanation": "て-form + おく means doing something in preparation: そうじしておきます = 'I'll clean (in advance).' The plain, ta, and noun forms cannot join おく this way.",
+    "hint": "Preparing in advance = ておく.",
+    "id": "jft-ce-gr-013",
+    "options": [
+      {
+        "id": "a",
+        "text": "そうじして",
+        "textJp": "そうじして"
+      },
+      {
+        "id": "b",
+        "text": "そうじ",
+        "textJp": "そうじ"
+      },
+      {
+        "id": "c",
+        "text": "そうじした",
+        "textJp": "そうじした"
+      },
+      {
+        "id": "d",
+        "text": "そうじする",
+        "textJp": "そうじする"
+      }
+    ],
+    "skill": "grammar",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Conversation and Expression / Grammar category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Grammar at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "きゃくが 来るので、へやを ___ おきます。'I will clean the room in advance.'",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 0,
+    "difficulty": 1,
+    "explanation": "You received a gift, so you thank the giver: どうもありがとうございました. どういたしまして is what the giver says back, and おめでとう congratulates someone else.",
+    "hint": "You received something. Say thank you.",
+    "id": "jft-ce-ex-013",
+    "options": [
+      {
+        "id": "a",
+        "text": "どうも ありがとうございました",
+        "textJp": "どうもありがとうございました"
+      },
+      {
+        "id": "b",
+        "text": "おめでとうございます",
+        "textJp": "おめでとうございます"
+      },
+      {
+        "id": "c",
+        "text": "どういたしまして",
+        "textJp": "どういたしまして"
+      },
+      {
+        "id": "d",
+        "text": "すみません",
+        "textJp": "すみません"
+      }
+    ],
+    "skill": "expression",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Conversation and Expression / Expression category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Expressions at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "たんじょうびに プレゼントを もらいました。「___」",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 2,
+    "difficulty": 1,
+    "explanation": "より marks the standard of comparison: きのうよりさむい = 'colder than yesterday.' ほど is used for 'as ~ as' negatives, いちばん for superlatives, and と cannot compare.",
+    "hint": "'Compared to yesterday' — which particle marks the comparison standard?",
+    "id": "jft-ce-gr-014",
+    "options": [
+      {
+        "id": "a",
+        "text": "いちばん",
+        "textJp": "いちばん"
+      },
+      {
+        "id": "b",
+        "text": "と",
+        "textJp": "と"
+      },
+      {
+        "id": "c",
+        "text": "より",
+        "textJp": "より"
+      },
+      {
+        "id": "d",
+        "text": "ほど",
+        "textJp": "ほど"
+      }
+    ],
+    "skill": "grammar",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Conversation and Expression / Grammar category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Grammar at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "きょうは きのう ___ さむいです。'Today is colder than yesterday.'",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 3,
+    "difficulty": 1,
+    "explanation": "When a coworker leaves before you, the standard reply is おつかれさまでした — acknowledging their work. いってらっしゃい is for someone leaving home.",
+    "hint": "A coworker heads home first. The standard workplace reply is…",
+    "id": "jft-ce-ex-014",
+    "options": [
+      {
+        "id": "a",
+        "text": "さようなら",
+        "textJp": "さようなら"
+      },
+      {
+        "id": "b",
+        "text": "いってらっしゃい",
+        "textJp": "いってらっしゃい"
+      },
+      {
+        "id": "c",
+        "text": "じゃあ、また",
+        "textJp": "じゃあ、また"
+      },
+      {
+        "id": "d",
+        "text": "おつかれさまでした",
+        "textJp": "おつかれさまでした"
+      }
+    ],
+    "skill": "expression",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Conversation and Expression / Expression category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Expressions at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "A: 「お先に しつれいします。」B: ___。",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 2,
+    "difficulty": 2,
+    "explanation": "てある describes a resulting state from a transitive action: まどがあけてあります = 'the window has been opened (and stays open).' The intransitive あく/あいて cannot pair with てある.",
+    "hint": "A resulting state from someone's action = てある, built on the transitive verb.",
+    "id": "jft-ce-gr-015",
+    "options": [
+      {
+        "id": "a",
+        "text": "あいて",
+        "textJp": "あいて"
+      },
+      {
+        "id": "b",
+        "text": "あく",
+        "textJp": "あく"
+      },
+      {
+        "id": "c",
+        "text": "あけて",
+        "textJp": "あけて"
+      },
+      {
+        "id": "d",
+        "text": "あける",
+        "textJp": "あける"
+      }
+    ],
+    "skill": "grammar",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Conversation and Expression / Grammar category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Grammar at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "まどが ___ あります。'The window is open (as a resulting state).'",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 1,
+    "difficulty": 2,
+    "explanation": "When YOU do something for a teacher, use the humble form: お送りします. The plain 送ります is not humble enough for a teacher, and ください/お送りください ask the teacher to send it — the direction is backwards.",
+    "hint": "You are the one sending. Use the humble form for your own action toward a teacher.",
+    "id": "jft-ce-ex-015",
+    "options": [
+      {
+        "id": "a",
+        "text": "送ります",
+        "textJp": "おくります"
+      },
+      {
+        "id": "b",
+        "text": "お送りします",
+        "textJp": "おおくりします"
+      },
+      {
+        "id": "c",
+        "text": "お送りください",
+        "textJp": "おおくりください"
+      },
+      {
+        "id": "d",
+        "text": "送ってください",
+        "textJp": "おくってください"
+      }
+    ],
+    "skill": "expression",
+    "source": "Unschool Academy original practice item, drafted against the Japan Foundation JFT-Basic official test structure — Conversation and Expression / Expression category (https://www.jpf.go.jp/jft-basic/e/about/index.html). Expressions at JF Standard A1-A2. Draft — pending Japanese SME review.",
+    "status": "draft-pending-sme-review",
+    "stem": "先生に メールを 送ります。「レポートを ___。」",
+    "type": "mcq",
+    "version": 1
+  }
+]

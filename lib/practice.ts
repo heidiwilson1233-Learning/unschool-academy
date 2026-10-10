@@ -28,6 +28,7 @@ import svBatch0 from "@/content/curriculum/jft-basic/units/script-vocabulary/que
 import svKanjiBatch1 from "@/content/curriculum/jft-basic/units/script-vocabulary/questions-kanji-reading-batch1.json";
 import svWordBatch1 from "@/content/curriculum/jft-basic/units/script-vocabulary/questions-word-meaning-usage-batch1.json";
 import ceBatch0 from "@/content/curriculum/jft-basic/units/conversation-expression/questions-conversation-expression-batch0.json";
+import ceBatch1 from "@/content/curriculum/jft-basic/units/conversation-expression/questions-conversation-expression-batch1.json";
 import lcBatch0 from "@/content/curriculum/jft-basic/units/listening-comprehension/questions-listening-comprehension-batch0.json";
 import rcBatch0 from "@/content/curriculum/jft-basic/units/reading-comprehension/questions-reading-comprehension-batch0.json";
 
@@ -65,6 +66,7 @@ const BATCHES: { unitId: CurriculumUnitId; raw: unknown }[] = [
   { unitId: "script-vocabulary", raw: svKanjiBatch1 },
   { unitId: "script-vocabulary", raw: svWordBatch1 },
   { unitId: "conversation-expression", raw: ceBatch0 },
+  { unitId: "conversation-expression", raw: ceBatch1 },
   { unitId: "listening-comprehension", raw: lcBatch0 },
   { unitId: "reading-comprehension", raw: rcBatch0 },
 ];
