@@ -1,0 +1,8 @@
+{
+  "id": "listening-comprehension",
+  "title": "Listening Comprehension",
+  "description": "Understand conversations, shop exchanges, announcements and instructions. ~12 questions on the real test.",
+  "skills": ["listening-conversation", "listening-shops", "listening-announcements"],
+  "order": 3,
+  "source": "Japan Foundation JFT-Basic official test structure (jpf.go.jp/jft-basic)"
+}
