@@ -1,0 +1,120 @@
+[
+  {
+    "id": "cfa-qm-tvm-vid-001",
+    "skill": "time-value-of-money",
+    "level": "L1",
+    "video_url": "https://www.youtube.com/watch?v=-ffCJF1kmqo",
+    "platform": "youtube",
+    "title": "The Time Value of Money (2023 CFA Level I Exam - Quantitative Methods - Module 1)",
+    "channel": "AnalystPrep",
+    "duration": null,
+    "duration_note": "Duration not verified from search results; verify before publishing in lesson player.",
+    "lesson_topic": "TVM foundations: compounding, discounting, PV/FV of single sums, annuities, perpetuities, EAR",
+    "transcript_key_points": [
+      "Interest rates as required returns, discount rates, opportunity costs",
+      "Effective annual rate from nominal rate and compounding frequency",
+      "FV and PV of single sums, ordinary annuities, annuities due, perpetuities",
+      "Timeline method for modeling cash flows"
+    ],
+    "attached_question_ids": [
+      "cfa-qm-tvm-001",
+      "cfa-qm-tvm-002",
+      "cfa-qm-tvm-004",
+      "cfa-qm-tvm-007",
+      "cfa-qm-tvm-009",
+      "cfa-qm-tvm-011",
+      "cfa-qm-tvm-013",
+      "cfa-qm-tvm-016",
+      "cfa-qm-tvm-024"
+    ],
+    "credit": "Video by AnalystPrep (free on YouTube, embedded with attribution; not re-uploaded).",
+    "curation_note": "CFA Level I-specific lesson aligned to public LOS topic headings; beginner-friendly."
+  },
+  {
+    "id": "cfa-qm-tvm-vid-002",
+    "skill": "time-value-of-money",
+    "level": "L1",
+    "video_url": "https://www.youtube.com/watch?v=-jDU6NsU_C4",
+    "platform": "youtube",
+    "title": "Time Value of Money Explained | Future Value and Present Value Formula with Example",
+    "channel": "Manager EDU",
+    "duration": null,
+    "duration_note": "Duration not verified from search results; verify before publishing in lesson player.",
+    "lesson_topic": "FV and PV formulas with worked examples (simple and compound interest)",
+    "transcript_key_points": [
+      "FV = PV x (1+r)^n with step-by-step example",
+      "PV = FV / (1+r)^n with step-by-step example",
+      "Simple vs compound interest growth"
+    ],
+    "attached_question_ids": [
+      "cfa-qm-tvm-003",
+      "cfa-qm-tvm-005",
+      "cfa-qm-tvm-006",
+      "cfa-qm-tvm-019",
+      "cfa-qm-tvm-020",
+      "cfa-qm-tvm-025",
+      "cfa-qm-tvm-026"
+    ],
+    "credit": "Video by Manager EDU (free on YouTube, embedded with attribution; not re-uploaded).",
+    "curation_note": "Beginner-friendly formula walkthrough."
+  },
+  {
+    "id": "cfa-qm-tvm-vid-003",
+    "skill": "time-value-of-money",
+    "level": "L1",
+    "video_url": "https://www.youtube.com/watch?v=Y7yVr6GKPUA",
+    "platform": "youtube",
+    "title": "How to Calculate Future Value (Compound Interest) | Simple and Easy Explanation",
+    "channel": null,
+    "channel_note": "Channel name not verified from search results; check YouTube page before publishing.",
+    "duration": null,
+    "duration_note": "Duration not verified from search results; verify before publishing in lesson player.",
+    "lesson_topic": "Compound interest FV formula FV = PV(1 + r/n)^nt with worked example",
+    "transcript_key_points": [
+      "Meaning of future value",
+      "FV = PV(1 + r/n)^nt explained term by term",
+      "Worked example: compounding multiple times per year"
+    ],
+    "attached_question_ids": [
+      "cfa-qm-tvm-015",
+      "cfa-qm-tvm-017",
+      "cfa-qm-tvm-023",
+      "cfa-qm-tvm-028",
+      "cfa-qm-tvm-029"
+    ],
+    "credit": "Free on YouTube, embedded with attribution; not re-uploaded.",
+    "curation_note": "Beginner step-by-step FV calculation."
+  },
+  {
+    "id": "cfa-qm-tvm-vid-004",
+    "skill": "time-value-of-money",
+    "level": "L1",
+    "video_url": "https://www.youtube.com/watch?v=qx5IWUwk3UU",
+    "platform": "youtube",
+    "title": "Time Value of Money & Present Value Calculations | Ch 2 - Principles of Corporate Finance (14th)",
+    "channel": null,
+    "channel_note": "Channel name not verified from search results; check YouTube page before publishing.",
+    "duration": null,
+    "duration_note": "Duration not verified from search results; verify before publishing in lesson player.",
+    "lesson_topic": "TVM chapter overview: PV, annuities, perpetuities, APR vs EAR",
+    "transcript_key_points": [
+      "Future value with compound interest",
+      "Present value via discounting",
+      "Perpetuity and annuity shortcuts; ordinary vs due",
+      "APR vs effective annual rate"
+    ],
+    "attached_question_ids": [
+      "cfa-qm-tvm-008",
+      "cfa-qm-tvm-010",
+      "cfa-qm-tvm-012",
+      "cfa-qm-tvm-014",
+      "cfa-qm-tvm-018",
+      "cfa-qm-tvm-021",
+      "cfa-qm-tvm-022",
+      "cfa-qm-tvm-027",
+      "cfa-qm-tvm-030"
+    ],
+    "credit": "Free on YouTube, embedded with attribution; not re-uploaded.",
+    "curation_note": "Textbook-chapter companion video; pairs well with the annuity and EAR questions."
+  }
+]

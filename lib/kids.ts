@@ -1,8 +1,62 @@
 /**
- * Unschool Kids track + quest data.
- * STATUS: prototype content — quests are staged drafts pending educator review.
- * See docs/03_KIDS_LEARNING_WORLD.md for the full curriculum spec.
+ * Unschool Kids — FINAL STRUCTURE (decided 2026-10-10).
+ * Ages 5 → Grade 5. 5 subjects. 500-book library → quests. Smart adaptive learning.
+ * See blueprint docs/12_LEARNING_ARCHITECTURE_AND_SCALE.md §5.
+ *
+ * STATUS: content = staged drafts pending educator review.
  */
+
+export type KidSubject = {
+  slug: string;
+  name: string;
+  tagline: string;
+  character: "momo" | "tara" | "bobo" | "all";
+  skills: string[];
+  color: string; // tailwind tint key used by pages
+};
+
+export const KID_SUBJECTS: KidSubject[] = [
+  {
+    slug: "words",
+    name: "Words",
+    tagline: "Phonics, vocabulary, rhymes and stories",
+    character: "tara",
+    skills: ["Letter sounds", "Vocabulary", "Rhyming", "Story order", "Comprehension", "Read-aloud"],
+    color: "tara",
+  },
+  {
+    slug: "numbers",
+    name: "Numbers",
+    tagline: "Counting, shapes, patterns, money and time",
+    character: "momo",
+    skills: ["Counting", "Number bonds", "Shapes", "Patterns", "Money", "Time"],
+    color: "momo",
+  },
+  {
+    slug: "world",
+    name: "World",
+    tagline: "Animals, plants, seasons, body and senses",
+    character: "bobo",
+    skills: ["Animals", "Plants", "Seasons", "My body", "Materials", "Observation"],
+    color: "bobo",
+  },
+  {
+    slug: "values",
+    name: "Values",
+    tagline: "Kindness, sharing, feelings and manners",
+    character: "all",
+    skills: ["Kindness", "Sharing", "Feelings", "Turn-taking", "Helping"],
+    color: "values",
+  },
+  {
+    slug: "create",
+    name: "Create",
+    tagline: "Draw, build, imagine and make music",
+    character: "all",
+    skills: ["Drawing", "Building", "Imagining", "Music", "Storytelling"],
+    color: "create",
+  },
+];
 
 export type AgeTrack = {
   slug: string;
@@ -15,78 +69,98 @@ export type AgeTrack = {
   route: string;
 };
 
+/* FOUR tracks — entry at age 5. No 2-3 / 3-5 tracks (retired 2026-10-10). */
 export const AGE_TRACKS: AgeTrack[] = [
   {
-    slug: "2-3",
-    name: "Little Explorers",
-    audience: "Ages 2–3",
-    description:
-      "Parent-guided early learning. You operate the laptop; your child points, names, and moves. Big targets, gentle sounds, zero reading required.",
-    skills: ["Naming familiar objects", "Big and small", "Matching pairs", "Sounds and songs", "Taking turns"],
-    segment: "3–5 min, then off-screen play",
-    character: "tara",
-    route: "/kids/ages/2-3",
-  },
-  {
-    slug: "3-5",
-    name: "Play Garden",
-    audience: "Ages 3–5",
-    description:
-      "Counting real sets, sorting by shape and colour, AB patterns, first sounds, and short picture stories — one tap at a time.",
-    skills: ["Counting 1–10", "Sorting & matching", "AB patterns", "First sounds", "Story order"],
-    segment: "5–8 min",
-    character: "momo",
-    route: "/kids/ages/3-5",
-  },
-  {
-    slug: "kindergarten",
+    slug: "school-starters",
     name: "School Starters",
-    audience: "Ages 5–6 · Kindergarten",
+    audience: "Ages 5–6",
     description:
-      "School readiness without pressure: numerals meet quantities, number bonds within 10, letter sounds, and listening games.",
+      "The entry point. School readiness without pressure: numerals meet quantities, number bonds within 10, letter sounds, and listening games — always with a parent nearby.",
     skills: ["Count to 20", "Number bonds to 10", "Letter sounds", "Seasons & weather", "Story sentences"],
     segment: "8–10 min",
     character: "momo",
-    route: "/kids/kindergarten",
+    route: "/kids/tracks/school-starters",
   },
   {
-    slug: "1-2",
+    slug: "adventure-club",
     name: "Adventure Club",
-    audience: "Grades 1–2",
+    audience: "Grades 1–2 · Ages 6–8",
     description:
       "Place value with real blocks, addition strategies, reading short passages, and nature reasoning on the map.",
     skills: ["Place value", "Adding & subtracting", "Measuring", "Reading passages", "Plants & animals"],
     segment: "10–12 min",
     character: "bobo",
-    route: "/kids/grades/1-2",
+    route: "/kids/tracks/adventure-club",
   },
   {
-    slug: "3-4",
+    slug: "quest-makers",
     name: "Quest Makers",
-    audience: "Grades 3–4",
+    audience: "Grades 3–4 · Ages 8–10",
     description:
       "Multi-step quests: sharing models for division, fractions on bars, money planning, and mysteries solved with evidence.",
     skills: ["Multiplication & division", "Fractions", "Time & money", "Inference", "Simple experiments"],
     segment: "12–15 min",
     character: "tara",
-    route: "/kids/grades/3-4",
+    route: "/kids/tracks/quest-makers",
   },
   {
-    slug: "grade-5",
+    slug: "young-explorers",
     name: "Young Explorers",
-    audience: "Grade 5",
+    audience: "Grade 5 · Ages 10–11",
     description:
-      "Genuine Grade 5 challenges — decimals, volume, ecosystems, evidence-based reading — with a more grown-up look and the same friendly guides.",
+      "Genuine Grade 5 challenges — decimals, volume, ecosystems, evidence-based reading — with a more grown-up look. Graduates bridge into exam prep.",
     skills: ["Decimals & fractions", "Volume & area", "Data & graphs", "Ecosystems", "Argument from evidence"],
     segment: "12–18 min",
     character: "bobo",
-    route: "/kids/grade-5",
+    route: "/kids/tracks/young-explorers",
   },
 ];
 
-/* Village location metadata — content sourced from blueprint docs/03_KIDS_LEARNING_WORLD.md §3.
-   `detail` is a one-sentence active-verb blurb; `skills` are the MD's skill lists per setting.
-   Playable state is NOT stored here: it is derived in the world page from QUEST_BRIEFS (only K04/K13 playable). */
+/* ---- Smart learning engine (how a 5-year-old gets smarter here) ----
+   No tests. No fail states. The character adapts silently underneath. */
+export const SMART_LEARNING = {
+  principles: [
+    "The child chooses the character and the story; the system chooses the difficulty underneath.",
+    "3 correct in a row → difficulty steps up silently. A struggle → hint, then an easier variant. Never a red X.",
+    "Characters remember: 'Last time we counted to 10! Shall we try 12 today?'",
+    "One quest chain per session (~15 min) → celebration → an off-screen invitation. Then it ends.",
+    "Parents get a weekly note: words learned, skills practiced, what to try offline.",
+  ],
+  adaptiveRules: [
+    { when: "3 consecutive correct", then: "difficulty +1 (max 3)" },
+    { when: "2 consecutive wrong", then: "show hint, offer easier variant, difficulty stays" },
+    { when: "quest complete", then: "log skill + words to parent report, unlock next quest in chain" },
+    { when: "session > 15 min", then: "character suggests the off-screen activity and closes the quest" },
+  ],
+  noFail: true,
+  maxSessionMinutes: 15,
+} as const;
+
+/* ---- Endless content model ----
+   500 books × ~8 quests = ~4,000 base quests.
+   Template variants (parametric) make practice endless.
+   1 new book unlocks per week → the library lasts ~10 years. */
+export const BOOK_QUEST_TYPES = [
+  { type: "read-aloud", subject: "words", character: "tara", blurb: "Tara narrates the story with word highlighting" },
+  { type: "vocabulary", subject: "words", character: "tara", blurb: "8–12 key words from the book → match, use, play" },
+  { type: "comprehension", subject: "words", character: "tara", blurb: "Order events, find the main idea, guess feelings" },
+  { type: "value-quest", subject: "values", character: "all", blurb: "The book's moral → real-life choices" },
+  { type: "math-in-story", subject: "numbers", character: "momo", blurb: "Count and measure things inside the story world" },
+  { type: "wonder-quest", subject: "world", character: "bobo", blurb: "The science hiding inside the story" },
+  { type: "create-quest", subject: "create", character: "all", blurb: "Draw, build or retell the story your way" },
+] as const;
+
+export const ENDLESS_MODEL = {
+  baseQuestsPerBook: 8,
+  bookCount: 500,
+  baseTotal: 4000,
+  variantMultiplier: "parametric templates (e.g. counting quest × any object × any number)",
+  unlockCadence: "1 new book per week",
+  libraryLifespan: "~10 years",
+} as const;
+
+/* Village location metadata (from blueprint doc 03 §3). */
 export const VILLAGE_LOCATIONS = [
   {
     name: "Momo's Mango Garden",
@@ -138,31 +212,37 @@ export const VILLAGE_LOCATIONS = [
   },
 ];
 
-/** Prototype quest briefs (K01–K24 from the blueprint). Playable ones are implemented; the rest are backlog. */
-export type QuestBrief = {
+/** Quest data model. Quests live as JSON under content/kids/quests/ and are rendered by /kids/quest/[id]. */
+export type KidQuest = {
   id: string;
-  track: string;
+  book_id: string | null; // null = original (not from a book)
+  quest_type: string; // one of BOOK_QUEST_TYPES
+  subject: string; // one of KID_SUBJECTS slugs
+  track: string; // one of AGE_TRACKS slugs
   character: "momo" | "tara" | "bobo";
-  location: string;
   title: string;
   objective: string;
-  playable: boolean;
-  route?: string;
+  difficulty: 1 | 2 | 3;
+  story_beats: { text: string; art_note?: string }[];
+  interactions: {
+    type: "tap-choice" | "count-tap" | "order" | "speak-repeat" | "draw";
+    prompt: string;
+    options?: string[];
+    correct?: number;
+    target_count?: number;
+  }[];
+  feedback: { correct: string; retry: string };
+  off_screen: string;
+  parent_note: string;
+  status: "draft-pending-educator-review" | "reviewed";
 };
 
-export const QUEST_BRIEFS: QuestBrief[] = [
-  { id: "K04", track: "3–5", character: "momo", location: "Mango Garden", title: "Three Mangoes for the Picnic", objective: "Count out exactly 3 objects (one-to-one correspondence)", playable: true, route: "/kids/sample/momo-mangoes" },
-  { id: "K05", track: "3–5", character: "tara", location: "Story Tree", title: "What Happens Next?", objective: "Order three story cards sensibly", playable: false },
-  { id: "K07", track: "3–5", character: "momo", location: "Mango Garden", title: "Finish the Fruit Pattern", objective: "Extend an AB pattern", playable: false },
-  { id: "K13", track: "1–2", character: "tara", location: "Story Tree", title: "The Four-Card Story", objective: "Sequence a story and choose its title", playable: true, route: "/kids/sample/tara-story" },
-  { id: "K16", track: "3–4", character: "momo", location: "Mango Garden", title: "Share Twelve Mangoes", objective: "Division as equal groups", playable: false },
-  { id: "K22", track: "Grade 5", character: "bobo", location: "Discovery Pond", title: "The Seed Experiment", objective: "Identify variables in a controlled experiment", playable: false },
-];
-
-export const TRACK_SLUGS = ["2-3", "3-5", "kindergarten", "1-2", "3-4", "grade-5"] as const;
+export const TRACK_SLUGS = ["school-starters", "adventure-club", "quest-makers", "young-explorers"] as const;
 
 export function trackBySlug(slug: string): AgeTrack | undefined {
-  if (slug === "kindergarten") return AGE_TRACKS.find((t) => t.slug === "kindergarten");
-  if (slug === "grade-5") return AGE_TRACKS.find((t) => t.slug === "grade-5");
   return AGE_TRACKS.find((t) => t.slug === slug);
+}
+
+export function subjectBySlug(slug: string): KidSubject | undefined {
+  return KID_SUBJECTS.find((s) => s.slug === slug);
 }

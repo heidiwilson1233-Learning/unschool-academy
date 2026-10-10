@@ -124,6 +124,13 @@ export default function TopicsPage() {
           <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-ink mb-10 md:mb-12">
             Practice each section on its own
           </h2>
+          <p className="text-slate text-[15px] leading-relaxed -mt-6 mb-10 md:mb-12">
+            Prefer the official view first?{" "}
+            <Link href="/exams/jft-basic/syllabus" className="text-academy-blue font-semibold hover:underline">
+              See the full syllabus map
+            </Link>
+            , section by section, skill by skill.
+          </p>
         </div>
 
         <ul className="border-y border-border divide-y divide-border">

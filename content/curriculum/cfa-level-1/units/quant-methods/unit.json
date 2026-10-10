@@ -1,0 +1,40 @@
+{
+  "id": "quant-methods",
+  "title": "Quantitative Methods \u2014 Foundations",
+  "course": "cfa-level-1",
+  "level": "L1",
+  "order": 1,
+  "description": "L1 foundation: time value of money, interest rates, and NPV/IRR basics \u2014 the quantitative bedrock of CFA Level I.",
+  "skills": [
+    {
+      "id": "time-value-of-money",
+      "title": "Time Value of Money",
+      "order": 1,
+      "suggested_level": "L1",
+      "prerequisites": [],
+      "description": "Present value, future value, single cash flows, ordinary and due annuities, perpetuities. Basis for all valuation."
+    },
+    {
+      "id": "interest-rates",
+      "title": "Interest Rates and Compounding",
+      "order": 2,
+      "suggested_level": "L1",
+      "prerequisites": [
+        "time-value-of-money"
+      ],
+      "description": "Nominal vs effective rates, compounding frequency, stated vs periodic rates."
+    },
+    {
+      "id": "npv-irr-basics",
+      "title": "NPV and IRR Basics",
+      "order": 3,
+      "suggested_level": "L2",
+      "prerequisites": [
+        "time-value-of-money",
+        "interest-rates"
+      ],
+      "description": "Discounting uneven cash flows, net present value, internal rate of return intuition."
+    }
+  ],
+  "source": "CFA Institute Learning Outcome Statements (public LOS summaries) for Quantitative Methods \u2014 topic headings only, no curriculum text reproduced (cfainstitute.org)."
+}

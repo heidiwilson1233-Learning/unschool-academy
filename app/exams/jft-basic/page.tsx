@@ -383,6 +383,8 @@ export default function JftBasicPage() {
             {" · "}
             <Link href="/exams/jft-basic/mock-tests" className="text-academy-blue font-semibold hover:underline">Timed mocks</Link>
             {" · "}
+            <Link href="/exams/jft-basic/syllabus" className="text-academy-blue font-semibold hover:underline">Syllabus map</Link>
+            {" · "}
             <Link href="/exams/how-practice-works" className="text-academy-blue font-semibold hover:underline">How scoring works</Link>
           </p>
         </div>

@@ -1,0 +1,28 @@
+{
+  "id": "cfa-level-1",
+  "catalog_id": "EX-026",
+  "tier": "Tier 1",
+  "title": "CFA Level I",
+  "issuing_body": "CFA Institute",
+  "description": "CFA Level I exam preparation: 180 multiple-choice questions across two 2-hour-15-minute sessions (4.5 hours total). Content structured by the 10 official topic areas; this course begins with Quantitative Methods.",
+  "exam_pattern": {
+    "format": "180 multiple-choice questions (3 options each)",
+    "sessions": "2 x 2 hours 15 minutes",
+    "total_hours": 4.5,
+    "topic_areas": 10,
+    "note": "Topic weights are published by CFA Institute as approximate ranges and change periodically; verify current weights at cfainstitute.org before exam planning."
+  },
+  "skills": [
+    "time-value-of-money",
+    "interest-rates",
+    "npv-irr-basics",
+    "statistical-concepts",
+    "probability",
+    "hypothesis-testing",
+    "regression-basics",
+    "big-data-techniques"
+  ],
+  "estimated_hours": 300,
+  "status": "in-progress",
+  "source": "CFA Institute official exam information (cfainstitute.org) \u2014 public exam format and topic-area listings only; no curriculum text reproduced."
+}

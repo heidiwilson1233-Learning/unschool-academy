@@ -1,0 +1,120 @@
+{
+  "exam": "jft-basic",
+  "sections": [
+    {
+      "example": {
+        "en": "toshokan, library",
+        "jp": "図書館"
+      },
+      "officialQuestions": "around 12",
+      "order": 1,
+      "purpose": "Reading everyday Japanese texts; basic vocabulary and using it.",
+      "section": "Script and Vocabulary",
+      "skills": [
+        {
+          "id": "word-meaning",
+          "level": "L1",
+          "sequence": 1,
+          "why": "Every section stands on everyday vocabulary."
+        },
+        {
+          "id": "kanji-reading",
+          "level": "L1",
+          "sequence": 2,
+          "why": "Read the words without guessing."
+        },
+        {
+          "id": "word-usage",
+          "level": "L2",
+          "sequence": 3,
+          "why": "Knowing a word means knowing how it is used."
+        },
+        {
+          "id": "kanji-meaning-usage",
+          "level": "L3",
+          "sequence": 4,
+          "why": "Kanji meaning and usage together, the harder half of kanji."
+        }
+      ],
+      "unit": "script-vocabulary"
+    },
+    {
+      "officialQuestions": "around 12",
+      "order": 2,
+      "purpose": "Grammar and expressions needed for everyday conversation.",
+      "section": "Conversation and Expression",
+      "skills": [
+        {
+          "id": "grammar",
+          "level": "L2",
+          "sequence": 5,
+          "why": "Grammar carries every conversation."
+        },
+        {
+          "id": "expression",
+          "level": "L3",
+          "sequence": 7,
+          "why": "Say the right thing at the right moment."
+        }
+      ],
+      "unit": "conversation-expression"
+    },
+    {
+      "officialQuestions": "around 12",
+      "order": 3,
+      "purpose": "Understanding everyday conversations, shop exchanges, announcements, and instructions.",
+      "ruleNote": "Listening audio plays up to two times; you cannot go back to review in this section.",
+      "section": "Listening Comprehension",
+      "skills": [
+        {
+          "id": "listening-conversation",
+          "level": "L2",
+          "sequence": 6,
+          "why": "Hear it after you can read it."
+        },
+        {
+          "id": "listening-shops",
+          "level": "L3",
+          "sequence": 9,
+          "why": "Faster exchanges in real places."
+        },
+        {
+          "id": "listening-announcements",
+          "level": "L4",
+          "sequence": 11,
+          "why": "Fast formal Japanese, played only twice."
+        }
+      ],
+      "unit": "listening-comprehension"
+    },
+    {
+      "example": {
+        "en": "deguchi, exit",
+        "jp": "出口"
+      },
+      "officialQuestions": "around 12",
+      "order": 4,
+      "purpose": "Reading letters, messages, and notices; finding the information you need.",
+      "section": "Reading Comprehension",
+      "skills": [
+        {
+          "id": "reading-messages",
+          "level": "L2",
+          "sequence": 8,
+          "why": "Short texts before dense notices."
+        },
+        {
+          "id": "information-search",
+          "level": "L3",
+          "sequence": 10,
+          "why": "Scan notices for exactly what you need."
+        }
+      ],
+      "unit": "reading-comprehension"
+    }
+  ],
+  "source": "https://www.jpf.go.jp/jft-basic/e/about/index.html",
+  "sourceNote": "Section names and per-section question counts follow the Japan Foundation's official JFT-Basic overview (verified 2026-10-10). Section descriptions are our paraphrase of the official purposes. Skill labels and the study order below are ours, not the Foundation's.",
+  "status": "draft-pending-sme-review",
+  "version": 1
+}

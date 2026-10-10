@@ -1,0 +1,962 @@
+[
+  {
+    "id": "gre-q-ab-001",
+    "skill": "arithmetic-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "What is 48 + 37?",
+    "options": [
+      {
+        "id": "a",
+        "text": "75"
+      },
+      {
+        "id": "b",
+        "text": "85"
+      },
+      {
+        "id": "c",
+        "text": "95"
+      },
+      {
+        "id": "d",
+        "text": "84"
+      }
+    ],
+    "answer": 1,
+    "explanation": "Add the tens: 40 + 30 = 70. Add the ones: 8 + 7 = 15. Total: 70 + 15 = 85.",
+    "hint": "Add tens and ones separately, then combine.",
+    "source": "ETS GRE Quantitative Reasoning content specifications — Arithmetic content area (ets.org/gre)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "gre-q-ab-002",
+    "skill": "arithmetic-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "What is 3/4 + 1/8?",
+    "options": [
+      {
+        "id": "a",
+        "text": "4/12"
+      },
+      {
+        "id": "b",
+        "text": "7/8"
+      },
+      {
+        "id": "c",
+        "text": "3/5"
+      },
+      {
+        "id": "d",
+        "text": "1"
+      }
+    ],
+    "answer": 1,
+    "explanation": "Use a common denominator of 8: 3/4 = 6/8. Then 6/8 + 1/8 = 7/8.",
+    "hint": "Convert 3/4 to eighths first.",
+    "source": "ETS GRE Quantitative Reasoning content specifications — Arithmetic content area (ets.org/gre)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "gre-q-ab-003",
+    "skill": "arithmetic-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "What is 2.5 × 0.4?",
+    "options": [
+      {
+        "id": "a",
+        "text": "1.0"
+      },
+      {
+        "id": "b",
+        "text": "10"
+      },
+      {
+        "id": "c",
+        "text": "0.1"
+      },
+      {
+        "id": "d",
+        "text": "2.9"
+      }
+    ],
+    "answer": 0,
+    "explanation": "Multiply ignoring decimals: 25 × 4 = 100. There are 2 decimal places total (one in each factor), so place the decimal: 1.00 = 1.0.",
+    "hint": "Ignore the decimals, multiply 25 × 4, then count decimal places.",
+    "source": "ETS GRE Quantitative Reasoning content specifications — Arithmetic content area (ets.org/gre)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "gre-q-ab-004",
+    "skill": "arithmetic-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "What is 20% of 150?",
+    "options": [
+      {
+        "id": "a",
+        "text": "20"
+      },
+      {
+        "id": "b",
+        "text": "35"
+      },
+      {
+        "id": "c",
+        "text": "30"
+      },
+      {
+        "id": "d",
+        "text": "25"
+      }
+    ],
+    "answer": 2,
+    "explanation": "20% = 20/100 = 1/5. So 20% of 150 = 150 ÷ 5 = 30. (Or 0.20 × 150 = 30.)",
+    "hint": "20% is the same as one-fifth — divide by 5.",
+    "source": "ETS GRE Quantitative Reasoning content specifications — Arithmetic content area (ets.org/gre)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "gre-q-ab-005",
+    "skill": "arithmetic-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "What is 2⁴?",
+    "options": [
+      {
+        "id": "a",
+        "text": "8"
+      },
+      {
+        "id": "b",
+        "text": "12"
+      },
+      {
+        "id": "c",
+        "text": "16"
+      },
+      {
+        "id": "d",
+        "text": "32"
+      }
+    ],
+    "answer": 2,
+    "explanation": "2⁴ = 2 × 2 × 2 × 2 = 16.",
+    "hint": "Multiply 2 by itself 4 times.",
+    "source": "ETS GRE Quantitative Reasoning content specifications — Arithmetic content area (ets.org/gre)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "gre-q-ab-006",
+    "skill": "arithmetic-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "What is √49?",
+    "options": [
+      {
+        "id": "a",
+        "text": "5"
+      },
+      {
+        "id": "b",
+        "text": "6"
+      },
+      {
+        "id": "c",
+        "text": "8"
+      },
+      {
+        "id": "d",
+        "text": "7"
+      }
+    ],
+    "answer": 3,
+    "explanation": "√49 asks: which number times itself equals 49? 7 × 7 = 49, so √49 = 7.",
+    "hint": "Which number squared gives 49?",
+    "source": "ETS GRE Quantitative Reasoning content specifications — Arithmetic content area (ets.org/gre)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "gre-q-ab-007",
+    "skill": "arithmetic-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "What is −5 + 12?",
+    "options": [
+      {
+        "id": "a",
+        "text": "−17"
+      },
+      {
+        "id": "b",
+        "text": "7"
+      },
+      {
+        "id": "c",
+        "text": "17"
+      },
+      {
+        "id": "d",
+        "text": "−7"
+      }
+    ],
+    "answer": 1,
+    "explanation": "Adding a negative is like moving left on the number line: 12 − 5 = 7.",
+    "hint": "Think of it as 12 − 5.",
+    "source": "ETS GRE Quantitative Reasoning content specifications — Arithmetic content area (ets.org/gre)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "gre-q-ab-008",
+    "skill": "arithmetic-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "What is 5/6 − 1/3?",
+    "options": [
+      {
+        "id": "a",
+        "text": "1/3"
+      },
+      {
+        "id": "b",
+        "text": "1/2"
+      },
+      {
+        "id": "c",
+        "text": "2/3"
+      },
+      {
+        "id": "d",
+        "text": "5/9"
+      }
+    ],
+    "answer": 1,
+    "explanation": "Convert 1/3 to sixths: 1/3 = 2/6. Then 5/6 − 2/6 = 3/6 = 1/2.",
+    "hint": "Rewrite 1/3 with denominator 6.",
+    "source": "ETS GRE Quantitative Reasoning content specifications — Arithmetic content area (ets.org/gre)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "gre-q-ab-009",
+    "skill": "arithmetic-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "What is 3.6 ÷ 0.9?",
+    "options": [
+      {
+        "id": "a",
+        "text": "4"
+      },
+      {
+        "id": "b",
+        "text": "0.4"
+      },
+      {
+        "id": "c",
+        "text": "40"
+      },
+      {
+        "id": "d",
+        "text": "3"
+      }
+    ],
+    "answer": 0,
+    "explanation": "Multiply both numbers by 10 to clear the decimals: 36 ÷ 9 = 4.",
+    "hint": "How many 0.9s fit into 3.6? Try clearing the decimals.",
+    "source": "ETS GRE Quantitative Reasoning content specifications — Arithmetic content area (ets.org/gre)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "gre-q-ab-010",
+    "skill": "arithmetic-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "What is 150% of 80?",
+    "options": [
+      {
+        "id": "a",
+        "text": "100"
+      },
+      {
+        "id": "b",
+        "text": "130"
+      },
+      {
+        "id": "c",
+        "text": "140"
+      },
+      {
+        "id": "d",
+        "text": "120"
+      }
+    ],
+    "answer": 3,
+    "explanation": "150% = 1.5. So 1.5 × 80 = 120. (Sanity check: 100% of 80 is 80, so 150% must be more than 80.)",
+    "hint": "150% means 1.5 times the number.",
+    "source": "ETS GRE Quantitative Reasoning content specifications — Arithmetic content area (ets.org/gre)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "gre-q-ab-011",
+    "skill": "arithmetic-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "What is 3³?",
+    "options": [
+      {
+        "id": "a",
+        "text": "9"
+      },
+      {
+        "id": "b",
+        "text": "18"
+      },
+      {
+        "id": "c",
+        "text": "27"
+      },
+      {
+        "id": "d",
+        "text": "81"
+      }
+    ],
+    "answer": 2,
+    "explanation": "3³ = 3 × 3 × 3 = 27.",
+    "hint": "Multiply 3 by itself 3 times.",
+    "source": "ETS GRE Quantitative Reasoning content specifications — Arithmetic content area (ets.org/gre)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "gre-q-ab-012",
+    "skill": "arithmetic-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "What is √144?",
+    "options": [
+      {
+        "id": "a",
+        "text": "10"
+      },
+      {
+        "id": "b",
+        "text": "11"
+      },
+      {
+        "id": "c",
+        "text": "12"
+      },
+      {
+        "id": "d",
+        "text": "14"
+      }
+    ],
+    "answer": 2,
+    "explanation": "12 × 12 = 144, so √144 = 12.",
+    "hint": "Which number squared equals 144?",
+    "source": "ETS GRE Quantitative Reasoning content specifications — Arithmetic content area (ets.org/gre)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "gre-q-ab-013",
+    "skill": "arithmetic-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "What is (−6) × (−4)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "−24"
+      },
+      {
+        "id": "b",
+        "text": "24"
+      },
+      {
+        "id": "c",
+        "text": "10"
+      },
+      {
+        "id": "d",
+        "text": "−10"
+      }
+    ],
+    "answer": 1,
+    "explanation": "A negative times a negative gives a positive: 6 × 4 = 24.",
+    "hint": "Remember the sign rule for multiplying negatives.",
+    "source": "ETS GRE Quantitative Reasoning content specifications — Arithmetic content area (ets.org/gre)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "gre-q-ab-014",
+    "skill": "arithmetic-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "What is (2/3) × 9?",
+    "options": [
+      {
+        "id": "a",
+        "text": "3"
+      },
+      {
+        "id": "b",
+        "text": "18"
+      },
+      {
+        "id": "c",
+        "text": "2"
+      },
+      {
+        "id": "d",
+        "text": "6"
+      }
+    ],
+    "answer": 3,
+    "explanation": "(2/3) × 9 = 18/3 = 6.",
+    "hint": "Multiply the numerator by 9, then divide by the denominator.",
+    "source": "ETS GRE Quantitative Reasoning content specifications — Arithmetic content area (ets.org/gre)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "gre-q-ab-015",
+    "skill": "arithmetic-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "A jacket priced at $200 is marked down to $150. What is the percent decrease?",
+    "options": [
+      {
+        "id": "a",
+        "text": "25%"
+      },
+      {
+        "id": "b",
+        "text": "20%"
+      },
+      {
+        "id": "c",
+        "text": "33%"
+      },
+      {
+        "id": "d",
+        "text": "50%"
+      }
+    ],
+    "answer": 0,
+    "explanation": "Decrease = 200 − 150 = 50. Percent decrease = 50/200 = 1/4 = 25%.",
+    "hint": "Percent decrease = (amount of decrease) ÷ (original price).",
+    "source": "ETS GRE Quantitative Reasoning content specifications — Arithmetic content area (ets.org/gre)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "gre-q-ab-016",
+    "skill": "arithmetic-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "What is 0.25 + 0.75?",
+    "options": [
+      {
+        "id": "a",
+        "text": "1.0"
+      },
+      {
+        "id": "b",
+        "text": "0.9"
+      },
+      {
+        "id": "c",
+        "text": "1.1"
+      },
+      {
+        "id": "d",
+        "text": "0.10"
+      }
+    ],
+    "answer": 0,
+    "explanation": "Line up the decimals: 0.25 + 0.75 = 1.00.",
+    "hint": "Add hundredths to hundredths.",
+    "source": "ETS GRE Quantitative Reasoning content specifications — Arithmetic content area (ets.org/gre)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "gre-q-ab-017",
+    "skill": "arithmetic-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "What is 10³?",
+    "options": [
+      {
+        "id": "a",
+        "text": "30"
+      },
+      {
+        "id": "b",
+        "text": "300"
+      },
+      {
+        "id": "c",
+        "text": "1000"
+      },
+      {
+        "id": "d",
+        "text": "10000"
+      }
+    ],
+    "answer": 2,
+    "explanation": "10³ = 10 × 10 × 10 = 1,000.",
+    "hint": "Each power of 10 adds a zero.",
+    "source": "ETS GRE Quantitative Reasoning content specifications — Arithmetic content area (ets.org/gre)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "gre-q-ab-018",
+    "skill": "arithmetic-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "What is 6 + 4 × 3?",
+    "options": [
+      {
+        "id": "a",
+        "text": "30"
+      },
+      {
+        "id": "b",
+        "text": "18"
+      },
+      {
+        "id": "c",
+        "text": "24"
+      },
+      {
+        "id": "d",
+        "text": "16"
+      }
+    ],
+    "answer": 1,
+    "explanation": "Order of operations (PEMDAS): multiply first. 4 × 3 = 12, then 6 + 12 = 18.",
+    "hint": "Multiplication comes before addition.",
+    "source": "ETS GRE Quantitative Reasoning content specifications — Arithmetic content area (ets.org/gre)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "gre-q-ab-019",
+    "skill": "arithmetic-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "What is (1/2) ÷ (1/4)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "1/8"
+      },
+      {
+        "id": "b",
+        "text": "1/2"
+      },
+      {
+        "id": "c",
+        "text": "4"
+      },
+      {
+        "id": "d",
+        "text": "2"
+      }
+    ],
+    "answer": 3,
+    "explanation": "To divide fractions, multiply by the reciprocal: (1/2) × 4 = 2.",
+    "hint": "Flip the second fraction and multiply.",
+    "source": "ETS GRE Quantitative Reasoning content specifications — Arithmetic content area (ets.org/gre)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "gre-q-ab-020",
+    "skill": "arithmetic-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "15 is what percent of 60?",
+    "options": [
+      {
+        "id": "a",
+        "text": "15%"
+      },
+      {
+        "id": "b",
+        "text": "20%"
+      },
+      {
+        "id": "c",
+        "text": "25%"
+      },
+      {
+        "id": "d",
+        "text": "40%"
+      }
+    ],
+    "answer": 2,
+    "explanation": "15/60 = 1/4 = 0.25 = 25%.",
+    "hint": "Divide 15 by 60, then convert to a percent.",
+    "source": "ETS GRE Quantitative Reasoning content specifications — Arithmetic content area (ets.org/gre)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "gre-q-ab-021",
+    "skill": "arithmetic-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "What is 100 − 3 × 8?",
+    "options": [
+      {
+        "id": "a",
+        "text": "76"
+      },
+      {
+        "id": "b",
+        "text": "776"
+      },
+      {
+        "id": "c",
+        "text": "64"
+      },
+      {
+        "id": "d",
+        "text": "90"
+      }
+    ],
+    "answer": 0,
+    "explanation": "Multiply first: 3 × 8 = 24. Then 100 − 24 = 76.",
+    "hint": "Multiplication before subtraction.",
+    "source": "ETS GRE Quantitative Reasoning content specifications — Arithmetic content area (ets.org/gre)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "gre-q-ab-022",
+    "skill": "arithmetic-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "What is 5² + 5?",
+    "options": [
+      {
+        "id": "a",
+        "text": "35"
+      },
+      {
+        "id": "b",
+        "text": "30"
+      },
+      {
+        "id": "c",
+        "text": "50"
+      },
+      {
+        "id": "d",
+        "text": "25"
+      }
+    ],
+    "answer": 1,
+    "explanation": "5² = 25. Then 25 + 5 = 30.",
+    "hint": "Compute the power first.",
+    "source": "ETS GRE Quantitative Reasoning content specifications — Arithmetic content area (ets.org/gre)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "gre-q-ab-023",
+    "skill": "arithmetic-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "What is √(9 + 16)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "7"
+      },
+      {
+        "id": "b",
+        "text": "25"
+      },
+      {
+        "id": "c",
+        "text": "12"
+      },
+      {
+        "id": "d",
+        "text": "5"
+      }
+    ],
+    "answer": 3,
+    "explanation": "Add inside the root first: 9 + 16 = 25. Then √25 = 5.",
+    "hint": "Simplify inside the square root before taking the root.",
+    "source": "ETS GRE Quantitative Reasoning content specifications — Arithmetic content area (ets.org/gre)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "gre-q-ab-024",
+    "skill": "arithmetic-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "What is 7.84 − 2.36?",
+    "options": [
+      {
+        "id": "a",
+        "text": "5.48"
+      },
+      {
+        "id": "b",
+        "text": "5.58"
+      },
+      {
+        "id": "c",
+        "text": "4.48"
+      },
+      {
+        "id": "d",
+        "text": "5.38"
+      }
+    ],
+    "answer": 0,
+    "explanation": "Subtract column by column: 7.84 − 2.36 = 5.48.",
+    "hint": "Line up the decimal points and subtract.",
+    "source": "ETS GRE Quantitative Reasoning content specifications — Arithmetic content area (ets.org/gre)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "gre-q-ab-025",
+    "skill": "arithmetic-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "What is (2/5) of 35?",
+    "options": [
+      {
+        "id": "a",
+        "text": "10"
+      },
+      {
+        "id": "b",
+        "text": "14"
+      },
+      {
+        "id": "c",
+        "text": "16"
+      },
+      {
+        "id": "d",
+        "text": "12"
+      }
+    ],
+    "answer": 1,
+    "explanation": "(2/5) × 35 = 70/5 = 14.",
+    "hint": "'Of' means multiply — then simplify.",
+    "source": "ETS GRE Quantitative Reasoning content specifications — Arithmetic content area (ets.org/gre)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "gre-q-ab-026",
+    "skill": "arithmetic-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "40 is 25% of what number?",
+    "options": [
+      {
+        "id": "a",
+        "text": "100"
+      },
+      {
+        "id": "b",
+        "text": "120"
+      },
+      {
+        "id": "c",
+        "text": "160"
+      },
+      {
+        "id": "d",
+        "text": "200"
+      }
+    ],
+    "answer": 2,
+    "explanation": "25% = 1/4, so the whole is 4 × 40 = 160. Check: 25% of 160 = 40. ✓",
+    "hint": "If 40 is one-quarter, what is four-quarters?",
+    "source": "ETS GRE Quantitative Reasoning content specifications — Arithmetic content area (ets.org/gre)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "gre-q-ab-027",
+    "skill": "arithmetic-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "What is (−15) ÷ 3?",
+    "options": [
+      {
+        "id": "a",
+        "text": "−5"
+      },
+      {
+        "id": "b",
+        "text": "5"
+      },
+      {
+        "id": "c",
+        "text": "−12"
+      },
+      {
+        "id": "d",
+        "text": "45"
+      }
+    ],
+    "answer": 0,
+    "explanation": "A negative divided by a positive gives a negative: −15 ÷ 3 = −5.",
+    "hint": "Check the sign rule for division.",
+    "source": "ETS GRE Quantitative Reasoning content specifications — Arithmetic content area (ets.org/gre)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "gre-q-ab-028",
+    "skill": "arithmetic-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "What is 2⁵?",
+    "options": [
+      {
+        "id": "a",
+        "text": "10"
+      },
+      {
+        "id": "b",
+        "text": "25"
+      },
+      {
+        "id": "c",
+        "text": "64"
+      },
+      {
+        "id": "d",
+        "text": "32"
+      }
+    ],
+    "answer": 3,
+    "explanation": "2⁵ = 2 × 2 × 2 × 2 × 2 = 32.",
+    "hint": "Count five 2s multiplied together.",
+    "source": "ETS GRE Quantitative Reasoning content specifications — Arithmetic content area (ets.org/gre)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "gre-q-ab-029",
+    "skill": "arithmetic-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "What is 1½ + 2¼?",
+    "options": [
+      {
+        "id": "a",
+        "text": "3¼"
+      },
+      {
+        "id": "b",
+        "text": "3¾"
+      },
+      {
+        "id": "c",
+        "text": "4"
+      },
+      {
+        "id": "d",
+        "text": "3½"
+      }
+    ],
+    "answer": 1,
+    "explanation": "Convert: 1½ = 3/2 = 6/4. Then 6/4 + 9/4 = 15/4 = 3¾.",
+    "hint": "Put both over a common denominator of 4.",
+    "source": "ETS GRE Quantitative Reasoning content specifications — Arithmetic content area (ets.org/gre)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "gre-q-ab-030",
+    "skill": "arithmetic-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "A store offers 10% off an item priced at $250. What is the discount amount?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$20"
+      },
+      {
+        "id": "b",
+        "text": "$30"
+      },
+      {
+        "id": "c",
+        "text": "$25"
+      },
+      {
+        "id": "d",
+        "text": "$35"
+      }
+    ],
+    "answer": 2,
+    "explanation": "10% = 1/10. Discount = 250 ÷ 10 = $25.",
+    "hint": "10% of anything is one-tenth of it.",
+    "source": "ETS GRE Quantitative Reasoning content specifications — Arithmetic content area (ets.org/gre)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  }
+]

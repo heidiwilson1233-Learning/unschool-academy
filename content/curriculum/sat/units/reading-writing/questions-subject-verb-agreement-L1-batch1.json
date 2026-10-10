@@ -1,0 +1,962 @@
+[
+  {
+    "id": "sat-rw-sva-001",
+    "skill": "subject-verb-agreement",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English? The committee ___ every Tuesday to review the budget.",
+    "options": [
+      {
+        "id": "a",
+        "text": "meet"
+      },
+      {
+        "id": "b",
+        "text": "meets"
+      },
+      {
+        "id": "c",
+        "text": "meeting"
+      },
+      {
+        "id": "d",
+        "text": "to meet"
+      }
+    ],
+    "answer": 1,
+    "explanation": "Rule: subject-verb agreement with a collective noun. 'Committee' is a singular collective noun, so it takes the singular verb 'meets'. 'Meet' is plural, and 'meeting'/'to meet' are non-finite forms that cannot serve as the main verb here.",
+    "hint": "Is 'committee' one group acting as a unit? Then the verb should be singular, like 'it meets'.",
+    "source": "Original question authored for Unschool Academy; rule aligned to College Board digital SAT Reading and Writing — Standard English Conventions: subject-verb agreement (satsuite.collegeboard.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "sat-rw-sva-002",
+    "skill": "subject-verb-agreement",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English? Each of the players ___ a new uniform this season.",
+    "options": [
+      {
+        "id": "a",
+        "text": "receive"
+      },
+      {
+        "id": "b",
+        "text": "receiving"
+      },
+      {
+        "id": "c",
+        "text": "receives"
+      },
+      {
+        "id": "d",
+        "text": "to receive"
+      }
+    ],
+    "answer": 2,
+    "explanation": "Rule: indefinite pronouns. 'Each' is always singular, so it takes the singular verb 'receives'. The plural-sounding phrase 'of the players' does not change the singular subject.",
+    "hint": "Cross out 'of the players' — what is left? 'Each ___ a new uniform.'",
+    "source": "Original question authored for Unschool Academy; rule aligned to College Board digital SAT Reading and Writing — Standard English Conventions: subject-verb agreement (satsuite.collegeboard.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "sat-rw-sva-003",
+    "skill": "subject-verb-agreement",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English? The books on the shelf ___ dusted every week.",
+    "options": [
+      {
+        "id": "a",
+        "text": "are"
+      },
+      {
+        "id": "b",
+        "text": "is"
+      },
+      {
+        "id": "c",
+        "text": "being"
+      },
+      {
+        "id": "d",
+        "text": "be"
+      }
+    ],
+    "answer": 0,
+    "explanation": "Rule: the verb agrees with the subject, not with words in a prepositional phrase. The subject is the plural 'books' (not 'shelf'), so the plural verb 'are' is correct.",
+    "hint": "Find the real subject — ignore 'on the shelf'. Books: one or many?",
+    "source": "Original question authored for Unschool Academy; rule aligned to College Board digital SAT Reading and Writing — Standard English Conventions: subject-verb agreement (satsuite.collegeboard.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "sat-rw-sva-004",
+    "skill": "subject-verb-agreement",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English? Neither the coach nor the players ___ the change in schedule.",
+    "options": [
+      {
+        "id": "a",
+        "text": "likes"
+      },
+      {
+        "id": "b",
+        "text": "liking"
+      },
+      {
+        "id": "c",
+        "text": "to like"
+      },
+      {
+        "id": "d",
+        "text": "like"
+      }
+    ],
+    "answer": 3,
+    "explanation": "Rule: with 'neither/nor', the verb agrees with the nearer subject. 'Players' (plural) is nearer the verb than 'coach', so the plural verb 'like' is correct.",
+    "hint": "In a 'neither/nor' sentence, look at the subject closest to the blank.",
+    "source": "Original question authored for Unschool Academy; rule aligned to College Board digital SAT Reading and Writing — Standard English Conventions: subject-verb agreement (satsuite.collegeboard.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "sat-rw-sva-005",
+    "skill": "subject-verb-agreement",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English? There ___ two good reasons to arrive early.",
+    "options": [
+      {
+        "id": "a",
+        "text": "is"
+      },
+      {
+        "id": "b",
+        "text": "was"
+      },
+      {
+        "id": "c",
+        "text": "are"
+      },
+      {
+        "id": "d",
+        "text": "being"
+      }
+    ],
+    "answer": 2,
+    "explanation": "Rule: with 'there', the verb agrees with the true subject that follows it. 'Two good reasons' is plural, so the plural verb 'are' is correct.",
+    "hint": "Flip the sentence: 'Two good reasons ___ there.' Now which verb fits?",
+    "source": "Original question authored for Unschool Academy; rule aligned to College Board digital SAT Reading and Writing — Standard English Conventions: subject-verb agreement (satsuite.collegeboard.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "sat-rw-sva-006",
+    "skill": "subject-verb-agreement",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English? The team ___ its first championship in 2019.",
+    "options": [
+      {
+        "id": "a",
+        "text": "won"
+      },
+      {
+        "id": "b",
+        "text": "wins"
+      },
+      {
+        "id": "c",
+        "text": "winning"
+      },
+      {
+        "id": "d",
+        "text": "win"
+      }
+    ],
+    "answer": 0,
+    "explanation": "Rule: the singular collective noun 'team' takes a singular verb, and the time marker 'in 2019' requires the past tense — 'won'. 'Wins' is singular but present tense, which conflicts with 2019.",
+    "hint": "Two checks: is the subject singular? And what year is the sentence about?",
+    "source": "Original question authored for Unschool Academy; rule aligned to College Board digital SAT Reading and Writing — Standard English Conventions: subject-verb agreement (satsuite.collegeboard.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "sat-rw-sva-007",
+    "skill": "subject-verb-agreement",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English? Every student and teacher ___ invited to the ceremony.",
+    "options": [
+      {
+        "id": "a",
+        "text": "were"
+      },
+      {
+        "id": "b",
+        "text": "was"
+      },
+      {
+        "id": "c",
+        "text": "be"
+      },
+      {
+        "id": "d",
+        "text": "being"
+      }
+    ],
+    "answer": 1,
+    "explanation": "Rule: 'every' makes the subject singular even when it joins two nouns. 'Every student and teacher' is treated as singular, so 'was' is correct.",
+    "hint": "'Every' is a singular word — it forces the verb to be singular too.",
+    "source": "Original question authored for Unschool Academy; rule aligned to College Board digital SAT Reading and Writing — Standard English Conventions: subject-verb agreement (satsuite.collegeboard.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "sat-rw-sva-008",
+    "skill": "subject-verb-agreement",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English? The flock of birds ___ south each autumn.",
+    "options": [
+      {
+        "id": "a",
+        "text": "migrate"
+      },
+      {
+        "id": "b",
+        "text": "migrating"
+      },
+      {
+        "id": "c",
+        "text": "to migrate"
+      },
+      {
+        "id": "d",
+        "text": "migrates"
+      }
+    ],
+    "answer": 3,
+    "explanation": "Rule: collective nouns. 'Flock' is a singular collective noun acting as one unit, so it takes the singular verb 'migrates'. The plural 'birds' inside the prepositional phrase does not govern the verb.",
+    "hint": "Is it one flock or many flocks moving? The subject is 'flock'.",
+    "source": "Original question authored for Unschool Academy; rule aligned to College Board digital SAT Reading and Writing — Standard English Conventions: subject-verb agreement (satsuite.collegeboard.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "sat-rw-sva-009",
+    "skill": "subject-verb-agreement",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English? Mathematics ___ my favorite subject.",
+    "options": [
+      {
+        "id": "a",
+        "text": "are"
+      },
+      {
+        "id": "b",
+        "text": "be"
+      },
+      {
+        "id": "c",
+        "text": "is"
+      },
+      {
+        "id": "d",
+        "text": "being"
+      }
+    ],
+    "answer": 2,
+    "explanation": "Rule: subjects ending in -ics (mathematics, physics, economics) are singular despite the 's'. The singular verb 'is' is correct.",
+    "hint": "Say it aloud: 'Mathematics is...' or 'Mathematics are...'? Trust your ear here.",
+    "source": "Original question authored for Unschool Academy; rule aligned to College Board digital SAT Reading and Writing — Standard English Conventions: subject-verb agreement (satsuite.collegeboard.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "sat-rw-sva-010",
+    "skill": "subject-verb-agreement",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English? The children in the park ___ loudly every evening.",
+    "options": [
+      {
+        "id": "a",
+        "text": "plays"
+      },
+      {
+        "id": "b",
+        "text": "play"
+      },
+      {
+        "id": "c",
+        "text": "playing"
+      },
+      {
+        "id": "d",
+        "text": "to play"
+      }
+    ],
+    "answer": 1,
+    "explanation": "Rule: plural subject takes a plural verb. 'Children' is plural, so 'play' is correct. Ignore the prepositional phrase 'in the park'.",
+    "hint": "One child plays; many children ___?",
+    "source": "Original question authored for Unschool Academy; rule aligned to College Board digital SAT Reading and Writing — Standard English Conventions: subject-verb agreement (satsuite.collegeboard.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "sat-rw-sva-011",
+    "skill": "subject-verb-agreement",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English? A basket of fresh oranges ___ on the kitchen table.",
+    "options": [
+      {
+        "id": "a",
+        "text": "sits"
+      },
+      {
+        "id": "b",
+        "text": "sit"
+      },
+      {
+        "id": "c",
+        "text": "sitting"
+      },
+      {
+        "id": "d",
+        "text": "to sit"
+      }
+    ],
+    "answer": 0,
+    "explanation": "Rule: the verb agrees with the subject 'basket' (singular), not with 'oranges' in the prepositional phrase. The singular verb 'sits' is correct.",
+    "hint": "Cross out 'of fresh oranges' — 'A basket ___ on the table.'",
+    "source": "Original question authored for Unschool Academy; rule aligned to College Board digital SAT Reading and Writing — Standard English Conventions: subject-verb agreement (satsuite.collegeboard.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "sat-rw-sva-012",
+    "skill": "subject-verb-agreement",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English? Either Maya or her sisters ___ bringing dessert.",
+    "options": [
+      {
+        "id": "a",
+        "text": "is"
+      },
+      {
+        "id": "b",
+        "text": "be"
+      },
+      {
+        "id": "c",
+        "text": "being"
+      },
+      {
+        "id": "d",
+        "text": "are"
+      }
+    ],
+    "answer": 3,
+    "explanation": "Rule: with 'either/or', the verb agrees with the nearer subject. 'Sisters' (plural) is nearer the verb, so 'are' is correct.",
+    "hint": "Look at the noun closest to the blank — 'Maya' or 'sisters'?",
+    "source": "Original question authored for Unschool Academy; rule aligned to College Board digital SAT Reading and Writing — Standard English Conventions: subject-verb agreement (satsuite.collegeboard.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "sat-rw-sva-013",
+    "skill": "subject-verb-agreement",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English? The news about the storm ___ everyone worried.",
+    "options": [
+      {
+        "id": "a",
+        "text": "have"
+      },
+      {
+        "id": "b",
+        "text": "having"
+      },
+      {
+        "id": "c",
+        "text": "has"
+      },
+      {
+        "id": "d",
+        "text": "to have"
+      }
+    ],
+    "answer": 2,
+    "explanation": "Rule: 'news' is an uncountable noun and always singular, so the singular verb 'has' is correct — even though it ends in 's'.",
+    "hint": "'News' looks plural but behaves as one thing: 'the news has...'",
+    "source": "Original question authored for Unschool Academy; rule aligned to College Board digital SAT Reading and Writing — Standard English Conventions: subject-verb agreement (satsuite.collegeboard.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "sat-rw-sva-014",
+    "skill": "subject-verb-agreement",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English? Ten dollars ___ enough for a simple lunch.",
+    "options": [
+      {
+        "id": "a",
+        "text": "are"
+      },
+      {
+        "id": "b",
+        "text": "is"
+      },
+      {
+        "id": "c",
+        "text": "be"
+      },
+      {
+        "id": "d",
+        "text": "being"
+      }
+    ],
+    "answer": 1,
+    "explanation": "Rule: amounts of money, time, and distance are treated as singular units. 'Ten dollars' is one amount, so the singular verb 'is' is correct.",
+    "hint": "Think of it as one price tag, not ten separate bills.",
+    "source": "Original question authored for Unschool Academy; rule aligned to College Board digital SAT Reading and Writing — Standard English Conventions: subject-verb agreement (satsuite.collegeboard.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "sat-rw-sva-015",
+    "skill": "subject-verb-agreement",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English? The paintings on the wall ___ by a local artist.",
+    "options": [
+      {
+        "id": "a",
+        "text": "was"
+      },
+      {
+        "id": "b",
+        "text": "be"
+      },
+      {
+        "id": "c",
+        "text": "being"
+      },
+      {
+        "id": "d",
+        "text": "were"
+      }
+    ],
+    "answer": 3,
+    "explanation": "Rule: the subject is the plural 'paintings', so the plural verb 'were' is correct. 'On the wall' is just a prepositional phrase — it cannot change the subject's number.",
+    "hint": "Remove 'on the wall' and read it: 'The paintings ___ by a local artist.'",
+    "source": "Original question authored for Unschool Academy; rule aligned to College Board digital SAT Reading and Writing — Standard English Conventions: subject-verb agreement (satsuite.collegeboard.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "sat-rw-sva-016",
+    "skill": "subject-verb-agreement",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English? Someone ___ left a jacket in the classroom.",
+    "options": [
+      {
+        "id": "a",
+        "text": "has"
+      },
+      {
+        "id": "b",
+        "text": "have"
+      },
+      {
+        "id": "c",
+        "text": "having"
+      },
+      {
+        "id": "d",
+        "text": "to have"
+      }
+    ],
+    "answer": 0,
+    "explanation": "Rule: indefinite pronouns like 'someone', 'anyone', and 'nobody' are always singular. 'Someone has' is correct.",
+    "hint": "'Someone' means one unnamed person — singular.",
+    "source": "Original question authored for Unschool Academy; rule aligned to College Board digital SAT Reading and Writing — Standard English Conventions: subject-verb agreement (satsuite.collegeboard.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "sat-rw-sva-017",
+    "skill": "subject-verb-agreement",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English? The dog and the cat ___ in the backyard.",
+    "options": [
+      {
+        "id": "a",
+        "text": "plays"
+      },
+      {
+        "id": "b",
+        "text": "playing"
+      },
+      {
+        "id": "c",
+        "text": "play"
+      },
+      {
+        "id": "d",
+        "text": "to play"
+      }
+    ],
+    "answer": 2,
+    "explanation": "Rule: two subjects joined by 'and' form a plural subject. 'The dog and the cat' is plural, so 'play' is correct.",
+    "hint": "And = plus. Two animals = plural verb.",
+    "source": "Original question authored for Unschool Academy; rule aligned to College Board digital SAT Reading and Writing — Standard English Conventions: subject-verb agreement (satsuite.collegeboard.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "sat-rw-sva-018",
+    "skill": "subject-verb-agreement",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English? Neither of the answers ___ correct.",
+    "options": [
+      {
+        "id": "a",
+        "text": "are"
+      },
+      {
+        "id": "b",
+        "text": "is"
+      },
+      {
+        "id": "c",
+        "text": "be"
+      },
+      {
+        "id": "d",
+        "text": "being"
+      }
+    ],
+    "answer": 1,
+    "explanation": "Rule: 'neither' is always singular ('not one and not the other'), so the singular verb 'is' is correct.",
+    "hint": "'Neither' means zero of them — think singular.",
+    "source": "Original question authored for Unschool Academy; rule aligned to College Board digital SAT Reading and Writing — Standard English Conventions: subject-verb agreement (satsuite.collegeboard.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "sat-rw-sva-019",
+    "skill": "subject-verb-agreement",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English? The list of ingredients ___ on the fridge.",
+    "options": [
+      {
+        "id": "a",
+        "text": "are"
+      },
+      {
+        "id": "b",
+        "text": "be"
+      },
+      {
+        "id": "c",
+        "text": "being"
+      },
+      {
+        "id": "d",
+        "text": "is"
+      }
+    ],
+    "answer": 3,
+    "explanation": "Rule: the subject is the singular 'list'; 'of ingredients' is a prepositional phrase that cannot change the verb. 'Is' is correct.",
+    "hint": "The subject is 'list', not 'ingredients'.",
+    "source": "Original question authored for Unschool Academy; rule aligned to College Board digital SAT Reading and Writing — Standard English Conventions: subject-verb agreement (satsuite.collegeboard.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "sat-rw-sva-020",
+    "skill": "subject-verb-agreement",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English? Each book and magazine ___ a due-date stamp.",
+    "options": [
+      {
+        "id": "a",
+        "text": "has"
+      },
+      {
+        "id": "b",
+        "text": "have"
+      },
+      {
+        "id": "c",
+        "text": "having"
+      },
+      {
+        "id": "d",
+        "text": "to have"
+      }
+    ],
+    "answer": 0,
+    "explanation": "Rule: 'each' is singular no matter how many nouns follow it. 'Each book and magazine' takes the singular verb 'has'.",
+    "hint": "'Each' is the key word — it always pairs with a singular verb.",
+    "source": "Original question authored for Unschool Academy; rule aligned to College Board digital SAT Reading and Writing — Standard English Conventions: subject-verb agreement (satsuite.collegeboard.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "sat-rw-sva-021",
+    "skill": "subject-verb-agreement",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English? The flowers in the garden ___ beautiful in spring.",
+    "options": [
+      {
+        "id": "a",
+        "text": "is"
+      },
+      {
+        "id": "b",
+        "text": "be"
+      },
+      {
+        "id": "c",
+        "text": "are"
+      },
+      {
+        "id": "d",
+        "text": "being"
+      }
+    ],
+    "answer": 2,
+    "explanation": "Rule: the plural subject 'flowers' takes the plural verb 'are'. Ignore 'in the garden'.",
+    "hint": "One flower is beautiful; many flowers ___ beautiful?",
+    "source": "Original question authored for Unschool Academy; rule aligned to College Board digital SAT Reading and Writing — Standard English Conventions: subject-verb agreement (satsuite.collegeboard.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "sat-rw-sva-022",
+    "skill": "subject-verb-agreement",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English? Nobody ___ the answer to that riddle.",
+    "options": [
+      {
+        "id": "a",
+        "text": "know"
+      },
+      {
+        "id": "b",
+        "text": "knowing"
+      },
+      {
+        "id": "c",
+        "text": "to know"
+      },
+      {
+        "id": "d",
+        "text": "knows"
+      }
+    ],
+    "answer": 3,
+    "explanation": "Rule: 'nobody' is a singular indefinite pronoun, so it takes the singular verb 'knows'.",
+    "hint": "'Nobody' = not one person. Singular verb.",
+    "source": "Original question authored for Unschool Academy; rule aligned to College Board digital SAT Reading and Writing — Standard English Conventions: subject-verb agreement (satsuite.collegeboard.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "sat-rw-sva-023",
+    "skill": "subject-verb-agreement",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English? The number of students in the class ___ growing.",
+    "options": [
+      {
+        "id": "a",
+        "text": "are"
+      },
+      {
+        "id": "b",
+        "text": "is"
+      },
+      {
+        "id": "c",
+        "text": "be"
+      },
+      {
+        "id": "d",
+        "text": "being"
+      }
+    ],
+    "answer": 1,
+    "explanation": "Rule: 'the number of' is singular (it refers to one figure), so 'is' is correct. Contrast with 'a number of', which is plural.",
+    "hint": "'The number' = one number. One number is singular.",
+    "source": "Original question authored for Unschool Academy; rule aligned to College Board digital SAT Reading and Writing — Standard English Conventions: subject-verb agreement (satsuite.collegeboard.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "sat-rw-sva-024",
+    "skill": "subject-verb-agreement",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English? A number of students ___ volunteered for the event.",
+    "options": [
+      {
+        "id": "a",
+        "text": "have"
+      },
+      {
+        "id": "b",
+        "text": "has"
+      },
+      {
+        "id": "c",
+        "text": "having"
+      },
+      {
+        "id": "d",
+        "text": "to have"
+      }
+    ],
+    "answer": 0,
+    "explanation": "Rule: 'a number of' means 'several' and is plural, so the plural verb 'have' is correct. Contrast with 'the number of', which is singular.",
+    "hint": "'A number of students' really means 'several students' — plural.",
+    "source": "Original question authored for Unschool Academy; rule aligned to College Board digital SAT Reading and Writing — Standard English Conventions: subject-verb agreement (satsuite.collegeboard.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "sat-rw-sva-025",
+    "skill": "subject-verb-agreement",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English? The jury ___ its verdict yesterday.",
+    "options": [
+      {
+        "id": "a",
+        "text": "reach"
+      },
+      {
+        "id": "b",
+        "text": "reaches"
+      },
+      {
+        "id": "c",
+        "text": "reached"
+      },
+      {
+        "id": "d",
+        "text": "reaching"
+      }
+    ],
+    "answer": 2,
+    "explanation": "Rule: 'jury' is a singular collective noun acting as one unit, and 'yesterday' requires past tense — 'reached'.",
+    "hint": "One jury, one verdict, yesterday = singular past.",
+    "source": "Original question authored for Unschool Academy; rule aligned to College Board digital SAT Reading and Writing — Standard English Conventions: subject-verb agreement (satsuite.collegeboard.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "sat-rw-sva-026",
+    "skill": "subject-verb-agreement",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English? Bread and butter ___ a simple breakfast.",
+    "options": [
+      {
+        "id": "a",
+        "text": "are"
+      },
+      {
+        "id": "b",
+        "text": "is"
+      },
+      {
+        "id": "c",
+        "text": "be"
+      },
+      {
+        "id": "d",
+        "text": "being"
+      }
+    ],
+    "answer": 1,
+    "explanation": "Rule: when two nouns joined by 'and' name one single item or idea, the verb is singular. 'Bread and butter' as one breakfast takes 'is'.",
+    "hint": "Here bread-and-butter is one dish, not two separate things.",
+    "source": "Original question authored for Unschool Academy; rule aligned to College Board digital SAT Reading and Writing — Standard English Conventions: subject-verb agreement (satsuite.collegeboard.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "sat-rw-sva-027",
+    "skill": "subject-verb-agreement",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English? The stars ___ brightly tonight.",
+    "options": [
+      {
+        "id": "a",
+        "text": "shines"
+      },
+      {
+        "id": "b",
+        "text": "shining"
+      },
+      {
+        "id": "c",
+        "text": "to shine"
+      },
+      {
+        "id": "d",
+        "text": "shine"
+      }
+    ],
+    "answer": 3,
+    "explanation": "Rule: the plural subject 'stars' takes the plural verb 'shine'. In the present tense, plural verbs do not end in 's'.",
+    "hint": "Present tense: singular adds -s ('shines'), plural drops it ('shine').",
+    "source": "Original question authored for Unschool Academy; rule aligned to College Board digital SAT Reading and Writing — Standard English Conventions: subject-verb agreement (satsuite.collegeboard.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "sat-rw-sva-028",
+    "skill": "subject-verb-agreement",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English? One of my friends ___ in Chicago.",
+    "options": [
+      {
+        "id": "a",
+        "text": "lives"
+      },
+      {
+        "id": "b",
+        "text": "live"
+      },
+      {
+        "id": "c",
+        "text": "living"
+      },
+      {
+        "id": "d",
+        "text": "to live"
+      }
+    ],
+    "answer": 0,
+    "explanation": "Rule: the subject is the singular 'one', not 'friends' in the prepositional phrase. 'One ... lives' is correct.",
+    "hint": "The subject is 'one'. 'One of my friends lives' — the 's' verb matches 'one'.",
+    "source": "Original question authored for Unschool Academy; rule aligned to College Board digital SAT Reading and Writing — Standard English Conventions: subject-verb agreement (satsuite.collegeboard.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "sat-rw-sva-029",
+    "skill": "subject-verb-agreement",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English? The teacher, along with her students, ___ the museum.",
+    "options": [
+      {
+        "id": "a",
+        "text": "visit"
+      },
+      {
+        "id": "b",
+        "text": "visiting"
+      },
+      {
+        "id": "c",
+        "text": "visits"
+      },
+      {
+        "id": "d",
+        "text": "to visit"
+      }
+    ],
+    "answer": 2,
+    "explanation": "Rule: phrases like 'along with', 'as well as', and 'together with' do not change the subject's number. The singular 'teacher' takes 'visits'.",
+    "hint": "'Along with her students' is extra information — the subject is still 'teacher'.",
+    "source": "Original question authored for Unschool Academy; rule aligned to College Board digital SAT Reading and Writing — Standard English Conventions: subject-verb agreement (satsuite.collegeboard.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "sat-rw-sva-030",
+    "skill": "subject-verb-agreement",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English? Scissors ___ used to cut paper.",
+    "options": [
+      {
+        "id": "a",
+        "text": "is"
+      },
+      {
+        "id": "b",
+        "text": "are"
+      },
+      {
+        "id": "c",
+        "text": "be"
+      },
+      {
+        "id": "d",
+        "text": "being"
+      }
+    ],
+    "answer": 1,
+    "explanation": "Rule: nouns that name tools in two parts (scissors, glasses, trousers) are always plural. 'Scissors are' is correct.",
+    "hint": "Two blades = plural, always.",
+    "source": "Original question authored for Unschool Academy; rule aligned to College Board digital SAT Reading and Writing — Standard English Conventions: subject-verb agreement (satsuite.collegeboard.org). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  }
+]
