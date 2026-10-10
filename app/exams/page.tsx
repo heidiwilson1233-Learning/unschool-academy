@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { Section, Button, Badge, Breadcrumbs } from "@/components/ui";
 import { JFT_PROGRAM } from "@/lib/exams";
+import { getCatalogStatusCounts } from "@/lib/catalog";
+
+/* Honest numbers: computed from the live catalog at build time. */
+const counts = getCatalogStatusCounts();
 
 export const metadata: Metadata = {
   title: "Exams — Live Preparation Programs",
   description:
-    "Unschool Academy's live exam preparation programs — one today: JFT-Basic, with a free 10-question diagnostic. Our 500-exam research catalogue is marked as research until each program is reviewed and built.",
+    `Unschool Academy's live exam preparation programs — one today: JFT-Basic, with a free 10-question diagnostic. Our ${counts.total}-exam research catalogue is marked as research until each program is reviewed and built.`,
   alternates: { canonical: "/exams" },
   openGraph: {
     title: "Exams — Live Preparation Programs",
@@ -123,7 +127,7 @@ export default function ExamsPage() {
           </h1>
           <p className="mt-5 text-lg text-slate leading-relaxed max-w-2xl">
             One program is live today: JFT-Basic. It is fully built — start the free diagnostic
-            right now. Our 500-exam research catalogue stays marked as research until a program
+            right now. Our {counts.total}-exam research catalogue stays marked as research until a program
             is reviewed and built.
           </p>
           <div className="mt-8">
@@ -257,7 +261,7 @@ export default function ExamsPage() {
         </h2>
         <p className="mt-3 text-slate leading-relaxed max-w-2xl">
           A program reaches this page only after four gates. One has passed them all; the
-          other 500 exams stay marked as research.
+          other {counts.total - counts.practiceReady} exams stay marked as research.
         </p>
 
         <div className="mt-8 grid gap-6 lg:grid-cols-6">
@@ -293,11 +297,16 @@ export default function ExamsPage() {
               <p
                 className="font-display text-[clamp(2.5rem,4vw,3.75rem)] leading-[1.02] tracking-[-0.02em] text-ink"
               >
-                01 live ·<br />500 marked as research
+                01 live ·<br />
+                {counts.total - counts.practiceReady} marked as research
               </p>
               <p className="mt-4 text-sm text-slate leading-relaxed">
                 Research entries are not purchasable. They are our backlog made visible, and
-                they stay labeled until the gates above are cleared.
+                they stay labeled until the gates above are cleared.{" "}
+                <a href="/exams/tiers" className="font-semibold text-academy-blue hover:underline">
+                  How we fill the catalog, tier by tier
+                </a>
+                .
               </p>
               <div className="mt-5">
                 <Button href="/exams/catalog" variant="secondary" size="sm">

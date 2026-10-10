@@ -153,6 +153,11 @@ export default function KidsPage() {
         </div>
         <div className="mt-8 text-center">
           <Button href="/kids/library" size="lg" variant="kids">📚 Open the library</Button>
+          <p className="mt-3 text-sm">
+            <Link href="/kids/roadmap" className="font-semibold text-slate underline underline-offset-2">
+              See the 15-quest prototype plan
+            </Link>
+          </p>
         </div>
       </Section>
 

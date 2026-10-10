@@ -107,7 +107,18 @@ export default function LibraryPage() {
           ))}
         </div>
         <p className="mt-8 text-center text-slate">
-          …and {target - books.length} more being curated. <Link href="/kids" className="font-semibold text-ink underline">Back to Kids</Link>
+          …and {target - books.length} more being curated.
+        </p>
+        <p className="mt-3 text-center">
+          <Link href="/kids/roadmap" className="font-semibold text-ink underline">
+            See the 15-quest prototype plan
+          </Link>
+          <span className="mx-2 text-slate/40" aria-hidden>
+            ·
+          </span>
+          <Link href="/kids" className="font-semibold text-ink underline">
+            Back to Kids
+          </Link>
         </p>
       </Section>
     </>

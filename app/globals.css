@@ -118,6 +118,43 @@ body {
   animation: faq-reveal 240ms var(--ease-signature, cubic-bezier(0.16, 1, 0.3, 1)) both;
 }
 
+/* Homepage picker frame (run 43): the framed picker is the page's signature
+   interaction — it rests tilted (md+) and straightens as it scrolls into view
+   (view() timeline), so the moment is touch-visible, not hover-only.
+   Transform-only; static tilt under reduced motion / no timeline support. */
+@media (min-width: 768px) {
+  .picker-frame { transform: rotate(-1deg); }
+}
+@keyframes picker-frame-in {
+  from { transform: rotate(-1.5deg) translateY(14px); }
+  to { transform: rotate(0deg) translateY(0); }
+}
+@media (min-width: 768px) {
+  @supports (animation-timeline: view()) {
+    .picker-frame {
+      animation: picker-frame-in linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 80%;
+    }
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .picker-frame { animation: none; }
+}
+
+/* Picker tab panel enter (run 43): masked clip wipe on panel switch —
+   GPU-only (clip-path + opacity), never the banned fade-up. The animation
+   re-runs each time a panel leaves display:none. */
+@keyframes tab-panel-wipe {
+  from { opacity: 0.001; clip-path: inset(0 100% 0 0); }
+  to { opacity: 1; clip-path: inset(0 0 0 0); }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .tab-panel-wipe {
+    animation: tab-panel-wipe 220ms var(--ease-signature, cubic-bezier(0.16, 1, 0.3, 1));
+  }
+}
+
 /* Mango quest (run 16): GPU-only keyframes, transform/opacity only.
    quest-pop = back-out overshoot reveal (replaces fade-up in quest panels).
    mango-pop = spring pop on tapped fruit. node-pulse = current trail node.
