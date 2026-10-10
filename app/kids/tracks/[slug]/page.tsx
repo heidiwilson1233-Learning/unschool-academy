@@ -1,27 +1,32 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { promises as fs } from "fs";
+import { use } from "react";
+import fs from "fs";
 import path from "path";
 import type { Metadata } from "next";
 import { Section, SectionHeading, Card, Badge, Breadcrumbs, Button } from "@/components/ui";
 import { Momo, Tara, Bobo } from "@/components/characters";
-import { trackBySlug, type KidQuest } from "@/lib/kids";
+import { AGE_TRACKS, trackBySlug, type KidQuest } from "@/lib/kids";
 
 const CharArt = { momo: Momo, tara: Tara, bobo: Bobo };
 
-async function loadQuests(track: string): Promise<KidQuest[]> {
+function loadQuests(track: string): KidQuest[] {
   const dir = path.join(process.cwd(), "content", "kids", "quests");
   try {
-    const files = await fs.readdir(dir);
+    const files = fs.readdirSync(dir);
     const quests: KidQuest[] = [];
     for (const f of files) {
-      const q = JSON.parse(await fs.readFile(path.join(dir, f), "utf-8")) as KidQuest;
+      const q = JSON.parse(fs.readFileSync(path.join(dir, f), "utf-8")) as KidQuest;
       if (q.track === track) quests.push(q);
     }
     return quests.sort((a, b) => a.difficulty - b.difficulty);
   } catch {
     return [];
   }
+}
+
+export function generateStaticParams(): { slug: string }[] {
+  return AGE_TRACKS.map((t) => ({ slug: t.slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
@@ -31,11 +36,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return { title: `${t.name} — ${t.audience} | Unschool Kids`, description: t.description };
 }
 
-export default async function TrackPage({ params }: { params: Promise<{ slug: string }> }) {
-  const { slug } = await params;
+export default function TrackPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = use(params);
   const track = trackBySlug(slug);
   if (!track) notFound();
-  const quests = await loadQuests(slug);
+  const quests = loadQuests(slug);
   const Art = CharArt[track.character];
 
   return (
