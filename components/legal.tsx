@@ -16,7 +16,7 @@ export function LegalPage({
       <Section>
         <div className="max-w-3xl mx-auto">
           <Breadcrumbs trail={[{ label: "Home", href: "/" }, { label: title }]} />
-          <div className="bg-amber-50 border border-amber-200 rounded-2xl p-5 mb-8">
+          <div className="bg-amber-50 border border-amber-200 rounded-2xl p-5 mb-8" role="note">
             <p className="text-sm text-amber-800 leading-relaxed">
               <strong>Draft notice:</strong> these policies are staged drafts pending legal review in
               our operating jurisdictions. They describe intended practice, not yet legal advice.
