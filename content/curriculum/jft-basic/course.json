@@ -1,9 +1,41 @@
 {
-  "id": "jft-basic",
-  "title": "JFT-Basic — Japan Foundation Test for Basic Japanese",
+  "catalog_id": "EX-299",
   "description": "Preparation path for the JFT-Basic (A2-level Japanese). Pilot course.",
-  "skills": ["script-vocabulary", "conversation-expression", "listening-comprehension", "reading-comprehension"],
   "estimated_hours": 120,
-  "version": 1,
-  "status": "pilot"
+  "exam_pattern": {
+    "duration": "60 minutes total; no per-section time limit",
+    "format": "Computer-based test (CBT)",
+    "questions": "Approximately 50",
+    "scoring": "Scaled score from 10 to 250 (not a raw count of correct answers)",
+    "sections": [
+      "Script and Vocabulary",
+      "Conversation and Expression",
+      "Listening Comprehension",
+      "Reading Comprehension"
+    ],
+    "source": "Japan Foundation JFT-Basic official pages (jpf.go.jp/jft-basic) — verified 2026-10-08"
+  },
+  "id": "jft-basic",
+  "offers": [
+    {
+      "name": "60-day pass",
+      "note": "One-time · illustrative · test mode. Full topic practice path and the 30-minute timed mock. No real charges during the pilot.",
+      "price": "₹699"
+    },
+    {
+      "name": "7-day revision sprint",
+      "note": "One-time · illustrative · test mode. Revision drills across the four topics. 7 days of access.",
+      "price": "₹199"
+    }
+  ],
+  "skills": [
+    "script-vocabulary",
+    "conversation-expression",
+    "listening-comprehension",
+    "reading-comprehension"
+  ],
+  "source": "Japan Foundation JFT-Basic official pages (jpf.go.jp/jft-basic) — exam facts verified 2026-10-08",
+  "status": "pilot",
+  "title": "JFT-Basic — Japan Foundation Test for Basic Japanese",
+  "version": 1
 }

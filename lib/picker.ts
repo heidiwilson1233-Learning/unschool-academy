@@ -104,6 +104,14 @@ function countDraftQuestions(slug: string): number {
 }
 
 function researchHref(slug: string): string {
+  /* Exams with a course.json get the full template page; the rest stay on
+     their honest catalog research entries. */
+  try {
+    readFileSync(join(CURRICULUM_DIR, slug, "course.json"), "utf8");
+    return `/exams/${slug}`;
+  } catch {
+    /* no course.json — fall through to catalog */
+  }
   const catalogId = catalogIdFor(slug);
   if (catalogId && getExamById(catalogId)) return `/exams/catalog/${catalogId}`;
   return "/exams/catalog";
