@@ -5,17 +5,20 @@ import { Art } from "@/components/site-art";
 export const metadata: Metadata = {
   title: "JFT-Basic Mock Tests | Timed Practice",
   description:
-    "Timed JFT-Basic Japanese mock test: 20 original questions, 30 minutes, hidden answers until submit, server-enforced timer. Unofficial practice.",
+    "Timed JFT-Basic Japanese mock tests: a 30-minute warm-up mock and a full-length 60-minute mock with official section order, hidden answers until submit, server-enforced timer. Unofficial practice.",
+  alternates: {
+    canonical: "/exams/jft-basic/mock-tests",
+  },
   openGraph: {
     title: "JFT-Basic Mock Tests | Timed Practice",
     description:
-      "Timed JFT-Basic Japanese mock test: 20 original questions, 30 minutes, hidden answers until submit, server-enforced timer. Unofficial practice.",
+      "Timed JFT-Basic Japanese mock tests: a 30-minute warm-up mock and a full-length 60-minute mock with official section order, hidden answers until submit, server-enforced timer. Unofficial practice.",
   },
   twitter: {
     card: "summary",
     title: "JFT-Basic Mock Tests | Timed Practice",
     description:
-      "Timed JFT-Basic Japanese mock test: 20 original questions, 30 minutes, hidden answers until submit, server-enforced timer. Unofficial practice.",
+      "Timed JFT-Basic Japanese mock tests: a 30-minute warm-up mock and a full-length 60-minute mock with official section order, hidden answers until submit, server-enforced timer. Unofficial practice.",
   },
 };
 
@@ -41,9 +44,10 @@ const GRAIN =
   "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>\")";
 
 const SPECS = [
-  "30-minute timer, enforced on our server",
-  "No hints while you answer",
-  "Topic-by-topic breakdown after submit",
+  "60-minute timer, enforced on our server",
+  "Official section order: script and vocabulary, conversation, listening, reading",
+  "Skills interleaved inside each section, never one skill block-practised",
+  "Section-by-section accuracy and pace after submit, plus a wrong-questions re-attempt",
   "Explanations for every question (draft, pending expert review)",
 ];
 
@@ -51,7 +55,7 @@ const RITUAL = [
   {
     n: "01",
     title: "Start",
-    body: "The timer begins the moment the questions load. Find a quiet 30 minutes.",
+    body: "The timer begins the moment the questions load. Find a quiet hour and treat it like exam day.",
   },
   {
     n: "02",
@@ -61,7 +65,7 @@ const RITUAL = [
   {
     n: "03",
     title: "See the breakdown",
-    body: "A score, topic by topic, with explanations marked draft pending expert review.",
+    body: "A score per section with your pace, your weakest section flagged, and a re-attempt of what you missed.",
   },
 ];
 
@@ -96,8 +100,8 @@ export default function MockTestsPage() {
                 Feel the clock before the clock matters
               </h1>
               <p className="mt-6 max-w-2xl text-lg text-slate leading-relaxed">
-                20 original questions. 30 minutes. No hints, no answers until you submit.
-                The timer runs on our server, not just your screen.
+                Two mocks. A 30-minute warm-up and a full 60-minute exam simulation.
+                No hints, no answers until you submit. The timer runs on our server, not just your screen.
               </p>
             </div>
             <Art
@@ -113,21 +117,23 @@ export default function MockTestsPage() {
       <Section className="!pt-10">
         <Breadcrumbs trail={TRAIL} />
 
-        {/* ---------- Bento: exam dossier (live action) + slim ritual rail ---------- */}
+        {/* ---------- Bento: full mock dossier (live action) + slim ritual rail ---------- */}
         <div className="grid md:grid-cols-6 gap-6">
-          {/* Mock 1 — institutional dossier, not a card */}
+          {/* Mock 2 — institutional dossier, not a card */}
           <div className="md:col-span-4 relative overflow-hidden rounded-2xl border border-border bg-paper">
             <span aria-hidden className="absolute inset-x-0 top-0 h-[3px] bg-academy-teal" />
             <div className="p-6 md:p-9">
               <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-slate">
-                Mock 1 · 20 questions · 30 minutes · server-enforced timer
+                Mock 2 · 50 questions · 60 minutes · server-enforced timer
               </p>
               <h2 className="mt-4 text-3xl md:text-4xl font-extrabold tracking-tight text-ink text-balance">
-                Everyday Japanese, all four sections
+                The full exam, in one sitting
               </h2>
               <p className="mt-3 text-slate text-[15px] leading-relaxed max-w-xl">
-                Script and vocabulary, conversation, listening, and reading in one sitting.
-                Answers stay hidden until you submit. If time runs out, the mock auto-submits.
+                Script and vocabulary, conversation, listening, and reading in official order,
+                with skills interleaved inside each section. After submit: accuracy and pace
+                per section, your weakest section flagged, and a re-attempt of the questions
+                you missed.
               </p>
               <ul className="mt-6 divide-y divide-border border-y border-border">
                 {SPECS.map((s) => (
@@ -137,21 +143,26 @@ export default function MockTestsPage() {
                 ))}
               </ul>
               <div className="mt-7">
-                <Button href="/exams/jft-basic/mock-tests/take" size="lg">
-                  Start mock 1
+                <Button href="/exams/jft-basic/mock-tests/full" size="lg">
+                  Start the 60-minute mock
                 </Button>
                 <p className="mt-3 text-xs text-slate">
+                  Make sure you have a quiet hour first.
+                </p>
+                <p className="mt-1 text-xs text-slate">
                   Unofficial practice. A score here can&apos;t predict an official JFT-Basic result.
+                  Kanji meaning-and-usage has no banked questions yet, so it is absent from this
+                  mock; the listening and reading sections reuse 10 questions from Mock 1.
                 </p>
               </div>
             </div>
           </div>
 
-          {/* Rail: the 30-minute ritual + Mock 2 off-ramp */}
+          {/* Rail: Mock 1 warm-up + the timed ritual */}
           <div className="md:col-span-2 flex flex-col gap-6">
             <div className="rounded-2xl border border-border bg-canvas p-6 md:p-7">
               <h2 className="text-sm font-bold uppercase tracking-[0.18em] text-ink">
-                The 30-minute ritual
+                The timed ritual
               </h2>
               <ol className="mt-4 divide-y divide-border">
                 {RITUAL.map((r) => (
@@ -166,14 +177,13 @@ export default function MockTestsPage() {
               </ol>
             </div>
             <div className="rounded-2xl border border-border bg-paper p-6">
-              <p className="text-sm font-bold text-ink">Mock 2 · In review</p>
+              <p className="text-sm font-bold text-ink">Mock 1 · Warm-up · 20 questions, 30 minutes</p>
               <p className="mt-2 text-sm text-slate leading-relaxed">
-                The second mock is being drafted. We publish a mock only when every
-                question has passed review. No filler.
+                The same engine at half the length. Take it first if a full hour sounds like a lot.
               </p>
               <div className="mt-3">
-                <Button href="/exams/jft-basic/topics" variant="secondary" size="sm">
-                  Practice by topic for now
+                <Button href="/exams/jft-basic/mock-tests/take" variant="secondary" size="sm">
+                  Start mock 1
                 </Button>
               </div>
             </div>

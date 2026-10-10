@@ -19,8 +19,18 @@ type MockResult = {
   total: number;
   percent: number;
   elapsedSec: number;
-  details: { id: string; topic: string; correct: boolean; correctLabel: string; correctLabelJp: string | null; explanation: string }[];
+  overTime?: boolean;
+  details: { id: string; topic: string; correct: boolean; correctId?: string; correctLabel: string; correctLabelJp: string | null; explanation: string }[];
+  sectionStats?: { topic: string; total: number; correct: number; timeSec: number; avgSec: number }[];
   disclaimer: string;
+};
+
+/** Section label → practice-topic slug (mirrors practice/[topic] SLUG_TO_TOPIC). */
+const TOPIC_SLUGS: Record<string, string> = {
+  "Script and Vocabulary": "vocabulary",
+  "Conversation and Expression": "conversation",
+  "Listening Comprehension": "listening",
+  "Reading Comprehension": "reading",
 };
 
 function fmt(sec: number) {
@@ -253,7 +263,7 @@ const QuestionCard = memo(function QuestionCard({ q, index, selectedId, onSelect
 /* ------------------------------------------------------------------ */
 /* MockPlayer                                                          */
 /* ------------------------------------------------------------------ */
-export default function MockPlayer() {
+export default function MockPlayer({ apiPath = "/api/mock", attemptKind = "mock" }: { apiPath?: string; attemptKind?: string } = {}) {
   const [data, setData] = useState<{ questions: MockQ[]; timeLimitSec: number; startedAt: number } | null>(null);
   const [loadError, setLoadError] = useState(false);
   const [index, setIndex] = useState(0);
@@ -264,17 +274,38 @@ export default function MockPlayer() {
   const [submitError, setSubmitError] = useState<string | null>(null);
   const [confirming, setConfirming] = useState(false);
   const [announcement, setAnnouncement] = useState("");
+  const [reattempt, setReattempt] = useState<{ order: string[]; idx: number; picked: Record<string, string> } | null>(null);
   const submitted = useRef(false);
+  // Re-attempt focus targets: heading (between questions) and feedback (after a pick).
+  const reHeadingRef = useRef<HTMLParagraphElement>(null);
+  const reFeedbackRef = useRef<HTMLDivElement>(null);
+  // Per-question timing for section-pace analytics: credit elapsed time to the
+  // question on screen whenever the index changes, flush on submit.
+  const qTime = useRef<{ qid: string | null; since: number; totals: Record<string, number> }>({
+    qid: null, since: 0, totals: {},
+  });
+
+  const startTiming = useCallback((qid: string | null) => {
+    const t = qTime.current;
+    const now = Date.now();
+    if (t.qid) t.totals[t.qid] = (t.totals[t.qid] ?? 0) + (now - t.since) / 1000;
+    t.qid = qid;
+    t.since = now;
+  }, []);
 
   useEffect(() => {
-    fetch("/api/mock")
+    fetch(apiPath)
       .then((r) => {
         if (!r.ok) throw new Error("load failed");
         return r.json();
       })
       .then((d) => setData(d))
       .catch(() => setLoadError(true));
-  }, []);
+  }, [apiPath]);
+
+  useEffect(() => {
+    if (data && !result) startTiming(data.questions[index]?.id ?? null);
+  }, [index, data, result, startTiming]);
 
   useEffect(() => {
     setVisited((v) => {
@@ -292,16 +323,18 @@ export default function MockPlayer() {
       setSubmitting(true);
       setSubmitError(null);
       setConfirming(false);
+      startTiming(null); // flush the last question's time
       try {
-        const r = await fetch("/api/mock", {
+        const r = await fetch(apiPath, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ answers, startedAt: data.startedAt }),
+          body: JSON.stringify({ answers, startedAt: data.startedAt, times: qTime.current.totals, auto }),
         });
         const d = await r.json();
         if (!r.ok) throw new Error(d.error ?? "Scoring failed");
         setResult(d);
-        recordAttempt({ kind: auto ? "mock (auto-submitted)" : "mock", score: d.score, total: d.total, at: new Date().toISOString() });
+        const kind = d.overTime ? `${attemptKind} (over time)` : auto ? `${attemptKind} (auto-submitted)` : attemptKind;
+        recordAttempt({ kind, score: d.score, total: d.total, at: new Date().toISOString() });
         window.scrollTo({ top: 0, behavior: "smooth" });
       } catch {
         submitted.current = false;
@@ -310,7 +343,7 @@ export default function MockPlayer() {
         setSubmitting(false);
       }
     },
-    [data, answers]
+    [data, answers, apiPath, attemptKind, startTiming]
   );
 
   const onMilestone = useCallback((msg: string) => setAnnouncement(msg), []);
@@ -346,6 +379,119 @@ export default function MockPlayer() {
     }
     const avgSec = Math.round(result.elapsedSec / result.total);
 
+    /* ------------------------- Re-attempt mode -------------------------
+     * Wrong-questions-only revision: no timer, instant feedback per answer.
+     * Portal-doctrine move 4 (test series): "re-attempt mode for revision". */
+    if (reattempt) {
+      const qid = reattempt.order[reattempt.idx];
+      const q = data.questions.find((qq) => qq.id === qid)!;
+      const d = result.details.find((x) => x.id === qid)!;
+      const picked = reattempt.picked[qid];
+      const revealed = Boolean(picked);
+      const last = reattempt.idx === reattempt.order.length - 1;
+      const doneCount = Object.keys(reattempt.picked).length;
+      const reScore = reattempt.order.filter(
+        (id) => reattempt.picked[id] === result.details.find((x) => x.id === id)?.correctId
+      ).length;
+      const pick = (oid: string) => {
+        if (!reattempt.picked[qid]) {
+          setReattempt({ ...reattempt, picked: { ...reattempt.picked, [qid]: oid } });
+          // Focus drops to body when the picked button disables — move it to the feedback.
+          setTimeout(() => reFeedbackRef.current?.focus(), 60);
+        }
+      };
+      const goNext = () => {
+        setReattempt({ ...reattempt, idx: reattempt.idx + 1 });
+        setTimeout(() => reHeadingRef.current?.focus(), 60);
+      };
+      return (
+        <div className="animate-fade-up">
+          <div className="flex items-center justify-between mb-6">
+            <p ref={reHeadingRef} tabIndex={-1} className="text-[11px] uppercase tracking-[0.2em] font-semibold text-slate focus-visible:outline-none">
+              Re-attempt · {reattempt.idx + 1} of {reattempt.order.length}
+            </p>
+            <Button variant="secondary" size="sm" onClick={() => { setReattempt(null); window.scrollTo({ top: 0 }); }}>
+              Back to results
+            </Button>
+          </div>
+          <Card className="!p-6 md:!p-10">
+            <p className="text-xs font-semibold uppercase tracking-widest text-slate mb-3">{d.topic}</p>
+            <h2 className="text-xl md:text-2xl font-bold text-ink leading-relaxed">{q.stem}</h2>
+            {q.stemJp && <p className="jp mt-2 text-lg text-slate">{q.stemJp}</p>}
+            {q.audioTextJp && (
+              <div className="mt-4">
+                <Button variant="secondary" size="sm" onClick={() => speakJapanese(q.audioTextJp!)}>
+                  <Volume2 className="w-4 h-4" aria-hidden /> Replay audio
+                </Button>
+              </div>
+            )}
+            <div className="mt-6 space-y-3" role="group" aria-label={`Re-attempt options, question ${reattempt.idx + 1}`}>
+              {q.options.map((o) => {
+                const isPicked = picked === o.id;
+                const isCorrect = d.correctId === o.id;
+                const cls = revealed
+                  ? isCorrect
+                    ? "border-academy-teal bg-academy-teal/10"
+                    : isPicked
+                      ? "border-red-300 bg-red-50"
+                      : "border-border opacity-60"
+                  : "border-border hover:border-academy-blue/50 active:scale-[0.99]";
+                return (
+                  <button
+                    key={o.id}
+                    type="button"
+                    disabled={revealed}
+                    onClick={() => pick(o.id)}
+                    className={`w-full text-left px-5 py-4 rounded-xl border-2 transition-[border-color,background-color,transform] duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-academy-blue focus-visible:ring-offset-2 ${cls}`}
+                  >
+                    <span className="jp text-lg font-semibold text-ink">{o.textJp ?? o.text}</span>
+                    {o.textJp && o.textJp !== o.text && <span className="block text-sm text-slate mt-1">{o.text}</span>}
+                    {revealed && isCorrect && (
+                      <span className="mt-2 inline-flex items-center gap-1 text-xs font-bold uppercase tracking-widest text-academy-teal-dark">
+                        <Check className="w-4 h-4" aria-hidden /> Correct
+                      </span>
+                    )}
+                    {revealed && isPicked && !isCorrect && (
+                      <span className="mt-2 inline-flex items-center gap-1 text-xs font-bold uppercase tracking-widest text-red-700">
+                        <X className="w-4 h-4" aria-hidden /> Not quite
+                      </span>
+                    )}
+                  </button>
+                );
+              })}
+            </div>
+            {revealed && (
+              <div ref={reFeedbackRef} tabIndex={-1} className="mt-6 focus-visible:outline-none">
+                <p className="text-[15px] text-slate leading-relaxed border-t border-border pt-4">
+                  <span className="font-semibold text-ink">Why: </span>{d.explanation}
+                </p>
+                <div className="mt-6 flex flex-wrap items-center justify-between gap-4">
+                  <p className="text-sm text-slate">
+                    Re-attempt score so far: <span className="font-bold text-ink">{reScore}/{doneCount}</span>
+                  </p>
+                  {last ? (
+                    <Button onClick={() => { setReattempt(null); window.scrollTo({ top: 0 }); }}>
+                      Finish — back to results
+                    </Button>
+                  ) : (
+                    <Button onClick={goNext}>Next</Button>
+                  )}
+                </div>
+              </div>
+            )}
+          </Card>
+          <p className="mt-4 text-xs text-slate text-center">Explanations are drafts, pending Japanese SME review.</p>
+        </div>
+      );
+    }
+
+    const sectionStats = result.sectionStats ?? [];
+    const weakest =
+      sectionStats.length > 1
+        ? [...sectionStats].sort((a, b) => a.correct / a.total - b.correct / b.total)[0]
+        : null;
+    const showWeakest = weakest && weakest.correct < weakest.total && TOPIC_SLUGS[weakest.topic];
+
     const renderDetail = (d: MockResult["details"][number], i: number) => {
       const q = data.questions.find((qq) => qq.id === d.id)!;
       return (
@@ -371,6 +517,7 @@ export default function MockPlayer() {
           <p className="mt-3 text-[15px] text-slate leading-relaxed border-t border-border pt-3">
             <span className="font-semibold text-ink">Explanation: </span>{d.explanation}
           </p>
+          <p className="mt-2 text-xs text-slate">Explanation is a draft, pending Japanese SME review.</p>
         </Card>
       );
     };
@@ -398,6 +545,68 @@ export default function MockPlayer() {
             <Callout title="Honest scoring" tone="info"><p>{result.disclaimer}</p></Callout>
           </div>
         </Card>
+
+        {result.overTime && (
+          <div className="mt-6">
+            <Callout title="Scored for review, not as a timed attempt" tone="warning">
+              <p>The clock ran out before your answers reached us, so this score counts your
+              work but not your time. Review it, then take the mock again under the clock.</p>
+            </Callout>
+          </div>
+        )}
+
+        {/* Section analytics: accuracy + pace per section (research: GICE, iQuanta, PracticeMock) */}
+        {sectionStats.length > 0 && (
+          <section aria-label="Section performance" className="mt-12">
+            <h2 className="text-2xl font-extrabold text-ink mb-1">Where the marks went</h2>
+            <p className="text-slate mb-6">Accuracy and pace for each section of the mock.</p>
+            <ul className="divide-y divide-border border-y border-border">
+              {sectionStats.map((s) => {
+                const pct = Math.round((s.correct / s.total) * 100);
+                return (
+                  <li key={s.topic} className="py-4 flex flex-wrap items-center gap-x-6 gap-y-3">
+                    <div className="min-w-0 flex-1 basis-48">
+                      <p className="font-bold text-ink">{s.topic}</p>
+                      <div className="mt-2 h-1.5 rounded-full bg-border/60 overflow-hidden">
+                        <div
+                          className="h-full rounded-full bg-academy-teal"
+                          style={{ width: `${pct}%` }}
+                          role="progressbar"
+                          aria-valuenow={s.correct}
+                          aria-valuemin={0}
+                          aria-valuemax={s.total}
+                          aria-label={`${s.topic}: ${s.correct} of ${s.total} correct`}
+                        />
+                      </div>
+                    </div>
+                    <p className="text-sm font-bold text-ink tabular-nums">{s.correct}/{s.total} <span className="font-normal text-slate">({pct}%)</span></p>
+                    <p className="text-sm text-slate tabular-nums ml-auto">about {s.avgSec}s a question</p>
+                  </li>
+                );
+              })}
+            </ul>
+            {showWeakest && weakest && (
+              <div className="mt-6 flex flex-wrap items-center justify-between gap-4 rounded-2xl border border-border bg-paper p-5">
+                <p className="text-[15px] text-ink">
+                  <span className="font-bold">Weakest section: {weakest.topic}</span>{" "}
+                  <span className="text-slate">({weakest.correct}/{weakest.total} correct).</span>
+                </p>
+                <Button href={`/exams/jft-basic/practice/${TOPIC_SLUGS[weakest.topic]}`} variant="secondary" size="sm">
+                  Practise this section
+                </Button>
+              </div>
+            )}
+          </section>
+        )}
+
+        {wrong.length > 0 && (
+          <div className="mt-10 text-center">
+            <Button onClick={() => { setReattempt({ order: wrong.map((d) => d.id), idx: 0, picked: {} }); window.scrollTo({ top: 0 }); setTimeout(() => reHeadingRef.current?.focus(), 80); }}>
+              Re-attempt {wrong.length} missed {wrong.length === 1 ? "question" : "questions"}
+            </Button>
+            <p className="mt-2 text-sm text-slate">No timer. Instant feedback on every answer.</p>
+          </div>
+        )}
 
         {wrong.length > 0 && (
           <>

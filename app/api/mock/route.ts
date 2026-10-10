@@ -62,6 +62,7 @@ export async function POST(req: Request) {
       id: q.id,
       topic: q.topic,
       correct,
+      correctId: q.correctId,
       correctLabel: correctOption.text,
       correctLabelJp: correctOption.textJp ?? null,
       explanation: q.explanation,
