@@ -382,6 +382,44 @@ export default function HomePage() {
         </div>
       </Section>
 
+      {/* METHOD — the learning architecture, promoted on-site */}
+      <Section className="!pt-0 !pb-14 md:!pb-20">
+        <SectionHeading
+          eyebrow="The Unschool Method"
+          title="A path, not a pile."
+          sub="506 exams. 500 books. One architecture: hierarchy → loop → levels. Here's how learning actually works here."
+        />
+        <div className="grid md:grid-cols-3 gap-4">
+          <div className="rounded-2xl border border-border bg-paper p-6">
+            <p className="text-xs font-bold uppercase tracking-[0.18em] text-academy-teal-dark">Structure</p>
+            <p className="mt-2 text-xl font-extrabold text-ink">Exam → skill → level</p>
+            <p className="mt-2 text-slate text-sm leading-relaxed">
+              Every exam breaks into subjects, parts, skills and four levels — L1 Foundation to L4 Exam mastery.
+              You never face "10,000 questions." You face your next 10.
+            </p>
+          </div>
+          <div className="rounded-2xl border border-border bg-paper p-6">
+            <p className="text-xs font-bold uppercase tracking-[0.18em] text-academy-teal-dark">Loop</p>
+            <p className="mt-2 text-xl font-extrabold text-ink">Diagnose → master → prove</p>
+            <p className="mt-2 text-slate text-sm leading-relaxed">
+              A 7-step loop: diagnose your level, learn, practice, understand every mistake,
+              retain with spaced repetition, master the skill, prove it in mocks.
+            </p>
+          </div>
+          <div className="rounded-2xl border border-border bg-paper p-6">
+            <p className="text-xs font-bold uppercase tracking-[0.18em] text-academy-teal-dark">Kids</p>
+            <p className="mt-2 text-xl font-extrabold text-ink">500 books → quests</p>
+            <p className="mt-2 text-slate text-sm leading-relaxed">
+              From age 5: Momo, Tara and Bobo turn beloved stories into quests across 5 subjects.
+              Adaptive, no fail states, 15 minutes then off-screen play.
+            </p>
+          </div>
+        </div>
+        <div className="mt-8 text-center">
+          <Button href="/how-it-works" size="lg" variant="primary">See the full method</Button>
+        </div>
+      </Section>
+
       {/* FAQ */}
       <Section className="!pt-0">
         <div className="max-w-3xl">
