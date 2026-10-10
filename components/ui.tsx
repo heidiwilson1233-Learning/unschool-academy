@@ -190,7 +190,9 @@ export function FAQAccordion({
               id={btnId}
               onClick={() => setOpen(isOpen ? null : i)}
               aria-expanded={isOpen}
-              aria-controls={panelId}
+              /* Run 29 (a11y P1): never point aria-controls at an unmounted
+                 panel — wire it only when the panel is in the tree. */
+              aria-controls={isOpen ? panelId : undefined}
               className="w-full flex items-center justify-between gap-4 py-5 text-left focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-academy-teal rounded-lg"
             >
               <span className="font-semibold text-ink text-base md:text-lg">{item.q}</span>

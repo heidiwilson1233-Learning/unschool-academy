@@ -1,0 +1,602 @@
+[
+  {
+    "id": "aws-saa-cc-cb-001",
+    "skill": "cloud-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Which statement best describes cloud computing?",
+    "options": [
+      "On-demand delivery of IT resources over the internet with pay-as-you-go pricing",
+      "Buying physical servers and installing them in your own office",
+      "A single computer that runs faster than normal computers",
+      "Software that only works without an internet connection"
+    ],
+    "answer": 0,
+    "explanation": "AWS defines cloud computing as the on-demand delivery of IT resources — servers, storage, databases, networking, software — over the internet with pay-as-you-go pricing. You provision what you need instead of buying hardware upfront.",
+    "hint": "Think: no servers to buy, resources delivered 'as a service' over the internet.",
+    "source": "AWS Documentation — 'What is cloud computing' (docs.aws.amazon.com)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-cb-002",
+    "skill": "cloud-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Which of the following is NOT a benefit of cloud computing?",
+    "options": [
+      "Trade capital expense for variable expense",
+      "Benefit from massive economies of scale",
+      "Large upfront investment in data centers",
+      "Increase speed and agility"
+    ],
+    "answer": 2,
+    "explanation": "The cloud lets you avoid large upfront investments — you trade capital expense for variable expense. 'Large upfront investment in data centers' describes the old on-premises model, not a cloud benefit.",
+    "hint": "Which option sounds like the OLD way of doing IT — buying everything first?",
+    "source": "AWS Documentation — 'What is cloud computing' (docs.aws.amazon.com)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-cb-003",
+    "skill": "cloud-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "A company moves from buying servers (capital expense) to paying monthly for cloud resources. This is a shift from:",
+    "options": [
+      "Variable expense to fixed expense",
+      "Capital expense (CapEx) to operational expense (OpEx)",
+      "Operational expense (OpEx) to capital expense (CapEx)",
+      "Profit to loss"
+    ],
+    "answer": 1,
+    "explanation": "Buying hardware is a capital expense (CapEx) — money spent upfront on physical assets. Paying for cloud usage as you go is an operational expense (OpEx). One of the six advantages of cloud is trading CapEx for OpEx.",
+    "hint": "CapEx = buying assets. OpEx = paying for usage. Which direction does cloud move you?",
+    "source": "AWS Documentation — 'What is cloud computing' (docs.aws.amazon.com)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-cb-004",
+    "skill": "cloud-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "A bank keeps customer account data in its own data center for compliance, but runs its public website on AWS. This deployment model is:",
+    "options": [
+      "Public cloud only",
+      "Private cloud only",
+      "Serverless",
+      "Hybrid"
+    ],
+    "answer": 3,
+    "explanation": "Hybrid combines on-premises infrastructure with public cloud, letting workloads move between them. The bank keeps sensitive data on-premises while using AWS for the website — a classic hybrid setup.",
+    "hint": "It's a mix of two worlds — what do we call a mixed deployment?",
+    "source": "AWS Documentation — 'What is cloud computing' (docs.aws.amazon.com)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-cb-005",
+    "skill": "cloud-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Which AWS service is an example of Infrastructure as a Service (IaaS)?",
+    "options": [
+      "Amazon EC2",
+      "AWS Elastic Beanstalk",
+      "Amazon WorkMail",
+      "Amazon Chime"
+    ],
+    "answer": 0,
+    "explanation": "With IaaS you rent virtualized infrastructure — AWS manages the physical hardware and virtualization, while you manage the operating system, middleware, and applications. Amazon EC2 (virtual servers) is the classic IaaS example.",
+    "hint": "IaaS = you get the virtual machine; you still install and manage the OS. Which service gives you a virtual server?",
+    "source": "AWS Documentation — 'What is cloud computing' (docs.aws.amazon.com)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-cb-006",
+    "skill": "cloud-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "A developer wants to deploy application code without managing servers or the runtime platform. Which service model and AWS example fit?",
+    "options": [
+      "IaaS — Amazon EC2",
+      "PaaS — AWS Elastic Beanstalk",
+      "SaaS — Amazon WorkMail",
+      "DaaS — AWS Direct Connect"
+    ],
+    "answer": 1,
+    "explanation": "Platform as a Service (PaaS) provides the platform — AWS manages the underlying infrastructure and runtime, and you just deploy your code. Elastic Beanstalk is AWS's PaaS offering for deploying web applications.",
+    "hint": "You bring the code, AWS brings everything underneath it. Which model is that?",
+    "source": "AWS Documentation — 'What is cloud computing' (docs.aws.amazon.com)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-cb-007",
+    "skill": "cloud-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Which AWS service is an example of Software as a Service (SaaS)?",
+    "options": [
+      "Amazon EC2",
+      "Amazon VPC",
+      "Amazon WorkMail",
+      "AWS IAM"
+    ],
+    "answer": 2,
+    "explanation": "SaaS delivers complete, ready-to-use software over the internet — the provider manages everything from infrastructure to the application itself. Amazon WorkMail (managed business email) is a SaaS example; the user just uses the mailbox.",
+    "hint": "SaaS = finished software you simply use. Which option is an end-user application, not infrastructure?",
+    "source": "AWS Documentation — 'What is cloud computing' (docs.aws.amazon.com)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-cb-008",
+    "skill": "cloud-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "What is an AWS Region?",
+    "options": [
+      "A physical location in the world containing multiple isolated Availability Zones",
+      "A single data center building",
+      "A content-caching point in a city",
+      "A type of virtual server"
+    ],
+    "answer": 0,
+    "explanation": "An AWS Region is a physical location in the world where AWS clusters data centers. Each Region consists of multiple, isolated, and physically separate Availability Zones within a geographic area.",
+    "hint": "Think geography: a Region is an area (like Mumbai or Frankfurt) that holds several separated data-center clusters.",
+    "source": "AWS Global Infrastructure — Regions, Availability Zones, edge locations (docs.aws.amazon.com)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-cb-009",
+    "skill": "cloud-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "What is an Availability Zone (AZ)?",
+    "options": [
+      "A billing discount for long-term use",
+      "One or more discrete data centers with redundant power, networking, and connectivity within a Region",
+      "A copy of your data stored on tape",
+      "A user permission level in IAM"
+    ],
+    "answer": 1,
+    "explanation": "An Availability Zone is one or more discrete data centers with redundant power, networking, and connectivity, all housed in separate facilities within a Region. AZs are physically separated so a disaster in one is unlikely to affect the others.",
+    "hint": "The 'Z' is about physical separation for safety. Which option describes data centers with their own power and networking?",
+    "source": "AWS Global Infrastructure — Regions, Availability Zones, edge locations (docs.aws.amazon.com)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-cb-010",
+    "skill": "cloud-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Why should an architect deploy application servers across multiple Availability Zones?",
+    "options": [
+      "To reduce the monthly bill",
+      "To get faster CPUs",
+      "To achieve high availability and fault tolerance",
+      "To avoid using load balancers"
+    ],
+    "answer": 2,
+    "explanation": "Because AZs are physically separated with independent power and networking, spreading resources across multiple AZs means the application keeps running even if one AZ fails — this is high availability and fault tolerance, a core design goal in the SAA exam's Resilient Architectures domain (26%).",
+    "hint": "If one building loses power, where do your surviving servers need to be?",
+    "source": "AWS Global Infrastructure — Regions, Availability Zones, edge locations (docs.aws.amazon.com)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-cb-011",
+    "skill": "cloud-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "What is the purpose of an AWS edge location?",
+    "options": [
+      "To cache content closer to end users for low-latency delivery (used by Amazon CloudFront)",
+      "To run EC2 virtual servers",
+      "To store long-term database backups",
+      "To manage IAM user passwords"
+    ],
+    "answer": 0,
+    "explanation": "Edge locations are sites in major cities where CloudFront caches copies of content close to viewers, reducing latency. They are part of the content-delivery network — you do not run EC2 instances or databases in edge locations.",
+    "hint": "Edge = the 'edge' of the network, near the user. What benefits from being physically close to the viewer?",
+    "source": "AWS Global Infrastructure — Regions, Availability Zones, edge locations (docs.aws.amazon.com)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-cb-012",
+    "skill": "cloud-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Under the AWS Shared Responsibility Model, 'security OF the cloud' is the responsibility of:",
+    "options": [
+      "The customer",
+      "AWS",
+      "The internet service provider",
+      "A third-party auditor"
+    ],
+    "answer": 1,
+    "explanation": "AWS is responsible for protecting the infrastructure that runs AWS services — the 'security OF the cloud'. This includes the physical hardware, software, networking, and facilities that run AWS Cloud services.",
+    "hint": "'OF the cloud' = the cloud itself — the buildings, machines, and network. Who owns those?",
+    "source": "AWS Shared Responsibility Model (docs.aws.amazon.com)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-cb-013",
+    "skill": "cloud-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Under the AWS Shared Responsibility Model, 'security IN the cloud' is the responsibility of:",
+    "options": [
+      "AWS",
+      "The hardware vendor",
+      "The customer",
+      "The DNS provider"
+    ],
+    "answer": 2,
+    "explanation": "The customer is responsible for 'security IN the cloud' — what they put in the cloud and how they configure it: customer data, platform and application management, IAM, OS configuration, and firewall settings.",
+    "hint": "'IN the cloud' = your stuff inside it — your data and your settings. Whose job is that?",
+    "source": "AWS Shared Responsibility Model (docs.aws.amazon.com)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-cb-014",
+    "skill": "cloud-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "A company runs an application on Amazon EC2. Under the shared responsibility model, which task belongs to the customer?",
+    "options": [
+      "Patching the guest operating system on the EC2 instance",
+      "Physically securing the data center building",
+      "Replacing failed hard drives in the host server",
+      "Maintaining the virtualization software on the host"
+    ],
+    "answer": 0,
+    "explanation": "On EC2 (IaaS), the customer manages everything from the guest OS upward: patching the OS, installing application software, configuring the firewall, and managing data. AWS handles the physical host, virtualization layer, and facility security.",
+    "hint": "On EC2, where does AWS's job end and yours begin? Think about who controls the operating system you installed.",
+    "source": "AWS Shared Responsibility Model (docs.aws.amazon.com)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-cb-015",
+    "skill": "cloud-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Which of the following is ALWAYS an AWS responsibility, regardless of the service used?",
+    "options": [
+      "Encrypting customer database records",
+      "Choosing strong IAM passwords",
+      "Configuring security group rules",
+      "Physical and environmental security of AWS data centers"
+    ],
+    "answer": 3,
+    "explanation": "Physical and environmental security of AWS facilities is always AWS's responsibility — customers never get physical access to AWS data centers. Encryption choices, passwords, and security group rules are customer configuration responsibilities.",
+    "hint": "Which option is about buildings and guards — something only AWS can physically do?",
+    "source": "AWS Shared Responsibility Model (docs.aws.amazon.com)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-cb-016",
+    "skill": "cloud-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Pay-as-you-go pricing in the cloud means:",
+    "options": [
+      "You pay a fixed yearly fee regardless of usage",
+      "You pay only for the resources you actually consume, with no long-term contracts required",
+      "You pay upfront for five years of capacity",
+      "You pay per employee in the company"
+    ],
+    "answer": 1,
+    "explanation": "With pay-as-you-go (on-demand) pricing, you pay only for what you use — compute by the second, storage by the gigabyte-month — and can stop anytime. There is no upfront commitment, which is part of trading fixed expense for variable expense.",
+    "hint": "Like a utility bill for electricity — what do you pay for?",
+    "source": "AWS Documentation — 'What is cloud computing' (docs.aws.amazon.com)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-cb-017",
+    "skill": "cloud-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "'Benefit from massive economies of scale' means:",
+    "options": [
+      "Small companies pay more per unit than large companies",
+      "Because AWS aggregates usage across hundreds of thousands of customers, it achieves lower costs and passes savings on as lower prices",
+      "Each customer must buy their own physical servers",
+      "Prices increase as more customers join"
+    ],
+    "answer": 1,
+    "explanation": "Economies of scale: by serving hundreds of thousands of customers from shared infrastructure, AWS achieves far lower per-unit costs than any single company could, and those savings appear as lower pay-as-you-go prices.",
+    "hint": "Buying in bulk is cheaper. What happens when hundreds of thousands of customers' usage is combined?",
+    "source": "AWS Documentation — 'What is cloud computing' (docs.aws.amazon.com)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-cb-018",
+    "skill": "cloud-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Elasticity in cloud computing refers to the ability to:",
+    "options": [
+      "Scale resources up and down automatically as demand changes",
+      "Stretch physical cables between data centers",
+      "Run software without any operating system",
+      "Store unlimited data for free"
+    ],
+    "answer": 0,
+    "explanation": "Elasticity is the ability to provision and release resources automatically as demand rises and falls — scaling out during a traffic spike and scaling back in afterward, so you pay only for what you need.",
+    "hint": "Think of an elastic band — what does it do when pulled, and when released?",
+    "source": "AWS Documentation — 'What is cloud computing' (docs.aws.amazon.com)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-cb-019",
+    "skill": "cloud-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "A startup launches a new feature to a small group of users on Monday, measures results, and rolls it out globally on Friday — with no hardware procurement. This demonstrates which cloud advantage?",
+    "options": [
+      "Stop guessing capacity",
+      "Trade fixed expense for variable expense",
+      "Benefit from massive economies of scale",
+      "Increase speed and agility"
+    ],
+    "answer": 3,
+    "explanation": "'Increase speed and agility' means IT resources are just a click away, so you can experiment, test ideas, and deploy in minutes instead of waiting weeks for hardware procurement.",
+    "hint": "The key here is how FAST they moved from idea to global rollout. Which advantage is about speed?",
+    "source": "AWS Documentation — 'What is cloud computing' (docs.aws.amazon.com)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-cb-020",
+    "skill": "cloud-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "A company deploys its application in AWS Regions in North America, Europe, and Asia so customers everywhere get fast response times. This demonstrates:",
+    "options": [
+      "Stop spending money running data centers",
+      "Go global in minutes",
+      "Increase speed and agility",
+      "Trade fixed expense for variable expense"
+    ],
+    "answer": 1,
+    "explanation": "'Go global in minutes' is the cloud advantage of deploying applications in multiple Regions around the world with a few clicks, giving customers lower latency and a better experience — without building data centers on each continent.",
+    "hint": "Multiple continents, deployed quickly, for lower latency worldwide. Which advantage names going global?",
+    "source": "AWS Documentation — 'What is cloud computing' (docs.aws.amazon.com)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-cb-021",
+    "skill": "cloud-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "An e-commerce site expects 10x traffic during a festival sale but does not know exactly how much. Which cloud advantage addresses this?",
+    "options": [
+      "Go global in minutes",
+      "Benefit from massive economies of scale",
+      "Stop guessing capacity",
+      "Increase speed and agility"
+    ],
+    "answer": 2,
+    "explanation": "'Stop guessing capacity' means you don't need to provision for peak capacity upfront (wasting money) or risk under-provisioning (losing sales) — you scale with actual demand using elasticity and Auto Scaling.",
+    "hint": "The problem is not KNOWING how much capacity you'll need. Which advantage removes the guessing?",
+    "source": "AWS Documentation — 'What is cloud computing' (docs.aws.amazon.com)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-cb-022",
+    "skill": "cloud-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Which statement describes 'trade fixed expense for variable expense'?",
+    "options": [
+      "Pay as you go for computing instead of investing heavily in data centers and servers before you know how you will use them",
+      "Buy servers in bulk to get a discount",
+      "Sign a ten-year lease on office space",
+      "Hire more staff to manage hardware"
+    ],
+    "answer": 0,
+    "explanation": "Instead of heavy upfront investment in data centers and servers, you pay only for the compute you consume. This converts a large fixed cost into a smaller variable cost tied to actual usage.",
+    "hint": "Fixed = pay no matter what. Variable = pay for what you use. Which option moves you from fixed to variable?",
+    "source": "AWS Documentation — 'What is cloud computing' (docs.aws.amazon.com)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-cb-023",
+    "skill": "cloud-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "In a public cloud deployment:",
+    "options": [
+      "Resources are dedicated to a single organization in its own building",
+      "Services are delivered over the public internet on infrastructure shared by multiple customers",
+      "No internet connection is required",
+      "The customer owns all physical hardware"
+    ],
+    "answer": 1,
+    "explanation": "In the public cloud model, a provider like AWS owns and operates the infrastructure and delivers services over the internet to many customers, who share the underlying physical resources with logical isolation.",
+    "hint": "Public = open to many customers. Who owns the hardware, and how do customers reach it?",
+    "source": "AWS Documentation — 'What is cloud computing' (docs.aws.amazon.com)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-cb-024",
+    "skill": "cloud-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "A government agency runs workloads on infrastructure used exclusively by that agency, hosted in its own facility but managed with cloud technology. This is:",
+    "options": [
+      "Public cloud",
+      "Hybrid cloud",
+      "Community cloud",
+      "Private cloud"
+    ],
+    "answer": 3,
+    "explanation": "A private cloud is cloud infrastructure provisioned for exclusive use by a single organization — it may be hosted on-premises or by a third party, but it is not shared with other customers.",
+    "hint": "Exclusive use by ONE organization — which deployment model is that?",
+    "source": "AWS Documentation — 'What is cloud computing' (docs.aws.amazon.com)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-cb-025",
+    "skill": "cloud-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "When choosing an AWS Region for a workload, which factors should an architect consider?",
+    "options": [
+      "Only the Region's alphabetical name",
+      "Latency to end users, data residency and compliance requirements, service availability, and cost",
+      "The number of edge locations in the Region",
+      "The CEO's travel preferences"
+    ],
+    "answer": 1,
+    "explanation": "Region selection weighs: latency (closeness to users), data residency/compliance (some data must stay in a country), whether needed services/features exist in that Region, and price differences between Regions.",
+    "hint": "What practical things differ between, say, Mumbai and Frankfurt for your users and your legal team?",
+    "source": "AWS Global Infrastructure — Regions, Availability Zones, edge locations (docs.aws.amazon.com)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-cb-026",
+    "skill": "cloud-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "How are Availability Zones within a Region connected to each other?",
+    "options": [
+      "They are physically separated but connected with high-throughput, low-latency links",
+      "They share a single power supply",
+      "They are connected only through the public internet",
+      "They are not connected at all"
+    ],
+    "answer": 0,
+    "explanation": "AZs are physically separated — different floodplains, power grids — yet linked by high-throughput, low-latency networking. This combination gives both isolation from localized failures and fast synchronous replication between zones.",
+    "hint": "They must survive each other's failures AND replicate data fast. What kind of connection does that need?",
+    "source": "AWS Global Infrastructure — Regions, Availability Zones, edge locations (docs.aws.amazon.com)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-cb-027",
+    "skill": "cloud-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Which set lists the three main components of AWS global infrastructure?",
+    "options": [
+      "EC2, S3, and RDS",
+      "IAM, VPC, and CloudTrail",
+      "Users, groups, and roles",
+      "Regions, Availability Zones, and edge locations (plus Regional edge caches)"
+    ],
+    "answer": 3,
+    "explanation": "AWS global infrastructure consists of Regions (geographic areas), Availability Zones (isolated data-center clusters inside Regions), and edge locations (content-delivery points used by CloudFront, with Regional edge caches behind them).",
+    "hint": "Global infrastructure = the physical footprint worldwide. Which option names places, not services?",
+    "source": "AWS Global Infrastructure — Regions, Availability Zones, edge locations (docs.aws.amazon.com)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-cb-028",
+    "skill": "cloud-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "A company shuts down its on-premises data center and rebuilds everything on AWS, using no on-premises infrastructure at all. This migration strategy is best described as:",
+    "options": [
+      "Hybrid",
+      "All-in (cloud-first / full migration)",
+      "Private cloud",
+      "On-premises"
+    ],
+    "answer": 1,
+    "explanation": "An all-in (cloud-first) migration moves everything to the public cloud with nothing remaining on-premises. Unlike hybrid, there is no retained data center to integrate with.",
+    "hint": "ALL in — nothing left behind on-premises. Which term fits?",
+    "source": "AWS Documentation — 'What is cloud computing' (docs.aws.amazon.com)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-cb-029",
+    "skill": "cloud-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "With SaaS, the customer is responsible for managing:",
+    "options": [
+      "The physical servers and networking",
+      "The application code and runtime",
+      "The least — mainly their own data and user access; the provider manages nearly everything else",
+      "The hypervisor layer"
+    ],
+    "answer": 2,
+    "explanation": "Responsibility shifts with the service model: IaaS = customer manages most (OS up), PaaS = customer manages code and data, SaaS = customer manages only their data and who can access it. AWS handles the rest.",
+    "hint": "SaaS is the most 'hands-off' model. What is left for the customer to manage?",
+    "source": "AWS Shared Responsibility Model (docs.aws.amazon.com)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-cb-030",
+    "skill": "cloud-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "With IaaS (for example, Amazon EC2), the division of responsibility is:",
+    "options": [
+      "AWS manages the physical infrastructure and virtualization; the customer manages the guest OS, applications, and data",
+      "AWS manages everything including the customer's application code",
+      "The customer manages the physical servers",
+      "There is no shared responsibility with IaaS"
+    ],
+    "answer": 0,
+    "explanation": "On EC2, AWS handles security OF the cloud up through the virtualization layer; the customer handles security IN the cloud from the guest operating system upward — OS patches, middleware, applications, data, and access management.",
+    "hint": "On EC2 you install the OS yourself. So who patches that OS — you or AWS?",
+    "source": "AWS Shared Responsibility Model (docs.aws.amazon.com)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  }
+]
