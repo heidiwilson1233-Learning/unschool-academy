@@ -137,9 +137,10 @@ export const SMART_LEARNING = {
   maxSessionMinutes: 15,
 } as const;
 
-/* ---- Endless content model ----
-   500 books × ~8 quests = ~4,000 base quests.
-   Template variants (parametric) make practice endless.
+/* ---- Endless content model (per content/kids/STATUS_CONTRACT.md) ----
+   500 books × 7 quest kinds = 3,500 authored base quests.
+   Parametric variants make practice endless from those base quests
+   (variants are not counted as unique quests).
    1 new book unlocks per week → the library lasts ~10 years. */
 export const BOOK_QUEST_TYPES = [
   { type: "read-aloud", subject: "words", character: "tara", blurb: "Tara narrates the story with word highlighting" },
@@ -152,9 +153,9 @@ export const BOOK_QUEST_TYPES = [
 ] as const;
 
 export const ENDLESS_MODEL = {
-  baseQuestsPerBook: 8,
+  baseQuestsPerBook: 7,
   bookCount: 500,
-  baseTotal: 4000,
+  baseTotal: 3500,
   variantMultiplier: "parametric templates (e.g. counting quest × any object × any number)",
   unlockCadence: "1 new book per week",
   libraryLifespan: "~10 years",
