@@ -71,6 +71,64 @@ const METHOD_ROWS: { term: string; lead: ReactNode; body: string }[] = [
   },
 ];
 
+/* The seven loop steps verbatim from /how-it-works, drawn as hand-written
+   slips on a wobbly string — aria-hidden: every name already appears in the
+   Loop row's visible body text. Decorative duplicate only, never a claim. */
+const LOOP_STEPS = ["Diagnose", "Learn", "Practice", "Understand", "Retain", "Master", "Prove"];
+const LOOP_TILTS = [-2, 1.5, -1, 2, -1.5, 1, -2];
+
+function LoopMotif() {
+  return (
+    <span aria-hidden="true" className="relative mt-3 mb-3 block">
+      <svg
+        viewBox="0 0 700 40"
+        preserveAspectRatio="none"
+        className="absolute inset-x-0 top-1/2 h-9 w-full -translate-y-1/2"
+      >
+        <path
+          d="M8 25 C 90 15, 180 34, 270 24 S 450 14, 540 24 C 592 29, 632 28, 668 19"
+          fill="none"
+          stroke="#147d75"
+          strokeWidth="3"
+          strokeLinecap="round"
+          opacity="0.5"
+        />
+        <path
+          d="M668 19 l-17 4 M668 19 l-7 -15"
+          fill="none"
+          stroke="#147d75"
+          strokeWidth="3"
+          strokeLinecap="round"
+          opacity="0.5"
+        />
+        <path
+          d="M14 30 C 100 20, 190 37, 280 27 S 460 18, 548 28"
+          fill="none"
+          stroke="#147d75"
+          strokeWidth="1.4"
+          strokeLinecap="round"
+          opacity="0.25"
+        />
+      </svg>
+      <span className="font-hand relative flex flex-wrap items-center gap-x-1.5 gap-y-2 text-[16px] leading-none text-ink">
+        {LOOP_STEPS.map((s, i) => (
+          <span key={s} className="flex items-center">
+            <span
+              className="rounded-[3px_5px_4px_6px] border border-[#ddd0b2] bg-[#f8f3e4] px-2 py-1 shadow-[0_1px_0_rgba(21,34,59,0.08)]"
+              style={{ transform: `rotate(${LOOP_TILTS[i]}deg)` }}
+            >
+              {s}
+            </span>
+            {i < LOOP_STEPS.length - 1 && (
+              <span className="mx-0.5 text-academy-teal-dark">→</span>
+            )}
+          </span>
+        ))}
+      </span>
+    </span>
+  );
+}
+
 const FAQS = [
   {
     q: "Is Unschool Academy affiliated with the exam boards?",
@@ -516,31 +574,72 @@ export default function HomePage() {
       </Section>
 
       {/* METHOD — the learning architecture, promoted on-site.
-          Editorial hairline rows on desktop; one tap-to-open card on mobile
-          (mobile-compact rule). */}
+          Warm-studio ledger treatment: one taped paper card holds the three
+          summary rows; the 7-step loop is drawn as an actual hand-drawn
+          loop strip so the summary visibly maps to the seven steps detailed
+          on /how-it-works (unchanged CTA + link below). Mobile: a single
+          collapsed card (mobile-compact rule). All copy verbatim. */}
       <Section className="!pt-0 !pb-14 md:!pb-20">
         <SectionHeading
           eyebrow="The Unschool Method"
           title={<>A <HandUnderline>path</HandUnderline>, not a pile.</>}
           sub="500 exams in the research catalogue. A 500-book library in progress. One architecture: hierarchy, loop, levels. Here is how learning actually works here."
         />
-        <dl className="hidden md:block divide-y divide-border border-y border-border">
-          {METHOD_ROWS.map((r) => (
-            <div key={r.term} className="py-6 md:py-7 grid md:grid-cols-[14rem_1fr] gap-1 md:gap-8">
-              <dt className="font-mono text-[11px] font-bold uppercase tracking-[0.22em] text-academy-teal-dark pt-1.5">{r.term}</dt>
-              <dd className="text-slate leading-relaxed">
-                <strong className="font-bold text-ink">{r.lead}</strong> {r.body}
-              </dd>
-            </div>
-          ))}
-        </dl>
+        <div className="hidden md:block">
+          <PaperCard tilt={-0.4} className="relative mx-auto max-w-4xl px-8 py-6 lg:px-10">
+            <WashiTape tone="amber" tilt={-5} className="-top-3.5 left-8 z-10" />
+            <dl className="m-0 p-0">
+              {METHOD_ROWS.map((r) => (
+                <div
+                  key={r.term}
+                  className="grid gap-1 py-5 first:pt-1 last:pb-1 border-b border-dashed border-[#ded4bb] last:border-0 md:grid-cols-[9.5rem_1fr] md:gap-6"
+                >
+                  <dt className="pt-1">
+                    {/* The stamp is decorative (aria-hidden); the sr-only span
+                        keeps the row term in the accessibility tree. */}
+                    <span className="sr-only">{r.term}: </span>
+                    <Stamp
+                      tone={r.term === "Loop" ? "rust" : r.term === "Kids" ? "amber" : "teal"}
+                      tilt={r.term === "Loop" ? 3 : -4}
+                    >
+                      {r.term}
+                    </Stamp>
+                  </dt>
+                  <dd className="text-slate leading-relaxed">
+                    <strong className="font-bold text-ink">{r.lead}</strong>{" "}
+                    {r.term === "Loop" ? (
+                      <>
+                        <LoopMotif />
+                        {r.body}
+                      </>
+                    ) : (
+                      r.body
+                    )}
+                  </dd>
+                </div>
+              ))}
+            </dl>
+          </PaperCard>
+          {/* Handwritten duplicate of the Loop lead — decorates, claims nothing. */}
+          <Marginalia className="mt-3 -rotate-1 text-center text-lg">
+            diagnose → master → prove.
+          </Marginalia>
+        </div>
         <div className="md:hidden">
           <CraftDetails summary="The method in 3 lines">
-            <dl className="m-0 space-y-5 p-0">
+            <dl className="m-0 space-y-4 p-0">
               {METHOD_ROWS.map((r) => (
                 <div key={r.term}>
-                  <dt className="font-mono text-[11px] font-bold uppercase tracking-[0.22em] text-academy-teal-dark">{r.term}</dt>
-                  <dd className="mt-1 text-sm leading-relaxed text-slate">
+                  <dt>
+                    <span className="sr-only">{r.term}: </span>
+                    <Stamp
+                      tone={r.term === "Loop" ? "rust" : r.term === "Kids" ? "amber" : "teal"}
+                      tilt={r.term === "Loop" ? 3 : -4}
+                    >
+                      {r.term}
+                    </Stamp>
+                  </dt>
+                  <dd className="mt-1.5 text-sm leading-relaxed text-slate">
                     <strong className="font-bold text-ink">{r.lead}</strong> {r.body}
                   </dd>
                 </div>
