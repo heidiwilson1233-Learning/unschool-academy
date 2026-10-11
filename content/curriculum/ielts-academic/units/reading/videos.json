@@ -1,1 +1,149 @@
-[{"attached_question_ids":["ielts-rd-tfng-001","ielts-rd-tfng-002","ielts-rd-tfng-003","ielts-rd-tfng-004","ielts-rd-tfng-005","ielts-rd-tfng-006","ielts-rd-tfng-007","ielts-rd-tfng-008","ielts-rd-tfng-009","ielts-rd-tfng-010","ielts-rd-tfng-011","ielts-rd-tfng-012","ielts-rd-tfng-013","ielts-rd-tfng-014","ielts-rd-tfng-015","ielts-rd-tfng-016","ielts-rd-tfng-017","ielts-rd-tfng-018","ielts-rd-tfng-019","ielts-rd-tfng-020","ielts-rd-tfng-021","ielts-rd-tfng-022","ielts-rd-tfng-023","ielts-rd-tfng-024","ielts-rd-tfng-025","ielts-rd-tfng-026","ielts-rd-tfng-027","ielts-rd-tfng-028","ielts-rd-tfng-029","ielts-rd-tfng-030"],"channel":"IELTS Liz","curation_note":"Free YouTube embed — credited, never re-uploaded. Beginner walkthrough of the TFNG rules with worked examples; pairs with this L1 batch.","duration":null,"lesson_topic":"True / False / Not Given — the basic rules","level":"L1","platform":"youtube","title":"IELTS Reading strategies: True, False, Not Given","transcript_key_points":["True = statement agrees with the passage; False = it contradicts; Not Given = no information","Underline keywords in the statement, then scan for synonyms in the passage","Watch qualifier words: some, all, only, never, often — they flip answers","Never use outside knowledge; answer only from the passage"],"video_url":"https://www.youtube.com/watch?v=cNyLs7YWFL8"},{"attached_question_ids":[],"channel":"Education9 by TV9","curation_note":"Free YouTube embed — credited, never re-uploaded. Beginner-friendly full walkthrough of the Reading section format, time management, skimming vs scanning, and TFNG basics.","duration":null,"lesson_topic":"IELTS Reading format, time management, skimming and scanning basics","level":"L1","platform":"youtube","title":"IELTS Reading: Stop Reading Every Word — The Strategy That Gets You 35+ Correct","transcript_key_points":["Format: 3 passages, 40 questions, 60 minutes — no extra transfer time","Read the questions first, then scan; never read the whole passage word by word","Skim for main idea (first/last sentences), scan for specific answers","TFNG decoded: False vs Not Given with examples"],"video_url":"https://www.youtube.com/watch?v=fyZALmzym9U"}]
+[
+ {
+  "attached_question_ids": [
+   "ielts-rd-tfng-001",
+   "ielts-rd-tfng-002",
+   "ielts-rd-tfng-003",
+   "ielts-rd-tfng-004",
+   "ielts-rd-tfng-005",
+   "ielts-rd-tfng-006",
+   "ielts-rd-tfng-007",
+   "ielts-rd-tfng-008",
+   "ielts-rd-tfng-009",
+   "ielts-rd-tfng-010",
+   "ielts-rd-tfng-011",
+   "ielts-rd-tfng-012",
+   "ielts-rd-tfng-013",
+   "ielts-rd-tfng-014",
+   "ielts-rd-tfng-015",
+   "ielts-rd-tfng-016",
+   "ielts-rd-tfng-017",
+   "ielts-rd-tfng-018",
+   "ielts-rd-tfng-019",
+   "ielts-rd-tfng-020",
+   "ielts-rd-tfng-021",
+   "ielts-rd-tfng-022",
+   "ielts-rd-tfng-023",
+   "ielts-rd-tfng-024",
+   "ielts-rd-tfng-025",
+   "ielts-rd-tfng-026",
+   "ielts-rd-tfng-027",
+   "ielts-rd-tfng-028",
+   "ielts-rd-tfng-029",
+   "ielts-rd-tfng-030"
+  ],
+  "channel": "IELTS Liz",
+  "curation_note": "Free YouTube embed — credited, never re-uploaded. Beginner walkthrough of the TFNG rules with worked examples; pairs with this L1 batch.",
+  "duration": null,
+  "lesson_topic": "True / False / Not Given — the basic rules",
+  "level": "L1",
+  "platform": "youtube",
+  "title": "IELTS Reading strategies: True, False, Not Given",
+  "transcript_key_points": [
+   "True = statement agrees with the passage; False = it contradicts; Not Given = no information",
+   "Underline keywords in the statement, then scan for synonyms in the passage",
+   "Watch qualifier words: some, all, only, never, often — they flip answers",
+   "Never use outside knowledge; answer only from the passage"
+  ],
+  "video_url": "https://www.youtube.com/watch?v=cNyLs7YWFL8"
+ },
+ {
+  "attached_question_ids": [],
+  "channel": "Education9 by TV9",
+  "curation_note": "Free YouTube embed — credited, never re-uploaded. Beginner-friendly full walkthrough of the Reading section format, time management, skimming vs scanning, and TFNG basics.",
+  "duration": null,
+  "lesson_topic": "IELTS Reading format, time management, skimming and scanning basics",
+  "level": "L1",
+  "platform": "youtube",
+  "title": "IELTS Reading: Stop Reading Every Word — The Strategy That Gets You 35+ Correct",
+  "transcript_key_points": [
+   "Format: 3 passages, 40 questions, 60 minutes — no extra transfer time",
+   "Read the questions first, then scan; never read the whole passage word by word",
+   "Skim for main idea (first/last sentences), scan for specific answers",
+   "TFNG decoded: False vs Not Given with examples"
+  ],
+  "video_url": "https://www.youtube.com/watch?v=fyZALmzym9U"
+ },
+ {
+  "attached_question_ids": [
+   "ielts-rd-sk-001",
+   "ielts-rd-sk-002",
+   "ielts-rd-sk-027"
+  ],
+  "channel": "engVid",
+  "curation_note": "Free YouTube embed — credited, never re-uploaded. Classic beginner lesson on skimming vs scanning and not reading every word; pairs with this L1 skimming batch.",
+  "duration": null,
+  "key_points": [
+   "Don't read word-by-word — you don't need to understand every word to grasp the passage",
+   "Skimming = quick read for the main idea; scanning = searching for keywords or specific detail",
+   "Try reading the questions first, then the passage — or the passage first; test both and pick what suits you"
+  ],
+  "lesson_topic": "Skimming vs scanning — stop reading every word",
+  "level": "L1",
+  "platform": "youtube",
+  "skill": "skimming",
+  "title": "IELTS Reading: Top 10 Tips",
+  "transcript_key_points": [
+   "Don't read word-by-word — you don't need to understand every word to grasp the passage",
+   "Skimming = quick read for the main idea; scanning = searching for keywords or specific detail",
+   "Try reading the questions first, then the passage — or the passage first; test both and pick what suits you"
+  ],
+  "video_url": "https://www.youtube.com/watch?v=4PDgVEhfKso"
+ },
+ {
+  "attached_question_ids": [
+   "ielts-rd-sk-007",
+   "ielts-rd-sk-008",
+   "ielts-rd-sk-050"
+  ],
+  "channel": "E2 IELTS",
+  "curation_note": "Free YouTube embed — credited, never re-uploaded. Teaches the 'skim, question, scan' sequence and the 20-minute passage rule; pairs with this L1 skimming batch.",
+  "duration": null,
+  "key_points": [
+   "Reading the passage start-to-finish first is the slowest strategy",
+   "The 'skim, question, scan' approach saves roughly five minutes per passage",
+   "20-minute-per-passage rule prevents collapsing on passage 3",
+   "Matching-headings questions test the main idea, not repeated keywords"
+  ],
+  "lesson_topic": "The 'skim, question, scan' method and the 20-minute passage rule",
+  "level": "L1",
+  "platform": "youtube",
+  "skill": "skimming",
+  "title": "IELTS Reading: Where Your Marks Are Actually Leaking",
+  "transcript_key_points": [
+   "Reading the passage start-to-finish first is the slowest strategy",
+   "The 'skim, question, scan' approach saves roughly five minutes per passage",
+   "20-minute-per-passage rule prevents collapsing on passage 3",
+   "Matching-headings questions test the main idea, not repeated keywords"
+  ],
+  "video_url": "https://www.youtube.com/watch?v=6X4Z_H1rDHQ"
+ },
+ {
+  "attached_question_ids": [
+   "ielts-rd-sk-021",
+   "ielts-rd-sk-031",
+   "ielts-rd-sk-036"
+  ],
+  "channel": "ELA IELTS",
+  "curation_note": "Free YouTube embed — credited, never re-uploaded. Compact 2026 strategy overview: skimming in 30–40 seconds, timing, and the 60-second cut-off; pairs with this L1 skimming batch.",
+  "duration": null,
+  "key_points": [
+   "Test format: 60 minutes, 3 passages, 40 questions — no extra time for transferring answers",
+   "Skimming = fast-reading titles, intros, and first/last lines of paragraphs (30–40 seconds)",
+   "Scanning = locating names, dates, numbers, and capital-letter keywords quickly",
+   "The 60-second cut-off: if a question takes over a minute, guess and move on"
+  ],
+  "lesson_topic": "Skimming technique (30–40 seconds) plus the timing strategy",
+  "level": "L1",
+  "platform": "youtube",
+  "skill": "skimming",
+  "title": "IELTS Academic Reading Strategy 2026: Get Band 7+ in 5 Minutes! | ELA IELTS",
+  "transcript_key_points": [
+   "Test format: 60 minutes, 3 passages, 40 questions — no extra time for transferring answers",
+   "Skimming = fast-reading titles, intros, and first/last lines of paragraphs (30–40 seconds)",
+   "Scanning = locating names, dates, numbers, and capital-letter keywords quickly",
+   "The 60-second cut-off: if a question takes over a minute, guess and move on"
+  ],
+  "video_url": "https://www.youtube.com/watch?v=51T9rj6gF1g"
+ }
+]

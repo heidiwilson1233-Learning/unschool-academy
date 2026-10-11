@@ -1,197 +1,310 @@
 [
-  {
-    "video_url": "https://www.youtube.com/watch?v=uJMmHX8JLRo",
-    "platform": "youtube",
-    "title": "GRE & GMAT Quant Foundations: Number Properties, Arithmetic, Algebra, Ratios & Percent",
-    "channel": "FreeStudy Hub",
-    "duration": null,
-    "duration_note": "Duration not verified at curation time \u2014 check before publishing.",
-    "lesson_topic": "arithmetic-basics",
-    "level": "L1",
-    "transcript_key_points": [
-      "Integers, positive/negative numbers, even/odd",
-      "Prime numbers, factors, multiples",
-      "Exponents & powers basics",
-      "Ratios, proportions, percent increase/decrease"
-    ],
-    "attached_question_ids": [
-      "gre-q-ab-001",
-      "gre-q-ab-007",
-      "gre-q-ab-013",
-      "gre-q-ab-027",
-      "gre-q-ab-005",
-      "gre-q-ab-011",
-      "gre-q-ab-017",
-      "gre-q-ab-028"
-    ],
-    "credit": "Free educational video by FreeStudy Hub \u2014 embedded with attribution; not our content."
-  },
-  {
-    "video_url": "https://www.youtube.com/watch?v=ghaX10mqPjo",
-    "platform": "youtube",
-    "title": "GRE/GMAT Quant Mastery Part 1: Exponents to Percent (Visual Method)",
-    "channel": "FreeStudy Hub",
-    "duration": null,
-    "duration_note": "Duration not verified at curation time \u2014 check before publishing.",
-    "lesson_topic": "arithmetic-basics",
-    "level": "L1",
-    "transcript_key_points": [
-      "Exponents & properties of numbers (visual approach)",
-      "Percent as a shaded grid \u2014 ETS trap questions explained",
-      "Percent word problems made obvious"
-    ],
-    "attached_question_ids": [
-      "gre-q-ab-004",
-      "gre-q-ab-010",
-      "gre-q-ab-015",
-      "gre-q-ab-020",
-      "gre-q-ab-026",
-      "gre-q-ab-030",
-      "gre-q-ab-005",
-      "gre-q-ab-022"
-    ],
-    "credit": "Free educational video by FreeStudy Hub \u2014 embedded with attribution; not our content."
-  },
-  {
-    "video_url": "https://www.youtube.com/watch?v=VmmaNm5RyvI",
-    "platform": "youtube",
-    "title": "GMAT/GRE Quant Made Visual: Absolute Value, Ratios, Exponents & Discounts",
-    "channel": "FreeStudy Hub",
-    "duration": null,
-    "duration_note": "Duration not verified at curation time \u2014 check before publishing.",
-    "lesson_topic": "arithmetic-basics",
-    "level": "L1",
-    "transcript_key_points": [
-      "Testing integer exponents via plug-in",
-      "Discount \u2192 unit rate \u2192 scale-up problem chain"
-    ],
-    "attached_question_ids": [
-      "gre-q-ab-028",
-      "gre-q-ab-030",
-      "gre-q-ab-004"
-    ],
-    "credit": "Free educational video by FreeStudy Hub \u2014 embedded with attribution; not our content."
-  },
-  {
-    "video_url": "https://www.youtube.com/watch?v=z6lbrzaCbdk",
-    "platform": "youtube",
-    "title": "GRE Math Lessons, Test Preparation Review, Practice Questions, Tips, Tricks, Strategies",
-    "channel": "The Organic Chemistry Tutor",
-    "duration": null,
-    "duration_note": "Long-form review (~5h51m) \u2014 use timestamped segments per the split-long-topics rule; duration not verified at curation time.",
-    "lesson_topic": "arithmetic-basics",
-    "level": "L1",
-    "transcript_key_points": [
-      "Fractions: adding, subtracting, multiplying, dividing",
-      "Improper fractions and mixed numbers",
-      "Decimal to fraction conversions",
-      "Percent word problems"
-    ],
-    "attached_question_ids": [
-      "gre-q-ab-002",
-      "gre-q-ab-008",
-      "gre-q-ab-014",
-      "gre-q-ab-019",
-      "gre-q-ab-025",
-      "gre-q-ab-029",
-      "gre-q-ab-003",
-      "gre-q-ab-009",
-      "gre-q-ab-016",
-      "gre-q-ab-024"
-    ],
-    "credit": "Free educational video by The Organic Chemistry Tutor \u2014 embedded with attribution; not our content."
-  },
-  {
-    "video_url": "https://www.youtube.com/watch?v=uJMmHX8JLRo",
-    "platform": "youtube",
-    "title": "GRE & GMAT Quant Foundations: Number Properties, Arithmetic, Algebra, Ratios & Percent",
-    "channel": "FreeStudy Hub",
-    "duration": null,
-    "duration_note": "Duration not verified at curation time \u2014 check before publishing.",
-    "lesson_topic": "number-properties",
-    "level": "L1",
-    "transcript_key_points": [
-      "Integers, positive/negative numbers",
-      "Even and odd numbers \u2014 sum/product parity rules",
-      "Prime numbers, factors and multiples"
-    ],
-    "attached_question_ids": [
-      "gre-q-np-001",
-      "gre-q-np-002",
-      "gre-q-np-003",
-      "gre-q-np-007",
-      "gre-q-np-014",
-      "gre-q-np-015"
-    ],
-    "credit": "Free educational video by FreeStudy Hub \u2014 embedded with attribution; not our content."
-  },
-  {
-    "video_url": "https://www.youtube.com/watch?v=1rw-WLkavcM",
-    "platform": "youtube",
-    "title": "Basics of Factors and Multiples (GRE Quant)",
-    "channel": "GRE Prep Club community video",
-    "duration": null,
-    "duration_note": "Channel name not verified at curation time \u2014 confirm attribution before publishing.",
-    "lesson_topic": "number-properties",
-    "level": "L1",
-    "transcript_key_points": [
-      "What factors and multiples are",
-      "Factor/multiple relationships",
-      "Worked factor-multiple problems"
-    ],
-    "attached_question_ids": [
-      "gre-q-np-014",
-      "gre-q-np-016",
-      "gre-q-np-017",
-      "gre-q-np-018",
-      "gre-q-np-020"
-    ],
-    "credit": "Free educational video by GRE Prep Club community video \u2014 embedded with attribution; not our content."
-  },
-  {
-    "video_url": "https://www.youtube.com/watch?v=G0bi8lIiPw8",
-    "platform": "youtube",
-    "title": "Factors and Multiples Question Set \u2014 Solved Step by Step (Easy-Medium)",
-    "channel": "GRE Prep Club community video",
-    "duration": null,
-    "duration_note": "Channel name not verified at curation time \u2014 confirm attribution before publishing.",
-    "lesson_topic": "number-properties",
-    "level": "L1",
-    "transcript_key_points": [
-      "Six solved factor/multiple problems",
-      "If 26 is a factor of n, is 6 a factor of n?",
-      "Factor chains and guaranteed factors"
-    ],
-    "attached_question_ids": [
-      "gre-q-np-014",
-      "gre-q-np-016",
-      "gre-q-np-018",
-      "gre-q-np-019"
-    ],
-    "credit": "Free educational video by GRE Prep Club community video \u2014 embedded with attribution; not our content."
-  },
-  {
-    "video_url": "https://www.youtube.com/watch?v=VqnqK2hwI0I",
-    "platform": "youtube",
-    "title": "GRE Quantitative Reasoning Flashcards: 50 Essential Topics \u2014 Number Properties Segment",
-    "channel": "Flashcard GRE Prep",
-    "duration": null,
-    "duration_note": "Long-form video (~50 flashcards) \u2014 use the number-properties segment; duration not verified at curation time.",
-    "lesson_topic": "number-properties",
-    "level": "L1",
-    "transcript_key_points": [
-      "Divisibility rules (2, 3, 5, 9, 10)",
-      "Prime factorization strategies",
-      "Integer constraints and remainder basics"
-    ],
-    "attached_question_ids": [
-      "gre-q-np-021",
-      "gre-q-np-022",
-      "gre-q-np-023",
-      "gre-q-np-024",
-      "gre-q-np-027",
-      "gre-q-np-030"
-    ],
-    "credit": "Free educational video by Flashcard GRE Prep \u2014 embedded with attribution; not our content."
-  }
+ {
+  "video_url": "https://www.youtube.com/watch?v=uJMmHX8JLRo",
+  "platform": "youtube",
+  "title": "GRE & GMAT Quant Foundations: Number Properties, Arithmetic, Algebra, Ratios & Percent",
+  "channel": "FreeStudy Hub",
+  "duration": null,
+  "duration_note": "Duration not verified at curation time \u2014 check before publishing.",
+  "lesson_topic": "arithmetic-basics",
+  "level": "L1",
+  "transcript_key_points": [
+   "Integers, positive/negative numbers, even/odd",
+   "Prime numbers, factors, multiples",
+   "Exponents & powers basics",
+   "Ratios, proportions, percent increase/decrease"
+  ],
+  "attached_question_ids": [
+   "gre-q-ab-001",
+   "gre-q-ab-007",
+   "gre-q-ab-013",
+   "gre-q-ab-027",
+   "gre-q-ab-005",
+   "gre-q-ab-011",
+   "gre-q-ab-017",
+   "gre-q-ab-028"
+  ],
+  "credit": "Free educational video by FreeStudy Hub \u2014 embedded with attribution; not our content."
+ },
+ {
+  "video_url": "https://www.youtube.com/watch?v=ghaX10mqPjo",
+  "platform": "youtube",
+  "title": "GRE/GMAT Quant Mastery Part 1: Exponents to Percent (Visual Method)",
+  "channel": "FreeStudy Hub",
+  "duration": null,
+  "duration_note": "Duration not verified at curation time \u2014 check before publishing.",
+  "lesson_topic": "arithmetic-basics",
+  "level": "L1",
+  "transcript_key_points": [
+   "Exponents & properties of numbers (visual approach)",
+   "Percent as a shaded grid \u2014 ETS trap questions explained",
+   "Percent word problems made obvious"
+  ],
+  "attached_question_ids": [
+   "gre-q-ab-004",
+   "gre-q-ab-010",
+   "gre-q-ab-015",
+   "gre-q-ab-020",
+   "gre-q-ab-026",
+   "gre-q-ab-030",
+   "gre-q-ab-005",
+   "gre-q-ab-022"
+  ],
+  "credit": "Free educational video by FreeStudy Hub \u2014 embedded with attribution; not our content."
+ },
+ {
+  "video_url": "https://www.youtube.com/watch?v=VmmaNm5RyvI",
+  "platform": "youtube",
+  "title": "GMAT/GRE Quant Made Visual: Absolute Value, Ratios, Exponents & Discounts",
+  "channel": "FreeStudy Hub",
+  "duration": null,
+  "duration_note": "Duration not verified at curation time \u2014 check before publishing.",
+  "lesson_topic": "arithmetic-basics",
+  "level": "L1",
+  "transcript_key_points": [
+   "Testing integer exponents via plug-in",
+   "Discount \u2192 unit rate \u2192 scale-up problem chain"
+  ],
+  "attached_question_ids": [
+   "gre-q-ab-028",
+   "gre-q-ab-030",
+   "gre-q-ab-004"
+  ],
+  "credit": "Free educational video by FreeStudy Hub \u2014 embedded with attribution; not our content."
+ },
+ {
+  "video_url": "https://www.youtube.com/watch?v=z6lbrzaCbdk",
+  "platform": "youtube",
+  "title": "GRE Math Lessons, Test Preparation Review, Practice Questions, Tips, Tricks, Strategies",
+  "channel": "The Organic Chemistry Tutor",
+  "duration": null,
+  "duration_note": "Long-form review (~5h51m) \u2014 use timestamped segments per the split-long-topics rule; duration not verified at curation time.",
+  "lesson_topic": "arithmetic-basics",
+  "level": "L1",
+  "transcript_key_points": [
+   "Fractions: adding, subtracting, multiplying, dividing",
+   "Improper fractions and mixed numbers",
+   "Decimal to fraction conversions",
+   "Percent word problems"
+  ],
+  "attached_question_ids": [
+   "gre-q-ab-002",
+   "gre-q-ab-008",
+   "gre-q-ab-014",
+   "gre-q-ab-019",
+   "gre-q-ab-025",
+   "gre-q-ab-029",
+   "gre-q-ab-003",
+   "gre-q-ab-009",
+   "gre-q-ab-016",
+   "gre-q-ab-024"
+  ],
+  "credit": "Free educational video by The Organic Chemistry Tutor \u2014 embedded with attribution; not our content."
+ },
+ {
+  "video_url": "https://www.youtube.com/watch?v=uJMmHX8JLRo",
+  "platform": "youtube",
+  "title": "GRE & GMAT Quant Foundations: Number Properties, Arithmetic, Algebra, Ratios & Percent",
+  "channel": "FreeStudy Hub",
+  "duration": null,
+  "duration_note": "Duration not verified at curation time \u2014 check before publishing.",
+  "lesson_topic": "number-properties",
+  "level": "L1",
+  "transcript_key_points": [
+   "Integers, positive/negative numbers",
+   "Even and odd numbers \u2014 sum/product parity rules",
+   "Prime numbers, factors and multiples"
+  ],
+  "attached_question_ids": [
+   "gre-q-np-001",
+   "gre-q-np-002",
+   "gre-q-np-003",
+   "gre-q-np-007",
+   "gre-q-np-014",
+   "gre-q-np-015"
+  ],
+  "credit": "Free educational video by FreeStudy Hub \u2014 embedded with attribution; not our content."
+ },
+ {
+  "video_url": "https://www.youtube.com/watch?v=1rw-WLkavcM",
+  "platform": "youtube",
+  "title": "Basics of Factors and Multiples (GRE Quant)",
+  "channel": "GRE Prep Club community video",
+  "duration": null,
+  "duration_note": "Channel name not verified at curation time \u2014 confirm attribution before publishing.",
+  "lesson_topic": "number-properties",
+  "level": "L1",
+  "transcript_key_points": [
+   "What factors and multiples are",
+   "Factor/multiple relationships",
+   "Worked factor-multiple problems"
+  ],
+  "attached_question_ids": [
+   "gre-q-np-014",
+   "gre-q-np-016",
+   "gre-q-np-017",
+   "gre-q-np-018",
+   "gre-q-np-020"
+  ],
+  "credit": "Free educational video by GRE Prep Club community video \u2014 embedded with attribution; not our content."
+ },
+ {
+  "video_url": "https://www.youtube.com/watch?v=G0bi8lIiPw8",
+  "platform": "youtube",
+  "title": "Factors and Multiples Question Set \u2014 Solved Step by Step (Easy-Medium)",
+  "channel": "GRE Prep Club community video",
+  "duration": null,
+  "duration_note": "Channel name not verified at curation time \u2014 confirm attribution before publishing.",
+  "lesson_topic": "number-properties",
+  "level": "L1",
+  "transcript_key_points": [
+   "Six solved factor/multiple problems",
+   "If 26 is a factor of n, is 6 a factor of n?",
+   "Factor chains and guaranteed factors"
+  ],
+  "attached_question_ids": [
+   "gre-q-np-014",
+   "gre-q-np-016",
+   "gre-q-np-018",
+   "gre-q-np-019"
+  ],
+  "credit": "Free educational video by GRE Prep Club community video \u2014 embedded with attribution; not our content."
+ },
+ {
+  "video_url": "https://www.youtube.com/watch?v=VqnqK2hwI0I",
+  "platform": "youtube",
+  "title": "GRE Quantitative Reasoning Flashcards: 50 Essential Topics \u2014 Number Properties Segment",
+  "channel": "Flashcard GRE Prep",
+  "duration": null,
+  "duration_note": "Long-form video (~50 flashcards) \u2014 use the number-properties segment; duration not verified at curation time.",
+  "lesson_topic": "number-properties",
+  "level": "L1",
+  "transcript_key_points": [
+   "Divisibility rules (2, 3, 5, 9, 10)",
+   "Prime factorization strategies",
+   "Integer constraints and remainder basics"
+  ],
+  "attached_question_ids": [
+   "gre-q-np-021",
+   "gre-q-np-022",
+   "gre-q-np-023",
+   "gre-q-np-024",
+   "gre-q-np-027",
+   "gre-q-np-030"
+  ],
+  "credit": "Free educational video by Flashcard GRE Prep \u2014 embedded with attribution; not our content."
+ },
+ {
+  "video_url": "https://www.youtube.com/watch?v=oRBD0vH88WM",
+  "platform": "youtube",
+  "title": "Ratio & Proportion: 2 GMAT Word Problems Solved Visually | FreeStudy Hub",
+  "channel": "FreeStudy Hub",
+  "duration": null,
+  "duration_note": "Duration not verified at curation time \u2014 check before publishing.",
+  "lesson_topic": "ratios-proportions",
+  "skill": "ratios-proportions",
+  "level": "L2",
+  "transcript_key_points": [
+   "Student-to-teacher ratio shift solved by setting up a new ratio equation",
+   "Fuel-bill ratio change solved by substitution",
+   "Animated follow-up examples (workers/managers, cats/dogs ratios)"
+  ],
+  "attached_question_ids": [
+   "gre-q-rp-009",
+   "gre-q-rp-013",
+   "gre-q-rp-019",
+   "gre-q-rp-048",
+   "gre-q-rp-050"
+  ],
+  "credit": "Free educational video by FreeStudy Hub \u2014 embedded with attribution; not our content."
+ },
+ {
+  "video_url": "https://www.youtube.com/watch?v=UbM4tBZwqf0",
+  "platform": "youtube",
+  "title": "GRE (Quantitative Reasoning): ARITHMETICS - RATIO AND PROPORTION",
+  "channel": "Examplanet",
+  "duration": null,
+  "duration_note": "Duration not verified at curation time \u2014 check before publishing. Channel attribution taken from video description \u2014 verify before publishing.",
+  "lesson_topic": "ratios-proportions",
+  "skill": "ratios-proportions",
+  "level": "L2",
+  "transcript_key_points": [
+   "GRE quantitative reasoning intro to ratio and proportion",
+   "Approaches to answering GRE ratio/proportion questions"
+  ],
+  "attached_question_ids": [
+   "gre-q-rp-001",
+   "gre-q-rp-007",
+   "gre-q-rp-008",
+   "gre-q-rp-016"
+  ],
+  "credit": "Free educational video by Examplanet \u2014 embedded with attribution; not our content."
+ },
+ {
+  "video_url": "https://www.youtube.com/watch?v=ghaX10mqPjo",
+  "platform": "youtube",
+  "title": "GRE/GMAT Quant Mastery Part 1: Exponents to Percent (Visual Method)",
+  "channel": "FreeStudy Hub",
+  "duration": null,
+  "duration_note": "Duration not verified at curation time \u2014 check before publishing.",
+  "lesson_topic": "ratios-proportions",
+  "skill": "ratios-proportions",
+  "level": "L2",
+  "transcript_key_points": [
+   "Ratios & Proportions segment (~22:30)",
+   "Ratio as a comparison; setting up and solving proportions",
+   "Link from ratios into percent word problems (ETS trap questions)"
+  ],
+  "attached_question_ids": [
+   "gre-q-rp-002",
+   "gre-q-rp-039",
+   "gre-q-rp-040",
+   "gre-q-rp-042"
+  ],
+  "credit": "Free educational video by FreeStudy Hub \u2014 embedded with attribution; not our content."
+ },
+ {
+  "video_url": "https://www.youtube.com/watch?v=uJMmHX8JLRo",
+  "platform": "youtube",
+  "title": "GRE & GMAT Quant Foundations: Number Properties, Arithmetic, Algebra, Ratios & Percent",
+  "channel": "FreeStudy Hub",
+  "duration": null,
+  "duration_note": "Duration not verified at curation time \u2014 check before publishing.",
+  "lesson_topic": "ratios-proportions",
+  "skill": "ratios-proportions",
+  "level": "L2",
+  "transcript_key_points": [
+   "Ratios & Proportions segment of the foundations lesson",
+   "Simplifying ratios; equivalent ratios; part-to-whole reasoning"
+  ],
+  "attached_question_ids": [
+   "gre-q-rp-005",
+   "gre-q-rp-011",
+   "gre-q-rp-015",
+   "gre-q-rp-025"
+  ],
+  "credit": "Free educational video by FreeStudy Hub \u2014 embedded with attribution; not our content."
+ },
+ {
+  "video_url": "https://www.youtube.com/watch?v=z6lbrzaCbdk",
+  "platform": "youtube",
+  "title": "GRE Math Lessons, Test Preparation Review, Practice Questions, Tips, Tricks, Strategies",
+  "channel": "The Organic Chemistry Tutor",
+  "duration": null,
+  "duration_note": "Duration not verified at curation time \u2014 check before publishing.",
+  "lesson_topic": "ratios-proportions",
+  "skill": "ratios-proportions",
+  "level": "L2",
+  "transcript_key_points": [
+   "Topic 16: Ratios, Proportions, Rates, and Percent-based word problems",
+   "Worked GRE multiple-choice questions with tips and strategies"
+  ],
+  "attached_question_ids": [
+   "gre-q-rp-014",
+   "gre-q-rp-018",
+   "gre-q-rp-027",
+   "gre-q-rp-028"
+  ],
+  "credit": "Free educational video by The Organic Chemistry Tutor \u2014 embedded with attribution; not our content."
+ }
 ]

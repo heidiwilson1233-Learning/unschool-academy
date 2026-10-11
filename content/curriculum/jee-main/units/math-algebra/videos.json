@@ -202,5 +202,118 @@
     ],
     "credit": "YouTube (free). Embedded, not re-uploaded.",
     "curation_note": "Duration not verified from search snippet — verify before publishing."
+  },
+  {
+    "title": "Introduction to i and imaginary numbers | Imaginary and complex numbers | Precalculus | Khan Academy",
+    "channel": "Khan Academy",
+    "platform": "youtube",
+    "video_url": "https://www.youtube.com/watch?v=ysVcAYo7UPI",
+    "lesson_topic": "The imaginary unit i: i = sqrt(-1), i^2 = -1, and the 4-cycle of powers of i",
+    "skill": "complex-numbers",
+    "level": "L1",
+    "transcript_key_points": [
+      "The imaginary unit i is defined by i^2 = -1",
+      "Powers of i repeat every 4: i, -1, -i, 1",
+      "Reduce large exponents using the remainder on division by 4"
+    ],
+    "attached_question_ids": [
+      "jee-ma-alg-cn-001",
+      "jee-ma-alg-cn-002",
+      "jee-ma-alg-cn-003",
+      "jee-ma-alg-cn-004",
+      "jee-ma-alg-cn-005"
+    ],
+    "duration": null,
+    "credit": "Khan Academy (free). Embedded, not re-uploaded.",
+    "curation_note": "Duration not verified from search snippet — verify before publishing."
+  },
+  {
+    "title": "Introduction to complex numbers | Imaginary and complex numbers | Algebra II | Khan Academy",
+    "channel": "Khan Academy",
+    "platform": "youtube",
+    "video_url": "https://www.youtube.com/watch?v=A_ESfuN1Pkg&list=PLSQl0a2vh4HDTMScI2WCcpo_-_bUWu4B4",
+    "lesson_topic": "Complex numbers a+bi: real/imaginary parts, equality, addition, subtraction, multiplication",
+    "skill": "complex-numbers",
+    "level": "L1",
+    "transcript_key_points": [
+      "A complex number has a real part and an imaginary part",
+      "Two complex numbers are equal when real parts and imaginary parts match separately",
+      "Add/subtract: combine real with real and imaginary with imaginary",
+      "Multiply: distribute like binomials, then replace i^2 with -1"
+    ],
+    "attached_question_ids": [
+      "jee-ma-alg-cn-006",
+      "jee-ma-alg-cn-007",
+      "jee-ma-alg-cn-008",
+      "jee-ma-alg-cn-009",
+      "jee-ma-alg-cn-010",
+      "jee-ma-alg-cn-011",
+      "jee-ma-alg-cn-012",
+      "jee-ma-alg-cn-013",
+      "jee-ma-alg-cn-014",
+      "jee-ma-alg-cn-015",
+      "jee-ma-alg-cn-016",
+      "jee-ma-alg-cn-017",
+      "jee-ma-alg-cn-018",
+      "jee-ma-alg-cn-019",
+      "jee-ma-alg-cn-020",
+      "jee-ma-alg-cn-021"
+    ],
+    "duration": null,
+    "credit": "Khan Academy (free). Embedded, not re-uploaded.",
+    "curation_note": "Duration not verified from search snippet — verify before publishing."
+  },
+  {
+    "title": "Complex conjugates | Imaginary and complex numbers | Precalculus | Khan Academy",
+    "channel": "Khan Academy",
+    "platform": "youtube",
+    "video_url": "https://www.youtube.com/watch?v=BZxZ_eEuJBM",
+    "lesson_topic": "The conjugate of a complex number: definition and basic properties",
+    "skill": "complex-numbers",
+    "level": "L1",
+    "transcript_key_points": [
+      "The conjugate flips the sign of the imaginary part: conjugate of a+bi is a-bi",
+      "z + conjugate(z) = 2*Re(z); z * conjugate(z) = |z|^2",
+      "Taking the conjugate twice returns the original number"
+    ],
+    "attached_question_ids": [
+      "jee-ma-alg-cn-022",
+      "jee-ma-alg-cn-023",
+      "jee-ma-alg-cn-024",
+      "jee-ma-alg-cn-025",
+      "jee-ma-alg-cn-026",
+      "jee-ma-alg-cn-047",
+      "jee-ma-alg-cn-048",
+      "jee-ma-alg-cn-049"
+    ],
+    "duration": null,
+    "credit": "Khan Academy (free). Embedded, not re-uploaded.",
+    "curation_note": "Duration not verified from search snippet — verify before publishing."
+  },
+  {
+    "title": "Properties of modulus and conjugates | Complex numbers | Grade 11 | Math | Khan Academy",
+    "channel": "Khan Academy India",
+    "platform": "youtube",
+    "video_url": "https://www.youtube.com/watch?v=MWzxWQHpnas",
+    "lesson_topic": "Modulus of a complex number and properties of modulus and conjugates (NCERT Grade 11)",
+    "skill": "complex-numbers",
+    "level": "L1",
+    "transcript_key_points": [
+      "Modulus |a+bi| = sqrt(a^2 + b^2): distance from the origin on the Argand plane",
+      "Properties of modulus for addition, subtraction, multiplication and division",
+      "Properties of conjugates; using conjugates to find the multiplicative inverse"
+    ],
+    "attached_question_ids": [
+      "jee-ma-alg-cn-027",
+      "jee-ma-alg-cn-028",
+      "jee-ma-alg-cn-029",
+      "jee-ma-alg-cn-030",
+      "jee-ma-alg-cn-031",
+      "jee-ma-alg-cn-049",
+      "jee-ma-alg-cn-050"
+    ],
+    "duration": null,
+    "credit": "Khan Academy India (free). Embedded, not re-uploaded.",
+    "curation_note": "Duration not verified from search snippet — verify before publishing."
   }
 ]

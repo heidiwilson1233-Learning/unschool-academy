@@ -1,0 +1,1602 @@
+[
+  {
+    "answer": 1,
+    "difficulty": 1,
+    "explanation": "EC2 (Elastic Compute Cloud) gives you virtual servers in the cloud. 'Resizable' means you can scale the number of servers up or down as your needs change, instead of buying fixed hardware. Storage is S3/EBS, databases are RDS — not EC2.",
+    "hint": "The 'C' in EC2 stands for Compute — think virtual servers you can scale.",
+    "id": "aws-saa-cc-ec2-001",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "A tool for buying physical servers and shipping them to AWS"
+      },
+      {
+        "id": "b",
+        "text": "A web service that provides resizable compute capacity in the cloud"
+      },
+      {
+        "id": "c",
+        "text": "A storage service for archiving files at low cost"
+      },
+      {
+        "id": "d",
+        "text": "A managed database engine for relational data"
+      }
+    ],
+    "skill": "ec2-basics",
+    "source": "Amazon EC2 User Guide — 'What is Amazon EC2?' (docs.aws.amazon.com/AWSEC2)",
+    "status": "draft-pending-sme-review",
+    "stem": "Which statement best describes Amazon EC2?",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 3,
+    "difficulty": 1,
+    "explanation": "EC2's own documentation calls each virtual computing environment an 'instance'. Buckets belong to S3, queues to SQS, and policies to IAM — none of them are virtual servers.",
+    "hint": "Think of a running server as one 'case' of the EC2 service — what word sounds like that?",
+    "id": "aws-saa-cc-ec2-002",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "A bucket"
+      },
+      {
+        "id": "b",
+        "text": "A queue"
+      },
+      {
+        "id": "c",
+        "text": "A policy"
+      },
+      {
+        "id": "d",
+        "text": "An instance"
+      }
+    ],
+    "skill": "ec2-basics",
+    "source": "Amazon EC2 User Guide — 'What is Amazon EC2?' / Features of Amazon EC2 (docs.aws.amazon.com/AWSEC2)",
+    "status": "draft-pending-sme-review",
+    "stem": "In Amazon EC2, a single virtual server running in the cloud is called:",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 1,
+    "difficulty": 1,
+    "explanation": "EC2 is 'elastic' — you launch more instances when traffic spikes and terminate them when it drops, paying only for what you run. AWS never caps you at one launch, billing is usage-based not flat, and EC2 does not rewrite your code.",
+    "hint": "Elastic = stretchy. What does something 'elastic' do when you pull on it?",
+    "id": "aws-saa-cc-ec2-003",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "Instances can only be launched once per account"
+      },
+      {
+        "id": "b",
+        "text": "Compute capacity is resizable — instances can be launched or terminated as demand changes"
+      },
+      {
+        "id": "c",
+        "text": "EC2 bills a fixed monthly fee per account regardless of usage"
+      },
+      {
+        "id": "d",
+        "text": "EC2 automatically rewrites application code to use less CPU"
+      }
+    ],
+    "skill": "ec2-basics",
+    "source": "Amazon EC2 User Guide — 'What is Amazon EC2?' (docs.aws.amazon.com/AWSEC2)",
+    "status": "draft-pending-sme-review",
+    "stem": "A startup's website gets 10x more visitors during a sale event. Which EC2 capability helps them handle this without buying new hardware?",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 3,
+    "difficulty": 1,
+    "explanation": "The EC2 User Guide defines an AMI as a preconfigured template containing the bits your server needs — the operating system plus additional software. Firewalls are security groups, snapshots are EBS backups, and pricing plans are Savings Plans/RIs.",
+    "hint": "An AMI is the starting recipe for a new instance — what would a server recipe contain?",
+    "id": "aws-saa-cc-ec2-004",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "A backup schedule for automatic database snapshots"
+      },
+      {
+        "id": "b",
+        "text": "A firewall that filters traffic to your instances"
+      },
+      {
+        "id": "c",
+        "text": "A pricing plan that discounts compute usage"
+      },
+      {
+        "id": "d",
+        "text": "A preconfigured template that packages the operating system and software needed for a server"
+      }
+    ],
+    "skill": "ec2-basics",
+    "source": "Amazon EC2 User Guide — 'Features of Amazon EC2' / 'Instances and AMIs' (docs.aws.amazon.com/AWSEC2)",
+    "status": "draft-pending-sme-review",
+    "stem": "An Amazon Machine Image (AMI) is best described as:",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 1,
+    "difficulty": 1,
+    "explanation": "Because an AMI packages the OS and software together, launching from your custom AMI gives you identical, ready-to-go servers every time — no manual installation. AMIs don't change pricing, encryption, or lifecycle controls.",
+    "hint": "If the template already includes the software, what do you skip on each new server?",
+    "id": "aws-saa-cc-ec2-005",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "Network traffic to the instance is encrypted by default"
+      },
+      {
+        "id": "b",
+        "text": "Every new instance launched from it starts with everything already installed and configured"
+      },
+      {
+        "id": "c",
+        "text": "The instance automatically becomes free of charge"
+      },
+      {
+        "id": "d",
+        "text": "The instance can never be stopped or terminated"
+      }
+    ],
+    "skill": "ec2-basics",
+    "source": "Amazon EC2 User Guide — 'Instances and AMIs' (ec2-instances-and-amis.md, docs.aws.amazon.com/AWSEC2)",
+    "status": "draft-pending-sme-review",
+    "stem": "A company builds a custom AMI containing its approved web server, security tools, and company logo files. What is the main benefit?",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 2,
+    "difficulty": 1,
+    "explanation": "The EC2 User Guide documents four AMI sources: AWS publishes many common configurations for public use, the developer community publishes its own, vendors sell through AWS Marketplace, and you can create custom AMIs yourself.",
+    "hint": "Think about who might publish a server template: AWS itself, other users, software vendors, and you.",
+    "id": "aws-saa-cc-ec2-006",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "AMIs can only be purchased from third-party data centers"
+      },
+      {
+        "id": "b",
+        "text": "AMIs are generated randomly at launch and cannot be chosen"
+      },
+      {
+        "id": "c",
+        "text": "AWS-published Quick Start AMIs, community AMIs, AWS Marketplace AMIs, and your own custom AMIs"
+      },
+      {
+        "id": "d",
+        "text": "Only AMIs built by the customer's own team — no one else can provide one"
+      }
+    ],
+    "skill": "ec2-basics",
+    "source": "Amazon EC2 User Guide — 'AMIs' (ec2-instances-and-amis.md, docs.aws.amazon.com/AWSEC2)",
+    "status": "draft-pending-sme-review",
+    "stem": "Which of the following is a valid source of an AMI?",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 0,
+    "difficulty": 1,
+    "explanation": "Per the EC2 User Guide, after you deregister an AMI you can't use it to launch new instances, but existing instances launched from it are not affected — the AMI was only the launch template, not the running server.",
+    "hint": "An AMI is a launch template. If you throw away a blueprint, do the already-built houses collapse?",
+    "id": "aws-saa-cc-ec2-007",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "They keep running — deregistering only blocks launching NEW instances from that AMI"
+      },
+      {
+        "id": "b",
+        "text": "Their data is wiped but the instances keep running"
+      },
+      {
+        "id": "c",
+        "text": "They are terminated immediately"
+      },
+      {
+        "id": "d",
+        "text": "They are stopped and can never be restarted"
+      }
+    ],
+    "skill": "ec2-basics",
+    "source": "Amazon EC2 User Guide — 'AMIs' (ec2-instances-and-amis.md, docs.aws.amazon.com/AWSEC2)",
+    "status": "draft-pending-sme-review",
+    "stem": "An administrator deregisters (deletes) an AMI. What happens to the instances that were already launched from it?",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 3,
+    "difficulty": 1,
+    "explanation": "The EC2 Instance Types documentation states that an instance type defines the combination of CPU, memory, storage, and networking capacity. The OS comes from the AMI, billing dates aren't per-instance, and Regions are chosen separately at launch.",
+    "hint": "When you pick a server 'size', what hardware ingredients are you choosing between?",
+    "id": "aws-saa-cc-ec2-008",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "The monthly billing date for your AWS account"
+      },
+      {
+        "id": "b",
+        "text": "The geographic region where the instance must run"
+      },
+      {
+        "id": "c",
+        "text": "Only the operating system the instance can run"
+      },
+      {
+        "id": "d",
+        "text": "The combination of CPU, memory, storage, and networking capacity for the instance"
+      }
+    ],
+    "skill": "ec2-basics",
+    "source": "Amazon EC2 Instance Types Guide — 'Amazon EC2 instance type specifications' (docs.aws.amazon.com/ec2/latest/instancetypes)",
+    "status": "draft-pending-sme-review",
+    "stem": "An EC2 instance type defines:",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 3,
+    "difficulty": 1,
+    "explanation": "EC2 instance type names follow the pattern family.generation.size (e.g., m5.2xlarge: m = family, 5 = generation, 2xlarge = size). The family letter tells you the workload category — 'm' is the general-purpose family.",
+    "hint": "Names follow family.generation.size — the first letter groups similar servers together. Which part is the group?",
+    "id": "aws-saa-cc-ec2-009",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "The number of virtual CPUs"
+      },
+      {
+        "id": "b",
+        "text": "The amount of storage in terabytes"
+      },
+      {
+        "id": "c",
+        "text": "The Region the instance runs in"
+      },
+      {
+        "id": "d",
+        "text": "The instance family (the workload category it belongs to)"
+      }
+    ],
+    "skill": "ec2-basics",
+    "source": "Amazon EC2 Instance Types Guide — 'Instance type names' (docs.aws.amazon.com/ec2/latest/instancetypes/instance-type-names.html)",
+    "status": "draft-pending-sme-review",
+    "stem": "In the instance type name 'm5.2xlarge', the 'm' represents:",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 3,
+    "difficulty": 1,
+    "explanation": "The EC2 docs describe general-purpose instances as providing a balance of compute, memory, and networking — ideal for applications that use these resources in equal proportions, like web servers and code repositories. Specialized families are for skewed workloads.",
+    "hint": "Which category name suggests 'balanced' rather than specialized?",
+    "id": "aws-saa-cc-ec2-010",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "Accelerated computing (P, G families)"
+      },
+      {
+        "id": "b",
+        "text": "Memory optimized (R, X families)"
+      },
+      {
+        "id": "c",
+        "text": "Storage optimized (I, D families)"
+      },
+      {
+        "id": "d",
+        "text": "General purpose (M, T families)"
+      }
+    ],
+    "skill": "ec2-basics",
+    "source": "Amazon EC2 Instance Types Guide — 'Amazon EC2 instance type specifications' (docs.aws.amazon.com/ec2/latest/instancetypes)",
+    "status": "draft-pending-sme-review",
+    "stem": "Which instance family should you choose for a workload that uses compute, memory, and networking in roughly equal proportions, such as a web server?",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 2,
+    "difficulty": 1,
+    "explanation": "Compute-optimized instances are designed for compute-intensive applications that benefit from high-performance processors — the docs list batch processing, media transcoding, HPC, and scientific modeling as examples. Memory/storage families optimize the wrong resource.",
+    "hint": "The workload is hungry for processing power, not memory or disk. Which name matches that hunger?",
+    "id": "aws-saa-cc-ec2-011",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "General purpose burstable (T family)"
+      },
+      {
+        "id": "b",
+        "text": "Storage optimized (I family)"
+      },
+      {
+        "id": "c",
+        "text": "Compute optimized (C family)"
+      },
+      {
+        "id": "d",
+        "text": "Memory optimized (R family)"
+      }
+    ],
+    "skill": "ec2-basics",
+    "source": "Amazon EC2 Instance Types Guide — 'Amazon EC2 instance type specifications' (docs.aws.amazon.com/ec2/latest/instancetypes)",
+    "status": "draft-pending-sme-review",
+    "stem": "A video-transcoding service needs instances with the highest-performance processors for compute-intensive batch work. Which family fits best?",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 0,
+    "difficulty": 1,
+    "explanation": "Memory-optimized instances are designed to deliver fast performance for workloads that process large datasets in memory — such as in-memory caches and large relational databases. The docs place R, X, and Z families in this category.",
+    "hint": "The dataset lives 'in memory' — which family is built around lots of RAM?",
+    "id": "aws-saa-cc-ec2-012",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "Memory optimized (R, X families)"
+      },
+      {
+        "id": "b",
+        "text": "General purpose burstable (T family)"
+      },
+      {
+        "id": "c",
+        "text": "Compute optimized (C family)"
+      },
+      {
+        "id": "d",
+        "text": "Storage optimized (I family)"
+      }
+    ],
+    "skill": "ec2-basics",
+    "source": "Amazon EC2 Instance Types Guide — 'Amazon EC2 instance type specifications' (docs.aws.amazon.com/ec2/latest/instancetypes)",
+    "status": "draft-pending-sme-review",
+    "stem": "A company runs a large in-memory cache that processes huge datasets in RAM. Which instance family is designed for this?",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 1,
+    "difficulty": 1,
+    "explanation": "Storage-optimized instances are designed for workloads requiring high sequential read/write access to very large datasets on local storage, delivering tens of thousands of low-latency IOPS — the docs cite data warehousing and distributed file systems as examples.",
+    "hint": "The bottleneck here is disk throughput on local drives. Which category name points at disks?",
+    "id": "aws-saa-cc-ec2-013",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "Compute optimized (C family)"
+      },
+      {
+        "id": "b",
+        "text": "Storage optimized (I, D families)"
+      },
+      {
+        "id": "c",
+        "text": "Accelerated computing (P family)"
+      },
+      {
+        "id": "d",
+        "text": "General purpose (M family)"
+      }
+    ],
+    "skill": "ec2-basics",
+    "source": "Amazon EC2 Instance Types Guide — 'Amazon EC2 instance type specifications' (docs.aws.amazon.com/ec2/latest/instancetypes)",
+    "status": "draft-pending-sme-review",
+    "stem": "A data-warehouse workload needs high sequential read/write access to very large datasets on local storage. Which family fits?",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 1,
+    "difficulty": 1,
+    "explanation": "Accelerated-computing instances use hardware accelerators (co-processors such as GPUs) to perform functions like floating-point calculations and graphics processing more efficiently than CPUs alone. The P family targets GPU training, G targets graphics workloads.",
+    "hint": "GPUs and other co-processors are hardware 'accelerators'. Which category is named for them?",
+    "id": "aws-saa-cc-ec2-014",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "Memory optimized (R family)"
+      },
+      {
+        "id": "b",
+        "text": "Accelerated computing (P, G families)"
+      },
+      {
+        "id": "c",
+        "text": "General purpose (M family)"
+      },
+      {
+        "id": "d",
+        "text": "Storage optimized (I family)"
+      }
+    ],
+    "skill": "ec2-basics",
+    "source": "Amazon EC2 Instance Types Guide — 'Amazon EC2 instance type specifications' (docs.aws.amazon.com/ec2/latest/instancetypes)",
+    "status": "draft-pending-sme-review",
+    "stem": "A machine-learning team needs GPUs to train models faster than CPUs allow. Which EC2 category should they look at?",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 3,
+    "difficulty": 1,
+    "explanation": "The EC2 docs explain that T instances provide a baseline CPU level with the ability to burst above it. The baseline and bursting are governed by CPU credits — instances earn credits while staying below baseline and spend them when bursting. This suits variable workloads like dev servers and small databases.",
+    "hint": "Think of a savings account for CPU: you save when idle, spend when busy.",
+    "id": "aws-saa-cc-ec2-015",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "They require a dedicated physical host to burst"
+      },
+      {
+        "id": "b",
+        "text": "They shut down automatically whenever CPU usage rises"
+      },
+      {
+        "id": "c",
+        "text": "They permanently run at 100% CPU with no baseline concept"
+      },
+      {
+        "id": "d",
+        "text": "They provide a baseline CPU level and can burst above it using earned CPU credits"
+      }
+    ],
+    "skill": "ec2-basics",
+    "source": "Amazon EC2 Instance Types Guide — 'Burstable performance instances' (docs.aws.amazon.com/ec2/latest/instancetypes)",
+    "status": "draft-pending-sme-review",
+    "stem": "How do burstable-performance (T-family) instances handle occasional CPU spikes?",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 3,
+    "difficulty": 1,
+    "explanation": "The EC2 User Guide states: AWS stores the public key, and you store the private key in a secure place. You prove your identity with the private key (e.g., the .pem file used with SSH). AWS never holds your private key, and key pairs aren't emailed.",
+    "hint": "In public-key login, which half must stay secret with YOU, and which half can the server hold?",
+    "id": "aws-saa-cc-ec2-016",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "Both keys are emailed to the account owner at launch"
+      },
+      {
+        "id": "b",
+        "text": "AWS stores the private key; you keep the public key on your laptop"
+      },
+      {
+        "id": "c",
+        "text": "Key pairs are optional — instances accept any password by default"
+      },
+      {
+        "id": "d",
+        "text": "AWS stores the public key; you download and securely store the private key"
+      }
+    ],
+    "skill": "ec2-basics",
+    "source": "Amazon EC2 User Guide — 'Features of Amazon EC2' / 'Amazon EC2 key pairs' (docs.aws.amazon.com/AWSEC2)",
+    "status": "draft-pending-sme-review",
+    "stem": "How do EC2 key pairs handle secure login to an instance?",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 0,
+    "difficulty": 1,
+    "explanation": "Because only you ever held the private key, a lost .pem file cannot be recovered from AWS — you must replace the key pair on the instance (e.g., via the console or by launching a replacement). AWS Support cannot retrieve something it never stored, and a public key alone can't authenticate you.",
+    "hint": "If AWS never had the private half, can anyone recover it for you?",
+    "id": "aws-saa-cc-ec2-017",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "They cannot log in with that key anymore — AWS never retained the private key, so it must be replaced"
+      },
+      {
+        "id": "b",
+        "text": "The public key stored by AWS can be used to log in instead"
+      },
+      {
+        "id": "c",
+        "text": "The instance automatically generates a new key pair on next reboot"
+      },
+      {
+        "id": "d",
+        "text": "They can ask AWS Support to email them the private key"
+      }
+    ],
+    "skill": "ec2-basics",
+    "source": "Amazon EC2 User Guide — 'Amazon EC2 key pairs' (docs.aws.amazon.com/AWSEC2)",
+    "status": "draft-pending-sme-review",
+    "stem": "An engineer loses the private key (.pem file) for a running Linux instance, and no backup exists. What is true?",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 0,
+    "difficulty": 1,
+    "explanation": "The EC2 User Guide defines a security group as a virtual firewall that lets you specify the protocols, ports, and source IP ranges that can reach your instances, plus the destination ranges your instances can connect to. IAM groups, backups, and discounts are unrelated features.",
+    "hint": "'Security' + controlling traffic in and out — what network device does that sound like?",
+    "id": "aws-saa-cc-ec2-018",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "A virtual firewall controlling which protocols, ports, and IP ranges can reach your instances"
+      },
+      {
+        "id": "b",
+        "text": "A group of IAM users with administrative privileges"
+      },
+      {
+        "id": "c",
+        "text": "A pricing discount applied to a fleet of instances"
+      },
+      {
+        "id": "d",
+        "text": "A backup of all EBS volumes attached to an instance"
+      }
+    ],
+    "skill": "ec2-basics",
+    "source": "Amazon EC2 User Guide — 'Features of Amazon EC2' / 'Security groups for Amazon EC2' (docs.aws.amazon.com/AWSEC2)",
+    "status": "draft-pending-sme-review",
+    "stem": "What is an EC2 security group?",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 2,
+    "difficulty": 1,
+    "explanation": "Security groups contain only allow rules — you specify what is permitted, and everything else is implicitly blocked (a blocked connection typically times out). There are no explicit deny rules, and the default is to deny all inbound traffic until you add allow rules.",
+    "hint": "Security groups are a whitelist, not a blacklist — what does that imply about 'deny' rules?",
+    "id": "aws-saa-cc-ec2-019",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "All inbound traffic is allowed by default"
+      },
+      {
+        "id": "b",
+        "text": "Rules can explicitly deny traffic, overriding allow rules"
+      },
+      {
+        "id": "c",
+        "text": "Rules can explicitly allow traffic; anything not allowed is blocked"
+      },
+      {
+        "id": "d",
+        "text": "Rules apply only to outbound traffic"
+      }
+    ],
+    "skill": "ec2-basics",
+    "source": "Amazon EC2 User Guide — 'Security groups for Amazon EC2' (docs.aws.amazon.com/AWSEC2)",
+    "status": "draft-pending-sme-review",
+    "stem": "Which statement about security group rules is correct?",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 2,
+    "difficulty": 1,
+    "explanation": "SSH on Linux uses TCP port 22, so you add an inbound allow rule for TCP 22 scoped to the admins' source IPs. Port 80 is HTTP (and 0.0.0.0/0 means the whole internet), security groups have no deny rules, and UDP 53 is DNS — none match the requirement.",
+    "hint": "SSH uses a well-known port number on Linux. Which option opens exactly that port for exactly the admins?",
+    "id": "aws-saa-cc-ec2-020",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "Allow TCP port 80 from 0.0.0.0/0"
+      },
+      {
+        "id": "b",
+        "text": "Deny TCP port 22 from all addresses"
+      },
+      {
+        "id": "c",
+        "text": "Allow TCP port 22 from the administrators' IP addresses"
+      },
+      {
+        "id": "d",
+        "text": "Allow UDP port 53 from the administrators' IP addresses"
+      }
+    ],
+    "skill": "ec2-basics",
+    "source": "Amazon EC2 User Guide — 'Security groups for Amazon EC2' / 'Connect to your Linux instance' (docs.aws.amazon.com/AWSEC2)",
+    "status": "draft-pending-sme-review",
+    "stem": "You want administrators to SSH into a Linux instance but nothing else to reach it. Which security group inbound rule achieves this?",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 0,
+    "difficulty": 1,
+    "explanation": "Because security groups are stateful, they track connections: once inbound traffic is allowed, the return traffic is automatically permitted regardless of outbound rules. (Network ACLs, by contrast, are stateless and need explicit rules both ways.)",
+    "hint": "'Stateful' means the firewall remembers the conversation. If it remembers, do you need a separate rule for the reply?",
+    "id": "aws-saa-cc-ec2-021",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "If you allow inbound traffic, the response traffic is automatically allowed back out"
+      },
+      {
+        "id": "b",
+        "text": "Rules are forgotten when the instance is stopped"
+      },
+      {
+        "id": "c",
+        "text": "Traffic is encrypted automatically between instances"
+      },
+      {
+        "id": "d",
+        "text": "You must add matching outbound rules for every inbound rule or responses are dropped"
+      }
+    ],
+    "skill": "ec2-basics",
+    "source": "Amazon EC2 User Guide — 'Security groups for Amazon EC2' (docs.aws.amazon.com/AWSEC2)",
+    "status": "draft-pending-sme-review",
+    "stem": "Security groups are stateful. What does that mean in practice?",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 0,
+    "difficulty": 1,
+    "explanation": "The EC2 User Guide is explicit: EBS volumes are persistent storage for your data, while instance store volumes hold temporary data that is deleted when you stop, hibernate, or terminate the instance. They are fundamentally different durability models, not interchangeable names.",
+    "hint": "One of these is described as 'ephemeral' (short-lived). Which behavior matches that word?",
+    "id": "aws-saa-cc-ec2-022",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "EBS is persistent block storage that survives instance stop; instance store is temporary and data is lost on stop, hibernate, or terminate"
+      },
+      {
+        "id": "b",
+        "text": "There is no difference — the terms are interchangeable"
+      },
+      {
+        "id": "c",
+        "text": "EBS can only be used with Windows; instance store only with Linux"
+      },
+      {
+        "id": "d",
+        "text": "Instance store is persistent; EBS is temporary"
+      }
+    ],
+    "skill": "ec2-basics",
+    "source": "Amazon EC2 User Guide — 'Features of Amazon EC2' / 'Amazon EBS volumes' vs 'Instance store' (docs.aws.amazon.com/AWSEC2)",
+    "status": "draft-pending-sme-review",
+    "stem": "What is the key difference between an EBS volume and instance store storage?",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 0,
+    "difficulty": 1,
+    "explanation": "EBS volumes exist independently of any single instance's running state, so data on them survives stops (and even termination of attached non-root volumes, depending on settings). Instance store data is wiped on stop, RAM is volatile, and stopped instances do not magically retain ephemeral data.",
+    "hint": "Which storage type did we just learn survives a stop?",
+    "id": "aws-saa-cc-ec2-023",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "An EBS volume, because it persists independently of the instance lifecycle"
+      },
+      {
+        "id": "b",
+        "text": "Instance store volumes, because they are faster"
+      },
+      {
+        "id": "c",
+        "text": "No storage is needed — stopped instances keep all data automatically"
+      },
+      {
+        "id": "d",
+        "text": "The instance's RAM, because it is the cheapest option"
+      }
+    ],
+    "skill": "ec2-basics",
+    "source": "Amazon EC2 User Guide — 'Amazon EBS volumes' / 'Instance store' (docs.aws.amazon.com/AWSEC2)",
+    "status": "draft-pending-sme-review",
+    "stem": "A database must keep its data even if the EC2 instance is stopped for the weekend. Which storage should hold the database files?",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 2,
+    "difficulty": 1,
+    "explanation": "Per the EC2 User Guide, when an instance is stopped all of its EBS volumes remain attached and you can start the instance again later. Deletion happens on terminate (for the root volume, by default), not on stop.",
+    "hint": "Stopping is like powering off a server — do the hard drives vanish when you press the power button?",
+    "id": "aws-saa-cc-ec2-024",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "They are detached and can never be reattached"
+      },
+      {
+        "id": "b",
+        "text": "They are converted to instance store volumes"
+      },
+      {
+        "id": "c",
+        "text": "They remain attached with all data intact, and the instance can be started again"
+      },
+      {
+        "id": "d",
+        "text": "They are permanently deleted when the instance stops"
+      }
+    ],
+    "skill": "ec2-basics",
+    "source": "Amazon EC2 User Guide — 'Stop and start Amazon EC2 instances' (docs.aws.amazon.com/AWSEC2)",
+    "status": "draft-pending-sme-review",
+    "stem": "You stop an EBS-backed EC2 instance on Friday and start it on Monday. What happens to its attached EBS volumes?",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 2,
+    "difficulty": 1,
+    "explanation": "The EC2 User Guide states you are not charged for instance usage while stopped, but all associated EBS usage — including root device storage — is still billed at normal EBS prices, because the volumes continue to exist.",
+    "hint": "A stopped server uses no CPU — but do its virtual hard drives still exist and occupy space?",
+    "id": "aws-saa-cc-ec2-025",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "You pay full instance usage charges as if it were running"
+      },
+      {
+        "id": "b",
+        "text": "All charges stop, including EBS storage"
+      },
+      {
+        "id": "c",
+        "text": "You are not charged for instance usage, but you still pay for the attached EBS storage"
+      },
+      {
+        "id": "d",
+        "text": "You are charged double to reserve the capacity"
+      }
+    ],
+    "skill": "ec2-basics",
+    "source": "Amazon EC2 User Guide — 'Stop and start Amazon EC2 instances' (docs.aws.amazon.com/AWSEC2)",
+    "status": "draft-pending-sme-review",
+    "stem": "While an EBS-backed instance is in the 'stopped' state, which statement about billing is true?",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 2,
+    "difficulty": 1,
+    "explanation": "Per the EC2 User Guide, when an instance is terminated the root device volume is deleted by default (controlled by each volume's deleteOnTermination attribute). Extra attached EBS volumes are preserved by default — only the root is auto-deleted.",
+    "hint": "Terminate means 'destroy the server'. What would you expect to happen to its system disk unless you said otherwise?",
+    "id": "aws-saa-cc-ec2-026",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "It is moved to a different Region"
+      },
+      {
+        "id": "b",
+        "text": "It is automatically converted to an S3 bucket"
+      },
+      {
+        "id": "c",
+        "text": "It is deleted by default"
+      },
+      {
+        "id": "d",
+        "text": "It is kept forever at no charge"
+      }
+    ],
+    "skill": "ec2-basics",
+    "source": "Amazon EC2 User Guide — 'Terminate Amazon EC2 instances' (docs.aws.amazon.com/AWSEC2)",
+    "status": "draft-pending-sme-review",
+    "stem": "You terminate an EC2 instance. By default, what happens to its root EBS volume?",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 3,
+    "difficulty": 1,
+    "explanation": "The EC2 User Guide explains rebooting is equivalent to an OS reboot: the instance remains on the same host computer and maintains its public DNS name, private IP, and data on instance store volumes. It does not terminate, detach EBS, or touch the AMI.",
+    "hint": "A reboot is like restarting your laptop — does restarting wipe the hard drive or move the laptop?",
+    "id": "aws-saa-cc-ec2-027",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "All EBS volumes are detached and must be manually reattached"
+      },
+      {
+        "id": "b",
+        "text": "The AMI is deregistered automatically"
+      },
+      {
+        "id": "c",
+        "text": "The instance is terminated and a new one is launched"
+      },
+      {
+        "id": "d",
+        "text": "The instance stays on the same host and keeps its public DNS, private IP, and instance store data"
+      }
+    ],
+    "skill": "ec2-basics",
+    "source": "Amazon EC2 User Guide — 'Reboot your instance' (docs.aws.amazon.com/AWSEC2)",
+    "status": "draft-pending-sme-review",
+    "stem": "You reboot an EC2 instance from the console. Which is true?",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 0,
+    "difficulty": 1,
+    "explanation": "AWS's purchasing-options guide describes On-Demand as pay-as-you-go with no term and no upfront payment, suiting uncertain, temporary, or variable needs that require uninterrupted capacity. Multi-year commitments are RIs, reclamation is Spot, and On-Demand works for any OS.",
+    "hint": "'On-demand' is like hailing a taxi — you pay for the ride, no subscription. What does that imply?",
+    "id": "aws-saa-cc-ec2-028",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pay for compute with no long-term commitment — ideal for unpredictable or short-term workloads"
+      },
+      {
+        "id": "b",
+        "text": "Are only available for Windows instances"
+      },
+      {
+        "id": "c",
+        "text": "Can be reclaimed by AWS at any time with two minutes' notice"
+      },
+      {
+        "id": "d",
+        "text": "Require a 3-year upfront payment before launching"
+      }
+    ],
+    "skill": "ec2-basics",
+    "source": "AWS Decision Guide — 'Choosing a purchasing option for Amazon EC2' (docs.aws.amazon.com/decision-guides)",
+    "status": "draft-pending-sme-review",
+    "stem": "Which statement best describes On-Demand Instances?",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 2,
+    "difficulty": 1,
+    "explanation": "AWS's guide states Spot offers up to 90% off the zero-commitment model in exchange for interruptibility — AWS can reclaim capacity, giving a two-minute warning. It suits fault-tolerant, scalable, or bursty workloads that can resume elsewhere.",
+    "hint": "'Spot' = spare, unused capacity sold cheap. What's the catch with buying someone's spare?",
+    "id": "aws-saa-cc-ec2-029",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "Free usage, but only between midnight and 6 AM"
+      },
+      {
+        "id": "b",
+        "text": "Guaranteed capacity at the full On-Demand price"
+      },
+      {
+        "id": "c",
+        "text": "Up to 90% discount on spare capacity, but AWS can reclaim the instance when capacity is needed"
+      },
+      {
+        "id": "d",
+        "text": "A fixed 10% discount in exchange for a 1-year commitment"
+      }
+    ],
+    "skill": "ec2-basics",
+    "source": "AWS Decision Guide — 'Choosing a purchasing option for Amazon EC2' (docs.aws.amazon.com/decision-guides)",
+    "status": "draft-pending-sme-review",
+    "stem": "What is the defining trade-off of EC2 Spot Instances?",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 0,
+    "difficulty": 1,
+    "explanation": "Spot Instances give up to 90% off spare capacity and are designed for exactly this: fault-tolerant, interruptible, bursty workloads. On-Demand costs more, Dedicated Hosts are for compliance/licensing, and a 3-year RI is overkill for a nightly batch job.",
+    "hint": "The job tolerates interruption and runs in bursts. Which option rewards interruptible workloads with the deepest discount?",
+    "id": "aws-saa-cc-ec2-030",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "Spot Instances"
+      },
+      {
+        "id": "b",
+        "text": "On-Demand Instances"
+      },
+      {
+        "id": "c",
+        "text": "Dedicated Hosts"
+      },
+      {
+        "id": "d",
+        "text": "Standard Reserved Instances with a 3-year term"
+      }
+    ],
+    "skill": "ec2-basics",
+    "source": "AWS Decision Guide — 'Choosing a purchasing option for Amazon EC2' (docs.aws.amazon.com/decision-guides)",
+    "status": "draft-pending-sme-review",
+    "stem": "A batch-processing job can be paused and resumed, and runs for 6 hours every night. Which purchasing option minimizes its cost?",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 2,
+    "difficulty": 1,
+    "explanation": "AWS positions commitments on a spectrum: longer terms bring bigger savings. For steady-state 24/7 usage, a 1- or 3-year Reserved Instance or Savings Plan commitment (up to ~72% off On-Demand) beats pay-as-you-go. Spot is wrong for workloads needing uninterrupted capacity.",
+    "hint": "Steady, predictable, 24/7 — which pricing rewards you for promising to stick around?",
+    "id": "aws-saa-cc-ec2-031",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "Spot Instances, because steady workloads are never interrupted"
+      },
+      {
+        "id": "b",
+        "text": "On-Demand Instances, because commitments always cost more"
+      },
+      {
+        "id": "c",
+        "text": "A 1- or 3-year commitment such as Reserved Instances or Savings Plans"
+      },
+      {
+        "id": "d",
+        "text": "Terminating the instances every hour to reset billing"
+      }
+    ],
+    "skill": "ec2-basics",
+    "source": "AWS Decision Guide — 'Choosing a purchasing option for Amazon EC2' (docs.aws.amazon.com/decision-guides)",
+    "status": "draft-pending-sme-review",
+    "stem": "A company runs the same web servers 24/7 and wants the lowest price for that steady usage. Which option should it evaluate first?",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 0,
+    "difficulty": 1,
+    "explanation": "The Savings Plans documentation explains you commit to consistent compute usage measured in $/hour for 1 or 3 years, and the discount applies flexibly — Compute Savings Plans even cover Fargate and Lambda across Regions. Reserved Instances instead commit to a specific instance configuration.",
+    "hint": "One locks you to a specific server configuration; the other locks you to a spend level and lets the configuration vary. Which is which?",
+    "id": "aws-saa-cc-ec2-032",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "Savings Plans commit to a consistent usage amount in $/hour and apply flexibly across instance families, sizes, OS, and Regions"
+      },
+      {
+        "id": "b",
+        "text": "Savings Plans require no commitment at all"
+      },
+      {
+        "id": "c",
+        "text": "Reserved Instances apply to Lambda and Fargate; Savings Plans do not"
+      },
+      {
+        "id": "d",
+        "text": "They are identical — AWS just renamed Reserved Instances"
+      }
+    ],
+    "skill": "ec2-basics",
+    "source": "AWS Savings Plans User Guide — 'Compute Savings Plans and Reserved Instances' (docs.aws.amazon.com/savingsplans)",
+    "status": "draft-pending-sme-review",
+    "stem": "How do Savings Plans differ from Reserved Instances?",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 3,
+    "difficulty": 1,
+    "explanation": "Compute Savings Plans apply automatically across instance families, sizes, Regions, OS, and tenancy — and also cover Fargate and Lambda usage. Standard RIs lock you to a family/Region, Spot has no commitment discount guarantee, and Capacity Reservations reserve capacity without a discount.",
+    "hint": "Which commitment type explicitly covers EC2, Fargate, and Lambda across families and Regions?",
+    "id": "aws-saa-cc-ec2-033",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "On-Demand Capacity Reservations"
+      },
+      {
+        "id": "b",
+        "text": "Standard Reserved Instances"
+      },
+      {
+        "id": "c",
+        "text": "Spot Instances"
+      },
+      {
+        "id": "d",
+        "text": "Compute Savings Plans"
+      }
+    ],
+    "skill": "ec2-basics",
+    "source": "AWS Savings Plans User Guide — 'Compute Savings Plans and Reserved Instances' (docs.aws.amazon.com/savingsplans)",
+    "status": "draft-pending-sme-review",
+    "stem": "A team wants a commitment discount but expects to change instance families and Regions over the next year, and also runs Fargate containers. Which is the most flexible fit?",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 0,
+    "difficulty": 1,
+    "explanation": "AWS's guide recommends On-Demand for uncertain, temporary, or first-time workloads — no commitment, launch and terminate freely while you learn the resource pattern. Locking into 3-year commitments or a Dedicated Host before you know the needs would be premature.",
+    "hint": "Unknown needs + first-time testing = you want maximum flexibility, not a multi-year promise.",
+    "id": "aws-saa-cc-ec2-034",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "On-Demand Instances"
+      },
+      {
+        "id": "b",
+        "text": "A 3-year Compute Savings Plan at maximum commitment"
+      },
+      {
+        "id": "c",
+        "text": "A Dedicated Host"
+      },
+      {
+        "id": "d",
+        "text": "A 3-year Standard Reserved Instance"
+      }
+    ],
+    "skill": "ec2-basics",
+    "source": "AWS Decision Guide — 'Choosing a purchasing option for Amazon EC2' (docs.aws.amazon.com/decision-guides)",
+    "status": "draft-pending-sme-review",
+    "stem": "A developer is testing a new application for the first time and doesn't know its resource needs yet. Which purchasing option is most appropriate?",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 1,
+    "difficulty": 1,
+    "explanation": "AWS bills EC2 usage per second (for Linux) with a one-minute minimum charge per instance start — run 20 seconds, pay for 60; run 90 seconds, pay for 90. There is no yearly minimum or daily rounding in On-Demand billing.",
+    "hint": "Break the phrase apart: billed 'per second', with a 'minimum' of one minute.",
+    "id": "aws-saa-cc-ec2-035",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "Billing is rounded up to the nearest day"
+      },
+      {
+        "id": "b",
+        "text": "Linux instances are billed for each second they run, but every start is charged for at least 60 seconds"
+      },
+      {
+        "id": "c",
+        "text": "The first minute of every hour is free"
+      },
+      {
+        "id": "d",
+        "text": "You must run every instance for at least one full year"
+      }
+    ],
+    "skill": "ec2-basics",
+    "source": "Amazon EC2 User Guide — 'On-Demand Instance pricing' / billing documentation (docs.aws.amazon.com/AWSEC2)",
+    "status": "draft-pending-sme-review",
+    "stem": "What does EC2 per-second billing with a one-minute minimum mean?",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 1,
+    "difficulty": 1,
+    "explanation": "Default tenancy means the instance runs on shared hardware — multiple customers' instances on the same physical host. A whole physical server to yourself is a Dedicated Host (extra cost), AZ placement is separate from tenancy, and Free Tier is a billing program, not tenancy.",
+    "hint": "'Default' is the standard, most economical option — whose hardware do you think you're sharing?",
+    "id": "aws-saa-cc-ec2-036",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "Your instance can only run in one specific Availability Zone forever"
+      },
+      {
+        "id": "b",
+        "text": "Your instance runs on shared hardware with instances from other customers"
+      },
+      {
+        "id": "c",
+        "text": "Your instance is free for the first year"
+      },
+      {
+        "id": "d",
+        "text": "Your instance gets an entire physical server to itself at no extra cost"
+      }
+    ],
+    "skill": "ec2-basics",
+    "source": "Amazon EC2 User Guide — 'Amazon EC2 instance tenancy' (docs.aws.amazon.com/AWSEC2)",
+    "status": "draft-pending-sme-review",
+    "stem": "What does the default tenancy of an EC2 instance mean?",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 1,
+    "difficulty": 1,
+    "explanation": "A Dedicated Host is a physical server fully dedicated to your use — no other customer's workloads share it — which addresses socket-based licensing and compliance needs. Default tenancy shares hardware, Spot is spare shared capacity, and EC2 Instance Connect is a connection method, not hardware.",
+    "hint": "Which option's name literally says the hardware is yours alone?",
+    "id": "aws-saa-cc-ec2-037",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "Spot Instances"
+      },
+      {
+        "id": "b",
+        "text": "Dedicated Hosts"
+      },
+      {
+        "id": "c",
+        "text": "Default tenancy On-Demand Instances"
+      },
+      {
+        "id": "d",
+        "text": "EC2 Instance Connect"
+      }
+    ],
+    "skill": "ec2-basics",
+    "source": "Amazon EC2 User Guide — 'Amazon EC2 Dedicated Hosts' (docs.aws.amazon.com/AWSEC2)",
+    "status": "draft-pending-sme-review",
+    "stem": "A bank needs a physical server used by no other AWS customer, for licensing and compliance reasons. Which option provides this?",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 1,
+    "difficulty": 1,
+    "explanation": "A cluster placement group packs instances close together inside a single AZ, minimizing network latency and maximizing throughput — the documented use case is HPC and big-data jobs that need fast node-to-node communication. Spread does the opposite (isolation), and partition groups by rack for fault isolation.",
+    "hint": "Low latency means the servers should be physically near each other. Which strategy groups them tightly?",
+    "id": "aws-saa-cc-ec2-038",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "Spread, to isolate instances from each other"
+      },
+      {
+        "id": "b",
+        "text": "Cluster, to pack instances close together in a single Availability Zone"
+      },
+      {
+        "id": "c",
+        "text": "Partition, to separate instances into different Regions"
+      },
+      {
+        "id": "d",
+        "text": "No placement group — placement groups increase latency"
+      }
+    ],
+    "skill": "ec2-basics",
+    "source": "Amazon EC2 User Guide — 'Placement groups' (docs.aws.amazon.com/AWSEC2)",
+    "status": "draft-pending-sme-review",
+    "stem": "A high-performance computing job needs extremely low network latency between its instances. Which placement group strategy should it use?",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 2,
+    "difficulty": 1,
+    "explanation": "A spread placement group places each instance on distinct underlying hardware to reduce correlated failures — ideal for a few critical instances — with a documented limit of 7 running instances per AZ per group. Cluster optimizes for proximity, partition targets large rack-isolated fleets (e.g., Hadoop/Kafka), and default placement offers no such guarantee.",
+    "hint": "The strategy named for 'spreading out' isolates failures. What small per-AZ cap does the documentation give it?",
+    "id": "aws-saa-cc-ec2-039",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "Partition placement group — requires exactly 100 instances"
+      },
+      {
+        "id": "b",
+        "text": "Cluster placement group — unlimited instances across all Regions"
+      },
+      {
+        "id": "c",
+        "text": "Spread placement group — instances placed on distinct hardware, limited to 7 instances per AZ"
+      },
+      {
+        "id": "d",
+        "text": "Default placement — automatically spreads across hardware"
+      }
+    ],
+    "skill": "ec2-basics",
+    "source": "Amazon EC2 User Guide — 'Placement groups' (docs.aws.amazon.com/AWSEC2)",
+    "status": "draft-pending-sme-review",
+    "stem": "A critical application runs a small number of instances that must never share underlying hardware, to survive a rack failure. Which placement strategy fits, and what is its limit?",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 3,
+    "difficulty": 1,
+    "explanation": "The EC2 User Guide documents connecting to Linux instances via SSH (e.g., ssh -i key.pem ec2-user@address), which uses TCP port 22 and your private key for authentication. RDP on port 3389 is the Windows method; browsers and credential-less access don't apply.",
+    "hint": "Linux servers are administered over an encrypted shell protocol. What's it called, and which port does it use?",
+    "id": "aws-saa-cc-ec2-040",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "Using RDP with a username and password on port 3389"
+      },
+      {
+        "id": "b",
+        "text": "Instances cannot be connected to remotely at all"
+      },
+      {
+        "id": "c",
+        "text": "By opening the instance in a web browser with no credentials"
+      },
+      {
+        "id": "d",
+        "text": "Using SSH with your private key file, typically on TCP port 22"
+      }
+    ],
+    "skill": "ec2-basics",
+    "source": "Amazon EC2 User Guide — 'Connect to your Linux instance' (docs.aws.amazon.com/AWSEC2)",
+    "status": "draft-pending-sme-review",
+    "stem": "How do you connect to a Linux EC2 instance from your laptop?",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 1,
+    "difficulty": 1,
+    "explanation": "The EC2 User Guide for Windows documents connecting via RDP (Remote Desktop Protocol) on TCP port 3389. SSH/port 22 is the Linux method, FTP is file transfer, and Windows instances are fully manageable over RDP — not console-only.",
+    "hint": "Windows remote desktop has its own protocol with a famous port number. Which option names it?",
+    "id": "aws-saa-cc-ec2-041",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "Using SSH on port 22"
+      },
+      {
+        "id": "b",
+        "text": "Using RDP (Remote Desktop Protocol), typically on TCP port 3389"
+      },
+      {
+        "id": "c",
+        "text": "Using FTP on port 21"
+      },
+      {
+        "id": "d",
+        "text": "Windows instances can only be managed through the AWS console"
+      }
+    ],
+    "skill": "ec2-basics",
+    "source": "Amazon EC2 User Guide for Windows — 'Connect to your Windows instance' (docs.aws.amazon.com/AWSEC2)",
+    "status": "draft-pending-sme-review",
+    "stem": "How do you connect to the graphical desktop of a Windows EC2 instance?",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 1,
+    "difficulty": 1,
+    "explanation": "Security groups are allow-only firewalls; with no inbound rule for TCP 22, SSH packets are dropped and the client sees a timeout. The AMI publisher, instance family, and Region don't block connectivity — the missing allow rule does.",
+    "hint": "A timeout (not 'access denied') usually means traffic never reached the server. What controls whether traffic may reach it?",
+    "id": "aws-saa-cc-ec2-042",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "The AMI used was published by AWS"
+      },
+      {
+        "id": "b",
+        "text": "The security group has no inbound rule allowing SSH (TCP port 22) from your IP"
+      },
+      {
+        "id": "c",
+        "text": "The instance type is from the M family"
+      },
+      {
+        "id": "d",
+        "text": "The instance was launched in a Region"
+      }
+    ],
+    "skill": "ec2-basics",
+    "source": "Amazon EC2 User Guide — 'Security groups for Amazon EC2' / 'Troubleshoot connecting to your instance' (docs.aws.amazon.com/AWSEC2)",
+    "status": "draft-pending-sme-review",
+    "stem": "Your SSH connection to a new Linux instance times out. The key pair is correct. What is the most likely cause?",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 2,
+    "difficulty": 1,
+    "explanation": "The EC2 User Guide is clear: a stopped instance keeps its EBS volumes attached and can be started again, while termination permanently deletes the instance (root volume deleted by default) and it can never be started again.",
+    "hint": "'Stop' is a pause; 'terminate' is an ending. Which one can you come back from?",
+    "id": "aws-saa-cc-ec2-043",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "Stopping deletes all EBS volumes; terminating keeps them"
+      },
+      {
+        "id": "b",
+        "text": "A terminated instance can be restarted; a stopped instance cannot"
+      },
+      {
+        "id": "c",
+        "text": "A stopped instance can be started again later; a terminated instance is permanently deleted"
+      },
+      {
+        "id": "d",
+        "text": "There is no difference — both permanently delete the instance"
+      }
+    ],
+    "skill": "ec2-basics",
+    "source": "Amazon EC2 User Guide — 'Stop and start Amazon EC2 instances' / 'Terminate Amazon EC2 instances' (docs.aws.amazon.com/AWSEC2)",
+    "status": "draft-pending-sme-review",
+    "stem": "What is the fundamental difference between stopping and terminating an EC2 instance?",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 2,
+    "difficulty": 1,
+    "explanation": "The EC2 User Guide states that instances with EBS root devices default to 'stop' for instance-initiated shutdowns, while instance-store-backed instances are always terminated on shutdown. So 'shutdown -h' on an EBS-backed instance stops it, preserving the volumes for a later start.",
+    "hint": "For EBS-backed instances, the default shutdown behavior matches which lifecycle action — stop or terminate?",
+    "id": "aws-saa-cc-ec2-044",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "The instance reboots onto a new host"
+      },
+      {
+        "id": "b",
+        "text": "The instance is terminated immediately"
+      },
+      {
+        "id": "c",
+        "text": "The instance stops (it can be started again later)"
+      },
+      {
+        "id": "d",
+        "text": "The EBS volumes are detached but the instance keeps running"
+      }
+    ],
+    "skill": "ec2-basics",
+    "source": "Amazon EC2 User Guide — 'Change the instance initiated shutdown behavior' (docs.aws.amazon.com/AWSEC2)",
+    "status": "draft-pending-sme-review",
+    "stem": "An engineer runs 'shutdown -h' inside a Linux instance whose root device is EBS-backed. What happens by default?",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 0,
+    "difficulty": 1,
+    "explanation": "The EC2 User Guide documents termination protection: setting the disableApiTermination attribute prevents the instance from being terminated via the console, CLI, or API until you turn it off. Removing security groups or key pairs doesn't block termination, and accidents are very possible without it.",
+    "hint": "AWS provides a specific instance attribute that blocks terminate API calls. What is it for?",
+    "id": "aws-saa-cc-ec2-045",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "Enable termination protection (disableApiTermination) on the instance"
+      },
+      {
+        "id": "b",
+        "text": "Remove all security groups from the instance"
+      },
+      {
+        "id": "c",
+        "text": "Delete the key pair associated with the instance"
+      },
+      {
+        "id": "d",
+        "text": "Accidental termination is impossible, so no action is needed"
+      }
+    ],
+    "skill": "ec2-basics",
+    "source": "Amazon EC2 User Guide — 'Enable termination protection' (docs.aws.amazon.com/AWSEC2)",
+    "status": "draft-pending-sme-review",
+    "stem": "How can you protect a production EC2 instance from being terminated by accident?",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 2,
+    "difficulty": 1,
+    "explanation": "The EC2 User Guide defines an Elastic IP as a static public IPv4 address designed for dynamic cloud computing — you allocate it to your account and can remap it between instances (useful when an instance is stopped/started and its default public IP changes).",
+    "hint": "'Elastic' here means it can move between instances — but what kind of address is it?",
+    "id": "aws-saa-cc-ec2-046",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "A private IP address that changes every hour"
+      },
+      {
+        "id": "b",
+        "text": "A domain name automatically registered for your instance"
+      },
+      {
+        "id": "c",
+        "text": "A static public IPv4 address you can allocate and associate with an instance"
+      },
+      {
+        "id": "d",
+        "text": "An encryption key for EBS volumes"
+      }
+    ],
+    "skill": "ec2-basics",
+    "source": "Amazon EC2 User Guide — 'Elastic IP addresses' (docs.aws.amazon.com/AWSEC2)",
+    "status": "draft-pending-sme-review",
+    "stem": "What is an Elastic IP address?",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 3,
+    "difficulty": 1,
+    "explanation": "On stop/start, the instance may launch on different underlying hardware and receive a new public IP; only the private IP is retained. An Elastic IP is the documented way to keep a fixed public address across stops and starts.",
+    "hint": "A stop/start can move the instance to new hardware. Would the old address follow it, or would it get a fresh one?",
+    "id": "aws-saa-cc-ec2-047",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "Public IPs are never assigned to EC2 instances"
+      },
+      {
+        "id": "b",
+        "text": "It is converted into a private IP"
+      },
+      {
+        "id": "c",
+        "text": "It stays exactly the same forever"
+      },
+      {
+        "id": "d",
+        "text": "It may change, because the instance can land on a different host with a new public IP"
+      }
+    ],
+    "skill": "ec2-basics",
+    "source": "Amazon EC2 User Guide — 'Stop and start Amazon EC2 instances' / 'Elastic IP addresses' (docs.aws.amazon.com/AWSEC2)",
+    "status": "draft-pending-sme-review",
+    "stem": "You stop and then start an EC2 instance that uses a default (non-Elastic) public IP. What happens to its public IP address?",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 1,
+    "difficulty": 1,
+    "explanation": "The EC2 User Guide lists tags as metadata you create and assign to resources — key-value labels like Environment=Production used for organizing, cost allocation, and automation. They aren't hardware serials, passwords, or network routes.",
+    "hint": "Think of sticking a labeled sticky note on each server — 'Environment: Production', 'Owner: Team A'. What AWS feature is that?",
+    "id": "aws-saa-cc-ec2-048",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "Network routes between Availability Zones"
+      },
+      {
+        "id": "b",
+        "text": "Metadata labels (key-value pairs) you attach to resources to organize, identify, and manage them"
+      },
+      {
+        "id": "c",
+        "text": "Hardware serial numbers burned into the physical server"
+      },
+      {
+        "id": "d",
+        "text": "Passwords required to stop an instance"
+      }
+    ],
+    "skill": "ec2-basics",
+    "source": "Amazon EC2 User Guide — 'Features of Amazon EC2' / 'Tag your Amazon EC2 resources' (docs.aws.amazon.com/AWSEC2)",
+    "status": "draft-pending-sme-review",
+    "stem": "What are EC2 tags used for?",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 3,
+    "difficulty": 1,
+    "explanation": "The EC2 User Guide explains AMIs are categorized by root device: 'ebs' means the root device is an EBS volume, so instances support stop/start (unlike instance-store-backed AMIs, whose instances can't be stopped — only terminated). The OS is still included, and the root type doesn't restrict purchasing options.",
+    "hint": "EBS-backed root = persistent system disk. What lifecycle operations does a persistent disk enable?",
+    "id": "aws-saa-cc-ec2-049",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "The AMI can only be used with Spot Instances"
+      },
+      {
+        "id": "b",
+        "text": "Instances launched from it can never be stopped, only terminated"
+      },
+      {
+        "id": "c",
+        "text": "The AMI contains no operating system"
+      },
+      {
+        "id": "d",
+        "text": "Instances launched from it use an EBS volume as the root device — so they can be stopped and restarted"
+      }
+    ],
+    "skill": "ec2-basics",
+    "source": "Amazon EC2 User Guide — 'AMIs' / 'Storage for the root device' (docs.aws.amazon.com/AWSEC2)",
+    "status": "draft-pending-sme-review",
+    "stem": "An AMI description says its root device type is 'ebs'. What does this tell you?",
+    "type": "mcq",
+    "version": 1
+  },
+  {
+    "answer": 1,
+    "difficulty": 1,
+    "explanation": "The EC2 instance lifecycle documented by AWS flows: pending (launching) → running → stopping → stopped → shutting-down → terminated. An instance is born in pending, does work in running, and terminated is the final, irreversible state.",
+    "hint": "Think of a server's life story: it's prepared, it runs, it winds down, it rests, it's destroyed. Which order tells that story?",
+    "id": "aws-saa-cc-ec2-050",
+    "level": "L1",
+    "options": [
+      {
+        "id": "a",
+        "text": "terminated → running → pending → stopped"
+      },
+      {
+        "id": "b",
+        "text": "pending → running → stopping → stopped → terminated"
+      },
+      {
+        "id": "c",
+        "text": "running → pending → terminated → stopped"
+      },
+      {
+        "id": "d",
+        "text": "stopped → pending → terminated → running"
+      }
+    ],
+    "skill": "ec2-basics",
+    "source": "Amazon EC2 User Guide — 'Amazon EC2 instance lifecycle' (docs.aws.amazon.com/AWSEC2)",
+    "status": "draft-pending-sme-review",
+    "stem": "Put these EC2 instance states in the correct lifecycle order:",
+    "type": "mcq",
+    "version": 1
+  }
+]

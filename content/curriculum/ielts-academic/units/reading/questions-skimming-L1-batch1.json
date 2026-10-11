@@ -1,0 +1,1591 @@
+[
+ {
+  "answer": 0,
+  "difficulty": 1,
+  "explanation": "Skimming is a quick read for the general meaning. The British Council describes it as looking over an article to identify the key themes or general ideas \u2014 a 'bird's eye view'. Scanning is the technique for specific facts (option c), and slow careful reading is intensive reading, not skimming.",
+  "hint": "Think about the goal: do you want the big picture or one small detail?",
+  "id": "ielts-rd-sk-001",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "Reading quickly to get the general idea or gist of a text"
+   },
+   {
+    "id": "b",
+    "text": "Reading every word slowly to understand all the details"
+   },
+   {
+    "id": "c",
+    "text": "Searching a text for one specific fact, name, or number"
+   },
+   {
+    "id": "d",
+    "text": "Reading all the questions before looking at the passage"
+   }
+  ],
+  "skill": "skimming",
+  "source": "British Council IELTS \u2014 'Skimming vs Scanning for IELTS Reading: Definitions & Tips' (takeielts.britishcouncil.org) \u2014 definition of skimming",
+  "status": "draft-pending-sme-review",
+  "stem": "What does 'skimming' mean in IELTS Reading?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 2,
+  "difficulty": 1,
+  "explanation": "Scanning means hunting for one specific detail \u2014 a number, name, or date \u2014 without reading everything. The British Council's example: to find how much something costs, run your eyes across the text looking for a currency sign. Reading first sentences is part of skimming, not scanning.",
+  "hint": "Scanning has a target. What kind of target?",
+  "id": "ielts-rd-sk-002",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "Reading the first sentence of every paragraph"
+   },
+   {
+    "id": "b",
+    "text": "Guessing answers from your own general knowledge"
+   },
+   {
+    "id": "c",
+    "text": "Looking quickly for a specific piece of information, such as a name, date, or number"
+   },
+   {
+    "id": "d",
+    "text": "Reading the whole passage twice, slowly"
+   }
+  ],
+  "skill": "skimming",
+  "source": "British Council IELTS \u2014 'Skimming vs Scanning for IELTS Reading: Definitions & Tips' (takeielts.britishcouncil.org) \u2014 definition of scanning",
+  "status": "draft-pending-sme-review",
+  "stem": "What does 'scanning' mean in IELTS Reading?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 1,
+  "difficulty": 1,
+  "explanation": "A bird's eye view means seeing the whole landscape at once. Skimming gives you the general subject and main ideas of a passage. The small details are what scanning is for \u2014 the British Council calls that 'a bird swooping down on a specific detail'.",
+  "hint": "What can a bird see from high up \u2014 the whole landscape or one leaf?",
+  "id": "ielts-rd-sk-003",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "Skimming means rushing through the test as fast as possible"
+   },
+   {
+    "id": "b",
+    "text": "Skimming gives you a broad overview from above, not the small details"
+   },
+   {
+    "id": "c",
+    "text": "Skimming is only useful for passages about birds"
+   },
+   {
+    "id": "d",
+    "text": "Skimming means reading with your eyes half-closed"
+   }
+  ],
+  "skill": "skimming",
+  "source": "British Council IELTS \u2014 'IELTS Academic Reading Preparation' (takeielts.britishcouncil.org) \u2014 skimming as a bird's eye view",
+  "status": "draft-pending-sme-review",
+  "stem": "The British Council compares skimming to a bird's eye view. What does that comparison teach you?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 3,
+  "difficulty": 1,
+  "explanation": "You need one specific detail \u2014 a year. Scanning is the technique for finding specific information like dates, names, and numbers quickly. Skimming would only tell you what the passage is about in general, and your own knowledge is never a valid source in IELTS Reading.",
+  "hint": "The question wants one specific fact. Which technique hunts for facts?",
+  "id": "ielts-rd-sk-004",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "Skim the whole passage for its main idea"
+   },
+   {
+    "id": "b",
+    "text": "Read every paragraph carefully from the beginning"
+   },
+   {
+    "id": "c",
+    "text": "Guess from your own knowledge of history"
+   },
+   {
+    "id": "d",
+    "text": "Scan the passage for a year or number"
+   }
+  ],
+  "skill": "skimming",
+  "source": "IDP IELTS \u2014 'IELTS Reading on Computer: Tips for Speed & Accuracy' (ielts.idp.com) \u2014 scanning for keywords",
+  "status": "draft-pending-sme-review",
+  "stem": "A question asks: 'In which year was the Channel Tunnel opened?' Which technique should you use first?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 1,
+  "difficulty": 1,
+  "explanation": "Skimming is for the general idea. The British Council advises: first skim the article to quickly get a sense of the subject, paying attention to the title, headings, and the first sentence of each paragraph. Scanning comes later, for details.",
+  "hint": "General topic = big picture. Which technique gives the big picture?",
+  "id": "ielts-rd-sk-005",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "Scanning"
+   },
+   {
+    "id": "b",
+    "text": "Skimming"
+   },
+   {
+    "id": "c",
+    "text": "Intensive reading"
+   },
+   {
+    "id": "d",
+    "text": "Re-reading the questions"
+   }
+  ],
+  "skill": "skimming",
+  "source": "British Council IELTS \u2014 'IELTS Academic Reading Preparation' (takeielts.britishcouncil.org) \u2014 skim first for the subject",
+  "status": "draft-pending-sme-review",
+  "stem": "Before answering any questions, you want to know what a passage is generally about. Which technique should you use?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 1,
+  "difficulty": 1,
+  "explanation": "False. Skimming is the opposite of careful word-by-word reading \u2014 you move fast and pick up main ideas. Careful reading for full understanding is called intensive reading, which you do only after skimming and scanning have located the right section.",
+  "hint": "Compare 'every word carefully' with 'quickly for the general idea'.",
+  "id": "ielts-rd-sk-006",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "True"
+   },
+   {
+    "id": "b",
+    "text": "False"
+   }
+  ],
+  "skill": "skimming",
+  "source": "British Council IELTS \u2014 'IELTS Academic Reading Preparation' (takeielts.britishcouncil.org) \u2014 skimming vs intensive reading",
+  "status": "draft-pending-sme-review",
+  "stem": "True or False: Skimming means reading every word carefully to understand all the details.",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 0,
+  "difficulty": 1,
+  "explanation": "The skim gives you a map of the passage. For a detail question, scan the right paragraph for keywords, then read intensively (carefully) only around the match. This three-step sequence \u2014 skim, scan, read intensively \u2014 is the standard IELTS approach.",
+  "hint": "Your skim built a map. How do you use a map?",
+  "id": "ielts-rd-sk-007",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "Scan the relevant paragraph for the question's keywords, then read closely around them"
+   },
+   {
+    "id": "b",
+    "text": "Re-skim the whole passage slowly from the start"
+   },
+   {
+    "id": "c",
+    "text": "Answer from memory without looking back at the text"
+   },
+   {
+    "id": "d",
+    "text": "Read the entire passage word by word"
+   }
+  ],
+  "skill": "skimming",
+  "source": "IDP IELTS \u2014 'IELTS Reading on Computer: Tips for Speed & Accuracy' (ielts.idp.com) \u2014 skim, then scan for keywords",
+  "status": "draft-pending-sme-review",
+  "stem": "After a good skim, you know which paragraph covers which topic. What is the smart next step for a detail question?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 2,
+  "difficulty": 1,
+  "explanation": "Matching headings asks for each paragraph's main idea \u2014 exactly what skimming reveals. The strategy: skim each paragraph (first and last sentences, repeated ideas), summarise it in your own words, then match the heading. Detail question types need scanning instead.",
+  "hint": "Which of these asks about the main idea of whole paragraphs?",
+  "id": "ielts-rd-sk-008",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "Sentence completion with a word limit"
+   },
+   {
+    "id": "b",
+    "text": "Short-answer questions asking for a number"
+   },
+   {
+    "id": "c",
+    "text": "Matching headings to paragraphs"
+   },
+   {
+    "id": "d",
+    "text": "Labelling a diagram"
+   }
+  ],
+  "skill": "skimming",
+  "source": "Cambridge IELTS series \u2014 reading strategy sections \u2014 matching headings tests main ideas",
+  "status": "draft-pending-sme-review",
+  "stem": "Which question type benefits MOST from skimming the passage first?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 3,
+  "difficulty": 1,
+  "explanation": "Skimming saves time. With 60 minutes for 40 questions across three long passages, reading every word would eat the clock. A quick skim maps the passage so you can find answers efficiently.",
+  "hint": "The test gives you 60 minutes for 40 questions. What does skimming protect?",
+  "id": "ielts-rd-sk-009",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "It guarantees the correct answer to every question"
+   },
+   {
+    "id": "b",
+    "text": "It teaches you new vocabulary as you read"
+   },
+   {
+    "id": "c",
+    "text": "It lets you skip reading the questions"
+   },
+   {
+    "id": "d",
+    "text": "It saves time by letting you avoid slow word-by-word reading"
+   }
+  ],
+  "skill": "skimming",
+  "source": "IDP IELTS \u2014 'IELTS Reading on Computer: Tips for Speed & Accuracy' (ielts.idp.com) \u2014 time management",
+  "status": "draft-pending-sme-review",
+  "stem": "What is the main benefit of skimming in the IELTS Reading test?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 0,
+  "difficulty": 1,
+  "explanation": "Skim first. Knowing the passage's subject and structure before you tackle the questions helps you locate answers fast. The British Council advises skimming the article first to get a sense of the subject, then scanning for details once you know what each question asks.",
+  "hint": "A map is most useful before the journey, not after.",
+  "id": "ielts-rd-sk-010",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "At the start, before working through the questions in detail"
+   },
+   {
+    "id": "b",
+    "text": "Only after you have answered every question"
+   },
+   {
+    "id": "c",
+    "text": "In the last two minutes, as a final check"
+   },
+   {
+    "id": "d",
+    "text": "Never \u2014 skimming wastes time"
+   }
+  ],
+  "skill": "skimming",
+  "source": "British Council IELTS \u2014 'IELTS Academic Reading Preparation' (takeielts.britishcouncil.org) \u2014 skim first",
+  "status": "draft-pending-sme-review",
+  "stem": "When should you skim a passage during the test?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 3,
+  "difficulty": 1,
+  "explanation": "A heading summarises the paragraph's main idea. One paragraph = one main idea, and skimming (first/last sentences, repeated ideas) is designed to surface exactly that. Note: headings are paraphrases, so matching by repeated words is a trap \u2014 match by idea.",
+  "hint": "What does a heading describe \u2014 a detail or the paragraph's main idea?",
+  "id": "ielts-rd-sk-011",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "Headings always repeat the paragraph's exact words"
+   },
+   {
+    "id": "b",
+    "text": "Skimming finds the dates and names the headings ask about"
+   },
+   {
+    "id": "c",
+    "text": "Skimming is faster than reading, so you finish early"
+   },
+   {
+    "id": "d",
+    "text": "Each paragraph has one main idea, and skimming reveals it"
+   }
+  ],
+  "skill": "skimming",
+  "source": "Cambridge IELTS series \u2014 reading strategy sections \u2014 one paragraph, one main idea",
+  "status": "draft-pending-sme-review",
+  "stem": "Why does skimming help with matching-headings questions?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 1,
+  "difficulty": 1,
+  "explanation": "A skim builds a mental map: 'paragraph 1 introduces the topic, paragraph 2 gives causes, paragraph 3 gives solutions.' It does not give you answers \u2014 it tells you where to look for them when you scan.",
+  "hint": "Think 'map', not 'answers'.",
+  "id": "ielts-rd-sk-012",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "Every answer to every question"
+   },
+   {
+    "id": "b",
+    "text": "A mental map of the passage \u2014 which paragraph covers which topic"
+   },
+   {
+    "id": "c",
+    "text": "Perfect understanding of all the vocabulary"
+   },
+   {
+    "id": "d",
+    "text": "The exact wording of the answers"
+   }
+  ],
+  "skill": "skimming",
+  "source": "British Council IELTS \u2014 'Skimming vs Scanning for IELTS Reading: Definitions & Tips' (takeielts.britishcouncil.org) \u2014 skim for structure",
+  "status": "draft-pending-sme-review",
+  "stem": "What does a good skim give you?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 2,
+  "difficulty": 1,
+  "explanation": "The skim told you where to look (paragraph 4). Now scan that paragraph for the question's keywords and read intensively around the match to find the exact cause. You don't need the main idea again \u2014 you need a detail.",
+  "hint": "You already know the 'where'. What's the next step?",
+  "id": "ielts-rd-sk-013",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "Re-read the whole passage from the beginning"
+   },
+   {
+    "id": "b",
+    "text": "Answer from your own general knowledge"
+   },
+   {
+    "id": "c",
+    "text": "Scan paragraph 4 for keywords, then read closely around them"
+   },
+   {
+    "id": "d",
+    "text": "Skim paragraph 4 again for its main idea"
+   }
+  ],
+  "skill": "skimming",
+  "source": "IDP IELTS \u2014 'IELTS Reading on Computer: Tips for Speed & Accuracy' (ielts.idp.com) \u2014 scan for keywords",
+  "status": "draft-pending-sme-review",
+  "stem": "Your skim tells you paragraph 4 is about the causes of sleep loss. A question asks for one cause. What now?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 1,
+  "difficulty": 1,
+  "explanation": "False. One skim per passage is enough. Re-skimming before every question would burn through your 60 minutes. Skim once to map the passage, then scan the relevant part for each question.",
+  "hint": "Would re-reading everything before each of 40 questions fit in 60 minutes?",
+  "id": "ielts-rd-sk-014",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "True"
+   },
+   {
+    "id": "b",
+    "text": "False"
+   }
+  ],
+  "skill": "skimming",
+  "source": "IDP IELTS \u2014 'IELTS Reading on Computer: Tips for Speed & Accuracy' (ielts.idp.com) \u2014 time management",
+  "status": "draft-pending-sme-review",
+  "stem": "True or False: You should re-skim the entire passage from scratch before answering each individual question.",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 0,
+  "difficulty": 1,
+  "explanation": "Read the title first \u2014 it names the subject and sets up what to expect. Then look at any subheadings or diagrams before moving to the paragraphs.",
+  "hint": "It sits at the very top and names the topic.",
+  "id": "ielts-rd-sk-015",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "The title"
+   },
+   {
+    "id": "b",
+    "text": "The last paragraph"
+   },
+   {
+    "id": "c",
+    "text": "The first question"
+   },
+   {
+    "id": "d",
+    "text": "Every word of paragraph 1"
+   }
+  ],
+  "skill": "skimming",
+  "source": "British Council IELTS \u2014 'Skimming vs Scanning for IELTS Reading: Definitions & Tips' (takeielts.britishcouncil.org) \u2014 read the title and subheadings",
+  "status": "draft-pending-sme-review",
+  "stem": "What is the FIRST thing to read when you start skimming a passage?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 1,
+  "difficulty": 1,
+  "explanation": "The first sentence (the topic sentence) usually states the paragraph's main idea, and the last sentence often restates or concludes it. Reading these two gives you the gist without the supporting details in between.",
+  "hint": "Where do writers usually place the main point of a paragraph?",
+  "id": "ielts-rd-sk-016",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "Only the middle sentences"
+   },
+   {
+    "id": "b",
+    "text": "The first and last sentences of each paragraph"
+   },
+   {
+    "id": "c",
+    "text": "Only sentences containing numbers"
+   },
+   {
+    "id": "d",
+    "text": "The longest sentence in each paragraph"
+   }
+  ],
+  "skill": "skimming",
+  "source": "British Council IELTS \u2014 'Skimming vs Scanning for IELTS Reading: Definitions & Tips' (takeielts.britishcouncil.org) \u2014 first and last sentences",
+  "status": "draft-pending-sme-review",
+  "stem": "While skimming, which sentences should you pay most attention to?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 2,
+  "difficulty": 1,
+  "explanation": "Focus on content words \u2014 the nouns, main verbs, and adjectives that carry the meaning. Skip the small grammatical words; your brain fills those in automatically. This is how you move fast and still catch the main ideas.",
+  "hint": "Which words would survive if you deleted every 'the', 'is', and 'and'?",
+  "id": "ielts-rd-sk-017",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "Small grammar words like 'the', 'and', 'of'"
+   },
+   {
+    "id": "b",
+    "text": "Words you have never seen before"
+   },
+   {
+    "id": "c",
+    "text": "Content words \u2014 nouns, main verbs, adjectives that carry meaning"
+   },
+   {
+    "id": "d",
+    "text": "Only the words that appear in the questions"
+   }
+  ],
+  "skill": "skimming",
+  "source": "British Council IELTS \u2014 'Skimming vs Scanning for IELTS Reading: Definitions & Tips' (takeielts.britishcouncil.org) \u2014 identify content words",
+  "status": "draft-pending-sme-review",
+  "stem": "While skimming, which words should you focus on?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 3,
+  "difficulty": 1,
+  "explanation": "Keep going. Skimming aims at the general meaning, and one unknown word rarely blocks that. Stopping to decode every new word turns your skim into slow intensive reading and costs time.",
+  "hint": "The British Council says: ignore unknown words. Why would that be good advice?",
+  "id": "ielts-rd-sk-018",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "Stop and try to work out its exact meaning"
+   },
+   {
+    "id": "b",
+    "text": "Write it down to memorise after the test"
+   },
+   {
+    "id": "c",
+    "text": "Start the passage again, more slowly"
+   },
+   {
+    "id": "d",
+    "text": "Skip it and keep moving \u2014 you only need the general meaning"
+   }
+  ],
+  "skill": "skimming",
+  "source": "British Council IELTS \u2014 'Skimming vs Scanning for IELTS Reading: Definitions & Tips' (takeielts.britishcouncil.org) \u2014 ignore unknown words",
+  "status": "draft-pending-sme-review",
+  "stem": "You meet an unfamiliar word while skimming. What should you do?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 0,
+  "difficulty": 1,
+  "explanation": "Writers use headings, diagrams, and emphasis (bold, italics, capitals) to signal structure and key terms. Noticing them during a skim helps you see how the text is organised.",
+  "hint": "Which of these did the writer use to highlight important ideas?",
+  "id": "ielts-rd-sk-019",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "Headings, subheadings, diagrams, and words in bold, italics, or capitals"
+   },
+   {
+    "id": "b",
+    "text": "The page numbers"
+   },
+   {
+    "id": "c",
+    "text": "The font style of the test paper"
+   },
+   {
+    "id": "d",
+    "text": "The copyright notice at the bottom"
+   }
+  ],
+  "skill": "skimming",
+  "source": "British Council IELTS \u2014 'Skimming vs Scanning for IELTS Reading: Definitions & Tips' (takeielts.britishcouncil.org) \u2014 titles, headings, special features",
+  "status": "draft-pending-sme-review",
+  "stem": "While skimming, which features are worth noticing?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 2,
+  "difficulty": 1,
+  "explanation": "Repeated words and ideas point to the topic. Writers repeat key terms because the paragraph is about them. Spotting repetition during a skim is a fast way to catch what each paragraph covers.",
+  "hint": "Why would a writer repeat the same idea in different words?",
+  "id": "ielts-rd-sk-020",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "The passage is badly written"
+   },
+   {
+    "id": "b",
+    "text": "You should memorise these spellings"
+   },
+   {
+    "id": "c",
+    "text": "Sleep is probably the paragraph's topic"
+   },
+   {
+    "id": "d",
+    "text": "Nothing \u2014 repetition means nothing"
+   }
+  ],
+  "skill": "skimming",
+  "source": "British Council IELTS \u2014 'Skimming vs Scanning for IELTS Reading: Definitions & Tips' (takeielts.britishcouncil.org) \u2014 pay attention to repeated words",
+  "status": "draft-pending-sme-review",
+  "stem": "While skimming, you notice the words 'sleep', 'sleeping', and 'sleeplessness' appearing again and again. What does this tell you?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 2,
+  "difficulty": 1,
+  "explanation": "A skim should take just a few minutes \u2014 around 2\u20133 minutes per passage. That is enough to map the structure and main ideas. Spending much longer means you're reading intensively, not skimming, and your 20-minutes-per-passage budget will break. In practice, train by skimming short articles in 30\u2013120 seconds.",
+  "hint": "A skim is quick by definition. Which option is quick but realistic?",
+  "id": "ielts-rd-sk-021",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "15\u201320 minutes"
+   },
+   {
+    "id": "b",
+    "text": "30 seconds with your eyes closed"
+   },
+   {
+    "id": "c",
+    "text": "About 2\u20133 minutes"
+   },
+   {
+    "id": "d",
+    "text": "As long as it takes to understand everything"
+   }
+  ],
+  "skill": "skimming",
+  "source": "British Council Singapore \u2014 'Top five tips for IELTS success' (britishcouncil.sg) \u2014 practise skimming in 30\u2013120 seconds; IDP IELTS \u2014 20-minute per-passage budget",
+  "status": "draft-pending-sme-review",
+  "stem": "About how long should you spend skimming one passage?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 0,
+  "difficulty": 1,
+  "explanation": "The title names 'Urban Beekeeping' and the first sentences repeat the idea of beehives in cities. The passage is mainly about the growth of beekeeping in cities. Pesticides and honey-making are supporting details.",
+  "hint": "The title plus the repeated idea in the first sentences \u2014 what keeps coming up?",
+  "id": "ielts-rd-sk-022",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "The growth of beekeeping in cities"
+   },
+   {
+    "id": "b",
+    "text": "The dangers of pesticides on farms"
+   },
+   {
+    "id": "c",
+    "text": "How honey is made"
+   },
+   {
+    "id": "d",
+    "text": "Tourism in London and Tokyo"
+   }
+  ],
+  "passage": "Title: The Return of Urban Beekeeping. Paragraph 1: 'In cities from London to Tokyo, beehives are appearing on rooftops and balconies. Urban beekeeping has grown rapidly over the past decade. Supporters say city honey is surprisingly pure, because cities spray fewer pesticides than farmland...'",
+  "skill": "skimming",
+  "source": "British Council IELTS \u2014 'IELTS Academic Reading Preparation' (takeielts.britishcouncil.org) \u2014 read the title and first sentences for the subject",
+  "status": "draft-pending-sme-review",
+  "stem": "After skimming only the title and the first sentences, what is this passage mainly about?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 2,
+  "difficulty": 1,
+  "explanation": "Paragraph 2's first sentence mentions 'the main obstacle' \u2014 cost. 'Obstacle' signals problems and disadvantages. This is exactly how a skim maps a passage: first sentences tell you which paragraph covers what.",
+  "hint": "Which first sentence mentions a difficulty?",
+  "id": "ielts-rd-sk-023",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "Paragraph 1"
+   },
+   {
+    "id": "b",
+    "text": "Paragraph 3"
+   },
+   {
+    "id": "c",
+    "text": "Paragraph 2"
+   },
+   {
+    "id": "d",
+    "text": "None of them"
+   }
+  ],
+  "passage": "You skim only the first sentence of each paragraph of a passage about electric buses. P1: 'Electric buses are replacing diesel fleets in many large cities.' P2: 'The main obstacle is the cost of batteries and charging stations.' P3: 'Despite the cost, several cities report cleaner air within two years of switching.'",
+  "skill": "skimming",
+  "source": "British Council IELTS \u2014 'Skimming vs Scanning for IELTS Reading: Definitions & Tips' (takeielts.britishcouncil.org) \u2014 first sentences carry the main idea",
+  "status": "draft-pending-sme-review",
+  "stem": "Which paragraph most likely discusses problems or disadvantages?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 2,
+  "difficulty": 1,
+  "explanation": "The first sentence says libraries are 'changing their role', and the last sentence concludes they are 'becoming a community workshop, not just a storehouse of books.' The main idea sits in the first and last sentences; the middle gives examples.",
+  "hint": "Check the first and last sentences \u2014 what idea appears in both?",
+  "id": "ielts-rd-sk-024",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "Books are disappearing from libraries"
+   },
+   {
+    "id": "b",
+    "text": "3D printers are too expensive for libraries"
+   },
+   {
+    "id": "c",
+    "text": "Libraries are becoming community workshops, not just book stores"
+   },
+   {
+    "id": "d",
+    "text": "Seeds should be planted in spring"
+   }
+  ],
+  "passage": "'Public libraries are changing their role in the digital age. Many now lend tools, instruments, and even seeds alongside books. Some offer 3D printers and recording studios free of charge. In short, the modern library is becoming a community workshop, not just a storehouse of books.'",
+  "skill": "skimming",
+  "source": "British Council IELTS \u2014 'Skimming vs Scanning for IELTS Reading: Definitions & Tips' (takeielts.britishcouncil.org) \u2014 first and last sentences",
+  "status": "draft-pending-sme-review",
+  "stem": "Skim the paragraph above. What is its main idea?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 0,
+  "difficulty": 1,
+  "explanation": "No. The British Council advises: don't aim to 'understand' everything while skimming \u2014 just pick up as many clues as you can. Deep understanding happens later, when you read intensively around the answers.",
+  "hint": "The British Council's practice advice: don't aim to 'understand' everything.",
+  "id": "ielts-rd-sk-025",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "No \u2014 collect clues about the general meaning; full understanding comes later"
+   },
+   {
+    "id": "b",
+    "text": "Yes \u2014 otherwise the skim is useless"
+   },
+   {
+    "id": "c",
+    "text": "Only for the first paragraph"
+   },
+   {
+    "id": "d",
+    "text": "Yes, but only for vocabulary questions"
+   }
+  ],
+  "skill": "skimming",
+  "source": "British Council Singapore \u2014 'Top five tips for IELTS success' (britishcouncil.sg) \u2014 don't aim to 'understand' everything",
+  "status": "draft-pending-sme-review",
+  "stem": "While skimming, should you try to fully understand every sentence?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 2,
+  "difficulty": 1,
+  "explanation": "No \u2014 dictionaries are not allowed in the test. That is exactly why skimming trains you to keep going past unknown words and work out the general meaning from context.",
+  "hint": "If dictionaries were allowed, would 'ignore unknown words' be such important advice?",
+  "id": "ielts-rd-sk-026",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "Yes, for the whole test"
+   },
+   {
+    "id": "b",
+    "text": "Yes, but only for 5 minutes"
+   },
+   {
+    "id": "c",
+    "text": "No"
+   },
+   {
+    "id": "d",
+    "text": "Yes, but only a paper dictionary"
+   }
+  ],
+  "skill": "skimming",
+  "source": "IDP IELTS \u2014 'IELTS Reading: Practice Tests & Tips (Updated 2026)' (ielts.idp.com) \u2014 test format FAQs",
+  "status": "draft-pending-sme-review",
+  "stem": "Can you use a dictionary during the IELTS Reading test?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 3,
+  "difficulty": 1,
+  "explanation": "Reading every word slowly is intensive reading, not skimming. Good skimming is fast and selective: title, first/last sentences, content words, repeated ideas \u2014 while skipping grammar words and unknown vocabulary.",
+  "hint": "Three of these are fast. One is slow.",
+  "id": "ielts-rd-sk-027",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "Reading the title and first sentences"
+   },
+   {
+    "id": "b",
+    "text": "Noticing repeated key words"
+   },
+   {
+    "id": "c",
+    "text": "Ignoring small grammar words"
+   },
+   {
+    "id": "d",
+    "text": "Reading every word slowly from start to finish"
+   }
+  ],
+  "skill": "skimming",
+  "source": "British Council IELTS \u2014 'Skimming vs Scanning for IELTS Reading: Definitions & Tips' (takeielts.britishcouncil.org) \u2014 how to skim effectively",
+  "status": "draft-pending-sme-review",
+  "stem": "Which of these is NOT good skimming?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 3,
+  "difficulty": 1,
+  "explanation": "Skip the details. Examples, names, and dates support the main idea \u2014 they are not the main idea. A skimmer glides past them and keeps the general point. You can return to the details later with scanning if a question needs them.",
+  "hint": "Are examples the main course or the garnish?",
+  "id": "ielts-rd-sk-028",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "Stop and memorise every name and date"
+   },
+   {
+    "id": "b",
+    "text": "Read the example twice to understand it fully"
+   },
+   {
+    "id": "c",
+    "text": "Re-read the paragraph from the start, slowly"
+   },
+   {
+    "id": "d",
+    "text": "Skip the details and keep the general point \u2014 return later only if a question needs them"
+   }
+  ],
+  "skill": "skimming",
+  "source": "British Council IELTS \u2014 'Skimming vs Scanning for IELTS Reading: Definitions & Tips' (takeielts.britishcouncil.org) \u2014 focus on general meaning, ignore details",
+  "status": "draft-pending-sme-review",
+  "stem": "While skimming, you reach a long example full of names and dates. What should you do?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 1,
+  "difficulty": 1,
+  "explanation": "Answer only from the text. IELTS Reading tests what the passage says, not what you believe. Even if you disagree with the writer, the correct answer is the one supported by the passage \u2014 never use outside knowledge.",
+  "hint": "Whose opinion is being tested \u2014 yours or the writer's?",
+  "id": "ielts-rd-sk-029",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "Skip the question entirely"
+   },
+   {
+    "id": "b",
+    "text": "Answer from the text only, not from your own opinion"
+   },
+   {
+    "id": "c",
+    "text": "Answer with your own opinion \u2014 it is probably correct"
+   },
+   {
+    "id": "d",
+    "text": "Change the passage to match your view"
+   }
+  ],
+  "skill": "skimming",
+  "source": "IDP IELTS \u2014 'IELTS Reading on Computer: Tips for Speed & Accuracy' (ielts.idp.com) \u2014 answer from the passage; do not assume",
+  "status": "draft-pending-sme-review",
+  "stem": "A question asks what the writer thinks. You personally disagree with the writer. What should you do?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 2,
+  "difficulty": 1,
+  "explanation": "With about 20 minutes per passage, spending 15 minutes just reading means almost no time to actually answer. Slow first reads are the classic reason candidates leave questions blank in passages 2 and 3.",
+  "hint": "60 minutes, 3 passages. Do the maths.",
+  "id": "ielts-rd-sk-030",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "The answers will all be wrong"
+   },
+   {
+    "id": "b",
+    "text": "The vocabulary will become too hard"
+   },
+   {
+    "id": "c",
+    "text": "There won't be enough time left for passages 2 and 3"
+   },
+   {
+    "id": "d",
+    "text": "The questions will change"
+   }
+  ],
+  "skill": "skimming",
+  "source": "IDP IELTS \u2014 'IELTS Reading on Computer: Tips for Speed & Accuracy' (ielts.idp.com) \u2014 60 minutes for 40 questions",
+  "status": "draft-pending-sme-review",
+  "stem": "A student reads passage 1 word-by-word for 15 minutes before looking at the questions. What is the biggest risk?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 1,
+  "difficulty": 1,
+  "explanation": "60 minutes. In that hour you must read three long passages and answer 40 questions \u2014 which is why skimming and scanning matter.",
+  "hint": "It's one full hour.",
+  "id": "ielts-rd-sk-031",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "30 minutes"
+   },
+   {
+    "id": "b",
+    "text": "60 minutes"
+   },
+   {
+    "id": "c",
+    "text": "90 minutes"
+   },
+   {
+    "id": "d",
+    "text": "40 minutes"
+   }
+  ],
+  "skill": "skimming",
+  "source": "IDP IELTS \u2014 'IELTS Reading on Computer: Tips for Speed & Accuracy' (ielts.idp.com) \u2014 60 minutes, 40 questions",
+  "status": "draft-pending-sme-review",
+  "stem": "How much time do you get for the IELTS Academic Reading test?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 0,
+  "difficulty": 1,
+  "explanation": "40 questions across three passages. 60 minutes \u00f7 40 questions = roughly 90 seconds per question \u2014 so you can't afford slow reading.",
+  "hint": "That's about one and a half minutes per question.",
+  "id": "ielts-rd-sk-032",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "40"
+   },
+   {
+    "id": "b",
+    "text": "30"
+   },
+   {
+    "id": "c",
+    "text": "60"
+   },
+   {
+    "id": "d",
+    "text": "20"
+   }
+  ],
+  "skill": "skimming",
+  "source": "IDP IELTS \u2014 'IELTS Reading on Computer: Tips for Speed & Accuracy' (ielts.idp.com) \u2014 60 minutes, 40 questions",
+  "status": "draft-pending-sme-review",
+  "stem": "How many questions are in the IELTS Academic Reading test?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 2,
+  "difficulty": 1,
+  "explanation": "Three long academic passages. They get progressively harder, so many candidates budget slightly less time for passage 1 and more for passage 3.",
+  "hint": "Fewer than the General Training sections, but longer texts.",
+  "id": "ielts-rd-sk-033",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "1"
+   },
+   {
+    "id": "b",
+    "text": "2"
+   },
+   {
+    "id": "c",
+    "text": "3"
+   },
+   {
+    "id": "d",
+    "text": "4"
+   }
+  ],
+  "skill": "skimming",
+  "source": "IDP IELTS \u2014 'IELTS Reading: Practice Tests & Tips (Updated 2026)' (ielts.idp.com) \u2014 3 sections, 40 questions",
+  "status": "draft-pending-sme-review",
+  "stem": "How many passages are in the IELTS Academic Reading test?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 3,
+  "difficulty": 1,
+  "explanation": "About 20 minutes per passage (60 \u00f7 3). A common split is ~2\u20133 minutes skimming, ~15 minutes answering, and a couple of minutes checking.",
+  "hint": "Divide the hour by the number of passages.",
+  "id": "ielts-rd-sk-034",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "5 minutes"
+   },
+   {
+    "id": "b",
+    "text": "40 minutes"
+   },
+   {
+    "id": "c",
+    "text": "Exactly 13 minutes"
+   },
+   {
+    "id": "d",
+    "text": "About 20 minutes"
+   }
+  ],
+  "skill": "skimming",
+  "source": "IDP IELTS \u2014 'IELTS Reading on Computer: Tips for Speed & Accuracy' (ielts.idp.com) \u2014 time management",
+  "status": "draft-pending-sme-review",
+  "stem": "Roughly how much time should you spend on each passage?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 1,
+  "difficulty": 1,
+  "explanation": "False. There is no extra transfer time in Reading \u2014 you must write answers directly on the answer sheet as you go. Another reason to manage the 60 minutes carefully.",
+  "hint": "In Listening you get 10 minutes to transfer. In Reading...?",
+  "id": "ielts-rd-sk-035",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "True"
+   },
+   {
+    "id": "b",
+    "text": "False"
+   }
+  ],
+  "skill": "skimming",
+  "source": "British Council IELTS \u2014 'IELTS Academic Reading Preparation' (takeielts.britishcouncil.org) \u2014 no additional time for transferring answers",
+  "status": "draft-pending-sme-review",
+  "stem": "Unlike the Listening test, the Reading test gives you extra time to transfer answers to the answer sheet. True or False?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 0,
+  "difficulty": 1,
+  "explanation": "Move on. Every question is worth one mark, so burning five minutes on one hard question steals marks from easier ones later. Guess, mark it, and come back if time allows.",
+  "hint": "One question is worth one mark \u2014 the same as every other question.",
+  "id": "ielts-rd-sk-036",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "Make your best guess, move on, and return later if time remains"
+   },
+   {
+    "id": "b",
+    "text": "Keep searching until you find it"
+   },
+   {
+    "id": "c",
+    "text": "Leave it blank and never return"
+   },
+   {
+    "id": "d",
+    "text": "Re-read the whole passage"
+   }
+  ],
+  "skill": "skimming",
+  "source": "Cambridge IELTS series \u2014 reading strategy sections \u2014 don't waste time on one question",
+  "status": "draft-pending-sme-review",
+  "stem": "You have spent over a minute on one question and still can't find the answer. What should you do?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 3,
+  "difficulty": 1,
+  "explanation": "The first sentence states the main idea (how honeybees navigate); the rest give supporting details (cloudy-day backup, landmarks, the result). Topic sentences usually come first \u2014 which is why skimming first sentences works.",
+  "hint": "The topic sentence states the paragraph's main idea. Which sentence do the others explain?",
+  "id": "ielts-rd-sk-037",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "\u201cOn cloudy days, they read patterns of polarised light in the sky.\u201d"
+   },
+   {
+    "id": "b",
+    "text": "\u201cThey also remember landmarks near the hive, such as trees and buildings.\u201d"
+   },
+   {
+    "id": "c",
+    "text": "\u201cTogether, these skills let a forager fly several kilometres and still find her way home.\u201d"
+   },
+   {
+    "id": "d",
+    "text": "\u201cHoneybees navigate using the position of the sun.\u201d"
+   }
+  ],
+  "passage": "'Honeybees navigate using the position of the sun. On cloudy days, they read patterns of polarised light in the sky. They also remember landmarks near the hive, such as trees and buildings. Together, these skills let a forager fly several kilometres and still find her way home.'",
+  "skill": "skimming",
+  "source": "Cambridge IELTS series \u2014 reading strategy sections \u2014 topic sentences",
+  "status": "draft-pending-sme-review",
+  "stem": "Which sentence is the topic sentence of this paragraph?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 1,
+  "difficulty": 1,
+  "explanation": "The main idea is the overall point: removing parking had positive effects (more foot traffic, steady sales, less pollution). The '700 spaces' and '10%' are supporting details \u2014 skimming teaches you to separate the idea from the evidence.",
+  "hint": "The numbers are details. What is the paragraph saying about them overall?",
+  "id": "ielts-rd-sk-038",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "Oslo removed exactly 700 parking spaces in 2019"
+   },
+   {
+    "id": "b",
+    "text": "Removing city-centre parking had positive effects in Oslo"
+   },
+   {
+    "id": "c",
+    "text": "Shop owners always fear change"
+   },
+   {
+    "id": "d",
+    "text": "Air pollution can be measured"
+   }
+  ],
+  "passage": "'In 2019, the city of Oslo removed 700 parking spaces from its centre. Within a year, foot traffic in the area rose by 10%. Shop owners, who had feared losing customers, reported steady sales. Air pollution on the main shopping street fell measurably.'",
+  "skill": "skimming",
+  "source": "British Council IELTS \u2014 'Skimming vs Scanning for IELTS Reading: Definitions & Tips' (takeielts.britishcouncil.org) \u2014 main ideas vs details",
+  "status": "draft-pending-sme-review",
+  "stem": "What is the main idea of this paragraph?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 0,
+  "difficulty": 1,
+  "explanation": "Option (a) captures the whole paragraph: the reefs' outsized importance (biodiversity, protection, livelihoods) plus the threat (bleaching). The other options pick single details. Gist = the whole idea in brief.",
+  "hint": "A good summary covers the whole paragraph, not just one detail.",
+  "id": "ielts-rd-sk-039",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "Coral reefs are small but vital, and they are under threat"
+   },
+   {
+    "id": "b",
+    "text": "The ocean floor is mostly empty"
+   },
+   {
+    "id": "c",
+    "text": "Tourism employs 500 million people"
+   },
+   {
+    "id": "d",
+    "text": "Waves damage coastlines"
+   }
+  ],
+  "passage": "'Coral reefs cover less than 1% of the ocean floor, yet they support about a quarter of all marine species. They protect coastlines by absorbing wave energy. They also sustain the livelihoods of over 500 million people through fishing and tourism. Despite their importance, warming seas are bleaching reefs worldwide.'",
+  "skill": "skimming",
+  "source": "British Council IELTS \u2014 'IELTS Academic Reading Preparation' (takeielts.britishcouncil.org) \u2014 skimming for the general idea",
+  "status": "draft-pending-sme-review",
+  "stem": "Which is the best one-sentence summary (gist) of this paragraph?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 2,
+  "difficulty": 1,
+  "explanation": "The paragraph opens with a common belief, then 'however' pivots to the writer's real point: total calories matter more than timing. Skimmers watch for contrast words because they often mark where the main idea actually sits.",
+  "hint": "Contrast words like 'however' and 'but' often signal the writer's true position.",
+  "id": "ielts-rd-sk-040",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "In the first sentence, which states the common assumption"
+   },
+   {
+    "id": "b",
+    "text": "In the last sentence, which gives the conclusion"
+   },
+   {
+    "id": "c",
+    "text": "After the contrast word 'however' \u2014 the real point overturns the assumption"
+   },
+   {
+    "id": "d",
+    "text": "In the middle, where the studies are described"
+   }
+  ],
+  "passage": "'Many people assume that eating late at night causes weight gain. Several studies, however, show that total daily calories matter far more than meal timing. People who eat late tend to consume more overall, which explains the link. In short, it is overeating \u2014 not the clock \u2014 that drives the effect.'",
+  "skill": "skimming",
+  "source": "Cambridge IELTS series \u2014 reading strategy sections \u2014 contrast signals",
+  "status": "draft-pending-sme-review",
+  "stem": "This paragraph contains a contrast word. Where does the writer's main point appear?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 3,
+  "difficulty": 1,
+  "explanation": "'Salt's historic value and influence' covers everything: its worth, the salary link, food preservation, and trade routes. The other headings are too narrow (one detail each) or off-topic \u2014 a classic matching-headings trap.",
+  "hint": "The heading must cover the whole paragraph \u2014 salary, preservation, and trade routes.",
+  "id": "ielts-rd-sk-041",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "How refrigeration was invented"
+   },
+   {
+    "id": "b",
+    "text": "The diet of Roman soldiers"
+   },
+   {
+    "id": "c",
+    "text": "Modern salt production methods"
+   },
+   {
+    "id": "d",
+    "text": "Salt's historic value and influence"
+   }
+  ],
+  "passage": "'For centuries, salt was worth its weight in gold. Roman soldiers were sometimes paid in salt, a practice behind the word 'salary'. It preserved food long before refrigeration existed. Today salt is cheap, but its historical value shaped trade routes across continents.'",
+  "skill": "skimming",
+  "source": "Cambridge IELTS series \u2014 reading strategy sections \u2014 match headings by main idea, not details",
+  "status": "draft-pending-sme-review",
+  "stem": "Which heading best fits this paragraph?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 0,
+  "difficulty": 1,
+  "explanation": "The first sentence lists the benefits (saves trees, water, energy) and the last adds the limit (fibres weaken; 5\u20137 cycles). Together they give the paragraph's scope: benefits and limits. First + last sentences are the skimmer's shortcut.",
+  "hint": "First sentence = benefits; last sentence = a limit. Combine them.",
+  "id": "ielts-rd-sk-042",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "The benefits and limits of paper recycling"
+   },
+   {
+    "id": "b",
+    "text": "How to make paper from trees"
+   },
+   {
+    "id": "c",
+    "text": "Why water is wasted in factories"
+   },
+   {
+    "id": "d",
+    "text": "The history of recycling"
+   }
+  ],
+  "passage": "P1: 'Paper recycling saves trees, water, and energy.' [middle sentences describe the recycling process...] 'Even so, recycled paper fibres weaken each time, so paper can only be recycled about five to seven times.'",
+  "skill": "skimming",
+  "source": "British Council IELTS \u2014 'Skimming vs Scanning for IELTS Reading: Definitions & Tips' (takeielts.britishcouncil.org) \u2014 first and last sentences",
+  "status": "draft-pending-sme-review",
+  "stem": "You skim the first and last sentences of this paragraph. What is it mainly about?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 2,
+  "difficulty": 1,
+  "explanation": "Maria's story is one example supporting the main idea (volunteering improves mental health). Skimming trains you to tell general claims apart from the specific evidence beneath them.",
+  "hint": "Details are specific: names, ages, single examples. Main ideas are general.",
+  "id": "ielts-rd-sk-043",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "Volunteering improves mental health"
+   },
+   {
+    "id": "b",
+    "text": "Social contact and purpose both help"
+   },
+   {
+    "id": "c",
+    "text": "Maria, 68, volunteers at a food bank"
+   },
+   {
+    "id": "d",
+    "text": "Volunteering benefits the volunteer"
+   }
+  ],
+  "passage": "'Volunteering improves mental health. A 2020 survey found that regular volunteers reported lower stress levels than non-volunteers. One participant, Maria, 68, said volunteering at a food bank gave her 'a reason to get up in the morning'. Researchers believe the social contact matters as much as the sense of purpose.'",
+  "skill": "skimming",
+  "source": "British Council IELTS \u2014 'Skimming vs Scanning for IELTS Reading: Definitions & Tips' (takeielts.britishcouncil.org) \u2014 main ideas vs details",
+  "status": "draft-pending-sme-review",
+  "stem": "Which of these is a supporting detail, NOT the main idea?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 3,
+  "difficulty": 1,
+  "explanation": "The last sentence states the paragraph's point (short naps help alertness); the earlier sentences set up the contrast with long naps and explain the mechanism. When the opening is background and the end delivers the verdict, the main idea sits at the end \u2014 which is why skimmers check last sentences too.",
+  "hint": "The main idea is the general claim; the rest explains or qualifies it.",
+  "id": "ielts-rd-sk-044",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "\u201cSleep researchers call this grogginess 'sleep inertia'.\u201d"
+   },
+   {
+    "id": "b",
+    "text": "\u201cA short nap avoids the deeper sleep stages that cause it.\u201d"
+   },
+   {
+    "id": "c",
+    "text": "\u201cLonger naps, however, often leave people groggy.\u201d"
+   },
+   {
+    "id": "d",
+    "text": "\u201cNapping for 20 minutes can improve alertness.\u201d"
+   }
+  ],
+  "passage": "'Longer naps often leave people groggy. Sleep researchers call this grogginess 'sleep inertia'. A short nap avoids the deeper sleep stages that cause it. Napping for 20 minutes can improve alertness.'",
+  "skill": "skimming",
+  "source": "Cambridge IELTS series \u2014 reading strategy sections \u2014 main idea in first or last sentence",
+  "status": "draft-pending-sme-review",
+  "stem": "Skim the paragraph. Which sentence best expresses the main idea?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 3,
+  "difficulty": 1,
+  "explanation": "The paragraph contrasts the flight's brevity (12 seconds, 36 metres) with its huge impact ('changed transportation forever'). The main idea is that contrast: a tiny flight with enormous consequences.",
+  "hint": "First sentence = the event; last sentences = its significance. What's the paragraph really about?",
+  "id": "ielts-rd-sk-045",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "how long modern jumbo jets are"
+   },
+   {
+    "id": "b",
+    "text": "the geography of Kitty Hawk"
+   },
+   {
+    "id": "c",
+    "text": "why 12 seconds is a short time"
+   },
+   {
+    "id": "d",
+    "text": "a brief first flight with enormous historical impact"
+   }
+  ],
+  "passage": "'In 1903, the Wright brothers flew for 12 seconds at Kitty Hawk. The flight covered just 36 metres \u2014 less than the wingspan of a modern jumbo jet. Yet those 12 seconds changed transportation forever. Within decades, aeroplanes crossed oceans and shrank the world.'",
+  "skill": "skimming",
+  "source": "British Council IELTS \u2014 'IELTS Academic Reading Preparation' (takeielts.britishcouncil.org) \u2014 skimming for the general idea",
+  "status": "draft-pending-sme-review",
+  "stem": "This paragraph is mainly about ___.",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 0,
+  "difficulty": 1,
+  "explanation": "'Becoming workshops, studios, and shelters' signals a passage about libraries changing their role. Titles and subheadings preview the topic \u2014 reading them is step one of a good skim.",
+  "hint": "The subheading says libraries are 'becoming' something new. What kind of change is that?",
+  "id": "ielts-rd-sk-046",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "How libraries are changing their role"
+   },
+   {
+    "id": "b",
+    "text": "The history of book printing"
+   },
+   {
+    "id": "c",
+    "text": "Famous library buildings"
+   },
+   {
+    "id": "d",
+    "text": "Why people stopped reading"
+   }
+  ],
+  "passage": "Title: 'The Library of the Future'. Subheading: 'Why buildings full of books are becoming workshops, studios, and shelters'.",
+  "skill": "skimming",
+  "source": "British Council IELTS \u2014 'Skimming vs Scanning for IELTS Reading: Definitions & Tips' (takeielts.britishcouncil.org) \u2014 read the title and subheadings",
+  "status": "draft-pending-sme-review",
+  "stem": "From the title and subheading alone, what will this passage most likely discuss?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 1,
+  "difficulty": 1,
+  "explanation": "This is a 'matching information' style task \u2014 you need the paragraph whose topic is disadvantages. Skim first to map which paragraph covers what, then scan that paragraph for the detail. Scanning for 'wind' alone won't work because the word appears everywhere.",
+  "hint": "The question asks about a paragraph's topic (disadvantages), not a single fact.",
+  "id": "ielts-rd-sk-047",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "Read the whole passage carefully from the start"
+   },
+   {
+    "id": "b",
+    "text": "Skim the paragraphs to find which one is about disadvantages, then scan it"
+   },
+   {
+    "id": "c",
+    "text": "Scan the passage for the word 'wind'"
+   },
+   {
+    "id": "d",
+    "text": "Guess paragraph 3"
+   }
+  ],
+  "skill": "skimming",
+  "source": "IDP IELTS \u2014 'IELTS Reading on Computer: Tips for Speed & Accuracy' (ielts.idp.com) \u2014 skim, then scan",
+  "status": "draft-pending-sme-review",
+  "stem": "A question asks: 'In which paragraph does the writer discuss the disadvantages of wind power?' What is your FIRST step?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 2,
+  "difficulty": 1,
+  "explanation": "Correct skimming = title \u2192 first/last sentences \u2192 repeated ideas, all done quickly. The other options describe intensive reading (a, b) or a different strategy altogether (d).",
+  "hint": "Only one option is fast and selective.",
+  "id": "ielts-rd-sk-048",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "Read every word of each paragraph twice"
+   },
+   {
+    "id": "b",
+    "text": "Stop to memorise each new word"
+   },
+   {
+    "id": "c",
+    "text": "Read the title, then the first and last sentence of each paragraph, noting repeated ideas"
+   },
+   {
+    "id": "d",
+    "text": "Answer all the questions before looking at the passage"
+   }
+  ],
+  "skill": "skimming",
+  "source": "British Council IELTS \u2014 'Skimming vs Scanning for IELTS Reading: Definitions & Tips' (takeielts.britishcouncil.org) \u2014 how to skim effectively",
+  "status": "draft-pending-sme-review",
+  "stem": "Which of these is a CORRECT skimming step?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 3,
+  "difficulty": 1,
+  "explanation": "A skim must be fast. Stopping at every unknown word converts it into slow intensive reading, which burns the 20-minute passage budget. Unknown words should be skipped during the skim \u2014 their exact meaning rarely matters for the main idea.",
+  "hint": "What is a skim supposed to be \u2014 fast or slow?",
+  "id": "ielts-rd-sk-049",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "Nothing \u2014 this is excellent preparation"
+   },
+   {
+    "id": "b",
+    "text": "Underlining is not allowed in the test"
+   },
+   {
+    "id": "c",
+    "text": "The student should underline whole sentences instead"
+   },
+   {
+    "id": "d",
+    "text": "It turns the skim into slow intensive reading and wastes time"
+   }
+  ],
+  "skill": "skimming",
+  "source": "British Council IELTS \u2014 'Skimming vs Scanning for IELTS Reading: Definitions & Tips' (takeielts.britishcouncil.org) \u2014 ignore unknown words",
+  "status": "draft-pending-sme-review",
+  "stem": "During the first quick read, a student underlines every unfamiliar word and works out each meaning. What is wrong with this?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 0,
+  "difficulty": 1,
+  "explanation": "The standard sequence: (1) skim for the subject and structure, (2) read each question carefully to know your target, (3) scan for keywords, (4) read intensively around the match to confirm the answer. Each step narrows the focus.",
+  "hint": "Big picture first, then targets, then close reading.",
+  "id": "ielts-rd-sk-050",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "Skim the passage \u2192 read the questions carefully \u2192 scan for keywords \u2192 read intensively around matches"
+   },
+   {
+    "id": "b",
+    "text": "Read every word \u2192 answer the questions \u2192 check answers"
+   },
+   {
+    "id": "c",
+    "text": "Answer questions from memory \u2192 skim to confirm"
+   },
+   {
+    "id": "d",
+    "text": "Scan for answers \u2192 skim \u2192 read intensively"
+   }
+  ],
+  "skill": "skimming",
+  "source": "British Council IELTS \u2014 'IELTS Academic Reading Preparation' (takeielts.britishcouncil.org) \u2014 skim, scan, then intensive reading",
+  "status": "draft-pending-sme-review",
+  "stem": "What is the recommended order for tackling an IELTS Reading passage?",
+  "type": "mcq",
+  "version": 1
+ }
+]

@@ -18,17 +18,18 @@
   "attached_question_ids": [],
   "channel": "Amoeba Sisters",
   "duration": "~9 min",
-  "lesson_topic": "Digestion and absorption — alimentary canal, glands, digestion of food",
+  "lesson_topic": "Human digestive system tour - alimentary canal parts, accessory organs, disorders",
   "level": "L1",
   "platform": "youtube",
   "title": "Digestive System",
   "transcript_key_points": [
-   "Ingestion, digestion, absorption, elimination",
-   "Mouth, esophagus, stomach, small intestine, large intestine",
-   "Mechanical vs chemical digestion",
-   "Accessory organs: liver, pancreas, glands"
+   "Ingestion, digestion, absorption, elimination - the four stages",
+   "Mouth, oesophagus, stomach, small intestine, large intestine tour",
+   "Accessory organs (liver, pancreas, salivary glands) and digestive disorders"
   ],
-  "video_url": "https://www.youtube.com/watch?v=1UvuBYUbFk0"
+  "video_url": "https://www.youtube.com/watch?v=1UvuBYUbFk0",
+  "skill": "digestion-absorption",
+  "credit": "Embedded, not re-uploaded. Original by Amoeba Sisters on YouTube."
  },
  {
   "attached_question_ids": [],
@@ -301,5 +302,41 @@
    "neet-bio-hp-exc-030"
   ],
   "credit": "Free educational video (YouTube) — embedded with attribution; not our content."
+ },
+ {
+  "title": "Absorption of Digested Food | Small Intestine, Villi & Nutrient Absorption | Class 11 Biology",
+  "channel": "Elearnin",
+  "video_url": "https://www.youtube.com/watch?v=hTEauO9K_Po",
+  "lesson_topic": "Absorption of digested products - villi, microvilli, transport mechanisms, fat absorption",
+  "skill": "digestion-absorption",
+  "level": "L1",
+  "platform": "youtube",
+  "duration": "~10 min",
+  "transcript_key_points": [
+   "Villi and microvilli increase absorptive surface area",
+   "Passive, facilitated and active transport of glucose and amino acids",
+   "Fat absorption via micelles and chylomicrons into lacteals",
+   "Assimilation, defecation and role of the large intestine"
+  ],
+  "attached_question_ids": [],
+  "credit": "Embedded, not re-uploaded. Original by Elearnin on YouTube."
+ },
+ {
+  "title": "Human Digestive System Explained in 10 Minutes | Complete Food Journey | Digestion Process",
+  "channel": "SPClasses",
+  "video_url": "https://www.youtube.com/watch?v=3sRKyLCFLNQ",
+  "lesson_topic": "Complete food journey - mouth to anus, enzymes, bile, villi, large intestine",
+  "skill": "digestion-absorption",
+  "level": "L1",
+  "platform": "youtube",
+  "duration": "~10 min",
+  "transcript_key_points": [
+   "Salivary amylase, peristalsis, stomach acid and chyme formation",
+   "Liver/bile emulsification and pancreatic enzymes in the small intestine",
+   "Nutrient absorption through intestinal villi",
+   "Water absorption in the large intestine and egestion"
+  ],
+  "attached_question_ids": [],
+  "credit": "Embedded, not re-uploaded. Original by SPClasses on YouTube."
  }
 ]

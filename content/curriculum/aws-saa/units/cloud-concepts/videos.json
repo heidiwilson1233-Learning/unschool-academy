@@ -1,5 +1,5 @@
 {
-  "curation_note": "Free YouTube embeds only \u2014 never re-uploaded, always channel-attributed. Durations left null (not verified without a live browser); verify before the lesson player displays them.",
+  "curation_note": "Free YouTube embeds only — never re-uploaded, always channel-attributed. Durations left null (not verified without a live browser); verify before the lesson player displays them.",
   "level": "L1",
   "videos": [
     {
@@ -16,12 +16,12 @@
         "aws-saa-cc-cb-022"
       ],
       "channel": "freeCodeCamp.org (instructor: Andrew Brown, ExamPro)",
-      "credit": "freeCodeCamp.org \u2014 'AWS Certified Solutions Architect - Associate 2020' by Andrew Brown (ExamPro). Used with attribution; not re-uploaded.",
+      "credit": "freeCodeCamp.org — 'AWS Certified Solutions Architect - Associate 2020' by Andrew Brown (ExamPro). Used with attribution; not re-uploaded.",
       "duration": null,
       "lesson_topic": "What is cloud computing, six advantages of cloud, CapEx vs OpEx, pay-as-you-go, elasticity",
       "level": "L1",
       "platform": "youtube",
-      "title": "AWS Certified Solutions Architect - Associate 2020 (freeCodeCamp full course) \u2014 Introduction / Cloud Concepts sections",
+      "title": "AWS Certified Solutions Architect - Associate 2020 (freeCodeCamp full course) — Introduction / Cloud Concepts sections",
       "transcript_key_points": [
         "Cloud computing = on-demand IT resources over the internet, pay-as-you-go",
         "Six advantages: trade CapEx for OpEx, economies of scale, stop guessing capacity, speed and agility, stop running data centers, go global in minutes",
@@ -40,12 +40,12 @@
         "aws-saa-cc-cb-027"
       ],
       "channel": "freeCodeCamp.org (instructor: Andrew Brown, ExamPro)",
-      "credit": "freeCodeCamp.org \u2014 same course as above. Used with attribution; not re-uploaded.",
+      "credit": "freeCodeCamp.org — same course as above. Used with attribution; not re-uploaded.",
       "duration": null,
       "lesson_topic": "AWS Global Infrastructure: Regions, Availability Zones, edge locations",
       "level": "L1",
       "platform": "youtube",
-      "title": "AWS Certified Solutions Architect - Associate 2020 (freeCodeCamp full course) \u2014 AWS Global Infrastructure section",
+      "title": "AWS Certified Solutions Architect - Associate 2020 (freeCodeCamp full course) — AWS Global Infrastructure section",
       "transcript_key_points": [
         "Region = geographic area with multiple isolated AZs",
         "AZ = discrete data centers with redundant power/networking",
@@ -64,12 +64,12 @@
         "aws-saa-cc-cb-030"
       ],
       "channel": "freeCodeCamp.org (instructor: Andrew Brown, ExamPro)",
-      "credit": "freeCodeCamp.org \u2014 same course as above. Used with attribution; not re-uploaded.",
+      "credit": "freeCodeCamp.org — same course as above. Used with attribution; not re-uploaded.",
       "duration": null,
       "lesson_topic": "Shared Responsibility Model: security OF the cloud vs security IN the cloud",
       "level": "L1",
       "platform": "youtube",
-      "title": "AWS Certified Solutions Architect - Associate 2020 (freeCodeCamp full course) \u2014 Shared Responsibility Model section",
+      "title": "AWS Certified Solutions Architect - Associate 2020 (freeCodeCamp full course) — Shared Responsibility Model section",
       "transcript_key_points": [
         "AWS: security OF the cloud (hardware, facilities, virtualization)",
         "Customer: security IN the cloud (data, OS, IAM, firewall config)",
@@ -88,25 +88,25 @@
         "aws-saa-cc-cb-028"
       ],
       "channel": "freeCodeCamp.org (instructor: Andrew Brown, ExamPro)",
-      "credit": "freeCodeCamp.org \u2014 same course as above. Used with attribution; not re-uploaded.",
+      "credit": "freeCodeCamp.org — same course as above. Used with attribution; not re-uploaded.",
       "duration": null,
       "lesson_topic": "Deployment models (public, private, hybrid) and service models (IaaS, PaaS, SaaS)",
       "level": "L1",
       "platform": "youtube",
-      "title": "AWS Certified Solutions Architect - Associate 2020 (freeCodeCamp full course) \u2014 Cloud deployment and service models section",
+      "title": "AWS Certified Solutions Architect - Associate 2020 (freeCodeCamp full course) — Cloud deployment and service models section",
       "transcript_key_points": [
         "Public vs private vs hybrid deployment",
-        "IaaS (EC2) vs PaaS (Elastic Beanstalk) vs SaaS (WorkMail) \u2014 who manages what"
+        "IaaS (EC2) vs PaaS (Elastic Beanstalk) vs SaaS (WorkMail) — who manages what"
       ],
       "video_url": "https://www.youtube.com/watch?v=Ia-UEYYR44s"
     },
     {
-      "title": "AWS Certified Solutions Architect - Associate 2020 (freeCodeCamp full course) \u2014 IAM deep-dive: users, groups, roles, policies",
+      "title": "AWS Certified Solutions Architect - Associate 2020 (freeCodeCamp full course) — IAM deep-dive: users, groups, roles, policies",
       "platform": "youtube",
       "level": "L1",
       "video_url": "https://www.youtube.com/watch?v=Ia-UEYYR44s",
       "channel": "freeCodeCamp.org (instructor: Andrew Brown, ExamPro)",
-      "credit": "freeCodeCamp.org \u2014 'AWS Certified Solutions Architect - Associate 2020' by Andrew Brown (ExamPro). Used with attribution; not re-uploaded.",
+      "credit": "freeCodeCamp.org — 'AWS Certified Solutions Architect - Associate 2020' by Andrew Brown (ExamPro). Used with attribution; not re-uploaded.",
       "duration": null,
       "lesson_topic": "IAM fundamentals: users vs groups vs roles, identity-based vs resource-based policies, policy structure",
       "transcript_key_points": [
@@ -129,12 +129,12 @@
       ]
     },
     {
-      "title": "AWS Certified Solutions Architect - Associate 2020 (freeCodeCamp full course) \u2014 IAM security: MFA, root protection, least privilege",
+      "title": "AWS Certified Solutions Architect - Associate 2020 (freeCodeCamp full course) — IAM security: MFA, root protection, least privilege",
       "platform": "youtube",
       "level": "L1",
       "video_url": "https://www.youtube.com/watch?v=Ia-UEYYR44s",
       "channel": "freeCodeCamp.org (instructor: Andrew Brown, ExamPro)",
-      "credit": "freeCodeCamp.org \u2014 same course as above. Used with attribution; not re-uploaded.",
+      "credit": "freeCodeCamp.org — same course as above. Used with attribution; not re-uploaded.",
       "duration": null,
       "lesson_topic": "MFA, root user lockdown, least-privilege principle, credential hygiene",
       "transcript_key_points": [
@@ -158,12 +158,12 @@
       ]
     },
     {
-      "title": "AWS Certified Solutions Architect - Associate 2020 (freeCodeCamp full course) \u2014 IAM roles for EC2 and cross-account access; policy evaluation logic",
+      "title": "AWS Certified Solutions Architect - Associate 2020 (freeCodeCamp full course) — IAM roles for EC2 and cross-account access; policy evaluation logic",
       "platform": "youtube",
       "level": "L1",
       "video_url": "https://www.youtube.com/watch?v=Ia-UEYYR44s",
       "channel": "freeCodeCamp.org (instructor: Andrew Brown, ExamPro)",
-      "credit": "freeCodeCamp.org \u2014 same course as above. Used with attribution; not re-uploaded.",
+      "credit": "freeCodeCamp.org — same course as above. Used with attribution; not re-uploaded.",
       "duration": null,
       "lesson_topic": "Roles for EC2 instance profiles, cross-account roles, trust policies, explicit deny wins, implicit deny",
       "transcript_key_points": [
@@ -180,6 +180,108 @@
         "aws-saa-cc-ib-024",
         "aws-saa-cc-ib-025"
       ]
+    },
+    {
+      "title": "AWS EC2 Tutorial for Beginners: Launch & SSH into Your First Linux Server",
+      "channel": "DevFlow Studios",
+      "video_url": "https://www.youtube.com/watch?v=4mSRaQbjV24",
+      "lesson_topic": "What is EC2, launching an instance, AMIs, instance types, key pairs, security groups, SSH connection, stop vs terminate",
+      "skill": "ec2-basics",
+      "level": "L1",
+      "platform": "youtube",
+      "duration": null,
+      "key_points": [
+        "What EC2 is: virtual servers in the cloud",
+        "AMI selection, instance type choice, key pair download (.pem), security group setup",
+        "Launch an Amazon Linux 2023 instance and SSH in with the private key",
+        "Stop vs terminate — what survives and what does not",
+        "Attaching an IAM role to the instance"
+      ],
+      "attached_question_ids": [
+        "aws-saa-cc-ec2-001",
+        "aws-saa-cc-ec2-002",
+        "aws-saa-cc-ec2-004",
+        "aws-saa-cc-ec2-008",
+        "aws-saa-cc-ec2-016",
+        "aws-saa-cc-ec2-018",
+        "aws-saa-cc-ec2-020",
+        "aws-saa-cc-ec2-040",
+        "aws-saa-cc-ec2-043"
+      ],
+      "credit": "DevFlow Studios — 'AWS EC2 Tutorial for Beginners: Launch & SSH into Your First Linux Server' (AWS for DevOps series). Embedded with attribution; not re-uploaded."
+    },
+    {
+      "title": "Launch Your First AWS EC2 Instance with a Web Server",
+      "channel": "vCloudBitsBytes",
+      "video_url": "https://www.youtube.com/watch?v=lcWKHvQBWJQ",
+      "lesson_topic": "Step-by-step EC2 launch: AMI, instance type, networking, security groups, storage, bootstrap script, web server on public IP",
+      "skill": "ec2-basics",
+      "level": "L1",
+      "platform": "youtube",
+      "duration": null,
+      "key_points": [
+        "AMI selection and instance type choice walkthrough",
+        "Security group configuration and storage settings",
+        "Bootstrap (user-data) script to auto-install a web server",
+        "Accessing the server via public IP"
+      ],
+      "attached_question_ids": [
+        "aws-saa-cc-ec2-004",
+        "aws-saa-cc-ec2-008",
+        "aws-saa-cc-ec2-009",
+        "aws-saa-cc-ec2-018",
+        "aws-saa-cc-ec2-020",
+        "aws-saa-cc-ec2-046"
+      ],
+      "credit": "vCloudBitsBytes — 'Launch Your First AWS EC2 Instance with a Web Server'. Embedded with attribution; not re-uploaded."
+    },
+    {
+      "title": "AWS EC2 and EBS Tutorial for Beginners | Volumes, Snapshots, Attach, Resize & Restore",
+      "channel": "Naveen TechHub",
+      "video_url": "https://www.youtube.com/watch?v=Rwv5K6C1kFs",
+      "lesson_topic": "How EC2 and EBS work together: creating, attaching, resizing volumes; EBS snapshots for backup and restore",
+      "skill": "ec2-basics",
+      "level": "L1",
+      "platform": "youtube",
+      "duration": null,
+      "key_points": [
+        "Launching an EC2 instance and choosing AMI, instance type, key pair, security group",
+        "EBS volumes: create, attach, resize",
+        "EBS snapshots for backup and recovery; restoring data from a snapshot",
+        "Persistent EBS storage vs ephemeral instance store"
+      ],
+      "attached_question_ids": [
+        "aws-saa-cc-ec2-022",
+        "aws-saa-cc-ec2-023",
+        "aws-saa-cc-ec2-024",
+        "aws-saa-cc-ec2-025",
+        "aws-saa-cc-ec2-026",
+        "aws-saa-cc-ec2-049"
+      ],
+      "credit": "Naveen TechHub — 'AWS EC2 and EBS Tutorial for Beginners'. Embedded with attribution; not re-uploaded."
+    },
+    {
+      "title": "How to Launch Windows Server on AWS EC2 | Step-by-Step for Beginners",
+      "channel": "GVspace",
+      "video_url": "https://www.youtube.com/watch?v=4L4SLwDdp5k",
+      "lesson_topic": "Launching a Windows Server EC2 instance and connecting via Remote Desktop (RDP)",
+      "skill": "ec2-basics",
+      "level": "L1",
+      "platform": "youtube",
+      "duration": null,
+      "key_points": [
+        "Selecting a Windows Server AMI and instance type",
+        "Configuring security group rules for RDP access",
+        "Connecting to the Windows desktop using Remote Desktop (RDP)",
+        "Instance details: what to check after launch"
+      ],
+      "attached_question_ids": [
+        "aws-saa-cc-ec2-004",
+        "aws-saa-cc-ec2-018",
+        "aws-saa-cc-ec2-041",
+        "aws-saa-cc-ec2-043"
+      ],
+      "credit": "GVspace — 'How to Launch Windows Server on AWS EC2 | Step-by-Step for Beginners'. Embedded with attribution; not re-uploaded."
     }
   ]
 }

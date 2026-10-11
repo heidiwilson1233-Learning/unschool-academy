@@ -1,0 +1,1602 @@
+[
+  {
+    "id": "ssc-qa-pc-001",
+    "level": "L1",
+    "skill": "percentages",
+    "type": "mcq",
+    "stem": "What is 25% of 400?",
+    "options": [
+      {
+        "id": "a",
+        "text": "80"
+      },
+      {
+        "id": "b",
+        "text": "90"
+      },
+      {
+        "id": "c",
+        "text": "100"
+      },
+      {
+        "id": "d",
+        "text": "110"
+      }
+    ],
+    "answer": 2,
+    "hint": "Per-cent means 'out of a hundred' — turn 25% into a fraction first, then multiply.",
+    "explanation": "Step 1: 25% = 25/100 = 1/4. Step 2: 1/4 of 400 = 400 / 4 = 100.",
+    "difficulty": 1,
+    "source": "R.S. Aggarwal Quantitative Aptitude Ch.10 — Percentages (percent of a quantity)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-pc-002",
+    "level": "L1",
+    "skill": "percentages",
+    "type": "mcq",
+    "stem": "What is 12% of 250?",
+    "options": [
+      {
+        "id": "a",
+        "text": "30"
+      },
+      {
+        "id": "b",
+        "text": "25"
+      },
+      {
+        "id": "c",
+        "text": "35"
+      },
+      {
+        "id": "d",
+        "text": "40"
+      }
+    ],
+    "answer": 0,
+    "hint": "Break 12% into easy parts: 10% plus 2% of the same number.",
+    "explanation": "Step 1: 10% of 250 = 25. Step 2: 2% of 250 = 5. Step 3: 25 + 5 = 30.",
+    "difficulty": 1,
+    "source": "R.S. Aggarwal Quantitative Aptitude Ch.10 — Percentages (percent of a quantity)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-pc-003",
+    "level": "L1",
+    "skill": "percentages",
+    "type": "mcq",
+    "stem": "50 is what percent of 200?",
+    "options": [
+      {
+        "id": "a",
+        "text": "20%"
+      },
+      {
+        "id": "b",
+        "text": "25%"
+      },
+      {
+        "id": "c",
+        "text": "30%"
+      },
+      {
+        "id": "d",
+        "text": "40%"
+      }
+    ],
+    "answer": 1,
+    "hint": "To find 'what percent', make the fraction part divided by whole and multiply by 100.",
+    "explanation": "Step 1: 50/200 = 1/4. Step 2: (1/4) x 100 = 25%.",
+    "difficulty": 1,
+    "source": "R.S. Aggarwal Quantitative Aptitude Ch.10 — Percentages (expressing one quantity as a percent of another)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-pc-004",
+    "level": "L1",
+    "skill": "percentages",
+    "type": "mcq",
+    "stem": "20 is what percent of 80?",
+    "options": [
+      {
+        "id": "a",
+        "text": "20%"
+      },
+      {
+        "id": "b",
+        "text": "30%"
+      },
+      {
+        "id": "c",
+        "text": "35%"
+      },
+      {
+        "id": "d",
+        "text": "25%"
+      }
+    ],
+    "answer": 3,
+    "hint": "Write '20 of 80' as a fraction, simplify it, then convert to a percent.",
+    "explanation": "Step 1: 20/80 = 1/4. Step 2: (1/4) x 100 = 25%.",
+    "difficulty": 1,
+    "source": "NCERT Class 8 Ch.8 — Comparing Quantities (ratios and percentages)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-pc-005",
+    "level": "L1",
+    "skill": "percentages",
+    "type": "mcq",
+    "stem": "Express 3/4 as a percentage.",
+    "options": [
+      {
+        "id": "a",
+        "text": "65%"
+      },
+      {
+        "id": "b",
+        "text": "70%"
+      },
+      {
+        "id": "c",
+        "text": "75%"
+      },
+      {
+        "id": "d",
+        "text": "80%"
+      }
+    ],
+    "answer": 2,
+    "hint": "A fraction becomes a percent when you multiply it by 100.",
+    "explanation": "Step 1: (3/4) x 100 = 300/4. Step 2: 300 / 4 = 75%.",
+    "difficulty": 1,
+    "source": "R.S. Aggarwal Quantitative Aptitude Ch.10 — Percentages (fraction to percent conversion)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-pc-006",
+    "level": "L1",
+    "skill": "percentages",
+    "type": "mcq",
+    "stem": "Express 7/20 as a percentage.",
+    "options": [
+      {
+        "id": "a",
+        "text": "25%"
+      },
+      {
+        "id": "b",
+        "text": "35%"
+      },
+      {
+        "id": "c",
+        "text": "30%"
+      },
+      {
+        "id": "d",
+        "text": "40%"
+      }
+    ],
+    "answer": 1,
+    "hint": "First ask: how do I make the denominator 100? Then convert.",
+    "explanation": "Step 1: 7/20 = 35/100 (multiply top and bottom by 5). Step 2: 35/100 = 35%.",
+    "difficulty": 1,
+    "source": "R.S. Aggarwal Quantitative Aptitude Ch.10 — Percentages (fraction to percent conversion)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-pc-007",
+    "level": "L1",
+    "skill": "percentages",
+    "type": "mcq",
+    "stem": "Express 45% as a fraction in lowest terms.",
+    "options": [
+      {
+        "id": "a",
+        "text": "3/20"
+      },
+      {
+        "id": "b",
+        "text": "7/20"
+      },
+      {
+        "id": "c",
+        "text": "9/20"
+      },
+      {
+        "id": "d",
+        "text": "11/20"
+      }
+    ],
+    "answer": 2,
+    "hint": "45% means 45 per 100. Write it over 100, then divide top and bottom by their GCD.",
+    "explanation": "Step 1: 45% = 45/100. Step 2: GCD of 45 and 100 is 5, so 45/100 = 9/20.",
+    "difficulty": 1,
+    "source": "NCERT Class 8 Ch.8 — Comparing Quantities (ratios and percentages)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-pc-008",
+    "level": "L1",
+    "skill": "percentages",
+    "type": "mcq",
+    "stem": "Express 0.35 as a percentage.",
+    "options": [
+      {
+        "id": "a",
+        "text": "35%"
+      },
+      {
+        "id": "b",
+        "text": "3.5%"
+      },
+      {
+        "id": "c",
+        "text": "0.35%"
+      },
+      {
+        "id": "d",
+        "text": "350%"
+      }
+    ],
+    "answer": 0,
+    "hint": "To go from decimal to percent, shift the decimal point two places right (multiply by 100).",
+    "explanation": "Step 1: 0.35 x 100 = 35. Step 2: Attach the percent sign: 35%.",
+    "difficulty": 1,
+    "source": "R.S. Aggarwal Quantitative Aptitude Ch.10 — Percentages (decimal to percent conversion)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-pc-009",
+    "level": "L1",
+    "skill": "percentages",
+    "type": "mcq",
+    "stem": "Express 125% as a decimal.",
+    "options": [
+      {
+        "id": "a",
+        "text": "0.125"
+      },
+      {
+        "id": "b",
+        "text": "1.25"
+      },
+      {
+        "id": "c",
+        "text": "12.5"
+      },
+      {
+        "id": "d",
+        "text": "0.0125"
+      }
+    ],
+    "answer": 1,
+    "hint": "To go from percent to decimal, shift the decimal point two places left (divide by 100).",
+    "explanation": "Step 1: 125% = 125/100. Step 2: 125 / 100 = 1.25.",
+    "difficulty": 1,
+    "source": "R.S. Aggarwal Quantitative Aptitude Ch.10 — Percentages (percent to decimal conversion)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-pc-010",
+    "level": "L1",
+    "skill": "percentages",
+    "type": "mcq",
+    "stem": "75 is what percent of 500?",
+    "options": [
+      {
+        "id": "a",
+        "text": "10%"
+      },
+      {
+        "id": "b",
+        "text": "12%"
+      },
+      {
+        "id": "c",
+        "text": "20%"
+      },
+      {
+        "id": "d",
+        "text": "15%"
+      }
+    ],
+    "answer": 3,
+    "hint": "Simplify the fraction 75/500 before multiplying by 100.",
+    "explanation": "Step 1: 75/500 = 3/20. Step 2: (3/20) x 100 = 300/20 = 15%.",
+    "difficulty": 1,
+    "source": "NCERT Class 8 Ch.8 — Comparing Quantities (ratios and percentages)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-pc-011",
+    "level": "L1",
+    "skill": "percentages",
+    "type": "mcq",
+    "stem": "Express 1/8 as a percentage.",
+    "options": [
+      {
+        "id": "a",
+        "text": "10%"
+      },
+      {
+        "id": "b",
+        "text": "12.5%"
+      },
+      {
+        "id": "c",
+        "text": "15%"
+      },
+      {
+        "id": "d",
+        "text": "20%"
+      }
+    ],
+    "answer": 1,
+    "hint": "Recall the benchmark: 1/4 is 25%, so half of that (1/8) is half of 25%.",
+    "explanation": "Step 1: (1/8) x 100 = 100/8. Step 2: 100 / 8 = 12.5%.",
+    "difficulty": 1,
+    "source": "R.S. Aggarwal Quantitative Aptitude Ch.10 — Percentages (fraction to percent conversion)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-pc-012",
+    "level": "L1",
+    "skill": "percentages",
+    "type": "mcq",
+    "stem": "Express 5/8 as a percentage.",
+    "options": [
+      {
+        "id": "a",
+        "text": "62.5%"
+      },
+      {
+        "id": "b",
+        "text": "50%"
+      },
+      {
+        "id": "c",
+        "text": "60%"
+      },
+      {
+        "id": "d",
+        "text": "75%"
+      }
+    ],
+    "answer": 0,
+    "hint": "Use the 1/8 value from the benchmark family and multiply.",
+    "explanation": "Step 1: 1/8 = 12.5%. Step 2: 5/8 = 5 x 12.5% = 62.5%.",
+    "difficulty": 1,
+    "source": "R.S. Aggarwal Quantitative Aptitude Ch.10 — Percentages (fraction to percent conversion)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-pc-013",
+    "level": "L1",
+    "skill": "percentages",
+    "type": "mcq",
+    "stem": "Express 0.125 as a percentage.",
+    "options": [
+      {
+        "id": "a",
+        "text": "1.25%"
+      },
+      {
+        "id": "b",
+        "text": "125%"
+      },
+      {
+        "id": "c",
+        "text": "0.125%"
+      },
+      {
+        "id": "d",
+        "text": "12.5%"
+      }
+    ],
+    "answer": 3,
+    "hint": "Decimal to percent: move the point two places to the right.",
+    "explanation": "Step 1: 0.125 x 100 = 12.5. Step 2: The answer is 12.5%.",
+    "difficulty": 1,
+    "source": "NCERT Class 8 Ch.8 — Comparing Quantities (ratios and percentages)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-pc-014",
+    "level": "L1",
+    "skill": "percentages",
+    "type": "mcq",
+    "stem": "Which fraction equals 33 1/3%?",
+    "options": [
+      {
+        "id": "a",
+        "text": "1/4"
+      },
+      {
+        "id": "b",
+        "text": "1/3"
+      },
+      {
+        "id": "c",
+        "text": "1/2"
+      },
+      {
+        "id": "d",
+        "text": "3/5"
+      }
+    ],
+    "answer": 1,
+    "hint": "Convert the mixed-number percent to an improper fraction of 100.",
+    "explanation": "Step 1: 33 1/3% = (100/3)% = (100/3)/100. Step 2: (100/3) / 100 = 1/3.",
+    "difficulty": 1,
+    "source": "R.S. Aggarwal Quantitative Aptitude Ch.10 — Percentages (benchmark fraction-percent pairs)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-pc-015",
+    "level": "L1",
+    "skill": "percentages",
+    "type": "mcq",
+    "stem": "Express 7/10 as a percentage.",
+    "options": [
+      {
+        "id": "a",
+        "text": "70%"
+      },
+      {
+        "id": "b",
+        "text": "60%"
+      },
+      {
+        "id": "c",
+        "text": "65%"
+      },
+      {
+        "id": "d",
+        "text": "75%"
+      }
+    ],
+    "answer": 0,
+    "hint": "Denominator 10 is easy to scale up to 100 — by what factor?",
+    "explanation": "Step 1: 7/10 = 70/100 (multiply by 10). Step 2: 70/100 = 70%.",
+    "difficulty": 1,
+    "source": "NCERT Class 8 Ch.8 — Comparing Quantities (ratios and percentages)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-pc-016",
+    "level": "L1",
+    "skill": "percentages",
+    "type": "mcq",
+    "stem": "Express 2.5 as a percentage.",
+    "options": [
+      {
+        "id": "a",
+        "text": "25%"
+      },
+      {
+        "id": "b",
+        "text": "250%"
+      },
+      {
+        "id": "c",
+        "text": "25.5%"
+      },
+      {
+        "id": "d",
+        "text": "2.5%"
+      }
+    ],
+    "answer": 1,
+    "hint": "A number bigger than 1 gives a percent bigger than 100 — that is fine.",
+    "explanation": "Step 1: 2.5 x 100 = 250. Step 2: The answer is 250%.",
+    "difficulty": 1,
+    "source": "R.S. Aggarwal Quantitative Aptitude Ch.10 — Percentages (decimal to percent conversion)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-pc-017",
+    "level": "L1",
+    "skill": "percentages",
+    "type": "mcq",
+    "stem": "Increase 200 by 10%.",
+    "options": [
+      {
+        "id": "a",
+        "text": "210"
+      },
+      {
+        "id": "b",
+        "text": "220"
+      },
+      {
+        "id": "c",
+        "text": "230"
+      },
+      {
+        "id": "d",
+        "text": "240"
+      }
+    ],
+    "answer": 1,
+    "hint": "An increase of 10% means the new value is 110% of the old value.",
+    "explanation": "Step 1: 110% = 110/100 = 1.10. Step 2: 200 x 1.10 = 220.",
+    "difficulty": 1,
+    "source": "NCERT Class 8 Ch.8 — Comparing Quantities (increase and decrease percent)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-pc-018",
+    "level": "L1",
+    "skill": "percentages",
+    "type": "mcq",
+    "stem": "Decrease 500 by 20%.",
+    "options": [
+      {
+        "id": "a",
+        "text": "380"
+      },
+      {
+        "id": "b",
+        "text": "420"
+      },
+      {
+        "id": "c",
+        "text": "400"
+      },
+      {
+        "id": "d",
+        "text": "450"
+      }
+    ],
+    "answer": 2,
+    "hint": "A decrease of 20% means 80% of the value remains.",
+    "explanation": "Step 1: 100% - 20% = 80% = 0.80. Step 2: 500 x 0.80 = 400.",
+    "difficulty": 1,
+    "source": "NCERT Class 8 Ch.8 — Comparing Quantities (increase and decrease percent)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-pc-019",
+    "level": "L1",
+    "skill": "percentages",
+    "type": "mcq",
+    "stem": "Increase 80 by 25%.",
+    "options": [
+      {
+        "id": "a",
+        "text": "100"
+      },
+      {
+        "id": "b",
+        "text": "95"
+      },
+      {
+        "id": "c",
+        "text": "105"
+      },
+      {
+        "id": "d",
+        "text": "110"
+      }
+    ],
+    "answer": 0,
+    "hint": "25% is the same as one-quarter — add one quarter of 80 to 80.",
+    "explanation": "Step 1: 25% of 80 = 80/4 = 20. Step 2: 80 + 20 = 100.",
+    "difficulty": 1,
+    "source": "R.S. Aggarwal Quantitative Aptitude Ch.10 — Percentages (increase percent)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-pc-020",
+    "level": "L1",
+    "skill": "percentages",
+    "type": "mcq",
+    "stem": "Decrease 120 by 15%.",
+    "options": [
+      {
+        "id": "a",
+        "text": "100"
+      },
+      {
+        "id": "b",
+        "text": "102"
+      },
+      {
+        "id": "c",
+        "text": "108"
+      },
+      {
+        "id": "d",
+        "text": "105"
+      }
+    ],
+    "answer": 1,
+    "hint": "Compute 85% of the number directly: multiply by 0.85.",
+    "explanation": "Step 1: 100% - 15% = 85% = 0.85. Step 2: 120 x 0.85 = 102.",
+    "difficulty": 1,
+    "source": "R.S. Aggarwal Quantitative Aptitude Ch.10 — Percentages (decrease percent)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-pc-021",
+    "level": "L1",
+    "skill": "percentages",
+    "type": "mcq",
+    "stem": "A price rises from Rs 40 to Rs 50. What is the percent increase?",
+    "options": [
+      {
+        "id": "a",
+        "text": "20%"
+      },
+      {
+        "id": "b",
+        "text": "25%"
+      },
+      {
+        "id": "c",
+        "text": "30%"
+      },
+      {
+        "id": "d",
+        "text": "50%"
+      }
+    ],
+    "answer": 1,
+    "hint": "Percent increase is always measured against the ORIGINAL value, not the new one.",
+    "explanation": "Step 1: Increase = 50 - 40 = 10. Step 2: (10/40) x 100 = 25%.",
+    "difficulty": 1,
+    "source": "NCERT Class 8 Ch.8 — Comparing Quantities (increase and decrease percent)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-pc-022",
+    "level": "L1",
+    "skill": "percentages",
+    "type": "mcq",
+    "stem": "A price falls from Rs 80 to Rs 60. What is the percent decrease?",
+    "options": [
+      {
+        "id": "a",
+        "text": "25%"
+      },
+      {
+        "id": "b",
+        "text": "20%"
+      },
+      {
+        "id": "c",
+        "text": "30%"
+      },
+      {
+        "id": "d",
+        "text": "40%"
+      }
+    ],
+    "answer": 0,
+    "hint": "The base for a decrease is the starting value — divide the fall by 80.",
+    "explanation": "Step 1: Decrease = 80 - 60 = 20. Step 2: (20/80) x 100 = 25%.",
+    "difficulty": 1,
+    "source": "NCERT Class 8 Ch.8 — Comparing Quantities (increase and decrease percent)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-pc-023",
+    "level": "L1",
+    "skill": "percentages",
+    "type": "mcq",
+    "stem": "A number grows from 25 to 30. What is the percent increase?",
+    "options": [
+      {
+        "id": "a",
+        "text": "15%"
+      },
+      {
+        "id": "b",
+        "text": "18%"
+      },
+      {
+        "id": "c",
+        "text": "20%"
+      },
+      {
+        "id": "d",
+        "text": "25%"
+      }
+    ],
+    "answer": 2,
+    "hint": "Growth of 5 on a base of 25 — what fraction of the base is that?",
+    "explanation": "Step 1: Increase = 30 - 25 = 5. Step 2: (5/25) x 100 = 20%.",
+    "difficulty": 1,
+    "source": "R.S. Aggarwal Quantitative Aptitude Ch.10 — Percentages (increase percent)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-pc-024",
+    "level": "L1",
+    "skill": "percentages",
+    "type": "mcq",
+    "stem": "A quantity drops from 150 to 135. What is the percent change?",
+    "options": [
+      {
+        "id": "a",
+        "text": "10% increase"
+      },
+      {
+        "id": "b",
+        "text": "15% decrease"
+      },
+      {
+        "id": "c",
+        "text": "5% decrease"
+      },
+      {
+        "id": "d",
+        "text": "10% decrease"
+      }
+    ],
+    "answer": 3,
+    "hint": "First check the direction (up or down), then divide the change by the starting value.",
+    "explanation": "Step 1: Change = 150 - 135 = 15 (a drop). Step 2: (15/150) x 100 = 10% decrease.",
+    "difficulty": 1,
+    "source": "R.S. Aggarwal Quantitative Aptitude Ch.10 — Percentages (decrease percent)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-pc-025",
+    "level": "L1",
+    "skill": "percentages",
+    "type": "mcq",
+    "stem": "Increase 350 by 40%.",
+    "options": [
+      {
+        "id": "a",
+        "text": "460"
+      },
+      {
+        "id": "b",
+        "text": "480"
+      },
+      {
+        "id": "c",
+        "text": "500"
+      },
+      {
+        "id": "d",
+        "text": "490"
+      }
+    ],
+    "answer": 3,
+    "hint": "A 40% increase is the same as multiplying by 1.40.",
+    "explanation": "Step 1: 40% of 350 = 140. Step 2: 350 + 140 = 490. (Or 350 x 1.40 = 490.)",
+    "difficulty": 1,
+    "source": "NCERT Class 8 Ch.8 — Comparing Quantities (increase and decrease percent)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-pc-026",
+    "level": "L1",
+    "skill": "percentages",
+    "type": "mcq",
+    "stem": "Decrease 800 by 12.5%.",
+    "options": [
+      {
+        "id": "a",
+        "text": "680"
+      },
+      {
+        "id": "b",
+        "text": "700"
+      },
+      {
+        "id": "c",
+        "text": "720"
+      },
+      {
+        "id": "d",
+        "text": "750"
+      }
+    ],
+    "answer": 1,
+    "hint": "12.5% is the benchmark 1/8 — subtract one-eighth of 800.",
+    "explanation": "Step 1: 12.5% of 800 = 800/8 = 100. Step 2: 800 - 100 = 700.",
+    "difficulty": 1,
+    "source": "R.S. Aggarwal Quantitative Aptitude Ch.10 — Percentages (decrease percent; benchmark 12.5% = 1/8)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-pc-027",
+    "level": "L1",
+    "skill": "percentages",
+    "type": "mcq",
+    "stem": "After a 20% increase, a number becomes 120. What was the original number?",
+    "options": [
+      {
+        "id": "a",
+        "text": "96"
+      },
+      {
+        "id": "b",
+        "text": "100"
+      },
+      {
+        "id": "c",
+        "text": "104"
+      },
+      {
+        "id": "d",
+        "text": "110"
+      }
+    ],
+    "answer": 1,
+    "hint": "Work backwards: 120 is 120% of the original, so divide by 1.20.",
+    "explanation": "Step 1: original x 1.20 = 120. Step 2: original = 120 / 1.20 = 100.",
+    "difficulty": 1,
+    "source": "R.S. Aggarwal Quantitative Aptitude Ch.10 — Percentages (reverse percentage)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-pc-028",
+    "level": "L1",
+    "skill": "percentages",
+    "type": "mcq",
+    "stem": "After a 30% reduction, an item costs Rs 140. What was its original price?",
+    "options": [
+      {
+        "id": "a",
+        "text": "200"
+      },
+      {
+        "id": "b",
+        "text": "180"
+      },
+      {
+        "id": "c",
+        "text": "220"
+      },
+      {
+        "id": "d",
+        "text": "240"
+      }
+    ],
+    "answer": 0,
+    "hint": "Rs 140 is 70% of the original price — reverse the 30% cut.",
+    "explanation": "Step 1: original x 0.70 = 140. Step 2: original = 140 / 0.70 = 200.",
+    "difficulty": 1,
+    "source": "NCERT Class 8 Ch.8 — Comparing Quantities (reverse percentage)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-pc-029",
+    "level": "L1",
+    "skill": "percentages",
+    "type": "mcq",
+    "stem": "A number increased by 25% becomes 125. What is the number?",
+    "options": [
+      {
+        "id": "a",
+        "text": "105"
+      },
+      {
+        "id": "b",
+        "text": "110"
+      },
+      {
+        "id": "c",
+        "text": "120"
+      },
+      {
+        "id": "d",
+        "text": "100"
+      }
+    ],
+    "answer": 3,
+    "hint": "125 is 125% of the original — one step of division finds it.",
+    "explanation": "Step 1: original x 1.25 = 125. Step 2: original = 125 / 1.25 = 100.",
+    "difficulty": 1,
+    "source": "R.S. Aggarwal Quantitative Aptitude Ch.10 — Percentages (reverse percentage)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-pc-030",
+    "level": "L1",
+    "skill": "percentages",
+    "type": "mcq",
+    "stem": "A number decreased by 40% becomes 48. What is the number?",
+    "options": [
+      {
+        "id": "a",
+        "text": "70"
+      },
+      {
+        "id": "b",
+        "text": "75"
+      },
+      {
+        "id": "c",
+        "text": "80"
+      },
+      {
+        "id": "d",
+        "text": "85"
+      }
+    ],
+    "answer": 2,
+    "hint": "48 is 60% of the original — divide to recover the full 100%.",
+    "explanation": "Step 1: original x 0.60 = 48. Step 2: original = 48 / 0.60 = 80.",
+    "difficulty": 1,
+    "source": "R.S. Aggarwal Quantitative Aptitude Ch.10 — Percentages (reverse percentage)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-pc-031",
+    "level": "L1",
+    "skill": "percentages",
+    "type": "mcq",
+    "stem": "A value is increased by 10% and then by 20%. What is the net percent increase?",
+    "options": [
+      {
+        "id": "a",
+        "text": "32%"
+      },
+      {
+        "id": "b",
+        "text": "30%"
+      },
+      {
+        "id": "c",
+        "text": "31%"
+      },
+      {
+        "id": "d",
+        "text": "33%"
+      }
+    ],
+    "answer": 0,
+    "hint": "Do NOT add the percents — chain the multipliers: 1.10 then 1.20.",
+    "explanation": "Step 1: combined multiplier = 1.10 x 1.20 = 1.32. Step 2: net increase = 1.32 - 1 = 0.32 = 32%.",
+    "difficulty": 1,
+    "source": "R.S. Aggarwal Quantitative Aptitude Ch.10 — Percentages (successive percentage changes)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-pc-032",
+    "level": "L1",
+    "skill": "percentages",
+    "type": "mcq",
+    "stem": "A value is decreased by 20% and then by 10%. What is the net percent decrease?",
+    "options": [
+      {
+        "id": "a",
+        "text": "30%"
+      },
+      {
+        "id": "b",
+        "text": "28%"
+      },
+      {
+        "id": "c",
+        "text": "25%"
+      },
+      {
+        "id": "d",
+        "text": "26%"
+      }
+    ],
+    "answer": 1,
+    "hint": "Each cut applies to a smaller base — multiply the remainders 0.80 and 0.90.",
+    "explanation": "Step 1: combined multiplier = 0.80 x 0.90 = 0.72. Step 2: net decrease = 1 - 0.72 = 0.28 = 28%.",
+    "difficulty": 1,
+    "source": "R.S. Aggarwal Quantitative Aptitude Ch.10 — Percentages (successive percentage changes)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-pc-033",
+    "level": "L1",
+    "skill": "percentages",
+    "type": "mcq",
+    "stem": "A price is increased by 10% and then decreased by 10%. What is the net change?",
+    "options": [
+      {
+        "id": "a",
+        "text": "1% increase"
+      },
+      {
+        "id": "b",
+        "text": "no change"
+      },
+      {
+        "id": "c",
+        "text": "1% decrease"
+      },
+      {
+        "id": "d",
+        "text": "10% decrease"
+      }
+    ],
+    "answer": 2,
+    "hint": "The second 10% acts on a bigger base, so the loss outweighs the gain.",
+    "explanation": "Step 1: 1.10 x 0.90 = 0.99. Step 2: 1 - 0.99 = 0.01 = 1% decrease.",
+    "difficulty": 1,
+    "source": "NCERT Class 8 Ch.8 — Comparing Quantities (successive percentage changes)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-pc-034",
+    "level": "L1",
+    "skill": "percentages",
+    "type": "mcq",
+    "stem": "A price is decreased by 25% and then increased by 25%. What is the net change?",
+    "options": [
+      {
+        "id": "a",
+        "text": "6.25% increase"
+      },
+      {
+        "id": "b",
+        "text": "no change"
+      },
+      {
+        "id": "c",
+        "text": "25% decrease"
+      },
+      {
+        "id": "d",
+        "text": "6.25% decrease"
+      }
+    ],
+    "answer": 3,
+    "hint": "Chain the multipliers 0.75 and 1.25 and compare the result with 1.",
+    "explanation": "Step 1: 0.75 x 1.25 = 0.9375. Step 2: 1 - 0.9375 = 0.0625 = 6.25% decrease.",
+    "difficulty": 1,
+    "source": "R.S. Aggarwal Quantitative Aptitude Ch.10 — Percentages (successive percentage changes)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-pc-035",
+    "level": "L1",
+    "skill": "percentages",
+    "type": "mcq",
+    "stem": "A salary is raised by 50% twice in a row. What is the total percent increase?",
+    "options": [
+      {
+        "id": "a",
+        "text": "100%"
+      },
+      {
+        "id": "b",
+        "text": "110%"
+      },
+      {
+        "id": "c",
+        "text": "125%"
+      },
+      {
+        "id": "d",
+        "text": "150%"
+      }
+    ],
+    "answer": 2,
+    "hint": "Two 50% raises are NOT a 100% raise — the second raise applies to the already-raised salary.",
+    "explanation": "Step 1: 1.50 x 1.50 = 2.25. Step 2: total increase = 2.25 - 1 = 1.25 = 125%.",
+    "difficulty": 1,
+    "source": "NCERT Class 8 Ch.8 — Comparing Quantities (successive percentage changes)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-pc-036",
+    "level": "L1",
+    "skill": "percentages",
+    "type": "mcq",
+    "stem": "A town of 60,000 people grows 10% in the first year and 5% in the second year. What is the population after two years?",
+    "options": [
+      {
+        "id": "a",
+        "text": "66,000"
+      },
+      {
+        "id": "b",
+        "text": "69,300"
+      },
+      {
+        "id": "c",
+        "text": "69,000"
+      },
+      {
+        "id": "d",
+        "text": "66,300"
+      }
+    ],
+    "answer": 1,
+    "hint": "Grow the population year by year; the second year's growth uses the first year's new total.",
+    "explanation": "Step 1: 60,000 x 1.10 = 66,000. Step 2: 66,000 x 1.05 = 69,300.",
+    "difficulty": 1,
+    "source": "NCERT Class 8 Ch.8 — Comparing Quantities (applications of percentages: population growth)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-pc-037",
+    "level": "L1",
+    "skill": "percentages",
+    "type": "mcq",
+    "stem": "An exam's pass mark rises from 40% to 45%. By how many percentage points did it rise?",
+    "options": [
+      {
+        "id": "a",
+        "text": "5 percentage points"
+      },
+      {
+        "id": "b",
+        "text": "5%"
+      },
+      {
+        "id": "c",
+        "text": "12.5%"
+      },
+      {
+        "id": "d",
+        "text": "45 percentage points"
+      }
+    ],
+    "answer": 0,
+    "hint": "Percentage points are the simple difference between two percents — not a percent of a percent.",
+    "explanation": "Step 1: 45 - 40 = 5. Step 2: the rise is 5 percentage points.",
+    "difficulty": 1,
+    "source": "R.S. Aggarwal Quantitative Aptitude Ch.10 — Percentages (percentage points vs percent change)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-pc-038",
+    "level": "L1",
+    "skill": "percentages",
+    "type": "mcq",
+    "stem": "A bank raises its interest rate from 8% to 10%. How many percentage points is the rise?",
+    "options": [
+      {
+        "id": "a",
+        "text": "2 percentage points"
+      },
+      {
+        "id": "b",
+        "text": "2%"
+      },
+      {
+        "id": "c",
+        "text": "20%"
+      },
+      {
+        "id": "d",
+        "text": "25%"
+      }
+    ],
+    "answer": 0,
+    "hint": "Subtract the two rates directly — that is the change in percentage points.",
+    "explanation": "Step 1: 10 - 8 = 2. Step 2: the rise is 2 percentage points.",
+    "difficulty": 1,
+    "source": "NCERT Class 8 Ch.8 — Comparing Quantities (percentage points vs percent change)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-pc-039",
+    "level": "L1",
+    "skill": "percentages",
+    "type": "mcq",
+    "stem": "A company's market share rises from 20% to 24%. By what percent has the share increased?",
+    "options": [
+      {
+        "id": "a",
+        "text": "4%"
+      },
+      {
+        "id": "b",
+        "text": "16%"
+      },
+      {
+        "id": "c",
+        "text": "20%"
+      },
+      {
+        "id": "d",
+        "text": "24%"
+      }
+    ],
+    "answer": 2,
+    "hint": "4 percentage points of rise, but the percent increase is measured on the starting 20%.",
+    "explanation": "Step 1: rise = 24 - 20 = 4. Step 2: (4/20) x 100 = 20% increase.",
+    "difficulty": 1,
+    "source": "R.S. Aggarwal Quantitative Aptitude Ch.10 — Percentages (percentage points vs percent change)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-pc-040",
+    "level": "L1",
+    "skill": "percentages",
+    "type": "mcq",
+    "stem": "A city of 50,000 people grows by 4% in a year. What is the new population?",
+    "options": [
+      {
+        "id": "a",
+        "text": "51,000"
+      },
+      {
+        "id": "b",
+        "text": "51,500"
+      },
+      {
+        "id": "c",
+        "text": "52,000"
+      },
+      {
+        "id": "d",
+        "text": "54,000"
+      }
+    ],
+    "answer": 2,
+    "hint": "4% of 50,000 is the extra headcount — add it to the base.",
+    "explanation": "Step 1: 4% of 50,000 = 2,000. Step 2: 50,000 + 2,000 = 52,000.",
+    "difficulty": 1,
+    "source": "NCERT Class 8 Ch.8 — Comparing Quantities (applications of percentages: population growth)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-pc-041",
+    "level": "L1",
+    "skill": "percentages",
+    "type": "mcq",
+    "stem": "An employee earning Rs 20,000 per month gets a 15% raise. What is the new salary?",
+    "options": [
+      {
+        "id": "a",
+        "text": "23,000"
+      },
+      {
+        "id": "b",
+        "text": "22,000"
+      },
+      {
+        "id": "c",
+        "text": "22,500"
+      },
+      {
+        "id": "d",
+        "text": "23,500"
+      }
+    ],
+    "answer": 0,
+    "hint": "The new salary is 115% of the old one — find 15% and add it.",
+    "explanation": "Step 1: 15% of 20,000 = 3,000. Step 2: 20,000 + 3,000 = 23,000.",
+    "difficulty": 1,
+    "source": "R.S. Aggarwal Quantitative Aptitude Ch.10 — Percentages (applications of percentages: salary)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-pc-042",
+    "level": "L1",
+    "skill": "percentages",
+    "type": "mcq",
+    "stem": "A student scores 420 out of 600 marks. What percentage did she score?",
+    "options": [
+      {
+        "id": "a",
+        "text": "60%"
+      },
+      {
+        "id": "b",
+        "text": "65%"
+      },
+      {
+        "id": "c",
+        "text": "70%"
+      },
+      {
+        "id": "d",
+        "text": "75%"
+      }
+    ],
+    "answer": 2,
+    "hint": "Score percent = (marks obtained / total marks) x 100.",
+    "explanation": "Step 1: 420/600 = 0.70. Step 2: 0.70 x 100 = 70%.",
+    "difficulty": 1,
+    "source": "NCERT Class 8 Ch.8 — Comparing Quantities (applications of percentages: exam marks)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-pc-043",
+    "level": "L1",
+    "skill": "percentages",
+    "type": "mcq",
+    "stem": "To pass an exam a student needs 35% marks. She scores 280 but is short by 28 marks. What are the total marks of the exam?",
+    "options": [
+      {
+        "id": "a",
+        "text": "800"
+      },
+      {
+        "id": "b",
+        "text": "840"
+      },
+      {
+        "id": "c",
+        "text": "900"
+      },
+      {
+        "id": "d",
+        "text": "880"
+      }
+    ],
+    "answer": 3,
+    "hint": "The pass-mark number (280 + 28) equals 35% of the total — reverse it.",
+    "explanation": "Step 1: pass marks = 280 + 28 = 308. Step 2: total = 308 / 0.35 = 880.",
+    "difficulty": 1,
+    "source": "R.S. Aggarwal Quantitative Aptitude Ch.10 — Percentages (applications of percentages: pass/fail problems)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-pc-044",
+    "level": "L1",
+    "skill": "percentages",
+    "type": "mcq",
+    "stem": "A shopkeeper buys an article for Rs 800 and wants a 25% profit. What should the selling price be?",
+    "options": [
+      {
+        "id": "a",
+        "text": "900"
+      },
+      {
+        "id": "b",
+        "text": "950"
+      },
+      {
+        "id": "c",
+        "text": "1000"
+      },
+      {
+        "id": "d",
+        "text": "1050"
+      }
+    ],
+    "answer": 2,
+    "hint": "Profit percent is calculated on the cost price: SP = 125% of CP.",
+    "explanation": "Step 1: 125% of 800 = 800 x 1.25. Step 2: 800 x 1.25 = 1,000.",
+    "difficulty": 1,
+    "source": "NCERT Class 8 Ch.8 — Comparing Quantities (applications of percentages: profit and loss teaser)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-pc-045",
+    "level": "L1",
+    "skill": "percentages",
+    "type": "mcq",
+    "stem": "A shirt priced at Rs 400 is on a 20% discount. What is the sale price?",
+    "options": [
+      {
+        "id": "a",
+        "text": "300"
+      },
+      {
+        "id": "b",
+        "text": "320"
+      },
+      {
+        "id": "c",
+        "text": "340"
+      },
+      {
+        "id": "d",
+        "text": "360"
+      }
+    ],
+    "answer": 1,
+    "hint": "A 20% discount means the customer pays 80% of the marked price.",
+    "explanation": "Step 1: 80% of 400 = 400 x 0.80. Step 2: 400 x 0.80 = 320.",
+    "difficulty": 1,
+    "source": "NCERT Class 8 Ch.8 — Comparing Quantities (applications of percentages: discount)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-pc-046",
+    "level": "L1",
+    "skill": "percentages",
+    "type": "mcq",
+    "stem": "30% of a number is 90. What is the number?",
+    "options": [
+      {
+        "id": "a",
+        "text": "300"
+      },
+      {
+        "id": "b",
+        "text": "270"
+      },
+      {
+        "id": "c",
+        "text": "280"
+      },
+      {
+        "id": "d",
+        "text": "330"
+      }
+    ],
+    "answer": 0,
+    "hint": "If 30% is 90, then 10% is 30 — scale up to the full 100%.",
+    "explanation": "Step 1: 90 / 0.30 = 300. (Check: 0.30 x 300 = 90.)",
+    "difficulty": 1,
+    "source": "R.S. Aggarwal Quantitative Aptitude Ch.10 — Percentages (finding the whole from a percent)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-pc-047",
+    "level": "L1",
+    "skill": "percentages",
+    "type": "mcq",
+    "stem": "75% of a number is 225. What is the number?",
+    "options": [
+      {
+        "id": "a",
+        "text": "280"
+      },
+      {
+        "id": "b",
+        "text": "290"
+      },
+      {
+        "id": "c",
+        "text": "310"
+      },
+      {
+        "id": "d",
+        "text": "300"
+      }
+    ],
+    "answer": 3,
+    "hint": "75% is 3/4 — divide by 3 first, then multiply by 4.",
+    "explanation": "Step 1: 225 / 3 = 75 (that is 25%). Step 2: 75 x 4 = 300.",
+    "difficulty": 1,
+    "source": "R.S. Aggarwal Quantitative Aptitude Ch.10 — Percentages (finding the whole from a percent)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-pc-048",
+    "level": "L1",
+    "skill": "percentages",
+    "type": "mcq",
+    "stem": "In a class of 60 students, 40% are girls. How many girls are in the class?",
+    "options": [
+      {
+        "id": "a",
+        "text": "20"
+      },
+      {
+        "id": "b",
+        "text": "22"
+      },
+      {
+        "id": "c",
+        "text": "24"
+      },
+      {
+        "id": "d",
+        "text": "26"
+      }
+    ],
+    "answer": 2,
+    "hint": "40% of 60: multiply 60 by 40/100.",
+    "explanation": "Step 1: 60 x 40/100 = 2,400/100. Step 2: 2,400 / 100 = 24.",
+    "difficulty": 1,
+    "source": "NCERT Class 8 Ch.8 — Comparing Quantities (applications of percentages: composition)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-pc-049",
+    "level": "L1",
+    "skill": "percentages",
+    "type": "mcq",
+    "stem": "Of 1,000 registered voters, 8% did not vote. How many voters did not vote?",
+    "options": [
+      {
+        "id": "a",
+        "text": "80"
+      },
+      {
+        "id": "b",
+        "text": "8"
+      },
+      {
+        "id": "c",
+        "text": "800"
+      },
+      {
+        "id": "d",
+        "text": "92"
+      }
+    ],
+    "answer": 0,
+    "hint": "8% of 1,000 — move the decimal: percent of 1,000 is just the percent times 10.",
+    "explanation": "Step 1: 8% = 8/100. Step 2: 1,000 x 8/100 = 80.",
+    "difficulty": 1,
+    "source": "R.S. Aggarwal Quantitative Aptitude Ch.10 — Percentages (applications of percentages: turnout)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-pc-050",
+    "level": "L1",
+    "skill": "percentages",
+    "type": "mcq",
+    "stem": "What percent of 1 km is 250 m?",
+    "options": [
+      {
+        "id": "a",
+        "text": "2.5%"
+      },
+      {
+        "id": "b",
+        "text": "25%"
+      },
+      {
+        "id": "c",
+        "text": "40%"
+      },
+      {
+        "id": "d",
+        "text": "250%"
+      }
+    ],
+    "answer": 1,
+    "hint": "Convert both to the same unit first — 1 km = 1,000 m.",
+    "explanation": "Step 1: 250 m / 1,000 m = 0.25. Step 2: 0.25 x 100 = 25%.",
+    "difficulty": 1,
+    "source": "NCERT Class 8 Ch.8 — Comparing Quantities (applications of percentages: units and measurement)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  }
+]

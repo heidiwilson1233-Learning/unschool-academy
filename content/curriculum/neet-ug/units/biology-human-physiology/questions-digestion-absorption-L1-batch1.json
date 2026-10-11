@@ -1,0 +1,1602 @@
+[
+ {
+  "id": "neet-bio-hp-da-001",
+  "level": "L1",
+  "skill": "digestion-absorption",
+  "type": "mcq",
+  "stem": "Arrange the parts of the human alimentary canal in the correct order from the mouth to the anus.",
+  "options": [
+   {
+    "id": "a",
+    "text": "Mouth -> oesophagus -> pharynx -> stomach -> large intestine -> small intestine"
+   },
+   {
+    "id": "b",
+    "text": "Mouth -> stomach -> oesophagus -> small intestine -> large intestine"
+   },
+   {
+    "id": "c",
+    "text": "Pharynx -> mouth -> oesophagus -> stomach -> small intestine -> large intestine"
+   },
+   {
+    "id": "d",
+    "text": "Mouth -> pharynx -> oesophagus -> stomach -> small intestine -> large intestine"
+   }
+  ],
+  "answer": 3,
+  "hint": "Think of the tube food travels through: the throat (pharynx) comes before the food pipe.",
+  "explanation": "Step 1: The canal begins at the anterior opening, the mouth. Step 2: The mouth leads to the buccal cavity, then the pharynx. Step 3: From the pharynx the oesophagus carries food down to the stomach. Step 4: From the stomach, food passes through the small intestine, then the large intestine, and finally out through the anus.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 16 - Digestion and Absorption (16.1.1 Alimentary Canal)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-da-002",
+  "level": "L1",
+  "skill": "digestion-absorption",
+  "type": "mcq",
+  "stem": "The J-shaped stomach of humans is located in which region of the abdomen?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Lower right portion"
+   },
+   {
+    "id": "b",
+    "text": "Lower left portion"
+   },
+   {
+    "id": "c",
+    "text": "Upper left portion"
+   },
+   {
+    "id": "d",
+    "text": "Upper right portion"
+   }
+  ],
+  "answer": 2,
+  "hint": "The stomach sits just below the diaphragm, mostly on the left side.",
+  "explanation": "Step 1: NCERT describes the stomach as a wide, J-shaped, sac-like structure. Step 2: It is present on the left side of the abdominal cavity, just below the diaphragm. Step 3: Therefore the stomach is situated in the upper left portion of the abdomen.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 16 - Digestion and Absorption (16.1.1 Alimentary Canal)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-da-003",
+  "level": "L1",
+  "skill": "digestion-absorption",
+  "type": "mcq",
+  "stem": "The opening of the stomach into the small intestine is guarded by the:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Cardiac sphincter"
+   },
+   {
+    "id": "b",
+    "text": "Anal sphincter"
+   },
+   {
+    "id": "c",
+    "text": "Ileo-caecal valve"
+   },
+   {
+    "id": "d",
+    "text": "Pyloric sphincter"
+   }
+  ],
+  "answer": 3,
+  "hint": "Its name comes from the pylorus, the lower end of the stomach.",
+  "explanation": "Step 1: Food leaves the stomach to enter the duodenum (first part of the small intestine). Step 2: This opening is regulated by a muscular sphincter so food passes in controlled amounts. Step 3: NCERT names this guard the pyloric sphincter.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 16 - Digestion and Absorption (16.1.1 Alimentary Canal)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-da-004",
+  "level": "L1",
+  "skill": "digestion-absorption",
+  "type": "mcq",
+  "stem": "The three regions of the small intestine, in order from the stomach, are:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Ileum -> jejunum -> duodenum"
+   },
+   {
+    "id": "b",
+    "text": "Duodenum -> ileum -> jejunum"
+   },
+   {
+    "id": "c",
+    "text": "Duodenum -> jejunum -> ileum"
+   },
+   {
+    "id": "d",
+    "text": "Jejunum -> duodenum -> ileum"
+   }
+  ],
+  "answer": 2,
+  "hint": "Remember: the C-shaped part comes first, the highly coiled part comes last.",
+  "explanation": "Step 1: The small intestine is the longest part of the alimentary canal. Step 2: It begins with the short C-shaped duodenum, continues as the long coiled middle portion, the jejunum. Step 3: It ends with the highly coiled ileum, which opens into the large intestine. So the order is duodenum -> jejunum -> ileum.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 16 - Digestion and Absorption (16.1.1 Alimentary Canal)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-da-005",
+  "level": "L1",
+  "skill": "digestion-absorption",
+  "type": "mcq",
+  "stem": "A feeling of fullness in the stomach caused by anxiety, overeating, food poisoning or spicy food is called:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Diarrhoea"
+   },
+   {
+    "id": "b",
+    "text": "Constipation"
+   },
+   {
+    "id": "c",
+    "text": "Jaundice"
+   },
+   {
+    "id": "d",
+    "text": "Indigestion"
+   }
+  ],
+  "answer": 3,
+  "hint": "The name itself says digestion has gone wrong, but mildly.",
+  "explanation": "Step 1: NCERT lists disorders of the digestive system with their causes. Step 2: Indigestion is described as the feeling of fullness. Step 3: Its causes include anxiety, food poisoning, overeating and spicy food - matching the question exactly.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 16 - Digestion and Absorption (16.4 Disorders of Digestive System)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-da-006",
+  "level": "L1",
+  "skill": "digestion-absorption",
+  "type": "mcq",
+  "stem": "The ileum of the small intestine opens into the large intestine through the:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Pyloric sphincter"
+   },
+   {
+    "id": "b",
+    "text": "Rectal valve"
+   },
+   {
+    "id": "c",
+    "text": "Cardiac sphincter"
+   },
+   {
+    "id": "d",
+    "text": "Ileo-caecal valve"
+   }
+  ],
+  "answer": 3,
+  "hint": "The valve's name joins the names of the two parts it connects.",
+  "explanation": "Step 1: The small intestine ends with the ileum. Step 2: The ileum opens into the large intestine (the caecum region). Step 3: NCERT names the guard at this junction the ileo-caecal valve.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 16 - Digestion and Absorption (16.1.1 Alimentary Canal)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-da-007",
+  "level": "L1",
+  "skill": "digestion-absorption",
+  "type": "mcq",
+  "stem": "The small blind sac at the beginning of the large intestine is called the:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Rectum"
+   },
+   {
+    "id": "b",
+    "text": "Sigmoid colon"
+   },
+   {
+    "id": "c",
+    "text": "Caecum"
+   },
+   {
+    "id": "d",
+    "text": "Appendix"
+   }
+  ],
+  "answer": 2,
+  "hint": "It is a pouch with only one opening - food enters but cannot go back.",
+  "explanation": "Step 1: The large intestine begins where the ileum opens into it. Step 2: This beginning is a small blind sac (a pouch closed at one end). Step 3: NCERT identifies it as the caecum.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 16 - Digestion and Absorption (16.1.1 Alimentary Canal)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-da-008",
+  "level": "L1",
+  "skill": "digestion-absorption",
+  "type": "mcq",
+  "stem": "The vermiform appendix arises from the:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Rectum"
+   },
+   {
+    "id": "b",
+    "text": "Colon"
+   },
+   {
+    "id": "c",
+    "text": "Caecum"
+   },
+   {
+    "id": "d",
+    "text": "Duodenum"
+   }
+  ],
+  "answer": 2,
+  "hint": "It is a narrow, finger-like tube attached to the blind sac of the large intestine.",
+  "explanation": "Step 1: The caecum is the small blind sac at the start of the large intestine. Step 2: A narrow finger-like tubular projection, the vermiform appendix, arises from the caecum. Step 3: So the appendix is attached to the caecum.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 16 - Digestion and Absorption (16.1.1 Alimentary Canal)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-da-009",
+  "level": "L1",
+  "skill": "digestion-absorption",
+  "type": "mcq",
+  "stem": "The correct sequence of the parts of the colon is:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Ascending -> transverse -> descending -> sigmoid"
+   },
+   {
+    "id": "b",
+    "text": "Descending -> sigmoid -> ascending -> transverse"
+   },
+   {
+    "id": "c",
+    "text": "Transverse -> ascending -> descending -> sigmoid"
+   },
+   {
+    "id": "d",
+    "text": "Sigmoid -> ascending -> transverse -> descending"
+   }
+  ],
+  "answer": 0,
+  "hint": "Trace it: it climbs up on the right side of the abdomen, crosses over, then descends on the left.",
+  "explanation": "Step 1: The colon has four parts. Step 2: It begins as the ascending colon (going up on the right), crosses as the transverse colon, descends as the descending colon (on the left), and ends in the S-shaped sigmoid colon. Step 3: Hence: ascending -> transverse -> descending -> sigmoid.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 16 - Digestion and Absorption (16.1.1 Alimentary Canal)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-da-010",
+  "level": "L1",
+  "skill": "digestion-absorption",
+  "type": "mcq",
+  "stem": "From the outer to the inner side, the four layers of the wall of the alimentary canal are:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Muscularis -> serosa -> mucosa -> sub-mucosa"
+   },
+   {
+    "id": "b",
+    "text": "Serosa -> mucosa -> muscularis -> sub-mucosa"
+   },
+   {
+    "id": "c",
+    "text": "Serosa -> muscularis -> sub-mucosa -> mucosa"
+   },
+   {
+    "id": "d",
+    "text": "Mucosa -> sub-mucosa -> muscularis -> serosa"
+   }
+  ],
+  "answer": 2,
+  "hint": "The outermost layer is a thin protective covering, and the innermost layer touches the food.",
+  "explanation": "Step 1: The wall of the alimentary canal from oesophagus to rectum has four basic layers. Step 2: From outside to inside they are: the serosa (outermost, made of squamous epithelium and areolar tissue), the muscularis, the sub-mucosa, and the mucosa (innermost lining).",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 16 - Digestion and Absorption (16.1.1 Alimentary Canal)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-da-011",
+  "level": "L1",
+  "skill": "digestion-absorption",
+  "type": "mcq",
+  "stem": "Diarrhoea is characterised by:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Yellowing of the skin and eyes due to bile pigments"
+   },
+   {
+    "id": "b",
+    "text": "Retention of faeces within the colon as bowel movements occur irregularly"
+   },
+   {
+    "id": "c",
+    "text": "Ejection of stomach contents through the mouth"
+   },
+   {
+    "id": "d",
+    "text": "Abnormal frequency of bowel movement and increased liquidity of the faecal discharge"
+   }
+  ],
+  "answer": 3,
+  "hint": "Think of what 'loose motions' feel like - frequent and watery.",
+  "explanation": "Step 1: NCERT defines diarrhoea as a disorder of the digestive system. Step 2: It involves abnormal frequency of bowel movement. Step 3: The faecal discharge has increased liquidity, and this condition reduces the absorption of food.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 16 - Digestion and Absorption (16.4 Disorders of Digestive System)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-da-012",
+  "level": "L1",
+  "skill": "digestion-absorption",
+  "type": "mcq",
+  "stem": "In constipation:",
+  "options": [
+   {
+    "id": "a",
+    "text": "The stomach ejects its contents through the mouth"
+   },
+   {
+    "id": "b",
+    "text": "Bile pigments get deposited in the skin and eyes"
+   },
+   {
+    "id": "c",
+    "text": "Bowel movements become abnormally frequent and watery"
+   },
+   {
+    "id": "d",
+    "text": "Faeces are retained within the colon as bowel movements occur irregularly"
+   }
+  ],
+  "answer": 3,
+  "hint": "It is the opposite of diarrhoea - things slow down and get stuck.",
+  "explanation": "Step 1: NCERT defines constipation as a digestive disorder. Step 2: In this condition faeces are retained within the colon (rectum). Step 3: This happens because bowel movements occur irregularly.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 16 - Digestion and Absorption (16.4 Disorders of Digestive System)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-da-013",
+  "level": "L1",
+  "skill": "digestion-absorption",
+  "type": "mcq",
+  "stem": "The irregular folds of the mucosa in the stomach are called:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Crypts"
+   },
+   {
+    "id": "b",
+    "text": "Villi"
+   },
+   {
+    "id": "c",
+    "text": "Rugae"
+   },
+   {
+    "id": "d",
+    "text": "Microvilli"
+   }
+  ],
+  "answer": 2,
+  "hint": "They are large folds of the stomach lining, not the finger-like projections of the intestine.",
+  "explanation": "Step 1: The innermost layer of the canal wall, the mucosa, forms irregular folds in the stomach. Step 2: In the small intestine these become villi-like folds. Step 3: The stomach's own irregular folds are called rugae.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 16 - Digestion and Absorption (16.1.1 Alimentary Canal)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-da-014",
+  "level": "L1",
+  "skill": "digestion-absorption",
+  "type": "mcq",
+  "stem": "The absorptive surface area of the small intestine is increased by villi, which bear on their surface the:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Rugae"
+   },
+   {
+    "id": "b",
+    "text": "Goblet cells"
+   },
+   {
+    "id": "c",
+    "text": "Cilia"
+   },
+   {
+    "id": "d",
+    "text": "Brush border of microvilli"
+   }
+  ],
+  "answer": 3,
+  "hint": "Villi are big folds; on top of them sit even tinier folds of the cell membrane.",
+  "explanation": "Step 1: The mucosa of the small intestine forms villi-like folds that project into the lumen. Step 2: The cells lining the villi produce numerous microscopic projections called microvilli. Step 3: These give a brush-bordered appearance and enormously increase the surface area for absorption.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 16 - Digestion and Absorption (16.1.1 Alimentary Canal)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-da-015",
+  "level": "L1",
+  "skill": "digestion-absorption",
+  "type": "mcq",
+  "stem": "Each villus of the small intestine is supplied with a network of:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Capillaries and lacteals"
+   },
+   {
+    "id": "b",
+    "text": "Lymph vessels only"
+   },
+   {
+    "id": "c",
+    "text": "Arteries and veins only"
+   },
+   {
+    "id": "d",
+    "text": "Nerves only"
+   }
+  ],
+  "answer": 0,
+  "hint": "Absorbed nutrients need two exit routes: blood and lymph.",
+  "explanation": "Step 1: Villi are the absorptive units of the small intestine. Step 2: Each villus is well supplied with a network of capillaries (for blood) and a large lymph vessel called the lacteal. Step 3: Absorbed substances pass into these vessels to be carried away.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 16 - Digestion and Absorption (16.1.1 Alimentary Canal)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-da-016",
+  "level": "L1",
+  "skill": "digestion-absorption",
+  "type": "mcq",
+  "stem": "The mucus-secreting cells in the mucosa of the alimentary canal are called:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Paneth cells"
+   },
+   {
+    "id": "b",
+    "text": "Goblet cells"
+   },
+   {
+    "id": "c",
+    "text": "Chief cells"
+   },
+   {
+    "id": "d",
+    "text": "Parietal cells"
+   }
+  ],
+  "answer": 1,
+  "hint": "They are named after the shape they take when filled with mucus.",
+  "explanation": "Step 1: The mucosa forms glands throughout the alimentary canal. Step 2: Mucus is secreted by goblet cells, which help lubricate the food. Step 3: Parietal and chief cells are gastric gland cells, not mucus cells.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 16 - Digestion and Absorption (16.1.1 Alimentary Canal)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-da-017",
+  "level": "L1",
+  "skill": "digestion-absorption",
+  "type": "mcq",
+  "stem": "Brunner's glands, which secrete mucus, are located in the sub-mucosa of the:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Stomach"
+   },
+   {
+    "id": "b",
+    "text": "Ileum"
+   },
+   {
+    "id": "c",
+    "text": "Jejunum"
+   },
+   {
+    "id": "d",
+    "text": "Duodenum"
+   }
+  ],
+  "answer": 3,
+  "hint": "They sit in the loose connective tissue layer of the very first part of the small intestine.",
+  "explanation": "Step 1: The sub-mucosa is a layer of loose connective tissue with nerves, blood and lymph vessels. Step 2: In the duodenum, the sub-mucosa contains special glands. Step 3: These are Brunner's glands, which secrete mucus.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 16 - Digestion and Absorption (16.1.1 Alimentary Canal)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-da-018",
+  "level": "L1",
+  "skill": "digestion-absorption",
+  "type": "mcq",
+  "stem": "The crypts of Lieberkuhn are:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Gastric glands of the stomach"
+   },
+   {
+    "id": "b",
+    "text": "Acini of the pancreas"
+   },
+   {
+    "id": "c",
+    "text": "Intestinal glands lying between the bases of the villi"
+   },
+   {
+    "id": "d",
+    "text": "Salivary glands of the mouth"
+   }
+  ],
+  "answer": 2,
+  "hint": "They are tucked into the mucosa of the small intestine, between the villi.",
+  "explanation": "Step 1: The mucosa of the intestine forms glands. Step 2: These intestinal glands, called crypts of Lieberkuhn, are located in the mucosa between the bases of the villi. Step 3: Together with Brunner's glands they secrete the intestinal juice.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 16 - Digestion and Absorption (16.1.1 Alimentary Canal)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-da-019",
+  "level": "L1",
+  "skill": "digestion-absorption",
+  "type": "mcq",
+  "stem": "The number of permanent teeth in an adult human is:",
+  "options": [
+   {
+    "id": "a",
+    "text": "36"
+   },
+   {
+    "id": "b",
+    "text": "28"
+   },
+   {
+    "id": "c",
+    "text": "20"
+   },
+   {
+    "id": "d",
+    "text": "32"
+   }
+  ],
+  "answer": 3,
+  "hint": "Count one jaw: 8 + 8 = 16 per jaw, and there are two jaws.",
+  "explanation": "Step 1: The dental formula of an adult human is 2123/2123 per jaw half pattern. Step 2: Per jaw: (2+1+2+3) x 2 sides = 16 teeth. Step 3: Two jaws x 16 = 32 permanent teeth.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 16 - Digestion and Absorption (16.1.1 Alimentary Canal)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-da-020",
+  "level": "L1",
+  "skill": "digestion-absorption",
+  "type": "mcq",
+  "stem": "The dental formula of an adult human is:",
+  "options": [
+   {
+    "id": "a",
+    "text": "2123/2123"
+   },
+   {
+    "id": "b",
+    "text": "2102/2102"
+   },
+   {
+    "id": "c",
+    "text": "2132/2132"
+   },
+   {
+    "id": "d",
+    "text": "2213/2213"
+   }
+  ],
+  "answer": 0,
+  "hint": "In each half of each jaw: 2 incisors, 1 canine, 2 premolars, 3 molars.",
+  "explanation": "Step 1: The dental formula is written as i, c, pm, m for upper/lower jaw. Step 2: An adult has in each half-jaw: 2 incisors, 1 canine, 2 premolars and 3 molars. Step 3: This is written 2123/2123, totalling 32 teeth.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 16 - Digestion and Absorption (16.1.1 Alimentary Canal)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-da-021",
+  "level": "L1",
+  "skill": "digestion-absorption",
+  "type": "mcq",
+  "stem": "The dental formula of the temporary (milk) teeth in humans is:",
+  "options": [
+   {
+    "id": "a",
+    "text": "2102/2102"
+   },
+   {
+    "id": "b",
+    "text": "2112/2112"
+   },
+   {
+    "id": "c",
+    "text": "2021/2021"
+   },
+   {
+    "id": "d",
+    "text": "2123/2123"
+   }
+  ],
+  "answer": 0,
+  "hint": "Milk teeth have no premolars and only 2 molars per half-jaw - fewer than permanent teeth.",
+  "explanation": "Step 1: Humans are diphyodont: milk teeth are replaced by permanent teeth. Step 2: The milk set has 2 incisors, 1 canine, 0 premolars and 2 molars in each half of each jaw. Step 3: This is written 2102/2102, totalling 20 teeth.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 16 - Digestion and Absorption (16.1.1 Alimentary Canal)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-da-022",
+  "level": "L1",
+  "skill": "digestion-absorption",
+  "type": "mcq",
+  "stem": "Human teeth are described as thecodont because:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Each tooth is embedded in a socket of the jaw bone"
+   },
+   {
+    "id": "b",
+    "text": "They grow continuously throughout life"
+   },
+   {
+    "id": "c",
+    "text": "They are of four different types"
+   },
+   {
+    "id": "d",
+    "text": "They appear in two sets during life"
+   }
+  ],
+  "answer": 0,
+  "hint": "The word relates to how the tooth sits in the jaw, not how many sets there are.",
+  "explanation": "Step 1: NCERT uses three terms for mammalian dentition. Step 2: Thecodont refers to the arrangement where each tooth is embedded in a socket of the jaw bone. Step 3: Diphyodont refers to two sets of teeth; heterodont to different types.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 16 - Digestion and Absorption (16.1.1 Alimentary Canal)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-da-023",
+  "level": "L1",
+  "skill": "digestion-absorption",
+  "type": "mcq",
+  "stem": "The term 'diphyodont' used for human dentition means:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Teeth are embedded in sockets of the jaw bone"
+   },
+   {
+    "id": "b",
+    "text": "Teeth are replaced many times"
+   },
+   {
+    "id": "c",
+    "text": "Teeth are of different types"
+   },
+   {
+    "id": "d",
+    "text": "Two sets of teeth - temporary (milk) and permanent - form during life"
+   }
+  ],
+  "answer": 3,
+  "hint": "'Di-' means two - two sets, not two types.",
+  "explanation": "Step 1: NCERT describes mammals as diphyodont. Step 2: This means two sets of teeth are formed during life. Step 3: The first is the temporary (milk or deciduous) set, replaced by the permanent set in adults.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 16 - Digestion and Absorption (16.1.1 Alimentary Canal)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-da-024",
+  "level": "L1",
+  "skill": "digestion-absorption",
+  "type": "mcq",
+  "stem": "Human dentition is heterodont, which means the teeth are:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Present in two sets"
+   },
+   {
+    "id": "b",
+    "text": "Continuously replaced"
+   },
+   {
+    "id": "c",
+    "text": "Of different types - incisors, canines, premolars and molars"
+   },
+   {
+    "id": "d",
+    "text": "Embedded in sockets of the jaw bone"
+   }
+  ],
+  "answer": 2,
+  "hint": "'Hetero-' means different - here it is about the kinds of teeth.",
+  "explanation": "Step 1: NCERT calls human dentition heterodont. Step 2: This means the teeth are of different types. Step 3: The four types are incisors, canines, premolars and molars, each suited to cutting, tearing or grinding.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 16 - Digestion and Absorption (16.1.1 Alimentary Canal)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-da-025",
+  "level": "L1",
+  "skill": "digestion-absorption",
+  "type": "mcq",
+  "stem": "Which of the following is NOT a pair of salivary glands in humans?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Sub-maxillary (sub-mandibular) glands"
+   },
+   {
+    "id": "b",
+    "text": "Brunner's glands"
+   },
+   {
+    "id": "c",
+    "text": "Parotids"
+   },
+   {
+    "id": "d",
+    "text": "Sub-lingual glands"
+   }
+  ],
+  "answer": 1,
+  "hint": "Three pairs of salivary glands exist - the odd one out belongs to the intestine.",
+  "explanation": "Step 1: NCERT lists three pairs of salivary glands in the mouth: the parotids (in the cheek), the sub-maxillary/sub-mandibular (lower jaw) and the sub-linguals (below the tongue). Step 2: Brunner's glands are mucus-secreting glands of the duodenum, not salivary glands.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 16 - Digestion and Absorption (16.1.2 Digestive Glands)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-da-026",
+  "level": "L1",
+  "skill": "digestion-absorption",
+  "type": "mcq",
+  "stem": "Saliva in the human mouth is secreted mainly by the:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Sub-lingual glands"
+   },
+   {
+    "id": "b",
+    "text": "Gastric glands"
+   },
+   {
+    "id": "c",
+    "text": "Parotid glands"
+   },
+   {
+    "id": "d",
+    "text": "Sub-maxillary glands"
+   }
+  ],
+  "answer": 2,
+  "hint": "The largest pair of salivary glands, located in the cheek, does most of the work.",
+  "explanation": "Step 1: There are three pairs of salivary glands opening into the buccal cavity. Step 2: NCERT states that saliva is mainly secreted by the parotids, which are situated in the cheek region.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 16 - Digestion and Absorption (16.1.2 Digestive Glands)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-da-027",
+  "level": "L1",
+  "skill": "digestion-absorption",
+  "type": "mcq",
+  "stem": "Salivary amylase acts on starch in the mouth and converts it into:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Fatty acids"
+   },
+   {
+    "id": "b",
+    "text": "Amino acids"
+   },
+   {
+    "id": "c",
+    "text": "Glucose only"
+   },
+   {
+    "id": "d",
+    "text": "Sugars"
+   }
+  ],
+  "answer": 3,
+  "hint": "It breaks the big starch molecule into smaller sweet units, in a near-neutral medium.",
+  "explanation": "Step 1: Chemical digestion begins in the oral cavity with saliva. Step 2: Saliva contains the enzyme salivary amylase. Step 3: At pH 6.8 it hydrolyses about 30 percent of starch into sugars (disaccharides like maltose).",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 16 - Digestion and Absorption (16.2 Digestion of Food)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-da-028",
+  "level": "L1",
+  "skill": "digestion-absorption",
+  "type": "mcq",
+  "stem": "Lysozyme present in saliva acts as:",
+  "options": [
+   {
+    "id": "a",
+    "text": "A protein-digesting enzyme"
+   },
+   {
+    "id": "b",
+    "text": "A starch activator"
+   },
+   {
+    "id": "c",
+    "text": "An antibacterial agent"
+   },
+   {
+    "id": "d",
+    "text": "A mucus softener"
+   }
+  ],
+  "answer": 2,
+  "hint": "Its job is protection, not digestion - it guards the mouth against microbes.",
+  "explanation": "Step 1: Saliva contains electrolytes and enzymes including salivary amylase and lysozyme. Step 2: While amylase digests starch, lysozyme has a different role. Step 3: Lysozyme acts as an antibacterial agent that prevents infections.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 16 - Digestion and Absorption (16.2 Digestion of Food)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-da-029",
+  "level": "L1",
+  "skill": "digestion-absorption",
+  "type": "mcq",
+  "stem": "The small fleshy flap hanging at the end of the soft palate is the:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Frenulum"
+   },
+   {
+    "id": "b",
+    "text": "Epiglottis"
+   },
+   {
+    "id": "c",
+    "text": "Uvula"
+   },
+   {
+    "id": "d",
+    "text": "Glottis"
+   }
+  ],
+  "answer": 2,
+  "hint": "It is the little dangling structure you see at the back of the throat.",
+  "explanation": "Step 1: The oral cavity has a hard palate and a soft palate. Step 2: At the end of the soft palate hangs a small fleshy flap. Step 3: NCERT identifies this flap as the uvula.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 16 - Digestion and Absorption (16.1.1 Alimentary Canal)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-da-030",
+  "level": "L1",
+  "skill": "digestion-absorption",
+  "type": "mcq",
+  "stem": "The pharynx serves as a common passage for:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Food and air"
+   },
+   {
+    "id": "b",
+    "text": "Food and water"
+   },
+   {
+    "id": "c",
+    "text": "Bile and pancreatic juice"
+   },
+   {
+    "id": "d",
+    "text": "Blood and lymph"
+   }
+  ],
+  "answer": 0,
+  "hint": "Both the windpipe and the food pipe begin just below it.",
+  "explanation": "Step 1: The buccal cavity opens into the pharynx. Step 2: From the pharynx, air passes to the trachea and food passes to the oesophagus. Step 3: Hence the pharynx is a common passage for food and air.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 16 - Digestion and Absorption (16.1.1 Alimentary Canal)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-da-031",
+  "level": "L1",
+  "skill": "digestion-absorption",
+  "type": "mcq",
+  "stem": "In the stomach, HCl provides an acidic medium with a pH of about:",
+  "options": [
+   {
+    "id": "a",
+    "text": "7.4"
+   },
+   {
+    "id": "b",
+    "text": "1.8"
+   },
+   {
+    "id": "c",
+    "text": "8.5"
+   },
+   {
+    "id": "d",
+    "text": "6.8"
+   }
+  ],
+  "answer": 1,
+  "hint": "It is strongly acidic - far below neutral - to activate pepsin.",
+  "explanation": "Step 1: Gastric glands of the stomach secrete HCl along with pepsinogen. Step 2: HCl provides the acidic medium needed for pepsin action. Step 3: NCERT gives this pH as 1.8.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 16 - Digestion and Absorption (16.2 Digestion of Food)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-da-032",
+  "level": "L1",
+  "skill": "digestion-absorption",
+  "type": "mcq",
+  "stem": "In the stomach, pepsin acts on proteins and converts them into:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Peptides (proteoses and peptones)"
+   },
+   {
+    "id": "b",
+    "text": "Fatty acids"
+   },
+   {
+    "id": "c",
+    "text": "Glucose"
+   },
+   {
+    "id": "d",
+    "text": "Amino acids"
+   }
+  ],
+  "answer": 0,
+  "hint": "Protein digestion in the stomach is only partial - it stops at the peptide stage.",
+  "explanation": "Step 1: Gastric juice contains pepsinogen, which HCl converts into active pepsin. Step 2: Pepsin is a proteolytic enzyme. Step 3: It digests proteins into peptides (proteoses and peptones); complete breakdown to amino acids happens later in the intestine.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 16 - Digestion and Absorption (16.2 Digestion of Food)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-da-033",
+  "level": "L1",
+  "skill": "digestion-absorption",
+  "type": "mcq",
+  "stem": "Rennin is a proteolytic enzyme of gastric juice that digests:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Milk proteins in infants"
+   },
+   {
+    "id": "b",
+    "text": "Starch in adults"
+   },
+   {
+    "id": "c",
+    "text": "Fats in the duodenum"
+   },
+   {
+    "id": "d",
+    "text": "Nucleic acids"
+   }
+  ],
+  "answer": 0,
+  "hint": "It curdles milk - useful for babies whose main food is milk.",
+  "explanation": "Step 1: Gastric juice contains pepsin, rennin and HCl. Step 2: Rennin is a proteolytic enzyme found in the gastric juice of infants. Step 3: It helps in the digestion of milk proteins.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 16 - Digestion and Absorption (16.2 Digestion of Food)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-da-034",
+  "level": "L1",
+  "skill": "digestion-absorption",
+  "type": "mcq",
+  "stem": "The gastric mucosa is protected from the corrosive action of HCl by:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Pepsin and rennin"
+   },
+   {
+    "id": "b",
+    "text": "Enterokinase"
+   },
+   {
+    "id": "c",
+    "text": "Mucus and bicarbonates"
+   },
+   {
+    "id": "d",
+    "text": "Bile salts"
+   }
+  ],
+  "answer": 2,
+  "hint": "A slippery coating plus an alkaline shield keeps the acid off the stomach wall.",
+  "explanation": "Step 1: HCl in the stomach is strong enough to digest the stomach wall itself. Step 2: The mucosa secretes mucus and bicarbonates. Step 3: These protect the mucosal epithelium from excoriation by the highly concentrated HCl.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 16 - Digestion and Absorption (16.2 Digestion of Food)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-da-035",
+  "level": "L1",
+  "skill": "digestion-absorption",
+  "type": "mcq",
+  "stem": "Which is the largest gland of the human body?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Pancreas"
+   },
+   {
+    "id": "b",
+    "text": "Thyroid gland"
+   },
+   {
+    "id": "c",
+    "text": "Liver"
+   },
+   {
+    "id": "d",
+    "text": "Parotid gland"
+   }
+  ],
+  "answer": 2,
+  "hint": "It weighs about 1.2 to 1.5 kg in an adult - far bigger than any other gland.",
+  "explanation": "Step 1: The digestive glands include salivary glands, gastric glands, liver, pancreas and intestinal glands. Step 2: NCERT identifies the liver as the largest gland of the body. Step 3: It weighs about 1.2 to 1.5 kg in an adult human.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 16 - Digestion and Absorption (16.1.2 Digestive Glands)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-da-036",
+  "level": "L1",
+  "skill": "digestion-absorption",
+  "type": "mcq",
+  "stem": "Bile juice secreted by the liver is stored and concentrated in the:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Pancreas"
+   },
+   {
+    "id": "b",
+    "text": "Duodenum"
+   },
+   {
+    "id": "c",
+    "text": "Caecum"
+   },
+   {
+    "id": "d",
+    "text": "Gall bladder"
+   }
+  ],
+  "answer": 3,
+  "hint": "The liver makes it continuously, but it is stockpiled in a small sac until needed.",
+  "explanation": "Step 1: The liver secretes bile juice. Step 2: The bile is not released directly into the intestine at all times. Step 3: It is stored and concentrated in a thin muscular sac called the gall bladder.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 16 - Digestion and Absorption (16.1.2 Digestive Glands)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-da-037",
+  "level": "L1",
+  "skill": "digestion-absorption",
+  "type": "mcq",
+  "stem": "The role of bile in digestion is:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Digestion of fats with its own enzymes"
+   },
+   {
+    "id": "b",
+    "text": "Emulsification of fats and activation of lipases"
+   },
+   {
+    "id": "c",
+    "text": "Digestion of proteins"
+   },
+   {
+    "id": "d",
+    "text": "Neutralisation of pepsin"
+   }
+  ],
+  "answer": 1,
+  "hint": "Bile has no enzymes - it works physically on fat droplets and switches lipases on.",
+  "explanation": "Step 1: Bile juice contains bile pigments, bile salts, cholesterol and phospholipids, but no enzymes. Step 2: Bile helps in the emulsification of fats - breaking large fat globules into small droplets. Step 3: It also activates lipases so they can act on the emulsified fats.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 16 - Digestion and Absorption (16.2 Digestion of Food)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-da-038",
+  "level": "L1",
+  "skill": "digestion-absorption",
+  "type": "mcq",
+  "stem": "The pancreas lies in the human body:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Between the limbs of the C-shaped duodenum"
+   },
+   {
+    "id": "b",
+    "text": "Above the diaphragm"
+   },
+   {
+    "id": "c",
+    "text": "Below the stomach in the pelvic region"
+   },
+   {
+    "id": "d",
+    "text": "Inside the lobes of the liver"
+   }
+  ],
+  "answer": 0,
+  "hint": "Picture the C-shaped first part of the small intestine hugging a soft gland.",
+  "explanation": "Step 1: The pancreas is a compound (both exocrine and endocrine) elongated organ. Step 2: It is situated between the limbs of the C-shaped duodenum. Step 3: Its duct joins the bile duct to open into the duodenum.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 16 - Digestion and Absorption (16.1.2 Digestive Glands)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-da-039",
+  "level": "L1",
+  "skill": "digestion-absorption",
+  "type": "mcq",
+  "stem": "Which of the following enzymes is NOT present in pancreatic juice?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Trypsinogen"
+   },
+   {
+    "id": "b",
+    "text": "Pepsin"
+   },
+   {
+    "id": "c",
+    "text": "Lipase"
+   },
+   {
+    "id": "d",
+    "text": "Amylase"
+   }
+  ],
+  "answer": 1,
+  "hint": "Pancreatic juice digests all three food types - but the stomach's protein enzyme is not one of them.",
+  "explanation": "Step 1: Pancreatic juice contains inactive enzymes: trypsinogen, chymotrypsinogen, procarboxypeptidases, plus amylases, lipases and nucleases. Step 2: Pepsin is secreted by the gastric glands of the stomach, not the pancreas.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 16 - Digestion and Absorption (16.2 Digestion of Food)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-da-040",
+  "level": "L1",
+  "skill": "digestion-absorption",
+  "type": "mcq",
+  "stem": "Trypsinogen in the duodenum is activated to trypsin by:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Secretin"
+   },
+   {
+    "id": "b",
+    "text": "Hydrochloric acid"
+   },
+   {
+    "id": "c",
+    "text": "Bile salts"
+   },
+   {
+    "id": "d",
+    "text": "Enterokinase"
+   }
+  ],
+  "answer": 3,
+  "hint": "The trigger is an enzyme secreted by the intestinal mucosa itself.",
+  "explanation": "Step 1: The pancreas releases trypsinogen in an inactive form to protect its own cells. Step 2: In the duodenum, the intestinal mucosa secretes the enzyme enterokinase. Step 3: Enterokinase activates trypsinogen into active trypsin, which then activates the other pancreatic enzymes.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 16 - Digestion and Absorption (16.2 Digestion of Food)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-da-041",
+  "level": "L1",
+  "skill": "digestion-absorption",
+  "type": "mcq",
+  "stem": "The intestinal juice (succus entericus) is secreted by the glands of the intestine, namely:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Pancreas"
+   },
+   {
+    "id": "b",
+    "text": "Gastric glands"
+   },
+   {
+    "id": "c",
+    "text": "Brunner's glands and the crypts of Lieberkuhn"
+   },
+   {
+    "id": "d",
+    "text": "Liver"
+   }
+  ],
+  "answer": 2,
+  "hint": "Its name means 'intestinal juice' - so look for intestinal glands.",
+  "explanation": "Step 1: The secretions of the intestinal glands form the intestinal juice, also called succus entericus. Step 2: These glands are the crypts of Lieberkuhn and Brunner's glands of the small intestine. Step 3: The juice contains disaccharidases, dipeptidases, lipases and nucleosidases.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 16 - Digestion and Absorption (16.2 Digestion of Food)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-da-042",
+  "level": "L1",
+  "skill": "digestion-absorption",
+  "type": "mcq",
+  "stem": "Lactose is hydrolysed by the enzyme lactase into:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Glucose and fructose"
+   },
+   {
+    "id": "b",
+    "text": "Glucose and glucose"
+   },
+   {
+    "id": "c",
+    "text": "Glucose and galactose"
+   },
+   {
+    "id": "d",
+    "text": "Fructose and galactose"
+   }
+  ],
+  "answer": 2,
+  "hint": "Milk sugar splits into two different simple sugars - one of them is glucose.",
+  "explanation": "Step 1: In the small intestine, disaccharides are digested by disaccharidases of the intestinal juice. Step 2: Maltase gives glucose + glucose, sucrase gives glucose + fructose. Step 3: Lactase acts on lactose (milk sugar) to give glucose and galactose.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 16 - Digestion and Absorption (16.2 Digestion of Food)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-da-043",
+  "level": "L1",
+  "skill": "digestion-absorption",
+  "type": "mcq",
+  "stem": "Dipeptides are finally hydrolysed into amino acids by:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Nucleases"
+   },
+   {
+    "id": "b",
+    "text": "Maltase"
+   },
+   {
+    "id": "c",
+    "text": "Lipases"
+   },
+   {
+    "id": "d",
+    "text": "Dipeptidases"
+   }
+  ],
+  "answer": 3,
+  "hint": "The enzyme's name matches its substrate: dipeptides.",
+  "explanation": "Step 1: Proteins are broken down stepwise: proteins -> proteoses/peptones -> peptides. Step 2: The intestinal juice contains dipeptidases. Step 3: Dipeptidases hydrolyse dipeptides into amino acids, completing protein digestion.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 16 - Digestion and Absorption (16.2 Digestion of Food)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-da-044",
+  "level": "L1",
+  "skill": "digestion-absorption",
+  "type": "mcq",
+  "stem": "Lipases act on emulsified fats and convert them, step by step, into:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Peptides"
+   },
+   {
+    "id": "b",
+    "text": "Fatty acids and glycerol"
+   },
+   {
+    "id": "c",
+    "text": "Glucose and fructose"
+   },
+   {
+    "id": "d",
+    "text": "Amino acids"
+   }
+  ],
+  "answer": 1,
+  "hint": "Fats break down through diglycerides and monoglycerides to their building blocks.",
+  "explanation": "Step 1: Bile emulsifies fats into small droplets. Step 2: Lipases (from pancreatic and intestinal juice) act on them. Step 3: Fats -> diglycerides -> monoglycerides -> fatty acids and glycerol, the final products of fat digestion.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 16 - Digestion and Absorption (16.2 Digestion of Food)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-da-045",
+  "level": "L1",
+  "skill": "digestion-absorption",
+  "type": "mcq",
+  "stem": "The semi-fluid mass of partially digested food that leaves the stomach is called:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Chyle"
+   },
+   {
+    "id": "b",
+    "text": "Chyme"
+   },
+   {
+    "id": "c",
+    "text": "Faeces"
+   },
+   {
+    "id": "d",
+    "text": "Bolus"
+   }
+  ],
+  "answer": 1,
+  "hint": "It is the soupy mixture that enters the duodenum from the stomach.",
+  "explanation": "Step 1: In the stomach, food mixes with gastric juice and becomes a semi-fluid mass. Step 2: NCERT calls this partially digested, acidic food mass the chyme. Step 3: The chyme then enters the duodenum for further digestion. (Bolus is chewed food in the mouth; chyle is fat-laden lymph.)",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 16 - Digestion and Absorption (16.2 Digestion of Food)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-da-046",
+  "level": "L1",
+  "skill": "digestion-absorption",
+  "type": "mcq",
+  "stem": "Fats absorbed in the small intestine are transported into the lacteals of the villi as:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Free fatty acids dissolved in blood"
+   },
+   {
+    "id": "b",
+    "text": "Chylomicrons - small protein-coated fat globules"
+   },
+   {
+    "id": "c",
+    "text": "Glycerol droplets"
+   },
+   {
+    "id": "d",
+    "text": "Micelles directly"
+   }
+  ],
+  "answer": 1,
+  "hint": "Insoluble fats get a protein coat so they can travel in the lymph.",
+  "explanation": "Step 1: Fatty acids and glycerol are insoluble in water, so they cannot be absorbed into the blood directly. Step 2: They are first incorporated into micelles, enter the intestinal mucosa, and are re-formed into very small protein-coated fat globules. Step 3: These are called chylomicrons, which are transported into the lacteals in the villi.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 16 - Digestion and Absorption (16.3 Absorption of Digested Products)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-da-047",
+  "level": "L1",
+  "skill": "digestion-absorption",
+  "type": "mcq",
+  "stem": "Monosaccharides like glucose are absorbed from the intestine by:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Osmosis"
+   },
+   {
+    "id": "b",
+    "text": "Simple diffusion"
+   },
+   {
+    "id": "c",
+    "text": "Facilitated transport along the gradient"
+   },
+   {
+    "id": "d",
+    "text": "Active transport against the concentration gradient"
+   }
+  ],
+  "answer": 3,
+  "hint": "Glucose is pumped in even when it is already more concentrated inside the cell.",
+  "explanation": "Step 1: Absorption occurs by passive, facilitated or active transport. Step 2: NCERT states that monosaccharides like glucose are absorbed by active transport. Step 3: This transport works against the concentration gradient, using energy.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 16 - Digestion and Absorption (16.3 Absorption of Digested Products)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-da-048",
+  "level": "L1",
+  "skill": "digestion-absorption",
+  "type": "mcq",
+  "stem": "The water-soluble end products of digestion absorbed in the small intestine are carried to the liver by the:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Hepatic artery"
+   },
+   {
+    "id": "b",
+    "text": "Inferior vena cava"
+   },
+   {
+    "id": "c",
+    "text": "Hepatic portal vein"
+   },
+   {
+    "id": "d",
+    "text": "Lacteals"
+   }
+  ],
+  "answer": 2,
+  "hint": "Absorbed nutrients go straight to the liver first for processing before reaching the rest of the body.",
+  "explanation": "Step 1: The absorbed water-soluble substances are transported to the tissues via blood. Step 2: They first travel through the hepatic portal vein. Step 3: This vein carries them to the liver, where they are processed before entering general circulation.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 16 - Digestion and Absorption (16.3 Absorption of Digested Products)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-da-049",
+  "level": "L1",
+  "skill": "digestion-absorption",
+  "type": "mcq",
+  "stem": "The large intestine mainly absorbs:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Vitamins and enzymes"
+   },
+   {
+    "id": "b",
+    "text": "Water, some minerals and certain drugs"
+   },
+   {
+    "id": "c",
+    "text": "Proteins and fats"
+   },
+   {
+    "id": "d",
+    "text": "Glucose and amino acids"
+   }
+  ],
+  "answer": 1,
+  "hint": "By the time food reaches here, digestion is done - only water and salts remain to be reclaimed.",
+  "explanation": "Step 1: Maximum absorption of digested food occurs in the small intestine. Step 2: The large intestine has no significant digestive activity. Step 3: Its function is the absorption of water, some minerals and certain drugs.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 16 - Digestion and Absorption (16.3 Absorption of Digested Products)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-da-050",
+  "level": "L1",
+  "skill": "digestion-absorption",
+  "type": "mcq",
+  "stem": "Jaundice is characterised by:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Increased liquidity of the faecal discharge"
+   },
+   {
+    "id": "b",
+    "text": "Retention of faeces within the colon"
+   },
+   {
+    "id": "c",
+    "text": "Ejection of stomach contents through the mouth"
+   },
+   {
+    "id": "d",
+    "text": "Yellowing of the skin and eyes due to deposition of bile pigments, with the liver affected"
+   }
+  ],
+  "answer": 3,
+  "hint": "It is a liver disorder - and the yellow colour gives it away.",
+  "explanation": "Step 1: NCERT lists jaundice among the disorders of the digestive system. Step 2: In jaundice the liver is affected. Step 3: Skin and eyes turn yellow due to the deposition of bile pigments.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 16 - Digestion and Absorption (16.4 Disorders of Digestive System)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ }
+]

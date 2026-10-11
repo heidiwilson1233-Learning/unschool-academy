@@ -1,0 +1,1602 @@
+[
+ {
+  "id": "upsc-pol-dpsp-001",
+  "level": "L2",
+  "skill": "dpsp",
+  "type": "mcq",
+  "stem": "The Directive Principles of State Policy are contained in which Part and Articles of the Indian Constitution?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Part IV, Articles 36 to 51"
+   },
+   {
+    "id": "b",
+    "text": "Part III, Articles 12 to 35"
+   },
+   {
+    "id": "c",
+    "text": "Part IVA, Article 51A"
+   },
+   {
+    "id": "d",
+    "text": "Part V, Articles 52 to 78"
+   }
+  ],
+  "answer": 0,
+  "hint": "Fundamental Rights occupy Part III. The DPSP sit in the Part that comes right after.",
+  "explanation": "Correct: (a). Part IV (Articles 36-51) contains the Directive Principles of State Policy. (b) is wrong: Part III (Articles 12-35) contains Fundamental Rights, not DPSPs. (c) is wrong: Part IVA (Article 51A) contains Fundamental Duties. (d) is wrong: Part V deals with the Union executive, Parliament and the judiciary.",
+  "difficulty": 2,
+  "source": "Laxmikanth Ch. 8 (DPSP) — location in the Constitution",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "upsc-pol-dpsp-002",
+  "level": "L2",
+  "skill": "dpsp",
+  "type": "mcq",
+  "stem": "The Directive Principles of State Policy in the Indian Constitution were borrowed from the Constitution of:",
+  "options": [
+   {
+    "id": "a",
+    "text": "the United States of America"
+   },
+   {
+    "id": "b",
+    "text": "Ireland"
+   },
+   {
+    "id": "c",
+    "text": "Australia"
+   },
+   {
+    "id": "d",
+    "text": "Canada"
+   }
+  ],
+  "answer": 1,
+  "hint": "This country's 1937 Constitution itself copied this feature from the Spanish Constitution.",
+  "explanation": "Correct: (b). The DPSPs were borrowed from the Irish Constitution of 1937, which had in turn copied it from the Spanish Constitution. (a) is wrong: the US Constitution supplied the idea of Fundamental Rights, not DPSPs. (c) is wrong: Australia supplied the concurrent list and joint-sitting provisions. (d) is wrong: Canada supplied the federal structure with a strong Centre.",
+  "difficulty": 2,
+  "source": "Laxmikanth Ch. 8 (DPSP) — source/borrowing",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "upsc-pol-dpsp-003",
+  "level": "L2",
+  "skill": "dpsp",
+  "type": "mcq",
+  "stem": "Which Article declares that the Directive Principles are 'fundamental in the governance of the country' while being non-enforceable by any court?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Article 36"
+   },
+   {
+    "id": "b",
+    "text": "Article 38"
+   },
+   {
+    "id": "c",
+    "text": "Article 37"
+   },
+   {
+    "id": "d",
+    "text": "Article 39"
+   }
+  ],
+  "answer": 2,
+  "hint": "Look at the Article that immediately follows the definition of 'State' in Part IV.",
+  "explanation": "Correct: (c). Article 37 lays down that the DPSPs, though not enforceable by any court, are 'fundamental in the governance of the country' and it is the State's duty to apply them in making laws. (a) is wrong: Article 36 defines 'State' for Part IV purposes. (b) is wrong: Article 38 directs the State to secure a social order for the promotion of welfare. (d) is wrong: Article 39 lists specific directive principles on livelihood, resources and working conditions.",
+  "difficulty": 2,
+  "source": "Laxmikanth Ch. 8 (DPSP) — Article 37, nature of DPSP",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "upsc-pol-dpsp-004",
+  "level": "L2",
+  "skill": "dpsp",
+  "type": "mcq",
+  "stem": "Under Article 36, the term 'State' used in Part IV of the Constitution has the same meaning as 'State' in which Part of the Constitution?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Part II"
+   },
+   {
+    "id": "b",
+    "text": "Part IVA"
+   },
+   {
+    "id": "c",
+    "text": "Part III"
+   },
+   {
+    "id": "d",
+    "text": "Part IV itself only"
+   }
+  ],
+  "answer": 2,
+  "hint": "Article 36 explicitly cross-refers to the definition used for the other great Part of the Constitution that binds government authority.",
+  "explanation": "Correct: (c). Article 36 states that in Part IV, 'the State' has the same meaning as in Part III (i.e., Article 12). (a) is wrong: Part II deals with citizenship, not the definition of State. (b) is wrong: Part IVA contains Fundamental Duties with no State definition. (d) is wrong: Article 36 expressly adopts the Part III meaning rather than creating a standalone one.",
+  "difficulty": 2,
+  "source": "Laxmikanth Ch. 8 (DPSP) — Article 36, definition of State",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "upsc-pol-dpsp-005",
+  "level": "L2",
+  "skill": "dpsp",
+  "type": "mcq",
+  "stem": "Which constitutional commentator described the Fundamental Rights and the Directive Principles together as the 'conscience of the Constitution'?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Granville Austin"
+   },
+   {
+    "id": "b",
+    "text": "K.C. Wheare"
+   },
+   {
+    "id": "c",
+    "text": "Ivor Jennings"
+   },
+   {
+    "id": "d",
+    "text": "D.D. Basu"
+   }
+  ],
+  "answer": 0,
+  "hint": "Think of the author of 'The Indian Constitution: Cornerstone of a Nation'.",
+  "explanation": "Correct: (a). Granville Austin called the Fundamental Rights and the Directive Principles the 'conscience of the Constitution'. (b) is wrong: K.C. Wheare is known for describing the Indian Constitution as 'quasi-federal'. (c) is wrong: Ivor Jennings criticised Indian federalism and the Constitution's framers' choices. (d) is wrong: D.D. Basu authored a famous commentary on the Constitution but did not coin this phrase.",
+  "difficulty": 2,
+  "source": "Laxmikanth Ch. 8 (DPSP) — significance of DPSP",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "upsc-pol-dpsp-006",
+  "level": "L2",
+  "skill": "dpsp",
+  "type": "mcq",
+  "stem": "Article 39A directs the State to provide free legal aid. Which Constitutional Amendment inserted Article 39A?",
+  "options": [
+   {
+    "id": "a",
+    "text": "44th Amendment, 1978"
+   },
+   {
+    "id": "b",
+    "text": "42nd Amendment, 1976"
+   },
+   {
+    "id": "c",
+    "text": "86th Amendment, 2002"
+   },
+   {
+    "id": "d",
+    "text": "97th Amendment, 2011"
+   }
+  ],
+  "answer": 1,
+  "hint": "It was the big 'mini-Constitution' amendment of the Emergency era that added it, along with workers' participation and environmental protection.",
+  "explanation": "Correct: (b). The 42nd Constitutional Amendment (1976) inserted Article 39A (free legal aid), along with Articles 43A and 48A. (a) is wrong: the 44th Amendment amended Article 38 (minimising inequalities) and restored balance after the Emergency. (c) is wrong: the 86th Amendment changed Article 45 (early childhood care) and added Article 21A. (d) is wrong: the 97th Amendment inserted Article 43B on co-operative societies.",
+  "difficulty": 2,
+  "source": "Laxmikanth Ch. 8 (DPSP) — Article 39A and 42nd Amendment",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "upsc-pol-dpsp-007",
+  "level": "L2",
+  "skill": "dpsp",
+  "type": "mcq",
+  "stem": "Article 40 directs the State to organise village panchayats. In the Laxmikanth classification, Article 40 belongs to which group of principles?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Socialistic principles"
+   },
+   {
+    "id": "b",
+    "text": "Liberal-intellectual principles"
+   },
+   {
+    "id": "c",
+    "text": "Gandhian principles"
+   },
+   {
+    "id": "d",
+    "text": "International principles"
+   }
+  ],
+  "answer": 2,
+  "hint": "Village self-government was one of Gandhi's core ideas — so which classification would Laxmikanth place it in?",
+  "explanation": "Correct: (c). Article 40 (organisation of village panchayats as units of self-government) is a Gandhian principle, reflecting Gandhi's vision of self-reliant villages. (a) is wrong: socialistic principles (Arts 38, 39, 39A, 41, 42, 43, 43A, 47) concern economic justice and workers. (b) is wrong: liberal-intellectual principles (Arts 44, 45, 48, 48A, 49, 50, 51) concern modernisation, liberty and global cooperation. (d) is wrong: there is no 'international principles' category in Laxmikanth's classification.",
+  "difficulty": 2,
+  "source": "Laxmikanth Ch. 8 (DPSP) — classification, Article 40",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "upsc-pol-dpsp-008",
+  "level": "L2",
+  "skill": "dpsp",
+  "type": "mcq",
+  "stem": "The State shall endeavour to secure a Uniform Civil Code for citizens throughout the territory of India under which Article?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Article 40"
+   },
+   {
+    "id": "b",
+    "text": "Article 44"
+   },
+   {
+    "id": "c",
+    "text": "Article 46"
+   },
+   {
+    "id": "d",
+    "text": "Article 48"
+   }
+  ],
+  "answer": 1,
+  "hint": "It is one of the most debated liberal-intellectual directives, and its number lies in the mid-40s.",
+  "explanation": "Correct: (b). Article 44 directs the State to secure a Uniform Civil Code throughout the territory of India. (a) is wrong: Article 40 is about village panchayats. (c) is wrong: Article 46 is about promoting the educational and economic interests of SCs, STs and weaker sections. (d) is wrong: Article 48 is about agriculture, animal husbandry and prohibiting cow slaughter.",
+  "difficulty": 2,
+  "source": "Laxmikanth Ch. 8 (DPSP) — Article 44",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "upsc-pol-dpsp-009",
+  "level": "L2",
+  "skill": "dpsp",
+  "type": "mcq",
+  "stem": "After the 86th Constitutional Amendment (2002), Article 45 of the Constitution directs the State to provide:",
+  "options": [
+   {
+    "id": "a",
+    "text": "early childhood care and education to children below the age of six years"
+   },
+   {
+    "id": "b",
+    "text": "free and compulsory education to all children until they complete the age of 14 years"
+   },
+   {
+    "id": "c",
+    "text": "free technical education to all children of weaker sections"
+   },
+   {
+    "id": "d",
+    "text": "mid-day meals to all school-going children"
+   }
+  ],
+  "answer": 0,
+  "hint": "The Amendment moved the older 'free education till 14' directive out of Part IV and turned this Article into a new care-focused directive for the youngest children.",
+  "explanation": "Correct: (a). The 86th Amendment changed Article 45 to read: the State shall endeavour to provide early childhood care and education for all children until they complete the age of six years. (b) is wrong: that was the ORIGINAL pre-2002 text of Article 45; the free-compulsory-education right was moved to Article 21A as a Fundamental Right. (c) is wrong: no DPSP mandates free technical education for weaker sections specifically. (d) is wrong: mid-day meals are a policy scheme, not the text of Article 45.",
+  "difficulty": 2,
+  "source": "Laxmikanth Ch. 8 (DPSP) — Article 45 and 86th Amendment",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "upsc-pol-dpsp-010",
+  "level": "L2",
+  "skill": "dpsp",
+  "type": "mcq",
+  "stem": "Article 43B, which directs the State to promote co-operative societies, was added to the Constitution by which Amendment?",
+  "options": [
+   {
+    "id": "a",
+    "text": "42nd Amendment"
+   },
+   {
+    "id": "b",
+    "text": "97th Amendment"
+   },
+   {
+    "id": "c",
+    "text": "86th Amendment"
+   },
+   {
+    "id": "d",
+    "text": "44th Amendment"
+   }
+  ],
+  "answer": 1,
+  "hint": "This is the most recent of the four listed DPSP-touching amendments — it came in the 2010s.",
+  "explanation": "Correct: (b). The 97th Constitutional Amendment (2011) inserted Article 43B, directing the State to promote the voluntary formation, autonomous functioning and democratic control of co-operative societies. (a) is wrong: the 42nd Amendment added Articles 39A, 43A and 48A. (c) is wrong: the 86th Amendment changed Article 45. (d) is wrong: the 44th Amendment added a clause to Article 38 on minimising inequalities.",
+  "difficulty": 2,
+  "source": "Laxmikanth Ch. 8 (DPSP) — Article 43B and 97th Amendment",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "upsc-pol-dpsp-011",
+  "level": "L2",
+  "skill": "dpsp",
+  "type": "mcq",
+  "stem": "Article 43A, directing the State to secure the participation of workers in the management of industries, was inserted by:",
+  "options": [
+   {
+    "id": "a",
+    "text": "the 25th Amendment"
+   },
+   {
+    "id": "b",
+    "text": "the 44th Amendment"
+   },
+   {
+    "id": "c",
+    "text": "the 42nd Amendment"
+   },
+   {
+    "id": "d",
+    "text": "the 86th Amendment"
+   }
+  ],
+  "answer": 2,
+  "hint": "Same amendment that added free legal aid and the environmental directive.",
+  "explanation": "Correct: (c). Article 43A (workers' participation in management of industries) was inserted by the 42nd Constitutional Amendment, 1976. (a) is wrong: the 25th Amendment inserted Article 31C. (b) is wrong: the 44th Amendment touched Article 38. (d) is wrong: the 86th Amendment touched Article 45 and added Article 21A.",
+  "difficulty": 2,
+  "source": "Laxmikanth Ch. 8 (DPSP) — Article 43A and 42nd Amendment",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "upsc-pol-dpsp-012",
+  "level": "L2",
+  "skill": "dpsp",
+  "type": "mcq",
+  "stem": "Which Article directs the State to 'protect and improve the environment and to safeguard the forests and wildlife of the country'?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Article 47"
+   },
+   {
+    "id": "b",
+    "text": "Article 48"
+   },
+   {
+    "id": "c",
+    "text": "Article 49"
+   },
+   {
+    "id": "d",
+    "text": "Article 48A"
+   }
+  ],
+  "answer": 3,
+  "hint": "It is the 'A' sub-article of the Article on agriculture and animal husbandry, added during the Emergency-era amendment.",
+  "explanation": "Correct: (d). Article 48A, inserted by the 42nd Amendment (1976), directs the State to protect and improve the environment and safeguard forests and wildlife. (a) is wrong: Article 47 deals with nutrition, public health and prohibition of intoxicating drinks. (b) is wrong: Article 48 deals with agriculture, animal husbandry and prohibition of cow slaughter. (c) is wrong: Article 49 deals with protection of monuments and places of national importance.",
+  "difficulty": 2,
+  "source": "Laxmikanth Ch. 8 (DPSP) — Article 48A",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "upsc-pol-dpsp-013",
+  "level": "L2",
+  "skill": "dpsp",
+  "type": "mcq",
+  "stem": "Article 41 directs the State, within the limits of its economic capacity, to secure which of the following?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Right to work, to education and to public assistance in certain cases"
+   },
+   {
+    "id": "b",
+    "text": "Equal pay for equal work for men and women"
+   },
+   {
+    "id": "c",
+    "text": "Free legal aid to the poor"
+   },
+   {
+    "id": "d",
+    "text": "Adequate means of livelihood for all citizens"
+   }
+  ],
+  "answer": 0,
+  "hint": "This Article is about unemployment, old age, sickness and disablement.",
+  "explanation": "Correct: (a). Article 41 directs the State to secure the right to work, to education and to public assistance in cases of unemployment, old age, sickness and disablement, 'within the limits of its economic capacity and development'. (b) is wrong: equal pay for equal work is in Article 39(d). (c) is wrong: free legal aid is Article 39A. (d) is wrong: adequate means of livelihood is Article 39(a).",
+  "difficulty": 2,
+  "source": "Laxmikanth Ch. 8 (DPSP) — Article 41",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "upsc-pol-dpsp-014",
+  "level": "L2",
+  "skill": "dpsp",
+  "type": "mcq",
+  "stem": "The State's duty to make provision for 'just and humane conditions of work and maternity relief' is found in:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Article 39"
+   },
+   {
+    "id": "b",
+    "text": "Article 42"
+   },
+   {
+    "id": "c",
+    "text": "Article 43"
+   },
+   {
+    "id": "d",
+    "text": "Article 45"
+   }
+  ],
+  "answer": 1,
+  "hint": "It sits directly between the Article on right to work/public assistance and the Article on living wage.",
+  "explanation": "Correct: (b). Article 42 requires the State to make provision for securing just and humane conditions of work and for maternity relief. (a) is wrong: Article 39 covers livelihood, distribution of resources and equal pay. (c) is wrong: Article 43 covers living wage and cottage industries. (d) is wrong: Article 45 covers early childhood care and education.",
+  "difficulty": 2,
+  "source": "Laxmikanth Ch. 8 (DPSP) — Article 42",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "upsc-pol-dpsp-015",
+  "level": "L2",
+  "skill": "dpsp",
+  "type": "mcq",
+  "stem": "Which Article directs the State to take steps to separate the judiciary from the executive in the public services of the State?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Article 44"
+   },
+   {
+    "id": "b",
+    "text": "Article 50"
+   },
+   {
+    "id": "c",
+    "text": "Article 51"
+   },
+   {
+    "id": "d",
+    "text": "Article 48A"
+   }
+  ],
+  "answer": 1,
+  "hint": "This liberal-intellectual directive is numbered in the high 40s — just before the Article on international peace.",
+  "explanation": "Correct: (b). Article 50 directs the State to take steps to separate the judiciary from the executive in the public services of the State. (a) is wrong: Article 44 is the Uniform Civil Code. (c) is wrong: Article 51 concerns international peace and security. (d) is wrong: Article 48A concerns the environment.",
+  "difficulty": 2,
+  "source": "Laxmikanth Ch. 8 (DPSP) — Article 50",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "upsc-pol-dpsp-016",
+  "level": "L2",
+  "skill": "dpsp",
+  "type": "mcq",
+  "stem": "Which of the following is NOT among the objectives laid down in Article 51?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Promote international peace and security"
+   },
+   {
+    "id": "b",
+    "text": "Foster respect for international law and treaty obligations"
+   },
+   {
+    "id": "c",
+    "text": "Encourage settlement of international disputes by arbitration"
+   },
+   {
+    "id": "d",
+    "text": "Prevent the entry of foreign nationals into India without visas"
+   }
+  ],
+  "answer": 3,
+  "hint": "Article 51 is about India's relations with the world — peace, honourable relations, international law, arbitration. One option is about immigration control.",
+  "explanation": "Correct: (d). Article 51 directs the State to promote international peace and security, maintain just and honourable relations between nations, foster respect for international law and treaty obligations, and encourage settlement of international disputes by arbitration — it says nothing about visa/immigration control. (a), (b) and (c) are all expressly stated objectives of Article 51.",
+  "difficulty": 2,
+  "source": "Laxmikanth Ch. 8 (DPSP) — Article 51",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "upsc-pol-dpsp-017",
+  "level": "L2",
+  "skill": "dpsp",
+  "type": "mcq",
+  "stem": "Article 49 directs the State to protect:",
+  "options": [
+   {
+    "id": "a",
+    "text": "monuments, places and objects of artistic or historic interest of national importance"
+   },
+   {
+    "id": "b",
+    "text": "the forests and wildlife of the country"
+   },
+   {
+    "id": "c",
+    "text": "the educational interests of Scheduled Castes and Scheduled Tribes"
+   },
+   {
+    "id": "d",
+    "text": "cottage industries in rural areas"
+   }
+  ],
+  "answer": 0,
+  "hint": "Think heritage — ASI-protected sites and national museums.",
+  "explanation": "Correct: (a). Article 49 obliges the State to protect every monument or place or object of artistic or historic interest declared by Parliament to be of national importance. (b) is wrong: forests and wildlife are covered by Article 48A. (c) is wrong: SC/ST educational and economic interests are covered by Article 46. (d) is wrong: cottage industries are promoted under Article 43.",
+  "difficulty": 2,
+  "source": "Laxmikanth Ch. 8 (DPSP) — Article 49",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "upsc-pol-dpsp-018",
+  "level": "L2",
+  "skill": "dpsp",
+  "type": "mcq",
+  "stem": "Article 47 directs the State to raise the level of nutrition and the standard of living, and to prohibit:",
+  "options": [
+   {
+    "id": "a",
+    "text": "the sale of tobacco products near schools"
+   },
+   {
+    "id": "b",
+    "text": "the consumption of intoxicating drinks and of drugs which are injurious to health"
+   },
+   {
+    "id": "c",
+    "text": "the advertising of alcoholic beverages"
+   },
+   {
+    "id": "d",
+    "text": "the manufacture of all narcotic substances for any purpose"
+   }
+  ],
+  "answer": 1,
+  "hint": "This directive has a Gandhian flavour — prohibition was one of Gandhi's causes.",
+  "explanation": "Correct: (b). Article 47 requires the State to prohibit the consumption of intoxicating drinks and of drugs which are injurious to health, except for medicinal purposes. (a) is wrong: Article 47 does not specifically mention tobacco sales near schools. (c) is wrong: advertising of alcohol is not the subject of Article 47. (d) is wrong: the Article targets consumption of health-injurious drinks/drugs, with a medicinal exception — not all narcotic manufacture.",
+  "difficulty": 2,
+  "source": "Laxmikanth Ch. 8 (DPSP) — Article 47",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "upsc-pol-dpsp-019",
+  "level": "L2",
+  "skill": "dpsp",
+  "type": "mcq",
+  "stem": "Article 46 directs the State to promote, with special care, the educational and economic interests of:",
+  "options": [
+   {
+    "id": "a",
+    "text": "women and children"
+   },
+   {
+    "id": "b",
+    "text": "industrial workers"
+   },
+   {
+    "id": "c",
+    "text": "the weaker sections of the people, especially SCs and STs"
+   },
+   {
+    "id": "d",
+    "text": "linguistic minorities"
+   }
+  ],
+  "answer": 2,
+  "hint": "The Article names two specific constitutionally-recognised groups and then widens to 'weaker sections'.",
+  "explanation": "Correct: (c). Article 46 directs the State to promote with special care the educational and economic interests of the weaker sections of the people, and in particular of the Scheduled Castes and Scheduled Tribes, and to protect them from social injustice and exploitation. (a) is wrong: women and children get protection under Article 39(e)-(f) and other provisions, not the focus of Article 46. (b) is wrong: industrial workers are addressed in Articles 42-43A. (d) is wrong: linguistic minorities' interests are protected under Articles 29-30, not Article 46.",
+  "difficulty": 2,
+  "source": "Laxmikanth Ch. 8 (DPSP) — Article 46",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "upsc-pol-dpsp-020",
+  "level": "L2",
+  "skill": "dpsp",
+  "type": "mcq",
+  "stem": "Which pair of duties is correctly matched with Article 48?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Protecting monuments and promoting scientific research"
+   },
+   {
+    "id": "b",
+    "text": "Organising agriculture and animal husbandry, and prohibiting the slaughter of cows and calves"
+   },
+   {
+    "id": "c",
+    "text": "Safeguarding forests and providing early childhood care"
+   },
+   {
+    "id": "d",
+    "text": "Separating the judiciary from the executive and promoting international peace"
+   }
+  ],
+  "answer": 1,
+  "hint": "Article 48 covers the modernisation of farming plus a Gandhian instruction about cattle.",
+  "explanation": "Correct: (b). Article 48 directs the State to endeavour to organise agriculture and animal husbandry on modern and scientific lines, and to take steps for prohibiting the slaughter of cows and calves and other milch and draught cattle and improving their breeds. (a) is wrong: monuments are Article 49; scientific research is Article 51A(h). (c) is wrong: forests are Article 48A and early childhood care is Article 45. (d) is wrong: separation of judiciary is Article 50 and international peace is Article 51.",
+  "difficulty": 2,
+  "source": "Laxmikanth Ch. 8 (DPSP) — Article 48",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "upsc-pol-dpsp-021",
+  "level": "L2",
+  "skill": "dpsp",
+  "type": "mcq",
+  "stem": "The 44th Constitutional Amendment (1978) added which new directive to Article 38?",
+  "options": [
+   {
+    "id": "a",
+    "text": "The State shall minimise inequalities in income and endeavour to eliminate inequalities in status, facilities and opportunities"
+   },
+   {
+    "id": "b",
+    "text": "The State shall provide free legal aid to the poor"
+   },
+   {
+    "id": "c",
+    "text": "The State shall promote co-operative societies"
+   },
+   {
+    "id": "d",
+    "text": "The State shall secure a uniform civil code"
+   }
+  ],
+  "answer": 0,
+  "hint": "The 44th Amendment (the Janata government's course-correction) added one extra clause to the welfare-state Article.",
+  "explanation": "Correct: (a). The 44th Amendment inserted a clause in Article 38 requiring the State to strive to minimise inequalities in income and endeavour to eliminate inequalities in status, facilities and opportunities among individuals and groups. (b) is wrong: free legal aid (Article 39A) came from the 42nd Amendment. (c) is wrong: co-operative societies (Article 43B) came from the 97th Amendment. (d) is wrong: the UCC directive (Article 44) is an original 1950 provision.",
+  "difficulty": 2,
+  "source": "Laxmikanth Ch. 8 (DPSP) — Article 38 and 44th Amendment",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "upsc-pol-dpsp-022",
+  "level": "L2",
+  "skill": "dpsp",
+  "type": "mcq",
+  "stem": "Article 39(b) and 39(c) together direct the State to ensure:",
+  "options": [
+   {
+    "id": "a",
+    "text": "equal pay for equal work"
+   },
+   {
+    "id": "b",
+    "text": "that ownership and control of material resources are distributed to serve the common good and that wealth is not concentrated"
+   },
+   {
+    "id": "c",
+    "text": "free legal aid for the poor"
+   },
+   {
+    "id": "d",
+    "text": "a living wage for all workers"
+   }
+  ],
+  "answer": 1,
+  "hint": "These are the two clauses about material resources and the prevention of economic concentration — the clauses protected by Article 31C.",
+  "explanation": "Correct: (b). Article 39(b) says ownership and control of the material resources of the community should be distributed to best subserve the common good, and Article 39(c) says the operation of the economic system should not result in concentration of wealth and means of production to the common detriment. (a) is wrong: equal pay is Article 39(d). (c) is wrong: free legal aid is Article 39A. (d) is wrong: living wage is Article 43.",
+  "difficulty": 2,
+  "source": "Laxmikanth Ch. 8 (DPSP) — Article 39(b) and (c)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "upsc-pol-dpsp-023",
+  "level": "L2",
+  "skill": "dpsp",
+  "type": "mcq",
+  "stem": "Article 43 directs the State to secure for all workers a 'living wage' and to promote:",
+  "options": [
+   {
+    "id": "a",
+    "text": "heavy industries in urban areas"
+   },
+   {
+    "id": "b",
+    "text": "foreign direct investment in manufacturing"
+   },
+   {
+    "id": "c",
+    "text": "cottage industries on an individual or co-operative basis in rural areas"
+   },
+   {
+    "id": "d",
+    "text": "special economic zones for export production"
+   }
+  ],
+  "answer": 2,
+  "hint": "This directive pairs fair wages with Gandhi-style village-level production.",
+  "explanation": "Correct: (c). Article 43 directs the State to secure a living wage, conditions of work ensuring a decent standard of life, and full enjoyment of leisure for workers, and to promote cottage industries on an individual or co-operative basis in rural areas. (a) is wrong: heavy industry is industrial policy, not Article 43. (b) is wrong: FDI is an economic-policy matter, not in the DPSPs. (d) is wrong: SEZs are a modern trade-policy instrument, not mentioned in the Constitution.",
+  "difficulty": 2,
+  "source": "Laxmikanth Ch. 8 (DPSP) — Article 43",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "upsc-pol-dpsp-024",
+  "level": "L2",
+  "skill": "dpsp",
+  "type": "mcq",
+  "stem": "Which of the following best captures the standard distinction between Fundamental Rights and Directive Principles?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Fundamental Rights are non-justiciable; Directive Principles are justiciable"
+   },
+   {
+    "id": "b",
+    "text": "Both are enforceable in courts"
+   },
+   {
+    "id": "c",
+    "text": "Neither imposes any obligation on the State"
+   },
+   {
+    "id": "d",
+    "text": "Fundamental Rights are negative in character (prohibiting State action); Directive Principles are positive in character (requiring State action)"
+   }
+  ],
+  "answer": 3,
+  "hint": "One set tells the State what it must NOT do; the other tells the State what it SHOULD do.",
+  "explanation": "Correct: (d). Fundamental Rights are negative obligations that prohibit/restrain State action (e.g., do not deny equality), while DPSPs are positive obligations requiring the State to do certain things (e.g., secure a living wage, provide legal aid). (a) is wrong: it reverses the positions — FRs are justiciable, DPSPs non-justiciable. (b) is wrong: DPSPs are expressly non-enforceable in court under Article 37. (c) is wrong: FRs are binding prohibitions and DPSPs, though non-justiciable, are 'fundamental in governance' with a State duty to apply them.",
+  "difficulty": 2,
+  "source": "Laxmikanth Ch. 8 (DPSP) — FR vs DPSP distinction",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "upsc-pol-dpsp-025",
+  "level": "L2",
+  "skill": "dpsp",
+  "type": "mcq",
+  "stem": "Consider the statements: 1. Fundamental Rights aim at political democracy; DPSPs aim at social and economic democracy. 2. Fundamental Rights are justiciable; DPSPs are non-justiciable. Which is/are correct?",
+  "options": [
+   {
+    "id": "a",
+    "text": "1 only"
+   },
+   {
+    "id": "b",
+    "text": "2 only"
+   },
+   {
+    "id": "c",
+    "text": "Both 1 and 2"
+   },
+   {
+    "id": "d",
+    "text": "Neither 1 nor 2"
+   }
+  ],
+  "answer": 2,
+  "hint": "Both are textbook contrasts. The preamble pairs 'political' justice with 'social and economic' justice — now map them to the two Parts.",
+  "explanation": "Correct: (c). Both statements are correct. Fundamental Rights (Part III) protect individual liberties and establish political democracy, and are enforceable in courts. The DPSPs (Part IV) aim at social and economic democracy — a welfare state — and are non-enforceable by courts under Article 37. So (a), (b) and (d) are wrong because each denies one of the two correct statements.",
+  "difficulty": 2,
+  "source": "Laxmikanth Ch. 8 (DPSP) — FR vs DPSP distinction",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "upsc-pol-dpsp-026",
+  "level": "L2",
+  "skill": "dpsp",
+  "type": "mcq",
+  "stem": "In the State of Madras v. Champakam Dorairajan case (1951), the Supreme Court held that:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Directive Principles would prevail over Fundamental Rights in case of conflict"
+   },
+   {
+    "id": "b",
+    "text": "Directive Principles are enforceable in courts"
+   },
+   {
+    "id": "c",
+    "text": "Both must always be given equal weight"
+   },
+   {
+    "id": "d",
+    "text": "Fundamental Rights would prevail over Directive Principles in case of conflict"
+   }
+  ],
+  "answer": 3,
+  "hint": "This early ruling marked the high-water mark of Fundamental Rights supremacy — before the Court shifted to harmony.",
+  "explanation": "Correct: (d). In Champakam Dorairajan (1951), the Supreme Court held that the Directive Principles must run as subsidiary to the Fundamental Rights and would have to conform to them. (a) is wrong: that was the opposite holding, never made by this case. (b) is wrong: Article 37 expressly makes DPSPs non-enforceable by courts. (c) is wrong: the harmonious-construction approach came later with Kesavananda and Minerva Mills.",
+  "difficulty": 2,
+  "source": "Laxmikanth Ch. 8 (DPSP) — Champakam Dorairajan case",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "upsc-pol-dpsp-027",
+  "level": "L2",
+  "skill": "dpsp",
+  "type": "mcq",
+  "stem": "In Kesavananda Bharati v. State of Kerala (1973), the Supreme Court's ruling relevant to the DPSP–FR debate established that:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Directive Principles are enforceable in courts"
+   },
+   {
+    "id": "b",
+    "text": "Fundamental Rights can never be amended"
+   },
+   {
+    "id": "c",
+    "text": "The Court should apply harmonious construction, giving effect to both FRs and DPSPs as far as possible"
+   },
+   {
+    "id": "d",
+    "text": "Article 31C is invalid in its entirety"
+   }
+  ],
+  "answer": 2,
+  "hint": "The judgment introduced the basic-structure doctrine — and alongside it, a method of reading the two Parts together rather than picking one winner.",
+  "explanation": "Correct: (c). Kesavananda Bharati (1973) held that courts should adopt harmonious construction — giving effect to both Fundamental Rights and Directive Principles as far as possible, since Parliament can abridge FRs to give effect to DPSPs without destroying the basic structure. (a) is wrong: DPSPs remained non-justiciable. (b) is wrong: the Court held FRs CAN be amended, only not so as to destroy the basic structure. (d) is wrong: Article 31C was upheld (for 39(b)/(c)) in Kesavananda; only its 42nd Amendment extension was struck down later in Minerva Mills.",
+  "difficulty": 2,
+  "source": "Laxmikanth Ch. 8 (DPSP) — Kesavananda Bharati case",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "upsc-pol-dpsp-028",
+  "level": "L2",
+  "skill": "dpsp",
+  "type": "mcq",
+  "stem": "In Minerva Mills v. Union of India (1980), the Supreme Court held that:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Directive Principles override all Fundamental Rights"
+   },
+   {
+    "id": "b",
+    "text": "Fundamental Rights override all Directive Principles"
+   },
+   {
+    "id": "c",
+    "text": "Directive Principles are justiciable when read with Article 21"
+   },
+   {
+    "id": "d",
+    "text": "Harmony and balance between Fundamental Rights and Directive Principles is an essential feature of the basic structure"
+   }
+  ],
+  "answer": 3,
+  "hint": "The Court spoke of a 'fine balance' between the two Parts — destroying either side's balance would damage the Constitution's structure.",
+  "explanation": "Correct: (d). Minerva Mills (1980) held that harmony and balance between Fundamental Rights and Directive Principles is an essential feature of the basic structure, and struck down the 42nd Amendment's extension of Article 31C (to all DPSPs) as violating this balance. (a) is wrong: the Court rejected DPSP absolutism. (b) is wrong: the Court rejected FR absolutism too — the old Champakam position. (c) is wrong: the judgment did not make DPSPs justiciable; it only held they cannot be used to destroy FRs wholesale.",
+  "difficulty": 2,
+  "source": "Laxmikanth Ch. 8 (DPSP) — Minerva Mills case",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "upsc-pol-dpsp-029",
+  "level": "L2",
+  "skill": "dpsp",
+  "type": "mcq",
+  "stem": "Article 31C, inserted by the 25th Constitutional Amendment (1971), provides that:",
+  "options": [
+   {
+    "id": "a",
+    "text": "laws giving effect to the directives in Article 39(b) and 39(c) cannot be challenged as violating Articles 14 and 19"
+   },
+   {
+    "id": "b",
+    "text": "all Directive Principles are enforceable in courts"
+   },
+   {
+    "id": "c",
+    "text": "the State need not apply any Directive Principle"
+   },
+   {
+    "id": "d",
+    "text": "Directive Principles apply only to the Union Government, not the States"
+   }
+  ],
+  "answer": 0,
+  "hint": "This was the land-reform-era shield: two specific clauses of Article 39 got protection against equality and freedom claims.",
+  "explanation": "Correct: (a). Article 31C (25th Amendment) declares that no law giving effect to the directive principles in Article 39(b) (distribution of material resources) and 39(c) (prevention of concentration of wealth) shall be deemed void on the ground of inconsistency with Articles 14 and 19. (b) is wrong: Article 31C shields laws, it does not make DPSPs justiciable. (c) is wrong: Article 37 keeps the duty to apply DPSPs. (d) is wrong: DPSPs bind 'the State' as defined in Article 36 — both Union and States.",
+  "difficulty": 2,
+  "source": "Laxmikanth Ch. 8 (DPSP) — Article 31C, 25th Amendment",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "upsc-pol-dpsp-030",
+  "level": "L2",
+  "skill": "dpsp",
+  "type": "mcq",
+  "stem": "Which Articles were added to Part IV by the 42nd Constitutional Amendment (1976)?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Articles 40, 44 and 50"
+   },
+   {
+    "id": "b",
+    "text": "Articles 39A, 43A and 48A"
+   },
+   {
+    "id": "c",
+    "text": "Articles 41, 42 and 43"
+   },
+   {
+    "id": "d",
+    "text": "Articles 43B, 45 and 51"
+   }
+  ],
+  "answer": 1,
+  "hint": "Three insertions: free legal aid, workers' participation in management, environmental protection.",
+  "explanation": "Correct: (b). The 42nd Amendment inserted Article 39A (free legal aid), Article 43A (workers' participation in management) and Article 48A (environment protection) into Part IV. (a) is wrong: Articles 40, 44 and 50 are original 1950 provisions. (c) is wrong: Articles 41-43 are original provisions. (d) is wrong: Article 43B came via the 97th Amendment, while 45 and 51 are original.",
+  "difficulty": 2,
+  "source": "Laxmikanth Ch. 8 (DPSP) — 42nd Amendment additions",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "upsc-pol-dpsp-031",
+  "level": "L2",
+  "skill": "dpsp",
+  "type": "mcq",
+  "stem": "Which Constitutional Amendment changed Article 45 from 'free and compulsory education until age 14' to 'early childhood care and education until age six'?",
+  "options": [
+   {
+    "id": "a",
+    "text": "44th Amendment"
+   },
+   {
+    "id": "b",
+    "text": "52nd Amendment"
+   },
+   {
+    "id": "c",
+    "text": "86th Amendment"
+   },
+   {
+    "id": "d",
+    "text": "97th Amendment"
+   }
+  ],
+  "answer": 2,
+  "hint": "The same amendment that created the right to education as a Fundamental Right (Article 21A) in 2002.",
+  "explanation": "Correct: (c). The 86th Constitutional Amendment (2002) made elementary education a Fundamental Right under Article 21A and recast Article 45 to cover early childhood care and education for children below six. (a) is wrong: the 44th Amendment touched Article 38. (b) is wrong: the 52nd Amendment dealt with anti-defection (Tenth Schedule). (d) is wrong: the 97th Amendment inserted Article 43B on co-operatives.",
+  "difficulty": 2,
+  "source": "Laxmikanth Ch. 8 (DPSP) — Article 45, 86th Amendment",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "upsc-pol-dpsp-032",
+  "level": "L2",
+  "skill": "dpsp",
+  "type": "mcq",
+  "stem": "The Directive Principles reflect the goal of establishing in India a:",
+  "options": [
+   {
+    "id": "a",
+    "text": "police state"
+   },
+   {
+    "id": "b",
+    "text": "theocratic state"
+   },
+   {
+    "id": "c",
+    "text": "laissez-faire state"
+   },
+   {
+    "id": "d",
+    "text": "welfare state (social and economic democracy)"
+   }
+  ],
+  "answer": 3,
+  "hint": "Article 38 speaks of promoting the welfare of the people by securing a social order — what kind of state is that?",
+  "explanation": "Correct: (d). The DPSPs are the instrument for establishing a welfare state and social-economic democracy, as opposed to the political democracy secured by Fundamental Rights. (a) is wrong: a police state is about coercive order, not welfare directives. (b) is wrong: India is a secular state; the DPSPs are not religious prescriptions. (c) is wrong: laissez-faire means minimal State intervention — the DPSPs require active State intervention for welfare.",
+  "difficulty": 2,
+  "source": "Laxmikanth Ch. 8 (DPSP) — significance of DPSP",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "upsc-pol-dpsp-033",
+  "level": "L2",
+  "skill": "dpsp",
+  "type": "mcq",
+  "stem": "The 'Instrument of Instructions' in the Government of India Act, 1935 is regarded as the precursor of which part of the Indian Constitution?",
+  "options": [
+   {
+    "id": "a",
+    "text": "The Directive Principles of State Policy"
+   },
+   {
+    "id": "b",
+    "text": "The Fundamental Rights"
+   },
+   {
+    "id": "c",
+    "text": "The Emergency Provisions"
+   },
+   {
+    "id": "d",
+    "text": "The Schedules"
+   }
+  ],
+  "answer": 0,
+  "hint": "This colonial-era device gave non-binding guidance to Governors — just as the DPSPs give non-binding guidance to the State.",
+  "explanation": "Correct: (a). The Instrument of Instructions, which contained general guidance for Governors and Governors-General under the 1935 Act, is considered the forerunner of the Directive Principles. (b) is wrong: Fundamental Rights trace to the US Bill of Rights and the freedom movement's demands. (c) is wrong: Emergency provisions trace to the German Weimar Constitution. (d) is wrong: the Schedules are a colonial drafting device, not guidance provisions.",
+  "difficulty": 2,
+  "source": "Laxmikanth Ch. 8 (DPSP) — Instrument of Instructions, GOI Act 1935",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "upsc-pol-dpsp-034",
+  "level": "L2",
+  "skill": "dpsp",
+  "type": "mcq",
+  "stem": "Which of the following is a commonly cited criticism of the Directive Principles of State Policy?",
+  "options": [
+   {
+    "id": "a",
+    "text": "They are legally enforceable in courts"
+   },
+   {
+    "id": "b",
+    "text": "They apply only to the States and not the Union"
+   },
+   {
+    "id": "c",
+    "text": "They are too few in number"
+   },
+   {
+    "id": "d",
+    "text": "They have no legal force and cannot be enforced by courts"
+   }
+  ],
+  "answer": 3,
+  "hint": "The sharpest complaint critics make is that these grand promises come with no legal teeth.",
+  "explanation": "Correct: (d). Critics argue the DPSPs have no legal force — being non-justiciable under Article 37, they are seen as 'pious aspirations' without legal sanction. (a) is wrong: that is the opposite of the position; Article 37 expressly denies enforceability. (b) is wrong: 'State' in Part IV (Article 36) includes both the Union and State governments. (c) is wrong: they number sixteen articles (36–51) and are not criticised for being few.",
+  "difficulty": 2,
+  "source": "Laxmikanth Ch. 8 (DPSP) — criticism of DPSP",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "upsc-pol-dpsp-035",
+  "level": "L2",
+  "skill": "dpsp",
+  "type": "mcq",
+  "stem": "The directive of 'equal pay for equal work for both men and women' is contained in:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Article 39(a)"
+   },
+   {
+    "id": "b",
+    "text": "Article 41"
+   },
+   {
+    "id": "c",
+    "text": "Article 39(d)"
+   },
+   {
+    "id": "d",
+    "text": "Article 43A"
+   }
+  ],
+  "answer": 2,
+  "hint": "It is one of the six clauses of Article 39 — the clause with the alphabet 'd'.",
+  "explanation": "Correct: (c). Article 39(d) directs that there is equal pay for equal work for both men and women. (a) is wrong: Article 39(a) is about adequate means of livelihood for all citizens. (b) is wrong: Article 41 is about the right to work, education and public assistance. (d) is wrong: Article 43A is about workers' participation in management.",
+  "difficulty": 2,
+  "source": "Laxmikanth Ch. 8 (DPSP) — Article 39(d)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "upsc-pol-dpsp-036",
+  "level": "L2",
+  "skill": "dpsp",
+  "type": "mcq",
+  "stem": "Which legislation gives effect to the directive in Article 39A (free legal aid to the poor)?",
+  "options": [
+   {
+    "id": "a",
+    "text": "The Minimum Wages Act, 1948"
+   },
+   {
+    "id": "b",
+    "text": "The Maternity Benefit Act, 1961"
+   },
+   {
+    "id": "c",
+    "text": "The Environment (Protection) Act, 1986"
+   },
+   {
+    "id": "d",
+    "text": "The Legal Services Authorities Act, 1987"
+   }
+  ],
+  "answer": 3,
+  "hint": "Look for the Act whose very name is about legal services for the disadvantaged — enacted in the late 1980s.",
+  "explanation": "Correct: (d). The Legal Services Authorities Act (1987) established the legal-services machinery that gives effect to Article 39A. (a) is wrong: the Minimum Wages Act gives effect to the living-wage directive (Article 43). (b) is wrong: the Maternity Benefit Act gives effect to Article 42. (c) is wrong: the Environment (Protection) Act gives effect to Article 48A.",
+  "difficulty": 2,
+  "source": "Laxmikanth Ch. 8 (DPSP) — Article 39A, enacted legislation",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "upsc-pol-dpsp-037",
+  "level": "L2",
+  "skill": "dpsp",
+  "type": "mcq",
+  "stem": "The Maternity Benefit Act, 1961 gives effect to which Directive Principle?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Article 42"
+   },
+   {
+    "id": "b",
+    "text": "Article 44"
+   },
+   {
+    "id": "c",
+    "text": "Article 46"
+   },
+   {
+    "id": "d",
+    "text": "Article 49"
+   }
+  ],
+  "answer": 0,
+  "hint": "Maternity relief is expressly named in one directive Article about humane conditions of work.",
+  "explanation": "Correct: (a). The Maternity Benefit Act, 1961 is the classic legislation giving effect to Article 42 (just and humane conditions of work and maternity relief). (b) is wrong: Article 44 is the Uniform Civil Code. (c) is wrong: Article 46 concerns SCs/STs and weaker sections. (d) is wrong: Article 49 concerns monuments.",
+  "difficulty": 2,
+  "source": "Laxmikanth Ch. 8 (DPSP) — Article 42, enacted legislation",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "upsc-pol-dpsp-038",
+  "level": "L2",
+  "skill": "dpsp",
+  "type": "mcq",
+  "stem": "The Minimum Wages Act, 1948 gives effect to the directive in which Article?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Article 41"
+   },
+   {
+    "id": "b",
+    "text": "Article 43"
+   },
+   {
+    "id": "c",
+    "text": "Article 45"
+   },
+   {
+    "id": "d",
+    "text": "Article 47"
+   }
+  ],
+  "answer": 1,
+  "hint": "This directive is about securing a living wage and decent standard of life for workers.",
+  "explanation": "Correct: (b). The Minimum Wages Act, 1948 gives effect to Article 43, which directs the State to secure a living wage for workers. (a) is wrong: Article 41 is about the right to work, education and public assistance. (c) is wrong: Article 45 is about early childhood care and education. (d) is wrong: Article 47 is about nutrition, public health and prohibition.",
+  "difficulty": 2,
+  "source": "Laxmikanth Ch. 8 (DPSP) — Article 43, enacted legislation",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "upsc-pol-dpsp-039",
+  "level": "L2",
+  "skill": "dpsp",
+  "type": "mcq",
+  "stem": "Article 43B directs the State to promote co-operative societies with emphasis on:",
+  "options": [
+   {
+    "id": "a",
+    "text": "compulsory State membership of co-operatives"
+   },
+   {
+    "id": "b",
+    "text": "nationalisation of all co-operative banks"
+   },
+   {
+    "id": "c",
+    "text": "voluntary formation, autonomous functioning and democratic control"
+   },
+   {
+    "id": "d",
+    "text": "exemption of co-operatives from audit"
+   }
+  ],
+  "answer": 2,
+  "hint": "The 97th Amendment wanted co-operatives to be member-run, not state-run — which three words capture that?",
+  "explanation": "Correct: (c). Article 43B directs the State to endeavour to promote the voluntary formation, autonomous functioning, democratic control and professional management of co-operative societies. (a) is wrong: compulsion contradicts 'voluntary formation'. (b) is wrong: the Article says nothing about nationalising co-operative banks. (d) is wrong: the companion 97th Amendment provisions actually strengthened audit of co-operatives, not exempted them.",
+  "difficulty": 2,
+  "source": "Laxmikanth Ch. 8 (DPSP) — Article 43B",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "upsc-pol-dpsp-040",
+  "level": "L2",
+  "skill": "dpsp",
+  "type": "mcq",
+  "stem": "Under Article 51, India is directed to foster respect for international law and treaty obligations, and to:",
+  "options": [
+   {
+    "id": "a",
+    "text": "maintain a permanent seat in the UN Security Council"
+   },
+   {
+    "id": "b",
+    "text": "intervene militarily in neighbouring states"
+   },
+   {
+    "id": "c",
+    "text": "impose trade sanctions on hostile nations"
+   },
+   {
+    "id": "d",
+    "text": "encourage settlement of international disputes by arbitration"
+   }
+  ],
+  "answer": 3,
+  "hint": "The last of the Article 51 objectives is about peaceful dispute resolution — a method other than war or courts.",
+  "explanation": "Correct: (d). Article 51(d) directs the State to encourage settlement of international disputes by arbitration. (a) is wrong: a permanent UNSC seat is a foreign-policy aspiration, not stated in Article 51. (b) is wrong: Article 51 promotes international peace, not military intervention. (c) is wrong: trade sanctions are not mentioned; the Article speaks of honourable relations and peaceful settlement.",
+  "difficulty": 2,
+  "source": "Laxmikanth Ch. 8 (DPSP) — Article 51",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "upsc-pol-dpsp-041",
+  "level": "L2",
+  "skill": "dpsp",
+  "type": "mcq",
+  "stem": "Laws giving effect to which Directive Principles are shielded from challenge under Articles 14 and 19 by Article 31C (as upheld in Kesavananda Bharati)?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Article 39(b) and Article 39(c)"
+   },
+   {
+    "id": "b",
+    "text": "Article 44 and Article 45"
+   },
+   {
+    "id": "c",
+    "text": "Article 48 and Article 48A"
+   },
+   {
+    "id": "d",
+    "text": "Article 50 and Article 51"
+   }
+  ],
+  "answer": 0,
+  "hint": "The protected pair is about material resources and preventing concentration of wealth — the land-reform clauses.",
+  "explanation": "Correct: (a). Article 31C protects laws giving effect to Article 39(b) (distribution of material resources) and 39(c) (prevention of concentration of wealth) from being voided on grounds of violating Articles 14 and 19. (b), (c) and (d) are wrong: no Article 31C shield was ever extended to the UCC (44), childhood care (45), agriculture (48), environment (48A), separation of judiciary (50) or international peace (51) — the 42nd Amendment's attempt to extend the shield to all DPSPs was struck down in Minerva Mills.",
+  "difficulty": 2,
+  "source": "Laxmikanth Ch. 8 (DPSP) — Article 31C",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "upsc-pol-dpsp-042",
+  "level": "L2",
+  "skill": "dpsp",
+  "type": "mcq",
+  "stem": "The phrase 'fundamental in the governance of the country' appears in which Article, and refers to which provisions?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Article 36; Fundamental Rights"
+   },
+   {
+    "id": "b",
+    "text": "Article 37; Directive Principles of State Policy"
+   },
+   {
+    "id": "c",
+    "text": "Article 38; Fundamental Duties"
+   },
+   {
+    "id": "d",
+    "text": "Article 39; Preamble objectives"
+   }
+  ],
+  "answer": 1,
+  "hint": "This phrase is the famous consolation for non-justiciability — find the Article that grants moral authority instead of legal enforceability.",
+  "explanation": "Correct: (b). Article 37 states that the Directive Principles, though not enforceable by any court, are nevertheless 'fundamental in the governance of the country'. (a) is wrong: Article 36 defines 'State'; Fundamental Rights are justiciable, so they need no such phrase. (c) is wrong: Article 38 deals with the social order; Fundamental Duties are in Part IVA. (d) is wrong: Article 39 lists specific directives, not this phrase.",
+  "difficulty": 2,
+  "source": "Laxmikanth Ch. 8 (DPSP) — Article 37",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "upsc-pol-dpsp-043",
+  "level": "L2",
+  "skill": "dpsp",
+  "type": "mcq",
+  "stem": "In the Laxmikanth classification of Directive Principles, Article 44 (Uniform Civil Code) belongs to which category?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Socialistic principles"
+   },
+   {
+    "id": "b",
+    "text": "Gandhian principles"
+   },
+   {
+    "id": "c",
+    "text": "Liberal-intellectual principles"
+   },
+   {
+    "id": "d",
+    "text": "Administrative principles"
+   }
+  ],
+  "answer": 2,
+  "hint": "The UCC is a modernising, liberty-oriented reform — neither a socialist economic measure nor a Gandhian village measure.",
+  "explanation": "Correct: (c). Article 44 is classified as a liberal-intellectual principle (along with Arts 45, 48, 48A, 49, 50, 51). (a) is wrong: socialistic principles (38, 39, 39A, 41, 42, 43, 43A, 47) concern economic justice and labour. (b) is wrong: Gandhian principles (40, 43, 43B, 46, 47, 48) reflect Gandhi's village-centred vision. (d) is wrong: there is no 'administrative principles' category in Laxmikanth's classification.",
+  "difficulty": 2,
+  "source": "Laxmikanth Ch. 8 (DPSP) — classification, Article 44",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "upsc-pol-dpsp-044",
+  "level": "L2",
+  "skill": "dpsp",
+  "type": "mcq",
+  "stem": "Article 43A (participation of workers in management of industries) is classified by Laxmikanth as which type of principle?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Gandhian"
+   },
+   {
+    "id": "b",
+    "text": "Liberal-intellectual"
+   },
+   {
+    "id": "c",
+    "text": "Federal"
+   },
+   {
+    "id": "d",
+    "text": "Socialistic"
+   }
+  ],
+  "answer": 3,
+  "hint": "Workers' empowerment sits in the same group as living wage, equal pay and free legal aid.",
+  "explanation": "Correct: (d). Article 43A is a socialistic principle (the group: Arts 38, 39, 39A, 41, 42, 43, 43A, 47). (a) is wrong: Gandhian principles centre on villages, panchayats, cottage industries and prohibition. (b) is wrong: liberal-intellectual principles centre on modernisation, liberty and internationalism (Arts 44-51 group). (c) is wrong: there is no 'federal' category of DPSP classification.",
+  "difficulty": 2,
+  "source": "Laxmikanth Ch. 8 (DPSP) — classification, Article 43A",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "upsc-pol-dpsp-045",
+  "level": "L2",
+  "skill": "dpsp",
+  "type": "mcq",
+  "stem": "Which of the following is NOT a socialistic directive principle?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Article 44 (Uniform Civil Code)"
+   },
+   {
+    "id": "b",
+    "text": "Article 39 (adequate livelihood, resource distribution, equal pay)"
+   },
+   {
+    "id": "c",
+    "text": "Article 41 (right to work, education, public assistance)"
+   },
+   {
+    "id": "d",
+    "text": "Article 43 (living wage for workers)"
+   }
+  ],
+  "answer": 0,
+  "hint": "Three of these sit in Laxmikanth's socialistic group; one sits in the liberal-intellectual group.",
+  "explanation": "Correct: (a). Article 44 (Uniform Civil Code) is a liberal-intellectual principle, not a socialistic one. (b) is wrong as a choice because Article 39 IS a socialistic principle. (c) is wrong as a choice because Article 41 IS a socialistic principle. (d) is wrong as a choice because Article 43 IS a socialistic principle.",
+  "difficulty": 2,
+  "source": "Laxmikanth Ch. 8 (DPSP) — classification of DPSP",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "upsc-pol-dpsp-046",
+  "level": "L2",
+  "skill": "dpsp",
+  "type": "mcq",
+  "stem": "The 97th Constitutional Amendment, which inserted Article 43B on co-operative societies, was enacted in the year:",
+  "options": [
+   {
+    "id": "a",
+    "text": "1976"
+   },
+   {
+    "id": "b",
+    "text": "2011"
+   },
+   {
+    "id": "c",
+    "text": "2002"
+   },
+   {
+    "id": "d",
+    "text": "1978"
+   }
+  ],
+  "answer": 1,
+  "hint": "It is the latest of the four amendments that touched Part IV — it came in the 2010s.",
+  "explanation": "Correct: (b). The 97th Constitutional Amendment was enacted in 2011. (a) is wrong: 1976 was the 42nd Amendment. (c) is wrong: 2002 was the 86th Amendment. (d) is wrong: 1978 was the 44th Amendment.",
+  "difficulty": 2,
+  "source": "Laxmikanth Ch. 8 (DPSP) — 97th Amendment",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "upsc-pol-dpsp-047",
+  "level": "L2",
+  "skill": "dpsp",
+  "type": "mcq",
+  "stem": "Article 39A (free legal aid) was inserted by the 42nd Amendment in 1976. What is the significance of the year 1976 for DPSP history?",
+  "options": [
+   {
+    "id": "a",
+    "text": "It was the year the DPSPs were first made justiciable"
+   },
+   {
+    "id": "b",
+    "text": "It was the year Parliament removed all DPSPs from the Constitution"
+   },
+   {
+    "id": "c",
+    "text": "It was the year Articles 39A, 43A and 48A were added to Part IV"
+   },
+   {
+    "id": "d",
+    "text": "It was the year the Supreme Court struck down Article 31C"
+   }
+  ],
+  "answer": 2,
+  "hint": "Ignore the decoys that claim something was removed or made enforceable — 1976 was an Emergency-era expansion of the DPSPs.",
+  "explanation": "Correct: (c). The 42nd Amendment (1976) added three new DPSPs: Article 39A (free legal aid), Article 43A (workers' participation in management) and Article 48A (environment protection). (a) is wrong: DPSPs were never made justiciable. (b) is wrong: no DPSP was ever removed from the Constitution. (d) is wrong: Article 31C was upheld (for 39(b)/(c)) in 1973; its extension was struck down in 1980, not 1976.",
+  "difficulty": 2,
+  "source": "Laxmikanth Ch. 8 (DPSP) — 42nd Amendment",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "upsc-pol-dpsp-048",
+  "level": "L2",
+  "skill": "dpsp",
+  "type": "mcq",
+  "stem": "Article 44 directs the State to secure a uniform civil code 'throughout the territory of India'. Which Indian State/UT is noted for actually having a common civil code in force?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Jammu and Kashmir"
+   },
+   {
+    "id": "b",
+    "text": "Nagaland"
+   },
+   {
+    "id": "c",
+    "text": "Goa"
+   },
+   {
+    "id": "d",
+    "text": "Puducherry"
+   }
+  ],
+  "answer": 2,
+  "hint": "This former Portuguese territory retained its uniform family law after liberation.",
+  "explanation": "Correct: (c). Goa is the only Indian State with a common civil code in force (the Goa Civil Code, a legacy of Portuguese rule). (a) is wrong: Jammu and Kashmir had its own special constitutional arrangement (now reorganised), not a common civil code. (b) is wrong: Nagaland has special protections for Naga customary law under Article 371A. (d) is wrong: Puducherry follows the general personal-law system.",
+  "difficulty": 2,
+  "source": "Laxmikanth Ch. 8 (DPSP) — Article 44 (UCC)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "upsc-pol-dpsp-049",
+  "level": "L2",
+  "skill": "dpsp",
+  "type": "mcq",
+  "stem": "Before the 86th Amendment (2002), what did Article 45 originally direct the State to provide?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Free and compulsory education for all children until they complete the age of 14 years"
+   },
+   {
+    "id": "b",
+    "text": "Free legal aid to all citizens"
+   },
+   {
+    "id": "c",
+    "text": "Scholarships for higher education"
+   },
+   {
+    "id": "d",
+    "text": "Free mid-day meals in primary schools"
+   }
+  ],
+  "answer": 0,
+  "hint": "The original Article 45 carried a time-bound promise — within ten years of the Constitution's commencement — for children up to a certain age.",
+  "explanation": "Correct: (a). The original Article 45 directed the State to endeavour to provide, within ten years from the commencement of the Constitution, free and compulsory education for all children until they complete the age of fourteen years. (b) is wrong: free legal aid is Article 39A. (c) is wrong: no DPSP mandates higher-education scholarships. (d) is wrong: mid-day meals are a policy scheme, not the original Article 45 text.",
+  "difficulty": 2,
+  "source": "Laxmikanth Ch. 8 (DPSP) — original Article 45",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "upsc-pol-dpsp-050",
+  "level": "L2",
+  "skill": "dpsp",
+  "type": "mcq",
+  "stem": "Which case is most closely associated with the proposition that 'the harmony and balance between Fundamental Rights and Directive Principles is an essential feature of the basic structure of the Constitution'?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Golaknath v. State of Punjab"
+   },
+   {
+    "id": "b",
+    "text": "Maneka Gandhi v. Union of India"
+   },
+   {
+    "id": "c",
+    "text": "A.K. Gopalan v. State of Madras"
+   },
+   {
+    "id": "d",
+    "text": "Minerva Mills v. Union of India"
+   }
+  ],
+  "answer": 3,
+  "hint": "This 1980 judgment struck down the 42nd Amendment's extension of Article 31C precisely to protect that balance.",
+  "explanation": "Correct: (d). Minerva Mills v. Union of India (1980) held that harmony and balance between FRs and DPSPs is part of the basic structure. (a) is wrong: Golaknath (1967) held Parliament could not amend Fundamental Rights at all (overruled by Kesavananda). (b) is wrong: Maneka Gandhi expanded Article 21's meaning, not the FR-DPSP relationship. (c) is wrong: A.K. Gopalan dealt with personal liberty under Article 21, not the FR-DPSP balance.",
+  "difficulty": 2,
+  "source": "Laxmikanth Ch. 8 (DPSP) — Minerva Mills case",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ }
+]

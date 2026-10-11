@@ -1,0 +1,1602 @@
+[
+  {
+    "id": "cfa-qm-ni-001",
+    "level": "L2",
+    "skill": "npv-irr-basics",
+    "type": "mcq",
+    "stem": "A project requires an initial outlay of $120,000 and is expected to generate after-tax cash inflows of $50,000 in Year 1, $60,000 in Year 2, and $70,000 in Year 3. If the required rate of return is 9%, what is the project's NPV, and what is the correct decision?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$30,425.20; accept the project"
+      },
+      {
+        "id": "b",
+        "text": "$150,425.20; accept the project"
+      },
+      {
+        "id": "c",
+        "text": "$60,000.00; accept the project"
+      },
+      {
+        "id": "d",
+        "text": "$22,299.11; reject the project"
+      }
+    ],
+    "answer": 0,
+    "hint": "Discount each inflow back to today at 9%, add them up, then subtract the $120,000 outlay. The sign of the result drives the decision.",
+    "explanation": "NPV = -120,000 + 50,000/1.09 + 60,000/1.09^2 + 70,000/1.09^3 = -120,000 + 45,871.56 + 50,500.80 + 54,052.83 = $30,425.20. Because NPV > 0, the project is expected to create wealth, so accept it. The $60,000.00 distractor is the undiscounted net cash flow (it ignores the time value of money); $150,425.20 is the PV of inflows with the outlay never subtracted.",
+    "difficulty": 2,
+    "source": "CFA Institute Level I curriculum - Corporate Issuers: 'Capital Investments and Capital Allocation' - public LOS: calculate and interpret the net present value (NPV) of a single capital project; NPV decision rule.",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ni-002",
+    "level": "L2",
+    "skill": "npv-irr-basics",
+    "type": "mcq",
+    "stem": "A project's NPV is calculated as +$18,500 using the company's required rate of return. Which of the following best describes what this figure means?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The project will recover its initial outlay in $18,500 of discounted cash flow"
+      },
+      {
+        "id": "b",
+        "text": "The project is expected to increase the value of the firm by $18,500 in today's dollars"
+      },
+      {
+        "id": "c",
+        "text": "The project will generate exactly $18,500 of total cash profit over its life"
+      },
+      {
+        "id": "d",
+        "text": "The project's internal rate of return is 18.5%"
+      }
+    ],
+    "answer": 1,
+    "hint": "Think about what 'net' and 'present value' each contribute: value after subtracting cost, measured in today's money.",
+    "explanation": "NPV is the present value of the future after-tax cash flows minus the investment outlay. A positive NPV of $18,500 means the project is expected to add $18,500 of wealth (in present-value terms) over and above the required return - it is wealth-increasing. It is not the raw cash profit (that ignores discounting), not a percentage return, and not a payback amount.",
+    "difficulty": 2,
+    "source": "CFA Institute Level I curriculum - Corporate Issuers: 'Capital Investments and Capital Allocation' - public LOS: calculate and interpret the net present value (NPV) of a single capital project; NPV decision rule.",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ni-003",
+    "level": "L2",
+    "skill": "npv-irr-basics",
+    "type": "mcq",
+    "stem": "An investment costs $80,000 today. Expected after-tax cash flows are $25,000 (Year 1), $30,000 (Year 2), $35,000 (Year 3), and $40,000 (Year 4). At a 10% required return, the NPV is closest to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "$10,306.64"
+      },
+      {
+        "id": "b",
+        "text": "$101,137.22"
+      },
+      {
+        "id": "c",
+        "text": "$50,000.00"
+      },
+      {
+        "id": "d",
+        "text": "$21,137.22"
+      }
+    ],
+    "answer": 3,
+    "hint": "Four separate discount factors: 1/1.10, 1/1.10^2, 1/1.10^3, 1/1.10^4 - one per cash flow, then subtract the outlay.",
+    "explanation": "NPV = -80,000 + 25,000/1.10 + 30,000/1.10^2 + 35,000/1.10^3 + 40,000/1.10^4 = -80,000 + 22,727.27 + 24,793.39 + 26,296.02 + 27,320.54 = $21,137.22. The project should be accepted because NPV > 0.",
+    "difficulty": 2,
+    "source": "CFA Institute Level I curriculum - Corporate Issuers: 'Capital Investments and Capital Allocation' - public LOS: calculate and interpret the net present value (NPV) of a single capital project; NPV decision rule.",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ni-004",
+    "level": "L2",
+    "skill": "npv-irr-basics",
+    "type": "mcq",
+    "stem": "A project's NPV is exactly $0 at the company's required rate of return. Which statement is most accurate?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The project earns no return at all and must be rejected"
+      },
+      {
+        "id": "b",
+        "text": "The project's IRR is undefined"
+      },
+      {
+        "id": "c",
+        "text": "The project destroys shareholder wealth and must be rejected"
+      },
+      {
+        "id": "d",
+        "text": "The project is expected to earn exactly the required rate of return; the firm should be indifferent"
+      }
+    ],
+    "answer": 3,
+    "hint": "Zero NPV means the discounted inflows exactly cover the outlay plus the required compensation for time and risk.",
+    "explanation": "When NPV = 0, the present value of the inflows exactly equals the outlay, so the project earns precisely the required rate of return - it meets, but does not exceed, the hurdle. The decision rule is indifference: accepting neither creates nor destroys wealth. It does not mean a 0% return.",
+    "difficulty": 2,
+    "source": "CFA Institute Level I curriculum - Corporate Issuers: 'Capital Investments and Capital Allocation' - public LOS: calculate and interpret the net present value (NPV) of a single capital project; NPV decision rule.",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ni-005",
+    "level": "L2",
+    "skill": "npv-irr-basics",
+    "type": "mcq",
+    "stem": "A project costs $200,000 today and returns $70,000 per year for three years. Total cash inflows ($210,000) exceed the outlay, yet at a 12% required return the NPV is negative. What is the NPV, and what should the firm do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$10,000.00; accept the project"
+      },
+      {
+        "id": "b",
+        "text": "-$31,871.81; accept the project anyway because total inflows exceed the outlay"
+      },
+      {
+        "id": "c",
+        "text": "-$31,871.81; reject the project"
+      },
+      {
+        "id": "d",
+        "text": "$168,128.19; accept the project"
+      }
+    ],
+    "answer": 2,
+    "hint": "Total inflows exceeding the outlay is not the test - discounted inflows versus the outlay is. Compute the 3-year annuity factor at 12%.",
+    "explanation": "NPV = -200,000 + 70,000 x [1 - 1.12^-3]/0.12 = -200,000 + 70,000 x 2.40183 = -200,000 + 168,128.35 = -$31,871.81. Although the undiscounted surplus is $10,000.00, discounting at 12% shows the project does not earn its required return, so the NPV rule says reject.",
+    "difficulty": 2,
+    "source": "CFA Institute Level I curriculum - Corporate Issuers: 'Capital Investments and Capital Allocation' - public LOS: calculate and interpret the net present value (NPV) of a single capital project; NPV decision rule.",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ni-006",
+    "level": "L2",
+    "skill": "npv-irr-basics",
+    "type": "mcq",
+    "stem": "A project costs $100,000 and generates $40,000 per year for four years. Its NPV is $32,485.07 at an 8% required return and $16,548.49 at a 14% required return. By how much does the NPV fall when the required return rises from 8% to 14%?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$49,033.57"
+      },
+      {
+        "id": "b",
+        "text": "-$15,936.58"
+      },
+      {
+        "id": "c",
+        "text": "$15,936.58"
+      },
+      {
+        "id": "d",
+        "text": "$32,485.07"
+      }
+    ],
+    "answer": 2,
+    "hint": "Compute each NPV with the 4-year annuity factor at the two rates, then take the difference.",
+    "explanation": "NPV(8%) = -100,000 + 40,000 x [1 - 1.08^-4]/0.08 = -100,000 + 40,000 x 3.31213 = $32,485.07. NPV(14%) = -100,000 + 40,000 x [1 - 1.14^-4]/0.14 = -100,000 + 40,000 x 2.91371 = $16,548.49. Fall = $32,485.07 - $16,548.49 = $15,936.58. A higher discount rate shrinks every present value, so NPV always falls for a conventional project.",
+    "difficulty": 2,
+    "source": "CFA Institute Level I curriculum - Corporate Issuers: 'Capital Investments and Capital Allocation' - public LOS: calculate and interpret the net present value (NPV) of a single capital project; NPV decision rule.",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ni-007",
+    "level": "L2",
+    "skill": "npv-irr-basics",
+    "type": "mcq",
+    "stem": "A machine costs $150,000, generates $55,000 per year for four years, and can be sold for $20,000 at the end of Year 4. At a 10% required return, the NPV is closest to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "$29,764.58"
+      },
+      {
+        "id": "b",
+        "text": "$90,000.00"
+      },
+      {
+        "id": "c",
+        "text": "$38,002.87"
+      },
+      {
+        "id": "d",
+        "text": "$24,342.60"
+      }
+    ],
+    "answer": 2,
+    "hint": "The Year 4 cash flow is operating cash plus salvage. Discount all four years at 10%, then subtract the outlay.",
+    "explanation": "Year 4 inflow = 55,000 + 20,000 = 75,000. NPV = -150,000 + 55,000/1.10 + 55,000/1.10^2 + 55,000/1.10^3 + 75,000/1.10^4 = -150,000 + 50,000.00 + 45,454.55 + 41,322.31 + 51,226.01 = $38,002.87 > 0, so accept.",
+    "difficulty": 2,
+    "source": "CFA Institute Level I curriculum - Corporate Issuers: 'Capital Investments and Capital Allocation' - public LOS: calculate and interpret the net present value (NPV) of a single capital project; NPV decision rule.",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ni-008",
+    "level": "L2",
+    "skill": "npv-irr-basics",
+    "type": "mcq",
+    "stem": "Two independent projects are available. Project A has an NPV of +$12,000 and Project B has an NPV of -$3,000 (both at the same required return). There is no capital constraint. What should the firm do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Accept Project A and reject Project B"
+      },
+      {
+        "id": "b",
+        "text": "Reject both projects"
+      },
+      {
+        "id": "c",
+        "text": "Accept Project B and reject Project A"
+      },
+      {
+        "id": "d",
+        "text": "Accept both projects"
+      }
+    ],
+    "answer": 0,
+    "hint": "Independent means the decision on one does not block the other - apply the NPV > 0 rule to each on its own.",
+    "explanation": "For independent projects with no capital rationing, the NPV rule is applied project by project: accept all positive-NPV projects (they create wealth) and reject negative-NPV ones (they destroy wealth). Hence accept A (+$12,000) and reject B (-$3,000).",
+    "difficulty": 2,
+    "source": "CFA Institute Level I curriculum - Corporate Issuers: 'Capital Investments and Capital Allocation' - public LOS: calculate and interpret the net present value (NPV) of a single capital project; NPV decision rule.",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ni-009",
+    "level": "L2",
+    "skill": "npv-irr-basics",
+    "type": "mcq",
+    "stem": "The internal rate of return (IRR) of a project is best defined as:",
+    "options": [
+      {
+        "id": "a",
+        "text": "the required rate of return set by management"
+      },
+      {
+        "id": "b",
+        "text": "the average annual accounting profit divided by the initial outlay"
+      },
+      {
+        "id": "c",
+        "text": "the discount rate that makes the project's NPV equal to zero"
+      },
+      {
+        "id": "d",
+        "text": "the discount rate that makes the project's NPV as large as possible"
+      }
+    ],
+    "answer": 2,
+    "hint": "IRR is found by working backwards: ask 'at what discount rate would this project just break even in present-value terms?'",
+    "explanation": "By definition, the IRR is the rate r* such that the present value of the cash flows discounted at r* minus the outlay equals zero. It is the project's own implied return, distinct from the externally set required (hurdle) rate used in the NPV calculation.",
+    "difficulty": 2,
+    "source": "CFA Institute Level I curriculum - Corporate Issuers: 'Capital Investments and Capital Allocation' - public LOS: internal rate of return (IRR) definition, calculation, and decision rule (invest if IRR >= required rate of return).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ni-010",
+    "level": "L2",
+    "skill": "npv-irr-basics",
+    "type": "mcq",
+    "stem": "You invest $5,000 today and receive $5,650 one year from now, with no other cash flows. The IRR of this investment is closest to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "13.00%"
+      },
+      {
+        "id": "b",
+        "text": "6.50%"
+      },
+      {
+        "id": "c",
+        "text": "113.00%"
+      },
+      {
+        "id": "d",
+        "text": "11.50%"
+      }
+    ],
+    "answer": 0,
+    "hint": "With a single inflow one year out, the IRR is just the one-period growth rate of the money.",
+    "explanation": "Set NPV = 0: -5,000 + 5,650/(1 + IRR) = 0 -> 1 + IRR = 5,650/5,000 = 1.13 -> IRR = 13.00%. (Equivalently, the $650 gain on $5,000 is a 13% one-year return.)",
+    "difficulty": 2,
+    "source": "CFA Institute Level I curriculum - Corporate Issuers: 'Capital Investments and Capital Allocation' - public LOS: internal rate of return (IRR) definition, calculation, and decision rule (invest if IRR >= required rate of return).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ni-011",
+    "level": "L2",
+    "skill": "npv-irr-basics",
+    "type": "mcq",
+    "stem": "A project requires $20,000 today and pays $12,000 at the end of Year 1 and $12,000 at the end of Year 2. The project's IRR is closest to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "6.53%"
+      },
+      {
+        "id": "b",
+        "text": "13.07%"
+      },
+      {
+        "id": "c",
+        "text": "4.13%"
+      },
+      {
+        "id": "d",
+        "text": "20.00%"
+      }
+    ],
+    "answer": 1,
+    "hint": "Solve -20,000 + 12,000/(1+r) + 12,000/(1+r)^2 = 0 for r. Try rates until the NPV crosses zero.",
+    "explanation": "Solving -20,000 + 12,000/(1 + IRR) + 12,000/(1 + IRR)^2 = 0 gives IRR = 13.07%. Check: -20,000 + 12,000/1.1307 + 12,000/1.1307^2 = $0.00 (zero, apart from rounding).",
+    "difficulty": 2,
+    "source": "CFA Institute Level I curriculum - Corporate Issuers: 'Capital Investments and Capital Allocation' - public LOS: internal rate of return (IRR) definition, calculation, and decision rule (invest if IRR >= required rate of return).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ni-012",
+    "level": "L2",
+    "skill": "npv-irr-basics",
+    "type": "mcq",
+    "stem": "A project's IRR is 16% and the company's required rate of return (hurdle rate) is 11%. According to the IRR decision rule, the firm should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "reject the project, because the hurdle rate is positive"
+      },
+      {
+        "id": "b",
+        "text": "accept the project, because IRR exceeds the hurdle rate"
+      },
+      {
+        "id": "c",
+        "text": "be indifferent, because the two rates differ"
+      },
+      {
+        "id": "d",
+        "text": "accept the project only if its NPV is also computed"
+      }
+    ],
+    "answer": 1,
+    "hint": "The IRR rule compares two rates: the project's own implied return versus the minimum acceptable return.",
+    "explanation": "The IRR decision rule is: invest if IRR >= required rate of return; do not invest if IRR < required rate. Here 16% > 11%, so the project clears the hurdle and should be accepted. (Equivalently, NPV at 11% is positive.)",
+    "difficulty": 2,
+    "source": "CFA Institute Level I curriculum - Corporate Issuers: 'Capital Investments and Capital Allocation' - public LOS: internal rate of return (IRR) definition, calculation, and decision rule (invest if IRR >= required rate of return).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ni-013",
+    "level": "L2",
+    "skill": "npv-irr-basics",
+    "type": "mcq",
+    "stem": "A project's IRR is exactly equal to the required rate of return. Which statement is most accurate?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The project's NPV is zero and it is theoretically acceptable"
+      },
+      {
+        "id": "b",
+        "text": "The IRR is undefined in this case"
+      },
+      {
+        "id": "c",
+        "text": "The project's NPV is positive but small"
+      },
+      {
+        "id": "d",
+        "text": "The project must be rejected because it earns no profit"
+      }
+    ],
+    "answer": 0,
+    "hint": "If the discount rate that zeroes the NPV is the same rate you discount at, what must the NPV be?",
+    "explanation": "By definition the IRR is the rate at which NPV = 0. If the required return equals the IRR, then the NPV computed at the required return is zero - the project exactly meets the hurdle. It is theoretically acceptable (indifference), since it earns precisely the required compensation.",
+    "difficulty": 2,
+    "source": "CFA Institute Level I curriculum - Corporate Issuers: 'Capital Investments and Capital Allocation' - public LOS: internal rate of return (IRR) definition, calculation, and decision rule (invest if IRR >= required rate of return).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ni-014",
+    "level": "L2",
+    "skill": "npv-irr-basics",
+    "type": "mcq",
+    "stem": "A project has an IRR of 7.5%. The required rate of return is 9%. The correct decision under the IRR rule is to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "defer the decision until the payback period is known"
+      },
+      {
+        "id": "b",
+        "text": "accept the project, because any IRR above 0% creates wealth"
+      },
+      {
+        "id": "c",
+        "text": "accept the project, because the IRR is positive"
+      },
+      {
+        "id": "d",
+        "text": "reject the project, because IRR is below the hurdle rate"
+      }
+    ],
+    "answer": 3,
+    "hint": "A positive IRR is not enough - it must beat the minimum acceptable return.",
+    "explanation": "The IRR rule requires IRR >= required return. Here 7.5% < 9%, so the project fails the hurdle and is rejected; its NPV at 9% is negative. A positive IRR alone does not justify investment.",
+    "difficulty": 2,
+    "source": "CFA Institute Level I curriculum - Corporate Issuers: 'Capital Investments and Capital Allocation' - public LOS: internal rate of return (IRR) definition, calculation, and decision rule (invest if IRR >= required rate of return).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ni-015",
+    "level": "L2",
+    "skill": "npv-irr-basics",
+    "type": "mcq",
+    "stem": "A project's cash flows are fixed. Management raises the hurdle rate from 8% to 12% for all new projects. What happens to this project's IRR?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It is unchanged; IRR depends only on the project's cash flows, not on the hurdle rate"
+      },
+      {
+        "id": "b",
+        "text": "It becomes undefined"
+      },
+      {
+        "id": "c",
+        "text": "It rises from 8% to 12%"
+      },
+      {
+        "id": "d",
+        "text": "It falls, because higher discount rates lower all returns"
+      }
+    ],
+    "answer": 0,
+    "hint": "Ask what goes into solving NPV = 0: only the cash flows appear - the hurdle rate is never in that equation.",
+    "explanation": "The IRR solves -Outlay + sum(CFt/(1+IRR)^t) = 0, an equation containing only the project's cash flows. The required (hurdle) rate is an external benchmark used to judge the IRR, never an input to computing it. What changes is the decision: a project acceptable at an 8% hurdle may fail at 12%.",
+    "difficulty": 2,
+    "source": "CFA Institute Level I curriculum - Corporate Issuers: 'Capital Investments and Capital Allocation' - public LOS: internal rate of return (IRR) definition, calculation, and decision rule (invest if IRR >= required rate of return).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ni-016",
+    "level": "L2",
+    "skill": "npv-irr-basics",
+    "type": "mcq",
+    "stem": "A project costs $90,000 and generates $28,000, $32,000, $36,000, and $40,000 over the next four years. Its IRR is closest to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "22.60%"
+      },
+      {
+        "id": "b",
+        "text": "17.60%"
+      },
+      {
+        "id": "c",
+        "text": "37.78%"
+      },
+      {
+        "id": "d",
+        "text": "51.11%"
+      }
+    ],
+    "answer": 1,
+    "hint": "Find the rate r where the four discounted inflows exactly offset the $90,000 outlay.",
+    "explanation": "Solving -90,000 + 28,000/(1+IRR) + 32,000/(1+IRR)^2 + 36,000/(1+IRR)^3 + 40,000/(1+IRR)^4 = 0 gives IRR = 17.60%. Verification: NPV at 17.60% = -$0.00 (zero apart from rounding).",
+    "difficulty": 2,
+    "source": "CFA Institute Level I curriculum - Corporate Issuers: 'Capital Investments and Capital Allocation' - public LOS: internal rate of return (IRR) definition, calculation, and decision rule (invest if IRR >= required rate of return).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ni-017",
+    "level": "L2",
+    "skill": "npv-irr-basics",
+    "type": "mcq",
+    "stem": "A project requires $60,000 today and pays $15,000 at the end of each of the next six years. Its IRR is closest to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "8.98%"
+      },
+      {
+        "id": "b",
+        "text": "50.00%"
+      },
+      {
+        "id": "c",
+        "text": "12.98%"
+      },
+      {
+        "id": "d",
+        "text": "25.00%"
+      }
+    ],
+    "answer": 2,
+    "hint": "The IRR is the rate where a 6-year $15,000 annuity has a present value of exactly $60,000.",
+    "explanation": "Set 15,000 x [1 - (1+IRR)^-6]/IRR = 60,000, i.e. the 6-year annuity factor must equal 4.0000. Solving gives IRR = 12.98%. Check: 15,000 x 4.0000 = $60,000.00.",
+    "difficulty": 2,
+    "source": "CFA Institute Level I curriculum - Corporate Issuers: 'Capital Investments and Capital Allocation' - public LOS: internal rate of return (IRR) definition, calculation, and decision rule (invest if IRR >= required rate of return).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ni-018",
+    "level": "L2",
+    "skill": "npv-irr-basics",
+    "type": "mcq",
+    "stem": "For a conventional project, the NPV is +$4,200 at a 10% discount rate and -$1,800 at a 14% discount rate. What can be concluded about the project's IRR?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It is above 14%"
+      },
+      {
+        "id": "b",
+        "text": "It is below 10%"
+      },
+      {
+        "id": "c",
+        "text": "It lies between 10% and 14%"
+      },
+      {
+        "id": "d",
+        "text": "It is exactly 12%"
+      }
+    ],
+    "answer": 2,
+    "hint": "The IRR is the rate where NPV crosses zero. The NPV changes sign between these two rates.",
+    "explanation": "For a conventional project the NPV profile slopes downward and crosses zero exactly once - at the IRR. Since NPV is positive at 10% and negative at 14%, the zero crossing (IRR) must lie between 10% and 14%. (Linear interpolation would estimate roughly 10% + 4,200/(4,200+1,800) x 4% = 12.8%.)",
+    "difficulty": 2,
+    "source": "CFA Institute Level I curriculum - Corporate Issuers: 'Capital Investments and Capital Allocation' - public LOS: internal rate of return (IRR) definition, calculation, and decision rule (invest if IRR >= required rate of return).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ni-019",
+    "level": "L2",
+    "skill": "npv-irr-basics",
+    "type": "mcq",
+    "stem": "A conventional project costs $75,000 and pays $30,000, $35,000, and $40,000 over three years. On the project's NPV profile, the vertical-axis intercept (NPV at a 0% discount rate) equals:",
+    "options": [
+      {
+        "id": "a",
+        "text": "$75,000.00"
+      },
+      {
+        "id": "b",
+        "text": "$11,250.94"
+      },
+      {
+        "id": "c",
+        "text": "$30,000.00"
+      },
+      {
+        "id": "d",
+        "text": "$15,000.00"
+      }
+    ],
+    "answer": 2,
+    "hint": "At a 0% discount rate there is no discounting - every future dollar counts at face value.",
+    "explanation": "At r = 0, (1+r)^t = 1 for every t, so NPV = sum of undiscounted cash flows = -75,000 + 30,000 + 35,000 + 40,000 = $30,000.00. This is the highest point of the NPV profile for a conventional project.",
+    "difficulty": 2,
+    "source": "CFA Institute Level I curriculum - Corporate Issuers: 'Capital Investments and Capital Allocation' - public LOS: explain the NPV profile; compare NPV and IRR methods for independent versus mutually exclusive projects.",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ni-020",
+    "level": "L2",
+    "skill": "npv-irr-basics",
+    "type": "mcq",
+    "stem": "For a conventional project (initial outflow followed by inflows), the NPV profile - a plot of NPV against the discount rate - is best described as:",
+    "options": [
+      {
+        "id": "a",
+        "text": "downward sloping, because higher discount rates reduce the present value of future inflows"
+      },
+      {
+        "id": "b",
+        "text": "U-shaped, falling then rising"
+      },
+      {
+        "id": "c",
+        "text": "upward sloping, because higher rates mean higher returns"
+      },
+      {
+        "id": "d",
+        "text": "flat, because NPV does not depend on the discount rate"
+      }
+    ],
+    "answer": 0,
+    "hint": "Each future inflow is divided by (1+r)^t. What happens to those fractions as r grows?",
+    "explanation": "NPV = -Outlay + sum(CFt/(1+r)^t). As r rises, every discount factor 1/(1+r)^t shrinks, so the present value of the inflows falls while the outlay is fixed - NPV declines monotonically. The profile starts at the undiscounted total (r = 0) and falls, crossing zero at the IRR.",
+    "difficulty": 2,
+    "source": "CFA Institute Level I curriculum - Corporate Issuers: 'Capital Investments and Capital Allocation' - public LOS: explain the NPV profile; compare NPV and IRR methods for independent versus mutually exclusive projects.",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ni-021",
+    "level": "L2",
+    "skill": "npv-irr-basics",
+    "type": "mcq",
+    "stem": "On a project's NPV profile, the point where the curve crosses the horizontal (discount-rate) axis represents the project's:",
+    "options": [
+      {
+        "id": "a",
+        "text": "profitability index"
+      },
+      {
+        "id": "b",
+        "text": "payback period"
+      },
+      {
+        "id": "c",
+        "text": "IRR"
+      },
+      {
+        "id": "d",
+        "text": "required rate of return"
+      }
+    ],
+    "answer": 2,
+    "hint": "The horizontal axis is where NPV equals zero. Which measure is defined as the rate where NPV is zero?",
+    "explanation": "The horizontal axis marks NPV = 0. By definition, the discount rate that sets NPV to zero is the internal rate of return. So the profile crosses the axis at r = IRR. (The required return is a separate vertical marker used to read the accept/reject decision off the curve.)",
+    "difficulty": 2,
+    "source": "CFA Institute Level I curriculum - Corporate Issuers: 'Capital Investments and Capital Allocation' - public LOS: explain the NPV profile; compare NPV and IRR methods for independent versus mutually exclusive projects.",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ni-022",
+    "level": "L2",
+    "skill": "npv-irr-basics",
+    "type": "mcq",
+    "stem": "Two independent projects both have positive NPVs at the 10% hurdle rate: Project A (NPV +$9,000, IRR 18%) and Project B (NPV +$4,000, IRR 22%). With no capital constraint, the firm should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "accept both projects"
+      },
+      {
+        "id": "b",
+        "text": "reject both, because their IRRs differ"
+      },
+      {
+        "id": "c",
+        "text": "accept only Project B, because its IRR is higher"
+      },
+      {
+        "id": "d",
+        "text": "accept only Project A, because its NPV is higher"
+      }
+    ],
+    "answer": 0,
+    "hint": "Independent projects are judged one by one. What does the NPV rule say about each?",
+    "explanation": "Each independent project is evaluated on its own: NPV > 0 means it creates wealth, so both A (+$9,000) and B (+$4,000) should be accepted. Ranking by IRR is irrelevant here - IRR ranking only matters (and can mislead) for mutually exclusive projects.",
+    "difficulty": 2,
+    "source": "CFA Institute Level I curriculum - Corporate Issuers: 'Capital Investments and Capital Allocation' - public LOS: explain the NPV profile; compare NPV and IRR methods for independent versus mutually exclusive projects.",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ni-023",
+    "level": "L2",
+    "skill": "npv-irr-basics",
+    "type": "mcq",
+    "stem": "Two mutually exclusive projects, hurdle rate 10%. Project A: outlay $50,000, inflows $30,000/year for 3 years (NPV $24,605.56, IRR 36.31%). Project B: outlay $200,000, inflows $90,000/year for 4 years (NPV $85,287.89, IRR 28.49%). Which project should be chosen?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Project B, because it has the higher IRR"
+      },
+      {
+        "id": "b",
+        "text": "Project A, because it has the higher IRR"
+      },
+      {
+        "id": "c",
+        "text": "Neither, because the IRRs disagree with the NPVs"
+      },
+      {
+        "id": "d",
+        "text": "Project B, because it has the higher NPV"
+      }
+    ],
+    "answer": 3,
+    "hint": "Mutually exclusive means pick one. When NPV and IRR rank them differently, which measure tracks wealth created?",
+    "explanation": "Project A: NPV = -50,000 + 30,000 x 2.48685 = $24,605.56; IRR = 36.31%. Project B: NPV = -200,000 + 90,000 x 3.16987 = $85,287.89; IRR = 28.49%. The IRRs favor small Project A, but NPV - the wealth-creation measure - favors B by $60,682.33. For mutually exclusive projects the NPV rule governs: choose Project B.",
+    "difficulty": 2,
+    "source": "CFA Institute Level I curriculum - Corporate Issuers: 'Capital Investments and Capital Allocation' - public LOS: explain the NPV profile; compare NPV and IRR methods for independent versus mutually exclusive projects.",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ni-024",
+    "level": "L2",
+    "skill": "npv-irr-basics",
+    "type": "mcq",
+    "stem": "The NPV profiles of two mutually exclusive projects cross each other: at low discount rates Project X has the higher NPV, while at high discount rates Project Y has the higher NPV. This crossover implies:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Project X is always preferable to Project Y"
+      },
+      {
+        "id": "b",
+        "text": "both projects have the same IRR"
+      },
+      {
+        "id": "c",
+        "text": "the ranking of the projects depends on the required rate of return used"
+      },
+      {
+        "id": "d",
+        "text": "the NPV rule cannot be applied to either project"
+      }
+    ],
+    "answer": 2,
+    "hint": "If the curves cross, which project looks better changes as you move along the discount-rate axis.",
+    "explanation": "A crossover (Fisher) point means the NPV ranking flips with the discount rate: below the crossover rate X creates more wealth; above it, Y does. The correct choice therefore depends on the firm's actual required return - the NPVs must be compared at that rate, not by IRR ranking.",
+    "difficulty": 2,
+    "source": "CFA Institute Level I curriculum - Corporate Issuers: 'Capital Investments and Capital Allocation' - public LOS: explain the NPV profile; compare NPV and IRR methods for independent versus mutually exclusive projects.",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ni-025",
+    "level": "L2",
+    "skill": "npv-irr-basics",
+    "type": "mcq",
+    "stem": "Which of the following statements about NPV and IRR is least accurate?",
+    "options": [
+      {
+        "id": "a",
+        "text": "For mutually exclusive projects, the project with the highest IRR should always be selected"
+      },
+      {
+        "id": "b",
+        "text": "A positive NPV indicates the project is expected to increase shareholder wealth"
+      },
+      {
+        "id": "c",
+        "text": "For independent projects, the NPV and IRR rules always agree on accept versus reject"
+      },
+      {
+        "id": "d",
+        "text": "The IRR rule accepts a project when its IRR equals or exceeds the required rate of return"
+      }
+    ],
+    "answer": 0,
+    "hint": "Look for the statement that ignores the scale and timing problems of ranking by IRR.",
+    "explanation": "For mutually exclusive projects, NPV - not IRR - is the correct ranking criterion, because IRR ignores differences in project scale and cash-flow timing (as Q23's example shows). The other statements are accurate: positive NPV means wealth creation; the IRR rule compares IRR to the hurdle rate; and for a single independent conventional project both rules give the same accept/reject answer.",
+    "difficulty": 2,
+    "source": "CFA Institute Level I curriculum - Corporate Issuers: 'Capital Investments and Capital Allocation' - public LOS: contrast the NPV decision rule with the IRR decision rule; identify problems associated with the IRR rule (reinvestment assumption, multiple IRRs, scale/timing).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ni-026",
+    "level": "L2",
+    "skill": "npv-irr-basics",
+    "type": "mcq",
+    "stem": "Two mutually exclusive projects: Project M has an NPV of +$15,000 and Project N has an NPV of -$6,000 (same hurdle rate). The firm should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "accept Project M and reject Project N"
+      },
+      {
+        "id": "b",
+        "text": "reject both projects"
+      },
+      {
+        "id": "c",
+        "text": "accept both projects"
+      },
+      {
+        "id": "d",
+        "text": "accept Project N and reject Project M"
+      }
+    ],
+    "answer": 0,
+    "hint": "Mutually exclusive: only one can be taken. Which one creates wealth?",
+    "explanation": "With mutually exclusive projects the firm selects the highest-NPV alternative - here Project M at +$15,000. Project N's negative NPV means it would destroy wealth, so it is rejected. Accepting both is impossible by definition of mutual exclusivity.",
+    "difficulty": 2,
+    "source": "CFA Institute Level I curriculum - Corporate Issuers: 'Capital Investments and Capital Allocation' - public LOS: explain the NPV profile; compare NPV and IRR methods for independent versus mutually exclusive projects.",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ni-027",
+    "level": "L2",
+    "skill": "npv-irr-basics",
+    "type": "mcq",
+    "stem": "A project costs $90,000 and generates $30,000 per year. Its payback period is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "4.0 years"
+      },
+      {
+        "id": "b",
+        "text": "2.5 years"
+      },
+      {
+        "id": "c",
+        "text": "3.3 years"
+      },
+      {
+        "id": "d",
+        "text": "3.0 years"
+      }
+    ],
+    "answer": 3,
+    "hint": "Payback asks: how many years of inflows does it take to cover the outlay? No discounting here.",
+    "explanation": "Payback = Initial outlay / Annual cash flow = 90,000 / 30,000 = 3.0 years. After 3 years the cumulative inflows exactly recover the $90,000. (Note: this ignores the time value of money.)",
+    "difficulty": 2,
+    "source": "CFA Institute Level I curriculum - Corporate Issuers: 'Capital Investments and Capital Allocation' - public LOS: calculate and interpret payback period and discounted payback period; limitations of each method.",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ni-028",
+    "level": "L2",
+    "skill": "npv-irr-basics",
+    "type": "mcq",
+    "stem": "Project P: outlay $100,000, inflows $60,000 in Years 1-2 (payback 1.67 years). Project Q: outlay $100,000, single inflow of $300,000 in Year 3 (payback 3 years). At a 10% required return, NPV is $4,132.23 for P and $125,394.44 for Q. Which method gives the wealth-maximizing choice?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Payback; it selects Project P, which recovers cash faster"
+      },
+      {
+        "id": "b",
+        "text": "NPV; it selects Project Q, while payback misleadingly favors Project P"
+      },
+      {
+        "id": "c",
+        "text": "Payback; both projects are equivalent under either method"
+      },
+      {
+        "id": "d",
+        "text": "NPV; it selects Project P, agreeing with payback"
+      }
+    ],
+    "answer": 1,
+    "hint": "Payback stops counting once the outlay is recovered. Which project has the big cash flow that payback ignores?",
+    "explanation": "Payback prefers P (1.67 years vs 3 years) because it ignores everything after recovery - including Q's $300,000 Year-3 inflow. NPV discounts all cash flows: P = -100,000 + 60,000/1.10 + 60,000/1.10^2 = $4,132.23; Q = -100,000 + 300,000/1.10^3 = $125,394.44. NPV correctly identifies Q as the wealth-maximizing choice.",
+    "difficulty": 2,
+    "source": "CFA Institute Level I curriculum - Corporate Issuers: 'Capital Investments and Capital Allocation' - public LOS: calculate and interpret payback period and discounted payback period; limitations of each method.",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ni-029",
+    "level": "L2",
+    "skill": "npv-irr-basics",
+    "type": "mcq",
+    "stem": "Projects A and B each cost $40,000. A pays $10,000 (Year 1) then $30,000 (Year 2); B pays $30,000 (Year 1) then $10,000 (Year 2). Both have a 2-year payback. At a 10% discount rate, their discounted payback periods are approximately 2.25 years (A) and 2.54 years (B). What does this show?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Payback already accounts for discounting"
+      },
+      {
+        "id": "b",
+        "text": "Both projects are equally attractive"
+      },
+      {
+        "id": "c",
+        "text": "Discounted payback is always shorter than regular payback"
+      },
+      {
+        "id": "d",
+        "text": "Payback ignores the time value of money; earlier cash flows are more valuable, so B recovers faster in discounted terms"
+      }
+    ],
+    "answer": 3,
+    "hint": "Discount the Year 1 and Year 2 flows and see how much of the $40,000 each covers.",
+    "explanation": "Discounted Year-1 values: A = 10,000/1.10 = 9,090.91; B = 30,000/1.10 = 27,272.73. After Year 1, A still needs 30,909.09 but its discounted Year-2 flow is only 30,000/1.10^2 = 24,793.39 (never fully recovers within 2 years on a discounted basis: 2.25 years by interpolation), while B needs just 12,727.27 against a discounted Year-2 flow of 8,264.46... B recovers sooner (2.54 years). Identical paybacks hide this timing difference - payback ignores time value.",
+    "difficulty": 2,
+    "source": "CFA Institute Level I curriculum - Corporate Issuers: 'Capital Investments and Capital Allocation' - public LOS: calculate and interpret payback period and discounted payback period; limitations of each method.",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ni-030",
+    "level": "L2",
+    "skill": "npv-irr-basics",
+    "type": "mcq",
+    "stem": "A project costs $50,000 and pays $20,000 per year for four years. At a 12% discount rate, the discounted payback period is closest to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "2.15 years"
+      },
+      {
+        "id": "b",
+        "text": "4.15 years"
+      },
+      {
+        "id": "c",
+        "text": "2.50 years"
+      },
+      {
+        "id": "d",
+        "text": "3.15 years"
+      }
+    ],
+    "answer": 3,
+    "hint": "Discount each $20,000 inflow at 12%, cumulate, and find when the cumulative discounted inflows reach $50,000.",
+    "explanation": "Discounted inflows: Year 1 = 17,857.14, Year 2 = 15,943.88, Year 3 = 14,235.60, Year 4 = 12,710.36. Cumulative after Year 3 = 48,036.63 < 50,000; after Year 4 = 60,746.99. Discounted payback = 3 + (50,000 - 48,036.63)/12,710.36 = 3.15 years - longer than the undiscounted payback of 2.50 years, because discounting shrinks each inflow.",
+    "difficulty": 2,
+    "source": "CFA Institute Level I curriculum - Corporate Issuers: 'Capital Investments and Capital Allocation' - public LOS: calculate and interpret payback period and discounted payback period; limitations of each method.",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ni-031",
+    "level": "L2",
+    "skill": "npv-irr-basics",
+    "type": "mcq",
+    "stem": "Which statement about the payback period is most accurate?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It is a rough measure of liquidity and risk exposure, but not of wealth creation"
+      },
+      {
+        "id": "b",
+        "text": "It considers all cash flows over the project's entire life"
+      },
+      {
+        "id": "c",
+        "text": "It measures the increase in shareholder wealth from the project"
+      },
+      {
+        "id": "d",
+        "text": "It fully accounts for the time value of money"
+      }
+    ],
+    "answer": 0,
+    "hint": "Think about what payback actually computes: time to recover the outlay - and what it leaves out.",
+    "explanation": "Payback only measures how quickly the initial investment is recovered, which speaks to liquidity and the period of capital at risk. It does not discount (ignores time value), ignores all cash flows after the cutoff, and therefore cannot measure wealth creation - that is NPV's role.",
+    "difficulty": 2,
+    "source": "CFA Institute Level I curriculum - Corporate Issuers: 'Capital Investments and Capital Allocation' - public LOS: calculate and interpret payback period and discounted payback period; limitations of each method.",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ni-032",
+    "level": "L2",
+    "skill": "npv-irr-basics",
+    "type": "mcq",
+    "stem": "Compared with the regular payback period, the discounted payback period fixes one flaw but keeps another. Which flaw does it keep?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It can never be shorter than the project's life"
+      },
+      {
+        "id": "b",
+        "text": "It always rejects positive-NPV projects"
+      },
+      {
+        "id": "c",
+        "text": "It still ignores the time value of money"
+      },
+      {
+        "id": "d",
+        "text": "It still ignores cash flows that occur after the payback cutoff"
+      }
+    ],
+    "answer": 3,
+    "hint": "Discounting fixes the time-value problem. What does the method still stop doing at the cutoff date?",
+    "explanation": "Discounted payback discounts each inflow, so it accounts for the time value of money. But like regular payback, it stops the analysis the moment the outlay is recovered - any (possibly huge) cash flows after that date are ignored, so it can still reject a wealth-creating project.",
+    "difficulty": 2,
+    "source": "CFA Institute Level I curriculum - Corporate Issuers: 'Capital Investments and Capital Allocation' - public LOS: calculate and interpret payback period and discounted payback period; limitations of each method.",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ni-033",
+    "level": "L2",
+    "skill": "npv-irr-basics",
+    "type": "mcq",
+    "stem": "A project needs $120,000 of equipment plus a $15,000 working-capital investment at t=0. It generates $60,000 per year for three years, and the $15,000 of working capital is recovered at the end of Year 3. At a 10% required return, the NPV is closest to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "$25,480.84"
+      },
+      {
+        "id": "b",
+        "text": "$14,211.12"
+      },
+      {
+        "id": "c",
+        "text": "$29,211.12"
+      },
+      {
+        "id": "d",
+        "text": "$60,000.00"
+      }
+    ],
+    "answer": 0,
+    "hint": "The t=0 outlay includes working capital, and Year 3 gets an extra $15,000 recovery inflow.",
+    "explanation": "NPV = -135,000 + 60,000/1.10 + 60,000/1.10^2 + 75,000/1.10^3 = -135,000 + 54,545.45 + 49,586.78 + 56,348.57 = $25,480.84. Forgetting the working-capital outlay or its recovery would misstate the NPV.",
+    "difficulty": 2,
+    "source": "CFA Institute Level I curriculum - Corporate Issuers: 'Capital Investments and Capital Allocation' - public LOS: calculate and interpret the net present value (NPV) of a single capital project; NPV decision rule.",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ni-034",
+    "level": "L2",
+    "skill": "npv-irr-basics",
+    "type": "mcq",
+    "stem": "A company spent $40,000 last year on market research for a proposed project. The project is now being evaluated for launch. How should the $40,000 be treated in the NPV analysis?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Include it as part of the initial outlay at t=0"
+      },
+      {
+        "id": "b",
+        "text": "Include it only if the project is accepted"
+      },
+      {
+        "id": "c",
+        "text": "Include it discounted at the required return"
+      },
+      {
+        "id": "d",
+        "text": "Exclude it; it is a sunk cost that cannot be recovered regardless of the decision"
+      }
+    ],
+    "answer": 3,
+    "hint": "Ask: does the decision to launch change whether that $40,000 was spent? If not, it is not incremental.",
+    "explanation": "Capital budgeting uses only incremental cash flows - those that change because of the decision. The $40,000 was spent in the past and is unrecoverable whether the project proceeds or not, so it is a sunk cost and is excluded from the NPV calculation.",
+    "difficulty": 2,
+    "source": "CFA Institute Level I curriculum - Corporate Issuers: 'Capital Investments and Capital Allocation' - public LOS: basic principles of capital budgeting (incremental cash flows; sunk costs excluded; opportunity costs and externalities included).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ni-035",
+    "level": "L2",
+    "skill": "npv-irr-basics",
+    "type": "mcq",
+    "stem": "A project will use a company-owned warehouse that could otherwise be rented out for $25,000 per year. In the project's cash-flow estimates, the forgone rent should be:",
+    "options": [
+      {
+        "id": "a",
+        "text": "included as an opportunity cost (a cash outflow) each year"
+      },
+      {
+        "id": "b",
+        "text": "included only in the final year"
+      },
+      {
+        "id": "c",
+        "text": "excluded, because no cash actually changes hands"
+      },
+      {
+        "id": "d",
+        "text": "treated as a sunk cost"
+      }
+    ],
+    "answer": 0,
+    "hint": "The warehouse has a next-best use with a price tag. Using it for the project gives up that money.",
+    "explanation": "An opportunity cost is the value of the best alternative forgone - here, $25,000 of annual rent. It is an incremental effect of accepting the project (the firm gives up that cash flow), so it is included as a cost in the NPV analysis even though no cheque is written.",
+    "difficulty": 2,
+    "source": "CFA Institute Level I curriculum - Corporate Issuers: 'Capital Investments and Capital Allocation' - public LOS: basic principles of capital budgeting (incremental cash flows; sunk costs excluded; opportunity costs and externalities included).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ni-036",
+    "level": "L2",
+    "skill": "npv-irr-basics",
+    "type": "mcq",
+    "stem": "A new system costs $80,000 and will save $30,000 per year in operating costs for four years. At a 9% required return, the NPV is closest to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "$17,191.60"
+      },
+      {
+        "id": "b",
+        "text": "$40,000.00"
+      },
+      {
+        "id": "c",
+        "text": "$97,191.60"
+      },
+      {
+        "id": "d",
+        "text": "$7,411.37"
+      }
+    ],
+    "answer": 0,
+    "hint": "Cost savings are cash inflows. Treat this exactly like a project with $30,000 annual inflows.",
+    "explanation": "NPV = -80,000 + 30,000 x [1 - 1.09^-4]/0.09 = -80,000 + 30,000 x 3.23972 = -80,000 + 97,191.68 = $17,191.60 > 0, so the cost-saving investment should be undertaken.",
+    "difficulty": 2,
+    "source": "CFA Institute Level I curriculum - Corporate Issuers: 'Capital Investments and Capital Allocation' - public LOS: calculate and interpret the net present value (NPV) of a single capital project; NPV decision rule.",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ni-037",
+    "level": "L2",
+    "skill": "npv-irr-basics",
+    "type": "mcq",
+    "stem": "A project costs $250,000 today and generates a perpetual after-tax cash flow of $30,000 per year, starting in one year. At a 10% required return, the NPV is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "-$220,000.00"
+      },
+      {
+        "id": "b",
+        "text": "-$65,662.99"
+      },
+      {
+        "id": "c",
+        "text": "$50,000.00"
+      },
+      {
+        "id": "d",
+        "text": "$300,000.00"
+      }
+    ],
+    "answer": 2,
+    "hint": "A perpetuity's present value is the annual amount divided by the discount rate.",
+    "explanation": "PV of a perpetuity = 30,000/0.10 = $300,000.00. NPV = $300,000.00 - 250,000 = $50,000.00 > 0, so accept. (The infinite horizon is an approximation; the PV formula already captures all future years.)",
+    "difficulty": 2,
+    "source": "CFA Institute Level I curriculum - Corporate Issuers: 'Capital Investments and Capital Allocation' - public LOS: calculate and interpret the net present value (NPV) of a single capital project; NPV decision rule.",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ni-038",
+    "level": "L2",
+    "skill": "npv-irr-basics",
+    "type": "mcq",
+    "stem": "A project with an NPV of $20,000 (at a 10% required return) is delayed by one year, with all cash flows simply shifted one year later. Its NPV evaluated today becomes closest to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "$18,181.82"
+      },
+      {
+        "id": "b",
+        "text": "$20,000.00"
+      },
+      {
+        "id": "c",
+        "text": "$18,000.00"
+      },
+      {
+        "id": "d",
+        "text": "$22,000.00"
+      }
+    ],
+    "answer": 0,
+    "hint": "Shifting every cash flow one year later is the same as discounting the whole NPV one extra year.",
+    "explanation": "Delaying all cash flows by one year multiplies each present value by 1/1.10, so the NPV becomes 20,000/1.10 = $18,181.82. Postponing a positive-NPV project destroys $1,818.18 of value - a cost of delay.",
+    "difficulty": 2,
+    "source": "CFA Institute Level I curriculum - Corporate Issuers: 'Capital Investments and Capital Allocation' - public LOS: calculate and interpret the net present value (NPV) of a single capital project; NPV decision rule.",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ni-039",
+    "level": "L2",
+    "skill": "npv-irr-basics",
+    "type": "mcq",
+    "stem": "A project has cash flows of -$1,000 (t=0), +$2,500 (t=1), and -$1,500 (t=2). Which statement is most accurate?",
+    "options": [
+      {
+        "id": "a",
+        "text": "There is exactly one IRR because the project spans two years"
+      },
+      {
+        "id": "b",
+        "text": "The payback rule should be used instead of NPV"
+      },
+      {
+        "id": "c",
+        "text": "The IRR is undefined because the total of inflows equals the total of outflows"
+      },
+      {
+        "id": "d",
+        "text": "The cash-flow signs change twice, so there may be more than one IRR and the NPV rule is preferred"
+      }
+    ],
+    "answer": 3,
+    "hint": "Count the sign changes in the cash-flow stream: - to +, then + to -. Each change can add an IRR.",
+    "explanation": "With two sign changes (-, +, -), the NPV = 0 equation can have up to two solutions - multiple IRRs are possible, making the IRR rule unreliable here. The NPV rule has no such problem: discount at the required return and accept if NPV > 0.",
+    "difficulty": 2,
+    "source": "CFA Institute Level I curriculum - Corporate Issuers: 'Capital Investments and Capital Allocation' - public LOS: contrast the NPV decision rule with the IRR decision rule; identify problems associated with the IRR rule (reinvestment assumption, multiple IRRs, scale/timing).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ni-040",
+    "level": "L2",
+    "skill": "npv-irr-basics",
+    "type": "mcq",
+    "stem": "A key difference between the NPV and IRR methods is the assumed reinvestment rate for interim cash flows. Which pairing is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "IRR assumes reinvestment at the IRR; NPV assumes reinvestment at the required rate of return"
+      },
+      {
+        "id": "b",
+        "text": "NPV assumes reinvestment at the IRR; IRR assumes reinvestment at the required rate of return"
+      },
+      {
+        "id": "c",
+        "text": "Neither method makes any reinvestment assumption"
+      },
+      {
+        "id": "d",
+        "text": "Both methods assume reinvestment at the required rate of return"
+      }
+    ],
+    "answer": 0,
+    "hint": "Each method's math implies the cash thrown off mid-project earns a particular rate. Which rate is baked into each formula?",
+    "explanation": "The IRR is the rate that equates discounted flows to zero, so the mathematics implicitly compounds interim flows at the IRR itself - often an unrealistically high rate. NPV discounts at the required return, implicitly assuming interim flows are reinvested at that (usually more realistic) opportunity-cost rate. This is one reason NPV is preferred.",
+    "difficulty": 2,
+    "source": "CFA Institute Level I curriculum - Corporate Issuers: 'Capital Investments and Capital Allocation' - public LOS: contrast the NPV decision rule with the IRR decision rule; identify problems associated with the IRR rule (reinvestment assumption, multiple IRRs, scale/timing).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ni-041",
+    "level": "L2",
+    "skill": "npv-irr-basics",
+    "type": "mcq",
+    "stem": "A project costs $100,000 and pays $35,000 per year for five years. Its NPV is $47,432.73 at a 6% required return and $14,600.28 at 16%. By how much does NPV fall when the required return rises from 6% to 16%?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$62,033.01"
+      },
+      {
+        "id": "b",
+        "text": "$47,432.73"
+      },
+      {
+        "id": "c",
+        "text": "$32,832.45"
+      },
+      {
+        "id": "d",
+        "text": "$14,600.28"
+      }
+    ],
+    "answer": 2,
+    "hint": "Value the 5-year annuity at each rate with [1 - (1+r)^-5]/r, then subtract.",
+    "explanation": "NPV(6%) = -100,000 + 35,000 x [1 - 1.06^-5]/0.06 = -100,000 + 35,000 x 4.21236 = $47,432.73. NPV(16%) = -100,000 + 35,000 x [1 - 1.16^-5]/0.16 = -100,000 + 35,000 x 3.27429 = $14,600.28. The NPV falls by $47,432.73 - $14,600.28 = $32,832.45.",
+    "difficulty": 2,
+    "source": "CFA Institute Level I curriculum - Corporate Issuers: 'Capital Investments and Capital Allocation' - public LOS: calculate and interpret the net present value (NPV) of a single capital project; NPV decision rule.",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ni-042",
+    "level": "L2",
+    "skill": "npv-irr-basics",
+    "type": "mcq",
+    "stem": "A project requires $50,000 now and another $50,000 in one year, then generates $60,000 per year in Years 2-4. At a 10% required return, the NPV is closest to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "$28,331.51"
+      },
+      {
+        "id": "b",
+        "text": "$80,000.00"
+      },
+      {
+        "id": "c",
+        "text": "$35,646.47"
+      },
+      {
+        "id": "d",
+        "text": "$40,191.93"
+      }
+    ],
+    "answer": 3,
+    "hint": "Discount every cash flow - including the Year-1 outlay - back to t=0.",
+    "explanation": "NPV = -50,000 - 50,000/1.10 + 60,000/1.10^2 + 60,000/1.10^3 + 60,000/1.10^4 = -50,000 - 45,454.55 + 49,586.78 + 45,078.89 + 40,980.81 = $40,191.93 > 0, so accept. Treating the second $50,000 as if it were spent today would understate the NPV.",
+    "difficulty": 2,
+    "source": "CFA Institute Level I curriculum - Corporate Issuers: 'Capital Investments and Capital Allocation' - public LOS: calculate and interpret the net present value (NPV) of a single capital project; NPV decision rule.",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ni-043",
+    "level": "L2",
+    "skill": "npv-irr-basics",
+    "type": "mcq",
+    "stem": "When a company accepts a positive-NPV project, the expected effect on shareholder wealth is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "an increase equal to the project's undiscounted total cash flow"
+      },
+      {
+        "id": "b",
+        "text": "no change, because the required return already compensates shareholders"
+      },
+      {
+        "id": "c",
+        "text": "a decrease, because cash leaves the firm at t=0"
+      },
+      {
+        "id": "d",
+        "text": "an increase, because the project's value exceeds its cost in present-value terms"
+      }
+    ],
+    "answer": 3,
+    "hint": "NPV measures value created after covering cost and required return. Who owns the residual value created?",
+    "explanation": "A positive NPV means the present value of the inflows exceeds the outlay (which already reflects the required compensation for time and risk). That surplus accrues to the firm's owners, so accepting positive-NPV projects is expected to increase shareholder wealth - the core logic of the NPV rule.",
+    "difficulty": 2,
+    "source": "CFA Institute Level I curriculum - Corporate Issuers: 'Capital Investments and Capital Allocation' - public LOS: calculate and interpret the net present value (NPV) of a single capital project; NPV decision rule.",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ni-044",
+    "level": "L2",
+    "skill": "npv-irr-basics",
+    "type": "mcq",
+    "stem": "A conventional project's NPV is +$2,500 at an 18% discount rate and -$1,500 at a 20% discount rate. Using linear interpolation, the estimated IRR is closest to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "20.25%"
+      },
+      {
+        "id": "b",
+        "text": "19.25%"
+      },
+      {
+        "id": "c",
+        "text": "19.00%"
+      },
+      {
+        "id": "d",
+        "text": "18.62%"
+      }
+    ],
+    "answer": 1,
+    "hint": "Interpolate between the two rates in proportion to how far each NPV is from zero.",
+    "explanation": "IRR approx = 18% + [2,500/(2,500 + 1,500)] x (20% - 18%) = 18% + 0.625 x 2% = 19.25%. The positive NPV at 18% is 'larger' in absolute terms, so the zero crossing sits closer to 20% than to 18% - but still nearer 18%. (True IRR differs slightly because the NPV profile is curved, not straight.)",
+    "difficulty": 2,
+    "source": "CFA Institute Level I curriculum - Corporate Issuers: 'Capital Investments and Capital Allocation' - public LOS: internal rate of return (IRR) definition, calculation, and decision rule (invest if IRR >= required rate of return).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ni-045",
+    "level": "L2",
+    "skill": "npv-irr-basics",
+    "type": "mcq",
+    "stem": "For a conventional project, which discount rate gives the highest NPV?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The lowest discount rate considered"
+      },
+      {
+        "id": "b",
+        "text": "The highest discount rate considered"
+      },
+      {
+        "id": "c",
+        "text": "The payback rate"
+      },
+      {
+        "id": "d",
+        "text": "The IRR"
+      }
+    ],
+    "answer": 0,
+    "hint": "Recall the shape of the NPV profile for a conventional project.",
+    "explanation": "The NPV profile of a conventional project slopes downward: raising the discount rate shrinks the present value of every future inflow while the outlay is unchanged, so NPV falls. Hence the lowest discount rate produces the highest NPV (at r = 0 it equals the undiscounted net cash flow).",
+    "difficulty": 2,
+    "source": "CFA Institute Level I curriculum - Corporate Issuers: 'Capital Investments and Capital Allocation' - public LOS: explain the NPV profile; compare NPV and IRR methods for independent versus mutually exclusive projects.",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ni-046",
+    "level": "L2",
+    "skill": "npv-irr-basics",
+    "type": "mcq",
+    "stem": "Project Short lasts 3 years (NPV +$20,000) and Project Long lasts 6 years (NPV +$25,000); they are mutually exclusive and the hurdle rate is the same. Which statement is most accurate?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Project Long must be chosen because its NPV is higher"
+      },
+      {
+        "id": "b",
+        "text": "NPV alone is not directly comparable here without adjusting for the different lives or reinvestment assumptions"
+      },
+      {
+        "id": "c",
+        "text": "Project Short must be chosen because its IRR is necessarily higher"
+      },
+      {
+        "id": "d",
+        "text": "The payback period should decide between them"
+      }
+    ],
+    "answer": 1,
+    "hint": "The NPVs were computed over different horizons. Can you rank a 3-year wealth figure against a 6-year one at face value?",
+    "explanation": "NPV measures wealth created over the project's own life. Comparing a 3-year NPV with a 6-year NPV at face value is misleading - the longer project's extra years are not free (capital could be redeployed). Proper comparison needs a common horizon (e.g., equivalent annual annuity or replacement-chain analysis), a topic beyond the basic rule. Simply picking the bigger raw NPV is not automatically correct.",
+    "difficulty": 2,
+    "source": "CFA Institute Level I curriculum - Corporate Issuers: 'Capital Investments and Capital Allocation' - public LOS: explain the NPV profile; compare NPV and IRR methods for independent versus mutually exclusive projects.",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ni-047",
+    "level": "L2",
+    "skill": "npv-irr-basics",
+    "type": "mcq",
+    "stem": "A 'project' has cash flows of +$10,000 at t=0 and +$5,000 at t=1, with no initial outlay. Which statement is most accurate?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The IRR is not meaningful because there is no sign change in the cash flows"
+      },
+      {
+        "id": "b",
+        "text": "The IRR is 50%"
+      },
+      {
+        "id": "c",
+        "text": "The IRR equals the required rate of return"
+      },
+      {
+        "id": "d",
+        "text": "The NPV must be negative"
+      }
+    ],
+    "answer": 0,
+    "hint": "The IRR equation needs the NPV to cross zero as the rate changes. With all-positive flows, can it?",
+    "explanation": "IRR is defined as the rate where NPV = 0. With cash flows of +10,000 and +5,000, NPV is positive at every discount rate - the equation NPV(r) = 0 has no solution, so no IRR exists. (Economically this is not an investment at all: there is no outlay.) The NPV rule still works fine.",
+    "difficulty": 2,
+    "source": "CFA Institute Level I curriculum - Corporate Issuers: 'Capital Investments and Capital Allocation' - public LOS: contrast the NPV decision rule with the IRR decision rule; identify problems associated with the IRR rule (reinvestment assumption, multiple IRRs, scale/timing).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ni-048",
+    "level": "L2",
+    "skill": "npv-irr-basics",
+    "type": "mcq",
+    "stem": "A project costs $180,000 and yields $60,000, $70,000, $80,000, and $90,000 over the next four years. At an 11% required return, the NPV is closest to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "$48,648.72"
+      },
+      {
+        "id": "b",
+        "text": "$228,648.72"
+      },
+      {
+        "id": "c",
+        "text": "$65,228.54"
+      },
+      {
+        "id": "d",
+        "text": "$120,000.00"
+      }
+    ],
+    "answer": 0,
+    "hint": "Discount each of the four inflows at 11%, sum them, and subtract $180,000.",
+    "explanation": "NPV = -180,000 + 60,000/1.11 + 70,000/1.11^2 + 80,000/1.11^3 + 90,000/1.11^4 = -180,000 + 54,054.05 + 56,809.67 + 58,495.33 + 59,255.86 = $48,648.72. Since NPV > 0, accept.",
+    "difficulty": 2,
+    "source": "CFA Institute Level I curriculum - Corporate Issuers: 'Capital Investments and Capital Allocation' - public LOS: calculate and interpret the net present value (NPV) of a single capital project; NPV decision rule.",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ni-049",
+    "level": "L2",
+    "skill": "npv-irr-basics",
+    "type": "mcq",
+    "stem": "Which of the following statements is least accurate?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The payback period measures the wealth a project creates for shareholders"
+      },
+      {
+        "id": "b",
+        "text": "The discounted payback period is longer than the regular payback period for a conventional project"
+      },
+      {
+        "id": "c",
+        "text": "The IRR rule accepts a project when its IRR equals or exceeds the hurdle rate"
+      },
+      {
+        "id": "d",
+        "text": "The NPV rule accepts a project when its NPV is positive"
+      }
+    ],
+    "answer": 0,
+    "hint": "Three of these describe what the methods actually do. One of them credits a method with something it cannot do.",
+    "explanation": "Payback (regular or discounted) measures only the time to recover the outlay - it ignores post-cutoff cash flows and (in the regular version) discounting, so it cannot measure wealth creation; that is NPV's job. The other statements are textbook decision rules, and discounted payback must be longer than regular payback because discounting shrinks each inflow.",
+    "difficulty": 2,
+    "source": "CFA Institute Level I curriculum - Corporate Issuers: 'Capital Investments and Capital Allocation' - public LOS: calculate and interpret payback period and discounted payback period; limitations of each method.",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ni-050",
+    "level": "L2",
+    "skill": "npv-irr-basics",
+    "type": "mcq",
+    "stem": "A project costs $75,000 and generates $25,000, $30,000, $35,000, and $40,000 over four years. The hurdle rate is 12%. The project's NPV is $21,570.28 and its IRR is 23.96%. The correct decision is to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "reject, because NPV and IRR must agree numerically"
+      },
+      {
+        "id": "b",
+        "text": "accept, because the undiscounted inflows exceed the outlay"
+      },
+      {
+        "id": "c",
+        "text": "reject, because the IRR was computed by trial and error"
+      },
+      {
+        "id": "d",
+        "text": "accept, because NPV > 0 and IRR exceeds the 12% hurdle rate"
+      }
+    ],
+    "answer": 3,
+    "hint": "Apply each rule separately: is NPV positive? Is IRR above the hurdle? For a conventional independent project both rules point the same way.",
+    "explanation": "NPV = -75,000 + 25,000/1.12 + 30,000/1.12^2 + 35,000/1.12^3 + 40,000/1.12^4 = -75,000 + 22,321.43 + 23,915.82 + 24,912.32 + 25,420.72 = $21,570.28 > 0 -> accept. IRR = 23.96% > 12% hurdle -> accept. Both rules agree, as they always do for a conventional independent project.",
+    "difficulty": 2,
+    "source": "CFA Institute Level I curriculum - Corporate Issuers: 'Capital Investments and Capital Allocation' - public LOS: internal rate of return (IRR) definition, calculation, and decision rule (invest if IRR >= required rate of return).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  }
+]

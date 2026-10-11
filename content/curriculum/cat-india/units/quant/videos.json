@@ -154,5 +154,140 @@
       "cat-qa-av-023",
       "cat-qa-av-028"
     ]
+  },
+  {
+    "title": "Time Speed and Distance 4 | CAT Preparation | Arithmetic | Quantitative Aptitude",
+    "channel": "Rodha",
+    "video_url": "https://www.youtube.com/watch?v=5EzNLs_jExs",
+    "platform": "youtube",
+    "lesson_topic": "Average speed — total distance ÷ total time, equal-distance round trips, equal-time trips, common CAT traps",
+    "skill": "time-speed-distance-basics",
+    "level": "L1",
+    "transcript_key_points": [
+      "Average speed is total distance divided by total time — not the mean of the two speeds",
+      "Equal distances each way: average speed = 2ab/(a+b)",
+      "Equal times at each speed: average speed = (a+b)/2",
+      "Worked CAT-style average speed examples with step-by-step solutions"
+    ],
+    "credit": "Rodha — Ravi Prakash (https://www.youtube.com/@rodha). Embedded, not re-uploaded.",
+    "duration": null,
+    "duration_note": "unverified without live browser; verify before lesson player shows it",
+    "attached_question_ids": [
+      "cat-qa-tsd-015",
+      "cat-qa-tsd-016",
+      "cat-qa-tsd-017",
+      "cat-qa-tsd-018",
+      "cat-qa-tsd-019",
+      "cat-qa-tsd-020"
+    ]
+  },
+  {
+    "title": "CAT-26 | Time, Speed & Distance – Theory Booster Lecture 1 of 5 | Quantitative Aptitude",
+    "channel": "DM Mentor (Kshitiz Sir)",
+    "video_url": "https://www.youtube.com/watch?v=69OW66aHAZs",
+    "platform": "youtube",
+    "lesson_topic": "TSD foundations from the ground up — speed = distance/time, unit conversions, relative speed, average speed, trains, boats & streams intro",
+    "skill": "time-speed-distance-basics",
+    "level": "L1",
+    "transcript_key_points": [
+      "Fundamental relationship between time, speed and distance",
+      "Unit conversions (km/h ↔ m/s) and calculation techniques",
+      "Relative speed and its applications",
+      "Average speed concepts; trains, boats and streams basics",
+      "Common CAT mistakes and calculation-speed improvement methods"
+    ],
+    "credit": "DM Mentor — Kshitiz Sir. Embedded, not re-uploaded.",
+    "duration": null,
+    "duration_note": "unverified without live browser; verify before lesson player shows it",
+    "attached_question_ids": [
+      "cat-qa-tsd-001",
+      "cat-qa-tsd-002",
+      "cat-qa-tsd-003",
+      "cat-qa-tsd-004",
+      "cat-qa-tsd-005",
+      "cat-qa-tsd-006",
+      "cat-qa-tsd-007",
+      "cat-qa-tsd-008",
+      "cat-qa-tsd-009",
+      "cat-qa-tsd-010",
+      "cat-qa-tsd-011",
+      "cat-qa-tsd-012",
+      "cat-qa-tsd-013",
+      "cat-qa-tsd-014"
+    ]
+  },
+  {
+    "title": "Time, Speed and Distance (Boats & Train) l Quant Arithmetic 04 l CAT 2024 | MBA Wallah",
+    "channel": "MBA Wallah",
+    "video_url": "https://www.youtube.com/watch?v=yPem2LDawQ4",
+    "platform": "youtube",
+    "lesson_topic": "Trains (poles, platforms, crossing each other) and Boats & Streams (upstream/downstream) with step-by-step CAT-level solutions",
+    "skill": "time-speed-distance-basics",
+    "level": "L1",
+    "transcript_key_points": [
+      "TSD basics refresher and relative speed concepts",
+      "Trains: crossing poles, platforms and each other — which length to use",
+      "Boats & streams: upstream and downstream speed mechanics",
+      "Step-by-step CAT-level questions; common mistakes in TSD"
+    ],
+    "credit": "MBA Wallah (Physics Wallah) — Vinit Sir. Embedded, not re-uploaded.",
+    "duration": null,
+    "duration_note": "unverified without live browser; verify before lesson player shows it",
+    "attached_question_ids": [
+      "cat-qa-tsd-029",
+      "cat-qa-tsd-030",
+      "cat-qa-tsd-031",
+      "cat-qa-tsd-032",
+      "cat-qa-tsd-033",
+      "cat-qa-tsd-034",
+      "cat-qa-tsd-035",
+      "cat-qa-tsd-036",
+      "cat-qa-tsd-037",
+      "cat-qa-tsd-038",
+      "cat-qa-tsd-039",
+      "cat-qa-tsd-040",
+      "cat-qa-tsd-041",
+      "cat-qa-tsd-042"
+    ]
+  },
+  {
+    "title": "Time Speed Distance Strategy: How To Avoid Silly Mistakes In CAT Quant | Tarun Sir Rodha",
+    "channel": "Rodha",
+    "video_url": "https://www.youtube.com/watch?v=ahOf009cN2s",
+    "platform": "youtube",
+    "lesson_topic": "TSD error-proofing — unit conversion traps, relative speed, average speed, and arithmetic accuracy habits",
+    "skill": "time-speed-distance-basics",
+    "level": "L1",
+    "transcript_key_points": [
+      "Unit conversion traps (km/h vs m/s) that cost marks",
+      "Relative speed and average speed done without silly errors",
+      "Trains, boats and races: CAT mistake patterns",
+      "Live solving with accuracy-first strategy"
+    ],
+    "credit": "Rodha — Tarun Sir (https://www.youtube.com/@rodha). Embedded, not re-uploaded.",
+    "duration": null,
+    "duration_note": "unverified without live browser; verify before lesson player shows it",
+    "attached_question_ids": [
+      "cat-qa-tsd-009",
+      "cat-qa-tsd-010",
+      "cat-qa-tsd-011",
+      "cat-qa-tsd-012",
+      "cat-qa-tsd-013",
+      "cat-qa-tsd-014",
+      "cat-qa-tsd-015",
+      "cat-qa-tsd-016",
+      "cat-qa-tsd-017",
+      "cat-qa-tsd-018",
+      "cat-qa-tsd-019",
+      "cat-qa-tsd-020",
+      "cat-qa-tsd-043",
+      "cat-qa-tsd-044",
+      "cat-qa-tsd-045",
+      "cat-qa-tsd-046",
+      "cat-qa-tsd-047",
+      "cat-qa-tsd-048",
+      "cat-qa-tsd-049",
+      "cat-qa-tsd-050"
+    ]
   }
 ]

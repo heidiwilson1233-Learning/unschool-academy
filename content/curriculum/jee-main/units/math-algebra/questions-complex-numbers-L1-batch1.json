@@ -1,0 +1,1602 @@
+[
+  {
+    "id": "jee-ma-alg-cn-001",
+    "skill": "complex-numbers",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "The value of i²⁵, where i = √−1, is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "−i"
+      },
+      {
+        "id": "b",
+        "text": "1"
+      },
+      {
+        "id": "c",
+        "text": "i"
+      },
+      {
+        "id": "d",
+        "text": "−1"
+      }
+    ],
+    "answer": 2,
+    "hint": "Powers of i repeat every 4: i¹, i², i³, i⁴ = i, −1, −i, 1.",
+    "explanation": "Since i⁴ = 1, write 25 = 4 × 6 + 1. Then i²⁵ = (i⁴)⁶ · i¹ = 1⁶ · i = i.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Complex Numbers and Quadratic Equations) — powers of i (i² = −1, cyclicity of period 4); NTA JEE Main 2026 Unit 2 (Complex Numbers and Quadratic Equations) — complex numbers as ordered pairs of reals, representation a+ib, Argand diagram",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-cn-002",
+    "skill": "complex-numbers",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "i³⁸ equals:",
+    "options": [
+      {
+        "id": "a",
+        "text": "1"
+      },
+      {
+        "id": "b",
+        "text": "−1"
+      },
+      {
+        "id": "c",
+        "text": "i"
+      },
+      {
+        "id": "d",
+        "text": "−i"
+      }
+    ],
+    "answer": 1,
+    "hint": "Only the remainder of the exponent on division by 4 matters.",
+    "explanation": "38 = 4 × 9 + 2, so i³⁸ = (i⁴)⁹ · i² = 1⁹ · (−1) = −1.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Complex Numbers and Quadratic Equations) — powers of i (i² = −1, cyclicity of period 4); NTA JEE Main 2026 Unit 2 (Complex Numbers and Quadratic Equations) — complex numbers as ordered pairs of reals, representation a+ib, Argand diagram",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-cn-003",
+    "skill": "complex-numbers",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "The value of i⁻⁷ is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "−i"
+      },
+      {
+        "id": "b",
+        "text": "1"
+      },
+      {
+        "id": "c",
+        "text": "−1"
+      },
+      {
+        "id": "d",
+        "text": "i"
+      }
+    ],
+    "answer": 3,
+    "hint": "Write i⁻⁷ = 1/i⁷, and simplify the denominator using the 4-cycle.",
+    "explanation": "i⁷ = i⁴·i³ = 1 · (−i) = −i, so i⁻⁷ = 1/(−i). Multiply numerator and denominator by i: i/(−i²) = i/1 = i.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Complex Numbers and Quadratic Equations) — powers of i (negative exponents, i² = −1); NTA JEE Main 2026 Unit 2 (Complex Numbers and Quadratic Equations) — complex numbers as ordered pairs of reals, representation a+ib, Argand diagram",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-cn-004",
+    "skill": "complex-numbers",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "i³ + i⁵ + i⁷ + i⁹ equals:",
+    "options": [
+      {
+        "id": "a",
+        "text": "0"
+      },
+      {
+        "id": "b",
+        "text": "2i"
+      },
+      {
+        "id": "c",
+        "text": "−2i"
+      },
+      {
+        "id": "d",
+        "text": "4i"
+      }
+    ],
+    "answer": 0,
+    "hint": "Evaluate each power using the 4-cycle before adding.",
+    "explanation": "i³ = −i, i⁵ = i, i⁷ = −i, i⁹ = i. Sum: −i + i − i + i = 0.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Complex Numbers and Quadratic Equations) — powers of i (i² = −1, cyclicity of period 4); NTA JEE Main 2026 Unit 2 (Complex Numbers and Quadratic Equations) — complex numbers as ordered pairs of reals, representation a+ib, Argand diagram",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-cn-005",
+    "skill": "complex-numbers",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "(1 + i)²/(1 − i)² equals:",
+    "options": [
+      {
+        "id": "a",
+        "text": "1"
+      },
+      {
+        "id": "b",
+        "text": "2i"
+      },
+      {
+        "id": "c",
+        "text": "−2i"
+      },
+      {
+        "id": "d",
+        "text": "−1"
+      }
+    ],
+    "answer": 3,
+    "hint": "Square the numerator and the denominator separately first.",
+    "explanation": "(1 + i)² = 1 + 2i + i² = 2i; (1 − i)² = 1 − 2i + i² = −2i. Ratio: 2i/(−2i) = −1.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Complex Numbers and Quadratic Equations) — powers of i; algebra of complex numbers — multiplication; NTA JEE Main 2026 Unit 2 (Complex Numbers and Quadratic Equations) — complex numbers as ordered pairs of reals, representation a+ib, Argand diagram; algebra of complex numbers — multiplication and division",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-cn-006",
+    "skill": "complex-numbers",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "If z = 5 − 8i, then Re(z) is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "5"
+      },
+      {
+        "id": "b",
+        "text": "−8"
+      },
+      {
+        "id": "c",
+        "text": "8"
+      },
+      {
+        "id": "d",
+        "text": "−5"
+      }
+    ],
+    "answer": 0,
+    "hint": "The real part is the coefficient-free number in front of i.",
+    "explanation": "For z = x + iy, Re(z) = x. Here x = 5, y = −8, so Re(z) = 5.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Complex Numbers and Quadratic Equations) — real and imaginary parts of a complex number; NTA JEE Main 2026 Unit 2 (Complex Numbers and Quadratic Equations) — complex numbers as ordered pairs of reals, representation a+ib, Argand diagram",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-cn-007",
+    "skill": "complex-numbers",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "The imaginary part of (2 + i)(3 − i) is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "7"
+      },
+      {
+        "id": "b",
+        "text": "−1"
+      },
+      {
+        "id": "c",
+        "text": "1"
+      },
+      {
+        "id": "d",
+        "text": "3"
+      }
+    ],
+    "answer": 2,
+    "hint": "Multiply out first, then read the coefficient of i.",
+    "explanation": "(2 + i)(3 − i) = 6 − 2i + 3i − i² = 6 + i + 1 = 7 + i. The coefficient of i is 1.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Complex Numbers and Quadratic Equations) — real and imaginary parts; multiplication of complex numbers; NTA JEE Main 2026 Unit 2 (Complex Numbers and Quadratic Equations) — complex numbers as ordered pairs of reals, representation a+ib, Argand diagram",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-cn-008",
+    "skill": "complex-numbers",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "If z = (3 + 2i) + (4 − 5i), then Re(z) equals:",
+    "options": [
+      {
+        "id": "a",
+        "text": "−1"
+      },
+      {
+        "id": "b",
+        "text": "12"
+      },
+      {
+        "id": "c",
+        "text": "3"
+      },
+      {
+        "id": "d",
+        "text": "7"
+      }
+    ],
+    "answer": 3,
+    "hint": "Add real parts with real parts, then read the result.",
+    "explanation": "(3 + 2i) + (4 − 5i) = 7 − 3i, so Re(z) = 7.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Complex Numbers and Quadratic Equations) — real and imaginary parts; addition of complex numbers; NTA JEE Main 2026 Unit 2 (Complex Numbers and Quadratic Equations) — complex numbers as ordered pairs of reals, representation a+ib, Argand diagram",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-cn-009",
+    "skill": "complex-numbers",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "A complex number z = x + iy (x, y real) is purely imaginary and non-zero if and only if:",
+    "options": [
+      {
+        "id": "a",
+        "text": "x = 0 and y ≠ 0"
+      },
+      {
+        "id": "b",
+        "text": "y = 0"
+      },
+      {
+        "id": "c",
+        "text": "x = y"
+      },
+      {
+        "id": "d",
+        "text": "x = −y"
+      }
+    ],
+    "answer": 0,
+    "hint": "Which part must vanish for the number to sit on the imaginary axis?",
+    "explanation": "z = x + iy is purely imaginary when its real part x = 0 and it is non-zero, i.e. y ≠ 0.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Complex Numbers and Quadratic Equations) — real and imaginary parts — real, imaginary and purely imaginary numbers; NTA JEE Main 2026 Unit 2 (Complex Numbers and Quadratic Equations) — complex numbers as ordered pairs of reals, representation a+ib, Argand diagram",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-cn-010",
+    "skill": "complex-numbers",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "The real part of (1 + i)⁴ is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "4"
+      },
+      {
+        "id": "b",
+        "text": "0"
+      },
+      {
+        "id": "c",
+        "text": "−2"
+      },
+      {
+        "id": "d",
+        "text": "−4"
+      }
+    ],
+    "answer": 3,
+    "hint": "Square once, then square again — the cycle of 4 helps here too.",
+    "explanation": "(1 + i)² = 2i, and (1 + i)⁴ = (2i)² = 4i² = −4. So Re = −4.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Complex Numbers and Quadratic Equations) — powers of i; real and imaginary parts; NTA JEE Main 2026 Unit 2 (Complex Numbers and Quadratic Equations) — complex numbers as ordered pairs of reals, representation a+ib, Argand diagram",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-cn-011",
+    "skill": "complex-numbers",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "If (2a + 3) + i(3b − 2) = 5 + 4i, where a, b are real, then a + b equals:",
+    "options": [
+      {
+        "id": "a",
+        "text": "1"
+      },
+      {
+        "id": "b",
+        "text": "2"
+      },
+      {
+        "id": "c",
+        "text": "5"
+      },
+      {
+        "id": "d",
+        "text": "3"
+      }
+    ],
+    "answer": 3,
+    "hint": "Two complex numbers are equal exactly when their real parts match and their imaginary parts match.",
+    "explanation": "2a + 3 = 5 gives a = 1; 3b − 2 = 4 gives b = 2. So a + b = 3.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Complex Numbers and Quadratic Equations) — equality of complex numbers; NTA JEE Main 2026 Unit 2 (Complex Numbers and Quadratic Equations) — complex numbers as ordered pairs of reals — equality",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-cn-012",
+    "skill": "complex-numbers",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "If (x + 3) + i(y − 1) = 7 − 5i, with x, y real, then y equals:",
+    "options": [
+      {
+        "id": "a",
+        "text": "4"
+      },
+      {
+        "id": "b",
+        "text": "−4"
+      },
+      {
+        "id": "c",
+        "text": "−5"
+      },
+      {
+        "id": "d",
+        "text": "5"
+      }
+    ],
+    "answer": 1,
+    "hint": "Match the imaginary parts on both sides.",
+    "explanation": "y − 1 = −5, so y = −4. (Also x + 3 = 7 gives x = 4.)",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Complex Numbers and Quadratic Equations) — equality of complex numbers; NTA JEE Main 2026 Unit 2 (Complex Numbers and Quadratic Equations) — complex numbers as ordered pairs of reals — equality",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-cn-013",
+    "skill": "complex-numbers",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "If 3x + iy = 6 − 5i (x, y real), then x − y equals:",
+    "options": [
+      {
+        "id": "a",
+        "text": "−3"
+      },
+      {
+        "id": "b",
+        "text": "3"
+      },
+      {
+        "id": "c",
+        "text": "7"
+      },
+      {
+        "id": "d",
+        "text": "−7"
+      }
+    ],
+    "answer": 2,
+    "hint": "Match real with real and imaginary with imaginary first.",
+    "explanation": "3x = 6 gives x = 2; y = −5. Hence x − y = 2 − (−5) = 7.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Complex Numbers and Quadratic Equations) — equality of complex numbers; NTA JEE Main 2026 Unit 2 (Complex Numbers and Quadratic Equations) — complex numbers as ordered pairs of reals — equality",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-cn-014",
+    "skill": "complex-numbers",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "(5 + 3i) + (2 − 7i) equals:",
+    "options": [
+      {
+        "id": "a",
+        "text": "7 + 4i"
+      },
+      {
+        "id": "b",
+        "text": "7 − 4i"
+      },
+      {
+        "id": "c",
+        "text": "3 + 10i"
+      },
+      {
+        "id": "d",
+        "text": "3 − 10i"
+      }
+    ],
+    "answer": 1,
+    "hint": "Add the real parts together and the imaginary parts together.",
+    "explanation": "(5 + 3i) + (2 − 7i) = (5 + 2) + (3 − 7)i = 7 − 4i.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Complex Numbers and Quadratic Equations) — addition of complex numbers; NTA JEE Main 2026 Unit 2 (Complex Numbers and Quadratic Equations) — complex numbers as ordered pairs of reals, representation a+ib, Argand diagram; algebra of complex numbers — addition",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-cn-015",
+    "skill": "complex-numbers",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "(8 − i) − (3 + 4i) equals:",
+    "options": [
+      {
+        "id": "a",
+        "text": "5 − 5i"
+      },
+      {
+        "id": "b",
+        "text": "11 + 3i"
+      },
+      {
+        "id": "c",
+        "text": "5 + 5i"
+      },
+      {
+        "id": "d",
+        "text": "11 − 3i"
+      }
+    ],
+    "answer": 0,
+    "hint": "The minus sign applies to BOTH the real and imaginary part of the second number.",
+    "explanation": "(8 − i) − (3 + 4i) = (8 − 3) + (−1 − 4)i = 5 − 5i.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Complex Numbers and Quadratic Equations) — subtraction of complex numbers; NTA JEE Main 2026 Unit 2 (Complex Numbers and Quadratic Equations) — complex numbers as ordered pairs of reals, representation a+ib, Argand diagram; algebra of complex numbers — subtraction",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-cn-016",
+    "skill": "complex-numbers",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "If z₁ = 2 + 3i and z₂ = −1 + i, then z₁ + 2z₂ equals:",
+    "options": [
+      {
+        "id": "a",
+        "text": "−5i"
+      },
+      {
+        "id": "b",
+        "text": "0"
+      },
+      {
+        "id": "c",
+        "text": "4 + 5i"
+      },
+      {
+        "id": "d",
+        "text": "5i"
+      }
+    ],
+    "answer": 3,
+    "hint": "Scale z₂ first, then add — watch the signs.",
+    "explanation": "2z₂ = −2 + 2i. Then z₁ + 2z₂ = (2 + 3i) + (−2 + 2i) = 0 + 5i = 5i, a purely imaginary number.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Complex Numbers and Quadratic Equations) — addition and scalar multiplication of complex numbers; NTA JEE Main 2026 Unit 2 (Complex Numbers and Quadratic Equations) — complex numbers as ordered pairs of reals, representation a+ib, Argand diagram; algebra of complex numbers — addition",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-cn-017",
+    "skill": "complex-numbers",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "(2 + 3i)(4 − 5i) equals:",
+    "options": [
+      {
+        "id": "a",
+        "text": "23 + 2i"
+      },
+      {
+        "id": "b",
+        "text": "−7 + 22i"
+      },
+      {
+        "id": "c",
+        "text": "23 − 22i"
+      },
+      {
+        "id": "d",
+        "text": "8 − 15i"
+      }
+    ],
+    "answer": 0,
+    "hint": "Multiply every term by every term (FOIL), remembering i² = −1.",
+    "explanation": "8 − 10i + 12i − 15i² = 8 + 2i + 15 = 23 + 2i.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Complex Numbers and Quadratic Equations) — multiplication of complex numbers; NTA JEE Main 2026 Unit 2 (Complex Numbers and Quadratic Equations) — complex numbers as ordered pairs of reals, representation a+ib, Argand diagram; algebra of complex numbers — multiplication",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-cn-018",
+    "skill": "complex-numbers",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "(1 + i)(1 − i) equals:",
+    "options": [
+      {
+        "id": "a",
+        "text": "0"
+      },
+      {
+        "id": "b",
+        "text": "1"
+      },
+      {
+        "id": "c",
+        "text": "2"
+      },
+      {
+        "id": "d",
+        "text": "1 + 2i"
+      }
+    ],
+    "answer": 2,
+    "hint": "This is the pattern (a + b)(a − b) = a² − b² — with b = i.",
+    "explanation": "(1 + i)(1 − i) = 1 − i² = 1 − (−1) = 2.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Complex Numbers and Quadratic Equations) — multiplication of complex numbers; NTA JEE Main 2026 Unit 2 (Complex Numbers and Quadratic Equations) — complex numbers as ordered pairs of reals, representation a+ib, Argand diagram; algebra of complex numbers — multiplication",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-cn-019",
+    "skill": "complex-numbers",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "(3 − 2i)(3 + 2i) equals:",
+    "options": [
+      {
+        "id": "a",
+        "text": "5"
+      },
+      {
+        "id": "b",
+        "text": "13"
+      },
+      {
+        "id": "c",
+        "text": "9 − 4i"
+      },
+      {
+        "id": "d",
+        "text": "9 + 12i"
+      }
+    ],
+    "answer": 1,
+    "hint": "Conjugate pairs multiply to a² + b² — the middle terms cancel.",
+    "explanation": "(3 − 2i)(3 + 2i) = 9 − (2i)² = 9 + 4 = 13.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Complex Numbers and Quadratic Equations) — multiplication of complex numbers — conjugate pairs; NTA JEE Main 2026 Unit 2 (Complex Numbers and Quadratic Equations) — complex numbers as ordered pairs of reals, representation a+ib, Argand diagram; algebra of complex numbers — multiplication",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-cn-020",
+    "skill": "complex-numbers",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "i(4 − i) equals:",
+    "options": [
+      {
+        "id": "a",
+        "text": "1 + 4i"
+      },
+      {
+        "id": "b",
+        "text": "−1 − 4i"
+      },
+      {
+        "id": "c",
+        "text": "4 + i"
+      },
+      {
+        "id": "d",
+        "text": "4i"
+      }
+    ],
+    "answer": 0,
+    "hint": "Distribute i, then replace i² with −1.",
+    "explanation": "i(4 − i) = 4i − i² = 4i + 1 = 1 + 4i.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Complex Numbers and Quadratic Equations) — multiplication of complex numbers; NTA JEE Main 2026 Unit 2 (Complex Numbers and Quadratic Equations) — complex numbers as ordered pairs of reals, representation a+ib, Argand diagram; algebra of complex numbers — multiplication",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-cn-021",
+    "skill": "complex-numbers",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "(1 + i)³ equals:",
+    "options": [
+      {
+        "id": "a",
+        "text": "2 + 2i"
+      },
+      {
+        "id": "b",
+        "text": "−2 + 2i"
+      },
+      {
+        "id": "c",
+        "text": "−2 − 2i"
+      },
+      {
+        "id": "d",
+        "text": "2 − 2i"
+      }
+    ],
+    "answer": 1,
+    "hint": "Cube = square times the number: (1 + i)³ = (1 + i)²(1 + i).",
+    "explanation": "(1 + i)² = 2i, so (1 + i)³ = 2i(1 + i) = 2i + 2i² = −2 + 2i.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Complex Numbers and Quadratic Equations) — multiplication of complex numbers — powers; NTA JEE Main 2026 Unit 2 (Complex Numbers and Quadratic Equations) — complex numbers as ordered pairs of reals, representation a+ib, Argand diagram; algebra of complex numbers — multiplication",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-cn-022",
+    "skill": "complex-numbers",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "The conjugate of 3 − 4i is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "−3 + 4i"
+      },
+      {
+        "id": "b",
+        "text": "4 + 3i"
+      },
+      {
+        "id": "c",
+        "text": "−3 − 4i"
+      },
+      {
+        "id": "d",
+        "text": "3 + 4i"
+      }
+    ],
+    "answer": 3,
+    "hint": "The conjugate flips only the sign of the imaginary part.",
+    "explanation": "z̄ of 3 − 4i is 3 + 4i.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Complex Numbers and Quadratic Equations) — conjugate of a complex number; NTA JEE Main 2026 Unit 2 (Complex Numbers and Quadratic Equations) — conjugation of a complex number",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-cn-023",
+    "skill": "complex-numbers",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "If z = 5 + 2i, then z + z̄ equals:",
+    "options": [
+      {
+        "id": "a",
+        "text": "10"
+      },
+      {
+        "id": "b",
+        "text": "4i"
+      },
+      {
+        "id": "c",
+        "text": "5"
+      },
+      {
+        "id": "d",
+        "text": "10 + 4i"
+      }
+    ],
+    "answer": 0,
+    "hint": "Add a number to its conjugate — what survives?",
+    "explanation": "z̄ = 5 − 2i, so z + z̄ = (5 + 2i) + (5 − 2i) = 10 = 2·Re(z).",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Complex Numbers and Quadratic Equations) — conjugate of a complex number — z + z̄ = 2Re(z); NTA JEE Main 2026 Unit 2 (Complex Numbers and Quadratic Equations) — conjugation of a complex number",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-cn-024",
+    "skill": "complex-numbers",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "If z = 2 + 3i, then z·z̄ equals:",
+    "options": [
+      {
+        "id": "a",
+        "text": "1"
+      },
+      {
+        "id": "b",
+        "text": "5"
+      },
+      {
+        "id": "c",
+        "text": "13"
+      },
+      {
+        "id": "d",
+        "text": "−5"
+      }
+    ],
+    "answer": 2,
+    "hint": "A number times its conjugate always gives a² + b².",
+    "explanation": "z·z̄ = (2 + 3i)(2 − 3i) = 4 + 9 = 13 = |z|².",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Complex Numbers and Quadratic Equations) — conjugate of a complex number — z·z̄ = |z|²; NTA JEE Main 2026 Unit 2 (Complex Numbers and Quadratic Equations) — conjugation of a complex number; modulus",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-cn-025",
+    "skill": "complex-numbers",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "The conjugate of (2 − i)(3 + i) is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "7 − i"
+      },
+      {
+        "id": "b",
+        "text": "7 + i"
+      },
+      {
+        "id": "c",
+        "text": "6 + i"
+      },
+      {
+        "id": "d",
+        "text": "−7 + i"
+      }
+    ],
+    "answer": 1,
+    "hint": "Multiply first, then conjugate — or conjugate each factor and multiply.",
+    "explanation": "(2 − i)(3 + i) = 6 + 2i − 3i − i² = 7 − i, whose conjugate is 7 + i.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Complex Numbers and Quadratic Equations) — conjugate of a complex number — conjugate of a product; NTA JEE Main 2026 Unit 2 (Complex Numbers and Quadratic Equations) — conjugation of a complex number",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-cn-026",
+    "skill": "complex-numbers",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "The conjugate of the conjugate of (−2 + 7i) is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "2 − 7i"
+      },
+      {
+        "id": "b",
+        "text": "−2 − 7i"
+      },
+      {
+        "id": "c",
+        "text": "−2 + 7i"
+      },
+      {
+        "id": "d",
+        "text": "2 + 7i"
+      }
+    ],
+    "answer": 2,
+    "hint": "Flipping the sign of the imaginary part twice brings you back.",
+    "explanation": "z̄ = −2 − 7i and z̄̄ = −2 + 7i = z.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Complex Numbers and Quadratic Equations) — conjugate of a complex number — double conjugate; NTA JEE Main 2026 Unit 2 (Complex Numbers and Quadratic Equations) — conjugation of a complex number",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-cn-027",
+    "skill": "complex-numbers",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "|3 + 4i| equals:",
+    "options": [
+      {
+        "id": "a",
+        "text": "7"
+      },
+      {
+        "id": "b",
+        "text": "5"
+      },
+      {
+        "id": "c",
+        "text": "25"
+      },
+      {
+        "id": "d",
+        "text": "√7"
+      }
+    ],
+    "answer": 1,
+    "hint": "The modulus is the distance from the origin: √(a² + b²).",
+    "explanation": "|3 + 4i| = √(3² + 4²) = √25 = 5.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Complex Numbers and Quadratic Equations) — modulus of a complex number; NTA JEE Main 2026 Unit 2 (Complex Numbers and Quadratic Equations) — modulus of a complex number",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-cn-028",
+    "skill": "complex-numbers",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "|1 − i| equals:",
+    "options": [
+      {
+        "id": "a",
+        "text": "0"
+      },
+      {
+        "id": "b",
+        "text": "2"
+      },
+      {
+        "id": "c",
+        "text": "1"
+      },
+      {
+        "id": "d",
+        "text": "√2"
+      }
+    ],
+    "answer": 3,
+    "hint": "Use |a + bi| = √(a² + b²), watching the sign of the imaginary part.",
+    "explanation": "|1 − i| = √(1² + (−1)²) = √2.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Complex Numbers and Quadratic Equations) — modulus of a complex number; NTA JEE Main 2026 Unit 2 (Complex Numbers and Quadratic Equations) — modulus of a complex number",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-cn-029",
+    "skill": "complex-numbers",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "The modulus of the real number −5 is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "5"
+      },
+      {
+        "id": "b",
+        "text": "−5"
+      },
+      {
+        "id": "c",
+        "text": "25"
+      },
+      {
+        "id": "d",
+        "text": "0"
+      }
+    ],
+    "answer": 0,
+    "hint": "For a real number, the modulus is its absolute value.",
+    "explanation": "−5 = −5 + 0i, so |−5| = √((−5)²) = 5.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Complex Numbers and Quadratic Equations) — modulus of a complex number — modulus of a real number; NTA JEE Main 2026 Unit 2 (Complex Numbers and Quadratic Equations) — modulus of a complex number",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-cn-030",
+    "skill": "complex-numbers",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "|2i| equals:",
+    "options": [
+      {
+        "id": "a",
+        "text": "−2"
+      },
+      {
+        "id": "b",
+        "text": "2i"
+      },
+      {
+        "id": "c",
+        "text": "2"
+      },
+      {
+        "id": "d",
+        "text": "0"
+      }
+    ],
+    "answer": 2,
+    "hint": "2i = 0 + 2i — apply the modulus formula.",
+    "explanation": "|2i| = √(0² + 2²) = 2.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Complex Numbers and Quadratic Equations) — modulus of a complex number — modulus of a purely imaginary number; NTA JEE Main 2026 Unit 2 (Complex Numbers and Quadratic Equations) — modulus of a complex number",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-cn-031",
+    "skill": "complex-numbers",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "If z = 1 + iy (y real) and |z| = 2, then y equals:",
+    "options": [
+      {
+        "id": "a",
+        "text": "±3"
+      },
+      {
+        "id": "b",
+        "text": "±√3"
+      },
+      {
+        "id": "c",
+        "text": "±1"
+      },
+      {
+        "id": "d",
+        "text": "√3 only"
+      }
+    ],
+    "answer": 1,
+    "hint": "Square the modulus equation and solve for y.",
+    "explanation": "|z|² = 1 + y² = 4, so y² = 3 and y = ±√3.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Complex Numbers and Quadratic Equations) — modulus of a complex number — solving modulus equations; NTA JEE Main 2026 Unit 2 (Complex Numbers and Quadratic Equations) — modulus of a complex number",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-cn-032",
+    "skill": "complex-numbers",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "The principal argument of 1 + i is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "π/4"
+      },
+      {
+        "id": "b",
+        "text": "−π/4"
+      },
+      {
+        "id": "c",
+        "text": "3π/4"
+      },
+      {
+        "id": "d",
+        "text": "π/3"
+      }
+    ],
+    "answer": 0,
+    "hint": "1 + i lies in the first quadrant, at equal distance along both axes.",
+    "explanation": "tan θ = 1/1 = 1 and z is in quadrant I, so arg(z) = π/4 (within (−π, π]).",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Complex Numbers and Quadratic Equations) — argument (amplitude) of a complex number — principal value; NTA JEE Main 2026 Unit 2 (Complex Numbers and Quadratic Equations) — argument (amplitude) of a complex number",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-cn-033",
+    "skill": "complex-numbers",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "The principal argument of the real number −1 is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "0"
+      },
+      {
+        "id": "b",
+        "text": "π/2"
+      },
+      {
+        "id": "c",
+        "text": "−π/2"
+      },
+      {
+        "id": "d",
+        "text": "π"
+      }
+    ],
+    "answer": 3,
+    "hint": "−1 points along the negative real axis.",
+    "explanation": "The angle from the positive real axis to the negative real axis is π, the principal value.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Complex Numbers and Quadratic Equations) — argument (amplitude) of a complex number — principal value; NTA JEE Main 2026 Unit 2 (Complex Numbers and Quadratic Equations) — argument (amplitude) of a complex number",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-cn-034",
+    "skill": "complex-numbers",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "The principal argument of i is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "−π/2"
+      },
+      {
+        "id": "b",
+        "text": "π/2"
+      },
+      {
+        "id": "c",
+        "text": "π"
+      },
+      {
+        "id": "d",
+        "text": "0"
+      }
+    ],
+    "answer": 1,
+    "hint": "i points straight up the imaginary axis.",
+    "explanation": "The positive imaginary axis makes an angle of π/2 with the positive real axis.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Complex Numbers and Quadratic Equations) — argument (amplitude) of a complex number — principal value; NTA JEE Main 2026 Unit 2 (Complex Numbers and Quadratic Equations) — argument (amplitude) of a complex number",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-cn-035",
+    "skill": "complex-numbers",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "The principal argument of 1 − i is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "π/4"
+      },
+      {
+        "id": "b",
+        "text": "−3π/4"
+      },
+      {
+        "id": "c",
+        "text": "−π/4"
+      },
+      {
+        "id": "d",
+        "text": "3π/4"
+      }
+    ],
+    "answer": 2,
+    "hint": "1 − i is in the fourth quadrant — the principal value is negative.",
+    "explanation": "tan θ = −1/1 = −1 with z in quadrant IV, so the principal argument is −π/4.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Complex Numbers and Quadratic Equations) — argument (amplitude) of a complex number — principal value; NTA JEE Main 2026 Unit 2 (Complex Numbers and Quadratic Equations) — argument (amplitude) of a complex number",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-cn-036",
+    "skill": "complex-numbers",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "The principal argument of −√3 + i is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "π/6"
+      },
+      {
+        "id": "b",
+        "text": "5π/6"
+      },
+      {
+        "id": "c",
+        "text": "−5π/6"
+      },
+      {
+        "id": "d",
+        "text": "2π/3"
+      }
+    ],
+    "answer": 1,
+    "hint": "The point is in the second quadrant — take π minus the reference angle.",
+    "explanation": "tan θ = 1/(−√3), reference angle π/6 in quadrant II, so arg = π − π/6 = 5π/6.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Complex Numbers and Quadratic Equations) — argument (amplitude) of a complex number — principal value; NTA JEE Main 2026 Unit 2 (Complex Numbers and Quadratic Equations) — argument (amplitude) of a complex number",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-cn-037",
+    "skill": "complex-numbers",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "The polar form of 1 + i is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "√2(cos π/4 + i sin π/4)"
+      },
+      {
+        "id": "b",
+        "text": "√2(cos π/4 − i sin π/4)"
+      },
+      {
+        "id": "c",
+        "text": "2(cos π/4 + i sin π/4)"
+      },
+      {
+        "id": "d",
+        "text": "√2(cos 3π/4 + i sin 3π/4)"
+      }
+    ],
+    "answer": 0,
+    "hint": "Polar form is r(cos θ + i sin θ) with r = |z| and θ = arg(z).",
+    "explanation": "r = |1 + i| = √2 and θ = π/4, so z = √2(cos π/4 + i sin π/4).",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Complex Numbers and Quadratic Equations) — polar representation of a complex number; NTA JEE Main 2026 Unit 2 (Complex Numbers and Quadratic Equations) — Argand diagram; modulus and argument — polar representation",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-cn-038",
+    "skill": "complex-numbers",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "2(cos π/3 + i sin π/3) in the form a + ib is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "√3 + i"
+      },
+      {
+        "id": "b",
+        "text": "1 − i√3"
+      },
+      {
+        "id": "c",
+        "text": "2 + i√3"
+      },
+      {
+        "id": "d",
+        "text": "1 + i√3"
+      }
+    ],
+    "answer": 3,
+    "hint": "Evaluate cos π/3 and sin π/3, then distribute the 2.",
+    "explanation": "cos π/3 = 1/2, sin π/3 = √3/2, so 2(1/2 + i√3/2) = 1 + i√3.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Complex Numbers and Quadratic Equations) — polar representation — converting polar form to a + ib; NTA JEE Main 2026 Unit 2 (Complex Numbers and Quadratic Equations) — Argand diagram; modulus and argument — polar representation",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-cn-039",
+    "skill": "complex-numbers",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "In the polar form r(cos θ + i sin θ) of z = 1 − √3i, r equals:",
+    "options": [
+      {
+        "id": "a",
+        "text": "1"
+      },
+      {
+        "id": "b",
+        "text": "4"
+      },
+      {
+        "id": "c",
+        "text": "2"
+      },
+      {
+        "id": "d",
+        "text": "√2"
+      }
+    ],
+    "answer": 2,
+    "hint": "r is the modulus of z.",
+    "explanation": "r = |1 − √3i| = √(1 + 3) = 2.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Complex Numbers and Quadratic Equations) — polar representation — modulus as r; NTA JEE Main 2026 Unit 2 (Complex Numbers and Quadratic Equations) — Argand diagram; modulus and argument — polar representation",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-cn-040",
+    "skill": "complex-numbers",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "One square root of 4i lying in the first quadrant is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "2i"
+      },
+      {
+        "id": "b",
+        "text": "√2 + i√2"
+      },
+      {
+        "id": "c",
+        "text": "−√2 − i√2"
+      },
+      {
+        "id": "d",
+        "text": "1 + i"
+      }
+    ],
+    "answer": 1,
+    "hint": "Look for a + bi in quadrant I with (a + bi)² = 4i, or verify by squaring.",
+    "explanation": "(√2 + i√2)² = 2 + 2·(√2)(√2)i − 2 = 4i, and both parts are positive, so it lies in quadrant I.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Complex Numbers and Quadratic Equations) — square root of a complex number; NTA JEE Main 2026 Unit 2 (Complex Numbers and Quadratic Equations) — square root of a complex number",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-cn-041",
+    "skill": "complex-numbers",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "The square roots of −4 are:",
+    "options": [
+      {
+        "id": "a",
+        "text": "±2i"
+      },
+      {
+        "id": "b",
+        "text": "±2"
+      },
+      {
+        "id": "c",
+        "text": "2i"
+      },
+      {
+        "id": "d",
+        "text": "−2i"
+      }
+    ],
+    "answer": 0,
+    "hint": "Every non-zero complex number has exactly two square roots, opposites of each other.",
+    "explanation": "(±2i)² = 4i² = −4, so the two square roots are 2i and −2i.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Complex Numbers and Quadratic Equations) — square root of a complex number; NTA JEE Main 2026 Unit 2 (Complex Numbers and Quadratic Equations) — square root of a complex number",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-cn-042",
+    "skill": "complex-numbers",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "The square roots of 3 + 4i are:",
+    "options": [
+      {
+        "id": "a",
+        "text": "±(1 + 2i)"
+      },
+      {
+        "id": "b",
+        "text": "±(2 − i)"
+      },
+      {
+        "id": "c",
+        "text": "±i"
+      },
+      {
+        "id": "d",
+        "text": "±(2 + i)"
+      }
+    ],
+    "answer": 3,
+    "hint": "Test each candidate by squaring it.",
+    "explanation": "(2 + i)² = 4 + 4i + i² = 3 + 4i; also (−(2+i))² gives the same. So the roots are ±(2 + i).",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Complex Numbers and Quadratic Equations) — square root of a complex number; NTA JEE Main 2026 Unit 2 (Complex Numbers and Quadratic Equations) — square root of a complex number",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-cn-043",
+    "skill": "complex-numbers",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Which of the following is a non-real cube root of unity?",
+    "options": [
+      {
+        "id": "a",
+        "text": "1"
+      },
+      {
+        "id": "b",
+        "text": "(−1 + i√3)/2"
+      },
+      {
+        "id": "c",
+        "text": "−1"
+      },
+      {
+        "id": "d",
+        "text": "i"
+      }
+    ],
+    "answer": 1,
+    "hint": "A cube root of unity satisfies z³ = 1; the non-real ones come from z² + z + 1 = 0.",
+    "explanation": "ω = (−1 + i√3)/2 satisfies ω³ = 1 (check: it is a root of z² + z + 1 = 0, and z³ − 1 = (z − 1)(z² + z + 1)).",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Complex Numbers and Quadratic Equations) — cube roots of unity — definition; NTA JEE Main 2026 Unit 2 (Complex Numbers and Quadratic Equations) — quadratic equations in complex number system; cube roots of unity",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-cn-044",
+    "skill": "complex-numbers",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "If ω is a non-real cube root of unity, then 1 + ω + ω² equals:",
+    "options": [
+      {
+        "id": "a",
+        "text": "0"
+      },
+      {
+        "id": "b",
+        "text": "1"
+      },
+      {
+        "id": "c",
+        "text": "3"
+      },
+      {
+        "id": "d",
+        "text": "−1"
+      }
+    ],
+    "answer": 0,
+    "hint": "ω satisfies z² + z + 1 = 0 — read the sum straight off.",
+    "explanation": "Since ω² + ω + 1 = 0, the sum 1 + ω + ω² = 0.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Complex Numbers and Quadratic Equations) — cube roots of unity — property 1 + ω + ω² = 0; NTA JEE Main 2026 Unit 2 (Complex Numbers and Quadratic Equations) — quadratic equations in complex number system; cube roots of unity",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-cn-045",
+    "skill": "complex-numbers",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "If ω = (−1 + i√3)/2, then ω³ equals:",
+    "options": [
+      {
+        "id": "a",
+        "text": "−1"
+      },
+      {
+        "id": "b",
+        "text": "0"
+      },
+      {
+        "id": "c",
+        "text": "1"
+      },
+      {
+        "id": "d",
+        "text": "ω"
+      }
+    ],
+    "answer": 2,
+    "hint": "That is the defining property of any cube root of unity.",
+    "explanation": "By definition ω³ = 1 for every cube root of unity.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Complex Numbers and Quadratic Equations) — cube roots of unity — property ω³ = 1; NTA JEE Main 2026 Unit 2 (Complex Numbers and Quadratic Equations) — quadratic equations in complex number system; cube roots of unity",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-cn-046",
+    "skill": "complex-numbers",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "If ω is a non-real cube root of unity, then ω⁹⁹ equals:",
+    "options": [
+      {
+        "id": "a",
+        "text": "ω"
+      },
+      {
+        "id": "b",
+        "text": "ω²"
+      },
+      {
+        "id": "c",
+        "text": "0"
+      },
+      {
+        "id": "d",
+        "text": "1"
+      }
+    ],
+    "answer": 3,
+    "hint": "Use ω³ = 1 to reduce the exponent.",
+    "explanation": "ω⁹⁹ = (ω³)³³ = 1³³ = 1.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Complex Numbers and Quadratic Equations) — cube roots of unity — powers of ω; NTA JEE Main 2026 Unit 2 (Complex Numbers and Quadratic Equations) — quadratic equations in complex number system; cube roots of unity",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-cn-047",
+    "skill": "complex-numbers",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "(1 − i)/(1 + i) equals:",
+    "options": [
+      {
+        "id": "a",
+        "text": "i"
+      },
+      {
+        "id": "b",
+        "text": "−i"
+      },
+      {
+        "id": "c",
+        "text": "1"
+      },
+      {
+        "id": "d",
+        "text": "−1"
+      }
+    ],
+    "answer": 1,
+    "hint": "Multiply top and bottom by the conjugate of the denominator.",
+    "explanation": "(1 − i)/(1 + i) = (1 − i)²/((1 + i)(1 − i)) = (1 − 2i + i²)/2 = −2i/2 = −i.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Complex Numbers and Quadratic Equations) — division of complex numbers; NTA JEE Main 2026 Unit 2 (Complex Numbers and Quadratic Equations) — complex numbers as ordered pairs of reals, representation a+ib, Argand diagram; algebra of complex numbers — division",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-cn-048",
+    "skill": "complex-numbers",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "1/i equals:",
+    "options": [
+      {
+        "id": "a",
+        "text": "i"
+      },
+      {
+        "id": "b",
+        "text": "1"
+      },
+      {
+        "id": "c",
+        "text": "−i"
+      },
+      {
+        "id": "d",
+        "text": "−1"
+      }
+    ],
+    "answer": 2,
+    "hint": "Multiply numerator and denominator by i to clear i from the denominator.",
+    "explanation": "1/i = i/i² = i/(−1) = −i.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Complex Numbers and Quadratic Equations) — division of complex numbers — reciprocal of i; NTA JEE Main 2026 Unit 2 (Complex Numbers and Quadratic Equations) — complex numbers as ordered pairs of reals, representation a+ib, Argand diagram; algebra of complex numbers — division",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-cn-049",
+    "skill": "complex-numbers",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "If z = 6 + 8i, then z̄/z equals:",
+    "options": [
+      {
+        "id": "a",
+        "text": "−7/25 − (24/25)i"
+      },
+      {
+        "id": "b",
+        "text": "7/25 + (24/25)i"
+      },
+      {
+        "id": "c",
+        "text": "−1"
+      },
+      {
+        "id": "d",
+        "text": "1"
+      }
+    ],
+    "answer": 0,
+    "hint": "Write z̄/z, then multiply top and bottom by z̄ (the conjugate of the denominator).",
+    "explanation": "z̄ = 6 − 8i, z̄/z = (6 − 8i)/(6 + 8i) = (6 − 8i)²/(36 + 64) = (36 − 96i − 64)/100 = −28/100 − 96i/100 = −7/25 − (24/25)i.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Complex Numbers and Quadratic Equations) — conjugate and division of complex numbers; NTA JEE Main 2026 Unit 2 (Complex Numbers and Quadratic Equations) — conjugation of a complex number; algebra — division",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "jee-ma-alg-cn-050",
+    "skill": "complex-numbers",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "If |z| = 3, then |z·z̄| equals:",
+    "options": [
+      {
+        "id": "a",
+        "text": "3"
+      },
+      {
+        "id": "b",
+        "text": "6"
+      },
+      {
+        "id": "c",
+        "text": "9"
+      },
+      {
+        "id": "d",
+        "text": "27"
+      }
+    ],
+    "answer": 2,
+    "hint": "Use |z₁z₂| = |z₁||z₂| together with |z̄| = |z|.",
+    "explanation": "|z·z̄| = |z|·|z̄| = |z|·|z| = 3 × 3 = 9.",
+    "source": "NCERT Class 11 Mathematics Ch.4 (Complex Numbers and Quadratic Equations) — modulus of a complex number — properties of modulus; NTA JEE Main 2026 Unit 2 (Complex Numbers and Quadratic Equations) — modulus of a complex number",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  }
+]

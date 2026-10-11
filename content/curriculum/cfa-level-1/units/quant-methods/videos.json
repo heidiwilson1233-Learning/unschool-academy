@@ -226,5 +226,111 @@
     ],
     "credit": "Free on YouTube, embedded with attribution; not re-uploaded.",
     "curation_note": "Practice-oriented; good follow-up after the formula lessons."
+  },
+  {
+    "id": "cfa-qm-ni-vid-001",
+    "skill": "npv-irr-basics",
+    "level": "L2",
+    "video_url": "https://www.youtube.com/watch?v=df063ciSOSg",
+    "platform": "youtube",
+    "title": "Profitability Measures: NPV, IRR, AAR, PI | CFA Level 1",
+    "channel": "AnalystPrep",
+    "duration": null,
+    "duration_note": "Duration not verified from search results; verify before publishing in lesson player.",
+    "lesson_topic": "NPV formula and decision rule, IRR definition and decision rule, payback/discounted payback, PI, AAR",
+    "transcript_key_points": [
+      "NPV as PV of future after-tax cash flows minus investment outlay; accept if NPV > 0",
+      "IRR as the discount rate that sets NPV to zero; invest if IRR >= required return",
+      "Payback and discounted payback: calculation and limitations",
+      "Profitability index and average accounting rate of return as supplementary measures"
+    ],
+    "attached_question_ids": [
+      "cfa-qm-ni-001",
+      "cfa-qm-ni-009",
+      "cfa-qm-ni-012",
+      "cfa-qm-ni-027",
+      "cfa-qm-ni-030"
+    ],
+    "credit": "Video by AnalystPrep (free on YouTube, embedded with attribution; not re-uploaded).",
+    "curation_note": "CFA Level I-specific lesson aligned to public LOS headings on NPV/IRR calculation and decision rules."
+  },
+  {
+    "id": "cfa-qm-ni-vid-002",
+    "skill": "npv-irr-basics",
+    "level": "L2",
+    "video_url": "https://www.youtube.com/watch?v=Kk2fJ-D2Eds",
+    "platform": "youtube",
+    "title": "IRR, NPV, Money & Time Weighted Returns | CFA level 1 Quantitative Method | ArivuPro",
+    "channel": "ArivuPro",
+    "duration": null,
+    "duration_note": "Duration not verified from search results; verify before publishing in lesson player.",
+    "lesson_topic": "IRR concept and logic, NPV on the financial calculator, cash-flow handling, exam-style numerical practice",
+    "transcript_key_points": [
+      "IRR concept and logic from first principles",
+      "NPV calculation using the financial calculator",
+      "Entering uneven cash flows on the calculator",
+      "Exam-oriented numerical practice on NPV/IRR"
+    ],
+    "attached_question_ids": [
+      "cfa-qm-ni-003",
+      "cfa-qm-ni-011",
+      "cfa-qm-ni-016",
+      "cfa-qm-ni-048"
+    ],
+    "credit": "Video by ArivuPro (free on YouTube, embedded with attribution; not re-uploaded).",
+    "curation_note": "Calculator-focused walkthrough; supports the computed-answer questions in this batch."
+  },
+  {
+    "id": "cfa-qm-ni-vid-003",
+    "skill": "npv-irr-basics",
+    "level": "L2",
+    "video_url": "https://www.youtube.com/watch?v=7ZilwnJ5Yoo",
+    "platform": "youtube",
+    "title": "31. Capital Budgeting | Corporate Finance | CFA Level 1 | 40 Practice Questions | 2026 Curriculum",
+    "channel": "Study Along Online",
+    "duration": null,
+    "duration_note": "Duration not verified from search results; verify before publishing in lesson player.",
+    "lesson_topic": "Capital budgeting practice: 40 MCQs on NPV, IRR, payback, and project selection per the 2026 CFA curriculum",
+    "transcript_key_points": [
+      "40 exam-style multiple-choice questions on capital budgeting",
+      "NPV vs IRR decision rules applied to single projects",
+      "Ranking and selection of mutually exclusive projects",
+      "Common traps in capital-budgeting questions"
+    ],
+    "attached_question_ids": [
+      "cfa-qm-ni-022",
+      "cfa-qm-ni-023",
+      "cfa-qm-ni-025",
+      "cfa-qm-ni-049",
+      "cfa-qm-ni-050"
+    ],
+    "credit": "Video by Study Along Online (free on YouTube, embedded with attribution; not re-uploaded).",
+    "curation_note": "Question-driven review aligned to the 2026 curriculum; good consolidation after attempting this batch."
+  },
+  {
+    "id": "cfa-qm-ni-vid-004",
+    "skill": "npv-irr-basics",
+    "level": "L2",
+    "video_url": "https://www.youtube.com/watch?v=CO8LDV2sO6M",
+    "platform": "youtube",
+    "title": "Capital Budgeting Techniques in English - NPV, IRR, Payback Period and PI, accounting",
+    "channel": "PM Tycoon",
+    "duration": null,
+    "duration_note": "Duration not verified from search results; verify before publishing in lesson player.",
+    "lesson_topic": "Capital budgeting from first principles: DCF intuition, NPV calculation, IRR, PI, payback, opportunity cost",
+    "transcript_key_points": [
+      "Opportunity cost and discounted-cash-flow intuition",
+      "Net present value: formula and worked calculation",
+      "Internal rate of return explained",
+      "Profitability index, payback period, and exam tips"
+    ],
+    "attached_question_ids": [
+      "cfa-qm-ni-002",
+      "cfa-qm-ni-020",
+      "cfa-qm-ni-035",
+      "cfa-qm-ni-040"
+    ],
+    "credit": "Video by PM Tycoon (free on YouTube, embedded with attribution; not re-uploaded).",
+    "curation_note": "Beginner-friendly build-up from TVM to NPV/IRR; suits learners coming from the time-value-of-money skill."
   }
 ]
