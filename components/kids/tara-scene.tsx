@@ -291,7 +291,7 @@ export default function TaraScene() {
           id="tara-help-panel"
           role="region"
           aria-label="How to play"
-          className="mb-6 rounded-2xl border border-border bg-paper p-5 text-sm text-ink-soft"
+          className="mb-6 rounded-2xl border border-border bg-paper p-5 text-sm text-slate"
         >
           <p className="font-bold text-ink">How to play</p>
           <ul className="mt-2 list-disc space-y-1 pl-5">
@@ -324,7 +324,7 @@ export default function TaraScene() {
               Hi! I'm <strong>Tara</strong>. I love words and stories. Let's learn how a story goes —{" "}
               <strong>beginning, middle, end</strong>.
             </p>
-            <p className="mt-2 text-sm text-ink-soft">
+            <p className="mt-2 text-sm text-slate">
               First I'll show you my story. Then the cards get all mixed up, and <em>you</em> put them back in
               order. Ready?
             </p>
@@ -358,7 +358,7 @@ export default function TaraScene() {
                       {shown ? `Part ${i + 1} of 4` : "…"}
                     </p>
                     <p className="font-bold text-ink">{shown ? card.title : "?"}</p>
-                    <p className="text-sm text-ink-soft">{shown ? card.text : "Keep watching…"}</p>
+                    <p className="text-sm text-slate">{shown ? card.text : "Keep watching…"}</p>
                   </div>
                 </li>
               );
@@ -414,7 +414,7 @@ export default function TaraScene() {
                 <CardArt art={card.art} />
                 <div>
                   <p className="font-bold text-ink">{card.title}</p>
-                  <p className="text-sm text-ink-soft">{card.text}</p>
+                  <p className="text-sm text-slate">{card.text}</p>
                 </div>
               </button>
             ))}
@@ -423,7 +423,7 @@ export default function TaraScene() {
           {showHint && step < STORY.length && (
             <div className="mt-5 rounded-2xl border-2 border-dashed border-kids-orange/50 bg-paper p-4">
               <p className="text-sm font-bold text-ink">Tara's hint</p>
-              <p className="mt-1 text-sm text-ink-soft">
+              <p className="mt-1 text-sm text-slate">
                 Look for the card where <strong>{STORY[step].title.toLowerCase()}</strong> happens:{" "}
                 {STORY[step].text}
               </p>
@@ -445,7 +445,7 @@ export default function TaraScene() {
                 <div>
                   <p className="text-xs font-bold uppercase tracking-widest text-kids-orange-ink">Part {i + 1} of 4</p>
                   <p className="font-bold text-ink">{card.title}</p>
-                  <p className="text-sm text-ink-soft">{card.text}</p>
+                  <p className="text-sm text-slate">{card.text}</p>
                 </div>
               </li>
             ))}
@@ -479,7 +479,7 @@ export default function TaraScene() {
             </p>
             <div className="mt-5 rounded-2xl border-2 border-dashed border-kids-orange/50 bg-paper p-5 text-left">
               <p className="font-bold text-ink">An invitation for later (no screen needed)</p>
-              <p className="mt-1 text-sm text-ink-soft">
+              <p className="mt-1 text-sm text-slate">
                 Tonight, tell this story to someone at home — a parent, grandparent, or friend. Be the
                 storyteller: <em>wake up… climb… share… home.</em> You can draw the four cards on paper too!
               </p>
