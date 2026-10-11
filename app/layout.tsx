@@ -34,7 +34,11 @@ export const metadata: Metadata = {
   },
   description:
     "Unschool Academy helps you learn by doing — focused exam practice for adult learners, imaginative real learning for young children ages 5 through Grade 5.",
-  metadataBase: new URL("https://unschool.academy"),
+  /* Canonical host = the actual serving production deployment. If a custom
+     domain (e.g. unschool.academy) is attached later, ALL of metadataBase,
+     sitemap.ts, robots.ts, and per-page JSON-LD must move to it together —
+     a mismatch here silently blocks indexing (A19, cycle 2026-10-12-0340). */
+  metadataBase: new URL("https://unschool-academy-lr98.vercel.app"),
   openGraph: {
     type: "website",
     siteName: "Unschool Academy",

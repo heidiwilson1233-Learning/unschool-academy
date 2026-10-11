@@ -13,12 +13,26 @@ const STATIC_ROUTES = [
   "/exams",
   "/exams/catalog",
   "/exams/how-practice-works",
+  "/exams/jft-basic/diagnostic",
   "/exams/jft-basic/mock-tests",
+  "/exams/japanese",
   "/exams/tiers",
   "/faq",
   "/free-practice",
+  "/blog",
+  "/blog/why-no-percentiles",
+  "/blog/station-kanji",
+  "/blog/jft-listening-two-plays",
+  "/blog/why-no-scores-kids",
+  "/blog/draft-pending-review",
   "/how-it-works",
   "/kids",
+  "/kids/pricing",
+  "/kids/for-parents",
+  "/kids/library",
+  "/kids/roadmap",
+  "/kids/characters",
+  "/kids/world",
   "/parent",
   "/pricing",
   "/resources",
@@ -46,7 +60,10 @@ const LEGAL_ROUTES = new Set([
 ]);
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = "https://unschool.academy";
+  /* Canonical host = the actual serving production deployment (not the
+     aspirational custom domain). Keep in lockstep with metadataBase in
+     app/layout.tsx and the sitemap URL in app/robots.ts. */
+  const base = "https://unschool-academy-lr98.vercel.app";
   const now = new Date();
   const entries: MetadataRoute.Sitemap = STATIC_ROUTES.map((route) => ({
     url: `${base}${route}`,
