@@ -247,7 +247,7 @@ function DoneContent({
         <Button variant="kids" onClick={onPlayAgain}>
           Play again
         </Button>
-        <Button variant="secondary" href="/kids/grades/1-2">
+        <Button variant="secondary" href="/kids/tracks/adventure-club">
           Back to Adventure Club
         </Button>
       </div>

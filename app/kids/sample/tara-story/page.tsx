@@ -32,7 +32,7 @@ const JSON_LD = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Home", item: "https://unschool.academy/" },
     { "@type": "ListItem", position: 2, name: "Kids", item: "https://unschool.academy/kids" },
-    { "@type": "ListItem", position: 3, name: "Grades 1–2", item: "https://unschool.academy/kids/grades/1-2" },
+    { "@type": "ListItem", position: 3, name: "Grades 1–2" },
     { "@type": "ListItem", position: 4, name: "The Four-Card Story", item: CANONICAL },
   ],
 };
@@ -59,7 +59,7 @@ export default function StoryQuestPage() {
           trail={[
             { label: "Home", href: "/" },
             { label: "Kids", href: "/kids" },
-            { label: "Grades 1–2", href: "/kids/grades/1-2" },
+            { label: "Grades 1–2" },
             { label: "The Four-Card Story" },
           ]}
         />
