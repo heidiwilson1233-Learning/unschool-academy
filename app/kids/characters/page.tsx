@@ -76,7 +76,7 @@ export default function CharactersPage() {
             <span className="text-kids-leaf-deep">Bobo</span>
           </>
         }
-        sub="Three original friends, each with their own way of teaching. The same familiar faces from age 2 to Grade 5, never replaced by a trendier mascot."
+        sub="Three original friends, each with their own way of teaching. The same familiar faces from age 5 to Grade 5, never replaced by a trendier mascot."
       />
       <Section>
         <Breadcrumbs trail={TRAIL} />

@@ -8,7 +8,7 @@ import { VILLAGE_LOCATIONS } from "@/lib/kids";
 
 const PAGE_TITLE = "Explore the Village — Six Storybook Locations for Kids";
 const PAGE_DESC =
-  "Explore the Unschool Kids village with Momo, Tara and Bobo: six storybook learning places for ages 2 to Grade 5. Two quests are playable now.";
+  "Explore the Unschool Kids village with Momo, Tara and Bobo: six storybook learning places for ages 5 to Grade 5. Two quests are playable now.";
 
 export const metadata: Metadata = {
   title: PAGE_TITLE,

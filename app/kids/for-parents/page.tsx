@@ -54,7 +54,7 @@ const FAQS = [
   },
   {
     q: "Can I limit when and how long my child plays?",
-    a: "Yes. Screen-time settings, including per-child time budgets and cutoffs, live in the Parent Hub. The 2–3 track is co-play by design and transitions quickly to off-screen play.",
+    a: "Yes. Screen-time settings, including per-child time budgets and cutoffs, live in the Parent Hub. Co-play mode keeps a parent in control of the device for the youngest players. Ages 2–4 is a separate parent-assisted future track, not part of the launch.",
   },
   {
     q: "Can I delete our data?",
@@ -137,14 +137,14 @@ const SCREEN_PRINCIPLES = [
   },
   {
     t: "Youngest play leaves the screen fast",
-    b: "The 2–3 track is built to move from screen to lap to play, as quickly as possible.",
+    b: "The youngest experiences are built to move from screen to lap to play, as quickly as possible.",
   },
 ];
 
 const COPLAY_STEPS = [
   {
     t: "Sit beside, not across",
-    b: "The 2–3 track assumes a lap. Your child should have a real action in a story within 30–60 seconds of starting, and you are the controller of the device.",
+    b: "The youngest quests assume a lap. Your child should have a real action in a story within 30–60 seconds of starting, and you are the controller of the device.",
   },
   {
     t: "Let the character wait",
@@ -309,7 +309,7 @@ export default function ForParentsPage() {
                 <dd className="font-bold text-ink">8:30 PM</dd>
               </div>
               <div className="flex justify-between gap-4 border-t border-border pt-3">
-                <dt className="text-slate">Co-play only, ages 2–3</dt>
+                <dt className="text-slate">Co-play mode · youngest</dt>
                 <dd className="font-bold text-ink">On</dd>
               </div>
             </dl>
@@ -327,7 +327,7 @@ export default function ForParentsPage() {
           tone="kids"
           eyebrow="Co-play guidance"
           title="You are part of the lesson"
-          sub="Adults co-play the toddler experiences. Here is how to do it well."
+          sub="A grown-up co-plays the youngest quests with the child. Here is how to do it well."
         />
         <div className="grid grid-cols-1 md:grid-cols-6 gap-4">
           <div className="md:col-span-4 bg-paper border border-border rounded-2xl p-6 md:p-8">
@@ -347,11 +347,13 @@ export default function ForParentsPage() {
             </ol>
           </div>
           <div className="md:col-span-2 md:row-span-2 bg-kids-orange/15 border border-kids-orange-deep/40 rounded-2xl p-6 md:p-7">
-            <Mono>Ages 2–3</Mono>
-            <h3 className="mt-3 text-xl font-extrabold text-ink tracking-tight">Little Explorers is designed for your lap</h3>
+            <Mono>Future track · Ages 2–4</Mono>
+            <h3 className="mt-3 text-xl font-extrabold text-ink tracking-tight">A future track would live on your lap</h3>
             <p className="mt-2 text-sm text-slate leading-relaxed">
-              The youngest track has no reading and no cursor-control requirement for the child.
-              It assumes a parent is holding the device and the child is doing the thinking.
+              Ages 2–4 is a separate parent-assisted future track — not part of the launched academy,
+              which starts at age 5. When it ships, it will have no reading and no cursor-control
+              requirement for the child. It will assume a parent is holding the device and the child
+              is doing the thinking.
             </p>
           </div>
           <div className="md:col-span-4 bg-paper border border-border rounded-2xl p-6 md:p-8">
@@ -385,7 +387,7 @@ export default function ForParentsPage() {
                   Momo's mango quest — counting to ten
                 </figcaption>
               </div>
-              <Badge tone="kids">Ages 3–5</Badge>
+              <Badge tone="kids">Future-track demo · Ages 3–5</Badge>
             </div>
             <dl className="divide-y divide-border">
               {EVIDENCE_ROWS.map((r) => (

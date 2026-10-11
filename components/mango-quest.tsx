@@ -131,7 +131,7 @@ const PHASE_LABELS: Record<Phase, string> = {
 
 type AttemptLog = { hintsUsed: number; demonstrated: boolean; transferDone: boolean };
 
-/* Chunky 4-node quest trail — progress feedback for ages 3–5. Zero runtime cost: pure markup + CSS. */
+/* Chunky 4-node quest trail — progress feedback for young children. Zero runtime cost: pure markup + CSS. */
 function PhaseTrail({ phase }: { phase: Phase }) {
   const idx = PHASES.indexOf(phase);
   return (
@@ -261,8 +261,8 @@ function DoneContent({
         <Button variant="kids" onClick={onPlayAgain}>
           Play again
         </Button>
-        <Button variant="secondary" href="/kids/ages/3-5">
-          Back to Play Garden
+        <Button variant="secondary" href="/kids/tracks/school-starters">
+          Back to School Starters
         </Button>
       </div>
     </>
@@ -451,8 +451,8 @@ export default function MangoQuest() {
               <Button size="sm" variant="secondary" onClick={closeExit}>
                 Keep playing
               </Button>
-              <Button size="sm" href="/kids/ages/3-5">
-                Back to Play Garden
+              <Button size="sm" href="/kids/tracks/school-starters">
+                Back to School Starters
               </Button>
             </div>
           </div>
