@@ -43,7 +43,10 @@ export function recordAttempt(entry: {
 }) {
   try {
     const key = "ua-attempts";
-    const prev = JSON.parse(localStorage.getItem(key) ?? "[]");
+    // Defensive: a corrupted or non-array payload (any valid JSON that isn't
+    // an array) must not break every future save — reset to [] instead.
+    const parsed = JSON.parse(localStorage.getItem(key) ?? "[]");
+    const prev: unknown[] = Array.isArray(parsed) ? parsed : [];
     const cap = (ids: string[] | undefined) => {
       const kept = (ids ?? []).slice(-30);
       return kept.length > 0 ? kept : undefined;
