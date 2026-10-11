@@ -16,6 +16,8 @@ type ButtonProps = {
   type?: "button" | "submit";
   disabled?: boolean;
   ref?: Ref<HTMLButtonElement | HTMLAnchorElement>;
+  /** Passed through as aria-describedby (e.g. why a disabled button is disabled). */
+  ariaDescribedby?: string;
 };
 
 export function Button({
@@ -28,6 +30,7 @@ export function Button({
   type = "button",
   disabled = false,
   ref,
+  ariaDescribedby,
 }: ButtonProps) {
   const base =
     "inline-flex items-center justify-center gap-2 font-semibold rounded-xl transition-[color,background-color,border-color,box-shadow,transform] duration-200 select-none active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-academy-teal";
@@ -46,13 +49,13 @@ export function Button({
   const cls = `${base} ${sizes[size]} ${variants[variant]} ${className}`;
   if (href && !disabled) {
     return (
-      <Link href={href} className={cls} onClick={onClick} ref={ref as Ref<HTMLAnchorElement>}>
+      <Link href={href} className={cls} onClick={onClick} ref={ref as Ref<HTMLAnchorElement>} aria-describedby={ariaDescribedby}>
         {children}
       </Link>
     );
   }
   return (
-    <button type={type} className={cls} onClick={onClick} disabled={disabled} ref={ref as Ref<HTMLButtonElement>}>
+    <button type={type} className={cls} onClick={onClick} disabled={disabled} ref={ref as Ref<HTMLButtonElement>} aria-describedby={ariaDescribedby}>
       {children}
     </button>
   );

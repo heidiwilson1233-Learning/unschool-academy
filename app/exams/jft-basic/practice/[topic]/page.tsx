@@ -9,6 +9,13 @@ const SLUG_TO_TOPIC: Record<string, string> = {
   "conversation": "Conversation and Expression",
   "listening": "Listening Comprehension",
   "reading": "Reading Comprehension",
+  /* Unit-id aliases (run 65): the generic exam practice picker links
+   * /exams/jft-basic/practice/<unit-id>; the concrete route accepts both
+   * forms so the alias never 404s. Legacy slugs above keep working. */
+  "script-vocabulary": "Script and Vocabulary",
+  "conversation-expression": "Conversation and Expression",
+  "listening-comprehension": "Listening Comprehension",
+  "reading-comprehension": "Reading Comprehension",
 };
 
 const GRAIN =
@@ -21,9 +28,19 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ topic: string }> }): Promise<Metadata> {
   const { topic } = await params;
   const name = SLUG_TO_TOPIC[topic];
+  /* Canonicalize unit-id aliases to the legacy slugs (sitemap + public
+   * links use the legacy form) so the same content never has two canonicals. */
+  const UNIT_ID_TO_LEGACY: Record<string, string> = {
+    "script-vocabulary": "vocabulary",
+    "conversation-expression": "conversation",
+    "listening-comprehension": "listening",
+    "reading-comprehension": "reading",
+  };
+  const canonicalSlug = UNIT_ID_TO_LEGACY[topic] ?? topic;
   return {
     title: name ? `${name} — Practice` : "Practice",
     description: name ? `Practice JFT-Basic ${name} with instant answer checks, one hint per question, and draft explanations pending review by a Japanese subject-matter expert.` : "Practice",
+    alternates: name ? { canonical: `https://unschool.academy/exams/jft-basic/practice/${canonicalSlug}` } : undefined,
   };
 }
 
@@ -79,7 +96,12 @@ export default async function PracticeTopicPage({ params }: { params: Promise<{ 
       </div>
       <Section className="!py-10">
         <div className="max-w-4xl mx-auto">
-          <PracticePlayer topic={topicName} />
+          <PracticePlayer
+            topic={topicName}
+            exam="jft-basic"
+            diagnosticHref="/exams/jft-basic/diagnostic"
+            answersBase="/exams/jft-basic/answers"
+          />
         </div>
       </Section>
     </>

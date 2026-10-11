@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { listExamSlugs, getExamPageData } from "@/lib/exam-template";
+import { listPracticeExams, getExamPracticeMeta } from "@/lib/exam-banks";
 
 /**
  * Sitemap — static routes plus one entry per exam with authored content.
@@ -64,6 +65,31 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly" as const,
       priority: 0.8,
     });
+  }
+  /* Practice pickers + topic pages for exams with question banks — indexed
+     content pages with honest counts (run 65). For JFT-Basic the public
+     canonical topic URLs are the legacy slugs (the concrete route also
+     accepts unit ids as aliases, but the sitemap lists canonicals only). */
+  const JFT_LEGACY_TOPIC_SLUGS = ["vocabulary", "conversation", "listening", "reading"];
+  for (const slug of listPracticeExams()) {
+    entries.push({
+      url: `${base}/exams/${slug}/practice`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.6,
+    });
+    const topicSlugs =
+      slug === "jft-basic"
+        ? JFT_LEGACY_TOPIC_SLUGS
+        : (getExamPracticeMeta(slug)?.units ?? []).map((u) => u.id);
+    for (const t of topicSlugs) {
+      entries.push({
+        url: `${base}/exams/${slug}/practice/${t}`,
+        lastModified: now,
+        changeFrequency: "weekly" as const,
+        priority: 0.5,
+      });
+    }
   }
   /* Answers portal index (the 95 draft [id] pages are noindex by design —
      they stay out of the sitemap). */

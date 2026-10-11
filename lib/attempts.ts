@@ -13,6 +13,13 @@ export type AttemptSkill = { skill: string; correct: number; total: number };
 
 export function recordAttempt(entry: {
   kind: string;
+  /**
+   * Exam this session belonged to (e.g. "jft-basic"). Stored so per-exam
+   * analytics (mastery, smart-pick) never mix two exams' skill tallies.
+   * Absent on entries written before run 65 — readers must default to
+   * "jft-basic".
+   */
+  exam?: string;
   topic?: string;
   score: number;
   total: number;

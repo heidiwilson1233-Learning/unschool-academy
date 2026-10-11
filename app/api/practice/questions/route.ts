@@ -1,36 +1,50 @@
 import { NextResponse } from "next/server";
-import { practiceByTopic, PRACTICE_TOPICS } from "@/lib/practice";
+import { getExamBank, getExamPracticeMeta, listPracticeExams } from "@/lib/exam-banks";
+import { safePracticeQuestion } from "@/lib/practice-dto";
 
 /**
- * GET /api/practice/questions?topic=<topic>
+ * GET /api/practice/questions?exam=<exam-id>&topic=<unit-id | unit title>
  * Practice-mode questions WITHOUT answer keys or explanations.
  * Hints are included (practice mode). Explanations only via /check after an attempt.
+ *
+ * Exam-agnostic (run 65): the bank is loaded from
+ * content/curriculum/<exam-id>/units/** at request time and validated by the
+ * shared question-bank factory. `exam` defaults to "jft-basic" so every
+ * existing caller keeps working. `topic` accepts a unit id
+ * ("polity-fundamentals") or a unit title ("Script and Vocabulary" — the
+ * legacy JFT form).
  */
 export async function GET(req: Request) {
   const { searchParams } = new URL(req.url);
-  const topic = searchParams.get("topic") ?? "";
-  if (!(PRACTICE_TOPICS as readonly string[]).includes(topic)) {
+  const exam = (searchParams.get("exam") ?? "jft-basic").trim();
+  const topicParam = (searchParams.get("topic") ?? "").trim();
+
+  const bank = getExamBank(exam);
+  if (!bank) {
     return NextResponse.json(
-      { error: "Unknown topic.", topics: PRACTICE_TOPICS },
+      { error: "Unknown exam.", exams: listPracticeExams() },
+      { status: 404 }
+    );
+  }
+  const units = Object.values(bank.units);
+  const unit =
+    units.find((u) => u.id === topicParam) ?? units.find((u) => u.title === topicParam);
+  if (!unit) {
+    return NextResponse.json(
+      { error: "Unknown topic.", topics: bank.topics },
       { status: 400 }
     );
   }
-  const questions = practiceByTopic(topic).map((q) => ({
-    id: q.id,
-    topic: q.topic,
-    skill: q.skill,
-    skillLabel: q.skillLabel,
-    version: q.version,
-    stem: q.stem,
-    stemJp: q.stemJp ?? null,
-    options: q.options.map((o) => ({ id: o.id, text: o.text, textJp: o.textJp ?? null })),
-    audioTextJp: q.audioTextJp ?? null,
-    hint: q.hint,
-  }));
+
+  const meta = getExamPracticeMeta(exam);
+  const questions = bank.byTopic(unit.title).map(safePracticeQuestion);
   return NextResponse.json({
     version: "practice-v2-curriculum",
-    reviewStatus: "draft — pending Japanese SME review",
-    topic,
+    exam,
+    examTitle: meta?.examTitle ?? exam,
+    reviewStatus: meta?.reviewStatus ?? "draft — pending SME review",
+    topic: unit.title,
+    unitId: unit.id,
     total: questions.length,
     questions,
   });

@@ -3,9 +3,15 @@
  * question-bank factory (`lib/question-bank.ts`).
  *
  * This module is pure CONFIG: which batches belong to JFT-Basic, which
- * skill labels to show, and the curated mock set. All validation and
- * normalization live in the factory and `lib/curriculum.ts`; nothing
- * exam-specific is hardcoded in the delivery layer anymore.
+ * skill labels to show, and the curated mock sets. All validation and
+ * normalization live in the factory and `lib/curriculum.ts`.
+ *
+ * DELIVERY NOTE (run 65): the practice API (`/api/practice/*`) no longer
+ * reads through this module — it loads every exam's bank from disk via
+ * `lib/exam-banks.ts`, which builds the identical bank from the same JSON
+ * (skill labels now live in course.json `skill_labels`, kept verbatim from
+ * the map below). This module remains the JFT-Basic curated instance for
+ * the frozen mock sets, the diagnostic bank, and the challenge pool.
  *
  * NOTE on layering: this module deliberately does NOT import `lib/exams`.
  * `lib/exams` loads the diagnostic bank at module scope, and this module is

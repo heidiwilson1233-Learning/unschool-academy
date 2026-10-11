@@ -18,6 +18,7 @@
 import { readFileSync, readdirSync, accessSync, constants as fsConstants } from "node:fs";
 import path from "node:path";
 import { getExamById as getCatalogExam } from "@/lib/catalog";
+import { hasExamBank } from "@/lib/exam-banks";
 
 const CURRICULUM_DIR = path.join(process.cwd(), "content", "curriculum");
 const APP_EXAMS_DIR = path.join(process.cwd(), "app", "exams");
@@ -295,12 +296,16 @@ export function getExamPageData(slug: string): ExamPageData | null {
     }
   }
 
-  /* Deep-route features (only what exists on disk is linked) -------- */
+  /* Deep-route features (only what exists on disk is linked) --------
+   * Practice is content-gated, not route-gated: the generic
+   * app/exams/[exam]/practice routes serve any exam whose curriculum ships
+   * question batches, so the cell appears the moment content lands — no
+   * per-exam page needed (portal-doctrine move 9). */
   const feature = (name: string) =>
     exists(path.join(APP_EXAMS_DIR, slug, name, "page.tsx"));
   const features: ExamFeatures = {
     diagnostic: feature("diagnostic"),
-    practice: feature("practice"),
+    practice: feature("practice") || hasExamBank(slug),
     mockTests: feature("mock-tests"),
     topics: feature("topics"),
     syllabus: feature("syllabus"),

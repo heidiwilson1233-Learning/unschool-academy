@@ -45,9 +45,27 @@ export type ChallengePack = {
 export default function PracticePlayer({
   topic,
   challenge,
+  exam = "jft-basic",
+  diagnosticHref,
+  answersBase,
 }: {
   topic?: string;
   challenge?: ChallengePack;
+  /** Exam whose bank this session draws from — threaded into both API calls. */
+  exam?: string;
+  /**
+   * Exam-relative diagnostic link shown on the results screen.
+   * `undefined` = default (JFT-Basic's diagnostic); `null` = hide (exam has
+   * no diagnostic surface, so no link rather than a 404).
+   */
+  diagnosticHref?: string | null;
+  /**
+   * Base path for the exam-relative "full explanation" links
+   * (`<base>/<questionId>`). `undefined` = default (JFT-Basic answers
+   * portal); `null` = hide the link. (A plain string — functions can't be
+   * passed to client components.)
+   */
+  answersBase?: string | null;
 }) {
   const [questions, setQuestions] = useState<PracticeQ[] | null>(null);
   const [contentVersion, setContentVersion] = useState<string | null>(null);
@@ -67,6 +85,25 @@ export default function PracticePlayer({
      resolution signal. */
   const priorMissesRef = useRef<Set<string>>(new Set());
   const clearedRef = useRef<string[]>([]);
+  const questionRef = useRef<HTMLHeadingElement>(null);
+  const btnRefs = useRef<(HTMLButtonElement | null)[]>([]);
+  /* Bumped by the error card's Retry button — re-runs the load effect. */
+  const [loadNonce, setLoadNonce] = useState(0);
+
+  /* Exam-relative deep links. A surface that doesn't exist for this exam
+   * renders no link rather than a 404 (honesty: never link where nothing is). */
+  const effDiagnosticHref =
+    diagnosticHref !== undefined
+      ? diagnosticHref
+      : exam === "jft-basic"
+        ? "/exams/jft-basic/diagnostic"
+        : null;
+  const effAnswersBase =
+    answersBase !== undefined
+      ? answersBase
+      : exam === "jft-basic"
+        ? "/exams/jft-basic/answers"
+        : null;
 
   useEffect(() => {
     try {
@@ -77,6 +114,8 @@ export default function PracticePlayer({
     } catch {
       priorMissesRef.current = new Set();
     }
+    setLoadError(false);
+    setQuestions(null);
     if (challenge) {
       // Challenge mode: the set arrives pre-built (no keys — API strips them).
       // Defensive: an empty set must never reach the player body.
@@ -92,7 +131,9 @@ export default function PracticePlayer({
       setLoadError(true);
       return;
     }
-    fetch(`/api/practice/questions?topic=${encodeURIComponent(topic)}`)
+    fetch(
+      `/api/practice/questions?exam=${encodeURIComponent(exam)}&topic=${encodeURIComponent(topic)}`
+    )
       .then((r) => {
         if (!r.ok) throw new Error("load failed");
         return r.json();
@@ -103,7 +144,7 @@ export default function PracticePlayer({
         setContentVersion(d.version ?? null);
       })
       .catch(() => setLoadError(true));
-  }, [topic, challenge]);
+  }, [topic, challenge, exam, loadNonce]);
 
   const check = useCallback(async () => {
     if (!questions || !picked) return;
@@ -112,7 +153,7 @@ export default function PracticePlayer({
       const r = await fetch("/api/practice/check", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ questionId: questions[index].id, optionId: picked }),
+        body: JSON.stringify({ exam, questionId: questions[index].id, optionId: picked }),
       });
       const d = await r.json();
       const q = questions[index];
@@ -135,7 +176,24 @@ export default function PracticePlayer({
     } finally {
       setChecking(false);
     }
-  }, [questions, index, picked]);
+  }, [questions, index, picked, exam]);
+
+  /* Roving arrow-key navigation for the radiogroup (WCAG: radio semantics
+   * promise arrow keys). Mirrors components/mock-player.tsx. */
+  const onKey = (e: React.KeyboardEvent, oi: number) => {
+    if (!questions) return;
+    const len = questions[index].options.length;
+    let n = -1;
+    if (e.key === "ArrowDown" || e.key === "ArrowRight") n = (oi + 1) % len;
+    if (e.key === "ArrowUp" || e.key === "ArrowLeft") n = (oi - 1 + len) % len;
+    if (e.key === "Home") n = 0;
+    if (e.key === "End") n = len - 1;
+    if (n >= 0) {
+      e.preventDefault();
+      setPicked(questions[index].options[n].id);
+      btnRefs.current[n]?.focus();
+    }
+  };
 
   const finishSession = useCallback(() => {
     if (!questions) return;
@@ -146,6 +204,7 @@ export default function PracticePlayer({
     }));
     recordAttempt({
       kind: challenge ? "challenge" : "practice",
+      exam,
       topic: challenge ? undefined : topic,
       score,
       total: questions.length,
@@ -157,7 +216,7 @@ export default function PracticePlayer({
     });
     setFinished(true);
     window.scrollTo({ top: 0, behavior: "smooth" });
-  }, [questions, score, topic, challenge, contentVersion]);
+  }, [questions, score, topic, challenge, contentVersion, exam]);
 
   const next = () => {
     if (!questions) return;
@@ -168,22 +227,67 @@ export default function PracticePlayer({
       setPicked(null);
       setResult(null);
       setShowHint(false);
+      /* The Next button unmounts with the result panel — without this,
+       * keyboard/screen-reader focus drops to <body> every question. */
+      requestAnimationFrame(() => questionRef.current?.focus());
     }
+  };
+
+  /* In-place session restart: same set, no reload, exam context preserved. */
+  const restart = () => {
+    setIndex(0);
+    setPicked(null);
+    setResult(null);
+    setChecking(false);
+    setShowHint(false);
+    setScore(0);
+    setHintsUsed(0);
+    setFinished(false);
+    skillTallies.current = {};
+    missesRef.current = [];
+    clearedRef.current = [];
+    window.scrollTo({ top: 0 });
   };
 
   if (loadError) {
     return (
-      <Card>
-        <h2 className="text-xl font-bold text-ink mb-2">Couldn&apos;t load practice questions</h2>
-        <p className="text-slate">Check your connection and reload.</p>
-        <div className="mt-4"><Button onClick={() => window.location.reload()}>Reload</Button></div>
-      </Card>
+      <div role="alert">
+        <Card>
+          <h2 className="text-xl font-bold text-ink mb-2">Couldn&apos;t load practice questions</h2>
+          <p className="text-slate">Check your connection and reload.</p>
+          <div className="mt-4">
+            <Button onClick={() => setLoadNonce((n) => n + 1)}>Retry</Button>
+          </div>
+        </Card>
+      </div>
     );
   }
   if (!questions) {
+    /* Skeleton keeps the layout stable (no CLS) and announces via the
+     * sr-only line; motion is killed under prefers-reduced-motion. */
     return (
-      <div aria-live="polite">
-        <p className="text-slate text-sm">Loading practice questions…</p>
+      <div aria-live="polite" aria-busy="true">
+        <p className="sr-only">Loading practice questions…</p>
+        <div className="mb-6" aria-hidden="true">
+          <div className="h-4 w-44 rounded bg-border/70 animate-pulse motion-reduce:animate-none" />
+          <div className="mt-2 h-2 rounded-full bg-border/60 overflow-hidden">
+            <div className="h-full w-1/4 rounded-full bg-academy-teal/40 animate-pulse motion-reduce:animate-none" />
+          </div>
+        </div>
+        <Card className="!p-6 md:!p-10" >
+          <div aria-hidden="true">
+            <div className="h-6 w-28 rounded-full bg-border/70 animate-pulse motion-reduce:animate-none" />
+            <div className="mt-4 h-8 w-4/5 rounded bg-border/70 animate-pulse motion-reduce:animate-none" />
+            <div className="mt-6 space-y-3">
+              {[0, 1, 2, 3].map((i) => (
+                <div
+                  key={i}
+                  className="h-16 rounded-xl border-2 border-border/60 bg-border/20 animate-pulse motion-reduce:animate-none"
+                />
+              ))}
+            </div>
+          </div>
+        </Card>
       </div>
     );
   }
@@ -234,11 +338,11 @@ export default function PracticePlayer({
               </li>
             ))}
           </ul>
-          {weakest && weakest.rate < 1 && (
+          {weakest && weakest.rate < 1 && effDiagnosticHref && (
             <p className="mt-4 text-[15px] text-slate leading-relaxed">
               Weakest here: <span className="font-semibold text-ink">{weakest.label}</span> —{" "}
               <Link
-                href="/exams/jft-basic/diagnostic"
+                href={effDiagnosticHref}
                 className="font-semibold text-academy-blue hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-academy-blue rounded"
               >
                 a free diagnostic maps these gaps to a starter plan
@@ -253,16 +357,18 @@ export default function PracticePlayer({
           {challenge ? (
             <>
               <Button href="/app/exams">Back to my progress</Button>
-              <Button href="/exams/jft-basic/topics" variant="secondary">
+              <Button href={`/exams/${exam}/practice`} variant="secondary">
                 Practice by topic
               </Button>
             </>
           ) : (
             <>
-              <Button onClick={() => window.location.reload()}>
+              <Button onClick={restart}>
                 <RotateCcw size={16} aria-hidden /> Practice again
               </Button>
-              <Button href="/exams/jft-basic/diagnostic" variant="secondary">Map my gaps</Button>
+              {effDiagnosticHref && (
+                <Button href={effDiagnosticHref} variant="secondary">Map my gaps</Button>
+              )}
               <Button href="/app/exams" variant="ghost">My progress →</Button>
             </>
           )}
@@ -277,7 +383,11 @@ export default function PracticePlayer({
     <div>
       <div className="mb-6">
         <p className="text-sm font-semibold text-slate mb-2" aria-live="polite">
-          Question {index + 1} of {questions.length} · Score so far: {score}
+          Question {index + 1} of {questions.length} ·{" "}
+          {questions.length - index - 1 === 0
+            ? "last one"
+            : `${questions.length - index - 1} left`}{" "}
+          · Score so far: {score}
         </p>
         <div className="h-2 rounded-full bg-border/60 overflow-hidden">
           <div className="h-full bg-academy-teal rounded-full transition-[width] duration-300 ease-signature" style={{ width: `${(index / questions.length) * 100}%` }} />
@@ -289,7 +399,7 @@ export default function PracticePlayer({
           <Badge tone="info">{q.topic}</Badge>
           <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-slate">{q.skillLabel}</span>
         </div>
-        <h2 className="mt-4 text-xl md:text-2xl font-bold text-ink leading-relaxed">{q.stem}</h2>
+        <h2 ref={questionRef} tabIndex={-1} className="mt-4 text-xl md:text-2xl font-bold text-ink leading-relaxed focus:outline-none">{q.stem}</h2>
         {q.stemJp && <p className="jp mt-2 text-lg text-slate">{q.stemJp}</p>}
         {q.audioTextJp && (
           <div className="mt-4">
@@ -313,6 +423,10 @@ export default function PracticePlayer({
                 aria-checked={selected}
                 disabled={disabled}
                 onClick={() => setPicked(o.id)}
+                onKeyDown={(e) => onKey(e, oi)}
+                ref={(el) => {
+                  btnRefs.current[oi] = el;
+                }}
                 className={`w-full text-left px-5 py-4 rounded-xl border-2 transition-colors duration-200 ease-signature active:scale-[0.99] disabled:cursor-default ${
                   isCorrectOpt
                     ? "border-academy-teal bg-academy-teal/10"
@@ -326,15 +440,17 @@ export default function PracticePlayer({
                 <span className="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-slate/10 text-sm font-bold text-slate mr-3" aria-hidden>{oi + 1}</span>
                 <span className="jp text-lg font-semibold text-ink">{o.textJp ?? o.text}</span>
                 {o.textJp && o.textJp !== o.text && <span className="block text-sm text-slate mt-1 ml-10">{o.text}</span>}
-                {isCorrectOpt && <Check size={16} className="inline-block ml-3 text-academy-teal-dark" aria-label="Correct option" />}
-                {isWrongPick && <X size={16} className="inline-block ml-3 text-red-600" aria-label="Incorrect pick" />}
+                {isCorrectOpt && <Check size={16} role="img" aria-label="Correct option" className="inline-block ml-3 text-academy-teal-dark" />}
+                {isWrongPick && <X size={16} role="img" aria-label="Incorrect pick" className="inline-block ml-3 text-red-600" />}
               </button>
             );
           })}
         </div>
 
         {result ? (
-          <div className="mt-6 border-t border-border pt-5 faq-reveal">
+          /* role=status announces the feedback to screen readers the moment
+           * it appears (WCAG 4.1.3) — the panel is the status message. */
+          <div className="mt-6 border-t border-border pt-5 faq-reveal" role="status">
             <p className={`font-extrabold text-lg flex items-center gap-2 ${result.correct ? "text-academy-teal-dark" : "text-red-700"}`}>
               {result.correct ? (
                 <><Check size={20} aria-hidden /> Correct</>
@@ -345,10 +461,10 @@ export default function PracticePlayer({
             <p className="mt-2 text-[15px] text-slate leading-relaxed">
               <span className="font-semibold text-ink">Why: </span>{result.explanation}
             </p>
-            {!result.correct && (
+            {!result.correct && effAnswersBase && (
               <p className="mt-3">
                 <Link
-                  href={`/exams/jft-basic/answers/${q.id}`}
+                  href={`${effAnswersBase}/${q.id}`}
                   aria-label="Full explanation for this question"
                   className="inline-flex items-center gap-1 text-[15px] font-semibold text-academy-blue hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-academy-blue rounded"
                 >
@@ -360,7 +476,10 @@ export default function PracticePlayer({
           </div>
         ) : (
           <div className="mt-6 flex flex-wrap items-center gap-3">
-            <Button onClick={check} disabled={!picked || checking} size="lg">{checking ? "Checking…" : "Check answer"}</Button>
+            <Button onClick={check} disabled={!picked || checking} size="lg" ariaDescribedby="practice-check-hint">{checking ? "Checking…" : "Check answer"}</Button>
+            <span id="practice-check-hint" className="sr-only">
+              {picked ? "Checks your answer and shows the explanation." : "Pick an option above to enable checking."}
+            </span>
             {!showHint ? (
               <button
                 type="button"

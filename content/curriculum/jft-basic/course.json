@@ -37,5 +37,19 @@
   "source": "Japan Foundation JFT-Basic official pages (jpf.go.jp/jft-basic) — exam facts verified 2026-10-08",
   "status": "pilot",
   "title": "JFT-Basic — Japan Foundation Test for Basic Japanese",
-  "version": 1
+  "version": 1,
+  "skill_labels": {
+    "kanji-reading": "Kanji readings",
+    "word-meaning": "Word meanings",
+    "word-usage": "Using words in sentences",
+    "kanji-meaning-usage": "Kanji meanings",
+    "grammar": "Grammar",
+    "expression": "Everyday expressions",
+    "listening-conversation": "Everyday conversations",
+    "listening-shops": "Shop exchanges",
+    "listening-announcements": "Instructions and announcements",
+    "reading-messages": "Short messages",
+    "information-search": "Finding information"
+  },
+  "review_status": "draft — pending Japanese SME review"
 }
