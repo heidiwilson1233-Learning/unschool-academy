@@ -26,7 +26,7 @@ export default function OgImage() {
             marginBottom: 24,
           }}
         >
-          Unschool Kids · Ages 2 through Grade 5
+          Unschool Kids · Ages 5 through Grade 5
         </div>
         <div
           style={{

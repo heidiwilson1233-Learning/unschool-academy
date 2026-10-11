@@ -7,22 +7,22 @@ import { Art, StagingNote } from "@/components/site-art";
 const CANONICAL = "https://unschool.academy/kids/sample/momo-mangoes";
 
 export const metadata: Metadata = {
-  title: "Free Quest: Momo's Three Mangoes (Ages 3–5) — Unschool Academy",
+  title: "Free Quest: Momo's Three Mangoes (Ages 3–5 · Future-Track Demo) — Unschool Academy",
   description:
     "A complete free Unschool Kids demo quest. Help Momo count exactly three mangoes for the picnic, then prove the skill with leaves. No account, no card.",
   alternates: { canonical: CANONICAL },
   openGraph: {
-    title: "Free Quest: Momo's Three Mangoes (Ages 3–5) — Unschool Academy",
+    title: "Free Quest: Momo's Three Mangoes (Ages 3–5 · Future-Track Demo) — Unschool Academy",
     description:
-      "Help Momo count exactly three mangoes for the picnic. A complete free demo quest for ages 3–5.",
+      "Help Momo count exactly three mangoes for the picnic. A playable demo of a future parent-assisted track for ages 3–5. The launched academy starts at age 5.",
     type: "website",
     url: CANONICAL,
   },
   twitter: {
     card: "summary",
-    title: "Free Quest: Momo's Three Mangoes (Ages 3–5) — Unschool Academy",
+    title: "Free Quest: Momo's Three Mangoes (Ages 3–5 · Future-Track Demo) — Unschool Academy",
     description:
-      "Help Momo count exactly three mangoes for the picnic. A complete free demo quest for ages 3–5.",
+      "Help Momo count exactly three mangoes for the picnic. A playable demo of a future parent-assisted track for ages 3–5. The launched academy starts at age 5.",
   },
 };
 
@@ -32,7 +32,7 @@ const JSON_LD = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Home", item: "https://unschool.academy/" },
     { "@type": "ListItem", position: 2, name: "Kids", item: "https://unschool.academy/kids" },
-    { "@type": "ListItem", position: 3, name: "Ages 3–5", item: "https://unschool.academy/kids/ages/3-5" },
+    { "@type": "ListItem", position: 3, name: "Future track · Ages 3–5" },
     { "@type": "ListItem", position: 4, name: "Three Mangoes for the Picnic", item: CANONICAL },
   ],
 };
@@ -59,7 +59,7 @@ export default function MangoQuestPage() {
           trail={[
             { label: "Home", href: "/" },
             { label: "Kids", href: "/kids" },
-            { label: "Ages 3–5", href: "/kids/ages/3-5" },
+            { label: "Future track · Ages 3–5" },
             { label: "Three Mangoes for the Picnic" },
           ]}
         />
@@ -80,7 +80,7 @@ export default function MangoQuestPage() {
           <div className="relative grid gap-8 md:grid-cols-3">
             <div className="md:col-span-2">
               <p className="font-mono text-[11px] font-bold uppercase tracking-[0.2em] text-kids-orange-ink">
-                Free demo quest · Ages 3–5 · K04
+                Free demo quest · Ages 3–5 · Future-track demo · K04
               </p>
               <h1
                 id="quest-heading"
@@ -91,6 +91,11 @@ export default function MangoQuestPage() {
               <p className="mt-4 text-lg text-slate max-w-xl">
                 Momo needs exactly three mangoes for the picnic. Your child picks them, counts them one by
                 one with Momo, then proves the skill on leaves. A complete quest, free to play.
+              </p>
+              <p className="mt-4 max-w-xl rounded-xl border border-kids-orange/40 bg-kids-orange/10 px-4 py-3 text-sm leading-relaxed text-ink/90">
+                <span className="font-bold">About the age label.</span> Ages 3–5 is a separate
+                parent-assisted future track — not part of the launched academy, which starts at age 5.
+                This demo previews how a future quest for younger children could feel.
               </p>
               <ul className="mt-6 space-y-2.5">
                 {PRACTICES.map((t) => (
