@@ -1,0 +1,962 @@
+[
+  {
+    "id": "ssc-qa-sp-001",
+    "level": "L1",
+    "skill": "simplification",
+    "type": "mcq",
+    "stem": "Simplify: 12 + 3 x 4",
+    "options": [
+      {
+        "id": "a",
+        "text": "60"
+      },
+      {
+        "id": "b",
+        "text": "24"
+      },
+      {
+        "id": "c",
+        "text": "48"
+      },
+      {
+        "id": "d",
+        "text": "15"
+      }
+    ],
+    "answer": 1,
+    "hint": "BODMAS: multiplication comes before addition.",
+    "explanation": "Step 1: By BODMAS, multiply first: 3 x 4 = 12. Step 2: Add: 12 + 12 = 24.",
+    "difficulty": 1,
+    "source": "R.S. Aggarwal Quantitative Aptitude Ch.4 — Simplification (BODMAS rule); SSC CGL Tier I Quantitative Aptitude syllabus (ssc.gov.in)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-sp-002",
+    "level": "L1",
+    "skill": "simplification",
+    "type": "mcq",
+    "stem": "Simplify: (15 - 5) x 3",
+    "options": [
+      {
+        "id": "a",
+        "text": "30"
+      },
+      {
+        "id": "b",
+        "text": "10"
+      },
+      {
+        "id": "c",
+        "text": "45"
+      },
+      {
+        "id": "d",
+        "text": "0"
+      }
+    ],
+    "answer": 0,
+    "hint": "BODMAS: solve the bracket first.",
+    "explanation": "Step 1: Bracket first: 15 - 5 = 10. Step 2: Multiply: 10 x 3 = 30.",
+    "difficulty": 1,
+    "source": "R.S. Aggarwal Quantitative Aptitude Ch.4 — Simplification (BODMAS rule); SSC CGL Tier I Quantitative Aptitude syllabus (ssc.gov.in)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-sp-003",
+    "level": "L1",
+    "skill": "simplification",
+    "type": "mcq",
+    "stem": "Simplify: 100 / 10 x 2",
+    "options": [
+      {
+        "id": "a",
+        "text": "5"
+      },
+      {
+        "id": "b",
+        "text": "20"
+      },
+      {
+        "id": "c",
+        "text": "200"
+      },
+      {
+        "id": "d",
+        "text": "2"
+      }
+    ],
+    "answer": 1,
+    "hint": "Division and multiplication have equal rank - work left to right.",
+    "explanation": "Step 1: 100 / 10 = 10. Step 2: 10 x 2 = 20. (Division and multiplication are done left to right.)",
+    "difficulty": 1,
+    "source": "R.S. Aggarwal Quantitative Aptitude Ch.4 — Simplification (BODMAS rule); SSC CGL Tier I Quantitative Aptitude syllabus (ssc.gov.in)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-sp-004",
+    "level": "L1",
+    "skill": "simplification",
+    "type": "mcq",
+    "stem": "Simplify: 20 - 4 x 3 + 2",
+    "options": [
+      {
+        "id": "a",
+        "text": "50"
+      },
+      {
+        "id": "b",
+        "text": "10"
+      },
+      {
+        "id": "c",
+        "text": "8"
+      },
+      {
+        "id": "d",
+        "text": "16"
+      }
+    ],
+    "answer": 1,
+    "hint": "Multiplication first, then addition and subtraction left to right.",
+    "explanation": "Step 1: Multiply: 4 x 3 = 12, so the expression becomes 20 - 12 + 2. Step 2: Left to right: 20 - 12 = 8, then 8 + 2 = 10.",
+    "difficulty": 1,
+    "source": "R.S. Aggarwal Quantitative Aptitude Ch.4 — Simplification (BODMAS rule); SSC CGL Tier I Quantitative Aptitude syllabus (ssc.gov.in)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-sp-005",
+    "level": "L1",
+    "skill": "simplification",
+    "type": "mcq",
+    "stem": "Simplify: 36 / 6 + 6 / 3",
+    "options": [
+      {
+        "id": "a",
+        "text": "8"
+      },
+      {
+        "id": "b",
+        "text": "3"
+      },
+      {
+        "id": "c",
+        "text": "12"
+      },
+      {
+        "id": "d",
+        "text": "4"
+      }
+    ],
+    "answer": 0,
+    "hint": "Do both divisions first, then add the results.",
+    "explanation": "Step 1: 36 / 6 = 6 and 6 / 3 = 2. Step 2: Add: 6 + 2 = 8.",
+    "difficulty": 1,
+    "source": "R.S. Aggarwal Quantitative Aptitude Ch.4 — Simplification (BODMAS rule); SSC CGL Tier I Quantitative Aptitude syllabus (ssc.gov.in)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-sp-006",
+    "level": "L1",
+    "skill": "simplification",
+    "type": "mcq",
+    "stem": "Simplify: 5 + 5 x 0",
+    "options": [
+      {
+        "id": "a",
+        "text": "0"
+      },
+      {
+        "id": "b",
+        "text": "10"
+      },
+      {
+        "id": "c",
+        "text": "5"
+      },
+      {
+        "id": "d",
+        "text": "25"
+      }
+    ],
+    "answer": 2,
+    "hint": "Anything times 0 is 0 - but check what BODMAS says about order.",
+    "explanation": "Step 1: Multiply first: 5 x 0 = 0. Step 2: Add: 5 + 0 = 5.",
+    "difficulty": 1,
+    "source": "R.S. Aggarwal Quantitative Aptitude Ch.4 — Simplification (BODMAS rule); SSC CGL Tier I Quantitative Aptitude syllabus (ssc.gov.in)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-sp-007",
+    "level": "L1",
+    "skill": "simplification",
+    "type": "mcq",
+    "stem": "Simplify: (24 / 4) + (3 x 5)",
+    "options": [
+      {
+        "id": "a",
+        "text": "21"
+      },
+      {
+        "id": "b",
+        "text": "27"
+      },
+      {
+        "id": "c",
+        "text": "9"
+      },
+      {
+        "id": "d",
+        "text": "33"
+      }
+    ],
+    "answer": 0,
+    "hint": "Solve each bracket, then add.",
+    "explanation": "Step 1: 24 / 4 = 6 and 3 x 5 = 15. Step 2: 6 + 15 = 21.",
+    "difficulty": 1,
+    "source": "R.S. Aggarwal Quantitative Aptitude Ch.4 — Simplification (BODMAS rule); SSC CGL Tier I Quantitative Aptitude syllabus (ssc.gov.in)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-sp-008",
+    "level": "L1",
+    "skill": "simplification",
+    "type": "mcq",
+    "stem": "Simplify: 48 / (8 - 2) x 2",
+    "options": [
+      {
+        "id": "a",
+        "text": "4"
+      },
+      {
+        "id": "b",
+        "text": "16"
+      },
+      {
+        "id": "c",
+        "text": "96"
+      },
+      {
+        "id": "d",
+        "text": "12"
+      }
+    ],
+    "answer": 1,
+    "hint": "Bracket first, then division and multiplication left to right.",
+    "explanation": "Step 1: Bracket: 8 - 2 = 6. Step 2: 48 / 6 = 8. Step 3: 8 x 2 = 16.",
+    "difficulty": 1,
+    "source": "R.S. Aggarwal Quantitative Aptitude Ch.4 — Simplification (BODMAS rule); SSC CGL Tier I Quantitative Aptitude syllabus (ssc.gov.in)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-sp-009",
+    "level": "L1",
+    "skill": "simplification",
+    "type": "mcq",
+    "stem": "Simplify: 2 x [18 - {8 / (4 - 2)}]",
+    "options": [
+      {
+        "id": "a",
+        "text": "28"
+      },
+      {
+        "id": "b",
+        "text": "32"
+      },
+      {
+        "id": "c",
+        "text": "24"
+      },
+      {
+        "id": "d",
+        "text": "14"
+      }
+    ],
+    "answer": 0,
+    "hint": "Work from the innermost bracket outward.",
+    "explanation": "Step 1: Innermost: 4 - 2 = 2. Step 2: 8 / 2 = 4. Step 3: 18 - 4 = 14. Step 4: 2 x 14 = 28.",
+    "difficulty": 1,
+    "source": "R.S. Aggarwal Quantitative Aptitude Ch.4 — Simplification (BODMAS rule); SSC CGL Tier I Quantitative Aptitude syllabus (ssc.gov.in)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-sp-010",
+    "level": "L1",
+    "skill": "simplification",
+    "type": "mcq",
+    "stem": "Simplify: {(25 + 15) / 8} x 3",
+    "options": [
+      {
+        "id": "a",
+        "text": "120"
+      },
+      {
+        "id": "b",
+        "text": "15"
+      },
+      {
+        "id": "c",
+        "text": "24"
+      },
+      {
+        "id": "d",
+        "text": "8"
+      }
+    ],
+    "answer": 1,
+    "hint": "Innermost bracket first, then work outward.",
+    "explanation": "Step 1: 25 + 15 = 40. Step 2: 40 / 8 = 5. Step 3: 5 x 3 = 15.",
+    "difficulty": 1,
+    "source": "R.S. Aggarwal Quantitative Aptitude Ch.4 — Simplification (BODMAS rule); SSC CGL Tier I Quantitative Aptitude syllabus (ssc.gov.in)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-sp-011",
+    "level": "L1",
+    "skill": "simplification",
+    "type": "mcq",
+    "stem": "Simplify: 90 - [40 - (25 - 10)]",
+    "options": [
+      {
+        "id": "a",
+        "text": "65"
+      },
+      {
+        "id": "b",
+        "text": "75"
+      },
+      {
+        "id": "c",
+        "text": "55"
+      },
+      {
+        "id": "d",
+        "text": "25"
+      }
+    ],
+    "answer": 0,
+    "hint": "Peel brackets from the inside out.",
+    "explanation": "Step 1: 25 - 10 = 15. Step 2: 40 - 15 = 25. Step 3: 90 - 25 = 65.",
+    "difficulty": 1,
+    "source": "R.S. Aggarwal Quantitative Aptitude Ch.4 — Simplification (BODMAS rule); SSC CGL Tier I Quantitative Aptitude syllabus (ssc.gov.in)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-sp-012",
+    "level": "L1",
+    "skill": "simplification",
+    "type": "mcq",
+    "stem": "Simplify: (7 + 3) squared - 6 x 4",
+    "options": [
+      {
+        "id": "a",
+        "text": "76"
+      },
+      {
+        "id": "b",
+        "text": "16"
+      },
+      {
+        "id": "c",
+        "text": "52"
+      },
+      {
+        "id": "d",
+        "text": "36"
+      }
+    ],
+    "answer": 0,
+    "hint": "Brackets first, then the square, then multiplication.",
+    "explanation": "Step 1: Bracket: 7 + 3 = 10. Step 2: Square: 10 squared = 100. Step 3: Multiply: 6 x 4 = 24. Step 4: 100 - 24 = 76.",
+    "difficulty": 1,
+    "source": "R.S. Aggarwal Quantitative Aptitude Ch.4 — Simplification (BODMAS rule); SSC CGL Tier I Quantitative Aptitude syllabus (ssc.gov.in)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-sp-013",
+    "level": "L1",
+    "skill": "simplification",
+    "type": "mcq",
+    "stem": "Simplify: 3/4 + 1/2",
+    "options": [
+      {
+        "id": "a",
+        "text": "5/4"
+      },
+      {
+        "id": "b",
+        "text": "4/6"
+      },
+      {
+        "id": "c",
+        "text": "1"
+      },
+      {
+        "id": "d",
+        "text": "3/8"
+      }
+    ],
+    "answer": 0,
+    "hint": "Make the denominators equal before adding.",
+    "explanation": "Step 1: Convert 1/2 to 2/4. Step 2: Add: 3/4 + 2/4 = 5/4.",
+    "difficulty": 1,
+    "source": "NCERT Class 7 Mathematics Ch.2 — Fractions and Decimals; R.S. Aggarwal Quantitative Aptitude Ch.4 — Simplification",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-sp-014",
+    "level": "L1",
+    "skill": "simplification",
+    "type": "mcq",
+    "stem": "Simplify: 5/6 - 1/3",
+    "options": [
+      {
+        "id": "a",
+        "text": "4/6"
+      },
+      {
+        "id": "b",
+        "text": "1/2"
+      },
+      {
+        "id": "c",
+        "text": "1/3"
+      },
+      {
+        "id": "d",
+        "text": "2/3"
+      }
+    ],
+    "answer": 1,
+    "hint": "Use a common denominator of 6.",
+    "explanation": "Step 1: 1/3 = 2/6. Step 2: 5/6 - 2/6 = 3/6 = 1/2.",
+    "difficulty": 1,
+    "source": "NCERT Class 7 Mathematics Ch.2 — Fractions and Decimals; R.S. Aggarwal Quantitative Aptitude Ch.4 — Simplification",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-sp-015",
+    "level": "L1",
+    "skill": "simplification",
+    "type": "mcq",
+    "stem": "Simplify: (2/3) x (9/4)",
+    "options": [
+      {
+        "id": "a",
+        "text": "11/12"
+      },
+      {
+        "id": "b",
+        "text": "3/2"
+      },
+      {
+        "id": "c",
+        "text": "18/7"
+      },
+      {
+        "id": "d",
+        "text": "1/2"
+      }
+    ],
+    "answer": 1,
+    "hint": "Cancel common factors before multiplying.",
+    "explanation": "Step 1: Multiply numerators and denominators: 2 x 9 = 18, 3 x 4 = 12, giving 18/12. Step 2: Reduce: 18/12 = 3/2.",
+    "difficulty": 1,
+    "source": "NCERT Class 7 Mathematics Ch.2 — Fractions and Decimals; R.S. Aggarwal Quantitative Aptitude Ch.4 — Simplification",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-sp-016",
+    "level": "L1",
+    "skill": "simplification",
+    "type": "mcq",
+    "stem": "Simplify: (3/5) / (9/10)",
+    "options": [
+      {
+        "id": "a",
+        "text": "27/50"
+      },
+      {
+        "id": "b",
+        "text": "2/3"
+      },
+      {
+        "id": "c",
+        "text": "3/2"
+      },
+      {
+        "id": "d",
+        "text": "1/2"
+      }
+    ],
+    "answer": 1,
+    "hint": "To divide fractions, multiply by the reciprocal.",
+    "explanation": "Step 1: Flip the second fraction: 3/5 x 10/9. Step 2: 30/45 = 2/3.",
+    "difficulty": 1,
+    "source": "NCERT Class 7 Mathematics Ch.2 — Fractions and Decimals; R.S. Aggarwal Quantitative Aptitude Ch.4 — Simplification",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-sp-017",
+    "level": "L1",
+    "skill": "simplification",
+    "type": "mcq",
+    "stem": "Simplify: 12.5 + 3.75 - 0.25",
+    "options": [
+      {
+        "id": "a",
+        "text": "16.0"
+      },
+      {
+        "id": "b",
+        "text": "15.5"
+      },
+      {
+        "id": "c",
+        "text": "16.5"
+      },
+      {
+        "id": "d",
+        "text": "14.0"
+      }
+    ],
+    "answer": 0,
+    "hint": "Line up the decimal points and work left to right.",
+    "explanation": "Step 1: 12.5 + 3.75 = 16.25. Step 2: 16.25 - 0.25 = 16.0.",
+    "difficulty": 1,
+    "source": "NCERT Class 7 Mathematics Ch.2 — Fractions and Decimals; R.S. Aggarwal Quantitative Aptitude Ch.4 — Simplification",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-sp-018",
+    "level": "L1",
+    "skill": "simplification",
+    "type": "mcq",
+    "stem": "Simplify: 2.5 x 0.4",
+    "options": [
+      {
+        "id": "a",
+        "text": "1.0"
+      },
+      {
+        "id": "b",
+        "text": "10.0"
+      },
+      {
+        "id": "c",
+        "text": "0.1"
+      },
+      {
+        "id": "d",
+        "text": "2.9"
+      }
+    ],
+    "answer": 0,
+    "hint": "Multiply as whole numbers, then place the decimal: 1 + 1 = 2 decimal places.",
+    "explanation": "Step 1: 25 x 4 = 100. Step 2: Two decimal places total, so 1.00 = 1.0.",
+    "difficulty": 1,
+    "source": "NCERT Class 7 Mathematics Ch.2 — Fractions and Decimals; R.S. Aggarwal Quantitative Aptitude Ch.4 — Simplification",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-sp-019",
+    "level": "L1",
+    "skill": "simplification",
+    "type": "mcq",
+    "stem": "Simplify: 7.2 / 0.9",
+    "options": [
+      {
+        "id": "a",
+        "text": "0.8"
+      },
+      {
+        "id": "b",
+        "text": "8"
+      },
+      {
+        "id": "c",
+        "text": "80"
+      },
+      {
+        "id": "d",
+        "text": "6.3"
+      }
+    ],
+    "answer": 1,
+    "hint": "Multiply top and bottom by 10 to remove the decimal from the divisor.",
+    "explanation": "Step 1: 7.2 / 0.9 = 72 / 9. Step 2: 72 / 9 = 8.",
+    "difficulty": 1,
+    "source": "NCERT Class 7 Mathematics Ch.2 — Fractions and Decimals; R.S. Aggarwal Quantitative Aptitude Ch.4 — Simplification",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-sp-020",
+    "level": "L1",
+    "skill": "simplification",
+    "type": "mcq",
+    "stem": "Approximate: 49.7 x 20.3",
+    "options": [
+      {
+        "id": "a",
+        "text": "1000"
+      },
+      {
+        "id": "b",
+        "text": "990"
+      },
+      {
+        "id": "c",
+        "text": "1010"
+      },
+      {
+        "id": "d",
+        "text": "1009"
+      }
+    ],
+    "answer": 0,
+    "hint": "Round each number to a friendly value first.",
+    "explanation": "Step 1: 49.7 is about 50 and 20.3 is about 20. Step 2: 50 x 20 = 1000.",
+    "difficulty": 1,
+    "source": "R.S. Aggarwal Quantitative Aptitude Ch.4 — Simplification (approximation methods)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-sp-021",
+    "level": "L1",
+    "skill": "simplification",
+    "type": "mcq",
+    "stem": "Approximate: 198 + 203",
+    "options": [
+      {
+        "id": "a",
+        "text": "401"
+      },
+      {
+        "id": "b",
+        "text": "400"
+      },
+      {
+        "id": "c",
+        "text": "398"
+      },
+      {
+        "id": "d",
+        "text": "410"
+      }
+    ],
+    "answer": 1,
+    "hint": "Round to the nearest hundred.",
+    "explanation": "Step 1: 198 is about 200 and 203 is about 200. Step 2: 200 + 200 = 400.",
+    "difficulty": 1,
+    "source": "R.S. Aggarwal Quantitative Aptitude Ch.4 — Simplification (approximation methods)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-sp-022",
+    "level": "L1",
+    "skill": "simplification",
+    "type": "mcq",
+    "stem": "Approximate: 31.8 / 3.9",
+    "options": [
+      {
+        "id": "a",
+        "text": "7.95"
+      },
+      {
+        "id": "b",
+        "text": "10"
+      },
+      {
+        "id": "c",
+        "text": "8"
+      },
+      {
+        "id": "d",
+        "text": "9"
+      }
+    ],
+    "answer": 2,
+    "hint": "Round the divisor to a whole number first.",
+    "explanation": "Step 1: 31.8 is about 32 and 3.9 is about 4. Step 2: 32 / 4 = 8.",
+    "difficulty": 1,
+    "source": "R.S. Aggarwal Quantitative Aptitude Ch.4 — Simplification (approximation methods)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-sp-023",
+    "level": "L1",
+    "skill": "simplification",
+    "type": "mcq",
+    "stem": "The value of the square root of 144 is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "14"
+      },
+      {
+        "id": "b",
+        "text": "12"
+      },
+      {
+        "id": "c",
+        "text": "16"
+      },
+      {
+        "id": "d",
+        "text": "72"
+      }
+    ],
+    "answer": 1,
+    "hint": "Ask: which number multiplied by itself gives 144?",
+    "explanation": "Step 1: 12 x 12 = 144. Therefore the square root of 144 = 12.",
+    "difficulty": 1,
+    "source": "NCERT Class 8 Mathematics Ch.6 — Squares and Square Roots; R.S. Aggarwal Quantitative Aptitude Ch.5 — Square Roots and Cube Roots",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-sp-024",
+    "level": "L1",
+    "skill": "simplification",
+    "type": "mcq",
+    "stem": "The value of the square root of 625 is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "25"
+      },
+      {
+        "id": "b",
+        "text": "35"
+      },
+      {
+        "id": "c",
+        "text": "15"
+      },
+      {
+        "id": "d",
+        "text": "125"
+      }
+    ],
+    "answer": 0,
+    "hint": "25 x 25 is a square worth memorising.",
+    "explanation": "Step 1: 25 x 25 = 625. Therefore the square root of 625 = 25.",
+    "difficulty": 1,
+    "source": "NCERT Class 8 Mathematics Ch.6 — Squares and Square Roots; R.S. Aggarwal Quantitative Aptitude Ch.5 — Square Roots and Cube Roots",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-sp-025",
+    "level": "L1",
+    "skill": "simplification",
+    "type": "mcq",
+    "stem": "The value of the square root of 0.09 is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "0.3"
+      },
+      {
+        "id": "b",
+        "text": "0.03"
+      },
+      {
+        "id": "c",
+        "text": "3"
+      },
+      {
+        "id": "d",
+        "text": "0.9"
+      }
+    ],
+    "answer": 0,
+    "hint": "The square root of a decimal has half as many decimal places.",
+    "explanation": "Step 1: Square root of 9 = 3. Step 2: 0.09 has two decimal places, so its root has one: 0.3.",
+    "difficulty": 1,
+    "source": "NCERT Class 8 Mathematics Ch.6 — Squares and Square Roots; R.S. Aggarwal Quantitative Aptitude Ch.5 — Square Roots and Cube Roots",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-sp-026",
+    "level": "L1",
+    "skill": "simplification",
+    "type": "mcq",
+    "stem": "The value of the cube root of 27 is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "9"
+      },
+      {
+        "id": "b",
+        "text": "3"
+      },
+      {
+        "id": "c",
+        "text": "6"
+      },
+      {
+        "id": "d",
+        "text": "13.5"
+      }
+    ],
+    "answer": 1,
+    "hint": "Cube root asks: which number cubed gives 27?",
+    "explanation": "Step 1: 3 x 3 x 3 = 27. Therefore the cube root of 27 = 3.",
+    "difficulty": 1,
+    "source": "NCERT Class 8 Mathematics Ch.7 — Cubes and Cube Roots; R.S. Aggarwal Quantitative Aptitude Ch.5 — Square Roots and Cube Roots",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-sp-027",
+    "level": "L1",
+    "skill": "simplification",
+    "type": "mcq",
+    "stem": "The value of the cube root of 125 is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "5"
+      },
+      {
+        "id": "b",
+        "text": "25"
+      },
+      {
+        "id": "c",
+        "text": "15"
+      },
+      {
+        "id": "d",
+        "text": "11"
+      }
+    ],
+    "answer": 0,
+    "hint": "125 = 5 x 5 x 5.",
+    "explanation": "Step 1: 5 cubed = 125. Therefore the cube root of 125 = 5.",
+    "difficulty": 1,
+    "source": "NCERT Class 8 Mathematics Ch.7 — Cubes and Cube Roots; R.S. Aggarwal Quantitative Aptitude Ch.5 — Square Roots and Cube Roots",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-sp-028",
+    "level": "L1",
+    "skill": "simplification",
+    "type": "mcq",
+    "stem": "Simplify: 2 cubed x 2 squared",
+    "options": [
+      {
+        "id": "a",
+        "text": "32"
+      },
+      {
+        "id": "b",
+        "text": "12"
+      },
+      {
+        "id": "c",
+        "text": "64"
+      },
+      {
+        "id": "d",
+        "text": "10"
+      }
+    ],
+    "answer": 0,
+    "hint": "Same base: add the exponents.",
+    "explanation": "Step 1: 2^3 x 2^2 = 2^5. Step 2: 2^5 = 32.",
+    "difficulty": 1,
+    "source": "NCERT Class 8 Mathematics Ch.12 — Exponents and Powers; R.S. Aggarwal Quantitative Aptitude Ch.9 — Surds and Indices",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-sp-029",
+    "level": "L1",
+    "skill": "simplification",
+    "type": "mcq",
+    "stem": "The value of 5 to the power 0 is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "0"
+      },
+      {
+        "id": "b",
+        "text": "5"
+      },
+      {
+        "id": "c",
+        "text": "1"
+      },
+      {
+        "id": "d",
+        "text": "50"
+      }
+    ],
+    "answer": 2,
+    "hint": "Any non-zero number raised to the power 0 equals 1.",
+    "explanation": "Step 1: By the index law, a^0 = 1 (a not 0). Therefore 5^0 = 1.",
+    "difficulty": 1,
+    "source": "NCERT Class 8 Mathematics Ch.12 — Exponents and Powers; R.S. Aggarwal Quantitative Aptitude Ch.9 — Surds and Indices",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "ssc-qa-sp-030",
+    "level": "L1",
+    "skill": "simplification",
+    "type": "mcq",
+    "stem": "Simplify: 10 squared / 10",
+    "options": [
+      {
+        "id": "a",
+        "text": "100"
+      },
+      {
+        "id": "b",
+        "text": "10"
+      },
+      {
+        "id": "c",
+        "text": "1"
+      },
+      {
+        "id": "d",
+        "text": "20"
+      }
+    ],
+    "answer": 1,
+    "hint": "Same base: subtract the exponents.",
+    "explanation": "Step 1: 10^2 / 10^1 = 10^1. Step 2: 10^1 = 10.",
+    "difficulty": 1,
+    "source": "NCERT Class 8 Mathematics Ch.12 — Exponents and Powers; R.S. Aggarwal Quantitative Aptitude Ch.9 — Surds and Indices",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  }
+]

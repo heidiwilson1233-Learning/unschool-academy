@@ -1,1 +1,232 @@
-[{"attached_question_ids":["ssc-qa-ns-001","ssc-qa-ns-002","ssc-qa-ns-003","ssc-qa-ns-004","ssc-qa-ns-005","ssc-qa-ns-010","ssc-qa-ns-013","ssc-qa-ns-023","ssc-qa-ns-024"],"channel":"Master Maths","credit":"Master Maths (YouTube) — free educational content, embedded not re-uploaded","duration":null,"duration_note":"verify before publishing","key_points":["types of numbers: natural, whole, integers, rational, irrational","prime and composite numbers","divisibility rules","factors and multiples"],"lesson_topic":"Types of numbers, prime/composite, divisibility rules","level":"L1","platform":"youtube","title":"Number System Tricks & Concepts | Complete Guide for Beginners","video_url":"https://www.youtube.com/watch?v=9fo3rM52wQs"},{"attached_question_ids":["ssc-qa-ns-006","ssc-qa-ns-007","ssc-qa-ns-019","ssc-qa-ns-020","ssc-qa-ns-021","ssc-qa-ns-029"],"channel":"SelectionWay App (Gagan Pratap Sir)","credit":"Gagan Pratap Sir via SelectionWay App (YouTube) — free educational content, embedded not re-uploaded","duration":null,"duration_note":"verify before publishing","key_points":["HCF by factor listing and prime factorisation","LCM by multiples and prime factorisation","HCF x LCM = product of two numbers"],"lesson_topic":"HCF and LCM basics","level":"L1","platform":"youtube","title":"LCM & HCF Complete | Class-01 | Zero to Hero Maths","video_url":"https://www.youtube.com/watch?v=U4rQeaMLvLk"},{"attached_question_ids":["ssc-qa-ns-003","ssc-qa-ns-004","ssc-qa-ns-005","ssc-qa-ns-014","ssc-qa-ns-022","ssc-qa-ns-026"],"channel":"ExamGrip","credit":"ExamGrip (YouTube) — free educational content, embedded not re-uploaded","duration":null,"duration_note":"verify before publishing","key_points":["divisibility rules 2 to 11","combined divisibility (6, 12)","fast calculation tricks"],"lesson_topic":"Divisibility rules deep-dive","level":"L1","platform":"youtube","title":"Number System | Rule Of Divisibility Class 2","video_url":"https://www.youtube.com/watch?v=biHO3Ix7qPY"},{"attached_question_ids":["ssc-qa-ns-016","ssc-qa-ns-017","ssc-qa-ns-018","ssc-qa-ns-025","ssc-qa-ns-028"],"channel":"Nabh Niles Prep","credit":"Nabh Niles Prep (YouTube) — free educational content, embedded not re-uploaded","duration":null,"duration_note":"verify before publishing","key_points":["mixed fractions and natural numbers","decimals and fractions conversion","comparing fractions"],"lesson_topic":"Fractions and decimals basics","level":"L1","platform":"youtube","title":"Number System | Class 01: Mixed Fractions × Natural Numbers | Decimals & Fractions","video_url":"https://www.youtube.com/watch?v=vrcnZXMREZo"},{"attached_question_ids":["ssc-qa-ns-008","ssc-qa-ns-009","ssc-qa-ns-011","ssc-qa-ns-012","ssc-qa-ns-015","ssc-qa-ns-027","ssc-qa-ns-030"],"channel":"Aptitude Academy","credit":"Aptitude Academy (YouTube) — free educational content, embedded not re-uploaded","duration":null,"duration_note":"verify before publishing; long video — use timestamps 02:15 (place value), 08:30 (number types), 56:50 (unit digit)","key_points":["digits and numerals, place value vs face value","number types: prime, composite, co-prime","unit digit pattern recognition","timestamps provided in description"],"lesson_topic":"Place value, number types, unit digit (timestamped segments)","level":"L1","platform":"youtube","title":"Number System Full Chapter | All Tricks & Shortcuts","video_url":"https://www.youtube.com/watch?v=VWlMZxFKLn0"}]
+[
+  {
+    "attached_question_ids": [
+      "ssc-qa-ns-001",
+      "ssc-qa-ns-002",
+      "ssc-qa-ns-003",
+      "ssc-qa-ns-004",
+      "ssc-qa-ns-005",
+      "ssc-qa-ns-010",
+      "ssc-qa-ns-013",
+      "ssc-qa-ns-023",
+      "ssc-qa-ns-024"
+    ],
+    "channel": "Master Maths",
+    "credit": "Master Maths (YouTube) — free educational content, embedded not re-uploaded",
+    "duration": null,
+    "duration_note": "verify before publishing",
+    "key_points": [
+      "types of numbers: natural, whole, integers, rational, irrational",
+      "prime and composite numbers",
+      "divisibility rules",
+      "factors and multiples"
+    ],
+    "lesson_topic": "Types of numbers, prime/composite, divisibility rules",
+    "level": "L1",
+    "platform": "youtube",
+    "title": "Number System Tricks & Concepts | Complete Guide for Beginners",
+    "video_url": "https://www.youtube.com/watch?v=9fo3rM52wQs"
+  },
+  {
+    "attached_question_ids": [
+      "ssc-qa-ns-006",
+      "ssc-qa-ns-007",
+      "ssc-qa-ns-019",
+      "ssc-qa-ns-020",
+      "ssc-qa-ns-021",
+      "ssc-qa-ns-029"
+    ],
+    "channel": "SelectionWay App (Gagan Pratap Sir)",
+    "credit": "Gagan Pratap Sir via SelectionWay App (YouTube) — free educational content, embedded not re-uploaded",
+    "duration": null,
+    "duration_note": "verify before publishing",
+    "key_points": [
+      "HCF by factor listing and prime factorisation",
+      "LCM by multiples and prime factorisation",
+      "HCF x LCM = product of two numbers"
+    ],
+    "lesson_topic": "HCF and LCM basics",
+    "level": "L1",
+    "platform": "youtube",
+    "title": "LCM & HCF Complete | Class-01 | Zero to Hero Maths",
+    "video_url": "https://www.youtube.com/watch?v=U4rQeaMLvLk"
+  },
+  {
+    "attached_question_ids": [
+      "ssc-qa-ns-003",
+      "ssc-qa-ns-004",
+      "ssc-qa-ns-005",
+      "ssc-qa-ns-014",
+      "ssc-qa-ns-022",
+      "ssc-qa-ns-026"
+    ],
+    "channel": "ExamGrip",
+    "credit": "ExamGrip (YouTube) — free educational content, embedded not re-uploaded",
+    "duration": null,
+    "duration_note": "verify before publishing",
+    "key_points": [
+      "divisibility rules 2 to 11",
+      "combined divisibility (6, 12)",
+      "fast calculation tricks"
+    ],
+    "lesson_topic": "Divisibility rules deep-dive",
+    "level": "L1",
+    "platform": "youtube",
+    "title": "Number System | Rule Of Divisibility Class 2",
+    "video_url": "https://www.youtube.com/watch?v=biHO3Ix7qPY"
+  },
+  {
+    "attached_question_ids": [
+      "ssc-qa-ns-016",
+      "ssc-qa-ns-017",
+      "ssc-qa-ns-018",
+      "ssc-qa-ns-025",
+      "ssc-qa-ns-028"
+    ],
+    "channel": "Nabh Niles Prep",
+    "credit": "Nabh Niles Prep (YouTube) — free educational content, embedded not re-uploaded",
+    "duration": null,
+    "duration_note": "verify before publishing",
+    "key_points": [
+      "mixed fractions and natural numbers",
+      "decimals and fractions conversion",
+      "comparing fractions"
+    ],
+    "lesson_topic": "Fractions and decimals basics",
+    "level": "L1",
+    "platform": "youtube",
+    "title": "Number System | Class 01: Mixed Fractions × Natural Numbers | Decimals & Fractions",
+    "video_url": "https://www.youtube.com/watch?v=vrcnZXMREZo"
+  },
+  {
+    "attached_question_ids": [
+      "ssc-qa-ns-008",
+      "ssc-qa-ns-009",
+      "ssc-qa-ns-011",
+      "ssc-qa-ns-012",
+      "ssc-qa-ns-015",
+      "ssc-qa-ns-027",
+      "ssc-qa-ns-030"
+    ],
+    "channel": "Aptitude Academy",
+    "credit": "Aptitude Academy (YouTube) — free educational content, embedded not re-uploaded",
+    "duration": null,
+    "duration_note": "verify before publishing; long video — use timestamps 02:15 (place value), 08:30 (number types), 56:50 (unit digit)",
+    "key_points": [
+      "digits and numerals, place value vs face value",
+      "number types: prime, composite, co-prime",
+      "unit digit pattern recognition",
+      "timestamps provided in description"
+    ],
+    "lesson_topic": "Place value, number types, unit digit (timestamped segments)",
+    "level": "L1",
+    "platform": "youtube",
+    "title": "Number System Full Chapter | All Tricks & Shortcuts",
+    "video_url": "https://www.youtube.com/watch?v=VWlMZxFKLn0"
+  },
+  {
+    "attached_question_ids": [
+      "ssc-qa-sp-001",
+      "ssc-qa-sp-002",
+      "ssc-qa-sp-003",
+      "ssc-qa-sp-004",
+      "ssc-qa-sp-005",
+      "ssc-qa-sp-006",
+      "ssc-qa-sp-007",
+      "ssc-qa-sp-008",
+      "ssc-qa-sp-009",
+      "ssc-qa-sp-010",
+      "ssc-qa-sp-011",
+      "ssc-qa-sp-012"
+    ],
+    "channel": "SelectionWay App (Gagan Pratap Sir)",
+    "credit": "Gagan Pratap Sir via SelectionWay App (YouTube) — free educational content, embedded not re-uploaded",
+    "duration": null,
+    "duration_note": "verify before publishing",
+    "key_points": [
+      "BODMAS order of operations",
+      "fast calculation techniques",
+      "nested bracket simplification"
+    ],
+    "lesson_topic": "BODMAS and fast calculation for simplification",
+    "level": "L1",
+    "platform": "youtube",
+    "title": "CALCULATION & SIMPLIFICATION | Most Important Concept | By Gagan Pratap Sir",
+    "video_url": "https://www.youtube.com/watch?v=idFMDvNTG24"
+  },
+  {
+    "attached_question_ids": [
+      "ssc-qa-sp-013",
+      "ssc-qa-sp-014",
+      "ssc-qa-sp-015",
+      "ssc-qa-sp-016",
+      "ssc-qa-sp-017",
+      "ssc-qa-sp-018",
+      "ssc-qa-sp-019"
+    ],
+    "channel": "Shree Anand Academy",
+    "credit": "Shree Anand Academy (YouTube) — free educational content, embedded not re-uploaded",
+    "duration": null,
+    "duration_note": "verify before publishing",
+    "key_points": [
+      "BODMAS rule explained",
+      "fraction and decimal simplification",
+      "square, cube and surd simplification",
+      "previous year exam questions"
+    ],
+    "lesson_topic": "Simplification shortcut tricks: BODMAS, fractions, decimals",
+    "level": "L1",
+    "platform": "youtube",
+    "title": "Simplification Shortcut Trick 36 | SSC CGL & Banking | Fastest Shortcut",
+    "video_url": "https://www.youtube.com/watch?v=6zoPBwAnvSE"
+  },
+  {
+    "attached_question_ids": [
+      "ssc-qa-sp-023",
+      "ssc-qa-sp-024",
+      "ssc-qa-sp-025",
+      "ssc-qa-sp-026",
+      "ssc-qa-sp-027"
+    ],
+    "channel": "Chaudhary Sir",
+    "credit": "Chaudhary Sir (YouTube) — free educational content, embedded not re-uploaded",
+    "duration": null,
+    "duration_note": "verify before publishing",
+    "key_points": [
+      "square root shortcut tricks",
+      "cube root shortcut tricks",
+      "exam-oriented root questions"
+    ],
+    "lesson_topic": "Square root and cube root tricks for SSC",
+    "level": "L1",
+    "platform": "youtube",
+    "title": "Square Root & Cube Root Tricks | 5 Sec me Answer | SSC Bank RRB Maths | By Chaudhary Sir",
+    "video_url": "https://www.youtube.com/watch?v=hd1hzXa5Zgs"
+  },
+  {
+    "attached_question_ids": [
+      "ssc-qa-sp-023",
+      "ssc-qa-sp-024",
+      "ssc-qa-sp-025",
+      "ssc-qa-sp-026",
+      "ssc-qa-sp-027",
+      "ssc-qa-sp-028",
+      "ssc-qa-sp-029",
+      "ssc-qa-sp-030"
+    ],
+    "channel": "Competitive Study Guide",
+    "credit": "Competitive Study Guide (YouTube) — free educational content, embedded not re-uploaded",
+    "duration": null,
+    "duration_note": "verify before publishing",
+    "key_points": [
+      "R.S. Aggarwal Objective Arithmetic Q91-100 solved",
+      "square root and cube root practice",
+      "concept plus practice for competitive maths"
+    ],
+    "lesson_topic": "R.S. Aggarwal square roots and cube roots practice set",
+    "level": "L1",
+    "platform": "youtube",
+    "title": "Square Roots & Cube Roots – Part 10 (Q.91 to Q.100) | Objective Arithmetic By Dr. R.S. Aggarwal",
+    "video_url": "https://www.youtube.com/watch?v=ebnn7GUGxZk"
+  }
+]
