@@ -1,0 +1,962 @@
+[
+ {
+  "answer": 0,
+  "difficulty": 1,
+  "explanation": "Step 1: Fundamental Rights are in Part III of the Constitution. Step 2: They run from Article 12 to Article 35. Step 3: Part III is often called the 'Magna Carta of India' because it guarantees rights that courts can enforce. So the answer is Part III.",
+  "hint": "Think of the 'Magna Carta of India' — the part that makes rights enforceable in court.",
+  "id": "upsc-pol-fr-001",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "Part III"
+   },
+   {
+    "id": "b",
+    "text": "Part II"
+   },
+   {
+    "id": "c",
+    "text": "Part IV"
+   },
+   {
+    "id": "d",
+    "text": "Part IVA"
+   }
+  ],
+  "skill": "fundamental-rights",
+  "source": "NCERT Class 11 'Indian Constitution at Work', Ch.2 — Rights in the Indian Constitution (Part III, Articles 12–35)",
+  "status": "draft-pending-sme-review",
+  "stem": "Fundamental Rights are contained in which Part of the Indian Constitution?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 0,
+  "difficulty": 1,
+  "explanation": "Step 1: The framers borrowed the idea of a Bill of Rights from the United States. Step 2: The US Bill of Rights (first ten amendments) lists enforceable individual rights. Step 3: India's Part III follows the same model of justiciable rights. So the answer is the United States of America.",
+  "hint": "They come from that country's Bill of Rights — the first ten amendments to its Constitution.",
+  "id": "upsc-pol-fr-002",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "United States of America"
+   },
+   {
+    "id": "b",
+    "text": "United Kingdom"
+   },
+   {
+    "id": "c",
+    "text": "Ireland"
+   },
+   {
+    "id": "d",
+    "text": "Canada"
+   }
+  ],
+  "skill": "fundamental-rights",
+  "source": "M. Laxmikanth, 'Indian Polity', Ch.7 — Fundamental Rights (borrowed features: USA)",
+  "status": "draft-pending-sme-review",
+  "stem": "The Fundamental Rights in the Indian Constitution are borrowed from the Constitution of which country?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 0,
+  "difficulty": 1,
+  "explanation": "Step 1: Article 12 defines 'State' to include the Government and Parliament of India, state governments and legislatures, and all local or other authorities. Step 2: Courts have extended this to statutory bodies like LIC and ONGC. Step 3: Private individuals acting privately are not 'State' — Fundamental Rights cannot generally be enforced against them. So the answer is private individuals and companies in purely private capacity.",
+  "hint": "Fundamental Rights protect you against the government — not against your neighbour.",
+  "id": "upsc-pol-fr-003",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "Private individuals and companies acting in purely private capacity"
+   },
+   {
+    "id": "b",
+    "text": "The Government and Parliament of India"
+   },
+   {
+    "id": "c",
+    "text": "Local authorities such as municipalities"
+   },
+   {
+    "id": "d",
+    "text": "Statutory bodies like LIC and ONGC (through court interpretation)"
+   }
+  ],
+  "skill": "fundamental-rights",
+  "source": "M. Laxmikanth, 'Indian Polity', Ch.7 — Fundamental Rights (Article 12: definition of State)",
+  "status": "draft-pending-sme-review",
+  "stem": "Article 12 defines the term 'State' for the purposes of Fundamental Rights. Which of the following is NOT included in this definition?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 0,
+  "difficulty": 1,
+  "explanation": "Step 1: Article 13 says the State shall not make any law that takes away or abridges Fundamental Rights. Step 2: Any law made in contravention is void to the extent of the contravention. Step 3: This provision is the constitutional basis of judicial review in India. So the answer is that it voids laws inconsistent with Fundamental Rights.",
+  "hint": "It is the article that lets courts strike down unconstitutional laws.",
+  "id": "upsc-pol-fr-004",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "Declares that laws inconsistent with Fundamental Rights are void, forming the basis of judicial review"
+   },
+   {
+    "id": "b",
+    "text": "Abolishes untouchability"
+   },
+   {
+    "id": "c",
+    "text": "Gives the President power to suspend Fundamental Rights"
+   },
+   {
+    "id": "d",
+    "text": "Lists the six freedoms under Article 19"
+   }
+  ],
+  "skill": "fundamental-rights",
+  "source": "NCERT Class 11 'Indian Constitution at Work', Ch.2 — Rights in the Indian Constitution (Article 13 and judicial review)",
+  "status": "draft-pending-sme-review",
+  "stem": "Article 13 of the Constitution is important because it:",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 0,
+  "difficulty": 1,
+  "explanation": "Step 1: Article 14 combines two ideas. Step 2: 'Equality before the law' is a negative concept meaning no person is above the law — borrowed from the British Rule of Law as explained by A.V. Dicey. Step 3: 'Equal protection of the laws' is a positive concept borrowed from the American Constitution. So the answer is the British Rule of Law principle.",
+  "hint": "It is a negative concept — no one is above the law — from the land of parliamentary sovereignty.",
+  "id": "upsc-pol-fr-005",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "The British principle of the Rule of Law (A.V. Dicey)"
+   },
+   {
+    "id": "b",
+    "text": "The American Constitution"
+   },
+   {
+    "id": "c",
+    "text": "The Irish Constitution"
+   },
+   {
+    "id": "d",
+    "text": "The French Declaration of the Rights of Man"
+   }
+  ],
+  "skill": "fundamental-rights",
+  "source": "M. Laxmikanth, 'Indian Polity', Ch.7 — Fundamental Rights (Article 14: two concepts)",
+  "status": "draft-pending-sme-review",
+  "stem": "Article 14 guarantees 'equality before the law' and 'equal protection of the laws'. The phrase 'equality before the law' is inspired by:",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 0,
+  "difficulty": 1,
+  "explanation": "Step 1: Article 14 forbids class legislation (arbitrary discrimination) but permits reasonable classification. Step 2: Classification is valid if it is based on an intelligible difference and has a rational relation to the law's objective. Step 3: For example, different tax slabs for different income groups are valid. So the answer is reasonable classification for a lawful purpose.",
+  "hint": "Treating unequals equally can itself be unjust — the law allows sensible grouping.",
+  "id": "upsc-pol-fr-006",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "Reasonable classification of persons for a lawful purpose"
+   },
+   {
+    "id": "b",
+    "text": "Discrimination between equals without any reason"
+   },
+   {
+    "id": "c",
+    "text": "Laws that apply differently to different classes without justification"
+   },
+   {
+    "id": "d",
+    "text": "Special treatment of unequals as if they were equals"
+   }
+  ],
+  "skill": "fundamental-rights",
+  "source": "M. Laxmikanth, 'Indian Polity', Ch.7 — Fundamental Rights (Article 14: reasonable classification test)",
+  "status": "draft-pending-sme-review",
+  "stem": "Article 14 does NOT prohibit:",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 0,
+  "difficulty": 1,
+  "explanation": "Step 1: Article 15(1) prohibits discrimination on five specific grounds only. Step 2: They are religion, race, caste, sex, and place of birth. Step 3: Income, education, or language are not among them. So the answer is religion, race, caste, sex and place of birth.",
+  "hint": "Count them — there are exactly five grounds, and money is not one of them.",
+  "id": "upsc-pol-fr-007",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "Religion, race, caste, sex and place of birth"
+   },
+   {
+    "id": "b",
+    "text": "Religion, race, caste, sex, place of birth and income"
+   },
+   {
+    "id": "c",
+    "text": "Religion, caste, language and domicile"
+   },
+   {
+    "id": "d",
+    "text": "Race, sex, education and economic status"
+   }
+  ],
+  "skill": "fundamental-rights",
+  "source": "NCERT Class 11 'Indian Constitution at Work', Ch.2 — Rights in the Indian Constitution (Article 15: prohibition of discrimination)",
+  "status": "draft-pending-sme-review",
+  "stem": "Article 15 prohibits discrimination by the State on which of the following grounds?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 0,
+  "difficulty": 1,
+  "explanation": "Step 1: Most Fundamental Rights (like Articles 14, 20, 21, 23, 24, 25–28) are available to all persons including foreigners. Step 2: Five are reserved for citizens: Article 15 (non-discrimination), Article 16 (public employment), Article 19 (six freedoms), Article 29 (cultural rights) and Article 30 (minority educational rights). Step 3: This is a frequently tested Prelims fact. So the answer is Articles 15, 16, 19, 29 and 30.",
+  "hint": "Most Fundamental Rights are for 'all persons', but a famous five are citizens-only.",
+  "id": "upsc-pol-fr-008",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "Articles 15, 16, 19, 29 and 30"
+   },
+   {
+    "id": "b",
+    "text": "Articles 14 and 21"
+   },
+   {
+    "id": "c",
+    "text": "Articles 23 and 24"
+   },
+   {
+    "id": "d",
+    "text": "Articles 25 to 28"
+   }
+  ],
+  "skill": "fundamental-rights",
+  "source": "M. Laxmikanth, 'Indian Polity', Ch.7 — Fundamental Rights (FRs available to citizens vs all persons)",
+  "status": "draft-pending-sme-review",
+  "stem": "Which of the following Fundamental Rights are available ONLY to Indian citizens and not to foreigners?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 1,
+  "difficulty": 1,
+  "explanation": "Step 1: Article 16 provides for equality of opportunity for all citizens in matters of public employment or appointment to any office under the State. Step 2: It allows exceptions: Parliament may prescribe residence requirements, and the State may reserve posts for backward classes. Step 3: It does not cover private employment or elections. So the answer is public employment under the State.",
+  "hint": "It is about government jobs — who can apply and who can be appointed.",
+  "id": "upsc-pol-fr-009",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "Admission to private schools"
+   },
+   {
+    "id": "b",
+    "text": "Public employment under the State"
+   },
+   {
+    "id": "c",
+    "text": "Elections to Parliament"
+   },
+   {
+    "id": "d",
+    "text": "Access to public parks"
+   }
+  ],
+  "skill": "fundamental-rights",
+  "source": "NCERT Class 11 'Indian Constitution at Work', Ch.2 — Rights in the Indian Constitution (Article 16)",
+  "status": "draft-pending-sme-review",
+  "stem": "Article 16 guarantees equality of opportunity in matters of:",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 1,
+  "difficulty": 1,
+  "explanation": "Step 1: Article 17 declares that 'untouchability' is abolished and its practice in any form is forbidden. Step 2: It further says the enforcement of any disability arising out of untouchability is an offence punishable by law. Step 3: Parliament enacted the Protection of Civil Rights Act, 1955 for this. So the answer is that it abolishes untouchability.",
+  "hint": "It ended a centuries-old social evil — Parliament enforces it through the Protection of Civil Rights Act.",
+  "id": "upsc-pol-fr-010",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "Abolishes titles conferred by the State"
+   },
+   {
+    "id": "b",
+    "text": "Abolishes untouchability and makes its practice punishable by law"
+   },
+   {
+    "id": "c",
+    "text": "Prohibits traffic in human beings"
+   },
+   {
+    "id": "d",
+    "text": "Guarantees freedom of speech and expression"
+   }
+  ],
+  "skill": "fundamental-rights",
+  "source": "M. Laxmikanth, 'Indian Polity', Ch.7 — Fundamental Rights (Article 17: abolition of untouchability)",
+  "status": "draft-pending-sme-review",
+  "stem": "Article 17 of the Constitution:",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 1,
+  "difficulty": 1,
+  "explanation": "Step 1: Article 18 abolishes all titles except military and academic distinctions. Step 2: Hereditary titles of nobility (Raja, Rai Bahadur etc.) conferred by the British stand abolished. Step 3: National awards like Bharat Ratna and Padma awards are not 'titles' (Balaji Raghavan case, 1995). So the answer is military and academic distinctions — they are not abolished.",
+  "hint": "Soldiers and scholars can still be honoured — the ban targets feudal privilege, not merit.",
+  "id": "upsc-pol-fr-011",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "Hereditary titles of nobility like Raja and Nawab"
+   },
+   {
+    "id": "b",
+    "text": "Military and academic distinctions"
+   },
+   {
+    "id": "c",
+    "text": "Titles conferred by foreign states on Indian citizens"
+   },
+   {
+    "id": "d",
+    "text": "Acceptance of foreign titles without the President's consent"
+   }
+  ],
+  "skill": "fundamental-rights",
+  "source": "M. Laxmikanth, 'Indian Polity', Ch.7 — Fundamental Rights (Article 18: abolition of titles; exceptions)",
+  "status": "draft-pending-sme-review",
+  "stem": "Under Article 18, which of the following is NOT abolished?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 1,
+  "difficulty": 1,
+  "explanation": "Step 1: Article 19(1) originally listed seven freedoms. Step 2: The 44th Amendment Act, 1978 deleted the right to acquire, hold and dispose of property — Article 19(1)(f). Step 3: The remaining six are speech, assembly, association, movement, residence, and profession. So the answer is the freedom to acquire, hold and dispose of property.",
+  "hint": "One freedom was deleted from this list by the 44th Amendment in 1978.",
+  "id": "upsc-pol-fr-012",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "Freedom of speech and expression"
+   },
+   {
+    "id": "b",
+    "text": "Freedom to acquire, hold and dispose of property"
+   },
+   {
+    "id": "c",
+    "text": "Freedom to assemble peaceably and without arms"
+   },
+   {
+    "id": "d",
+    "text": "Freedom to practise any profession or carry on any occupation"
+   }
+  ],
+  "skill": "fundamental-rights",
+  "source": "NCERT Class 11 'Indian Constitution at Work', Ch.2 — Rights in the Indian Constitution (Article 19 and the 44th Amendment)",
+  "status": "draft-pending-sme-review",
+  "stem": "Which of the following is NOT one of the six freedoms guaranteed by Article 19(1)?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 1,
+  "difficulty": 1,
+  "explanation": "Step 1: Article 19(1)(a) guarantees freedom of speech and expression to all citizens. Step 2: The Supreme Court has held that freedom of the press is implicit in this freedom — no separate mention was needed. Step 3: The press enjoys no special rights beyond what Article 19(1)(a) gives citizens. So the answer is that it is implied within Article 19(1)(a).",
+  "hint": "The Constitution never writes the words 'freedom of press' — the Supreme Court read it into another freedom.",
+  "id": "upsc-pol-fr-013",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "Expressly mentioned as a separate right in Article 19"
+   },
+   {
+    "id": "b",
+    "text": "Implied within the freedom of speech and expression under Article 19(1)(a)"
+   },
+   {
+    "id": "c",
+    "text": "Guaranteed only by ordinary law, not the Constitution"
+   },
+   {
+    "id": "d",
+    "text": "Available only during sessions of Parliament"
+   }
+  ],
+  "skill": "fundamental-rights",
+  "source": "M. Laxmikanth, 'Indian Polity', Ch.7 — Fundamental Rights (Article 19: freedom of press)",
+  "status": "draft-pending-sme-review",
+  "stem": "The freedom of the press in India is:",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 1,
+  "difficulty": 1,
+  "explanation": "Step 1: Article 19(2) lists the grounds on which the State can impose reasonable restrictions on free speech. Step 2: The 16th Amendment Act, 1963 added 'sovereignty and integrity of India' to this list. Step 3: It was a response to secessionist demands in the wake of the 1962 Sino-Indian war. So the answer is the 16th Amendment, 1963.",
+  "hint": "It came after the 1962 war with China, when the state wanted to curb secessionist speech.",
+  "id": "upsc-pol-fr-014",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "The 1st Amendment, 1951"
+   },
+   {
+    "id": "b",
+    "text": "The 16th Amendment, 1963"
+   },
+   {
+    "id": "c",
+    "text": "The 42nd Amendment, 1976"
+   },
+   {
+    "id": "d",
+    "text": "The 44th Amendment, 1978"
+   }
+  ],
+  "skill": "fundamental-rights",
+  "source": "M. Laxmikanth, 'Indian Polity', Ch.7 — Fundamental Rights (Article 19(2): reasonable restrictions; 16th Amendment)",
+  "status": "draft-pending-sme-review",
+  "stem": "The ground 'sovereignty and integrity of India' for restricting freedom of speech and expression was added to Article 19(2) by:",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 1,
+  "difficulty": 1,
+  "explanation": "Step 1: Article 20(1) says no person shall be convicted of an offence except for violation of a law in force at the time of the act. Step 2: It also bars a penalty greater than what the law provided at that time — this is the protection against ex post facto (retrospective) criminal laws. Step 3: Double jeopardy is Article 20(2) and self-incrimination is Article 20(3). So the answer is ex post facto criminal laws.",
+  "hint": "A law made today cannot punish what you did yesterday.",
+  "id": "upsc-pol-fr-015",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "Double punishment for the same offence"
+   },
+   {
+    "id": "b",
+    "text": "Ex post facto criminal laws — being punished under a law that did not exist when the act was done"
+   },
+   {
+    "id": "c",
+    "text": "Being compelled to testify against himself"
+   },
+   {
+    "id": "d",
+    "text": "Arrest without a warrant"
+   }
+  ],
+  "skill": "fundamental-rights",
+  "source": "NCERT Class 11 'Indian Constitution at Work', Ch.2 — Rights in the Indian Constitution (Article 20: protection in respect of conviction)",
+  "status": "draft-pending-sme-review",
+  "stem": "Article 20(1) protects a person against:",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 2,
+  "difficulty": 1,
+  "explanation": "Step 1: Article 20(3) provides that no person accused of any offence shall be compelled to be a witness against himself. Step 2: This is the constitutional basis of the right against self-incrimination. Step 3: In Selvi v. State of Karnataka (2010), the Supreme Court held that involuntary narco-analysis, polygraph and brain-mapping tests violate this right. So the answer is that he cannot be compelled to testify against himself.",
+  "hint": "The right to remain silent flows from this clause — upheld in the Selvi case on narco-analysis.",
+  "id": "upsc-pol-fr-016",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "Must answer all questions put by the police"
+   },
+   {
+    "id": "b",
+    "text": "Cannot be arrested without a magistrate's order"
+   },
+   {
+    "id": "c",
+    "text": "Cannot be compelled to be a witness against himself"
+   },
+   {
+    "id": "d",
+    "text": "Must be released on bail within 24 hours"
+   }
+  ],
+  "skill": "fundamental-rights",
+  "source": "M. Laxmikanth, 'Indian Polity', Ch.7 — Fundamental Rights (Article 20(3); Selvi case 2010)",
+  "status": "draft-pending-sme-review",
+  "stem": "Under Article 20(3), an accused person:",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 2,
+  "difficulty": 1,
+  "explanation": "Step 1: Earlier, in A.K. Gopalan (1950), the Court read 'procedure established by law' narrowly as any enacted procedure. Step 2: In Maneka Gandhi (1978), the Court overruled this: the procedure must be fair, just and reasonable, not arbitrary, fanciful or oppressive. Step 3: This opened Article 21 to include the right to live with dignity, livelihood, privacy and more. So the answer is a fair, just and reasonable procedure.",
+  "hint": "This case transformed Article 21 from a narrow rule into a charter of human dignity.",
+  "id": "upsc-pol-fr-017",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "Any procedure passed by Parliament, however arbitrary"
+   },
+   {
+    "id": "b",
+    "text": "The same as the American 'due process of law'"
+   },
+   {
+    "id": "c",
+    "text": "A fair, just and reasonable procedure — not arbitrary or oppressive"
+   },
+   {
+    "id": "d",
+    "text": "Applicable only to Indian citizens"
+   }
+  ],
+  "skill": "fundamental-rights",
+  "source": "NCERT Class 11 'Indian Constitution at Work', Ch.2 — Rights in the Indian Constitution (Article 21; Maneka Gandhi case)",
+  "status": "draft-pending-sme-review",
+  "stem": "In Maneka Gandhi v. Union of India (1978), the Supreme Court held that Article 21's 'procedure established by law' must be:",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 2,
+  "difficulty": 1,
+  "explanation": "Step 1: The 86th Constitutional Amendment Act, 2002 inserted Article 21A. Step 2: It makes free and compulsory education a Fundamental Right for all children aged 6 to 14 years. Step 3: The same amendment added clause (k) to Article 51A, making it a parent's duty to provide education. So the answer is the 86th Amendment, 2002.",
+  "hint": "It is the amendment of 2002 that also added a new Fundamental Duty about children's education.",
+  "id": "upsc-pol-fr-018",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "The 42nd Amendment, 1976"
+   },
+   {
+    "id": "b",
+    "text": "The 44th Amendment, 1978"
+   },
+   {
+    "id": "c",
+    "text": "The 86th Amendment, 2002"
+   },
+   {
+    "id": "d",
+    "text": "The 97th Amendment, 2011"
+   }
+  ],
+  "skill": "fundamental-rights",
+  "source": "M. Laxmikanth, 'Indian Polity', Ch.7 — Fundamental Rights (Article 21A; 86th Amendment)",
+  "status": "draft-pending-sme-review",
+  "stem": "Article 21A, which makes free and compulsory education a Fundamental Right for children aged 6 to 14, was inserted by:",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 2,
+  "difficulty": 1,
+  "explanation": "Step 1: Article 22(2) lays down safeguards for a person arrested under an ordinary law. Step 2: The arrested person must be produced before the nearest magistrate within 24 hours of arrest. Step 3: The time of the journey from the place of arrest to the magistrate's court is excluded. So the answer is 24 hours, excluding journey time.",
+  "hint": "One full day — but the time spent travelling to the magistrate doesn't count.",
+  "id": "upsc-pol-fr-019",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "12 hours"
+   },
+   {
+    "id": "b",
+    "text": "48 hours"
+   },
+   {
+    "id": "c",
+    "text": "24 hours, excluding the time of the journey"
+   },
+   {
+    "id": "d",
+    "text": "72 hours"
+   }
+  ],
+  "skill": "fundamental-rights",
+  "source": "NCERT Class 11 'Indian Constitution at Work', Ch.2 — Rights in the Indian Constitution (Article 22: safeguards on arrest)",
+  "status": "draft-pending-sme-review",
+  "stem": "When a person is arrested, Article 22 requires that he must be produced before a magistrate within:",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 2,
+  "difficulty": 1,
+  "explanation": "Step 1: Article 22 has two parts: clauses 1–3 cover detention under ordinary law (punitive), clauses 4–7 cover preventive detention. Step 2: Preventive detention cannot exceed three months unless an Advisory Board approves, though Parliament may extend it by law. Step 3: This is why India is unusual — few democracies permit preventive detention in the Constitution itself. So the answer is Article 22 (clauses 4 to 7).",
+  "hint": "It sits in the same article as arrest safeguards, but in its later clauses.",
+  "id": "upsc-pol-fr-020",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "Article 21"
+   },
+   {
+    "id": "b",
+    "text": "Article 32"
+   },
+   {
+    "id": "c",
+    "text": "Article 22 (clauses 4 to 7)"
+   },
+   {
+    "id": "d",
+    "text": "Article 19(1)(d)"
+   }
+  ],
+  "skill": "fundamental-rights",
+  "source": "M. Laxmikanth, 'Indian Polity', Ch.7 — Fundamental Rights (Article 22: preventive detention)",
+  "status": "draft-pending-sme-review",
+  "stem": "Preventive detention — detention without trial on suspicion of future wrongdoing — is dealt with in:",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 2,
+  "difficulty": 1,
+  "explanation": "Step 1: Article 23 prohibits traffic in human beings, begar (forced unpaid labour) and other similar forms of forced labour. Step 2: Unusually, this right is enforceable against private individuals as well as the State. Step 3: Parliament enacted the Immoral Traffic (Prevention) Act and Bonded Labour System (Abolition) Act under it. So the answer is traffic in human beings, begar and forced labour.",
+  "hint": "It targets human trafficking and unpaid forced work — and it binds private citizens too, not just the State.",
+  "id": "upsc-pol-fr-021",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "Employment of children in factories"
+   },
+   {
+    "id": "b",
+    "text": "Discrimination in public employment"
+   },
+   {
+    "id": "c",
+    "text": "Traffic in human beings, begar and other forms of forced labour"
+   },
+   {
+    "id": "d",
+    "text": "Religious instruction in state schools"
+   }
+  ],
+  "skill": "fundamental-rights",
+  "source": "NCERT Class 11 'Indian Constitution at Work', Ch.2 — Rights in the Indian Constitution (Article 23: right against exploitation)",
+  "status": "draft-pending-sme-review",
+  "stem": "Article 23 prohibits:",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 2,
+  "difficulty": 1,
+  "explanation": "Step 1: Article 24 states that no child below 14 years shall be employed in any factory or mine or engaged in any other hazardous employment. Step 2: It does not ban all child work — for instance, it does not cover innocent or non-hazardous work. Step 3: Parliament has expanded this through the Child Labour (Prohibition and Regulation) Act. So the answer is factories, mines and hazardous employment.",
+  "hint": "The ban is specific — it covers dangerous workplaces, not every kind of work.",
+  "id": "upsc-pol-fr-022",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "Any employment whatsoever"
+   },
+   {
+    "id": "b",
+    "text": "Only government offices"
+   },
+   {
+    "id": "c",
+    "text": "Factories, mines and other hazardous employment"
+   },
+   {
+    "id": "d",
+    "text": "Agricultural work during school hours"
+   }
+  ],
+  "skill": "fundamental-rights",
+  "source": "M. Laxmikanth, 'Indian Polity', Ch.7 — Fundamental Rights (Article 24: prohibition of child labour)",
+  "status": "draft-pending-sme-review",
+  "stem": "Article 24 prohibits the employment of children below the age of 14 in:",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 2,
+  "difficulty": 1,
+  "explanation": "Step 1: Article 25 gives all persons freedom of conscience and the right to freely profess, practise and propagate religion. Step 2: This freedom is subject to public order, morality, health, and other Fundamental Rights. Step 3: The State may also regulate secular activities associated with religion and provide for social reform. So the answer is freedom of conscience, profession, practice and propagation of religion.",
+  "hint": "It has four words: conscience, profess, practise, propagate — subject to public order, morality and health.",
+  "id": "upsc-pol-fr-023",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "The right of minorities to establish educational institutions"
+   },
+   {
+    "id": "b",
+    "text": "Prohibition of religious instruction in state-funded schools"
+   },
+   {
+    "id": "c",
+    "text": "Freedom of conscience and the right to freely profess, practise and propagate religion"
+   },
+   {
+    "id": "d",
+    "text": "Equal pay for equal work irrespective of religion"
+   }
+  ],
+  "skill": "fundamental-rights",
+  "source": "NCERT Class 11 'Indian Constitution at Work', Ch.2 — Rights in the Indian Constitution (Article 25: freedom of religion)",
+  "status": "draft-pending-sme-review",
+  "stem": "Article 25 guarantees:",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 3,
+  "difficulty": 1,
+  "explanation": "Step 1: Article 28(1) bars religious instruction in educational institutions wholly maintained out of State funds. Step 2: In institutions recognised or aided by the State, religious instruction is allowed only with the consent of the guardian (Article 28(2)–(3)). Step 3: This balances secularism with religious freedom. So the answer is institutions wholly maintained out of State funds.",
+  "hint": "The complete ban applies only where the taxpayer fully foots the bill.",
+  "id": "upsc-pol-fr-024",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "Any private school in India"
+   },
+   {
+    "id": "b",
+    "text": "Minority educational institutions"
+   },
+   {
+    "id": "c",
+    "text": "Institutions recognised but not aided by the State"
+   },
+   {
+    "id": "d",
+    "text": "Educational institutions wholly maintained out of State funds"
+   }
+  ],
+  "skill": "fundamental-rights",
+  "source": "M. Laxmikanth, 'Indian Polity', Ch.7 — Fundamental Rights (Article 28: religious instruction)",
+  "status": "draft-pending-sme-review",
+  "stem": "Article 28 provides that no religious instruction shall be given in:",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 3,
+  "difficulty": 1,
+  "explanation": "Step 1: Article 29(1) gives any section of citizens with a distinct language, script or culture the right to conserve it. Step 2: Article 29(2) bars denial of admission to state-maintained or aided institutions on grounds of religion, race, caste or language. Step 3: Note Article 29 protects both minorities and the majority — any section of citizens. So the answer is conserving distinct language, script and culture.",
+  "hint": "It is about identity — the language you speak, the script you write, the culture you live.",
+  "id": "upsc-pol-fr-025",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "Vote in separate electorates"
+   },
+   {
+    "id": "b",
+    "text": "Reservation in government jobs"
+   },
+   {
+    "id": "c",
+    "text": "Establish military training schools"
+   },
+   {
+    "id": "d",
+    "text": "Conserve their distinct language, script and culture"
+   }
+  ],
+  "skill": "fundamental-rights",
+  "source": "NCERT Class 11 'Indian Constitution at Work', Ch.2 — Rights in the Indian Constitution (Article 29: cultural rights)",
+  "status": "draft-pending-sme-review",
+  "stem": "Article 29 protects the interests of minorities by guaranteeing the right to:",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 3,
+  "difficulty": 1,
+  "explanation": "Step 1: Article 30(1) gives all religious and linguistic minorities the right to establish and administer educational institutions of their choice. Step 2: Article 30(2) bars the State from discriminating against such institutions in granting aid. Step 3: Unlike Article 29, Article 30 is available only to minorities, not the majority. So the answer is establishing and administering educational institutions.",
+  "hint": "It is the companion to Article 29 — culture is protected there, institutions here.",
+  "id": "upsc-pol-fr-026",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "Demand separate personal laws from Parliament"
+   },
+   {
+    "id": "b",
+    "text": "Reserve seats in the Lok Sabha"
+   },
+   {
+    "id": "c",
+    "text": "Opt out of paying taxes"
+   },
+   {
+    "id": "d",
+    "text": "Establish and administer educational institutions of their choice"
+   }
+  ],
+  "skill": "fundamental-rights",
+  "source": "M. Laxmikanth, 'Indian Polity', Ch.7 — Fundamental Rights (Article 30: minority educational rights)",
+  "status": "draft-pending-sme-review",
+  "stem": "Article 30 gives religious and linguistic minorities the right to:",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 3,
+  "difficulty": 1,
+  "explanation": "Step 1: Article 32 guarantees the right to move the Supreme Court for enforcement of Fundamental Rights. Step 2: Dr. Ambedkar called it the 'heart and soul of the Constitution' because a right without a remedy is meaningless. Step 3: Article 32 is itself a Fundamental Right, unlike Article 226. So the answer is Article 32.",
+  "hint": "Without this article, he said, the Constitution would be a nullity — it is the right to move the Supreme Court itself.",
+  "id": "upsc-pol-fr-027",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "Article 14"
+   },
+   {
+    "id": "b",
+    "text": "Article 21"
+   },
+   {
+    "id": "c",
+    "text": "Article 368"
+   },
+   {
+    "id": "d",
+    "text": "Article 32"
+   }
+  ],
+  "skill": "fundamental-rights",
+  "source": "NCERT Class 11 'Indian Constitution at Work', Ch.2 — Rights in the Indian Constitution (Article 32: heart and soul)",
+  "status": "draft-pending-sme-review",
+  "stem": "B.R. Ambedkar described which Article as the 'heart and soul of the Constitution'?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 3,
+  "difficulty": 1,
+  "explanation": "Step 1: Habeas Corpus literally means 'to have the body'. Step 2: It is issued against illegal detention, ordering the detaining authority to produce the detained person before the court and justify the detention. Step 3: If the detention is unlawful, the court orders release. (Mandamus commands duty; prohibition/certiorari deal with courts; quo warranto questions authority.) So the answer is illegal detention.",
+  "hint": "Latin for 'to have the body' — the court demands to see the detained person.",
+  "id": "upsc-pol-fr-028",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "A public official who refuses to perform a legal duty"
+   },
+   {
+    "id": "b",
+    "text": "A lower court exceeding its jurisdiction"
+   },
+   {
+    "id": "c",
+    "text": "A person holding a public office without legal authority"
+   },
+   {
+    "id": "d",
+    "text": "Illegal detention — it orders the detaining authority to produce the person before the court"
+   }
+  ],
+  "skill": "fundamental-rights",
+  "source": "M. Laxmikanth, 'Indian Polity', Ch.7 — Fundamental Rights (writs: Habeas Corpus)",
+  "status": "draft-pending-sme-review",
+  "stem": "The writ of Habeas Corpus is issued against:",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 3,
+  "difficulty": 1,
+  "explanation": "Step 1: Under Article 32, the Supreme Court can issue writs only for the enforcement of Fundamental Rights. Step 2: Under Article 226, a High Court can issue writs for Fundamental Rights and 'for any other purpose' — i.e., ordinary legal rights as well. Step 3: So Article 226 is wider in scope, though Article 32 is itself a Fundamental Right. So the answer is that High Courts cover FRs plus other legal rights.",
+  "hint": "The High Court's power is wider in scope — it covers ordinary legal rights too.",
+  "id": "upsc-pol-fr-029",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "High Courts can issue writs only for Fundamental Rights, while the Supreme Court can issue them for any legal right"
+   },
+   {
+    "id": "b",
+    "text": "There is no difference — both are identical"
+   },
+   {
+    "id": "c",
+    "text": "Only the Supreme Court can issue the writ of Habeas Corpus"
+   },
+   {
+    "id": "d",
+    "text": "High Courts can issue writs for Fundamental Rights AND other legal rights; the Supreme Court only for Fundamental Rights"
+   }
+  ],
+  "skill": "fundamental-rights",
+  "source": "M. Laxmikanth, 'Indian Polity', Ch.7 — Fundamental Rights (Article 32 vs Article 226)",
+  "status": "draft-pending-sme-review",
+  "stem": "How does the writ jurisdiction of High Courts under Article 226 differ from that of the Supreme Court under Article 32?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 3,
+  "difficulty": 1,
+  "explanation": "Step 1: The 44th Amendment Act, 1978 repealed Article 31 and Article 19(1)(f). Step 2: The Right to Property ceased to be a Fundamental Right and became a constitutional/legal right under Article 300-A in Part XII. Step 3: (Preamble words came via the 42nd Amendment; 21A via the 86th; voting age via the 61st.) So the answer is the removal of the Right to Property from Fundamental Rights.",
+  "hint": "After the Emergency, Parliament moved property out of Part III — it now lives in Part XII.",
+  "id": "upsc-pol-fr-030",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "Added the words Socialist, Secular and Integrity to the Preamble"
+   },
+   {
+    "id": "b",
+    "text": "Inserted the Right to Education as Article 21A"
+   },
+   {
+    "id": "c",
+    "text": "Reduced the voting age from 21 to 18 years"
+   },
+   {
+    "id": "d",
+    "text": "Removed the Right to Property from Fundamental Rights, making it a legal right under Article 300-A"
+   }
+  ],
+  "skill": "fundamental-rights",
+  "source": "NCERT Class 11 'Indian Constitution at Work', Ch.2 — Rights in the Indian Constitution (44th Amendment; Article 300-A)",
+  "status": "draft-pending-sme-review",
+  "stem": "The 44th Amendment Act, 1978 did which of the following?",
+  "type": "mcq",
+  "version": 1
+ }
+]

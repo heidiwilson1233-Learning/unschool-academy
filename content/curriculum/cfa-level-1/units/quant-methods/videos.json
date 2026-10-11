@@ -116,5 +116,115 @@
     ],
     "credit": "Free on YouTube, embedded with attribution; not re-uploaded.",
     "curation_note": "Textbook-chapter companion video; pairs well with the annuity and EAR questions."
+  },
+  {
+    "id": "cfa-qm-ir-vid-001",
+    "skill": "interest-rates",
+    "level": "L1",
+    "video_url": "https://www.youtube.com/watch?v=qk19_k31K-4",
+    "platform": "youtube",
+    "title": "Effective Annual Rate (EAR) Example | CFA Level 1",
+    "channel": "AnalystPrep",
+    "duration": null,
+    "duration_note": "Duration not verified from search results; verify before publishing in lesson player.",
+    "lesson_topic": "EAR formula walkthrough: stated 10% semiannual → 10.25% EAR; EAR across daily/monthly/quarterly/semiannual frequencies",
+    "transcript_key_points": [
+      "EAR = (1 + periodic rate)^m − 1; periodic rate = stated/m",
+      "Worked example: 10% compounded semiannually → 10.25%",
+      "12% stated across frequencies: semiannual 12.36%, quarterly 12.55%, monthly 12.68%, daily 12.75%",
+      "Stated rate equals EAR only with annual compounding"
+    ],
+    "attached_question_ids": [
+      "cfa-qm-ir-003",
+      "cfa-qm-ir-004",
+      "cfa-qm-ir-005",
+      "cfa-qm-ir-011",
+      "cfa-qm-ir-018",
+      "cfa-qm-ir-023",
+      "cfa-qm-ir-024"
+    ],
+    "credit": "Video by AnalystPrep (free on YouTube, embedded with attribution; not re-uploaded).",
+    "curation_note": "CFA Level I-specific EAR lesson aligned to the public LOS on effective annual rates."
+  },
+  {
+    "id": "cfa-qm-ir-vid-002",
+    "skill": "interest-rates",
+    "level": "L1",
+    "video_url": "https://www.youtube.com/watch?v=9Vg-aAt5NtM",
+    "platform": "youtube",
+    "title": "Interest Rate Explained — Nominal, Period, Effective",
+    "channel": null,
+    "channel_note": "Channel name not verified from search results; check YouTube page before publishing.",
+    "duration": null,
+    "duration_note": "Duration not verified from search results; verify before publishing in lesson player.",
+    "lesson_topic": "Nominal vs periodic vs effective rates from first principles with decision rule and worked example",
+    "transcript_key_points": [
+      "Nominal rate (R), rate per period (i = R/m), effective rate (ie = (1+R/m)^m − 1)",
+      "Decision rule for choosing the right rate in any scenario",
+      "Worked example: 6% nominal monthly → i = 0.5%/month, ie ≈ 6.168%/year",
+      "Comparing effective rates across frequencies"
+    ],
+    "attached_question_ids": [
+      "cfa-qm-ir-001",
+      "cfa-qm-ir-002",
+      "cfa-qm-ir-013",
+      "cfa-qm-ir-022",
+      "cfa-qm-ir-027"
+    ],
+    "credit": "Free on YouTube, embedded with attribution; not re-uploaded.",
+    "curation_note": "First-principles treatment of the three rate types; reinforces the periodic-vs-stated distinction CFA tests."
+  },
+  {
+    "id": "cfa-qm-ir-vid-003",
+    "skill": "interest-rates",
+    "level": "L1",
+    "video_url": "https://www.youtube.com/watch?v=ZsvYxAZcluY",
+    "platform": "youtube",
+    "title": "Effective Vs Nominal Rate of Interest (Mathematical Economics)",
+    "channel": null,
+    "channel_note": "Channel name not verified from search results; check YouTube page before publishing.",
+    "duration": null,
+    "duration_note": "Duration not verified from search results; verify before publishing in lesson player.",
+    "lesson_topic": "Nominal vs effective interest with worked numerical examples",
+    "transcript_key_points": [
+      "Nominal = stated annual rate ignoring compounding",
+      "Effective incorporates compounding frequency — always higher than nominal when m > 1",
+      "Worked numerical comparisons"
+    ],
+    "attached_question_ids": [
+      "cfa-qm-ir-006",
+      "cfa-qm-ir-014",
+      "cfa-qm-ir-016",
+      "cfa-qm-ir-019",
+      "cfa-qm-ir-029"
+    ],
+    "credit": "Free on YouTube, embedded with attribution; not re-uploaded.",
+    "curation_note": "Comparison-focused; pairs with the bank-choice and rate-comparison questions."
+  },
+  {
+    "id": "cfa-qm-ir-vid-004",
+    "skill": "interest-rates",
+    "level": "L1",
+    "video_url": "https://www.youtube.com/watch?v=0lp4ohc1f0s",
+    "platform": "youtube",
+    "title": "Effective Vs Nominal Rate of Interest — Solving Problems (Part 2)",
+    "channel": null,
+    "channel_note": "Channel name not verified from search results; check YouTube page before publishing.",
+    "duration": null,
+    "duration_note": "Duration not verified from search results; verify before publishing in lesson player.",
+    "lesson_topic": "Problem-solving session: converting between nominal and effective rates",
+    "transcript_key_points": [
+      "Nominal is the quoted rate; effective is what you actually pay or earn",
+      "Step-by-step conversion problems",
+      "Common exam mistakes in rate conversion"
+    ],
+    "attached_question_ids": [
+      "cfa-qm-ir-010",
+      "cfa-qm-ir-020",
+      "cfa-qm-ir-025",
+      "cfa-qm-ir-030"
+    ],
+    "credit": "Free on YouTube, embedded with attribution; not re-uploaded.",
+    "curation_note": "Practice-oriented; good follow-up after the formula lessons."
   }
 ]

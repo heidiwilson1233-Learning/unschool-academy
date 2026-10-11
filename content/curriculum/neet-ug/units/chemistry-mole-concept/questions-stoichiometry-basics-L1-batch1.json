@@ -1,0 +1,962 @@
+[
+ {
+  "id": "neet-chem-mc-sto-001",
+  "level": "L1",
+  "skill": "stoichiometry-basics",
+  "type": "mcq",
+  "stem": "In the reaction N₂ + 3H₂ → 2NH₃, what is the mole ratio of N₂ to H₂?",
+  "options": [
+   {
+    "id": "a",
+    "text": "1 : 2"
+   },
+   {
+    "id": "b",
+    "text": "1 : 3"
+   },
+   {
+    "id": "c",
+    "text": "3 : 1"
+   },
+   {
+    "id": "d",
+    "text": "2 : 3"
+   }
+  ],
+  "answer": 1,
+  "hint": "Read the coefficients in front of each formula.",
+  "explanation": "Step 1: A balanced equation's coefficients give the mole ratio of reactants. Step 2: N₂ has coefficient 1 and H₂ has coefficient 3. Step 3: So 1 mole of N₂ reacts with 3 moles of H₂ — the ratio is 1 : 3.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Chemistry, Chapter 1 — Some Basic Concepts of Chemistry (§1.8 Stoichiometry and Stoichiometric Calculations)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-chem-mc-sto-002",
+  "level": "L1",
+  "skill": "stoichiometry-basics",
+  "type": "mcq",
+  "stem": "For N₂ + 3H₂ → 2NH₃, how many moles of H₂ are needed to react completely with 2 moles of N₂?",
+  "options": [
+   {
+    "id": "a",
+    "text": "3"
+   },
+   {
+    "id": "b",
+    "text": "4"
+   },
+   {
+    "id": "c",
+    "text": "6"
+   },
+   {
+    "id": "d",
+    "text": "2"
+   }
+  ],
+  "answer": 2,
+  "hint": "Scale the 1 : 3 ratio up to 2 moles of N₂.",
+  "explanation": "Step 1: The mole ratio N₂ : H₂ is 1 : 3. Step 2: Multiply both sides by 2 → 2 moles N₂ needs 6 moles H₂. Step 3: Mole ratios scale linearly — this is the heart of stoichiometry.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Chemistry, Chapter 1 — Some Basic Concepts of Chemistry (§1.8 Stoichiometry and Stoichiometric Calculations)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-chem-mc-sto-003",
+  "level": "L1",
+  "skill": "stoichiometry-basics",
+  "type": "mcq",
+  "stem": "For N₂ + 3H₂ → 2NH₃, how many moles of NH₃ are produced from 3 moles of H₂ (with excess N₂)?",
+  "options": [
+   {
+    "id": "a",
+    "text": "1"
+   },
+   {
+    "id": "b",
+    "text": "2"
+   },
+   {
+    "id": "c",
+    "text": "3"
+   },
+   {
+    "id": "d",
+    "text": "6"
+   }
+  ],
+  "answer": 1,
+  "hint": "H₂ : NH₃ ratio is 3 : 2.",
+  "explanation": "Step 1: From the equation, 3 moles of H₂ produce 2 moles of NH₃. Step 2: We have exactly 3 moles of H₂. Step 3: So 2 moles of NH₃ form.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Chemistry, Chapter 1 — Some Basic Concepts of Chemistry (§1.8 Stoichiometry and Stoichiometric Calculations)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-chem-mc-sto-004",
+  "level": "L1",
+  "skill": "stoichiometry-basics",
+  "type": "mcq",
+  "stem": "What mass of water (H₂O) is produced when 4 g of H₂ burns completely in oxygen? (2H₂ + O₂ → 2H₂O)",
+  "options": [
+   {
+    "id": "a",
+    "text": "18 g"
+   },
+   {
+    "id": "b",
+    "text": "36 g"
+   },
+   {
+    "id": "c",
+    "text": "9 g"
+   },
+   {
+    "id": "d",
+    "text": "72 g"
+   }
+  ],
+  "answer": 1,
+  "hint": "Convert grams to moles first, then use the mole ratio, then back to grams.",
+  "explanation": "Step 1: 4 g H₂ = 4/2 = 2 moles. Step 2: The equation shows 2 mol H₂ → 2 mol H₂O (1 : 1). Step 3: 2 mol H₂O × 18 g/mol = 36 g.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Chemistry, Chapter 1 — Some Basic Concepts of Chemistry (§1.8 Stoichiometry and Stoichiometric Calculations)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-chem-mc-sto-005",
+  "level": "L1",
+  "skill": "stoichiometry-basics",
+  "type": "mcq",
+  "stem": "How many moles are present in 10 g of calcium carbonate, CaCO₃? (Ca = 40, C = 12, O = 16)",
+  "options": [
+   {
+    "id": "a",
+    "text": "1.0"
+   },
+   {
+    "id": "b",
+    "text": "0.5"
+   },
+   {
+    "id": "c",
+    "text": "0.1"
+   },
+   {
+    "id": "d",
+    "text": "0.01"
+   }
+  ],
+  "answer": 2,
+  "hint": "Molar mass of CaCO₃ first, then n = m/M.",
+  "explanation": "Step 1: Molar mass of CaCO₃ = 40 + 12 + 48 = 100 g/mol. Step 2: n = m/M = 10/100. Step 3: = 0.1 mol.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Chemistry, Chapter 1 — Some Basic Concepts of Chemistry (§1.8 Stoichiometry and Stoichiometric Calculations)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-chem-mc-sto-006",
+  "level": "L1",
+  "skill": "stoichiometry-basics",
+  "type": "mcq",
+  "stem": "The reactant that gets completely consumed first in a chemical reaction, limiting the amount of product, is called the:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Excess reagent"
+   },
+   {
+    "id": "b",
+    "text": "Catalyst"
+   },
+   {
+    "id": "c",
+    "text": "Limiting reagent"
+   },
+   {
+    "id": "d",
+    "text": "Spectator"
+   }
+  ],
+  "answer": 2,
+  "hint": "It 'limits' how much product can form.",
+  "explanation": "Step 1: When reactants are not in exact stoichiometric ratio, one runs out first. Step 2: The reaction must stop when it is gone, so product amount is decided by it. Step 3: This reactant is the limiting reagent (limiting reactant).",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Chemistry, Chapter 1 — Some Basic Concepts of Chemistry (§1.8 Stoichiometry and Stoichiometric Calculations)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-chem-mc-sto-007",
+  "level": "L1",
+  "skill": "stoichiometry-basics",
+  "type": "mcq",
+  "stem": "In the reaction 2Mg + O₂ → 2MgO, how many moles of O₂ are needed for 4 moles of Mg?",
+  "options": [
+   {
+    "id": "a",
+    "text": "1"
+   },
+   {
+    "id": "b",
+    "text": "2"
+   },
+   {
+    "id": "c",
+    "text": "4"
+   },
+   {
+    "id": "d",
+    "text": "8"
+   }
+  ],
+  "answer": 1,
+  "hint": "Mg : O₂ ratio is 2 : 1.",
+  "explanation": "Step 1: Coefficients give Mg : O₂ = 2 : 1. Step 2: Half as many moles of O₂ as Mg are needed. Step 3: 4 mol Mg → 2 mol O₂.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Chemistry, Chapter 1 — Some Basic Concepts of Chemistry (§1.8 Stoichiometry and Stoichiometric Calculations)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-chem-mc-sto-008",
+  "level": "L1",
+  "skill": "stoichiometry-basics",
+  "type": "mcq",
+  "stem": "CH₄ + 2O₂ → CO₂ + 2H₂O. How many moles of CO₂ form from 2 moles of CH₄?",
+  "options": [
+   {
+    "id": "a",
+    "text": "1"
+   },
+   {
+    "id": "b",
+    "text": "2"
+   },
+   {
+    "id": "c",
+    "text": "4"
+   },
+   {
+    "id": "d",
+    "text": "0.5"
+   }
+  ],
+  "answer": 1,
+  "hint": "CH₄ : CO₂ is 1 : 1.",
+  "explanation": "Step 1: The balanced equation shows 1 CH₄ → 1 CO₂. Step 2: Mole ratio is 1 : 1. Step 3: 2 mol CH₄ → 2 mol CO₂.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Chemistry, Chapter 1 — Some Basic Concepts of Chemistry (§1.8 Stoichiometry and Stoichiometric Calculations)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-chem-mc-sto-009",
+  "level": "L1",
+  "skill": "stoichiometry-basics",
+  "type": "mcq",
+  "stem": "2KClO₃ → 2KCl + 3O₂. How many moles of O₂ are produced from 2 moles of KClO₃?",
+  "options": [
+   {
+    "id": "a",
+    "text": "2"
+   },
+   {
+    "id": "b",
+    "text": "3"
+   },
+   {
+    "id": "c",
+    "text": "1.5"
+   },
+   {
+    "id": "d",
+    "text": "6"
+   }
+  ],
+  "answer": 1,
+  "hint": "KClO₃ : O₂ ratio is 2 : 3.",
+  "explanation": "Step 1: 2 moles of KClO₃ give 3 moles of O₂. Step 2: We start with exactly 2 moles. Step 3: So 3 moles of O₂ are produced.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Chemistry, Chapter 1 — Some Basic Concepts of Chemistry (§1.8 Stoichiometry and Stoichiometric Calculations)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-chem-mc-sto-010",
+  "level": "L1",
+  "skill": "stoichiometry-basics",
+  "type": "mcq",
+  "stem": "Zn + 2HCl → ZnCl₂ + H₂. What volume of H₂ at STP is produced from 1 mole of Zn?",
+  "options": [
+   {
+    "id": "a",
+    "text": "11.2 L"
+   },
+   {
+    "id": "b",
+    "text": "22.4 L"
+   },
+   {
+    "id": "c",
+    "text": "44.8 L"
+   },
+   {
+    "id": "d",
+    "text": "2.24 L"
+   }
+  ],
+  "answer": 1,
+  "hint": "1 mole of any gas occupies 22.4 L at STP.",
+  "explanation": "Step 1: The equation shows 1 mol Zn → 1 mol H₂. Step 2: At STP, 1 mole of gas = 22.4 L. Step 3: So 22.4 L of H₂ is produced.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Chemistry, Chapter 1 — Some Basic Concepts of Chemistry (§1.8 Stoichiometry and Stoichiometric Calculations)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-chem-mc-sto-011",
+  "level": "L1",
+  "skill": "stoichiometry-basics",
+  "type": "mcq",
+  "stem": "What volume does 2 moles of CO₂ occupy at STP?",
+  "options": [
+   {
+    "id": "a",
+    "text": "22.4 L"
+   },
+   {
+    "id": "b",
+    "text": "44.8 L"
+   },
+   {
+    "id": "c",
+    "text": "11.2 L"
+   },
+   {
+    "id": "d",
+    "text": "2.24 L"
+   }
+  ],
+  "answer": 1,
+  "hint": "Double the moles, double the volume.",
+  "explanation": "Step 1: Molar volume at STP = 22.4 L/mol. Step 2: Volume = moles × 22.4. Step 3: 2 × 22.4 = 44.8 L.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Chemistry, Chapter 1 — Some Basic Concepts of Chemistry (§1.8 Stoichiometry and Stoichiometric Calculations)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-chem-mc-sto-012",
+  "level": "L1",
+  "skill": "stoichiometry-basics",
+  "type": "mcq",
+  "stem": "C + O₂ → CO₂. What mass of CO₂ is formed from 12 g of carbon?",
+  "options": [
+   {
+    "id": "a",
+    "text": "12 g"
+   },
+   {
+    "id": "b",
+    "text": "24 g"
+   },
+   {
+    "id": "c",
+    "text": "44 g"
+   },
+   {
+    "id": "d",
+    "text": "32 g"
+   }
+  ],
+  "answer": 2,
+  "hint": "12 g C = 1 mole; follow the 1 : 1 mole ratio, then convert back to mass.",
+  "explanation": "Step 1: 12 g C = 1 mol. Step 2: 1 mol C → 1 mol CO₂. Step 3: 1 mol CO₂ = 44 g.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Chemistry, Chapter 1 — Some Basic Concepts of Chemistry (§1.8 Stoichiometry and Stoichiometric Calculations)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-chem-mc-sto-013",
+  "level": "L1",
+  "skill": "stoichiometry-basics",
+  "type": "mcq",
+  "stem": "2Na + Cl₂ → 2NaCl. How many moles of Cl₂ are needed to react with 4 moles of Na?",
+  "options": [
+   {
+    "id": "a",
+    "text": "1"
+   },
+   {
+    "id": "b",
+    "text": "2"
+   },
+   {
+    "id": "c",
+    "text": "4"
+   },
+   {
+    "id": "d",
+    "text": "0.5"
+   }
+  ],
+  "answer": 1,
+  "hint": "Na : Cl₂ ratio is 2 : 1.",
+  "explanation": "Step 1: Coefficients give 2 Na per 1 Cl₂. Step 2: Moles of Cl₂ = moles of Na ÷ 2. Step 3: 4 ÷ 2 = 2 mol.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Chemistry, Chapter 1 — Some Basic Concepts of Chemistry (§1.8 Stoichiometry and Stoichiometric Calculations)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-chem-mc-sto-014",
+  "level": "L1",
+  "skill": "stoichiometry-basics",
+  "type": "mcq",
+  "stem": "In the reaction 2H₂ + O₂ → 2H₂O, 3 moles of O₂ will produce how many moles of H₂O?",
+  "options": [
+   {
+    "id": "a",
+    "text": "3"
+   },
+   {
+    "id": "b",
+    "text": "6"
+   },
+   {
+    "id": "c",
+    "text": "2"
+   },
+   {
+    "id": "d",
+    "text": "1.5"
+   }
+  ],
+  "answer": 1,
+  "hint": "O₂ : H₂O ratio is 1 : 2.",
+  "explanation": "Step 1: 1 mol O₂ → 2 mol H₂O. Step 2: Scale by 3. Step 3: 3 × 2 = 6 mol H₂O.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Chemistry, Chapter 1 — Some Basic Concepts of Chemistry (§1.8 Stoichiometry and Stoichiometric Calculations)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-chem-mc-sto-015",
+  "level": "L1",
+  "skill": "stoichiometry-basics",
+  "type": "mcq",
+  "stem": "H₂SO₄ + 2NaOH → Na₂SO₄ + 2H₂O. How many moles of NaOH neutralise 0.5 mol of H₂SO₄?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.5"
+   },
+   {
+    "id": "b",
+    "text": "1"
+   },
+   {
+    "id": "c",
+    "text": "2"
+   },
+   {
+    "id": "d",
+    "text": "0.25"
+   }
+  ],
+  "answer": 1,
+  "hint": "Each H₂SO₄ needs 2 NaOH.",
+  "explanation": "Step 1: Mole ratio H₂SO₄ : NaOH = 1 : 2. Step 2: Multiply by 0.5. Step 3: 0.5 × 2 = 1 mol NaOH.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Chemistry, Chapter 1 — Some Basic Concepts of Chemistry (§1.8 Stoichiometry and Stoichiometric Calculations)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-chem-mc-sto-016",
+  "level": "L1",
+  "skill": "stoichiometry-basics",
+  "type": "mcq",
+  "stem": "What is the mass of 0.5 mol of NaCl? (Na = 23, Cl = 35.5)",
+  "options": [
+   {
+    "id": "a",
+    "text": "58.5 g"
+   },
+   {
+    "id": "b",
+    "text": "29.25 g"
+   },
+   {
+    "id": "c",
+    "text": "117 g"
+   },
+   {
+    "id": "d",
+    "text": "14.6 g"
+   }
+  ],
+  "answer": 1,
+  "hint": "Molar mass of NaCl = 58.5 g/mol; take half.",
+  "explanation": "Step 1: M(NaCl) = 23 + 35.5 = 58.5 g/mol. Step 2: Mass = 0.5 × 58.5. Step 3: = 29.25 g.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Chemistry, Chapter 1 — Some Basic Concepts of Chemistry (§1.8 Stoichiometry and Stoichiometric Calculations)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-chem-mc-sto-017",
+  "level": "L1",
+  "skill": "stoichiometry-basics",
+  "type": "mcq",
+  "stem": "CaCO₃ → CaO + CO₂. What mass of CO₂ is released when 50 g of CaCO₃ decomposes completely?",
+  "options": [
+   {
+    "id": "a",
+    "text": "44 g"
+   },
+   {
+    "id": "b",
+    "text": "22 g"
+   },
+   {
+    "id": "c",
+    "text": "11 g"
+   },
+   {
+    "id": "d",
+    "text": "50 g"
+   }
+  ],
+  "answer": 1,
+  "hint": "50 g CaCO₃ = 0.5 mol; 1 : 1 ratio to CO₂.",
+  "explanation": "Step 1: n(CaCO₃) = 50/100 = 0.5 mol. Step 2: 0.5 mol CaCO₃ → 0.5 mol CO₂. Step 3: 0.5 × 44 = 22 g.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Chemistry, Chapter 1 — Some Basic Concepts of Chemistry (§1.8 Stoichiometry and Stoichiometric Calculations)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-chem-mc-sto-018",
+  "level": "L1",
+  "skill": "stoichiometry-basics",
+  "type": "mcq",
+  "stem": "For 2H₂ + O₂ → 2H₂O, a mixture of 2 mol H₂ and 1 mol O₂ will:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Leave O₂ in excess"
+   },
+   {
+    "id": "b",
+    "text": "React completely with no limiting reagent"
+   },
+   {
+    "id": "c",
+    "text": "Leave H₂ in excess"
+   },
+   {
+    "id": "d",
+    "text": "Produce 1 mol H₂O"
+   }
+  ],
+  "answer": 1,
+  "hint": "Check whether the amounts match the 2 : 1 ratio exactly.",
+  "explanation": "Step 1: Required ratio H₂ : O₂ = 2 : 1. Step 2: Available: 2 mol H₂ and 1 mol O₂ — exactly 2 : 1. Step 3: Both are consumed fully; neither limits, 2 mol H₂O forms.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Chemistry, Chapter 1 — Some Basic Concepts of Chemistry (§1.8 Stoichiometry and Stoichiometric Calculations)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-chem-mc-sto-019",
+  "level": "L1",
+  "skill": "stoichiometry-basics",
+  "type": "mcq",
+  "stem": "For 2H₂ + O₂ → 2H₂O, with 3 mol H₂ and 1 mol O₂, which is the limiting reagent?",
+  "options": [
+   {
+    "id": "a",
+    "text": "H₂"
+   },
+   {
+    "id": "b",
+    "text": "O₂"
+   },
+   {
+    "id": "c",
+    "text": "Neither"
+   },
+   {
+    "id": "d",
+    "text": "H₂O"
+   }
+  ],
+  "answer": 1,
+  "hint": "3 mol H₂ needs 1.5 mol O₂ — but only 1 mol is present.",
+  "explanation": "Step 1: 3 mol H₂ would need 3/2 = 1.5 mol O₂. Step 2: Only 1 mol O₂ is available — it runs out first. Step 3: O₂ is the limiting reagent; H₂ is in excess.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Chemistry, Chapter 1 — Some Basic Concepts of Chemistry (§1.8 Stoichiometry and Stoichiometric Calculations)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-chem-mc-sto-020",
+  "level": "L1",
+  "skill": "stoichiometry-basics",
+  "type": "mcq",
+  "stem": "N₂ + 3H₂ → 2NH₃. Starting with 28 g N₂ and 6 g H₂, what mass of NH₃ forms (complete reaction)?",
+  "options": [
+   {
+    "id": "a",
+    "text": "17 g"
+   },
+   {
+    "id": "b",
+    "text": "34 g"
+   },
+   {
+    "id": "c",
+    "text": "28 g"
+   },
+   {
+    "id": "d",
+    "text": "6 g"
+   }
+  ],
+  "answer": 1,
+  "hint": "28 g N₂ = 1 mol, 6 g H₂ = 3 mol — exact ratio, then 2 mol NH₃.",
+  "explanation": "Step 1: n(N₂) = 28/28 = 1 mol; n(H₂) = 6/2 = 3 mol — exactly the 1 : 3 ratio. Step 2: Products: 2 mol NH₃. Step 3: 2 × 17 = 34 g.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Chemistry, Chapter 1 — Some Basic Concepts of Chemistry (§1.8 Stoichiometry and Stoichiometric Calculations)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-chem-mc-sto-021",
+  "level": "L1",
+  "skill": "stoichiometry-basics",
+  "type": "mcq",
+  "stem": "A balanced chemical equation does NOT directly give information about:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Mole ratios of reactants and products"
+   },
+   {
+    "id": "b",
+    "text": "Mass relationships"
+   },
+   {
+    "id": "c",
+    "text": "Rate of the reaction"
+   },
+   {
+    "id": "d",
+    "text": "Number of atoms of each element"
+   }
+  ],
+  "answer": 2,
+  "hint": "Stoichiometry is about amounts, not speed.",
+  "explanation": "Step 1: A balanced equation encodes atom counts, mole ratios and (via molar masses) mass relations. Step 2: It says nothing about how fast the reaction proceeds. Step 3: Reaction rate depends on kinetics — concentration, temperature, catalysts — not on stoichiometry.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Chemistry, Chapter 1 — Some Basic Concepts of Chemistry (§1.8 Stoichiometry and Stoichiometric Calculations)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-chem-mc-sto-022",
+  "level": "L1",
+  "skill": "stoichiometry-basics",
+  "type": "mcq",
+  "stem": "In 2Al + 3Cl₂ → 2AlCl₃, the mole ratio of Al to Cl₂ is:",
+  "options": [
+   {
+    "id": "a",
+    "text": "1 : 1"
+   },
+   {
+    "id": "b",
+    "text": "2 : 3"
+   },
+   {
+    "id": "c",
+    "text": "3 : 2"
+   },
+   {
+    "id": "d",
+    "text": "1 : 3"
+   }
+  ],
+  "answer": 1,
+  "hint": "Read the coefficients: 2 in front of Al, 3 in front of Cl₂.",
+  "explanation": "Step 1: Coefficients are 2 for Al and 3 for Cl₂. Step 2: The mole ratio Al : Cl₂ is therefore 2 : 3. Step 3: So 2 mol Al reacts with 3 mol Cl₂.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Chemistry, Chapter 1 — Some Basic Concepts of Chemistry (§1.8 Stoichiometry and Stoichiometric Calculations)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-chem-mc-sto-023",
+  "level": "L1",
+  "skill": "stoichiometry-basics",
+  "type": "mcq",
+  "stem": "How many moles of oxygen atoms are present in 1 mole of CO₂?",
+  "options": [
+   {
+    "id": "a",
+    "text": "1"
+   },
+   {
+    "id": "b",
+    "text": "2"
+   },
+   {
+    "id": "c",
+    "text": "3"
+   },
+   {
+    "id": "d",
+    "text": "0.5"
+   }
+  ],
+  "answer": 1,
+  "hint": "Each CO₂ molecule carries two O atoms.",
+  "explanation": "Step 1: The formula CO₂ shows 2 oxygen atoms per molecule. Step 2: So 1 mole of CO₂ contains 2 moles of O atoms. Step 3: Mole-to-mole ratios also work within a single compound's formula.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Chemistry, Chapter 1 — Some Basic Concepts of Chemistry (§1.8 Stoichiometry and Stoichiometric Calculations)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-chem-mc-sto-024",
+  "level": "L1",
+  "skill": "stoichiometry-basics",
+  "type": "mcq",
+  "stem": "4NH₃ + 5O₂ → 4NO + 6H₂O. How many moles of NO form from 2 moles of NH₃?",
+  "options": [
+   {
+    "id": "a",
+    "text": "2"
+   },
+   {
+    "id": "b",
+    "text": "4"
+   },
+   {
+    "id": "c",
+    "text": "5"
+   },
+   {
+    "id": "d",
+    "text": "6"
+   }
+  ],
+  "answer": 0,
+  "hint": "NH₃ : NO ratio is 4 : 4, i.e. 1 : 1.",
+  "explanation": "Step 1: Coefficients give NH₃ : NO = 4 : 4 = 1 : 1. Step 2: Equal moles. Step 3: 2 mol NH₃ → 2 mol NO.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Chemistry, Chapter 1 — Some Basic Concepts of Chemistry (§1.8 Stoichiometry and Stoichiometric Calculations)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-chem-mc-sto-025",
+  "level": "L1",
+  "skill": "stoichiometry-basics",
+  "type": "mcq",
+  "stem": "What mass of MgO is formed when 24 g of Mg burns completely? (2Mg + O₂ → 2MgO; Mg = 24, O = 16)",
+  "options": [
+   {
+    "id": "a",
+    "text": "20 g"
+   },
+   {
+    "id": "b",
+    "text": "40 g"
+   },
+   {
+    "id": "c",
+    "text": "24 g"
+   },
+   {
+    "id": "d",
+    "text": "80 g"
+   }
+  ],
+  "answer": 1,
+  "hint": "24 g Mg = 1 mol; 1 mol Mg → 1 mol MgO = 40 g.",
+  "explanation": "Step 1: n(Mg) = 24/24 = 1 mol. Step 2: Mole ratio Mg : MgO = 1 : 1, so 1 mol MgO forms. Step 3: M(MgO) = 24 + 16 = 40 g/mol → 40 g.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Chemistry, Chapter 1 — Some Basic Concepts of Chemistry (§1.8 Stoichiometry and Stoichiometric Calculations)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-chem-mc-sto-026",
+  "level": "L1",
+  "skill": "stoichiometry-basics",
+  "type": "mcq",
+  "stem": "The law of conservation of mass in a chemical reaction means that:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Moles of reactants equal moles of products"
+   },
+   {
+    "id": "b",
+    "text": "Total mass of reactants equals total mass of products"
+   },
+   {
+    "id": "c",
+    "text": "Volume is always conserved"
+   },
+   {
+    "id": "d",
+    "text": "The number of molecules stays the same"
+   }
+  ],
+  "answer": 1,
+  "hint": "Atoms are rearranged, never created or destroyed — so mass is conserved.",
+  "explanation": "Step 1: Balancing an equation ensures equal atoms of each element on both sides. Step 2: Since atoms are conserved, their total mass is conserved too. Step 3: Note moles and molecules need not be conserved — only mass (and atoms) is.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Chemistry, Chapter 1 — Some Basic Concepts of Chemistry (§1.8 Stoichiometry and Stoichiometric Calculations)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-chem-mc-sto-027",
+  "level": "L1",
+  "skill": "stoichiometry-basics",
+  "type": "mcq",
+  "stem": "2SO₂ + O₂ → 2SO₃. If 128 g of SO₂ reacts completely, what mass of SO₃ forms? (S = 32, O = 16)",
+  "options": [
+   {
+    "id": "a",
+    "text": "80 g"
+   },
+   {
+    "id": "b",
+    "text": "160 g"
+   },
+   {
+    "id": "c",
+    "text": "128 g"
+   },
+   {
+    "id": "d",
+    "text": "64 g"
+   }
+  ],
+  "answer": 1,
+  "hint": "128 g SO₂ = 2 mol; 1 : 1 to SO₃; M(SO₃) = 80.",
+  "explanation": "Step 1: M(SO₂) = 32 + 32 = 64 g/mol, so n = 128/64 = 2 mol. Step 2: Ratio SO₂ : SO₃ = 1 : 1 → 2 mol SO₃. Step 3: 2 × 80 = 160 g.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Chemistry, Chapter 1 — Some Basic Concepts of Chemistry (§1.8 Stoichiometry and Stoichiometric Calculations)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-chem-mc-sto-028",
+  "level": "L1",
+  "skill": "stoichiometry-basics",
+  "type": "mcq",
+  "stem": "CH₄ + 2O₂ → CO₂ + 2H₂O. What mass of O₂ is needed to burn 8 g of CH₄ completely?",
+  "options": [
+   {
+    "id": "a",
+    "text": "16 g"
+   },
+   {
+    "id": "b",
+    "text": "32 g"
+   },
+   {
+    "id": "c",
+    "text": "64 g"
+   },
+   {
+    "id": "d",
+    "text": "8 g"
+   }
+  ],
+  "answer": 1,
+  "hint": "8 g CH₄ = 0.5 mol; needs 1 mol O₂ = 32 g.",
+  "explanation": "Step 1: M(CH₄) = 16 g/mol, so n = 8/16 = 0.5 mol. Step 2: Ratio CH₄ : O₂ = 1 : 2 → 1 mol O₂ needed. Step 3: 1 × 32 = 32 g.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Chemistry, Chapter 1 — Some Basic Concepts of Chemistry (§1.8 Stoichiometry and Stoichiometric Calculations)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-chem-mc-sto-029",
+  "level": "L1",
+  "skill": "stoichiometry-basics",
+  "type": "mcq",
+  "stem": "In the reaction A + 2B → C, starting with 1 mol A and 3 mol B, the limiting reagent is:",
+  "options": [
+   {
+    "id": "a",
+    "text": "A"
+   },
+   {
+    "id": "b",
+    "text": "B"
+   },
+   {
+    "id": "c",
+    "text": "Neither — exact ratio"
+   },
+   {
+    "id": "d",
+    "text": "C"
+   }
+  ],
+  "answer": 0,
+  "hint": "1 mol A needs 2 mol B; B is in excess.",
+  "explanation": "Step 1: 1 mol A requires 2 × 1 = 2 mol B. Step 2: 3 mol B is available — more than needed. Step 3: A runs out first, so A is limiting; 1 mol B remains.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Chemistry, Chapter 1 — Some Basic Concepts of Chemistry (§1.8 Stoichiometry and Stoichiometric Calculations)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-chem-mc-sto-030",
+  "level": "L1",
+  "skill": "stoichiometry-basics",
+  "type": "mcq",
+  "stem": "Percent yield of a reaction is defined as:",
+  "options": [
+   {
+    "id": "a",
+    "text": "(theoretical yield / actual yield) × 100"
+   },
+   {
+    "id": "b",
+    "text": "(actual yield / theoretical yield) × 100"
+   },
+   {
+    "id": "c",
+    "text": "(limiting reagent / excess reagent) × 100"
+   },
+   {
+    "id": "d",
+    "text": "Moles of product × 100"
+   }
+  ],
+  "answer": 1,
+  "hint": "How much you actually got, divided by the most you could have got.",
+  "explanation": "Step 1: Theoretical yield is the maximum product from the limiting reagent. Step 2: Actual yield is what is really obtained (always ≤ theoretical). Step 3: Percent yield = (actual ÷ theoretical) × 100.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Chemistry, Chapter 1 — Some Basic Concepts of Chemistry (§1.8 Stoichiometry and Stoichiometric Calculations)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ }
+]

@@ -1,1 +1,206 @@
-[{"attached_question_ids":["jee-ma-alg-qe-001","jee-ma-alg-qe-002","jee-ma-alg-qe-025"],"channel":"Khan Academy","credit":"Khan Academy (free, CC BY-NC-SA). Embedded, not re-uploaded.","curation_note":"Duration not verified from search snippet — verify before publishing.","duration":null,"lesson_topic":"What is a quadratic equation — standard form ax² + bx + c = 0","level":"L1","platform":"youtube","title":"Introduction to the quadratic equation","transcript_key_points":["A quadratic equation is a 2nd-degree polynomial equation","Standard form: ax² + bx + c = 0, where a ≠ 0","Solving means finding the x-values (roots) that satisfy the equation"],"video_url":"https://www.youtube.com/watch?v=IWigvJcCAJ0"},{"attached_question_ids":["jee-ma-alg-qe-006","jee-ma-alg-qe-010","jee-ma-alg-qe-011","jee-ma-alg-qe-015","jee-ma-alg-qe-024","jee-ma-alg-qe-028","jee-ma-alg-qe-029"],"channel":"Khan Academy","credit":"Khan Academy (free, CC BY-NC-SA). Embedded, not re-uploaded.","curation_note":"Duration not verified from search snippet — verify before publishing.","duration":null,"lesson_topic":"Solving simple quadratics: factorising and square roots","level":"L1","platform":"youtube","title":"Solving quadratic equations — Basic example","transcript_key_points":["Isolate the squared term, then take ± square roots","Factorising: find two numbers that multiply to c and add to b","Always check both roots by substitution"],"video_url":"https://www.youtube.com/watch?v=zpE-CfCvXiE"},{"attached_question_ids":["jee-ma-alg-qe-003","jee-ma-alg-qe-004","jee-ma-alg-qe-005","jee-ma-alg-qe-013","jee-ma-alg-qe-014","jee-ma-alg-qe-019","jee-ma-alg-qe-020","jee-ma-alg-qe-022","jee-ma-alg-qe-023"],"channel":"Khan Academy","credit":"Khan Academy (free, CC BY-NC-SA). Embedded, not re-uploaded.","curation_note":"Duration not verified from search snippet — verify before publishing.","duration":null,"lesson_topic":"The discriminant and the quadratic formula — nature of roots","level":"L1","platform":"youtube","title":"Quadratic formula (proof)","transcript_key_points":["Deriving the quadratic formula by completing the square","Discriminant D = b² − 4ac decides the nature of roots","D > 0: two distinct real roots; D = 0: equal roots; D < 0: no real roots"],"video_url":"https://www.youtube.com/watch?v=mDmRYfma9C0"},{"attached_question_ids":["jee-ma-alg-qe-007","jee-ma-alg-qe-008","jee-ma-alg-qe-009","jee-ma-alg-qe-012","jee-ma-alg-qe-016","jee-ma-alg-qe-017","jee-ma-alg-qe-018","jee-ma-alg-qe-021","jee-ma-alg-qe-026","jee-ma-alg-qe-027","jee-ma-alg-qe-030"],"channel":"Khan Academy India","credit":"Khan Academy India (free). Embedded, not re-uploaded.","curation_note":"Duration not verified from search snippet — verify before publishing.","duration":null,"lesson_topic":"Sum and product of roots (−b/a, c/a); forming equations from roots","level":"L1","platform":"youtube","title":"Relation between roots and coefficients | Quadratic Equations","transcript_key_points":["Sum of roots α + β = −b/a; product αβ = c/a","Watch the sign: the sum formula has a minus sign","Form an equation from roots: x² − (sum)x + product = 0"],"video_url":"https://www.youtube.com/watch?v=k_f-l6IMFEM"}]
+[
+  {
+    "attached_question_ids": [
+      "jee-ma-alg-qe-001",
+      "jee-ma-alg-qe-002",
+      "jee-ma-alg-qe-025"
+    ],
+    "channel": "Khan Academy",
+    "credit": "Khan Academy (free, CC BY-NC-SA). Embedded, not re-uploaded.",
+    "curation_note": "Duration not verified from search snippet — verify before publishing.",
+    "duration": null,
+    "lesson_topic": "What is a quadratic equation — standard form ax² + bx + c = 0",
+    "level": "L1",
+    "platform": "youtube",
+    "title": "Introduction to the quadratic equation",
+    "transcript_key_points": [
+      "A quadratic equation is a 2nd-degree polynomial equation",
+      "Standard form: ax² + bx + c = 0, where a ≠ 0",
+      "Solving means finding the x-values (roots) that satisfy the equation"
+    ],
+    "video_url": "https://www.youtube.com/watch?v=IWigvJcCAJ0"
+  },
+  {
+    "attached_question_ids": [
+      "jee-ma-alg-qe-006",
+      "jee-ma-alg-qe-010",
+      "jee-ma-alg-qe-011",
+      "jee-ma-alg-qe-015",
+      "jee-ma-alg-qe-024",
+      "jee-ma-alg-qe-028",
+      "jee-ma-alg-qe-029"
+    ],
+    "channel": "Khan Academy",
+    "credit": "Khan Academy (free, CC BY-NC-SA). Embedded, not re-uploaded.",
+    "curation_note": "Duration not verified from search snippet — verify before publishing.",
+    "duration": null,
+    "lesson_topic": "Solving simple quadratics: factorising and square roots",
+    "level": "L1",
+    "platform": "youtube",
+    "title": "Solving quadratic equations — Basic example",
+    "transcript_key_points": [
+      "Isolate the squared term, then take ± square roots",
+      "Factorising: find two numbers that multiply to c and add to b",
+      "Always check both roots by substitution"
+    ],
+    "video_url": "https://www.youtube.com/watch?v=zpE-CfCvXiE"
+  },
+  {
+    "attached_question_ids": [
+      "jee-ma-alg-qe-003",
+      "jee-ma-alg-qe-004",
+      "jee-ma-alg-qe-005",
+      "jee-ma-alg-qe-013",
+      "jee-ma-alg-qe-014",
+      "jee-ma-alg-qe-019",
+      "jee-ma-alg-qe-020",
+      "jee-ma-alg-qe-022",
+      "jee-ma-alg-qe-023"
+    ],
+    "channel": "Khan Academy",
+    "credit": "Khan Academy (free, CC BY-NC-SA). Embedded, not re-uploaded.",
+    "curation_note": "Duration not verified from search snippet — verify before publishing.",
+    "duration": null,
+    "lesson_topic": "The discriminant and the quadratic formula — nature of roots",
+    "level": "L1",
+    "platform": "youtube",
+    "title": "Quadratic formula (proof)",
+    "transcript_key_points": [
+      "Deriving the quadratic formula by completing the square",
+      "Discriminant D = b² − 4ac decides the nature of roots",
+      "D > 0: two distinct real roots; D = 0: equal roots; D < 0: no real roots"
+    ],
+    "video_url": "https://www.youtube.com/watch?v=mDmRYfma9C0"
+  },
+  {
+    "attached_question_ids": [
+      "jee-ma-alg-qe-007",
+      "jee-ma-alg-qe-008",
+      "jee-ma-alg-qe-009",
+      "jee-ma-alg-qe-012",
+      "jee-ma-alg-qe-016",
+      "jee-ma-alg-qe-017",
+      "jee-ma-alg-qe-018",
+      "jee-ma-alg-qe-021",
+      "jee-ma-alg-qe-026",
+      "jee-ma-alg-qe-027",
+      "jee-ma-alg-qe-030"
+    ],
+    "channel": "Khan Academy India",
+    "credit": "Khan Academy India (free). Embedded, not re-uploaded.",
+    "curation_note": "Duration not verified from search snippet — verify before publishing.",
+    "duration": null,
+    "lesson_topic": "Sum and product of roots (−b/a, c/a); forming equations from roots",
+    "level": "L1",
+    "platform": "youtube",
+    "title": "Relation between roots and coefficients | Quadratic Equations",
+    "transcript_key_points": [
+      "Sum of roots α + β = −b/a; product αβ = c/a",
+      "Watch the sign: the sum formula has a minus sign",
+      "Form an equation from roots: x² − (sum)x + product = 0"
+    ],
+    "video_url": "https://www.youtube.com/watch?v=k_f-l6IMFEM"
+  },
+  {
+    "video_url": "https://www.youtube.com/watch?v=IITeKjRN4Ao",
+    "title": "Introduction to Sequence and Series — Class 11 (Ex. 8.1)",
+    "channel": "SG Sir (YouTube, free)",
+    "platform": "youtube",
+    "level": "L1",
+    "lesson_topic": "What a sequence and series are; first look at A.P. — nth term and sum",
+    "duration": null,
+    "transcript_key_points": [
+      "A sequence is an ordered arrangement of numbers; a series is the sum of its terms",
+      "A.P.: constant common difference d; nth term an = a + (n − 1)d",
+      "Sum of n terms: Sn = n/2 × (2a + (n − 1)d)"
+    ],
+    "attached_question_ids": [
+      "jee-ma-alg-ss-001",
+      "jee-ma-alg-ss-002",
+      "jee-ma-alg-ss-003",
+      "jee-ma-alg-ss-004",
+      "jee-ma-alg-ss-005"
+    ],
+    "credit": "SG Sir via YouTube (free). Embedded, not re-uploaded.",
+    "curation_note": "Duration not verified from search snippet — verify before publishing."
+  },
+  {
+    "video_url": "https://www.youtube.com/watch?v=nQD3_JJnBT0",
+    "title": "Sequences and Series Class 11 — A.P. formulas and Arithmetic Mean (Ex. 8.2)",
+    "channel": "SG Sir (YouTube, free)",
+    "platform": "youtube",
+    "level": "L1",
+    "lesson_topic": "A.P. nth term and sum worked examples; arithmetic mean and its properties",
+    "duration": null,
+    "transcript_key_points": [
+      "Finding nth term and term-number in an A.P. from NCERT examples",
+      "Sum of n terms of an A.P. — worked exercise problems",
+      "Arithmetic mean between two numbers: A = (a + b)/2"
+    ],
+    "attached_question_ids": [
+      "jee-ma-alg-ss-006",
+      "jee-ma-alg-ss-007",
+      "jee-ma-alg-ss-008",
+      "jee-ma-alg-ss-009",
+      "jee-ma-alg-ss-010",
+      "jee-ma-alg-ss-011",
+      "jee-ma-alg-ss-012",
+      "jee-ma-alg-ss-013",
+      "jee-ma-alg-ss-014",
+      "jee-ma-alg-ss-015",
+      "jee-ma-alg-ss-016",
+      "jee-ma-alg-ss-017"
+    ],
+    "credit": "SG Sir via YouTube (free). Embedded, not re-uploaded.",
+    "curation_note": "Duration not verified from search snippet — verify before publishing."
+  },
+  {
+    "video_url": "https://www.youtube.com/watch?v=pVX8_vNbta4",
+    "title": "Sequence and Series — Full Chapter One Shot (Class 11)",
+    "channel": "Physics Wallah — Uday (YouTube, free)",
+    "platform": "youtube",
+    "level": "L1",
+    "lesson_topic": "G.P. general term and sum; geometric mean; relation between A.M. and G.M.",
+    "duration": null,
+    "transcript_key_points": [
+      "G.P.: general term an = ar^(n−1); sum of n terms; infinite G.P. sum",
+      "Geometric mean: G = √(ab); inserting geometric means",
+      "Relation between A.M. and G.M.: A.M. ≥ G.M., equality when a = b"
+    ],
+    "attached_question_ids": [
+      "jee-ma-alg-ss-018",
+      "jee-ma-alg-ss-019",
+      "jee-ma-alg-ss-020",
+      "jee-ma-alg-ss-021",
+      "jee-ma-alg-ss-022",
+      "jee-ma-alg-ss-023",
+      "jee-ma-alg-ss-024",
+      "jee-ma-alg-ss-025",
+      "jee-ma-alg-ss-026",
+      "jee-ma-alg-ss-027",
+      "jee-ma-alg-ss-028",
+      "jee-ma-alg-ss-029"
+    ],
+    "credit": "Physics Wallah via YouTube (free). Embedded, not re-uploaded.",
+    "curation_note": "Duration not verified from search snippet — verify before publishing."
+  },
+  {
+    "video_url": "https://www.youtube.com/watch?v=SIRDiVPHMVk",
+    "title": "Sequence and Series — Complete Revision (Class 11 & 12)",
+    "channel": "YouTube (free)",
+    "platform": "youtube",
+    "level": "L1",
+    "lesson_topic": "Full-chapter revision: AP, GP, means, special series sums (Σn)",
+    "duration": null,
+    "transcript_key_points": [
+      "nth-term and sum formulas for AP and GP side by side",
+      "AM and GM with exam tricks",
+      "Sum of special series: Σn = n(n+1)/2"
+    ],
+    "attached_question_ids": [
+      "jee-ma-alg-ss-030"
+    ],
+    "credit": "YouTube (free). Embedded, not re-uploaded.",
+    "curation_note": "Duration not verified from search snippet — verify before publishing."
+  }
+]

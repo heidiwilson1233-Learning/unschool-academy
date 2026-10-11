@@ -1,0 +1,962 @@
+[
+ {
+  "id": "neet-bio-hp-exc-001",
+  "level": "L1",
+  "skill": "excretion",
+  "type": "mcq",
+  "stem": "Which of the following nitrogenous wastes is the most toxic and is excreted mainly by aquatic animals?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Ammonia"
+   },
+   {
+    "id": "b",
+    "text": "Urea"
+   },
+   {
+    "id": "c",
+    "text": "Uric acid"
+   },
+   {
+    "id": "d",
+    "text": "Creatinine"
+   }
+  ],
+  "answer": 0,
+  "hint": "Think of the waste that needs the most water to flush out safely.",
+  "explanation": "Step 1: Nitrogenous wastes differ in toxicity — ammonia > urea > uric acid. Step 2: Ammonia is highly toxic and soluble, so it must be diluted in large volumes of water. Step 3: Aquatic animals (many bony fishes, amphibian tadpoles) excrete ammonia directly and are called ammonotelic.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 19 — Excretory Products and Their Elimination (§19.0 Introduction)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-exc-002",
+  "level": "L1",
+  "skill": "excretion",
+  "type": "mcq",
+  "stem": "Humans are ureotelic. What does this mean?",
+  "options": [
+   {
+    "id": "a",
+    "text": "They excrete ammonia directly"
+   },
+   {
+    "id": "b",
+    "text": "They excrete urea as the main nitrogenous waste"
+   },
+   {
+    "id": "c",
+    "text": "They excrete uric acid as pellets"
+   },
+   {
+    "id": "d",
+    "text": "They do not excrete nitrogenous waste"
+   }
+  ],
+  "answer": 1,
+  "hint": "Ureo- points to the waste humans mainly produce.",
+  "explanation": "Step 1: 'Ureotelic' comes from urea. Step 2: Mammals (including humans), marine fishes and many amphibians convert toxic ammonia into less toxic urea in the liver. Step 3: Urea is then filtered out by the kidneys and excreted in urine.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 19 — Excretory Products and Their Elimination (§19.0 Introduction)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-exc-003",
+  "level": "L1",
+  "skill": "excretion",
+  "type": "mcq",
+  "stem": "Which group of animals is uricotelic, excreting nitrogenous waste mainly as uric acid?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Mammals"
+   },
+   {
+    "id": "b",
+    "text": "Marine fishes"
+   },
+   {
+    "id": "c",
+    "text": "Birds and reptiles"
+   },
+   {
+    "id": "d",
+    "text": "Aquatic amphibians"
+   }
+  ],
+  "answer": 2,
+  "hint": "Think of animals that lay shelled eggs on land and must conserve water.",
+  "explanation": "Step 1: Uric acid is the least toxic and least soluble nitrogenous waste, excreted as a paste with minimal water loss. Step 2: This suits animals with limited water — birds, reptiles and insects. Step 3: They are called uricotelic.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 19 — Excretory Products and Their Elimination (§19.0 Introduction)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-exc-004",
+  "level": "L1",
+  "skill": "excretion",
+  "type": "mcq",
+  "stem": "In humans, urea is mainly synthesised in which organ?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Kidney"
+   },
+   {
+    "id": "b",
+    "text": "Liver"
+   },
+   {
+    "id": "c",
+    "text": "Spleen"
+   },
+   {
+    "id": "d",
+    "text": "Pancreas"
+   }
+  ],
+  "answer": 1,
+  "hint": "The organ that also detoxifies blood and makes bile.",
+  "explanation": "Step 1: Ammonia from protein metabolism is toxic and must be converted. Step 2: This conversion happens through the ornithine (urea) cycle. Step 3: The urea cycle operates in the liver; urea then travels in blood to the kidneys for excretion.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 19 — Excretory Products and Their Elimination (§19.0 Introduction)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-exc-005",
+  "level": "L1",
+  "skill": "excretion",
+  "type": "mcq",
+  "stem": "Urine formed in the kidney reaches the urinary bladder through the:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Urethra"
+   },
+   {
+    "id": "b",
+    "text": "Ureters"
+   },
+   {
+    "id": "c",
+    "text": "Renal vein"
+   },
+   {
+    "id": "d",
+    "text": "Collecting duct"
+   }
+  ],
+  "answer": 1,
+  "hint": "Two muscular tubes, one from each kidney, carry urine down.",
+  "explanation": "Step 1: Urine collects in the renal pelvis of each kidney. Step 2: From there it flows down a pair of thin muscular tubes. Step 3: These ureters carry urine to the urinary bladder (the urethra carries it out of the body).",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 19 — Excretory Products and Their Elimination (§19.1 Human Excretory System)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-exc-006",
+  "level": "L1",
+  "skill": "excretion",
+  "type": "mcq",
+  "stem": "The structural and functional unit of the kidney is the:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Glomerulus"
+   },
+   {
+    "id": "b",
+    "text": "Nephron"
+   },
+   {
+    "id": "c",
+    "text": "Ureter"
+   },
+   {
+    "id": "d",
+    "text": "Renal pelvis"
+   }
+  ],
+  "answer": 1,
+  "hint": "One word: the microscopic tubule where urine is actually formed.",
+  "explanation": "Step 1: Each kidney contains about a million microscopic filtering units. Step 2: Each unit — glomerulus plus its renal tubule — filters blood and forms urine. Step 3: This unit is the nephron, the structural and functional unit of the kidney.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 19 — Excretory Products and Their Elimination (§19.1 Human Excretory System)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-exc-007",
+  "level": "L1",
+  "skill": "excretion",
+  "type": "mcq",
+  "stem": "Approximately how many nephrons does each human kidney contain?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Ten thousand"
+   },
+   {
+    "id": "b",
+    "text": "One lakh"
+   },
+   {
+    "id": "c",
+    "text": "About one million"
+   },
+   {
+    "id": "d",
+    "text": "About ten million"
+   }
+  ],
+  "answer": 2,
+  "hint": "More than a lakh, far fewer than a crore.",
+  "explanation": "Step 1: Nephrons are microscopic, so a kidney packs in a very large number. Step 2: NCERT states each kidney has nearly one million nephrons. Step 3: This huge number gives the kidney its enormous filtering surface.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 19 — Excretory Products and Their Elimination (§19.1 Human Excretory System)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-exc-008",
+  "level": "L1",
+  "skill": "excretion",
+  "type": "mcq",
+  "stem": "The glomerulus is best described as:",
+  "options": [
+   {
+    "id": "a",
+    "text": "A cup-shaped capsule"
+   },
+   {
+    "id": "b",
+    "text": "A tuft of capillaries"
+   },
+   {
+    "id": "c",
+    "text": "A long coiled tubule"
+   },
+   {
+    "id": "d",
+    "text": "A muscular sphincter"
+   }
+  ],
+  "answer": 1,
+  "hint": "Think of a tiny ball of blood vessels where filtration begins.",
+  "explanation": "Step 1: Blood enters the nephron through the afferent arteriole. Step 2: Inside Bowman's capsule this arteriole branches into a tuft of capillaries. Step 3: This capillary tuft is the glomerulus — the site of blood filtration.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 19 — Excretory Products and Their Elimination (§19.1 Human Excretory System)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-exc-009",
+  "level": "L1",
+  "skill": "excretion",
+  "type": "mcq",
+  "stem": "Bowman's capsule is:",
+  "options": [
+   {
+    "id": "a",
+    "text": "The funnel that collects urine from many nephrons"
+   },
+   {
+    "id": "b",
+    "text": "A double-walled cup enclosing the glomerulus"
+   },
+   {
+    "id": "c",
+    "text": "The U-shaped part of the tubule"
+   },
+   {
+    "id": "d",
+    "text": "The outer region of the kidney"
+   }
+  ],
+  "answer": 1,
+  "hint": "It cups the glomerulus like a catcher's mitt.",
+  "explanation": "Step 1: The nephron begins with the glomerulus. Step 2: Around it sits a double-walled, cup-shaped structure. Step 3: This is Bowman's capsule; together with the glomerulus it forms the renal (Malpighian) corpuscle where filtrate collects.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 19 — Excretory Products and Their Elimination (§19.1 Human Excretory System)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-exc-010",
+  "level": "L1",
+  "skill": "excretion",
+  "type": "mcq",
+  "stem": "Which region of the kidney is the outer zone?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Medulla"
+   },
+   {
+    "id": "b",
+    "text": "Cortex"
+   },
+   {
+    "id": "c",
+    "text": "Pelvis"
+   },
+   {
+    "id": "d",
+    "text": "Calyx"
+   }
+  ],
+  "answer": 1,
+  "hint": "Cortex is to the kidney what bark is to a tree — the outer layer.",
+  "explanation": "Step 1: A longitudinal section of the kidney shows two zones. Step 2: The outer zone is the cortex and the inner zone is the medulla. Step 3: The medulla is divided into cone-shaped medullary pyramids projecting into the calyces.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 19 — Excretory Products and Their Elimination (§19.1 Human Excretory System)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-exc-011",
+  "level": "L1",
+  "skill": "excretion",
+  "type": "mcq",
+  "stem": "The proximal convoluted tubule (PCT) is the site where:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Nearly all glucose and amino acids are reabsorbed"
+   },
+   {
+    "id": "b",
+    "text": "Urine is finally concentrated under ADH"
+   },
+   {
+    "id": "c",
+    "text": "Blood is first filtered"
+   },
+   {
+    "id": "d",
+    "text": "Urea is synthesised"
+   }
+  ],
+  "answer": 0,
+  "hint": "The PCT does the bulk of the reclaiming work — including 100% of glucose.",
+  "explanation": "Step 1: Filtrate entering the PCT still contains useful substances like glucose and amino acids. Step 2: The PCT reabsorbs nearly all of the glucose and amino acids plus about 65% of water and Na+. Step 3: Its cells have brush-border microvilli to maximise reabsorption surface.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 19 — Excretory Products and Their Elimination (§19.2 Urine Formation)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-exc-012",
+  "level": "L1",
+  "skill": "excretion",
+  "type": "mcq",
+  "stem": "The loop of Henle plays its main role in:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Filtering blood plasma"
+   },
+   {
+    "id": "b",
+    "text": "Concentrating urine via the counter-current mechanism"
+   },
+   {
+    "id": "c",
+    "text": "Secreting hydrogen ions"
+   },
+   {
+    "id": "d",
+    "text": "Producing erythropoietin"
+   }
+  ],
+  "answer": 1,
+  "hint": "Its U-shape in the medulla builds the salt gradient that concentrates urine.",
+  "explanation": "Step 1: The loop of Henle dips into the medulla with descending and ascending limbs. Step 2: Together with the vasa recta it operates a counter-current mechanism that maintains a high salt concentration in the medullary interstitium. Step 3: This gradient lets the kidney produce concentrated urine and conserve water.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 19 — Excretory Products and Their Elimination (§19.2 Urine Formation)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-exc-013",
+  "level": "L1",
+  "skill": "excretion",
+  "type": "mcq",
+  "stem": "Which of the following substances is normally NOT found in the glomerular filtrate?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Glucose"
+   },
+   {
+    "id": "b",
+    "text": "Urea"
+   },
+   {
+    "id": "c",
+    "text": "Red blood cells"
+   },
+   {
+    "id": "d",
+    "text": "Amino acids"
+   }
+  ],
+  "answer": 2,
+  "hint": "Filtration lets small molecules through — but not cells.",
+  "explanation": "Step 1: The glomerular filtration membrane allows water and small solutes (glucose, amino acids, urea, ions) to pass. Step 2: Cells and large plasma proteins are too big to cross. Step 3: So red blood cells are absent from normal filtrate; their presence in urine indicates a problem.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 19 — Excretory Products and Their Elimination (§19.2 Urine Formation)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-exc-014",
+  "level": "L1",
+  "skill": "excretion",
+  "type": "mcq",
+  "stem": "The glomerular filtration rate (GFR) in a healthy adult is approximately:",
+  "options": [
+   {
+    "id": "a",
+    "text": "25 mL/min"
+   },
+   {
+    "id": "b",
+    "text": "125 mL/min"
+   },
+   {
+    "id": "c",
+    "text": "500 mL/min"
+   },
+   {
+    "id": "d",
+    "text": "1.5 L/min"
+   }
+  ],
+  "answer": 1,
+  "hint": "About an eighth of a litre every minute.",
+  "explanation": "Step 1: GFR is the volume of filtrate formed by both kidneys per minute. Step 2: In a healthy adult it is about 125 mL per minute. Step 3: That is roughly 180 litres of filtrate per day, of which only ~1–1.5 L leaves as urine.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 19 — Excretory Products and Their Elimination (§19.2 Urine Formation)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-exc-015",
+  "level": "L1",
+  "skill": "excretion",
+  "type": "mcq",
+  "stem": "Glomerular filtration is driven mainly by:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Osmotic pressure of plasma proteins"
+   },
+   {
+    "id": "b",
+    "text": "Hydrostatic (blood) pressure in the glomerulus"
+   },
+   {
+    "id": "c",
+    "text": "Active transport by tubule cells"
+   },
+   {
+    "id": "d",
+    "text": "Gravity"
+   }
+  ],
+  "answer": 1,
+  "hint": "Blood pressure pushes fluid out of the capillaries.",
+  "explanation": "Step 1: The afferent arteriole is wider than the efferent arteriole, so pressure builds in the glomerulus. Step 2: This hydrostatic pressure forces water and small solutes across the filtration membrane. Step 3: It is opposed by osmotic pressure and capsular pressure, but the net filtration pressure stays positive.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 19 — Excretory Products and Their Elimination (§19.2 Urine Formation)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-exc-016",
+  "level": "L1",
+  "skill": "excretion",
+  "type": "mcq",
+  "stem": "Tubular secretion is the process by which:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Useful substances are reabsorbed into blood"
+   },
+   {
+    "id": "b",
+    "text": "Unwanted substances move from blood into the tubule"
+   },
+   {
+    "id": "c",
+    "text": "Water is conserved in the medulla"
+   },
+   {
+    "id": "d",
+    "text": "The bladder empties"
+   }
+  ],
+  "answer": 1,
+  "hint": "Secretion is the opposite direction to reabsorption — into the tubule, out of the body.",
+  "explanation": "Step 1: Besides filtration and reabsorption, the nephron actively moves some substances from peritubular capillaries into the tubular fluid. Step 2: These include H+, K+, ammonia and certain drugs. Step 3: This tubular secretion helps eliminate wastes and fine-tune blood pH.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 19 — Excretory Products and Their Elimination (§19.2 Urine Formation)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-exc-017",
+  "level": "L1",
+  "skill": "excretion",
+  "type": "mcq",
+  "stem": "ADH (vasopressin) increases urine concentration by:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Increasing GFR"
+   },
+   {
+    "id": "b",
+    "text": "Increasing water reabsorption in the collecting duct"
+   },
+   {
+    "id": "c",
+    "text": "Blocking Na+ reabsorption"
+   },
+   {
+    "id": "d",
+    "text": "Dilating the afferent arteriole"
+   }
+  ],
+  "answer": 1,
+  "hint": "ADH = anti-diuretic = less water lost as urine.",
+  "explanation": "Step 1: When the body is dehydrated, the hypothalamus releases ADH. Step 2: ADH makes the collecting duct walls more permeable to water. Step 3: More water is reabsorbed into the blood, so a smaller volume of concentrated urine is produced.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 19 — Excretory Products and Their Elimination (§19.3 Function of the Tubules)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-exc-018",
+  "level": "L1",
+  "skill": "excretion",
+  "type": "mcq",
+  "stem": "Aldosterone acts mainly on which part of the nephron to regulate Na+?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Glomerulus"
+   },
+   {
+    "id": "b",
+    "text": "Proximal convoluted tubule"
+   },
+   {
+    "id": "c",
+    "text": "Distal convoluted tubule and collecting duct"
+   },
+   {
+    "id": "d",
+    "text": "Loop of Henle"
+   }
+  ],
+  "answer": 2,
+  "hint": "The 'late' segments fine-tune salt under hormonal control.",
+  "explanation": "Step 1: Aldosterone is released by the adrenal cortex when blood Na+ is low. Step 2: It acts on the DCT and collecting duct. Step 3: It increases Na+ reabsorption (and water follows), raising blood volume and pressure.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 19 — Excretory Products and Their Elimination (§19.3 Function of the Tubules)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-exc-019",
+  "level": "L1",
+  "skill": "excretion",
+  "type": "mcq",
+  "stem": "The vasa recta is:",
+  "options": [
+   {
+    "id": "a",
+    "text": "A network of capillaries around the loop of Henle"
+   },
+   {
+    "id": "b",
+    "text": "The cup enclosing the glomerulus"
+   },
+   {
+    "id": "c",
+    "text": "The tube carrying urine to the bladder"
+   },
+   {
+    "id": "d",
+    "text": "A hormone secreted by the kidney"
+   }
+  ],
+  "answer": 0,
+  "hint": "'Recta' = straight — straight capillaries running alongside the loop.",
+  "explanation": "Step 1: The loop of Henle is surrounded by a special capillary network. Step 2: These long, straight capillaries are the vasa recta. Step 3: Together with the loop they maintain the medullary salt gradient via counter-current exchange.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 19 — Excretory Products and Their Elimination (§19.2 Urine Formation)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-exc-020",
+  "level": "L1",
+  "skill": "excretion",
+  "type": "mcq",
+  "stem": "Which cells of the PCT have a brush border that increases reabsorptive surface area?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Podocytes"
+   },
+   {
+    "id": "b",
+    "text": "Cuboidal epithelial cells with microvilli"
+   },
+   {
+    "id": "c",
+    "text": "Squamous cells"
+   },
+   {
+    "id": "d",
+    "text": "Macula densa cells"
+   }
+  ],
+  "answer": 1,
+  "hint": "Microvilli = microscopic brushes on the tubule lining.",
+  "explanation": "Step 1: The PCT must reabsorb huge amounts of solute and water. Step 2: Its lining of cuboidal epithelial cells bears dense microvilli — the brush border. Step 3: This enormously increases surface area for reabsorption; podocytes instead line Bowman's capsule.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 19 — Excretory Products and Their Elimination (§19.2 Urine Formation)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-exc-021",
+  "level": "L1",
+  "skill": "excretion",
+  "type": "mcq",
+  "stem": "The process of expelling urine from the bladder is called:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Filtration"
+   },
+   {
+    "id": "b",
+    "text": "Micturition"
+   },
+   {
+    "id": "c",
+    "text": "Secretion"
+   },
+   {
+    "id": "d",
+    "text": "Osmoregulation"
+   }
+  ],
+  "answer": 1,
+  "hint": "The technical term for urination.",
+  "explanation": "Step 1: Urine stored in the bladder stretches its wall, triggering a reflex. Step 2: The detrusor muscle contracts and the sphincter relaxes. Step 3: This neural reflex expelling urine is called micturition.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 19 — Excretory Products and Their Elimination (§19.4 Mechanism of Concentration of the Filtrate)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-exc-022",
+  "level": "L1",
+  "skill": "excretion",
+  "type": "mcq",
+  "stem": "An average healthy adult excretes about how much urine per day?",
+  "options": [
+   {
+    "id": "a",
+    "text": "180 litres"
+   },
+   {
+    "id": "b",
+    "text": "15 litres"
+   },
+   {
+    "id": "c",
+    "text": "1 to 1.5 litres"
+   },
+   {
+    "id": "d",
+    "text": "50 mL"
+   }
+  ],
+  "answer": 2,
+  "hint": "Far less than the 180 L filtered — most water is reclaimed.",
+  "explanation": "Step 1: About 180 L of filtrate forms daily. Step 2: Roughly 99% of the water is reabsorbed along the tubules. Step 3: Only about 1–1.5 L is finally excreted as urine per day.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 19 — Excretory Products and Their Elimination (§19.2 Urine Formation)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-exc-023",
+  "level": "L1",
+  "skill": "excretion",
+  "type": "mcq",
+  "stem": "The pH of normal human urine is approximately:",
+  "options": [
+   {
+    "id": "a",
+    "text": "7.4"
+   },
+   {
+    "id": "b",
+    "text": "6.0"
+   },
+   {
+    "id": "c",
+    "text": "8.5"
+   },
+   {
+    "id": "d",
+    "text": "4.0"
+   }
+  ],
+  "answer": 1,
+  "hint": "Slightly acidic — around six.",
+  "explanation": "Step 1: Blood pH is tightly held near 7.4, and the kidney excretes excess H+. Step 2: This makes urine mildly acidic on average. Step 3: Normal urine pH is about 6.0 (range roughly 4.5–8 depending on diet).",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 19 — Excretory Products and Their Elimination (§19.5 Regulation of Kidney Function)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-exc-024",
+  "level": "L1",
+  "skill": "excretion",
+  "type": "mcq",
+  "stem": "Kidney stones most commonly form from crystallised deposits of:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Sodium chloride"
+   },
+   {
+    "id": "b",
+    "text": "Calcium oxalate"
+   },
+   {
+    "id": "c",
+    "text": "Glucose"
+   },
+   {
+    "id": "d",
+    "text": "Urea"
+   }
+  ],
+  "answer": 1,
+  "hint": "The commonest stone salt pairs calcium with oxalate.",
+  "explanation": "Step 1: When urine becomes supersaturated, salts can crystallise in the kidney. Step 2: The most frequent stones are calcium oxalate (also calcium phosphate, uric acid). Step 3: This condition is called nephrolithiasis; small stones may pass, large ones need treatment.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 19 — Excretory Products and Their Elimination (§19.6 Disorders of the Excretory System)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-exc-025",
+  "level": "L1",
+  "skill": "excretion",
+  "type": "mcq",
+  "stem": "Uremia refers to:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Presence of glucose in urine"
+   },
+   {
+    "id": "b",
+    "text": "Abnormally high urea in the blood"
+   },
+   {
+    "id": "c",
+    "text": "Kidney stones"
+   },
+   {
+    "id": "d",
+    "text": "Inflammation of the bladder"
+   }
+  ],
+  "answer": 1,
+  "hint": "Ur-emia: urea in the blood (haemia).",
+  "explanation": "Step 1: When kidneys fail, they cannot clear urea from blood. Step 2: Urea accumulates to harmful levels — a condition called uremia. Step 3: It is treated by hemodialysis (artificial kidney) or kidney transplant.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 19 — Excretory Products and Their Elimination (§19.6 Disorders of the Excretory System)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-exc-026",
+  "level": "L1",
+  "skill": "excretion",
+  "type": "mcq",
+  "stem": "In hemodialysis, urea is removed from blood because:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Blood cells are filtered out"
+   },
+   {
+    "id": "b",
+    "text": "Urea diffuses across a semipermeable membrane into dialysing fluid"
+   },
+   {
+    "id": "c",
+    "text": "The liver converts it to ammonia"
+   },
+   {
+    "id": "d",
+    "text": "ADH is administered"
+   }
+  ],
+  "answer": 1,
+  "hint": "Dialysis works on simple diffusion down a concentration gradient.",
+  "explanation": "Step 1: The patient's blood flows on one side of a cellophane (semipermeable) membrane. Step 2: Dialysing fluid with the same composition as plasma minus wastes flows on the other side. Step 3: Urea and excess ions diffuse out of blood into the fluid; cells and proteins are too large to cross.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 19 — Excretory Products and Their Elimination (§19.6 Disorders of the Excretory System)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-exc-027",
+  "level": "L1",
+  "skill": "excretion",
+  "type": "mcq",
+  "stem": "Which part of the nephron is primarily responsible for the reabsorption of bicarbonate (HCO3−) and thus blood pH balance?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Glomerulus"
+   },
+   {
+    "id": "b",
+    "text": "Proximal convoluted tubule"
+   },
+   {
+    "id": "c",
+    "text": "Collecting duct"
+   },
+   {
+    "id": "d",
+    "text": "Renal pelvis"
+   }
+  ],
+  "answer": 1,
+  "hint": "The PCT reclaims the bulk of filtered bicarbonate.",
+  "explanation": "Step 1: Bicarbonate buffers blood pH and is freely filtered. Step 2: About 80–90% of filtered HCO3− is reabsorbed in the PCT. Step 3: This reclamation is central to the kidney's role in acid–base balance.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 19 — Excretory Products and Their Elimination (§19.3 Function of the Tubules)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-exc-028",
+  "level": "L1",
+  "skill": "excretion",
+  "type": "mcq",
+  "stem": "The renal pelvis is:",
+  "options": [
+   {
+    "id": "a",
+    "text": "The outer zone of the kidney"
+   },
+   {
+    "id": "b",
+    "text": "A funnel-shaped space collecting urine from calyces"
+   },
+   {
+    "id": "c",
+    "text": "The functional unit of the kidney"
+   },
+   {
+    "id": "d",
+    "text": "A blood vessel entering the kidney"
+   }
+  ],
+  "answer": 1,
+  "hint": "Pelvis = basin; it gathers urine before the ureter.",
+  "explanation": "Step 1: Urine from collecting ducts drains through papillae into minor and major calyces. Step 2: The calyces open into a broad funnel-shaped cavity. Step 3: This renal pelvis narrows into the ureter, which carries urine to the bladder.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 19 — Excretory Products and Their Elimination (§19.1 Human Excretory System)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-exc-029",
+  "level": "L1",
+  "skill": "excretion",
+  "type": "mcq",
+  "stem": "Which of the following is a correct match of nephron part to its main function?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Glomerulus — reabsorption of glucose"
+   },
+   {
+    "id": "b",
+    "text": "Loop of Henle — filtration of blood"
+   },
+   {
+    "id": "c",
+    "text": "PCT — reabsorption of most solutes"
+   },
+   {
+    "id": "d",
+    "text": "Collecting duct — synthesis of urea"
+   }
+  ],
+  "answer": 2,
+  "hint": "Match each part to what it actually does.",
+  "explanation": "Step 1: Glomerulus filters (not reabsorbs); loop of Henle concentrates (does not filter). Step 2: The PCT reabsorbs nearly all glucose/amino acids and most water and salts. Step 3: Urea is made in the liver, not the collecting duct — so only the PCT match is correct.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 19 — Excretory Products and Their Elimination (§19.2 Urine Formation)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "neet-bio-hp-exc-030",
+  "level": "L1",
+  "skill": "excretion",
+  "type": "mcq",
+  "stem": "Juxtaglomerular apparatus (JGA) is formed by cellular modifications of:",
+  "options": [
+   {
+    "id": "a",
+    "text": "The PCT and the glomerulus"
+   },
+   {
+    "id": "b",
+    "text": "The DCT and the afferent arteriole"
+   },
+   {
+    "id": "c",
+    "text": "The collecting duct and vasa recta"
+   },
+   {
+    "id": "d",
+    "text": "Bowman's capsule and the ureter"
+   }
+  ],
+  "answer": 1,
+  "hint": "It sits where the DCT passes between the two arterioles of its own glomerulus.",
+  "explanation": "Step 1: As the DCT loops back, it passes between the afferent and efferent arterioles. Step 2: Here, DCT cells become macula densa and arteriole cells become juxtaglomerular cells. Step 3: This JGA senses blood pressure and Na+ levels and regulates GFR and renin release.",
+  "difficulty": 1,
+  "source": "NCERT Class 11 Biology, Chapter 19 — Excretory Products and Their Elimination (§19.5 Regulation of Kidney Function)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ }
+]

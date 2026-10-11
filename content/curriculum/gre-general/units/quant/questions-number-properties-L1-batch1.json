@@ -1,0 +1,962 @@
+[
+ {
+  "id": "gre-q-np-001",
+  "level": "L1",
+  "skill": "number-properties",
+  "type": "mcq",
+  "stem": "Which of the following is an odd number?",
+  "options": [
+   {
+    "id": "a",
+    "text": "14"
+   },
+   {
+    "id": "b",
+    "text": "22"
+   },
+   {
+    "id": "c",
+    "text": "37"
+   },
+   {
+    "id": "d",
+    "text": "40"
+   }
+  ],
+  "answer": 2,
+  "hint": "An odd number is not divisible by 2.",
+  "explanation": "14 \u00f7 2 = 7 (even), 22 \u00f7 2 = 11 (even), 37 \u00f7 2 = 18.5 \u2014 not whole, so 37 is odd, 40 \u00f7 2 = 20 (even). Answer: 37.",
+  "difficulty": 1,
+  "source": "ETS Official GRE Guide \u2014 Number Properties (even/odd rules, primes, divisibility)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "gre-q-np-002",
+  "level": "L1",
+  "skill": "number-properties",
+  "type": "mcq",
+  "stem": "If x is an odd integer and y is an even integer, what is x + y?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Always odd"
+   },
+   {
+    "id": "b",
+    "text": "Always even"
+   },
+   {
+    "id": "c",
+    "text": "Always zero"
+   },
+   {
+    "id": "d",
+    "text": "Cannot be determined"
+   }
+  ],
+  "answer": 0,
+  "hint": "Try small examples: 3 + 4.",
+  "explanation": "Odd + even = odd. 3 + 4 = 7; 11 + 2 = 13. An odd plus an even always gives an odd result.",
+  "difficulty": 1,
+  "source": "ETS Official GRE Guide \u2014 Number Properties (even/odd rules, primes, divisibility)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "gre-q-np-003",
+  "level": "L1",
+  "skill": "number-properties",
+  "type": "mcq",
+  "stem": "If a is an even integer and b is an even integer, what is a \u00d7 b?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Always odd"
+   },
+   {
+    "id": "b",
+    "text": "Always even"
+   },
+   {
+    "id": "c",
+    "text": "Could be odd or even"
+   },
+   {
+    "id": "d",
+    "text": "Always zero"
+   }
+  ],
+  "answer": 1,
+  "hint": "Multiply two small evens: 2 \u00d7 4.",
+  "explanation": "Even \u00d7 even = even. 2 \u00d7 4 = 8; 6 \u00d7 10 = 60. The product of two even integers is always even.",
+  "difficulty": 1,
+  "source": "ETS Official GRE Guide \u2014 Number Properties (even/odd rules, primes, divisibility)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "gre-q-np-004",
+  "level": "L1",
+  "skill": "number-properties",
+  "type": "mcq",
+  "stem": "Which of the following sums is odd?",
+  "options": [
+   {
+    "id": "a",
+    "text": "8 + 12"
+   },
+   {
+    "id": "b",
+    "text": "7 + 9"
+   },
+   {
+    "id": "c",
+    "text": "15 + 22"
+   },
+   {
+    "id": "d",
+    "text": "30 + 44"
+   }
+  ],
+  "answer": 2,
+  "hint": "odd + odd = even; even + odd = odd.",
+  "explanation": "8 + 12 = 20 (even), 7 + 9 = 16 (even), 15 + 22 = 37 (odd \u2014 even added to odd gives odd), 30 + 44 = 74 (even). Answer: 15 + 22.",
+  "difficulty": 1,
+  "source": "ETS Official GRE Guide \u2014 Number Properties (even/odd rules, primes, divisibility)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "gre-q-np-005",
+  "level": "L1",
+  "skill": "number-properties",
+  "type": "mcq",
+  "stem": "If n is an odd integer, which of the following must be even?",
+  "options": [
+   {
+    "id": "a",
+    "text": "n + 1"
+   },
+   {
+    "id": "b",
+    "text": "n + 2"
+   },
+   {
+    "id": "c",
+    "text": "2n + 1"
+   },
+   {
+    "id": "d",
+    "text": "n"
+   }
+  ],
+  "answer": 0,
+  "hint": "Add 1 to an odd number and check parity.",
+  "explanation": "n = 3: n + 1 = 4 (even), n + 2 = 5 (odd), 2n + 1 = 7 (odd), n = 3 (odd). Only n + 1 is guaranteed even for any odd n.",
+  "difficulty": 1,
+  "source": "ETS Official GRE Guide \u2014 Number Properties (even/odd rules, primes, divisibility)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "gre-q-np-006",
+  "level": "L1",
+  "skill": "number-properties",
+  "type": "mcq",
+  "stem": "The product of three odd integers is:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Always odd"
+   },
+   {
+    "id": "b",
+    "text": "Always even"
+   },
+   {
+    "id": "c",
+    "text": "Zero"
+   },
+   {
+    "id": "d",
+    "text": "Cannot be determined"
+   }
+  ],
+  "answer": 0,
+  "hint": "Multiply 3 \u00d7 5 \u00d7 7.",
+  "explanation": "Odd \u00d7 odd = odd, and odd \u00d7 odd = odd again. 3 \u00d7 5 \u00d7 7 = 105, odd. Any count of odd factors multiplied together gives an odd product.",
+  "difficulty": 1,
+  "source": "ETS Official GRE Guide \u2014 Number Properties (even/odd rules, primes, divisibility)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "gre-q-np-007",
+  "level": "L1",
+  "skill": "number-properties",
+  "type": "mcq",
+  "stem": "Which of the following is a prime number?",
+  "options": [
+   {
+    "id": "a",
+    "text": "9"
+   },
+   {
+    "id": "b",
+    "text": "15"
+   },
+   {
+    "id": "c",
+    "text": "17"
+   },
+   {
+    "id": "d",
+    "text": "21"
+   }
+  ],
+  "answer": 2,
+  "hint": "A prime has exactly two factors: 1 and itself.",
+  "explanation": "9 = 3 \u00d7 3, 15 = 3 \u00d7 5, 17 has only factors 1 and 17 (prime), 21 = 3 \u00d7 7. Answer: 17.",
+  "difficulty": 1,
+  "source": "ETS Official GRE Guide \u2014 Number Properties (even/odd rules, primes, divisibility)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "gre-q-np-008",
+  "level": "L1",
+  "skill": "number-properties",
+  "type": "mcq",
+  "stem": "What is the smallest prime number?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0"
+   },
+   {
+    "id": "b",
+    "text": "1"
+   },
+   {
+    "id": "c",
+    "text": "2"
+   },
+   {
+    "id": "d",
+    "text": "3"
+   }
+  ],
+  "answer": 2,
+  "hint": "Check which has exactly two factors.",
+  "explanation": "0 is not prime, 1 has only one factor (not prime), 2 has factors 1 and 2 (prime). 2 is the smallest prime \u2014 and the only even prime.",
+  "difficulty": 1,
+  "source": "ETS Official GRE Guide \u2014 Number Properties (even/odd rules, primes, divisibility)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "gre-q-np-009",
+  "level": "L1",
+  "skill": "number-properties",
+  "type": "mcq",
+  "stem": "How many prime numbers are there between 10 and 20?",
+  "options": [
+   {
+    "id": "a",
+    "text": "2"
+   },
+   {
+    "id": "b",
+    "text": "3"
+   },
+   {
+    "id": "c",
+    "text": "4"
+   },
+   {
+    "id": "d",
+    "text": "5"
+   }
+  ],
+  "answer": 2,
+  "hint": "List candidates and test each: 11\u201319.",
+  "explanation": "Candidates: 11, 12, 13, 14, 15, 16, 17, 18, 19. Primes: 11, 13, 17, 19. That's 4.",
+  "difficulty": 1,
+  "source": "Manhattan Prep 5 lb. Book of GRE Practice Problems \u2014 Number Properties (factors, multiples, remainders)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "gre-q-np-010",
+  "level": "L1",
+  "skill": "number-properties",
+  "type": "mcq",
+  "stem": "Which of the following numbers is NOT prime?",
+  "options": [
+   {
+    "id": "a",
+    "text": "2"
+   },
+   {
+    "id": "b",
+    "text": "13"
+   },
+   {
+    "id": "c",
+    "text": "29"
+   },
+   {
+    "id": "d",
+    "text": "39"
+   }
+  ],
+  "answer": 3,
+  "hint": "Test each for factors besides 1 and itself.",
+  "explanation": "2, 13, 29 are prime. 39 = 3 \u00d7 13, so 39 is not prime.",
+  "difficulty": 1,
+  "source": "ETS Official GRE Guide \u2014 Number Properties (even/odd rules, primes, divisibility)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "gre-q-np-011",
+  "level": "L1",
+  "skill": "number-properties",
+  "type": "mcq",
+  "stem": "Which of the following is the prime factorization of 36?",
+  "options": [
+   {
+    "id": "a",
+    "text": "2 \u00d7 18"
+   },
+   {
+    "id": "b",
+    "text": "4 \u00d7 9"
+   },
+   {
+    "id": "c",
+    "text": "2 \u00d7 2 \u00d7 3 \u00d7 3"
+   },
+   {
+    "id": "d",
+    "text": "6 \u00d7 6"
+   }
+  ],
+  "answer": 2,
+  "hint": "Break 36 into factors until only primes remain.",
+  "explanation": "36 = 6 \u00d7 6 = (2 \u00d7 3) \u00d7 (2 \u00d7 3) = 2 \u00d7 2 \u00d7 3 \u00d7 3. Only the third choice uses all prime factors.",
+  "difficulty": 1,
+  "source": "Manhattan Prep 5 lb. Book of GRE Practice Problems \u2014 Number Properties (factors, multiples, remainders)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "gre-q-np-012",
+  "level": "L1",
+  "skill": "number-properties",
+  "type": "mcq",
+  "stem": "Which of the following numbers has exactly two prime factors (counting repeats)?",
+  "options": [
+   {
+    "id": "a",
+    "text": "12"
+   },
+   {
+    "id": "b",
+    "text": "30"
+   },
+   {
+    "id": "c",
+    "text": "15"
+   },
+   {
+    "id": "d",
+    "text": "20"
+   }
+  ],
+  "answer": 2,
+  "hint": "Factor each completely and count.",
+  "explanation": "12 = 2 \u00d7 2 \u00d7 3 (three), 30 = 2 \u00d7 3 \u00d7 5 (three), 15 = 3 \u00d7 5 (two \u2713), 20 = 2 \u00d7 2 \u00d7 5 (three). Answer: 15.",
+  "difficulty": 1,
+  "source": "ETS Official GRE Guide \u2014 Number Properties (even/odd rules, primes, divisibility)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "gre-q-np-013",
+  "level": "L1",
+  "skill": "number-properties",
+  "type": "mcq",
+  "stem": "The number 1 is:",
+  "options": [
+   {
+    "id": "a",
+    "text": "Prime"
+   },
+   {
+    "id": "b",
+    "text": "Composite"
+   },
+   {
+    "id": "c",
+    "text": "Neither prime nor composite"
+   },
+   {
+    "id": "d",
+    "text": "Even"
+   }
+  ],
+  "answer": 2,
+  "hint": "A prime needs exactly two distinct factors.",
+  "explanation": "1 has only one factor (itself), so it is not prime. It is not composite either. So 1 is neither prime nor composite.",
+  "difficulty": 1,
+  "source": "ETS Official GRE Guide \u2014 Number Properties (even/odd rules, primes, divisibility)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "gre-q-np-014",
+  "level": "L1",
+  "skill": "number-properties",
+  "type": "mcq",
+  "stem": "How many positive factors does 12 have?",
+  "options": [
+   {
+    "id": "a",
+    "text": "4"
+   },
+   {
+    "id": "b",
+    "text": "5"
+   },
+   {
+    "id": "c",
+    "text": "6"
+   },
+   {
+    "id": "d",
+    "text": "8"
+   }
+  ],
+  "answer": 2,
+  "hint": "List every number that divides 12 evenly.",
+  "explanation": "Factors of 12: 1, 2, 3, 4, 6, 12. That is 6 positive factors.",
+  "difficulty": 1,
+  "source": "Manhattan Prep 5 lb. Book of GRE Practice Problems \u2014 Number Properties (factors, multiples, remainders)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "gre-q-np-015",
+  "level": "L1",
+  "skill": "number-properties",
+  "type": "mcq",
+  "stem": "Which of the following is a multiple of 7?",
+  "options": [
+   {
+    "id": "a",
+    "text": "34"
+   },
+   {
+    "id": "b",
+    "text": "48"
+   },
+   {
+    "id": "c",
+    "text": "56"
+   },
+   {
+    "id": "d",
+    "text": "62"
+   }
+  ],
+  "answer": 2,
+  "hint": "Divide each by 7.",
+  "explanation": "34 \u00f7 7 = 4.86 (no), 48 \u00f7 7 = 6.86 (no), 56 \u00f7 7 = 8 (yes), 62 \u00f7 7 = 8.86 (no). Answer: 56.",
+  "difficulty": 1,
+  "source": "Manhattan Prep 5 lb. Book of GRE Practice Problems \u2014 Number Properties (factors, multiples, remainders)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "gre-q-np-016",
+  "level": "L1",
+  "skill": "number-properties",
+  "type": "mcq",
+  "stem": "What is the greatest common factor (GCF) of 18 and 24?",
+  "options": [
+   {
+    "id": "a",
+    "text": "2"
+   },
+   {
+    "id": "b",
+    "text": "3"
+   },
+   {
+    "id": "c",
+    "text": "6"
+   },
+   {
+    "id": "d",
+    "text": "12"
+   }
+  ],
+  "answer": 2,
+  "hint": "List each number's factors and pick the largest shared one.",
+  "explanation": "Factors of 18: 1, 2, 3, 6, 9, 18. Factors of 24: 1, 2, 3, 4, 6, 8, 12, 24. Common: 1, 2, 3, 6. Largest: 6.",
+  "difficulty": 1,
+  "source": "Manhattan Prep 5 lb. Book of GRE Practice Problems \u2014 Number Properties (factors, multiples, remainders)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "gre-q-np-017",
+  "level": "L1",
+  "skill": "number-properties",
+  "type": "mcq",
+  "stem": "What is the least common multiple (LCM) of 4 and 6?",
+  "options": [
+   {
+    "id": "a",
+    "text": "10"
+   },
+   {
+    "id": "b",
+    "text": "12"
+   },
+   {
+    "id": "c",
+    "text": "18"
+   },
+   {
+    "id": "d",
+    "text": "24"
+   }
+  ],
+  "answer": 1,
+  "hint": "List multiples of each until one matches.",
+  "explanation": "Multiples of 4: 4, 8, 12, 16\u2026 Multiples of 6: 6, 12, 18\u2026 The smallest shared multiple is 12.",
+  "difficulty": 1,
+  "source": "Manhattan Prep 5 lb. Book of GRE Practice Problems \u2014 Number Properties (factors, multiples, remainders)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "gre-q-np-018",
+  "level": "L1",
+  "skill": "number-properties",
+  "type": "mcq",
+  "stem": "If 5 is a factor of n, which of the following must be a multiple of n?",
+  "options": [
+   {
+    "id": "a",
+    "text": "5"
+   },
+   {
+    "id": "b",
+    "text": "10"
+   },
+   {
+    "id": "c",
+    "text": "n itself"
+   },
+   {
+    "id": "d",
+    "text": "25"
+   }
+  ],
+  "answer": 2,
+  "hint": "Every number is a multiple of itself.",
+  "explanation": "n = 1 \u00d7 n, so n itself is always a multiple of n. The other choices need not relate to n.",
+  "difficulty": 1,
+  "source": "Manhattan Prep 5 lb. Book of GRE Practice Problems \u2014 Number Properties (factors, multiples, remainders)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "gre-q-np-019",
+  "level": "L1",
+  "skill": "number-properties",
+  "type": "mcq",
+  "stem": "How many factors does the prime number 13 have?",
+  "options": [
+   {
+    "id": "a",
+    "text": "1"
+   },
+   {
+    "id": "b",
+    "text": "2"
+   },
+   {
+    "id": "c",
+    "text": "3"
+   },
+   {
+    "id": "d",
+    "text": "4"
+   }
+  ],
+  "answer": 1,
+  "hint": "Recall the definition of a prime number.",
+  "explanation": "A prime has exactly two factors: 1 and itself. So 13 has 2 factors.",
+  "difficulty": 1,
+  "source": "ETS Official GRE Guide \u2014 Number Properties (even/odd rules, primes, divisibility)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "gre-q-np-020",
+  "level": "L1",
+  "skill": "number-properties",
+  "type": "mcq",
+  "stem": "Which of the following pairs are both multiples of 9?",
+  "options": [
+   {
+    "id": "a",
+    "text": "18 and 27"
+   },
+   {
+    "id": "b",
+    "text": "9 and 19"
+   },
+   {
+    "id": "c",
+    "text": "27 and 38"
+   },
+   {
+    "id": "d",
+    "text": "18 and 38"
+   }
+  ],
+  "answer": 0,
+  "hint": "Check each number by dividing by 9.",
+  "explanation": "18 \u00f7 9 = 2 \u2713 and 27 \u00f7 9 = 3 \u2713. 19 and 38 are not divisible by 9. Answer: 18 and 27.",
+  "difficulty": 1,
+  "source": "Manhattan Prep 5 lb. Book of GRE Practice Problems \u2014 Number Properties (factors, multiples, remainders)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "gre-q-np-021",
+  "level": "L1",
+  "skill": "number-properties",
+  "type": "mcq",
+  "stem": "Which of the following numbers is divisible by 3?",
+  "options": [
+   {
+    "id": "a",
+    "text": "124"
+   },
+   {
+    "id": "b",
+    "text": "235"
+   },
+   {
+    "id": "c",
+    "text": "342"
+   },
+   {
+    "id": "d",
+    "text": "451"
+   }
+  ],
+  "answer": 2,
+  "hint": "Add the digits \u2014 if the sum is divisible by 3, so is the number.",
+  "explanation": "1+2+4 = 7 (no), 2+3+5 = 10 (no), 3+4+2 = 9 (yes \u2192 342 \u00f7 3 = 114), 4+5+1 = 10 (no). Answer: 342.",
+  "difficulty": 1,
+  "source": "ETS Official GRE Guide \u2014 Number Properties (even/odd rules, primes, divisibility)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "gre-q-np-022",
+  "level": "L1",
+  "skill": "number-properties",
+  "type": "mcq",
+  "stem": "Which of the following numbers is divisible by 5?",
+  "options": [
+   {
+    "id": "a",
+    "text": "123"
+   },
+   {
+    "id": "b",
+    "text": "237"
+   },
+   {
+    "id": "c",
+    "text": "340"
+   },
+   {
+    "id": "d",
+    "text": "412"
+   }
+  ],
+  "answer": 2,
+  "hint": "A number is divisible by 5 if its last digit is 0 or 5.",
+  "explanation": "123 ends in 3, 237 ends in 7, 340 ends in 0 (yes), 412 ends in 2. Answer: 340.",
+  "difficulty": 1,
+  "source": "ETS Official GRE Guide \u2014 Number Properties (even/odd rules, primes, divisibility)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "gre-q-np-023",
+  "level": "L1",
+  "skill": "number-properties",
+  "type": "mcq",
+  "stem": "Which of the following numbers is divisible by 4?",
+  "options": [
+   {
+    "id": "a",
+    "text": "1,326"
+   },
+   {
+    "id": "b",
+    "text": "2,416"
+   },
+   {
+    "id": "c",
+    "text": "3,522"
+   },
+   {
+    "id": "d",
+    "text": "4,318"
+   }
+  ],
+  "answer": 1,
+  "hint": "A number is divisible by 4 if its last two digits form a multiple of 4.",
+  "explanation": "26 \u00f7 4 = 6.5 (no), 16 \u00f7 4 = 4 (yes), 22 \u00f7 4 = 5.5 (no), 18 \u00f7 4 = 4.5 (no). Answer: 2,416.",
+  "difficulty": 1,
+  "source": "ETS Official GRE Guide \u2014 Number Properties (even/odd rules, primes, divisibility)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "gre-q-np-024",
+  "level": "L1",
+  "skill": "number-properties",
+  "type": "mcq",
+  "stem": "Which of the following numbers is divisible by 9?",
+  "options": [
+   {
+    "id": "a",
+    "text": "2,345"
+   },
+   {
+    "id": "b",
+    "text": "3,726"
+   },
+   {
+    "id": "c",
+    "text": "4,582"
+   },
+   {
+    "id": "d",
+    "text": "5,294"
+   }
+  ],
+  "answer": 1,
+  "hint": "Add the digits \u2014 if the sum is a multiple of 9, the number is divisible by 9.",
+  "explanation": "2+3+4+5 = 14 (no), 3+7+2+6 = 18 (yes \u2192 3,726 \u00f7 9 = 414), 4+5+8+2 = 19 (no), 5+2+9+4 = 20 (no). Answer: 3,726.",
+  "difficulty": 1,
+  "source": "ETS Official GRE Guide \u2014 Number Properties (even/odd rules, primes, divisibility)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "gre-q-np-025",
+  "level": "L1",
+  "skill": "number-properties",
+  "type": "mcq",
+  "stem": "Which of the following numbers is divisible by both 2 and 3?",
+  "options": [
+   {
+    "id": "a",
+    "text": "111"
+   },
+   {
+    "id": "b",
+    "text": "222"
+   },
+   {
+    "id": "c",
+    "text": "333"
+   },
+   {
+    "id": "d",
+    "text": "555"
+   }
+  ],
+  "answer": 1,
+  "hint": "Divisible by 2 \u2192 even; divisible by 3 \u2192 digit sum divisible by 3.",
+  "explanation": "111 odd (no), 222 even and 2+2+2 = 6 \u2713 (222 \u00f7 6 = 37), 333 odd (no), 555 odd (no). Answer: 222.",
+  "difficulty": 1,
+  "source": "ETS Official GRE Guide \u2014 Number Properties (even/odd rules, primes, divisibility)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "gre-q-np-026",
+  "level": "L1",
+  "skill": "number-properties",
+  "type": "mcq",
+  "stem": "Which of the following numbers is divisible by 10?",
+  "options": [
+   {
+    "id": "a",
+    "text": "1,205"
+   },
+   {
+    "id": "b",
+    "text": "2,340"
+   },
+   {
+    "id": "c",
+    "text": "3,417"
+   },
+   {
+    "id": "d",
+    "text": "4,503"
+   }
+  ],
+  "answer": 1,
+  "hint": "Divisible by 10 means the last digit is 0.",
+  "explanation": "Only 2,340 ends in 0.",
+  "difficulty": 1,
+  "source": "ETS Official GRE Guide \u2014 Number Properties (even/odd rules, primes, divisibility)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "gre-q-np-027",
+  "level": "L1",
+  "skill": "number-properties",
+  "type": "mcq",
+  "stem": "What is the remainder when 17 is divided by 5?",
+  "options": [
+   {
+    "id": "a",
+    "text": "1"
+   },
+   {
+    "id": "b",
+    "text": "2"
+   },
+   {
+    "id": "c",
+    "text": "3"
+   },
+   {
+    "id": "d",
+    "text": "4"
+   }
+  ],
+  "answer": 1,
+  "hint": "5 \u00d7 3 = 15; subtract from 17.",
+  "explanation": "5 \u00d7 3 = 15. 17 \u2212 15 = 2. The remainder is 2.",
+  "difficulty": 1,
+  "source": "Manhattan Prep 5 lb. Book of GRE Practice Problems \u2014 Number Properties (factors, multiples, remainders)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "gre-q-np-028",
+  "level": "L1",
+  "skill": "number-properties",
+  "type": "mcq",
+  "stem": "What is the remainder when an even number is divided by 2?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0"
+   },
+   {
+    "id": "b",
+    "text": "1"
+   },
+   {
+    "id": "c",
+    "text": "2"
+   },
+   {
+    "id": "d",
+    "text": "Cannot be determined"
+   }
+  ],
+  "answer": 0,
+  "hint": "Even numbers are divisible by 2 by definition.",
+  "explanation": "An even number divided by 2 leaves no remainder: e.g., 14 \u00f7 2 = 7 remainder 0.",
+  "difficulty": 1,
+  "source": "Manhattan Prep 5 lb. Book of GRE Practice Problems \u2014 Number Properties (factors, multiples, remainders)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "gre-q-np-029",
+  "level": "L1",
+  "skill": "number-properties",
+  "type": "mcq",
+  "stem": "When 43 is divided by 6, the remainder is:",
+  "options": [
+   {
+    "id": "a",
+    "text": "0"
+   },
+   {
+    "id": "b",
+    "text": "1"
+   },
+   {
+    "id": "c",
+    "text": "2"
+   },
+   {
+    "id": "d",
+    "text": "3"
+   }
+  ],
+  "answer": 1,
+  "hint": "6 \u00d7 7 = 42; subtract from 43.",
+  "explanation": "6 \u00d7 7 = 42. 43 \u2212 42 = 1. The remainder is 1.",
+  "difficulty": 1,
+  "source": "Manhattan Prep 5 lb. Book of GRE Practice Problems \u2014 Number Properties (factors, multiples, remainders)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ },
+ {
+  "id": "gre-q-np-030",
+  "level": "L1",
+  "skill": "number-properties",
+  "type": "mcq",
+  "stem": "If n divided by 4 leaves a remainder of 3, which of the following could be n?",
+  "options": [
+   {
+    "id": "a",
+    "text": "12"
+   },
+   {
+    "id": "b",
+    "text": "15"
+   },
+   {
+    "id": "c",
+    "text": "20"
+   },
+   {
+    "id": "d",
+    "text": "24"
+   }
+  ],
+  "answer": 1,
+  "hint": "Divide each by 4 and check the remainder.",
+  "explanation": "12 \u00f7 4 = 3 r0, 15 \u00f7 4 = 3 r3 \u2713, 20 \u00f7 4 = 5 r0, 24 \u00f7 4 = 6 r0. Only 15 leaves remainder 3.",
+  "difficulty": 1,
+  "source": "Manhattan Prep 5 lb. Book of GRE Practice Problems \u2014 Number Properties (factors, multiples, remainders)",
+  "status": "draft-pending-sme-review",
+  "version": 1
+ }
+]

@@ -1,0 +1,962 @@
+[
+  {
+    "id": "cfa-qm-ir-001",
+    "level": "L1",
+    "skill": "interest-rates",
+    "type": "mcq",
+    "stem": "A bank quotes a stated annual rate of 12%, compounded monthly. What is the periodic (monthly) interest rate?",
+    "options": [
+      {
+        "id": "a",
+        "text": "12.00%"
+      },
+      {
+        "id": "b",
+        "text": "1.00%"
+      },
+      {
+        "id": "c",
+        "text": "0.12%"
+      },
+      {
+        "id": "d",
+        "text": "6.00%"
+      }
+    ],
+    "answer": 1,
+    "hint": "Stated annual ÷ compounding periods per year.",
+    "explanation": "Periodic rate = stated annual rate ÷ m = 12% ÷ 12 = 1.00% per month. The 12.00% distractor uses the stated rate as the periodic rate — the classic CFA trap.",
+    "difficulty": 1,
+    "source": "Original question authored for Unschool Academy; interest-rate formulas per CFA Institute Learning Outcome Statements — Quantitative Methods (public LOS: ‘Calculate and interpret the effective annual rate, given the stated annual interest rate and the frequency of compounding’; periodic rate = stated annual rate ÷ m; EAR = (1 + periodic rate)^m − 1). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ir-002",
+    "level": "L1",
+    "skill": "interest-rates",
+    "type": "mcq",
+    "stem": "A certificate of deposit pays a stated annual rate of 8%, compounded quarterly. What is the periodic quarterly rate?",
+    "options": [
+      {
+        "id": "a",
+        "text": "8.00%"
+      },
+      {
+        "id": "b",
+        "text": "4.00%"
+      },
+      {
+        "id": "c",
+        "text": "2.00%"
+      },
+      {
+        "id": "d",
+        "text": "0.67%"
+      }
+    ],
+    "answer": 2,
+    "hint": "Divide the stated rate by the number of compounding periods.",
+    "explanation": "Periodic rate = 8% ÷ 4 = 2.00% per quarter.",
+    "difficulty": 1,
+    "source": "Original question authored for Unschool Academy; interest-rate formulas per CFA Institute Learning Outcome Statements — Quantitative Methods (public LOS: ‘Calculate and interpret the effective annual rate, given the stated annual interest rate and the frequency of compounding’; periodic rate = stated annual rate ÷ m; EAR = (1 + periodic rate)^m − 1). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ir-003",
+    "level": "L1",
+    "skill": "interest-rates",
+    "type": "mcq",
+    "stem": "What is the effective annual rate (EAR) of a 12% stated annual rate compounded monthly?",
+    "options": [
+      {
+        "id": "a",
+        "text": "12.00%"
+      },
+      {
+        "id": "b",
+        "text": "12.36%"
+      },
+      {
+        "id": "c",
+        "text": "12.68%"
+      },
+      {
+        "id": "d",
+        "text": "13.10%"
+      }
+    ],
+    "answer": 2,
+    "hint": "EAR = (1 + periodic)^m − 1. Periodic = 1%, m = 12.",
+    "explanation": "Periodic = 12%/12 = 1%. EAR = (1.01)^12 − 1 = 12.68%. The 12.00% distractor ignores intra-year compounding.",
+    "difficulty": 1,
+    "source": "Original question authored for Unschool Academy; interest-rate formulas per CFA Institute Learning Outcome Statements — Quantitative Methods (public LOS: ‘Calculate and interpret the effective annual rate, given the stated annual interest rate and the frequency of compounding’; periodic rate = stated annual rate ÷ m; EAR = (1 + periodic rate)^m − 1). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ir-004",
+    "level": "L1",
+    "skill": "interest-rates",
+    "type": "mcq",
+    "stem": "What is the EAR of an 8% stated annual rate compounded quarterly?",
+    "options": [
+      {
+        "id": "a",
+        "text": "8.00%"
+      },
+      {
+        "id": "b",
+        "text": "8.16%"
+      },
+      {
+        "id": "c",
+        "text": "8.24%"
+      },
+      {
+        "id": "d",
+        "text": "8.30%"
+      }
+    ],
+    "answer": 2,
+    "hint": "Periodic = 2%, m = 4.",
+    "explanation": "Periodic = 8%/4 = 2%. EAR = (1.02)^4 − 1 = 8.24%.",
+    "difficulty": 1,
+    "source": "Original question authored for Unschool Academy; interest-rate formulas per CFA Institute Learning Outcome Statements — Quantitative Methods (public LOS: ‘Calculate and interpret the effective annual rate, given the stated annual interest rate and the frequency of compounding’; periodic rate = stated annual rate ÷ m; EAR = (1 + periodic rate)^m − 1). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ir-005",
+    "level": "L1",
+    "skill": "interest-rates",
+    "type": "mcq",
+    "stem": "What is the EAR of a 6% stated annual rate compounded semiannually?",
+    "options": [
+      {
+        "id": "a",
+        "text": "6.00%"
+      },
+      {
+        "id": "b",
+        "text": "6.06%"
+      },
+      {
+        "id": "c",
+        "text": "6.09%"
+      },
+      {
+        "id": "d",
+        "text": "6.17%"
+      }
+    ],
+    "answer": 2,
+    "hint": "Periodic = 3%, m = 2.",
+    "explanation": "Periodic = 6%/2 = 3%. EAR = (1.03)^2 − 1 = 6.09%.",
+    "difficulty": 1,
+    "source": "Original question authored for Unschool Academy; interest-rate formulas per CFA Institute Learning Outcome Statements — Quantitative Methods (public LOS: ‘Calculate and interpret the effective annual rate, given the stated annual interest rate and the frequency of compounding’; periodic rate = stated annual rate ÷ m; EAR = (1 + periodic rate)^m − 1). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ir-006",
+    "level": "L1",
+    "skill": "interest-rates",
+    "type": "mcq",
+    "stem": "Bank A offers 12% compounded monthly; Bank B offers 12.5% compounded annually. Which should a rational investor choose?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Bank B — higher stated rate"
+      },
+      {
+        "id": "b",
+        "text": "Bank A — higher EAR"
+      },
+      {
+        "id": "c",
+        "text": "They are identical"
+      },
+      {
+        "id": "d",
+        "text": "Cannot compare without the principal"
+      }
+    ],
+    "answer": 1,
+    "hint": "Compare effective annual rates, not stated rates.",
+    "explanation": "EAR(A) = (1.01)^12 − 1 = 12.68%; EAR(B) = 12.50%. Bank A's effective return is higher, so choose A.",
+    "difficulty": 1,
+    "source": "Original question authored for Unschool Academy; interest-rate formulas per CFA Institute Learning Outcome Statements — Quantitative Methods (public LOS: ‘Calculate and interpret the effective annual rate, given the stated annual interest rate and the frequency of compounding’; periodic rate = stated annual rate ÷ m; EAR = (1 + periodic rate)^m − 1). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ir-007",
+    "level": "L1",
+    "skill": "interest-rates",
+    "type": "mcq",
+    "stem": "You invest $1,000 at a 10% stated annual rate compounded semiannually. What is the value after one year?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$1,100.00"
+      },
+      {
+        "id": "b",
+        "text": "$1,102.50"
+      },
+      {
+        "id": "c",
+        "text": "$1,105.00"
+      },
+      {
+        "id": "d",
+        "text": "$1,210.00"
+      }
+    ],
+    "answer": 1,
+    "hint": "Semiannual periodic rate is 5%; compound twice.",
+    "explanation": "Periodic = 10%/2 = 5%. FV = 1,000 × (1.05)^2 = $1,102.50.",
+    "difficulty": 1,
+    "source": "Original question authored for Unschool Academy; interest-rate formulas per CFA Institute Learning Outcome Statements — Quantitative Methods (public LOS: ‘Calculate and interpret the effective annual rate, given the stated annual interest rate and the frequency of compounding’; periodic rate = stated annual rate ÷ m; EAR = (1 + periodic rate)^m − 1). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ir-008",
+    "level": "L1",
+    "skill": "interest-rates",
+    "type": "mcq",
+    "stem": "What is the future value of $1,000 invested for one year at 8% compounded continuously?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$1,080.00"
+      },
+      {
+        "id": "b",
+        "text": "$1,082.40"
+      },
+      {
+        "id": "c",
+        "text": "$1,083.29"
+      },
+      {
+        "id": "d",
+        "text": "$1,085.00"
+      }
+    ],
+    "answer": 2,
+    "hint": "Continuous compounding: FV = PV × e^(r×t).",
+    "explanation": "FV = 1,000 × e^0.08 = 1,000 × 1.0833 = $1,083.29.",
+    "difficulty": 1,
+    "source": "Original question authored for Unschool Academy; interest-rate formulas per CFA Institute Learning Outcome Statements — Quantitative Methods (public LOS: ‘Calculate and interpret the effective annual rate, given the stated annual interest rate and the frequency of compounding’; periodic rate = stated annual rate ÷ m; EAR = (1 + periodic rate)^m − 1). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ir-009",
+    "level": "L1",
+    "skill": "interest-rates",
+    "type": "mcq",
+    "stem": "What is the effective annual rate equivalent to 8% compounded continuously?",
+    "options": [
+      {
+        "id": "a",
+        "text": "8.00%"
+      },
+      {
+        "id": "b",
+        "text": "8.24%"
+      },
+      {
+        "id": "c",
+        "text": "8.33%"
+      },
+      {
+        "id": "d",
+        "text": "8.50%"
+      }
+    ],
+    "answer": 2,
+    "hint": "EAR = e^(stated rate) − 1 for continuous compounding.",
+    "explanation": "EAR = e^0.08 − 1 = 0.0833 = 8.33%.",
+    "difficulty": 1,
+    "source": "Original question authored for Unschool Academy; interest-rate formulas per CFA Institute Learning Outcome Statements — Quantitative Methods (public LOS: ‘Calculate and interpret the effective annual rate, given the stated annual interest rate and the frequency of compounding’; periodic rate = stated annual rate ÷ m; EAR = (1 + periodic rate)^m − 1). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ir-010",
+    "level": "L1",
+    "skill": "interest-rates",
+    "type": "mcq",
+    "stem": "An investment has an EAR of 12.68%. What stated annual rate, compounded monthly, produces this EAR?",
+    "options": [
+      {
+        "id": "a",
+        "text": "12.68%"
+      },
+      {
+        "id": "b",
+        "text": "12.36%"
+      },
+      {
+        "id": "c",
+        "text": "12.00%"
+      },
+      {
+        "id": "d",
+        "text": "11.50%"
+      }
+    ],
+    "answer": 2,
+    "hint": "Work backwards: periodic = (1+EAR)^(1/12) − 1, then multiply by 12.",
+    "explanation": "Periodic = (1.1268)^(1/12) − 1 = 1.00% per month. Stated = 1.00% × 12 = 12.00%.",
+    "difficulty": 1,
+    "source": "Original question authored for Unschool Academy; interest-rate formulas per CFA Institute Learning Outcome Statements — Quantitative Methods (public LOS: ‘Calculate and interpret the effective annual rate, given the stated annual interest rate and the frequency of compounding’; periodic rate = stated annual rate ÷ m; EAR = (1 + periodic rate)^m − 1). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ir-011",
+    "level": "L1",
+    "skill": "interest-rates",
+    "type": "mcq",
+    "stem": "Which offer has the highest effective annual rate? I. 12% compounded monthly; II. 12.5% compounded quarterly; III. 13% compounded annually.",
+    "options": [
+      {
+        "id": "a",
+        "text": "I only"
+      },
+      {
+        "id": "b",
+        "text": "II only"
+      },
+      {
+        "id": "c",
+        "text": "III only"
+      },
+      {
+        "id": "d",
+        "text": "I and III are tied"
+      }
+    ],
+    "answer": 1,
+    "hint": "Convert each to EAR and compare.",
+    "explanation": "EAR(I) = 12.68%; EAR(II) = (1.03125)^4 − 1 = 13.10%; EAR(III) = 13.00%. Offer II wins.",
+    "difficulty": 1,
+    "source": "Original question authored for Unschool Academy; interest-rate formulas per CFA Institute Learning Outcome Statements — Quantitative Methods (public LOS: ‘Calculate and interpret the effective annual rate, given the stated annual interest rate and the frequency of compounding’; periodic rate = stated annual rate ÷ m; EAR = (1 + periodic rate)^m − 1). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ir-012",
+    "level": "L1",
+    "skill": "interest-rates",
+    "type": "mcq",
+    "stem": "What is the EAR of a 9% stated annual rate compounded daily (365 days)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "9.00%"
+      },
+      {
+        "id": "b",
+        "text": "9.25%"
+      },
+      {
+        "id": "c",
+        "text": "9.42%"
+      },
+      {
+        "id": "d",
+        "text": "9.55%"
+      }
+    ],
+    "answer": 2,
+    "hint": "Periodic = 9%/365, m = 365.",
+    "explanation": "EAR = (1 + 0.09/365)^365 − 1 = 9.42%.",
+    "difficulty": 1,
+    "source": "Original question authored for Unschool Academy; interest-rate formulas per CFA Institute Learning Outcome Statements — Quantitative Methods (public LOS: ‘Calculate and interpret the effective annual rate, given the stated annual interest rate and the frequency of compounding’; periodic rate = stated annual rate ÷ m; EAR = (1 + periodic rate)^m − 1). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ir-013",
+    "level": "L1",
+    "skill": "interest-rates",
+    "type": "mcq",
+    "stem": "A loan quotes 6% compounded monthly. What is the periodic monthly rate charged?",
+    "options": [
+      {
+        "id": "a",
+        "text": "6.00%"
+      },
+      {
+        "id": "b",
+        "text": "0.50%"
+      },
+      {
+        "id": "c",
+        "text": "0.06%"
+      },
+      {
+        "id": "d",
+        "text": "3.00%"
+      }
+    ],
+    "answer": 1,
+    "hint": "Stated annual ÷ 12.",
+    "explanation": "Periodic = 6% ÷ 12 = 0.50% per month.",
+    "difficulty": 1,
+    "source": "Original question authored for Unschool Academy; interest-rate formulas per CFA Institute Learning Outcome Statements — Quantitative Methods (public LOS: ‘Calculate and interpret the effective annual rate, given the stated annual interest rate and the frequency of compounding’; periodic rate = stated annual rate ÷ m; EAR = (1 + periodic rate)^m − 1). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ir-014",
+    "level": "L1",
+    "skill": "interest-rates",
+    "type": "mcq",
+    "stem": "If the periodic monthly rate is 1%, what are the stated annual rate and the EAR?",
+    "options": [
+      {
+        "id": "a",
+        "text": "12.00% stated; 12.00% EAR"
+      },
+      {
+        "id": "b",
+        "text": "12.00% stated; 12.68% EAR"
+      },
+      {
+        "id": "c",
+        "text": "1.00% stated; 12.68% EAR"
+      },
+      {
+        "id": "d",
+        "text": "12.68% stated; 12.68% EAR"
+      }
+    ],
+    "answer": 1,
+    "hint": "Stated = periodic × 12; EAR compounds the periodic rate.",
+    "explanation": "Stated = 1% × 12 = 12.00%. EAR = (1.01)^12 − 1 = 12.68%. The stated rate is just a quoting convention.",
+    "difficulty": 1,
+    "source": "Original question authored for Unschool Academy; interest-rate formulas per CFA Institute Learning Outcome Statements — Quantitative Methods (public LOS: ‘Calculate and interpret the effective annual rate, given the stated annual interest rate and the frequency of compounding’; periodic rate = stated annual rate ÷ m; EAR = (1 + periodic rate)^m − 1). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ir-015",
+    "level": "L1",
+    "skill": "interest-rates",
+    "type": "mcq",
+    "stem": "What is the future value of $5,000 invested for 2 years at 6% compounded quarterly?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$5,600.00"
+      },
+      {
+        "id": "b",
+        "text": "$5,632.46"
+      },
+      {
+        "id": "c",
+        "text": "$5,650.00"
+      },
+      {
+        "id": "d",
+        "text": "$5,618.00"
+      }
+    ],
+    "answer": 1,
+    "hint": "Periodic = 1.5%, n = 8 quarters.",
+    "explanation": "Periodic = 6%/4 = 1.5%; n = 2 × 4 = 8. FV = 5,000 × (1.015)^8 = 5,000 × 1.126493 = $5,632.46.",
+    "difficulty": 1,
+    "source": "Original question authored for Unschool Academy; interest-rate formulas per CFA Institute Learning Outcome Statements — Quantitative Methods (public LOS: ‘Calculate and interpret the effective annual rate, given the stated annual interest rate and the frequency of compounding’; periodic rate = stated annual rate ÷ m; EAR = (1 + periodic rate)^m − 1). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ir-016",
+    "level": "L1",
+    "skill": "interest-rates",
+    "type": "mcq",
+    "stem": "For a given stated annual rate, how does the EAR change as compounding frequency increases?",
+    "options": [
+      {
+        "id": "a",
+        "text": "EAR decreases"
+      },
+      {
+        "id": "b",
+        "text": "EAR increases"
+      },
+      {
+        "id": "c",
+        "text": "EAR stays the same"
+      },
+      {
+        "id": "d",
+        "text": "EAR becomes negative"
+      }
+    ],
+    "answer": 1,
+    "hint": "Think: does more frequent compounding earn more or less?",
+    "explanation": "EAR increases with compounding frequency — interest starts earning interest sooner. (Limit: continuous compounding.)",
+    "difficulty": 1,
+    "source": "Original question authored for Unschool Academy; interest-rate formulas per CFA Institute Learning Outcome Statements — Quantitative Methods (public LOS: ‘Calculate and interpret the effective annual rate, given the stated annual interest rate and the frequency of compounding’; periodic rate = stated annual rate ÷ m; EAR = (1 + periodic rate)^m − 1). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ir-017",
+    "level": "L1",
+    "skill": "interest-rates",
+    "type": "mcq",
+    "stem": "A bond pays 4% compounded semiannually. What is the effective rate for one six-month period?",
+    "options": [
+      {
+        "id": "a",
+        "text": "4.00%"
+      },
+      {
+        "id": "b",
+        "text": "2.00%"
+      },
+      {
+        "id": "c",
+        "text": "2.02%"
+      },
+      {
+        "id": "d",
+        "text": "8.00%"
+      }
+    ],
+    "answer": 1,
+    "hint": "The periodic rate IS the effective rate for that period.",
+    "explanation": "Periodic = 4%/2 = 2.00% per half-year. No further compounding adjustment is needed within the period itself.",
+    "difficulty": 1,
+    "source": "Original question authored for Unschool Academy; interest-rate formulas per CFA Institute Learning Outcome Statements — Quantitative Methods (public LOS: ‘Calculate and interpret the effective annual rate, given the stated annual interest rate and the frequency of compounding’; periodic rate = stated annual rate ÷ m; EAR = (1 + periodic rate)^m − 1). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ir-018",
+    "level": "L1",
+    "skill": "interest-rates",
+    "type": "mcq",
+    "stem": "What is the EAR of a 10% stated annual rate compounded monthly?",
+    "options": [
+      {
+        "id": "a",
+        "text": "10.00%"
+      },
+      {
+        "id": "b",
+        "text": "10.25%"
+      },
+      {
+        "id": "c",
+        "text": "10.47%"
+      },
+      {
+        "id": "d",
+        "text": "10.60%"
+      }
+    ],
+    "answer": 2,
+    "hint": "Periodic ≈ 0.8333%, m = 12.",
+    "explanation": "EAR = (1 + 0.10/12)^12 − 1 = 10.47%.",
+    "difficulty": 1,
+    "source": "Original question authored for Unschool Academy; interest-rate formulas per CFA Institute Learning Outcome Statements — Quantitative Methods (public LOS: ‘Calculate and interpret the effective annual rate, given the stated annual interest rate and the frequency of compounding’; periodic rate = stated annual rate ÷ m; EAR = (1 + periodic rate)^m − 1). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ir-019",
+    "level": "L1",
+    "skill": "interest-rates",
+    "type": "mcq",
+    "stem": "Investment X pays 8% compounded semiannually; Investment Y pays 7.9% compounded monthly. Which is better?",
+    "options": [
+      {
+        "id": "a",
+        "text": "X — higher stated rate"
+      },
+      {
+        "id": "b",
+        "text": "Y — higher EAR"
+      },
+      {
+        "id": "c",
+        "text": "They are equal"
+      },
+      {
+        "id": "d",
+        "text": "X — semiannual always beats monthly"
+      }
+    ],
+    "answer": 1,
+    "hint": "Compare EARs.",
+    "explanation": "EAR(X) = (1.04)^2 − 1 = 8.16%; EAR(Y) = (1 + 0.079/12)^12 − 1 = 8.19%. Y's more frequent compounding overcomes its lower stated rate.",
+    "difficulty": 1,
+    "source": "Original question authored for Unschool Academy; interest-rate formulas per CFA Institute Learning Outcome Statements — Quantitative Methods (public LOS: ‘Calculate and interpret the effective annual rate, given the stated annual interest rate and the frequency of compounding’; periodic rate = stated annual rate ÷ m; EAR = (1 + periodic rate)^m − 1). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ir-020",
+    "level": "L1",
+    "skill": "interest-rates",
+    "type": "mcq",
+    "stem": "What continuously compounded annual rate is equivalent to an EAR of 10%?",
+    "options": [
+      {
+        "id": "a",
+        "text": "10.00%"
+      },
+      {
+        "id": "b",
+        "text": "9.53%"
+      },
+      {
+        "id": "c",
+        "text": "10.47%"
+      },
+      {
+        "id": "d",
+        "text": "9.76%"
+      }
+    ],
+    "answer": 1,
+    "hint": "Solve EAR = e^r − 1 for r: r = ln(1 + EAR).",
+    "explanation": "r = ln(1.10) = 9.53%.",
+    "difficulty": 1,
+    "source": "Original question authored for Unschool Academy; interest-rate formulas per CFA Institute Learning Outcome Statements — Quantitative Methods (public LOS: ‘Calculate and interpret the effective annual rate, given the stated annual interest rate and the frequency of compounding’; periodic rate = stated annual rate ÷ m; EAR = (1 + periodic rate)^m − 1). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ir-021",
+    "level": "L1",
+    "skill": "interest-rates",
+    "type": "mcq",
+    "stem": "$2,000 is invested for 3 years. Option A: 5% compounded annually. Option B: 5% compounded monthly. Which yields more?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A — annual compounding avoids fees"
+      },
+      {
+        "id": "b",
+        "text": "B — more frequent compounding"
+      },
+      {
+        "id": "c",
+        "text": "Equal — same stated rate"
+      },
+      {
+        "id": "d",
+        "text": "A — simpler is better"
+      }
+    ],
+    "answer": 1,
+    "hint": "Same stated rate, different frequency — compute both FVs.",
+    "explanation": "FV(A) = 2,000 × (1.05)^3 = $2,315.25; FV(B) = 2,000 × (1 + 0.05/12)^36 = $2,322.94. B wins.",
+    "difficulty": 1,
+    "source": "Original question authored for Unschool Academy; interest-rate formulas per CFA Institute Learning Outcome Statements — Quantitative Methods (public LOS: ‘Calculate and interpret the effective annual rate, given the stated annual interest rate and the frequency of compounding’; periodic rate = stated annual rate ÷ m; EAR = (1 + periodic rate)^m − 1). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ir-022",
+    "level": "L1",
+    "skill": "interest-rates",
+    "type": "mcq",
+    "stem": "A CD advertises a periodic quarterly rate of 3%. What is its stated annual rate?",
+    "options": [
+      {
+        "id": "a",
+        "text": "3.00%"
+      },
+      {
+        "id": "b",
+        "text": "6.00%"
+      },
+      {
+        "id": "c",
+        "text": "12.00%"
+      },
+      {
+        "id": "d",
+        "text": "12.55%"
+      }
+    ],
+    "answer": 2,
+    "hint": "Stated = periodic × m.",
+    "explanation": "Stated = 3% × 4 = 12.00%. (The 12.55% distractor is the EAR, not the stated rate.)",
+    "difficulty": 1,
+    "source": "Original question authored for Unschool Academy; interest-rate formulas per CFA Institute Learning Outcome Statements — Quantitative Methods (public LOS: ‘Calculate and interpret the effective annual rate, given the stated annual interest rate and the frequency of compounding’; periodic rate = stated annual rate ÷ m; EAR = (1 + periodic rate)^m − 1). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ir-023",
+    "level": "L1",
+    "skill": "interest-rates",
+    "type": "mcq",
+    "stem": "What is the EAR of a 15% stated annual rate compounded quarterly?",
+    "options": [
+      {
+        "id": "a",
+        "text": "15.00%"
+      },
+      {
+        "id": "b",
+        "text": "15.56%"
+      },
+      {
+        "id": "c",
+        "text": "15.87%"
+      },
+      {
+        "id": "d",
+        "text": "16.10%"
+      }
+    ],
+    "answer": 2,
+    "hint": "Periodic = 3.75%, m = 4.",
+    "explanation": "EAR = (1.0375)^4 − 1 = 15.87%.",
+    "difficulty": 1,
+    "source": "Original question authored for Unschool Academy; interest-rate formulas per CFA Institute Learning Outcome Statements — Quantitative Methods (public LOS: ‘Calculate and interpret the effective annual rate, given the stated annual interest rate and the frequency of compounding’; periodic rate = stated annual rate ÷ m; EAR = (1 + periodic rate)^m − 1). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ir-024",
+    "level": "L1",
+    "skill": "interest-rates",
+    "type": "mcq",
+    "stem": "The stated annual rate equals the effective annual rate only when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "compounding is monthly"
+      },
+      {
+        "id": "b",
+        "text": "compounding is annual"
+      },
+      {
+        "id": "c",
+        "text": "the rate exceeds 10%"
+      },
+      {
+        "id": "d",
+        "text": "compounding is continuous"
+      }
+    ],
+    "answer": 1,
+    "hint": "When does intra-year compounding add nothing?",
+    "explanation": "With annual compounding (m = 1), EAR = (1 + r)^1 − 1 = r. Any higher frequency pushes EAR above the stated rate.",
+    "difficulty": 1,
+    "source": "Original question authored for Unschool Academy; interest-rate formulas per CFA Institute Learning Outcome Statements — Quantitative Methods (public LOS: ‘Calculate and interpret the effective annual rate, given the stated annual interest rate and the frequency of compounding’; periodic rate = stated annual rate ÷ m; EAR = (1 + periodic rate)^m − 1). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ir-025",
+    "level": "L1",
+    "skill": "interest-rates",
+    "type": "mcq",
+    "stem": "A credit card charges a periodic monthly rate of 2%. What are its stated APR and EAR?",
+    "options": [
+      {
+        "id": "a",
+        "text": "24.0% APR; 24.0% EAR"
+      },
+      {
+        "id": "b",
+        "text": "24.0% APR; 26.8% EAR"
+      },
+      {
+        "id": "c",
+        "text": "2.0% APR; 26.8% EAR"
+      },
+      {
+        "id": "d",
+        "text": "26.8% APR; 24.0% EAR"
+      }
+    ],
+    "answer": 1,
+    "hint": "APR (stated) = periodic × 12; EAR compounds it.",
+    "explanation": "Stated APR = 2% × 12 = 24.0%. EAR = (1.02)^12 − 1 = 26.8%. This is why credit-card debt grows faster than the quoted APR suggests.",
+    "difficulty": 1,
+    "source": "Original question authored for Unschool Academy; interest-rate formulas per CFA Institute Learning Outcome Statements — Quantitative Methods (public LOS: ‘Calculate and interpret the effective annual rate, given the stated annual interest rate and the frequency of compounding’; periodic rate = stated annual rate ÷ m; EAR = (1 + periodic rate)^m − 1). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ir-026",
+    "level": "L1",
+    "skill": "interest-rates",
+    "type": "mcq",
+    "stem": "What is the future value of $10,000 invested for 5 years at 3% compounded quarterly?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$11,500.00"
+      },
+      {
+        "id": "b",
+        "text": "$11,611.84"
+      },
+      {
+        "id": "c",
+        "text": "$11,592.74"
+      },
+      {
+        "id": "d",
+        "text": "$11,250.00"
+      }
+    ],
+    "answer": 1,
+    "hint": "Periodic = 0.75%, n = 20 quarters.",
+    "explanation": "FV = 10,000 × (1.0075)^20 = 10,000 × 1.161184 = $11,611.84.",
+    "difficulty": 1,
+    "source": "Original question authored for Unschool Academy; interest-rate formulas per CFA Institute Learning Outcome Statements — Quantitative Methods (public LOS: ‘Calculate and interpret the effective annual rate, given the stated annual interest rate and the frequency of compounding’; periodic rate = stated annual rate ÷ m; EAR = (1 + periodic rate)^m − 1). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ir-027",
+    "level": "L1",
+    "skill": "interest-rates",
+    "type": "mcq",
+    "stem": "A savings account advertises 7% compounded monthly. Its annual percentage yield (APY) is closest to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "7.00%"
+      },
+      {
+        "id": "b",
+        "text": "7.12%"
+      },
+      {
+        "id": "c",
+        "text": "7.23%"
+      },
+      {
+        "id": "d",
+        "text": "7.50%"
+      }
+    ],
+    "answer": 2,
+    "hint": "APY is just another name for the EAR.",
+    "explanation": "APY = EAR = (1 + 0.07/12)^12 − 1 = 7.23%.",
+    "difficulty": 1,
+    "source": "Original question authored for Unschool Academy; interest-rate formulas per CFA Institute Learning Outcome Statements — Quantitative Methods (public LOS: ‘Calculate and interpret the effective annual rate, given the stated annual interest rate and the frequency of compounding’; periodic rate = stated annual rate ÷ m; EAR = (1 + periodic rate)^m − 1). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ir-028",
+    "level": "L1",
+    "skill": "interest-rates",
+    "type": "mcq",
+    "stem": "Approximately how long will it take money to double at 8% compounded annually?",
+    "options": [
+      {
+        "id": "a",
+        "text": "8.0 years"
+      },
+      {
+        "id": "b",
+        "text": "9.0 years"
+      },
+      {
+        "id": "c",
+        "text": "10.0 years"
+      },
+      {
+        "id": "d",
+        "text": "12.5 years"
+      }
+    ],
+    "answer": 1,
+    "hint": "Rule of 72 gives ≈9 years; exact: n = ln(2)/ln(1.08).",
+    "explanation": "Exact: n = ln(2) ÷ ln(1.08) = 9.01 years ≈ 9.0 years. (Rule of 72: 72/8 = 9.)",
+    "difficulty": 1,
+    "source": "Original question authored for Unschool Academy; interest-rate formulas per CFA Institute Learning Outcome Statements — Quantitative Methods (public LOS: ‘Calculate and interpret the effective annual rate, given the stated annual interest rate and the frequency of compounding’; periodic rate = stated annual rate ÷ m; EAR = (1 + periodic rate)^m − 1). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ir-029",
+    "level": "L1",
+    "skill": "interest-rates",
+    "type": "mcq",
+    "stem": "Two deposits both quote 12%: one compounded monthly, one compounded daily. Which grows faster?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Monthly — fewer periods, less erosion"
+      },
+      {
+        "id": "b",
+        "text": "Daily — higher EAR"
+      },
+      {
+        "id": "c",
+        "text": "Identical — same stated rate"
+      },
+      {
+        "id": "d",
+        "text": "Monthly — daily uses 360 days"
+      }
+    ],
+    "answer": 1,
+    "hint": "Same stated rate: higher frequency → higher EAR.",
+    "explanation": "EAR(monthly) = 12.68%; EAR(daily) = 12.75%. Daily wins, though only slightly.",
+    "difficulty": 1,
+    "source": "Original question authored for Unschool Academy; interest-rate formulas per CFA Institute Learning Outcome Statements — Quantitative Methods (public LOS: ‘Calculate and interpret the effective annual rate, given the stated annual interest rate and the frequency of compounding’; periodic rate = stated annual rate ÷ m; EAR = (1 + periodic rate)^m − 1). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "cfa-qm-ir-030",
+    "level": "L1",
+    "skill": "interest-rates",
+    "type": "mcq",
+    "stem": "What stated annual rate, compounded semiannually, is equivalent to an EAR of 5%?",
+    "options": [
+      {
+        "id": "a",
+        "text": "5.00%"
+      },
+      {
+        "id": "b",
+        "text": "4.94%"
+      },
+      {
+        "id": "c",
+        "text": "2.47%"
+      },
+      {
+        "id": "d",
+        "text": "5.06%"
+      }
+    ],
+    "answer": 1,
+    "hint": "Periodic = (1.05)^(1/2) − 1, then double it.",
+    "explanation": "Semiannual periodic = 1.05^0.5 − 1 = 2.4695%. Stated = 2 × that = 4.94%. Note the stated rate is below the EAR.",
+    "difficulty": 1,
+    "source": "Original question authored for Unschool Academy; interest-rate formulas per CFA Institute Learning Outcome Statements — Quantitative Methods (public LOS: ‘Calculate and interpret the effective annual rate, given the stated annual interest rate and the frequency of compounding’; periodic rate = stated annual rate ÷ m; EAR = (1 + periodic rate)^m − 1). Level L1 (Foundation).",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  }
+]

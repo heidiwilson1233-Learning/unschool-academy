@@ -1,0 +1,962 @@
+[
+ {
+  "answer": 0,
+  "difficulty": 1,
+  "explanation": "The total has two parts: a fixed $3.00 pickup fee plus $2.50 for each mile. So C = (cost per mile)(miles) + (pickup fee) = 2.50m + 3.00.",
+  "hint": "Split the cost into a part that never changes (pickup fee) and a part that grows with miles.",
+  "id": "sat-ma-lm-001",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "C = 2.50m + 3.00"
+   },
+   {
+    "id": "b",
+    "text": "C = 3.00m + 2.50"
+   },
+   {
+    "id": "c",
+    "text": "C = 5.50m"
+   },
+   {
+    "id": "d",
+    "text": "C = 2.50m − 3.00"
+   }
+  ],
+  "skill": "linear-models",
+  "source": "Original question authored for Unschool Academy; syllabus-aligned to College Board digital SAT Math — Algebra: creating linear equations to represent relationships between quantities (satsuite.collegeboard.org); Khan Academy SAT Math: linear equations word problems. Level L1 (Foundation).",
+  "status": "draft-pending-sme-review",
+  "stem": "A taxi charges a $3.00 pickup fee plus $2.50 per mile. Which equation gives the total cost C, in dollars, for a ride of m miles?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 1,
+  "difficulty": 1,
+  "explanation": "Monthly charge $25 times n months, plus the one-time $60 fee: T = 25n + 60. The $60 is added once, not multiplied by n.",
+  "hint": "Which number repeats every month, and which is paid only once?",
+  "id": "sat-ma-lm-002",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "T = 60n + 25"
+   },
+   {
+    "id": "b",
+    "text": "T = 25n + 60"
+   },
+   {
+    "id": "c",
+    "text": "T = 85n"
+   },
+   {
+    "id": "d",
+    "text": "T = 25n − 60"
+   }
+  ],
+  "skill": "linear-models",
+  "source": "Original question authored for Unschool Academy; syllabus-aligned to College Board digital SAT Math — Algebra: creating linear equations to represent relationships between quantities (satsuite.collegeboard.org); Khan Academy SAT Math: linear equations word problems. Level L1 (Foundation).",
+  "status": "draft-pending-sme-review",
+  "stem": "A gym membership costs $25 per month plus a one-time $60 enrollment fee. Which equation gives the total cost T, in dollars, after n months?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 3,
+  "difficulty": 1,
+  "explanation": "Each week adds $15, so after w weeks the total is 15 times w: S = 15w.",
+  "hint": "If she saves $15 in one week, how much after w weeks?",
+  "id": "sat-ma-lm-003",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "S = w + 15"
+   },
+   {
+    "id": "b",
+    "text": "S = 15 ÷ w"
+   },
+   {
+    "id": "c",
+    "text": "S = 15 − w"
+   },
+   {
+    "id": "d",
+    "text": "S = 15w"
+   }
+  ],
+  "skill": "linear-models",
+  "source": "Original question authored for Unschool Academy; syllabus-aligned to College Board digital SAT Math — Algebra: creating linear equations to represent relationships between quantities (satsuite.collegeboard.org). Level L1 (Foundation).",
+  "status": "draft-pending-sme-review",
+  "stem": "Maria saves $15 each week. Which equation gives her total savings S, in dollars, after w weeks?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 3,
+  "difficulty": 1,
+  "explanation": "The $40 monthly base never changes; each extra GB adds $10. So T = 40 + 10g, written as T = 10g + 40.",
+  "hint": "Start with the part that is always charged, then add the per-GB part.",
+  "id": "sat-ma-lm-004",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "T = 40g + 10"
+   },
+   {
+    "id": "b",
+    "text": "T = 50g"
+   },
+   {
+    "id": "c",
+    "text": "T = 10(g + 40)"
+   },
+   {
+    "id": "d",
+    "text": "T = 10g + 40"
+   }
+  ],
+  "skill": "linear-models",
+  "source": "Original question authored for Unschool Academy; syllabus-aligned to College Board digital SAT Math — Algebra: creating linear equations to represent relationships between quantities (satsuite.collegeboard.org); Khan Academy SAT Math: linear equations word problems. Level L1 (Foundation).",
+  "status": "draft-pending-sme-review",
+  "stem": "A phone plan costs $40 per month, which includes 5 GB of data. Each additional GB costs $10. Which equation gives the total monthly cost T, in dollars, when g extra GB are used?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 0,
+  "difficulty": 1,
+  "explanation": "$0.10 for each of the p pages plus one $2.00 setup fee: C = 0.10p + 2.00.",
+  "hint": "The setup fee is charged once no matter how many pages are printed.",
+  "id": "sat-ma-lm-005",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "C = 0.10p + 2.00"
+   },
+   {
+    "id": "b",
+    "text": "C = 2.00p + 0.10"
+   },
+   {
+    "id": "c",
+    "text": "C = 2.10p"
+   },
+   {
+    "id": "d",
+    "text": "C = 0.10p − 2.00"
+   }
+  ],
+  "skill": "linear-models",
+  "source": "Original question authored for Unschool Academy; syllabus-aligned to College Board digital SAT Math — Algebra: creating linear equations to represent relationships between quantities (satsuite.collegeboard.org). Level L1 (Foundation).",
+  "status": "draft-pending-sme-review",
+  "stem": "A printing shop charges $0.10 per page plus a $2.00 setup fee per order. Which equation gives the total cost C, in dollars, for an order of p pages?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 1,
+  "difficulty": 1,
+  "explanation": "In C = 45 + 12h, the 45 is the constant term — it is charged even when h = 0. It is the fixed service-call fee; 12 is the hourly rate.",
+  "hint": "What part of the bill stays the same even if the repair takes zero hours?",
+  "id": "sat-ma-lm-006",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "The hourly rate"
+   },
+   {
+    "id": "b",
+    "text": "The fixed service-call fee"
+   },
+   {
+    "id": "c",
+    "text": "The number of hours worked"
+   },
+   {
+    "id": "d",
+    "text": "The total cost"
+   }
+  ],
+  "skill": "linear-models",
+  "source": "Original question authored for Unschool Academy; syllabus-aligned to College Board digital SAT Math — Algebra: interpreting linear models in context (satsuite.collegeboard.org); Khan Academy SAT Math: interpreting linear functions. Level L1 (Foundation).",
+  "status": "draft-pending-sme-review",
+  "stem": "The cost C, in dollars, of a repair visit lasting h hours is modeled by C = 45 + 12h. What does the number 45 represent in this model?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 1,
+  "difficulty": 1,
+  "explanation": "In P = 200 − 8d, the 8 is multiplied by d (days), so it is the amount the pages decrease each day: 8 pages read per day.",
+  "hint": "Which number is attached to the variable d? That is the per-day rate.",
+  "id": "sat-ma-lm-007",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "The total number of pages"
+   },
+   {
+    "id": "b",
+    "text": "The number of pages read per day"
+   },
+   {
+    "id": "c",
+    "text": "The number of days elapsed"
+   },
+   {
+    "id": "d",
+    "text": "The number of pages left after one day"
+   }
+  ],
+  "skill": "linear-models",
+  "source": "Original question authored for Unschool Academy; syllabus-aligned to College Board digital SAT Math — Algebra: interpreting linear models in context (satsuite.collegeboard.org); Khan Academy SAT Math: interpreting linear functions. Level L1 (Foundation).",
+  "status": "draft-pending-sme-review",
+  "stem": "The number of pages P left to read in a book after d days is modeled by P = 200 − 8d. What does the number 8 represent in this model?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 3,
+  "difficulty": 1,
+  "explanation": "$55 for each of the d days plus $0.20 for each of the m miles: R = 55d + 0.20m.",
+  "hint": "Days and miles each have their own rate — keep the two parts separate.",
+  "id": "sat-ma-lm-008",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "R = 0.20d + 55m"
+   },
+   {
+    "id": "b",
+    "text": "R = 55.20(d + m)"
+   },
+   {
+    "id": "c",
+    "text": "R = 55d − 0.20m"
+   },
+   {
+    "id": "d",
+    "text": "R = 55d + 0.20m"
+   }
+  ],
+  "skill": "linear-models",
+  "source": "Original question authored for Unschool Academy; syllabus-aligned to College Board digital SAT Math — Algebra: creating linear equations to represent relationships between quantities (satsuite.collegeboard.org); Khan Academy SAT Math: linear equations word problems. Level L1 (Foundation).",
+  "status": "draft-pending-sme-review",
+  "stem": "A car rental costs $55 per day plus $0.20 per mile driven. Which equation gives the total rental cost R, in dollars, for d days and m miles?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 2,
+  "difficulty": 1,
+  "explanation": "When heating began, h = 0. Substituting: T = 70 + 150(0) = 70. The constant term 70 is the starting temperature.",
+  "hint": "'When heating began' means h = 0. What is T then?",
+  "id": "sat-ma-lm-009",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "150°F"
+   },
+   {
+    "id": "b",
+    "text": "220°F"
+   },
+   {
+    "id": "c",
+    "text": "70°F"
+   },
+   {
+    "id": "d",
+    "text": "0°F"
+   }
+  ],
+  "skill": "linear-models",
+  "source": "Original question authored for Unschool Academy; syllabus-aligned to College Board digital SAT Math — Algebra: interpreting linear models in context (satsuite.collegeboard.org); Khan Academy SAT Math: interpreting linear functions. Level L1 (Foundation).",
+  "status": "draft-pending-sme-review",
+  "stem": "The temperature T, in degrees Fahrenheit, inside a kiln after h hours of heating is modeled by T = 70 + 150h. What was the temperature when heating began?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 0,
+  "difficulty": 1,
+  "explanation": "3 cups for each of the c cakes plus a single 2-cup dusting: F = 3c + 2.",
+  "hint": "The 2 cups are used once, not once per cake.",
+  "id": "sat-ma-lm-010",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "F = 3c + 2"
+   },
+   {
+    "id": "b",
+    "text": "F = 2c + 3"
+   },
+   {
+    "id": "c",
+    "text": "F = 5c"
+   },
+   {
+    "id": "d",
+    "text": "F = 3c − 2"
+   }
+  ],
+  "skill": "linear-models",
+  "source": "Original question authored for Unschool Academy; syllabus-aligned to College Board digital SAT Math — Algebra: creating linear equations to represent relationships between quantities (satsuite.collegeboard.org). Level L1 (Foundation).",
+  "status": "draft-pending-sme-review",
+  "stem": "A baker uses 3 cups of flour per cake, plus 2 extra cups for dusting the pans. Which equation gives the total flour F, in cups, needed for c cakes?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 1,
+  "difficulty": 1,
+  "explanation": "Set the model equal to the known cost: 2.50m + 3.00 = 18.00. Subtract 3.00: 2.50m = 15.00. Divide by 2.50: m = 6.",
+  "hint": "Write the equation with 18.00 as the total, then undo the +3.00 first.",
+  "id": "sat-ma-lm-011",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "4 miles"
+   },
+   {
+    "id": "b",
+    "text": "6 miles"
+   },
+   {
+    "id": "c",
+    "text": "8 miles"
+   },
+   {
+    "id": "d",
+    "text": "8.4 miles"
+   }
+  ],
+  "skill": "linear-models",
+  "source": "Original question authored for Unschool Academy; syllabus-aligned to College Board digital SAT Math — Algebra: solving linear equations arising from models (satsuite.collegeboard.org); Khan Academy SAT Math: linear equations word problems. Level L1 (Foundation).",
+  "status": "draft-pending-sme-review",
+  "stem": "A taxi charges $3.00 plus $2.50 per mile, so the cost C for m miles is C = 2.50m + 3.00. If a ride costs $18.00, how many miles long was the ride?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 1,
+  "difficulty": 1,
+  "explanation": "25n + 60 = 210. Subtract 60: 25n = 150. Divide by 25: n = 6.",
+  "hint": "Subtract the one-time fee first, then divide what is left by the monthly rate.",
+  "id": "sat-ma-lm-012",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "4 months"
+   },
+   {
+    "id": "b",
+    "text": "6 months"
+   },
+   {
+    "id": "c",
+    "text": "8 months"
+   },
+   {
+    "id": "d",
+    "text": "10 months"
+   }
+  ],
+  "skill": "linear-models",
+  "source": "Original question authored for Unschool Academy; syllabus-aligned to College Board digital SAT Math — Algebra: solving linear equations arising from models (satsuite.collegeboard.org). Level L1 (Foundation).",
+  "status": "draft-pending-sme-review",
+  "stem": "A gym membership costs $60 once plus $25 per month, so the total T after n months is T = 25n + 60. If a member has paid $210 in total, for how many months has the membership lasted?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 2,
+  "difficulty": 1,
+  "explanation": "80 + 65h = 275. Subtract 80: 65h = 195. Divide by 65: h = 3.",
+  "hint": "Remove the visit fee from the bill first; the rest pays for hours.",
+  "id": "sat-ma-lm-013",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "2 hours"
+   },
+   {
+    "id": "b",
+    "text": "2.5 hours"
+   },
+   {
+    "id": "c",
+    "text": "3 hours"
+   },
+   {
+    "id": "d",
+    "text": "4 hours"
+   }
+  ],
+  "skill": "linear-models",
+  "source": "Original question authored for Unschool Academy; syllabus-aligned to College Board digital SAT Math — Algebra: solving linear equations arising from models (satsuite.collegeboard.org); Khan Academy SAT Math: linear equations word problems. Level L1 (Foundation).",
+  "status": "draft-pending-sme-review",
+  "stem": "A plumber charges an $80 visit fee plus $65 per hour of work. A bill totaled $275. How many hours did the plumber work?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 3,
+  "difficulty": 1,
+  "explanation": "12n = 144. Divide both sides by 12: n = 12.",
+  "hint": "How many groups of $12 fit into $144?",
+  "id": "sat-ma-lm-014",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "10 months"
+   },
+   {
+    "id": "b",
+    "text": "11 months"
+   },
+   {
+    "id": "c",
+    "text": "13 months"
+   },
+   {
+    "id": "d",
+    "text": "12 months"
+   }
+  ],
+  "skill": "linear-models",
+  "source": "Original question authored for Unschool Academy; syllabus-aligned to College Board digital SAT Math — Algebra: solving linear equations arising from models (satsuite.collegeboard.org). Level L1 (Foundation).",
+  "status": "draft-pending-sme-review",
+  "stem": "A magazine subscription costs $12 per month with no signup fee. After how many months will the total paid reach $144?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 1,
+  "difficulty": 1,
+  "explanation": "Substitute x = 7 into the model: y = 5(7) + 20 = 35 + 20 = 55 cm.",
+  "hint": "Replace x with 7 in the equation and compute.",
+  "id": "sat-ma-lm-015",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "40 cm"
+   },
+   {
+    "id": "b",
+    "text": "55 cm"
+   },
+   {
+    "id": "c",
+    "text": "60 cm"
+   },
+   {
+    "id": "d",
+    "text": "27 cm"
+   }
+  ],
+  "skill": "linear-models",
+  "source": "Original question authored for Unschool Academy; syllabus-aligned to College Board digital SAT Math — Algebra: evaluating linear models (satsuite.collegeboard.org); Khan Academy SAT Math: interpreting linear functions. Level L1 (Foundation).",
+  "status": "draft-pending-sme-review",
+  "stem": "The height y, in centimeters, of a plant x weeks after sprouting is modeled by y = 5x + 20. What is the plant's height after 7 weeks?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 1,
+  "difficulty": 1,
+  "explanation": "The 5 is multiplied by x (weeks), so it is the amount the height increases each week: 5 cm of growth per week.",
+  "hint": "The number attached to x tells how fast y changes as x grows.",
+  "id": "sat-ma-lm-016",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "The initial height of the plant"
+   },
+   {
+    "id": "b",
+    "text": "The growth per week, in centimeters"
+   },
+   {
+    "id": "c",
+    "text": "The height after 5 weeks"
+   },
+   {
+    "id": "d",
+    "text": "The total number of weeks"
+   }
+  ],
+  "skill": "linear-models",
+  "source": "Original question authored for Unschool Academy; syllabus-aligned to College Board digital SAT Math — Algebra: interpreting linear models in context (satsuite.collegeboard.org); Khan Academy SAT Math: interpreting linear functions. Level L1 (Foundation).",
+  "status": "draft-pending-sme-review",
+  "stem": "In the model y = 5x + 20 for a plant's height, what does the number 5 represent?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 2,
+  "difficulty": 1,
+  "explanation": "In C = 3 + 2.5m, the constant 3 is charged even at m = 0, so it is the $3.00 pickup fee; 2.5 is the per-mile rate.",
+  "hint": "Which number is added no matter how many miles are driven?",
+  "id": "sat-ma-lm-017",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "The pickup fee is $2.50"
+   },
+   {
+    "id": "b",
+    "text": "Each mile costs $3.00"
+   },
+   {
+    "id": "c",
+    "text": "The pickup fee is $3.00"
+   },
+   {
+    "id": "d",
+    "text": "The total can never exceed $5.50"
+   }
+  ],
+  "skill": "linear-models",
+  "source": "Original question authored for Unschool Academy; syllabus-aligned to College Board digital SAT Math — Algebra: interpreting linear models in context (satsuite.collegeboard.org). Level L1 (Foundation).",
+  "status": "draft-pending-sme-review",
+  "stem": "A taxi fare is modeled by C = 3 + 2.5m, where C is the total in dollars and m is miles driven. Which statement is true?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 0,
+  "difficulty": 1,
+  "explanation": "Plan A: $30 fixed + $5 per GB → A = 30 + 5g. Plan B: $20 fixed + $8 per GB → B = 20 + 8g. The fixed fee is the constant; the per-GB rate multiplies g.",
+  "hint": "For each plan, the starting fee is the constant and the per-GB price multiplies g.",
+  "id": "sat-ma-lm-018",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "A = 30 + 5g and B = 20 + 8g"
+   },
+   {
+    "id": "b",
+    "text": "A = 5 + 30g and B = 8 + 20g"
+   },
+   {
+    "id": "c",
+    "text": "A = 35g and B = 28g"
+   },
+   {
+    "id": "d",
+    "text": "A = 30g + 5 and B = 20g + 8"
+   }
+  ],
+  "skill": "linear-models",
+  "source": "Original question authored for Unschool Academy; syllabus-aligned to College Board digital SAT Math — Algebra: creating linear equations to represent relationships between quantities (satsuite.collegeboard.org); Khan Academy SAT Math: linear equations word problems. Level L1 (Foundation).",
+  "status": "draft-pending-sme-review",
+  "stem": "Phone plan A charges $30 per month plus $5 per GB of data. Phone plan B charges $20 per month plus $8 per GB of data. If g is the number of GB used, which pair of equations gives the monthly costs A and B?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 2,
+  "difficulty": 1,
+  "explanation": "At 4 GB: Plan A costs 30 + 5(4) = $50. Plan B costs 15 + 10(4) = $55. Plan A is cheaper by $55 − $50 = $5.",
+  "hint": "Compute each plan's cost at 4 GB, then compare.",
+  "id": "sat-ma-lm-019",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "Plan B is cheaper by $5"
+   },
+   {
+    "id": "b",
+    "text": "Plan A is cheaper by $10"
+   },
+   {
+    "id": "c",
+    "text": "Plan A is cheaper by $5"
+   },
+   {
+    "id": "d",
+    "text": "Both plans cost the same"
+   }
+  ],
+  "skill": "linear-models",
+  "source": "Original question authored for Unschool Academy; syllabus-aligned to College Board digital SAT Math — Algebra: evaluating and comparing linear models (satsuite.collegeboard.org). Level L1 (Foundation).",
+  "status": "draft-pending-sme-review",
+  "stem": "Plan A charges $30 plus $5 per GB; plan B charges $15 plus $10 per GB. For a month with 4 GB of data, which plan costs less, and by how much?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 3,
+  "difficulty": 1,
+  "explanation": "The candle loses 2 cm each hour, so height decreases as h grows: H = 24 − 2h. At h = 0, H = 24, the starting height.",
+  "hint": "Height goes down over time, so h must be subtracted.",
+  "id": "sat-ma-lm-020",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "H = 2h + 24"
+   },
+   {
+    "id": "b",
+    "text": "H = 24h − 2"
+   },
+   {
+    "id": "c",
+    "text": "H = 22h"
+   },
+   {
+    "id": "d",
+    "text": "H = 24 − 2h"
+   }
+  ],
+  "skill": "linear-models",
+  "source": "Original question authored for Unschool Academy; syllabus-aligned to College Board digital SAT Math — Algebra: creating linear equations to represent relationships between quantities (satsuite.collegeboard.org); Khan Academy SAT Math: linear equations word problems. Level L1 (Foundation).",
+  "status": "draft-pending-sme-review",
+  "stem": "A 24-cm candle burns down at a rate of 2 cm per hour. Which equation gives the height H, in centimeters, of the candle after h hours of burning?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 2,
+  "difficulty": 1,
+  "explanation": "24 − 2h = 10. Subtract 10 from 24: 2h = 14. Divide by 2: h = 7.",
+  "hint": "Set the model equal to 10 and solve for h.",
+  "id": "sat-ma-lm-021",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "5 hours"
+   },
+   {
+    "id": "b",
+    "text": "6 hours"
+   },
+   {
+    "id": "c",
+    "text": "7 hours"
+   },
+   {
+    "id": "d",
+    "text": "12 hours"
+   }
+  ],
+  "skill": "linear-models",
+  "source": "Original question authored for Unschool Academy; syllabus-aligned to College Board digital SAT Math — Algebra: solving linear equations arising from models (satsuite.collegeboard.org). Level L1 (Foundation).",
+  "status": "draft-pending-sme-review",
+  "stem": "A candle's height is modeled by H = 24 − 2h, where H is in centimeters and h is hours burned. After how many hours will the candle be 10 cm tall?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 0,
+  "difficulty": 1,
+  "explanation": "The tank loses 25 L per minute, so volume decreases: V = 500 − 25m. At m = 0, V = 500, the starting volume.",
+  "hint": "Draining means the volume goes down as minutes pass.",
+  "id": "sat-ma-lm-022",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "V = 500 − 25m"
+   },
+   {
+    "id": "b",
+    "text": "V = 25m + 500"
+   },
+   {
+    "id": "c",
+    "text": "V = 475m"
+   },
+   {
+    "id": "d",
+    "text": "V = 500m − 25"
+   }
+  ],
+  "skill": "linear-models",
+  "source": "Original question authored for Unschool Academy; syllabus-aligned to College Board digital SAT Math — Algebra: creating linear equations to represent relationships between quantities (satsuite.collegeboard.org). Level L1 (Foundation).",
+  "status": "draft-pending-sme-review",
+  "stem": "A tank holds 500 liters of water and drains at 25 liters per minute. Which equation gives the volume V, in liters, remaining after m minutes?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 1,
+  "difficulty": 1,
+  "explanation": "Empty means V = 0: 500 − 25m = 0, so 25m = 500 and m = 20.",
+  "hint": "Set V = 0 and solve for m.",
+  "id": "sat-ma-lm-023",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "10 minutes"
+   },
+   {
+    "id": "b",
+    "text": "20 minutes"
+   },
+   {
+    "id": "c",
+    "text": "25 minutes"
+   },
+   {
+    "id": "d",
+    "text": "40 minutes"
+   }
+  ],
+  "skill": "linear-models",
+  "source": "Original question authored for Unschool Academy; syllabus-aligned to College Board digital SAT Math — Algebra: solving linear equations arising from models (satsuite.collegeboard.org). Level L1 (Foundation).",
+  "status": "draft-pending-sme-review",
+  "stem": "A 500-liter tank drains at 25 liters per minute (V = 500 − 25m). How many minutes until the tank is empty?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 3,
+  "difficulty": 1,
+  "explanation": "$0.25 for each late day, with no fixed fee: F = 0.25d.",
+  "hint": "There is no flat fee here — only the per-day charge.",
+  "id": "sat-ma-lm-024",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "F = d + 0.25"
+   },
+   {
+    "id": "b",
+    "text": "F = 0.25 ÷ d"
+   },
+   {
+    "id": "c",
+    "text": "F = 25d"
+   },
+   {
+    "id": "d",
+    "text": "F = 0.25d"
+   }
+  ],
+  "skill": "linear-models",
+  "source": "Original question authored for Unschool Academy; syllabus-aligned to College Board digital SAT Math — Algebra: creating linear equations to represent relationships between quantities (satsuite.collegeboard.org). Level L1 (Foundation).",
+  "status": "draft-pending-sme-review",
+  "stem": "A library charges a fine of $0.25 per day for a late book, with no flat fee. Which equation gives the fine F, in dollars, for a book returned d days late?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 2,
+  "difficulty": 1,
+  "explanation": "0.25d = 3.00. Divide by 0.25: d = 12.",
+  "hint": "Divide the total fine by the per-day rate.",
+  "id": "sat-ma-lm-025",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "6 days"
+   },
+   {
+    "id": "b",
+    "text": "8 days"
+   },
+   {
+    "id": "c",
+    "text": "12 days"
+   },
+   {
+    "id": "d",
+    "text": "75 days"
+   }
+  ],
+  "skill": "linear-models",
+  "source": "Original question authored for Unschool Academy; syllabus-aligned to College Board digital SAT Math — Algebra: solving linear equations arising from models (satsuite.collegeboard.org). Level L1 (Foundation).",
+  "status": "draft-pending-sme-review",
+  "stem": "A library fine is $0.25 per day (F = 0.25d). If the fine totaled $3.00, how many days late was the book?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 0,
+  "difficulty": 1,
+  "explanation": "$1.50 booking fee plus $0.90 × 20 minutes = $1.50 + $18.00 = $19.50.",
+  "hint": "Compute the per-minute part first, then add the booking fee.",
+  "id": "sat-ma-lm-026",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "$19.50"
+   },
+   {
+    "id": "b",
+    "text": "$18.00"
+   },
+   {
+    "id": "c",
+    "text": "$21.00"
+   },
+   {
+    "id": "d",
+    "text": "$33.00"
+   }
+  ],
+  "skill": "linear-models",
+  "source": "Original question authored for Unschool Academy; syllabus-aligned to College Board digital SAT Math — Algebra: evaluating linear models (satsuite.collegeboard.org); Khan Academy SAT Math: linear equations word problems. Level L1 (Foundation).",
+  "status": "draft-pending-sme-review",
+  "stem": "A ride-share charges a $1.50 booking fee plus $0.90 per minute. What is the total cost of a 20-minute ride?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 3,
+  "difficulty": 1,
+  "explanation": "Each of the n friends pays $12 (12n), and the $5 tip is added once: T = 12n + 5.",
+  "hint": "The tip is shared — it is added once, not once per friend.",
+  "id": "sat-ma-lm-027",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "T = 5n + 12"
+   },
+   {
+    "id": "b",
+    "text": "T = 17n"
+   },
+   {
+    "id": "c",
+    "text": "T = 12n − 5"
+   },
+   {
+    "id": "d",
+    "text": "T = 12n + 5"
+   }
+  ],
+  "skill": "linear-models",
+  "source": "Original question authored for Unschool Academy; syllabus-aligned to College Board digital SAT Math — Algebra: creating linear equations to represent relationships between quantities (satsuite.collegeboard.org). Level L1 (Foundation).",
+  "status": "draft-pending-sme-review",
+  "stem": "A group of n friends splits a bill so that each pays $12, and they add a single shared $5 tip. Which equation gives the total T, in dollars?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 0,
+  "difficulty": 1,
+  "explanation": "120 toys each day for d days: P = 120d.",
+  "hint": "Multiply the daily rate by the number of days.",
+  "id": "sat-ma-lm-028",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "P = 120d"
+   },
+   {
+    "id": "b",
+    "text": "P = d + 120"
+   },
+   {
+    "id": "c",
+    "text": "P = 120 ÷ d"
+   },
+   {
+    "id": "d",
+    "text": "P = 120 − d"
+   }
+  ],
+  "skill": "linear-models",
+  "source": "Original question authored for Unschool Academy; syllabus-aligned to College Board digital SAT Math — Algebra: creating linear equations to represent relationships between quantities (satsuite.collegeboard.org). Level L1 (Foundation).",
+  "status": "draft-pending-sme-review",
+  "stem": "A factory produces 120 toys per day. Which equation gives the total number of toys P produced in d days?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 0,
+  "difficulty": 1,
+  "explanation": "30 pages per day for d days gives 30d pages; finishing the 450-page book means 30d = 450.",
+  "hint": "Total pages read equals the whole book when finished.",
+  "id": "sat-ma-lm-029",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "30d = 450"
+   },
+   {
+    "id": "b",
+    "text": "d + 30 = 450"
+   },
+   {
+    "id": "c",
+    "text": "450d = 30"
+   },
+   {
+    "id": "d",
+    "text": "d ÷ 30 = 450"
+   }
+  ],
+  "skill": "linear-models",
+  "source": "Original question authored for Unschool Academy; syllabus-aligned to College Board digital SAT Math — Algebra: creating linear equations to represent relationships between quantities (satsuite.collegeboard.org); Khan Academy SAT Math: linear equations word problems. Level L1 (Foundation).",
+  "status": "draft-pending-sme-review",
+  "stem": "A student reads 30 pages per day. Which equation can be used to find d, the number of days needed to finish a 450-page book?",
+  "type": "mcq",
+  "version": 1
+ },
+ {
+  "answer": 2,
+  "difficulty": 1,
+  "explanation": "30d = 450 gives d = 15. Since d was defined as the number of days to finish, d represents the days needed to finish the book.",
+  "hint": "What quantity did d stand for when the equation was written?",
+  "id": "sat-ma-lm-030",
+  "level": "L1",
+  "options": [
+   {
+    "id": "a",
+    "text": "Pages read per day"
+   },
+   {
+    "id": "b",
+    "text": "Total pages in the book"
+   },
+   {
+    "id": "c",
+    "text": "Days needed to finish the book"
+   },
+   {
+    "id": "d",
+    "text": "Pages remaining to read"
+   }
+  ],
+  "skill": "linear-models",
+  "source": "Original question authored for Unschool Academy; syllabus-aligned to College Board digital SAT Math — Algebra: interpreting linear models in context (satsuite.collegeboard.org). Level L1 (Foundation).",
+  "status": "draft-pending-sme-review",
+  "stem": "In the equation 30d = 450, used to find how long it takes to read a 450-page book at 30 pages per day, what does d represent?",
+  "type": "mcq",
+  "version": 1
+ }
+]

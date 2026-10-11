@@ -1,0 +1,602 @@
+[
+  {
+    "id": "aws-saa-cc-ib-001",
+    "skill": "iam-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "What is AWS Identity and Access Management (IAM) primarily used for?",
+    "options": [
+      "Storing photos and videos in the cloud",
+      "Running virtual servers in multiple regions",
+      "Controlling who can do what in an AWS account \u2014 authentication and authorization",
+      "Monitoring website traffic in real time"
+    ],
+    "answer": 2,
+    "explanation": "IAM is AWS's identity service: it authenticates identities (users, roles, applications) and authorizes what API actions they may perform on which resources. Everything in AWS is denied by default until IAM grants it.",
+    "hint": "Think: who is allowed to touch what? That is an identity question.",
+    "source": "AWS Documentation \u2014 What is IAM (docs.aws.amazon.com)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-ib-002",
+    "skill": "iam-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "An IAM user is best described as:",
+    "options": [
+      "A temporary token that expires after 12 hours",
+      "An identity representing a person or application with long-term credentials",
+      "A billing report for an AWS account",
+      "The physical server that hosts your application"
+    ],
+    "answer": 1,
+    "explanation": "An IAM user is a persistent identity inside your account \u2014 it can have a console password and/or access keys. Use IAM users for people (or workloads) that need long-term credentials, and roles for everything else.",
+    "hint": "Users are long-term. What kind of identity sticks around for months?",
+    "source": "AWS Documentation \u2014 What is IAM (docs.aws.amazon.com)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-ib-003",
+    "skill": "iam-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Why does AWS recommend NOT using the root user for everyday tasks?",
+    "options": [
+      "The root user cannot access the AWS Management Console",
+      "The root user has unrestricted access to the account, so a compromise is catastrophic",
+      "The root user is charged extra per API call",
+      "The root user cannot be given MFA"
+    ],
+    "answer": 1,
+    "explanation": "The root user can do anything in the account \u2014 its permissions cannot be limited by design. AWS best practice: lock it away (MFA on, no access keys) and do daily work with an IAM administrative user instead.",
+    "hint": "What makes the root user special \u2014 and dangerous?",
+    "source": "AWS IAM User Guide \u2014 Root user best practices (docs.aws.amazon.com/IAM/latest/UserGuide/root-user-best-practices.html)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-ib-004",
+    "skill": "iam-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Which is the FIRST thing AWS recommends after creating a new account?",
+    "options": [
+      "Launch an EC2 instance to test the account",
+      "Share the root password with the team",
+      "Delete all default IAM policies",
+      "Enable MFA on the root user and create an IAM administrative user"
+    ],
+    "answer": 3,
+    "explanation": "AWS's administrator best-practices checklist starts with: sign in as root, enable MFA, create an administrative user in IAM, then safeguard the root credentials and never use them for everyday tasks.",
+    "hint": "Before doing anything else \u2014 how do you secure the most powerful identity?",
+    "source": "AWS Sign-In User Guide \u2014 Security best practices for AWS account administrators (docs.aws.amazon.com/signin/latest/userguide/best-practices-admin.html)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-ib-005",
+    "skill": "iam-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "An IAM group is:",
+    "options": [
+      "A billing consolidation of multiple AWS accounts",
+      "A temporary credential issued by AWS STS",
+      "A collection of IAM users that share the same attached policies",
+      "A set of EC2 instances in the same Availability Zone"
+    ],
+    "answer": 2,
+    "explanation": "Groups let you attach a policy once and have every member user inherit it. Best practice: put users in groups and attach policies to the group, not to individual users \u2014 far easier to manage as the team grows.",
+    "hint": "Groups bundle people so you manage permissions once, not per person.",
+    "source": "AWS IAM User Guide \u2014 Security best practices in IAM (docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-ib-006",
+    "skill": "iam-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "AWS best practice for assigning permissions is to attach policies to:",
+    "options": [
+      "Groups and roles rather than individual users",
+      "EC2 security groups",
+      "Individual IAM users, one by one",
+      "The root user only"
+    ],
+    "answer": 0,
+    "explanation": "Attaching policies to groups and roles (not individual users) reduces the chance that an identity keeps excessive privileges as people change teams. AWS Config even has a managed rule (iam-user-no-policies-check) enforcing this.",
+    "hint": "People change jobs; groups describe jobs. Where should the policy live?",
+    "source": "AWS IAM User Guide \u2014 Security best practices in IAM (docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-ib-007",
+    "skill": "iam-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "How does an IAM role differ from an IAM user?",
+    "options": [
+      "A role has no long-term credentials; it issues temporary credentials when assumed",
+      "Users are free but roles cost money per assumption",
+      "Roles can only be used in a single AWS Region",
+      "Roles are for humans, users are for applications"
+    ],
+    "answer": 0,
+    "explanation": "Roles have no passwords or access keys of their own. A trusted principal (user, service, or account) assumes the role via STS and gets temporary credentials that expire automatically \u2014 far safer than long-lived keys.",
+    "hint": "Which identity is designed to hand out credentials that expire?",
+    "source": "AWS IAM User Guide \u2014 IAM roles (docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-ib-008",
+    "skill": "iam-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "An application running on an EC2 instance needs to read files from an S3 bucket. The most secure approach is to:",
+    "options": [
+      "Make the S3 bucket public",
+      "Attach an IAM role to the EC2 instance (instance profile)",
+      "Email the root user's credentials to the developer",
+      "Embed an IAM user's access keys in the application code"
+    ],
+    "answer": 1,
+    "explanation": "Attaching a role to the instance lets AWS inject temporary, automatically rotated credentials into the instance. No long-lived keys to leak, rotate, or accidentally commit to Git.",
+    "hint": "Where should credentials live so nobody has to store them?",
+    "source": "AWS IAM User Guide \u2014 IAM roles (docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-ib-009",
+    "skill": "iam-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "An IAM policy is:",
+    "options": [
+      "A physical contract signed with AWS",
+      "A JSON document that defines Allow or Deny permissions for actions on resources",
+      "An invoice for IAM usage",
+      "A network firewall rule for a VPC"
+    ],
+    "answer": 1,
+    "explanation": "Policies are JSON documents with statements containing Effect (Allow/Deny), Action (API calls), and Resource (ARNs). They attach to users, groups, or roles to define what is permitted.",
+    "hint": "IAM speaks JSON. What does that JSON describe?",
+    "source": "AWS IAM User Guide \u2014 Policies and permissions (docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-ib-010",
+    "skill": "iam-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "In a policy statement, the 'Effect' element can be:",
+    "options": [
+      "True or False",
+      "Allow or Deny",
+      "Read or Write",
+      "Public or Private"
+    ],
+    "answer": 1,
+    "explanation": "Every policy statement has an Effect of Allow or Deny. Evaluation: an explicit Deny anywhere always wins; an Allow grants the action; with no Allow anywhere, the request is implicitly denied.",
+    "hint": "Two words decide everything in a statement. Which two?",
+    "source": "AWS IAM User Guide \u2014 Policies and permissions (docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-ib-011",
+    "skill": "iam-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "A user has one policy allowing s3:GetObject on a bucket and another policy explicitly denying s3:GetObject on the same bucket. The result is:",
+    "options": [
+      "Allowed, because two policies beat one",
+      "Denied \u2014 an explicit deny always overrides any allow",
+      "Allowed, because Allow was written first",
+      "Allowed only on weekends"
+    ],
+    "answer": 1,
+    "explanation": "Explicit deny is a veto: it overrides every allow, no matter where the allow lives. The golden rule of IAM evaluation is Deny > Allow > implicit deny.",
+    "hint": "When Allow and Deny collide, which one is the veto?",
+    "source": "AWS IAM User Guide \u2014 IAM policy evaluation logic (docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-ib-012",
+    "skill": "iam-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "An IAM user with NO policies attached tries to list S3 buckets. What happens?",
+    "options": [
+      "The user is automatically given AdministratorAccess",
+      "The request is allowed because S3 is a public service",
+      "The request is allowed for 24 hours, then denied",
+      "The request is denied \u2014 by default, everything is implicitly denied"
+    ],
+    "answer": 3,
+    "explanation": "AWS starts from implicit deny: with no policy granting an action, the request fails. Permissions must be explicitly granted \u2014 the root user is the only exception.",
+    "hint": "No policy attached. Does AWS default to yes or no?",
+    "source": "AWS IAM User Guide \u2014 IAM policy evaluation logic (docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-ib-013",
+    "skill": "iam-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Which policy type is maintained by AWS and updated automatically when AWS adds new services?",
+    "options": [
+      "Inline policy",
+      "Customer inline policy",
+      "Bucket ACL",
+      "AWS managed policy"
+    ],
+    "answer": 3,
+    "explanation": "AWS managed policies (e.g. AmazonS3ReadOnlyAccess) are created and maintained by AWS, so they stay current as services evolve. Customer managed policies are yours to maintain; inline policies are embedded in a single identity.",
+    "hint": "Who keeps the policy up to date \u2014 you or AWS?",
+    "source": "AWS IAM User Guide \u2014 Policies and permissions (docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-ib-014",
+    "skill": "iam-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "An inline policy differs from a managed policy in that it:",
+    "options": [
+      "Is automatically updated by AWS",
+      "Can be attached to multiple accounts at once",
+      "Is embedded directly in a single user, group, or role and cannot be reused",
+      "Never needs a JSON document"
+    ],
+    "answer": 2,
+    "explanation": "Inline policies live inside exactly one identity \u2014 delete the identity and the policy goes with it. Managed policies (AWS or customer) are standalone and reusable across many identities.",
+    "hint": "Which policy type is glued to one identity and dies with it?",
+    "source": "AWS IAM User Guide \u2014 Policies and permissions (docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-ib-015",
+    "skill": "iam-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "A policy attached to an S3 bucket (a bucket policy) is an example of a:",
+    "options": [
+      "Session policy",
+      "Identity-based policy",
+      "Resource-based policy",
+      "Password policy"
+    ],
+    "answer": 2,
+    "explanation": "Resource-based policies attach to the resource itself and say who may access it. Identity-based policies attach to users/groups/roles and say what they may do. S3 bucket policies are the classic resource-based example.",
+    "hint": "Is the policy stuck to the person or to the thing?",
+    "source": "AWS IAM User Guide \u2014 Policies and permissions (docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-ib-016",
+    "skill": "iam-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Multi-factor authentication (MFA) improves security because:",
+    "options": [
+      "It encrypts all S3 data by default",
+      "It makes passwords longer automatically",
+      "It replaces IAM users with roles",
+      "It requires a second factor (something you have) in addition to the password"
+    ],
+    "answer": 3,
+    "explanation": "MFA adds 'something you have' \u2014 a virtual authenticator app, hardware token, or security key \u2014 on top of 'something you know' (the password). Even a stolen password alone is not enough.",
+    "hint": "Password = something you know. What does MFA add?",
+    "source": "AWS IAM User Guide \u2014 Multi-factor authentication (docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa.html)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-ib-017",
+    "skill": "iam-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "For which identity does AWS MOST strongly recommend enabling MFA?",
+    "options": [
+      "The AWS account root user",
+      "A service-linked role",
+      "An IAM group",
+      "An IAM user with read-only S3 access"
+    ],
+    "answer": 0,
+    "explanation": "The root user is the single most powerful identity in the account. AWS best practice: enable MFA on root first, then on all human users \u2014 especially privileged ones.",
+    "hint": "Which identity could do the most damage if compromised?",
+    "source": "AWS IAM User Guide \u2014 Multi-factor authentication (docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa.html)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-ib-018",
+    "skill": "iam-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Which of these is a valid MFA device type in AWS?",
+    "options": [
+      "A fingerprint stored in the IAM console",
+      "A virtual MFA app on a phone, a hardware TOTP token, or a FIDO2 security key",
+      "A CAPTCHA puzzle on the sign-in page",
+      "An SMS sent to any phone number worldwide"
+    ],
+    "answer": 1,
+    "explanation": "AWS supports virtual MFA applications (e.g. authenticator apps), hardware TOTP tokens, and FIDO2/passkey security keys. Choose the device type that fits your recovery plan.",
+    "hint": "AWS lists three families of MFA devices. Which option names them?",
+    "source": "AWS IAM User Guide \u2014 Multi-factor authentication (docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa.html)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-ib-019",
+    "skill": "iam-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "The principle of least privilege means:",
+    "options": [
+      "Requiring MFA for every single API call",
+      "Deleting all IAM users every 90 days",
+      "Granting only the minimum permissions needed to do the job, nothing more",
+      "Giving every user AdministratorAccess so nothing ever breaks"
+    ],
+    "answer": 2,
+    "explanation": "Least privilege: start with the smallest set of permissions that lets the work happen, and add more only when needed. If a key leaks, minimal permissions limit the blast radius.",
+    "hint": "If a leaked key had admin access, an attacker could spin up expensive servers in minutes. How do you limit that damage?",
+    "source": "AWS IAM User Guide \u2014 Security best practices in IAM (docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-ib-020",
+    "skill": "iam-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "A developer only needs to read objects from one S3 bucket. The least-privilege policy is:",
+    "options": [
+      "s3:GetObject on arn:aws:s3:::that-bucket/*",
+      "AdministratorAccess on *",
+      "iam:* on *",
+      "s3:* on *"
+    ],
+    "answer": 0,
+    "explanation": "Least privilege matches the action (GetObject, not s3:*) to the exact resource (that bucket, not *). Broad wildcards are the opposite of least privilege.",
+    "hint": "Match the permission to the exact job: read, one bucket.",
+    "source": "AWS IAM User Guide \u2014 Security best practices in IAM (docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-ib-021",
+    "skill": "iam-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "An IAM password policy is used to:",
+    "options": [
+      "Encrypt the root user's email address",
+      "Prevent users from ever changing their passwords",
+      "Set requirements like minimum length and complexity for IAM user passwords",
+      "Automatically rotate access keys every day"
+    ],
+    "answer": 2,
+    "explanation": "A password policy enforces length, complexity, and rotation rules for IAM user passwords. Note it does not apply to the root user \u2014 another reason to protect root separately.",
+    "hint": "Where do rules like 'minimum 14 characters' live in IAM?",
+    "source": "AWS IAM User Guide \u2014 Security best practices in IAM (docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-ib-022",
+    "skill": "iam-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Programmatic access to AWS (CLI/SDK) uses which credential pair?",
+    "options": [
+      "MFA serial and token",
+      "Account ID and region code",
+      "Username and PIN",
+      "Access key ID and secret access key"
+    ],
+    "answer": 3,
+    "explanation": "The CLI and SDKs authenticate with an access key ID (like a username) and secret access key (like a password). Guard the secret \u2014 anyone holding both can act as that identity.",
+    "hint": "Console uses password + MFA. What does the CLI use?",
+    "source": "AWS Documentation \u2014 What is IAM (docs.aws.amazon.com)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-ib-023",
+    "skill": "iam-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Which of the following is an IAM security best practice?",
+    "options": [
+      "Rotating credentials regularly and never sharing them",
+      "Using the root user for daily development work",
+      "Sharing one IAM user among the whole team to save effort",
+      "Committing access keys to a Git repository for backup"
+    ],
+    "answer": 0,
+    "explanation": "AWS best practices: one identity per human, rotate credentials regularly, never share or commit secrets, use roles instead of long-term keys, and keep root locked away.",
+    "hint": "Three of these are horror stories. Which one is the good habit?",
+    "source": "AWS IAM User Guide \u2014 Security best practices in IAM (docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-ib-024",
+    "skill": "iam-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "A company has two AWS accounts and wants developers in Account A to read a bucket in Account B. The standard approach is:",
+    "options": [
+      "Share Account B's root password with the developers",
+      "Make the bucket public",
+      "Copy the bucket to Account A every night",
+      "Create a role in Account B that Account A users can assume (cross-account role)"
+    ],
+    "answer": 3,
+    "explanation": "Cross-account roles are the designed solution: Account B's role trusts Account A's principals, and developers assume it via STS for temporary credentials. No shared passwords, no public buckets.",
+    "hint": "Two accounts, one bucket. What trusts what?",
+    "source": "AWS IAM User Guide \u2014 IAM roles (docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-ib-025",
+    "skill": "iam-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "A trust policy on an IAM role defines:",
+    "options": [
+      "Who is allowed to assume the role",
+      "The password policy for the role",
+      "Which API actions the role is allowed to perform",
+      "How much the role costs per month"
+    ],
+    "answer": 0,
+    "explanation": "Every role has two policy types: the trust policy (who can assume it \u2014 users, services, or other accounts) and the permissions policy (what the role can do once assumed).",
+    "hint": "One policy says WHO can wear the hat; the other says WHAT the hat can do. Which is the trust policy?",
+    "source": "AWS IAM User Guide \u2014 IAM roles (docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-ib-026",
+    "skill": "iam-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "IAM users, groups, roles, and policies are:",
+    "options": [
+      "Zonal \u2014 tied to a single Availability Zone",
+      "Global \u2014 they apply across all Regions in the account",
+      "Regional \u2014 you must recreate them in every Region",
+      "Billed per Region they are used in"
+    ],
+    "answer": 1,
+    "explanation": "IAM is a global service: identities and policies exist once per account and work in every Region. (Service-specific endpoints still apply, but the identity itself is global.)",
+    "hint": "Do you create your IAM users once, or once per Region?",
+    "source": "AWS Documentation \u2014 What is IAM (docs.aws.amazon.com)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-ib-027",
+    "skill": "iam-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "An IAM user can be a member of:",
+    "options": [
+      "No groups \u2014 groups are only for roles",
+      "Exactly one group, chosen at account creation",
+      "Up to one group per Region",
+      "Multiple groups at the same time"
+    ],
+    "answer": 3,
+    "explanation": "A user can belong to many groups and inherits the union of their policies. Design groups around job functions (e.g. Developers, Auditors) and place people accordingly.",
+    "hint": "Can one person wear two job-function hats?",
+    "source": "AWS Documentation \u2014 What is IAM (docs.aws.amazon.com)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-ib-028",
+    "skill": "iam-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "The IAM credential report helps administrators to:",
+    "options": [
+      "See who has MFA enabled and whose access keys are old, across the account",
+      "Translate policies into other languages",
+      "Generate monthly invoices",
+      "Delete S3 buckets automatically"
+    ],
+    "answer": 0,
+    "explanation": "The credential report is an account-wide snapshot: MFA status, password age, access-key age and last use per user. Pair it with IAM Access Advisor (per-user service usage) to trim unused permissions.",
+    "hint": "One report, whole account: who has MFA, whose keys are stale?",
+    "source": "AWS IAM User Guide \u2014 Security best practices in IAM (docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-ib-029",
+    "skill": "iam-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "Which task can ONLY be performed by the AWS account root user?",
+    "options": [
+      "Closing the AWS account",
+      "Starting an EC2 instance",
+      "Creating an IAM user",
+      "Reading an S3 object"
+    ],
+    "answer": 0,
+    "explanation": "A small set of tasks is root-only \u2014 closing the account is the classic example (along with changing the support plan in some cases). Everything else should be done with IAM identities.",
+    "hint": "Most things IAM admins can do. What's reserved for the account owner alone?",
+    "source": "AWS IAM User Guide \u2014 Root user best practices (docs.aws.amazon.com/IAM/latest/UserGuide/root-user-best-practices.html)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  },
+  {
+    "id": "aws-saa-cc-ib-030",
+    "skill": "iam-basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "level": "L1",
+    "stem": "A new team member needs console access to manage EC2 instances. Following best practices, you should:",
+    "options": [
+      "Email them an access key pair with AdministratorAccess",
+      "Share the root user credentials with them",
+      "Create an IAM user, add them to the EC2-operators group, enable MFA",
+      "Give them the account ID and let them figure it out"
+    ],
+    "answer": 2,
+    "explanation": "Best-practice onboarding: one IAM user per human, permissions via a group (not attached directly), MFA enabled, least-privilege policies. No shared credentials, no root usage.",
+    "hint": "One person, one identity, permissions through a group, MFA on. Which option does all of that?",
+    "source": "AWS Sign-In User Guide \u2014 Security best practices for AWS account administrators (docs.aws.amazon.com/signin/latest/userguide/best-practices-admin.html)",
+    "status": "draft-pending-sme-review",
+    "version": 1
+  }
+]
