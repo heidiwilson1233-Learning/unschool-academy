@@ -1,19 +1,24 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import fs from "fs";
-import path from "path";
 import { Section, SectionHeading, Button, Card, Badge, Breadcrumbs, Callout } from "@/components/ui";
 import { Momo, Tara, Bobo, CHARACTERS } from "@/components/characters";
-import { AGE_TRACKS, KID_SUBJECTS, SMART_LEARNING, ENDLESS_MODEL, BOOK_QUEST_TYPES } from "@/lib/kids";
+import { AGE_TRACKS, KID_SUBJECTS, SMART_LEARNING, BOOK_QUEST_TYPES } from "@/lib/kids";
+import {
+  getKidsInventory,
+  questAvailabilityLine,
+  bookAvailabilityLine,
+  PLAYABLE_DEMO_COUNT,
+  FULL_LIBRARY_BASE_QUESTS,
+} from "./_inventory";
 
 export const metadata: Metadata = {
   title: "Unschool Kids — Smart Learning from Age 5",
   description:
-    "Momo, Tara and Bobo guide children ages 5 through Grade 5 through quests grown from 500 beloved books. 5 subjects, adaptive difficulty, parent-owned and ad-free.",
+    "Momo, Tara and Bobo guide children ages 5 through Grade 5 through story quests across 5 subjects — adaptive, parent-owned and ad-free.",
   alternates: { canonical: "/kids" },
   openGraph: {
     title: "Unschool Kids — Smart Learning from Age 5",
-    description: "Quests grown from 500 books. 5 subjects. Three friends who adapt to your child.",
+    description: "Story quests across 5 subjects, grown from beloved books. Three friends who adapt to your child.",
     type: "website",
     url: "/kids",
   },
@@ -29,17 +34,10 @@ const SUBJECT_EMOJI: Record<string, string> = {
   create: "🎨",
 };
 
-function questCount(): number {
-  try {
-    const dir = path.join(process.cwd(), "content", "kids", "quests");
-    return fs.readdirSync(dir).filter((f) => f.endsWith(".json")).length;
-  } catch {
-    return 0;
-  }
-}
-
 export default function KidsPage() {
-  const live = questCount();
+  const inv = getKidsInventory();
+  const questLine = questAvailabilityLine(inv);
+  const bookLine = bookAvailabilityLine(inv);
 
   return (
     <>
@@ -51,7 +49,7 @@ export default function KidsPage() {
             <div>
               <Badge tone="kids">Ages 5 → Grade 5</Badge>
               <h1 className="mt-4 text-4xl md:text-6xl font-extrabold tracking-tight text-ink leading-[1.05]">
-                Smart learning,<br />grown from <span className="text-kids-orange-deep">500 books.</span>
+                Smart learning,<br />grown from <span className="text-kids-orange-deep">beloved books.</span>
               </h1>
               <p className="mt-5 text-lg text-slate max-w-xl leading-relaxed">
                 Momo, Tara and Bobo turn beloved stories into quests across 5 subjects.
@@ -62,7 +60,7 @@ export default function KidsPage() {
                 <Button href="/kids/tracks/school-starters" size="lg" variant="kids">▶ Start at age 5</Button>
                 <Button href="/kids/library" size="lg" variant="secondary">📚 The book library</Button>
               </div>
-              <p className="mt-4 text-sm text-slate">{live} quests live now · ~4,000 growing · 1 new book every week</p>
+              <p className="mt-4 text-sm text-slate">{questLine} · {PLAYABLE_DEMO_COUNT} playable demo tracks · {bookLine}</p>
             </div>
             <div className="hidden lg:flex gap-2">
               <Momo className="w-36 h-36" /><Tara className="w-36 h-36" /><Bobo className="w-36 h-36" />
@@ -133,18 +131,18 @@ export default function KidsPage() {
         </div>
       </Section>
 
-      {/* ENDLESS */}
+      {/* ENDLESS — explicitly labelled as the plan, not today's inventory */}
       <Section>
         <SectionHeading
-          eyebrow="Never runs out"
-          title="Content that feels endless"
-          sub="500 books × 7 quest kinds = ~4,000 quests. Parametric variants make practice endless. One new book unlocks every week."
+          eyebrow="The plan — still being built"
+          title="Where the library is headed"
+          sub="500 books × 7 quest kinds = 3,500 authored quests at full library. Parametric variants multiply practice beyond that — the arithmetic is documented on the roadmap. Planned cadence: one new book a week."
         />
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          <Card className="!p-6 text-center"><p className="text-3xl font-extrabold text-ink">500</p><p className="text-sm text-slate mt-1">curated books</p></Card>
+          <Card className="!p-6 text-center"><p className="text-3xl font-extrabold text-ink">500</p><p className="text-sm text-slate mt-1">books — the target</p></Card>
           <Card className="!p-6 text-center"><p className="text-3xl font-extrabold text-ink">7</p><p className="text-sm text-slate mt-1">quest kinds per book</p></Card>
-          <Card className="!p-6 text-center"><p className="text-3xl font-extrabold text-ink">~4K</p><p className="text-sm text-slate mt-1">quests at full library</p></Card>
-          <Card className="!p-6 text-center"><p className="text-3xl font-extrabold text-ink">1/wk</p><p className="text-sm text-slate mt-1">new book unlocks</p></Card>
+          <Card className="!p-6 text-center"><p className="text-3xl font-extrabold text-ink">{FULL_LIBRARY_BASE_QUESTS.toLocaleString("en-IN")}</p><p className="text-sm text-slate mt-1">authored quests at full library</p></Card>
+          <Card className="!p-6 text-center"><p className="text-3xl font-extrabold text-ink">1/wk</p><p className="text-sm text-slate mt-1">new books — the planned cadence</p></Card>
         </div>
         <div className="mt-6 flex flex-wrap gap-2 justify-center">
           {BOOK_QUEST_TYPES.map((q) => (
@@ -153,6 +151,7 @@ export default function KidsPage() {
         </div>
         <div className="mt-8 text-center">
           <Button href="/kids/library" size="lg" variant="kids">📚 Open the library</Button>
+          <p className="mt-3 text-sm text-slate">Built so far: {bookLine} · {questLine} · {PLAYABLE_DEMO_COUNT} playable demo tracks.</p>
           <p className="mt-3 text-sm">
             <Link href="/kids/roadmap" className="font-semibold text-slate underline underline-offset-2">
               See the 15-quest prototype plan

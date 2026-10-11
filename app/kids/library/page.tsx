@@ -3,12 +3,12 @@ import Link from "next/link";
 import fs from "fs";
 import path from "path";
 import { Section, SectionHeading, Card, Badge, Breadcrumbs } from "@/components/ui";
-import { ENDLESS_MODEL } from "@/lib/kids";
+import { FULL_LIBRARY_BASE_QUESTS } from "./_inventory";
 
 export const metadata: Metadata = {
-  title: "The 500-Book Library | Unschool Kids",
+  title: "The Growing Book Library | Unschool Kids",
   description:
-    "500 children's books — Indian classics, folk tales and global favourites. Every book becomes read-alouds, vocabulary quests, comprehension, values, maths and science.",
+    "50 children's books curated so far, growing toward 500 — Indian classics, folk tales and global favourites. Every book becomes read-alouds, vocabulary quests, comprehension, values, maths and science.",
   alternates: { canonical: "/kids/library" },
 };
 
@@ -48,23 +48,23 @@ export default function LibraryPage() {
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-12 md:py-16">
           <Breadcrumbs trail={[{ label: "Home", href: "/" }, { label: "Kids", href: "/kids" }, { label: "Library" }]} />
           <Badge tone="kids">📚 The book library</Badge>
-          <h1 className="mt-3 text-4xl md:text-5xl font-extrabold tracking-tight text-ink">500 books. Endless quests.</h1>
+          <h1 className="mt-3 text-4xl md:text-5xl font-extrabold tracking-tight text-ink">The growing book library.</h1>
           <p className="mt-4 text-lg text-slate max-w-2xl leading-relaxed">
             Every book becomes up to 7 kinds of quests — read-alouds, vocabulary, comprehension, values, maths-in-story,
-            wonder-quests and creative retellings. One new book unlocks every week, so the library never runs out.
+            wonder-quests and creative retellings. The plan: one new book a week, so the library never runs out.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <div className="rounded-2xl bg-white border border-line px-5 py-3">
               <p className="text-2xl font-extrabold text-ink">{books.length}<span className="text-slate/50 text-lg">/{target}</span></p>
-              <p className="text-xs text-slate">books curated</p>
+              <p className="text-xs text-slate">books curated so far</p>
             </div>
             <div className="rounded-2xl bg-white border border-line px-5 py-3">
-              <p className="text-2xl font-extrabold text-ink">~{ENDLESS_MODEL.baseTotal.toLocaleString()}</p>
-              <p className="text-xs text-slate">quests at full library</p>
+              <p className="text-2xl font-extrabold text-ink">~{FULL_LIBRARY_BASE_QUESTS.toLocaleString("en-IN")}</p>
+              <p className="text-xs text-slate">authored quests at full library (the plan)</p>
             </div>
             <div className="rounded-2xl bg-white border border-line px-5 py-3">
               <p className="text-2xl font-extrabold text-ink">1/week</p>
-              <p className="text-xs text-slate">new book unlocks</p>
+              <p className="text-xs text-slate">new books — the planned cadence</p>
             </div>
           </div>
         </div>
