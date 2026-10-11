@@ -14,6 +14,8 @@ import {
   listExamSlugs,
   type ExamPageData,
 } from "@/lib/exam-template";
+import { listUnitsWithVideos } from "@/lib/videos";
+import Link from "next/link";
 
 /**
  * Exam page template — ONE template renders every exam from course.json.
@@ -171,6 +173,12 @@ export default async function ExamTemplatePage({
   const rows = patternRows(data);
   const hasPrepare = cells.length > 0;
   const hasUnits = data.units.length > 0;
+  /* Units with curated video lessons link out to their study page. */
+  const videoUnits = new Set(
+    listUnitsWithVideos()
+      .filter((x) => x.exam === exam)
+      .map((x) => x.unit)
+  );
   const hasOfficial = rows.length > 0;
   const primary = cells[0] ?? null;
 
@@ -481,7 +489,24 @@ export default async function ExamTemplatePage({
                   {String(i + 1).padStart(2, "0")}
                 </p>
                 <div className="md:col-span-7">
-                  <h3 className="text-lg font-bold text-ink">{u.title}</h3>
+                  {videoUnits.has(u.id) ? (
+                    <Link
+                      href={`/exams/${exam}/units/${u.id}`}
+                      className="group inline-flex items-center gap-2"
+                    >
+                      <h3 className="text-lg font-bold text-ink underline decoration-academy-teal/50 decoration-2 underline-offset-4 group-hover:decoration-academy-teal">
+                        {u.title}
+                      </h3>
+                      <span
+                        className="font-mono text-[10px] font-bold uppercase tracking-[0.14em] text-academy-teal border border-academy-teal/40 rounded-full px-2 py-0.5"
+                        aria-label="Has video lessons"
+                      >
+                        ▶ videos
+                      </span>
+                    </Link>
+                  ) : (
+                    <h3 className="text-lg font-bold text-ink">{u.title}</h3>
+                  )}
                   {u.description && (
                     <p className="mt-1.5 text-[15px] text-slate leading-relaxed max-w-2xl">{u.description}</p>
                   )}
