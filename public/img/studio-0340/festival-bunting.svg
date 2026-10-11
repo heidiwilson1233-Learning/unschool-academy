@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Unschool Academy — hand-crafted studio asset (A09, cycle 2026-10-12 03:40 IST)
+  "festival-bunting.svg" — festival bunting strip for the homepage kids section.
+  100% original, authored by hand (no templates, no stock, no AI-generated imagery).
+  Palette follows the warm-studio direction; character medallions keep
+  Momo (lavender), Tara (orange), Bobo (mint-green) identity colors.
+  Usage: homepage kids section top edge, repeat-x or scaled full-width.
+  License note: original work created for Unschool Academy; do not reuse raw SVG elsewhere without A17 editorial sign-off.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 150" role="img" aria-label="Hand-drawn festival bunting with character medallions">
+  <!-- left tassel knot -->
+  <g stroke="#8a5a3b" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M6 20 C 14 34, 10 52, 18 66"/>
+    <path d="M6 20 C 2 36, 8 50, 4 68" stroke-dasharray="4 3"/>
+  </g>
+  <g fill="#f2b880" stroke="#8a5a3b" stroke-width="2">
+    <path d="M18 66 l -7 20 l 5 -2 l 2 8 l 4 -8 l 4 9 l 2 -8 l 5 3 l -8 -22 z"/>
+  </g>
+  <!-- main rope with a natural sag; slightly uneven hand-drawn curve -->
+  <path d="M4 16 C 120 66, 300 92, 600 88 C 900 84, 1080 52, 1196 14"
+        fill="none" stroke="#8a5a3b" stroke-width="4" stroke-linecap="round"/>
+  <!-- stitch dashes along the rope (hand-sewn feel) -->
+  <path d="M4 16 C 120 66, 300 92, 600 88 C 900 84, 1080 52, 1196 14"
+        fill="none" stroke="#d9a45f" stroke-width="1.6" stroke-dasharray="6 7" stroke-linecap="round"/>
+
+  <!-- ===== triangular pennant flags, each slightly irregular and hand-tinted ===== -->
+  <!-- positions sampled along the sag curve -->
+  <g stroke-linejoin="round" stroke-width="2.5">
+    <!-- flag 1 -->
+    <path d="M120 52 l 26 1 l -11 34 z" fill="#f6c453" stroke="#7a4a2b"/>
+    <path d="M132 56 l -4 22" stroke="#7a4a2b" stroke-width="1.6" stroke-dasharray="3 3" fill="none"/>
+    <!-- flag 2 -->
+    <path d="M225 68 l 27 0 l -12 35 l -4 -16 z" fill="#f28f6b" stroke="#7a4a2b"/>
+    <path d="M236 72 l 2 16 m 6 -14 l 3 15" stroke="#7a4a2b" stroke-width="1.5" fill="none"/>
+    <!-- flag 3 -->
+    <path d="M335 79 l 26 2 l -13 33 z" fill="#9fd8b4" stroke="#4d7a63"/>
+    <path d="M348 84 c 4 8, -2 12, 3 20" stroke="#4d7a63" stroke-width="1.6" fill="none"/>
+    <!-- flag 4 -->
+    <path d="M445 84 l 27 -1 l -11 35 l -5 -14 z" fill="#c9b8e8" stroke="#6b5a8a"/>
+    <circle cx="455" cy="96" r="5" fill="#e8def7" stroke="#6b5a8a" stroke-width="1.5"/>
+    <circle cx="465" cy="102" r="2.5" fill="#e8def7" stroke="#6b5a8a" stroke-width="1.2"/>
+    <!-- flag 5 : Tara orange with tiny star -->
+    <path d="M555 86 l 27 0 l -14 34 z" fill="#f0a04b" stroke="#7a4a2b"/>
+    <path d="M566 95 l 2.4 5 5.4 0.4 -4.1 3.6 1.4 5.3 -5.1 -2.9 -5.1 2.9 1.4 -5.3 -4.1 -3.6 5.4 -0.4 z" fill="#ffe3b3" stroke="#7a4a2b" stroke-width="1.2"/>
+    <!-- flag 6 -->
+    <path d="M665 84 l 26 -1 l -12 35 z" fill="#7fb5d9" stroke="#4a6a8a"/>
+    <path d="M672 90 c 6 6, 10 12, 8 20" stroke="#4a6a8a" stroke-width="1.6" fill="none"/>
+    <!-- flag 7 : Bobo mint with shell arcs -->
+    <path d="M775 79 l 26 0 l -13 34 z" fill="#9fd8b4" stroke="#4d7a63"/>
+    <path d="M782 86 c 2 8, 6 10, 6 18 m -11 -15 c 3 6, 7 9, 8 16" stroke="#4d7a63" stroke-width="1.5" fill="none"/>
+    <!-- flag 8 -->
+    <path d="M885 68 l 26 1 l -12 34 z" fill="#f6c453" stroke="#7a4a2b"/>
+    <path d="M898 72 l -4 22" stroke="#7a4a2b" stroke-width="1.6" stroke-dasharray="3 3" fill="none"/>
+    <!-- flag 9 -->
+    <path d="M995 52 l 25 1 l -11 33 z" fill="#f28f6b" stroke="#7a4a2b"/>
+    <path d="M1004 56 l 3 15 m 6 -13 l 4 14" stroke="#7a4a2b" stroke-width="1.5" fill="none"/>
+  </g>
+
+  <!-- ===== character medallions (round bunting coins) ===== -->
+  <!-- Tara medallion -->
+  <g>
+    <line x1="290" y1="71" x2="290" y2="98" stroke="#8a5a3b" stroke-width="2.5"/>
+    <circle cx="290" cy="116" r="22" fill="#f0a04b" stroke="#7a4a2b" stroke-width="2.5"/>
+    <circle cx="290" cy="116" r="17" fill="none" stroke="#7a4a2b" stroke-width="1.4" stroke-dasharray="4 3"/>
+    <!-- tiny squirrel: curled tail + ear hint -->
+    <path d="M283 124 c -6 -2, -8 -10, -4 -14 c 3 -3, 9 -2, 10 2 c 1 5, -1 10, -6 12 z" fill="#d9822b"/>
+    <path d="M284 122 c -4 -2, -4 -8, -1 -10" fill="none" stroke="#7a4a2b" stroke-width="1.4"/>
+    <circle cx="294" cy="112" r="3.2" fill="#7a4a2b"/>
+    <path d="M296 109 l 3 -4 l 1 5 z" fill="#7a4a2b"/>
+  </g>
+  <!-- Momo medallion -->
+  <g>
+    <line x1="620" y1="88" x2="620" y2="112" stroke="#8a5a3b" stroke-width="2.5"/>
+    <circle cx="620" cy="130" r="22" fill="#c9b8e8" stroke="#6b5a8a" stroke-width="2.5"/>
+    <circle cx="620" cy="130" r="17" fill="none" stroke="#6b5a8a" stroke-width="1.4" stroke-dasharray="4 3"/>
+    <!-- tiny elephant: head + trunk curl + ear -->
+    <ellipse cx="614" cy="128" rx="9" ry="8" fill="#a68ed4"/>
+    <path d="M621 124 c 5 2, 7 6, 5 11 c -1.5 3.5, -5 4, -6.5 2" fill="none" stroke="#6b5a8a" stroke-width="2.4" stroke-linecap="round"/>
+    <circle cx="612" cy="127" r="1.6" fill="#3d3355"/>
+    <path d="M606 121 c -3 -3, -6 -3, -8 0 c 2 3, 6 3, 8 0 z" fill="#8e76c4"/>
+  </g>
+  <!-- Bobo medallion -->
+  <g>
+    <line x1="940" y1="60" x2="940" y2="86" stroke="#8a5a3b" stroke-width="2.5"/>
+    <circle cx="940" cy="104" r="22" fill="#9fd8b4" stroke="#4d7a63" stroke-width="2.5"/>
+    <circle cx="940" cy="104" r="17" fill="none" stroke="#4d7a63" stroke-width="1.4" stroke-dasharray="4 3"/>
+    <!-- tiny tortoise: shell arcs + head -->
+    <path d="M928 108 c 0 -8, 5 -13, 12 -13 c 7 0, 12 5, 12 13 l -24 0 z" fill="#7fc79a" stroke="#4d7a63" stroke-width="2"/>
+    <path d="M936 100 c 1 3, 1 6, 0 8 m 8 -8 c -1 3, -1 6, 0 8" stroke="#4d7a63" stroke-width="1.3" fill="none"/>
+    <circle cx="955" cy="106" r="4" fill="#9fd8b4" stroke="#4d7a63" stroke-width="1.8"/>
+    <circle cx="956" cy="105" r="1" fill="#2f4a3b"/>
+  </g>
+
+  <!-- right tassel knot -->
+  <g stroke="#8a5a3b" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M1194 14 C 1188 30, 1192 48, 1184 62"/>
+  </g>
+  <g fill="#f2b880" stroke="#8a5a3b" stroke-width="2">
+    <path d="M1184 62 l -8 20 l 5 -2 l 2 8 l 4 -8 l 4 9 l 2 -8 l 5 3 l -8 -22 z"/>
+  </g>
+  <!-- loose paper confetti dots (hand-scattered, avoids perfect grid) -->
+  <g fill="#d9a45f" opacity="0.8">
+    <circle cx="64" cy="110" r="2.6"/><circle cx="500" cy="128" r="2.2"/>
+    <circle cx="700" cy="40" r="2.4"/><circle cx="1090" cy="104" r="2.6"/>
+  </g>
+  <g fill="#f28f6b" opacity="0.7">
+    <rect x="158" y="118" width="5" height="5" rx="1" transform="rotate(24 160 120)"/>
+    <rect x="828" y="120" width="5" height="5" rx="1" transform="rotate(-18 830 122)"/>
+  </g>
+</svg>

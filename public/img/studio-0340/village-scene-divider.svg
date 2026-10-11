@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Unschool Academy — hand-crafted studio asset (A09, cycle 2026-10-12 03:40 IST)
+  "village-scene-divider.svg" — small village-scene divider for the homepage kids section.
+  100% original, hand-authored (no photorealism, no stock shapes).
+  The village references the kids world's "Mango Garden" and "Story Tree";
+  Momo (lavender elephant), Tara (orange squirrel) and Bobo (mint-green tortoise)
+  appear as simple character-consistent figures on a paper-cut, collage base.
+  Usage: kids section divider, full-width, height ~180-220px. Light surfaces only.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 200" role="img" aria-label="Hand-drawn village scene with the three kids characters">
+  <!-- sky is transparent: sits on page surface -->
+  <!-- hand-drawn sun -->
+  <g>
+    <circle cx="1060" cy="44" r="24" fill="#f6c453" stroke="#c98f2e" stroke-width="2.5"/>
+    <g stroke="#c98f2e" stroke-width="2.5" stroke-linecap="round">
+      <path d="M1060 8 l 0 -6 M1024 44 l -8 0 M1096 44 l 8 0 M1034 18 l -5 -5 M1086 18 l 5 -5 M1034 70 l -5 5 M1086 70 l 5 5"/>
+      <path d="M1020 62 c 6 8, 12 10, 20 8" fill="none"/>
+    </g>
+  </g>
+  <!-- drifting hand-drawn clouds -->
+  <g fill="#ffffff" stroke="#c9b98a" stroke-width="2">
+    <path d="M180 46 c -14 0, -22 8, -20 15 c -10 -2, -18 4, -16 11 c 2 6, 12 8, 22 7 c 8 3, 30 3, 40 -1 c 10 1, 20 -2, 19 -8 c -1 -6, -10 -9, -17 -8 c 2 -8, -14 -16, -28 -16 z" opacity="0.95"/>
+    <path d="M700 30 c -10 0, -16 6, -15 11 c -8 -1, -13 3, -12 8 c 2 5, 9 6, 17 5 c 6 2, 22 2, 30 -1 c 7 1, 15 -2, 14 -6 c -1 -4, -7 -7, -13 -6 c 1 -6, -10 -11, -21 -11 z" opacity="0.95"/>
+  </g>
+
+  <!-- rolling hills (paper-cut layers) -->
+  <path d="M0 150 C 140 120, 260 170, 420 150 C 580 130, 700 175, 860 155 C 990 140, 1100 168, 1200 150 L 1200 200 L 0 200 Z"
+        fill="#cfe8b8" stroke="#8fb573" stroke-width="2"/>
+  <path d="M0 172 C 160 150, 300 190, 470 172 C 640 154, 780 196, 950 176 C 1040 166, 1120 182, 1200 174 L 1200 200 L 0 200 Z"
+        fill="#b7d99a" stroke="#7fa85f" stroke-width="2"/>
+  <!-- hand-drawn grass tufts -->
+  <g stroke="#6f9a54" stroke-width="2" fill="none" stroke-linecap="round">
+    <path d="M120 186 l 2 -8 M127 186 l 4 -7 M134 186 l 2 -9"/>
+    <path d="M560 190 l 2 -8 M567 190 l 4 -7 M574 190 l 2 -9"/>
+    <path d="M980 188 l 2 -8 M987 188 l 4 -7 M994 188 l 2 -9"/>
+  </g>
+
+  <!-- ===== Story Tree (left) ===== -->
+  <g>
+    <path d="M235 168 C 232 150, 240 140, 236 124 C 233 110, 240 100, 237 88" fill="none" stroke="#7a4a2b" stroke-width="9" stroke-linecap="round"/>
+    <path d="M236 130 C 222 122, 214 112, 210 102 M237 118 C 250 110, 256 100, 258 92" fill="none" stroke="#7a4a2b" stroke-width="6" stroke-linecap="round"/>
+    <!-- canopy: uneven blobby circles, hand-tinted -->
+    <g stroke="#5e8a49" stroke-width="2">
+      <ellipse cx="180" cy="76" rx="46" ry="34" fill="#8fc06f"/>
+      <ellipse cx="230" cy="56" rx="52" ry="36" fill="#9ccf7f"/>
+      <ellipse cx="288" cy="78" rx="44" ry="32" fill="#8fc06f"/>
+      <ellipse cx="232" cy="86" rx="34" ry="22" fill="#a8da90"/>
+    </g>
+    <!-- hanging quest books: small original book shapes -->
+    <g stroke="#7a4a2b" stroke-width="1.6">
+      <path d="M196 96 l 14 -2 l 0 18 l -14 2 z" fill="#f28f6b"/>
+      <path d="M196 96 l 4 -5 l 14 -2 l -4 5" fill="#e0785a"/>
+      <line x1="203" y1="90" x2="203" y2="82" stroke-width="1.4"/>
+      <path d="M262 100 l 13 -1 l 0 16 l -13 1 z" fill="#7fb5d9"/>
+      <path d="M262 100 l 4 -5 l 13 -1 l -4 5" fill="#6b9dc4"/>
+      <line x1="269" y1="95" x2="269" y2="87" stroke-width="1.4"/>
+    </g>
+    <!-- fruit dots -->
+    <g fill="#f28f6b"><circle cx="170" cy="70" r="4"/><circle cx="250" cy="48" r="4"/><circle cx="296" cy="70" r="4"/><circle cx="220" cy="92" r="4"/></g>
+  </g>
+
+  <!-- ===== village hut 1 ===== -->
+  <g>
+    <rect x="400" y="122" width="86" height="48" rx="2" fill="#e8c88f" stroke="#8a5a3b" stroke-width="2.5"/>
+    <path d="M392 124 L 443 92 L 494 124 Z" fill="#c9854f" stroke="#8a5a3b" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M408 110 l 8 -7 M424 100 l 8 -7 M440 92 l 6 -5 M456 100 l -8 -7 M472 108 l -8 -7" stroke="#8a5a3b" stroke-width="1.6" fill="none"/>
+    <rect x="432" y="140" width="22" height="30" rx="1" fill="#a9764f" stroke="#8a5a3b" stroke-width="2"/>
+    <rect x="408" y="132" width="16" height="14" rx="1" fill="#f6e8c8" stroke="#8a5a3b" stroke-width="2"/>
+    <path d="M416 132 l 0 14 M408 139 l 16 0" stroke="#8a5a3b" stroke-width="1.4"/>
+    <circle cx="443" cy="155" r="1.8" fill="#5a3a22"/>
+  </g>
+  <!-- hut 2 (smaller, behind) -->
+  <g>
+    <rect x="520" y="136" width="62" height="36" rx="2" fill="#e3bd82" stroke="#8a5a3b" stroke-width="2.5"/>
+    <path d="M514 138 L 551 114 L 588 138 Z" fill="#c9854f" stroke="#8a5a3b" stroke-width="2.5" stroke-linejoin="round"/>
+    <rect x="540" y="150" width="18" height="22" rx="1" fill="#a9764f" stroke="#8a5a3b" stroke-width="2"/>
+  </g>
+  <!-- chimney smoke, hand-drawn wobble -->
+  <path d="M470 88 c -6 -8, 6 -12, 0 -20 c -6 -8, 6 -12, 0 -20" fill="none" stroke="#a68a66" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- ===== fence ===== -->
+  <g stroke="#8a5a3b" stroke-width="3" stroke-linecap="round">
+    <path d="M640 170 l 0 -26 M660 170 l 0 -28 M680 170 l 0 -26 M700 170 l 0 -28"/>
+    <path d="M632 154 l 76 4 M632 162 l 76 4" fill="none" stroke-width="2.5"/>
+  </g>
+
+  <!-- ===== discovery pond (right) ===== -->
+  <g>
+    <ellipse cx="880" cy="182" rx="88" ry="16" fill="#a8d5e8" stroke="#5b8aa3" stroke-width="2.5"/>
+    <path d="M830 180 c 12 -4, 24 2, 36 -1 m 20 3 c 10 -3, 22 2, 32 0" stroke="#5b8aa3" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    <!-- lily pads -->
+    <ellipse cx="860" cy="184" rx="12" ry="4.5" fill="#7fc79a" stroke="#4d7a63" stroke-width="1.6"/>
+    <ellipse cx="905" cy="180" rx="10" ry="4" fill="#7fc79a" stroke="#4d7a63" stroke-width="1.6"/>
+    <circle cx="862" cy="180" r="2.5" fill="#f6c453" stroke="#c98f2e" stroke-width="1.2"/>
+  </g>
+
+  <!-- ===== characters: Momo, Tara, Bobo (simple paper figures, identity colors) ===== -->
+  <!-- Bobo the mint-green tortoise, by the pond -->
+  <g>
+    <path d="M748 172 c 0 -10, 7 -17, 16 -17 c 9 0, 16 7, 16 17 l -32 0 z" fill="#7fc79a" stroke="#4d7a63" stroke-width="2.5"/>
+    <path d="M756 162 c 1 4, 1 7, 0 10 m 8 -10 c -1 4, -1 7, 0 10 m 8 -10 c 1 4, 1 7, 0 10" stroke="#4d7a63" stroke-width="1.4" fill="none"/>
+    <circle cx="784" cy="170" r="5.5" fill="#9fd8b4" stroke="#4d7a63" stroke-width="2.2"/>
+    <circle cx="785.5" cy="169" r="1.2" fill="#2f4a3b"/>
+    <ellipse cx="752" cy="174" rx="5" ry="3.5" fill="#9fd8b4" stroke="#4d7a63" stroke-width="1.8"/>
+  </g>
+  <!-- Tara the orange squirrel, on the hill -->
+  <g>
+    <path d="M940 158 c -10 -2, -14 -14, -8 -21 c 5 -5, 14 -3, 15 3 c 1 8, -1 14, -7 18 z" fill="#d9822b" stroke="#7a4a2b" stroke-width="2.2"/>
+    <ellipse cx="952" cy="166" rx="9" ry="10" fill="#f0a04b" stroke="#7a4a2b" stroke-width="2.2"/>
+    <circle cx="960" cy="160" r="6" fill="#f0a04b" stroke="#7a4a2b" stroke-width="2.2"/>
+    <path d="M962 155 l 4 -6 l 1.5 7 z" fill="#7a4a2b"/>
+    <circle cx="961" cy="159" r="1.4" fill="#4a2a14"/>
+    <ellipse cx="950" cy="177" rx="7" ry="3" fill="#f0a04b" stroke="#7a4a2b" stroke-width="1.8"/>
+  </g>
+  <!-- Momo the lavender elephant, walking path center -->
+  <g>
+    <ellipse cx="330" cy="168" rx="20" ry="16" fill="#c9b8e8" stroke="#6b5a8a" stroke-width="2.5"/>
+    <ellipse cx="348" cy="160" rx="12" ry="11" fill="#c9b8e8" stroke="#6b5a8a" stroke-width="2.5"/>
+    <path d="M357 164 c 7 3, 9 9, 6 15 c -2 4.5, -7 5, -9 3" fill="none" stroke="#6b5a8a" stroke-width="3" stroke-linecap="round"/>
+    <path d="M338 151 c -4 -5, -9 -5, -12 0 c 3 4, 9 4, 12 0 z" fill="#8e76c4" stroke="#6b5a8a" stroke-width="1.6"/>
+    <circle cx="350" cy="159" r="1.6" fill="#3d3355"/>
+    <path d="M318 182 l 0 6 M342 182 l 0 6" stroke="#6b5a8a" stroke-width="3.5" stroke-linecap="round"/>
+  </g>
+  <!-- stitched path connecting the village -->
+  <path d="M0 196 C 120 192, 200 200, 300 196 S 500 192, 600 197 S 800 201, 900 196 S 1100 192, 1200 197"
+        fill="none" stroke="#a67c4f" stroke-width="2" stroke-dasharray="9 7" opacity="0.85"/>
+</svg>
