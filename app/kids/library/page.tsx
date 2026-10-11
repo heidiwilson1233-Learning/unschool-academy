@@ -3,7 +3,7 @@ import Link from "next/link";
 import fs from "fs";
 import path from "path";
 import { Section, SectionHeading, Card, Badge, Breadcrumbs } from "@/components/ui";
-import { FULL_LIBRARY_BASE_QUESTS } from "./_inventory";
+import { FULL_LIBRARY_BASE_QUESTS } from "../_inventory";
 
 export const metadata: Metadata = {
   title: "The Growing Book Library | Unschool Kids",
