@@ -24,6 +24,10 @@ export function AuthForm({ mode }: { mode: Mode }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState<string | null>(null);
+  /* Which field (if any) a visible error belongs to: the shared `error` state alone
+     marked the email input invalid even for password-length errors. errorFor pins
+     the banner to the offending field ("form" = non-field errors). */
+  const [errorFor, setErrorFor] = useState<"email" | "password" | "form" | null>(null);
   const [done, setDone] = useState<string | null>(null);
   /* Forgot-mode only: successful request swaps the form for a confirmation
      panel (industry-standard "check your email" state). Never set in the
@@ -58,11 +62,13 @@ export function AuthForm({ mode }: { mode: Mode }) {
     const clean = email.trim().toLowerCase();
     if (!EMAIL_RE.test(clean)) {
       setError("Please enter a valid email address.");
+      setErrorFor("email");
       setDone(null);
       return;
     }
     if (mode !== "forgot" && password.length < 8) {
       setError("Password must be at least 8 characters.");
+      setErrorFor("password");
       setDone(null);
       return;
     }
@@ -72,10 +78,12 @@ export function AuthForm({ mode }: { mode: Mode }) {
           ? "Password reset isn't connected yet. Accounts open with the Exams beta, so nothing was sent."
           : "Accounts aren't connected yet. This build doesn't create sessions, and your details weren't sent anywhere."
       );
+      setErrorFor("form");
       setDone(null);
       return;
     }
     setError(null);
+    setErrorFor(null);
     setDone(null);
     setBusy(true);
     try {
@@ -98,6 +106,7 @@ export function AuthForm({ mode }: { mode: Mode }) {
       }
     } catch (err) {
       setError(err instanceof Error ? err.message : "Something went wrong. Please try again.");
+      setErrorFor("form");
     } finally {
       setBusy(false);
     }
@@ -157,7 +166,7 @@ export function AuthForm({ mode }: { mode: Mode }) {
             <h1 className="text-2xl font-extrabold text-ink text-center">{titles[mode]}</h1>
             <p className="text-sm text-slate text-center mt-2">
               {mode === "signup" && "Free diagnostic and sample quests need no account — this is for saving progress later."}
-              {mode === "login" && "Learner and parent accounts."}
+              {mode === "login" && "Pilot sign-in for learner and parent accounts. The free diagnostic and practice need no account."}
               {mode === "forgot" && "Enter the email your account uses."}
             </p>
             <form onSubmit={submit} className="mt-6 space-y-4" noValidate>
@@ -173,18 +182,36 @@ export function AuthForm({ mode }: { mode: Mode }) {
                   spellCheck={false}
                   className={field}
                   value={email}
-                  aria-invalid={error ? true : undefined}
-                  aria-describedby={error ? "auth-error" : undefined}
+                  aria-invalid={errorFor === "email" ? true : undefined}
+                  aria-describedby={errorFor === "email" || errorFor === "form" ? "auth-error" : undefined}
                   onChange={(e) => {
                     setEmail(e.target.value);
-                    if (error) setError(null);
+                    if (errorFor === "email" || errorFor === "form") {
+                      setError(null);
+                      setErrorFor(null);
+                    }
                   }}
                 />
               </div>
               {mode !== "forgot" && (
                 <div>
                   <label htmlFor="auth-pass" className="block font-semibold text-ink mb-1.5 text-sm">Password</label>
-                  <input id="auth-pass" type="password" autoComplete={mode === "login" ? "current-password" : "new-password"} className={field} value={password} onChange={(e) => setPassword(e.target.value)} />
+                  <input
+                    id="auth-pass"
+                    type="password"
+                    autoComplete={mode === "login" ? "current-password" : "new-password"}
+                    className={field}
+                    value={password}
+                    aria-invalid={errorFor === "password" ? true : undefined}
+                    aria-describedby={errorFor === "password" || errorFor === "form" ? "auth-error" : undefined}
+                    onChange={(e) => {
+                      setPassword(e.target.value);
+                      if (errorFor === "password" || errorFor === "form") {
+                        setError(null);
+                        setErrorFor(null);
+                      }
+                    }}
+                  />
                 </div>
               )}
               {error && (
@@ -226,6 +253,21 @@ export function AuthForm({ mode }: { mode: Mode }) {
               {mode === "signup" && (<Link href="/login" className="text-academy-blue hover:underline font-semibold">Sign in instead</Link>)}
               {mode === "forgot" && (<Link href="/login" className="text-academy-blue hover:underline font-semibold">Back to sign in</Link>)}
             </div>
+            {/* Login-mode frictionless-entry rail (portal move 8): accounts are staged
+               stubs and the free diagnostic/practice need no account, so /login must
+               not be a dead-end wall — one escape link routes confused visitors
+               around the stub instead of into it. noindex makes link-farm risk nil. */}
+            {mode === "login" && (
+              <div className="mt-4 border-t border-border pt-4">
+                <p className="text-center text-sm text-slate">
+                  Not ready to sign in?{" "}
+                  <Link href="/free-practice" className="text-academy-blue hover:underline font-semibold">
+                    Try the free diagnostic
+                  </Link>{" "}
+                  — no account needed.
+                </p>
+              </div>
+            )}
           </>
         )}
       </Card>
