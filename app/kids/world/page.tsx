@@ -8,7 +8,7 @@ import { VILLAGE_LOCATIONS } from "@/lib/kids";
 
 const PAGE_TITLE = "Explore the Village — Six Storybook Locations for Kids";
 const PAGE_DESC =
-  "Explore the Unschool Kids village with Momo, Tara and Bobo: six storybook learning places for ages 5 to Grade 5. Two quests are playable now.";
+  "Explore the Unschool Kids village with Momo, Tara and Bobo: six storybook learning places for ages 5 to Grade 5. Two playable demo quests today; the rest of the village is still being built.";
 
 export const metadata: Metadata = {
   title: PAGE_TITLE,
@@ -116,7 +116,7 @@ export default function WorldPage() {
               <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate">
                 The whole village is getting ready for a joyful festival, and every
                 quest pitches in. Each place is a real teaching setting with its own
-                guide. Two quests are playable today; the rest of the village is
+                guide. Two demo quests are playable today; the rest of the village is
                 still being built, and the village never rushes anyone.
               </p>
               <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-4">
@@ -160,7 +160,7 @@ export default function WorldPage() {
           <StorybookVillageMap locations={VILLAGE_LOCATIONS} />
         </div>
         <p className="mt-3 text-sm text-[#6b6252]">
-          Places marked <strong className="text-ink">Playable</strong> already have a quest your child can try today.
+          Places marked <strong className="text-ink">Demo — playable</strong> are complete sample tracks your child can try today; the full quests behind the other places are still in educator review.
         </p>
 
         {/* ---------- The six places: bento list, honest badges ---------- */}
@@ -186,7 +186,7 @@ export default function WorldPage() {
                     <Art decorative className="w-16 h-16 shrink-0" />
                     {quest ? (
                       <span className="inline-flex items-center rounded-full bg-kids-orange px-3 py-1 text-[11px] font-extrabold uppercase tracking-[0.14em] text-[#3d2a10]">
-                        Playable now
+                        Demo — playable
                       </span>
                     ) : (
                       <span className="inline-flex items-center rounded-full bg-[#efe9d8] px-3 py-1 text-[11px] font-extrabold uppercase tracking-[0.14em] text-[#6b6252]">

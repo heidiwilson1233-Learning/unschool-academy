@@ -347,7 +347,7 @@ export default function KidsRoadmapPage() {
         <SectionHeading
           eyebrow="No false demos"
           title="What you can actually play today."
-          sub="Two complete demo quests, playable now and still awaiting educator signoff. Everything else on this page is a brief, and it says so."
+          sub={`Two complete demo quests — small sample tracks, not full quests — playable now. The ${allBriefs.length} authored prototype briefs above are not playable yet: each one waits for educator review. Everything else on this page is a brief, and it says so.`}
         />
         <div className="grid gap-4 md:grid-cols-2">
           {SAMPLES.map((s) => (

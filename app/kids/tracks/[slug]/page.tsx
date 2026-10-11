@@ -72,23 +72,28 @@ export default function TrackPage({ params }: { params: Promise<{ slug: string }
       </div>
 
       <Section>
-        <SectionHeading eyebrow="Quests for this age" title={`Play now — ${track.audience}`} sub="Every quest adapts as your child plays. Three right in a row and it gently gets harder; a struggle brings hints, never failure." />
+        <SectionHeading eyebrow="Quests for this age" title={`Play now — ${track.audience}`} sub="These are drafts in educator review — preview them freely, but they are not final. Every quest adapts as your child plays. Three right in a row and it gently gets harder; a struggle brings hints, never failure." />
         {quests.length === 0 ? (
           <Card className="!p-8 text-center">
             <p className="text-lg font-semibold text-ink">Quests growing 🌱</p>
-            <p className="mt-2 text-slate">New quests for {track.name} unlock every week.</p>
+            <p className="mt-2 text-slate">New quests for {track.name} arrive as educator reviews complete.</p>
           </Card>
         ) : (
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {quests.map((q) => (
               <Link key={q.id} href={`/kids/quest/${q.id}`}>
                 <Card className="!p-5 h-full hover:scale-[1.01] transition-transform">
-                  <div className="flex items-center justify-between">
+                  <div className="flex items-center justify-between gap-2">
                     <Badge tone="kids">{q.subject} · Level {q.difficulty}</Badge>
+                    {q.review_status !== "reviewed" && (
+                      <Badge tone="warning">Draft — in educator review</Badge>
+                    )}
                   </div>
                   <p className="mt-3 font-bold text-ink leading-snug">{q.title}</p>
                   <p className="mt-1 text-sm text-slate line-clamp-2">{q.objective}</p>
-                  <p className="mt-3 text-sm font-bold text-emerald-700">▶ Play quest</p>
+                  <p className="mt-3 text-sm font-bold text-emerald-700">
+                    {q.review_status === "reviewed" ? "▶ Play quest" : "▶ Preview draft"}
+                  </p>
                 </Card>
               </Link>
             ))}

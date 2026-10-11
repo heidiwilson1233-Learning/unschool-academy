@@ -53,7 +53,7 @@ export default function SubjectPage({ params }: { params: Promise<{ subject: str
               <Badge tone="kids">{s.tagline}</Badge>
               <h1 className="mt-3 text-4xl md:text-5xl font-extrabold tracking-tight text-ink">{s.name}</h1>
               <p className="mt-4 text-lg text-slate max-w-2xl">
-                {s.character === "tara" && "Tara guides every Words quest — phonics, vocabulary and stories from the 500-book library."}
+                {s.character === "tara" && "Tara guides every Words quest — phonics, vocabulary and stories from the growing book library."}
                 {s.character === "momo" && "Momo guides every Numbers quest — counting, shapes and patterns, always with real things to touch and count."}
                 {s.character === "bobo" && "Bobo guides every World quest — animals, plants and seasons, starting with 'What do you notice?'"}
                 {s.character === "all" && "All three friends guide these quests together — kindness, feelings and big imaginations."}
@@ -70,11 +70,11 @@ export default function SubjectPage({ params }: { params: Promise<{ subject: str
       </div>
 
       <Section>
-        <SectionHeading eyebrow="Play now" title={`${s.name} quests`} sub="Start anywhere — the quest adapts to your child. No fail states, no timers." />
+        <SectionHeading eyebrow="Drafts in review" title={`${s.name} quests`} sub="Start anywhere — the quest adapts to your child. No fail states, no timers. These are drafts in educator review: preview them, but they are not final." />
         {quests.length === 0 ? (
           <Card className="!p-8 text-center">
             <p className="text-lg font-semibold text-ink">Quests are growing here 🌱</p>
-            <p className="mt-2 text-slate">New {s.name.toLowerCase()} quests unlock every week from the book library.</p>
+            <p className="mt-2 text-slate">New {s.name.toLowerCase()} quests grow from the book library as educator reviews complete.</p>
             <Button href="/kids/library" variant="kids" className="mt-4">Browse the library</Button>
           </Card>
         ) : (
@@ -82,13 +82,17 @@ export default function SubjectPage({ params }: { params: Promise<{ subject: str
             {quests.map((q) => (
               <Link key={q.id} href={`/kids/quest/${q.id}`}>
                 <Card className="!p-5 h-full hover:scale-[1.01] transition-transform">
-                  <div className="flex items-center justify-between">
+                  <div className="flex items-center justify-between gap-2">
                     <Badge tone="kids">Level {q.difficulty}</Badge>
-                    <span className="text-xs text-slate">{q.track}</span>
+                    {q.review_status !== "reviewed" ? (
+                      <Badge tone="warning">Draft</Badge>
+                    ) : (
+                      <span className="text-xs text-slate">{q.track}</span>
+                    )}
                   </div>
                   <p className="mt-3 font-bold text-ink leading-snug">{q.title}</p>
                   <p className="mt-1 text-sm text-slate line-clamp-2">{q.objective}</p>
-                  <p className="mt-3 text-sm font-bold text-emerald-700">▶ Play quest</p>
+                  <p className="mt-3 text-sm font-bold text-emerald-700">{q.review_status === "reviewed" ? "▶ Play quest" : "▶ Preview draft"}</p>
                 </Card>
               </Link>
             ))}
