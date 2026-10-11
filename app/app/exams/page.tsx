@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { Section, Button, Card, Badge, Breadcrumbs } from "@/components/ui";
+import HabitCells from "@/components/habit-band";
 import { PRACTICE_TOPICS } from "@/lib/practice-meta";
 
 type Attempt = {
@@ -29,11 +30,11 @@ const parsedAt = (a: Attempt) => {
   const d = new Date(a.at);
   return isNaN(d.getTime()) ? null : d;
 };
-const dayKey = (d: Date) => `${d.getFullYear()}-${d.getMonth()}-${d.getDate()}`;
 const fmtDate = (d: Date) => d.toLocaleString("en-IN", { dateStyle: "medium", timeStyle: "short" });
 
 function kindLabel(a: Attempt) {
   if (a.kind === "diagnostic") return "Diagnostic";
+  if (a.kind === "challenge") return "Daily challenge";
   if (a.kind.startsWith("mock")) return "Timed mock";
   return `Practice${a.topic ? ` · ${a.topic}` : ""}`;
 }
@@ -142,17 +143,8 @@ export default function ExamsDashboard() {
   const mocks = valid.filter((a) => a.kind.startsWith("mock"));
   const baseline = diagnostics.length ? diagnostics[diagnostics.length - 1] : null;
 
-  /* Day streak from local calendar days with at least one session. */
-  const days = new Set(valid.map((a) => dayKey(parsedAt(a)!)));
-  let streak = 0;
-  const cursor = new Date();
-  if (!days.has(dayKey(cursor))) cursor.setDate(cursor.getDate() - 1);
-  while (days.has(dayKey(cursor))) {
-    streak++;
-    cursor.setDate(cursor.getDate() - 1);
-  }
-  const lastAt = valid.length ? parsedAt(valid[valid.length - 1]) : null;
-  const lastWasToday = lastAt ? dayKey(lastAt) === dayKey(new Date()) : false;
+  /* Day streak is computed inside HabitCells (streak + freeze mechanics live in
+     lib/habits.ts). */
 
   /* Per-topic mastery from practice attempts (verified topic names). */
   const mastery = PRACTICE_TOPICS.map((t) => {
@@ -248,6 +240,16 @@ export default function ExamsDashboard() {
                 <div className="mt-6">
                   <Button href="/exams/jft-basic/diagnostic">Start the diagnostic</Button>
                 </div>
+                <p className="mt-4 text-sm text-slate">
+                  Short on time?{" "}
+                  <a
+                    href="/app/exams/challenge"
+                    className="font-semibold text-academy-teal-dark hover:underline"
+                  >
+                    Try today&apos;s challenge
+                  </a>{" "}
+                  — five questions, about five minutes.
+                </p>
               </div>
             </Card>
           ) : (
@@ -280,30 +282,8 @@ export default function ExamsDashboard() {
                   )}
                 </Card>
 
-                {/* Streak */}
-                <Card className="col-span-6 md:col-span-2 !shadow-none">
-                  <dl>
-                    <dt className="text-[11px] font-semibold uppercase tracking-[0.2em] text-slate">
-                      Day streak
-                    </dt>
-                    <dd
-                      className="mt-2 text-6xl font-extrabold tracking-[-0.03em] text-ink leading-none"
-                      aria-label={`${streak} day streak`}
-                    >
-                      {streak}
-                    </dd>
-                  </dl>
-                  <p className="mt-4 text-sm text-slate leading-relaxed">
-                    Days in a row with at least one session.
-                  </p>
-                  {lastAt && (
-                    <p className="mt-2 text-sm text-slate leading-relaxed">
-                      {lastWasToday
-                        ? "You practised today. Come back tomorrow to keep it going."
-                        : `Last session ${fmtDate(lastAt)}. One session today keeps the streak alive.`}
-                    </p>
-                  )}
-                </Card>
+                {/* Habit mechanics: streak dossier + daily goal + challenge of the day */}
+                <HabitCells attempts={valid} />
 
                 {/* Review deck — only when there are open misses */}
                 {openMisses.size > 0 && (

@@ -30,7 +30,25 @@ type CheckResult = {
 
 type SkillTally = { label: string; correct: number; total: number };
 
-export default function PracticePlayer({ topic }: { topic: string }) {
+export type ChallengePack = {
+  /** Local date key (YYYY-MM-DD) this set belongs to. */
+  date: string;
+  questions: PracticeQ[];
+  contentVersion: string | null;
+};
+
+/**
+ * Practice player. Two modes, same engine:
+ * - topic mode (default): fetches the topic's questions from /api/practice/questions
+ * - challenge mode: plays a pre-built ChallengePack (today's challenge set)
+ */
+export default function PracticePlayer({
+  topic,
+  challenge,
+}: {
+  topic?: string;
+  challenge?: ChallengePack;
+}) {
   const [questions, setQuestions] = useState<PracticeQ[] | null>(null);
   const [contentVersion, setContentVersion] = useState<string | null>(null);
   const [loadError, setLoadError] = useState(false);
@@ -59,17 +77,33 @@ export default function PracticePlayer({ topic }: { topic: string }) {
     } catch {
       priorMissesRef.current = new Set();
     }
+    if (challenge) {
+      // Challenge mode: the set arrives pre-built (no keys — API strips them).
+      // Defensive: an empty set must never reach the player body.
+      if (!challenge.questions || challenge.questions.length === 0) {
+        setLoadError(true);
+        return;
+      }
+      setQuestions(challenge.questions);
+      setContentVersion(challenge.contentVersion);
+      return;
+    }
+    if (!topic) {
+      setLoadError(true);
+      return;
+    }
     fetch(`/api/practice/questions?topic=${encodeURIComponent(topic)}`)
       .then((r) => {
         if (!r.ok) throw new Error("load failed");
         return r.json();
       })
       .then((d) => {
+        if (!d.questions || d.questions.length === 0) throw new Error("empty set");
         setQuestions(d.questions);
         setContentVersion(d.version ?? null);
       })
       .catch(() => setLoadError(true));
-  }, [topic]);
+  }, [topic, challenge]);
 
   const check = useCallback(async () => {
     if (!questions || !picked) return;
@@ -111,8 +145,8 @@ export default function PracticePlayer({ topic }: { topic: string }) {
       total: t.total,
     }));
     recordAttempt({
-      kind: "practice",
-      topic,
+      kind: challenge ? "challenge" : "practice",
+      topic: challenge ? undefined : topic,
       score,
       total: questions.length,
       at: new Date().toISOString(),
@@ -123,7 +157,7 @@ export default function PracticePlayer({ topic }: { topic: string }) {
     });
     setFinished(true);
     window.scrollTo({ top: 0, behavior: "smooth" });
-  }, [questions, score, topic, contentVersion]);
+  }, [questions, score, topic, challenge, contentVersion]);
 
   const next = () => {
     if (!questions) return;
@@ -167,7 +201,7 @@ export default function PracticePlayer({ topic }: { topic: string }) {
           {score}<span className="text-3xl text-slate font-semibold">/{questions.length}</span>
         </p>
         <p className="mt-3 text-slate">
-          {pct >= 80 ? "Excellent — this topic is becoming solid." : pct >= 50 ? "Good progress. Review the ones you missed below, then try again tomorrow." : "Every expert started here. Re-read the explanations, then try another session."}
+          {pct >= 80 ? "Excellent — this topic is becoming solid." : pct >= 50 ? "Good progress. Review the ones you missed below, then try another set." : "Every expert started here. Re-read the explanations, then try another session."}
         </p>
 
         {/* ---------- Per-skill report: the practice engine feeds the mastery dashboard ---------- */}
@@ -202,19 +236,36 @@ export default function PracticePlayer({ topic }: { topic: string }) {
           </ul>
           {weakest && weakest.rate < 1 && (
             <p className="mt-4 text-[15px] text-slate leading-relaxed">
-              Weakest here: <span className="font-semibold text-ink">{weakest.label}</span> — a free
-              diagnostic maps exactly these gaps to a starter plan.
+              Weakest here: <span className="font-semibold text-ink">{weakest.label}</span> —{" "}
+              <Link
+                href="/exams/jft-basic/diagnostic"
+                className="font-semibold text-academy-blue hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-academy-blue rounded"
+              >
+                a free diagnostic maps these gaps to a starter plan
+              </Link>
+              .
             </p>
           )}
         </div>
 
         <p className="mt-6 text-sm text-slate">Hints used: {hintsUsed} · Saved to your progress on this device.</p>
         <div className="mt-6 flex flex-wrap gap-3 justify-center">
-          <Button onClick={() => window.location.reload()}>
-            <RotateCcw size={16} aria-hidden /> Practice again
-          </Button>
-          <Button href="/exams/jft-basic/diagnostic" variant="secondary">Map my gaps</Button>
-          <Button href="/app/exams" variant="ghost">My progress →</Button>
+          {challenge ? (
+            <>
+              <Button href="/app/exams">Back to my progress</Button>
+              <Button href="/exams/jft-basic/topics" variant="secondary">
+                Practice by topic
+              </Button>
+            </>
+          ) : (
+            <>
+              <Button onClick={() => window.location.reload()}>
+                <RotateCcw size={16} aria-hidden /> Practice again
+              </Button>
+              <Button href="/exams/jft-basic/diagnostic" variant="secondary">Map my gaps</Button>
+              <Button href="/app/exams" variant="ghost">My progress →</Button>
+            </>
+          )}
         </div>
       </Card>
     );
