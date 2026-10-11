@@ -143,9 +143,10 @@ export default function FreePracticePage() {
               A moment from Momo&rsquo;s quest
             </h2>
             <p className="mt-3 text-slate leading-relaxed">
-              The actual counting game from our ages 3–5 prototype — then the
-              full quest with hints and a transfer challenge (same skill, new
-              scene).
+              The actual counting game from our early ages 3–5 prototype — a
+              historical pilot, since today&rsquo;s Kids tracks start at age 5
+              and ages 3–5 remain a future track — then the full quest with
+              hints and a transfer challenge (same skill, new scene).
             </p>
             <div className="mt-6">
               <KidsSampler />
