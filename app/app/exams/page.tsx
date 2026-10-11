@@ -365,6 +365,16 @@ export default function ExamsDashboard() {
                       </li>
                     ))}
                   </ul>
+                  <p className="mt-6 border-t border-border pt-4 text-sm text-slate">
+                    Want it per skill, not per topic?{" "}
+                    <a
+                      href="/app/exams/mastery"
+                      className="font-semibold text-academy-teal-dark hover:underline"
+                    >
+                      Open the full 11-skill mastery map
+                    </a>
+                    {" "}— attempted to mastered, one ladder per skill.
+                  </p>
                 </Card>
 
                 {/* Study plan */}
