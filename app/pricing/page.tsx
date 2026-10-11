@@ -12,12 +12,12 @@ const TRAIL = [{ label: "Home", href: "/" }, { label: "Pricing" }];
 export const metadata: Metadata = {
   title: "Pilot Pricing — Free to Start, Paid Passes in Test Mode",
   description:
-    "Unschool Academy pricing: free diagnostics and sample quests forever. JFT-Basic passes and Kids family plans at pilot pricing; checkout is in test mode.",
+    "Unschool Academy pricing: free diagnostics and demo quests forever. JFT-Basic passes and Kids family plans at pilot pricing; checkout is in test mode.",
   alternates: { canonical: "/pricing" },
   openGraph: {
     title: "Pilot Pricing — Free to Start, Paid Passes in Test Mode | Unschool Academy",
     description:
-      "Free diagnostics and sample quests forever. JFT-Basic passes and Kids family plans at pilot pricing; checkout is in test mode, no real charges.",
+      "Free diagnostics and demo quests forever. JFT-Basic passes and Kids family plans at pilot pricing; checkout is in test mode, no real charges.",
     type: "website",
     url: "/pricing",
   },
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     card: "summary",
     title: "Pilot Pricing — Free to Start, Paid Passes in Test Mode | Unschool Academy",
     description:
-      "Free diagnostics and sample quests forever. JFT-Basic and Kids plans at pilot pricing; checkout is in test mode.",
+      "Free diagnostics and demo quests forever. JFT-Basic and Kids plans at pilot pricing; checkout is in test mode.",
   },
 };
 
@@ -397,7 +397,7 @@ export default function PricingPage() {
           </article>
           <FreeRail
             eyebrow="Free forever"
-            title="Try a complete sample quest"
+            title="Try a complete demo quest"
             body="2 playable quests today: Momo & the Mangoes and Tara's story. Off-screen activity ideas included."
             cta="Play a free quest"
             href="/kids/sample/momo-mangoes"

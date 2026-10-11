@@ -94,7 +94,7 @@ function ReaderSplit() {
           </h3>
           <p className="mt-3 text-[15px] leading-relaxed text-slate">
             Sections 01, 03, and 07 matter most to you: what the service is, fair use, and how
-            terms change. Free diagnostics and sample quests need no account and carry no charge.
+            terms change. Free diagnostics and demo quests need no account and carry no charge.
           </p>
         </div>
         <div className="sm:col-span-3 border-t border-border pt-5">

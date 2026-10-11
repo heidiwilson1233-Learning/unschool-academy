@@ -9,12 +9,12 @@ const CANONICAL = "https://unschool.academy/kids/sample/momo-mangoes";
 export const metadata: Metadata = {
   title: "Free Quest: Momo's Three Mangoes (Ages 3–5) — Unschool Academy",
   description:
-    "A complete free Unschool Kids sample quest. Help Momo count exactly three mangoes for the picnic, then prove the skill with leaves. No account, no card.",
+    "A complete free Unschool Kids demo quest. Help Momo count exactly three mangoes for the picnic, then prove the skill with leaves. No account, no card.",
   alternates: { canonical: CANONICAL },
   openGraph: {
     title: "Free Quest: Momo's Three Mangoes (Ages 3–5) — Unschool Academy",
     description:
-      "Help Momo count exactly three mangoes for the picnic. A complete free sample quest for ages 3–5.",
+      "Help Momo count exactly three mangoes for the picnic. A complete free demo quest for ages 3–5.",
     type: "website",
     url: CANONICAL,
   },
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     card: "summary",
     title: "Free Quest: Momo's Three Mangoes (Ages 3–5) — Unschool Academy",
     description:
-      "Help Momo count exactly three mangoes for the picnic. A complete free sample quest for ages 3–5.",
+      "Help Momo count exactly three mangoes for the picnic. A complete free demo quest for ages 3–5.",
   },
 };
 
@@ -80,7 +80,7 @@ export default function MangoQuestPage() {
           <div className="relative grid gap-8 md:grid-cols-3">
             <div className="md:col-span-2">
               <p className="font-mono text-[11px] font-bold uppercase tracking-[0.2em] text-kids-orange-ink">
-                Free sample quest · Ages 3–5 · K04
+                Free demo quest · Ages 3–5 · K04
               </p>
               <h1
                 id="quest-heading"
@@ -115,7 +115,7 @@ export default function MangoQuestPage() {
                   ))}
                 </dl>
                 <p className="mt-5 inline-block rounded-full border border-kids-orange/40 bg-kids-orange/10 px-3 py-1 font-mono text-[11px] font-bold uppercase tracking-[0.14em] text-kids-orange-ink">
-                  Sample under educator review
+                  Demo — under educator review
                 </p>
               </div>
             </aside>

@@ -50,7 +50,7 @@ export const SEARCH_INDEX: SearchEntry[] = [
   { title: "Free quest: Tara's four-card story", href: "/kids/sample/tara-story", section: "Kids", keywords: "free quest sample tara story order cards playable", blurb: "A playable story-ordering quest. No sign-up." },
   // ---- Company ----
   { title: "How it works", href: "/how-it-works", section: "Company", keywords: "how it works method loop levels review standards", blurb: "The Unschool method: hierarchy, loop, levels, review standards." },
-  { title: "Free practice", href: "/free-practice", section: "Company", keywords: "free practice sampler questions quest", blurb: "Try real sample questions and a sample quest, free." },
+  { title: "Free practice", href: "/free-practice", section: "Company", keywords: "free practice sampler questions quest", blurb: "Try real demo questions and a demo quest, free." },
   { title: "Pricing", href: "/pricing", section: "Company", keywords: "pricing plans cost pass pilot", blurb: "Pilot pricing: what free covers, and what plans add." },
   { title: "Resources", href: "/resources", section: "Company", keywords: "resources guides kanji vocabulary listening station", blurb: "Guides: station kanji, listening, vocabulary." },
   { title: "Blog", href: "/blog", section: "Company", keywords: "blog notes articles method honesty", blurb: "Notes from the content team: method, honesty, how-tos." },

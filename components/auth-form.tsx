@@ -179,7 +179,7 @@ export function AuthForm({ mode }: { mode: Mode }) {
           <>
             <h1 className="text-2xl font-extrabold text-ink text-center">{titles[mode]}</h1>
             <p className="text-sm text-slate text-center mt-2">
-              {mode === "signup" && "Create an account to save your diagnostic results, streaks, and mastery, free. The free diagnostic and sample quests need no account."}
+              {mode === "signup" && "Create an account to save your diagnostic results, streaks, and mastery, free. The free diagnostic and demo quests need no account."}
               {mode === "login" && "Pilot sign-in for learner and parent accounts. The free diagnostic and practice need no account."}
               {mode === "forgot" && "Enter the email your account uses."}
             </p>

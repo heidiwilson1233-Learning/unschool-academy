@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Free Quest: Tara's Four-Card Story (Grades 1–2) — Unschool Academy",
     description:
-      "Order Tara's mixed-up story cards, hear the tale in order, and pick the perfect title. A complete free sample quest for grades 1–2.",
+      "Order Tara's mixed-up story cards, hear the tale in order, and pick the perfect title. A complete free demo quest for grades 1–2.",
     type: "website",
     url: CANONICAL,
   },
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     card: "summary",
     title: "Free Quest: Tara's Four-Card Story (Grades 1–2) — Unschool Academy",
     description:
-      "Order Tara's mixed-up story cards, hear the tale in order, and pick the perfect title. A complete free sample quest for grades 1–2.",
+      "Order Tara's mixed-up story cards, hear the tale in order, and pick the perfect title. A complete free demo quest for grades 1–2.",
   },
 };
 
@@ -80,7 +80,7 @@ export default function StoryQuestPage() {
           <div className="relative grid gap-8 md:grid-cols-3">
             <div className="md:col-span-2">
               <p className="font-mono text-[11px] font-bold uppercase tracking-[0.2em] text-kids-orange-ink">
-                Free sample quest · Grades 1–2 · K13
+                Free demo quest · Grades 1–2 · K13
               </p>
               <h1
                 id="quest-heading"
@@ -116,7 +116,7 @@ export default function StoryQuestPage() {
                   ))}
                 </dl>
                 <p className="mt-5 inline-block rounded-full border border-kids-orange/40 bg-kids-orange/10 px-3 py-1 font-mono text-[11px] font-bold uppercase tracking-[0.14em] text-kids-orange-ink">
-                  Sample under educator review
+                  Demo — under educator review
                 </p>
               </div>
             </aside>

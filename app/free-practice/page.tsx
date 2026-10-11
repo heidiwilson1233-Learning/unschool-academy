@@ -5,7 +5,7 @@ import { JftSampler, KidsSampler } from "@/components/samplers";
 export const metadata: Metadata = {
   title: "Free Practice — Try It First",
   description:
-    "Free Unschool Academy practice: the JFT-Basic diagnostic sampler and a Momo kids quest sampler. Real interactions, no account, no paywall.",
+    "Free Unschool Academy practice: the JFT-Basic diagnostic demo and a Momo kids quest demo. Real interactions, no account, no paywall.",
   alternates: { canonical: "/free-practice" },
   openGraph: {
     title: "Free Practice — Try It First | Unschool Academy",
@@ -120,7 +120,7 @@ export default function FreePracticePage() {
           {/* Adult surface — institutional register: hairline rules, mono labels. */}
           <article className="md:col-span-4 rounded-2xl border border-border bg-paper p-6 md:p-8">
             <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-academy-teal-dark">
-              Sample · JFT-Basic · From the pilot
+              Demo · JFT-Basic · From the pilot
             </p>
             <h2 className="mt-3 text-2xl md:text-3xl font-extrabold tracking-tight text-ink text-balance">
               JFT-Basic free practice
@@ -137,7 +137,7 @@ export default function FreePracticePage() {
           {/* Kids surface — Duolingo register: tactile, chunky, warm. */}
           <article className="md:col-span-2 md:row-span-2 rounded-2xl border-2 border-kids-orange/40 bg-kids-cream p-6 md:p-7">
             <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-kids-orange-ink">
-              Kids · Ages 3–5
+              Demo · Kids · From the pilot
             </p>
             <h2 className="mt-3 text-2xl font-extrabold tracking-tight text-ink text-balance">
               A moment from Momo&rsquo;s quest
