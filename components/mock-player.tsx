@@ -3,6 +3,7 @@
 import { memo, useCallback, useEffect, useRef, useState } from "react";
 import { Check, Volume2, X, Timer as TimerIcon } from "lucide-react";
 import { Button, Badge, Card, Callout } from "@/components/ui";
+import CredentialClaimCard from "@/components/credential-claim-card";
 import { recordAttempt, speakJapanese } from "@/lib/attempts";
 
 type MockQ = {
@@ -554,6 +555,9 @@ export default function MockPlayer({ apiPath = "/api/mock", attemptKind = "mock"
             </Callout>
           </div>
         )}
+
+        {/* Practice credential nudge — full mocks only, effort-based. */}
+        {attemptKind.startsWith("full mock") && <CredentialClaimCard kind="full-mock" />}
 
         {/* Section analytics: accuracy + pace per section (research: GICE, iQuanta, PracticeMock) */}
         {sectionStats.length > 0 && (

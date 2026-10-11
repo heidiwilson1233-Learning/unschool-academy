@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { Volume2, Flag, ArrowRight } from "lucide-react";
 import { Button, Badge, Callout, Card } from "@/components/ui";
+import CredentialClaimCard from "@/components/credential-claim-card";
 import { recordAttempt, speakJapanese } from "@/lib/attempts";
 
 type PublicQuestion = {
@@ -558,6 +559,9 @@ export default function DiagnosticPlayer() {
             </div>
           </Card>
         </section>
+
+        {/* Practice credential nudge — effort-based, completion only. */}
+        <CredentialClaimCard kind="diagnostic" />
 
         {/* Optional 2-question exit survey — MD blueprint 07_DIGITAL_GROWTH_AND_FINANCES, line 92. */}
         <ExitSurvey />

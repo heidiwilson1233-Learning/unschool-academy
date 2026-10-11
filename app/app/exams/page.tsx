@@ -41,6 +41,7 @@ function kindLabel(a: Attempt) {
 
 export default function ExamsDashboard() {
   const [attempts, setAttempts] = useState<Attempt[] | null>(null);
+  const [credentialCount, setCredentialCount] = useState(0);
   const [manualCleared, setManualCleared] = useState<string[]>([]);
   const [confirming, setConfirming] = useState(false);
   const clearBtnRef = useRef<HTMLButtonElement>(null);
@@ -53,6 +54,12 @@ export default function ExamsDashboard() {
       setAttempts(Array.isArray(raw) ? raw : []);
     } catch {
       setAttempts([]);
+    }
+    try {
+      const credRaw = JSON.parse(localStorage.getItem("ua-credentials") ?? "[]");
+      setCredentialCount(Array.isArray(credRaw) ? credRaw.length : 0);
+    } catch {
+      setCredentialCount(0);
     }
     try {
       const clearedRaw = JSON.parse(localStorage.getItem("ua-answers-cleared") ?? "[]");
@@ -299,6 +306,21 @@ export default function ExamsDashboard() {
                     </Button>
                   </div>
                 )}
+
+                {/* Practice credentials — portal-doctrine move 6 */}
+                <div className="col-span-6 border border-border bg-paper rounded-2xl px-6 py-5 flex flex-wrap items-center gap-x-6 gap-y-3">
+                  <p className="flex-1 min-w-52 text-[15px] text-ink leading-relaxed">
+                    <span className="font-bold">
+                      Practice credentials{credentialCount > 0 ? ` (${credentialCount} issued)` : ""}
+                    </span>
+                    <span className="text-slate">
+                      {" "}— turn finished milestones into named, verifiable records you can share.
+                    </span>
+                  </p>
+                  <Button href="/app/exams/certificate" variant="secondary">
+                    {credentialCount > 0 ? "View my credentials" : "See my credentials"}
+                  </Button>
+                </div>
 
                 {/* Topic mastery */}
                 <Card className="col-span-6 md:col-span-4 !shadow-none">
