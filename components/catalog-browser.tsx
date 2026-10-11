@@ -119,8 +119,13 @@ export default function CatalogBrowser({ rows }: { rows: CatalogRow[] }) {
   return (
     <div>
       <h2 className="sr-only">Search and filter the catalog</h2>
-      {/* Search + filters */}
-      <div className="rounded-2xl border border-border bg-white p-4 sm:p-5 shadow-sm">
+      {/* Search + filters — pinned to the page like an index card from the studio pinboard (A13 craft pass). */}
+      <div className="craft-paper-card p-4 sm:p-5 shadow-sm">
+        <span
+          aria-hidden="true"
+          className="washi-tape -top-3.5 left-8"
+          style={{ ["--tape" as string]: "rgba(20,125,117,0.5)", transform: "rotate(-4deg)" }}
+        />
         <label htmlFor="catalog-search" className="sr-only">
           Search by exam name, ID (EX-299), or issuer
         </label>
@@ -172,14 +177,17 @@ export default function CatalogBrowser({ rows }: { rows: CatalogRow[] }) {
         </div>
       </div>
 
-      {/* Result count */}
-      <div className="mt-6 flex items-center justify-between" id="catalog-results">
+      {/* Result count — the ledger line: mono counts, hand-written tip (decorative duplicate of the search label). */}
+      <div className="mt-6 flex items-center justify-between gap-3" id="catalog-results">
         <h2 id="catalog-results-heading" tabIndex={-1} className="sr-only outline-none">
           Results
         </h2>
         <p className="text-sm text-slate" role="status" aria-live="polite">
           Showing <strong className="text-ink">{rangeStart}–{rangeEnd}</strong> of{" "}
           <strong className="text-ink">{results.length}</strong> entries
+        </p>
+        <p aria-hidden="true" className="font-hand text-[15px] text-academy-teal hidden sm:block -rotate-2 select-none">
+          tip: every ID is searchable — try EX-299
         </p>
         {hasFilters && (
           <button onClick={clearAll} className="text-sm text-academy-blue font-semibold hover:underline">
@@ -188,7 +196,9 @@ export default function CatalogBrowser({ rows }: { rows: CatalogRow[] }) {
         )}
       </div>
 
-      {/* Results: hairline editorial rows, not marketing cards (run 42) */}
+      {/* Results: ledger rows on warm paper — index chips, craft hover, and the
+          one practice-ready entry carries a teal ledger tab. Status badges and
+          all labels are the truthful ones from lib/catalog (never rewritten). */}
       {results.length === 0 ? (
         <div className="mt-6">
           <EmptyState
@@ -219,24 +229,38 @@ export default function CatalogBrowser({ rows }: { rows: CatalogRow[] }) {
                 <Link
                   href={r.href}
                   aria-label={`${r.name}, ${r.statusLabel}`}
-                  className="group flex items-baseline gap-3 sm:gap-5 py-3.5 transition-colors hover:bg-canvas/60 active:bg-canvas focus-visible:outline-none"
+                  className="group relative flex flex-wrap items-center gap-x-3 gap-y-1.5 px-2 sm:px-3 py-3.5 transition-colors hover:bg-[#fdf8ec] active:bg-[#f8f1de] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-academy-blue/50"
                 >
-                  <span aria-hidden="true" className="font-mono text-xs font-bold text-slate w-14 shrink-0">
+                  {/* Ledger tab on the single live program — decorative; the badge says what it is. */}
+                  {r.status === "practice-ready" && (
+                    <span
+                      aria-hidden="true"
+                      className="absolute left-0 top-2.5 bottom-2.5 w-1 rounded-full bg-academy-teal/80"
+                    />
+                  )}
+                  {/* Stamped index chip: the catalog ID, warm paper. */}
+                  <span
+                    aria-hidden="true"
+                    className="shrink-0 rounded-md border border-[#e2d7ba] bg-[#f8f1de] px-1.5 py-0.5 font-mono text-[11px] font-bold tracking-wide text-[#8a6f4d]"
+                  >
                     {r.id}
                   </span>
-                  <span className="min-w-0 flex-1">
+                  <span className="min-w-0 flex-1 basis-44">
                     <span className="block font-bold text-ink leading-snug group-hover:text-academy-blue transition-colors">
                       {r.name}
                     </span>
                     <span className="mt-0.5 block truncate text-sm text-slate">
                       {r.issuingBody}
                       {r.issuingBody !== r.examFamily ? ` · ${r.examFamily}` : ""}
+                      <span className="sm:hidden"> · {r.kind}</span>
                     </span>
                   </span>
                   <span className="hidden sm:block shrink-0 text-xs font-semibold text-slate">
                     {r.kind}
                   </span>
-                  <Badge tone={STATUS_TONES[r.status]}>{r.statusLabel}</Badge>
+                  <span className="ml-auto sm:ml-0">
+                    <Badge tone={STATUS_TONES[r.status]}>{r.statusLabel}</Badge>
+                  </span>
                 </Link>
               </li>
             ))}
