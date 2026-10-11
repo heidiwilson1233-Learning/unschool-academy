@@ -96,7 +96,13 @@ export default function ExamsDashboard() {
         </h1>
         <p className="mt-4 text-slate max-w-2xl leading-relaxed">
           Every session you finish is logged here on this device. No account, no sign-in.
-          Scores, weakest topics, and full history stay private on this browser.
+          Scores, weakest topics, and full history stay private on this browser.{" "}
+          <a
+            href="/app/exams/parent"
+            className="font-semibold text-academy-teal-dark hover:underline whitespace-nowrap"
+          >
+            Parent view <span aria-hidden>→</span>
+          </a>
         </p>
       </div>
     </div>
@@ -470,6 +476,25 @@ export default function ExamsDashboard() {
                   </p>
                 </Card>
               </div>
+
+              {/* For parents: the pilot parent view */}
+              <Card className="col-span-6 !shadow-none mt-2">
+                <div className="flex flex-wrap items-center justify-between gap-4">
+                  <div>
+                    <h2 className="text-[11px] font-semibold uppercase tracking-[0.2em] text-slate">
+                      For parents and guardians
+                    </h2>
+                    <p className="mt-1 text-[15px] text-slate leading-relaxed max-w-2xl">
+                      The pilot parent view: activity, recent scores, skills progress, and a
+                      shareable monthly summary — all read from this browser. Show it to a
+                      parent; it is their window too.
+                    </p>
+                  </div>
+                  <Button href="/app/exams/parent" variant="secondary">
+                    Open the parent view
+                  </Button>
+                </div>
+              </Card>
 
               {/* Continue practising */}
               <div className="mt-10">
