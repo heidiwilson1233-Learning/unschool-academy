@@ -361,27 +361,27 @@ export function GlobalFooter() {
   const [openCol, setOpenCol] = useState<string | null>(null);
 
   return (
-    <footer className="bg-ink text-white mt-auto">
+    <footer className="bg-paper-warm text-ink border-t border-border mt-auto">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14">
         <div className="grid gap-10 lg:grid-cols-[1.4fr_repeat(4,1fr)]">
           {/* Identity column */}
           <div>
-            <AcademyLogo variant="white" />
-            <p className="mt-4 text-white/70 text-[15px] leading-relaxed max-w-xs">{TAGLINE}</p>
+            <AcademyLogo variant="color" />
+            <p className="mt-4 text-slate text-[15px] leading-relaxed max-w-xs">{TAGLINE}</p>
             <div className="mt-6">
-              <label htmlFor="footer-lang" className="text-xs font-bold uppercase tracking-widest text-white/50 block mb-2">
+              <label htmlFor="footer-lang" className="text-xs font-bold uppercase tracking-widest text-slate block mb-2">
                 Language
               </label>
               <select
                 id="footer-lang"
-                className="bg-white/10 border border-white/20 rounded-lg px-3 py-2 text-sm text-white"
+                className="bg-paper border border-border rounded-lg px-3 py-2 text-sm text-ink"
                 defaultValue="en"
               >
                 <option value="en">English</option>
                 <option value="hi">हिन्दी (Hindi)</option>
               </select>
             </div>
-            <p className="mt-4 text-xs text-white/50 leading-relaxed">
+            <p className="mt-4 text-xs text-slate leading-relaxed">
               Prices shown in INR where applicable. Content availability and pricing vary by country.
             </p>
           </div>
@@ -393,7 +393,7 @@ export function GlobalFooter() {
                 type="button"
                 onClick={() => setOpenCol(openCol === col.heading ? null : col.heading)}
                 aria-expanded={openCol === col.heading}
-                className="lg:cursor-default w-full flex items-center justify-between lg:justify-start py-2 lg:py-0 text-sm font-bold uppercase tracking-widest text-white/50 mb-1 lg:mb-4"
+                className="lg:cursor-default w-full flex items-center justify-between lg:justify-start py-2 lg:py-0 text-sm font-bold uppercase tracking-widest text-slate mb-1 lg:mb-4"
               >
                 {col.heading}
                 <svg aria-hidden width="12" height="12" viewBox="0 0 12 12" className={`lg:hidden transition-transform ${openCol === col.heading ? "rotate-180" : ""}`}>
@@ -403,7 +403,7 @@ export function GlobalFooter() {
               <ul className={`space-y-2.5 ${openCol === col.heading ? "block" : "hidden"} lg:block`}>
                 {col.links.map((l) => (
                   <li key={l.href + l.label}>
-                    <Link href={l.href} className="text-white/75 hover:text-white text-[15px] transition-colors">
+                    <Link href={l.href} className="text-ink/80 hover:text-academy-blue text-[15px] transition-colors">
                       {l.label}
                     </Link>
                   </li>
@@ -413,18 +413,18 @@ export function GlobalFooter() {
           ))}
         </div>
 
-        <div className="mt-12 pt-8 border-t border-white/15">
-          <p className="text-xs text-white/50 leading-relaxed max-w-4xl">
+        <div className="mt-12 pt-8 border-t border-border">
+          <p className="text-xs text-slate leading-relaxed max-w-4xl">
             Unschool Academy is an independent practice and learning service. Exam names belong to their
             respective owners. No affiliation with or endorsement by any examination body unless
             specifically stated.
           </p>
           <div className="mt-4 flex flex-wrap items-center justify-between gap-4">
-            <p className="text-sm text-white/60">© {year} Unschool Academy. All rights reserved.</p>
+            <p className="text-sm text-slate">© {year} Unschool Academy. All rights reserved.</p>
             <div className="flex gap-6 text-sm">
-              <Link href="/legal/terms" className="text-white/60 hover:text-white">Terms</Link>
-              <Link href="/legal/privacy" className="text-white/60 hover:text-white">Privacy</Link>
-              <Link href="/legal/child-privacy" className="text-white/60 hover:text-white">Children's Privacy</Link>
+              <Link href="/legal/terms" className="text-slate hover:text-ink">Terms</Link>
+              <Link href="/legal/privacy" className="text-slate hover:text-ink">Privacy</Link>
+              <Link href="/legal/child-privacy" className="text-slate hover:text-ink">Children's Privacy</Link>
             </div>
           </div>
         </div>
