@@ -21,7 +21,6 @@ const STATIC_ROUTES = [
   "/parent",
   "/pricing",
   "/resources",
-  "/search",
   "/contact",
   "/legal/accessibility",
   "/legal/child-privacy",

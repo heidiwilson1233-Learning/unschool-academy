@@ -1,115 +1,92 @@
-"use client";
+import type { Metadata } from "next";
+import { Suspense } from "react";
+import { Breadcrumbs } from "@/components/ui";
+import SearchUI from "@/components/search-ui";
+import { SEARCH_INDEX } from "@/lib/search-index";
 
-import { useMemo, useState, Suspense } from "react";
-import { useSearchParams } from "next/navigation";
-import Link from "next/link";
-import { Section, Card, Breadcrumbs, PageHero } from "@/components/ui";
+/**
+ * Utility page, not content: noindex (run-27 convention). follow:true is a
+ * deliberate exception here (run 62) — the page's only SEO value is as a
+ * link hub to real indexable content. Title + robots only, no canonical/OG/JSON-LD.
+ */
+export const metadata: Metadata = {
+  title: "Search",
+  description:
+    "Search published Unschool Academy pages — only verified, live content appears here.",
+  robots: { index: false, follow: true },
+};
 
-/** Searchable index: ONLY published public pages. Research-catalogue exams never appear here. */
-const INDEX: { title: string; href: string; section: string; keywords: string }[] = [
-  { title: "JFT-Basic practice", href: "/exams/jft-basic", section: "Exams", keywords: "jft basic japanese test everyday japan foundation practice" },
-  { title: "Free JFT-Basic diagnostic", href: "/exams/jft-basic/diagnostic", section: "Exams", keywords: "free diagnostic 10 questions quiz score topics" },
-  { title: "Practice by topic", href: "/exams/jft-basic/topics", section: "Exams", keywords: "practice topic vocabulary conversation listening reading signs hints" },
-  { title: "Timed mock tests", href: "/exams/jft-basic/mock-tests", section: "Exams", keywords: "mock test timed exam simulation 30 minutes" },
-  { title: "My exam progress", href: "/app/exams", section: "Exams", keywords: "progress dashboard history study plan sessions" },
-  { title: "Japanese learning hub — JFT vs JLPT", href: "/exams/japanese", section: "Exams", keywords: "jlpt n5 n4 japanese qualification comparison" },
-  { title: "How practice works", href: "/exams/how-practice-works", section: "Exams", keywords: "method scoring mock practice pedagogy" },
-  { title: "Published exams", href: "/exams", section: "Exams", keywords: "catalog exam list programs" },
-  { title: "Kids overview", href: "/kids", section: "Kids", keywords: "children kids learning world ages" },
-      { title: "School Starters · Ages 5–6", href: "/kids/tracks/school-starters", section: "Kids", keywords: "school starters 5 6 smart learning" },
-  { title: "Adventure Club · Grades 1–2", href: "/kids/tracks/adventure-club", section: "Kids", keywords: "grade 1 2 adventure club reading maths" },
-  { title: "Quest Makers · Grades 3–4", href: "/kids/tracks/quest-makers", section: "Kids", keywords: "grade 3 4 quest makers fractions" },
-  { title: "Young Explorers · Grade 5", href: "/kids/tracks/young-explorers", section: "Kids", keywords: "grade 5 young explorers decimals volume" },
-  { title: "Kids Book Library · 500 Books", href: "/kids/library", section: "Kids", keywords: "books library stories reading 500" },
-  { title: "Kids Subjects · Words Numbers World Values Create", href: "/kids", section: "Kids", keywords: "subjects words numbers world values create" },
-  { title: "Meet Momo, Tara & Bobo", href: "/kids/characters", section: "Kids", keywords: "characters momo tara bobo elephant squirrel tortoise" },
-  { title: "Explore the village", href: "/kids/world", section: "Kids", keywords: "village world locations mango garden story tree pond" },
-  { title: "For parents", href: "/kids/for-parents", section: "Kids", keywords: "parents safety privacy controls" },
-  { title: "Kids family pricing", href: "/kids/pricing", section: "Kids", keywords: "kids pricing family plan cost" },
-  { title: "Free quest — Momo's three mangoes", href: "/kids/sample/momo-mangoes", section: "Kids", keywords: "free quest sample mango counting playable" },
-  { title: "Free quest — Tara's four-card story", href: "/kids/sample/tara-story", section: "Kids", keywords: "free quest sample tara story order cards playable" },
-  { title: "Parent Hub", href: "/parent", section: "Kids", keywords: "parent hub dashboard controls profiles billing" },
-  { title: "How it works", href: "/how-it-works", section: "Company", keywords: "how it works method loop" },
-  { title: "Free practice", href: "/free-practice", section: "Company", keywords: "free practice sampler" },
-  { title: "Pricing", href: "/pricing", section: "Company", keywords: "pricing plans cost pass" },
-  { title: "Resources", href: "/resources", section: "Company", keywords: "resources guides kanji vocabulary listening" },
-  { title: "FAQ", href: "/faq", section: "Company", keywords: "faq questions help" },
-  { title: "Contact", href: "/contact", section: "Company", keywords: "contact support help ticket" },
-  { title: "About", href: "/about", section: "Company", keywords: "about method review standards team" },
-];
+const GRAIN =
+  "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>\")";
 
-function SearchUI() {
-  const params = useSearchParams();
-  const initial = params.get("q") ?? "";
-  const [q, setQ] = useState(initial);
-
-  const results = useMemo(() => {
-    const query = q.trim().toLowerCase();
-    if (query.length < 2) return [];
-    return INDEX.filter((e) =>
-      `${e.title} ${e.section} ${e.keywords}`.toLowerCase().includes(query)
-    );
-  }, [q]);
-
-  return (
-    <>
-      <form
-        role="search"
-        onSubmit={(e) => e.preventDefault()}
-        className="flex gap-3 max-w-2xl"
-      >
-        <label htmlFor="search-input" className="sr-only">Search Unschool Academy</label>
-        <input
-          id="search-input"
-          value={q}
-          onChange={(e) => setQ(e.target.value)}
-          placeholder="Try “diagnostic”, “mango”, “pricing”…"
-          className="flex-1 rounded-xl border border-border px-4 py-3 text-base focus:border-academy-blue bg-paper"
-        />
-      </form>
-
-      <div className="mt-8" aria-live="polite">
-        {q.trim().length >= 2 && results.length === 0 && (
-          <Card>
-            <h2 className="font-bold text-ink text-lg">No published results for “{q.trim()}”</h2>
-            <p className="text-slate mt-2 text-[15px]">
-              Search covers only our published pages. Exam programs still in research don&apos;t
-              appear here until they&apos;re verified and built. Try “diagnostic”, “kids”, or “pricing”.
-            </p>
-          </Card>
-        )}
-        {results.length > 0 && (
-          <>
-            <p className="text-sm text-slate mb-4">{results.length} result{results.length === 1 ? "" : "s"}</p>
-            <div className="space-y-3">
-              {results.map((r) => (
-                <Link key={r.href} href={r.href}>
-                  <Card hover className="!p-5">
-                    <p className="text-xs font-bold uppercase tracking-widest text-academy-teal">{r.section}</p>
-                    <p className="font-bold text-ink text-lg mt-1 hover:text-academy-blue">{r.title}</p>
-                  </Card>
-                </Link>
-              ))}
-            </div>
-          </>
-        )}
-      </div>
-    </>
-  );
+/** Reads the query under Suspense — the cacheComponents-safe way to use searchParams. */
+async function SearchFromParams({
+  searchParams,
+}: {
+  searchParams: Promise<{ q?: string }>;
+}) {
+  const { q } = await searchParams;
+  return <SearchUI initialQ={typeof q === "string" ? q : ""} />;
 }
 
-export default function SearchPage() {
+export default function SearchPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ q?: string }>;
+}) {
+
   return (
     <>
-      <PageHero eyebrow="Search" title="Search published content" sub="Only verified, live pages appear here — never research-stage exams." />
-      <Section>
-        <div className="max-w-3xl mx-auto">
+      {/* Authored hero (server-rendered): type-as-hero, grain + ambient glows, no gradient hero */}
+      <div className="relative overflow-hidden border-b border-border">
+        <div
+          aria-hidden
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            backgroundImage: GRAIN,
+            opacity: 0.16,
+            mixBlendMode: "multiply",
+          }}
+        />
+        <div
+          aria-hidden
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            background:
+              "radial-gradient(42rem 20rem at 18% 0%, rgba(45,127,158,0.14), transparent 70%), radial-gradient(36rem 18rem at 88% 30%, rgba(47,111,181,0.10), transparent 70%)",
+          }}
+        />
+        <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 pt-10 md:pt-14 pb-12 md:pb-16">
           <Breadcrumbs trail={[{ label: "Home", href: "/" }, { label: "Search" }]} />
-          <Suspense fallback={<p className="text-slate">Loading search…</p>}>
-            <SearchUI />
-          </Suspense>
+          <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-academy-teal mb-4">
+            Search · {SEARCH_INDEX.length} published pages
+          </p>
+          <h1
+            className="font-display text-ink text-balance"
+            style={{
+              fontSize: "clamp(2.75rem, 8vw, 5.5rem)",
+              lineHeight: 1.02,
+              letterSpacing: "-0.03em",
+            }}
+          >
+            Find your way around the academy.
+          </h1>
+          <p className="mt-4 max-w-2xl text-lg text-slate leading-relaxed">
+            Everything below is a page you can open right now. Exams still in
+            research stay out until they are verified and built.
+          </p>
         </div>
-      </Section>
+      </div>
+
+      <section className="py-12 md:py-16">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl">
+            <Suspense fallback={<SearchUI initialQ="" />}>
+              <SearchFromParams searchParams={searchParams} />
+            </Suspense>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
