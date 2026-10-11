@@ -18,6 +18,7 @@
   --color-kids-leaf: #8dc6a7;
   --color-kids-leaf-deep: #3f7d5c;
   --color-kids-cream: #fff7e9;
+  --color-paper-warm: #f7f1e2; /* craft kit: warm paper sheet (run 69) */
 
   --radius-md: 12px;
   --radius-lg: 20px;
@@ -325,4 +326,121 @@ body {
 .guide-reveal:nth-child(3) { animation-delay: 91ms; }
 @media (prefers-reduced-motion: reduce) {
   .guide-reveal { animation: none; }
+}
+
+/* ================================================================== */
+/* CRAFT KIT (run 69, GRAPHICAL-OVERHAUL) — the hand-made visual      */
+/* language. Pure SVG/CSS: paper grain, rubber stamps, washi tape,    */
+/* torn edges, handwritten marginalia. Zero images, zero JS, GPU-free */
+/* (static transforms only). Light surfaces only — no dark craft.     */
+/* ================================================================== */
+
+:root {
+  /* One shared paper-grain tile (warm speckle via feColorMatrix) so the
+     data-URI is declared once and reused — keeps the CSS payload small. */
+  --craft-grain: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='p'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix type='matrix' values='0 0 0 0 0.42 0 0 0 0 0.34 0 0 0 0 0.24 0 0 0 0.55 0'/></filter><rect width='100%25' height='100%25' filter='url(%23p)'/></svg>");
+}
+
+/* Warm paper sheet with strong tactile grain (replaces the banned
+   "glowing orb" radial washes on craft surfaces). */
+.craft-hero-paper {
+  background-color: var(--color-paper-warm);
+  background-image: var(--craft-grain);
+}
+
+/* Taped paper card — the collage atom. */
+.craft-paper-card {
+  position: relative;
+  background: #fffdf7;
+  border: 1px solid #e7dfcc;
+  border-radius: 5px 7px 6px 8px;
+  box-shadow:
+    0 1px 1px rgba(21, 34, 59, 0.07),
+    0 18px 36px -20px rgba(21, 34, 59, 0.4);
+}
+.craft-paper-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-image: var(--craft-grain);
+  opacity: 0.32;
+  pointer-events: none;
+}
+
+/* Rubber stamp — double ring via border + negative-offset outline, so it
+   works on any light background. Slightly irregular radius, always tilted
+   by the caller. */
+.craft-stamp {
+  display: inline-block;
+  /* Rubber-stamp type is condensed mono, never office sans (A P2-7). */
+  font-family: ui-monospace, "SF Mono", "Cascadia Mono", Menlo, Consolas, monospace;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  padding: 0.65em 1em;
+  border: 2.5px solid currentColor;
+  border-radius: 9px 11px 10px 12px;
+  outline: 1.2px solid currentColor;
+  outline-offset: -5px;
+  opacity: 0.92;
+}
+
+/* Washi tape strip — torn left/right edges, translucent weave. The caller
+   absolutely positions it; --tape sets the color. */
+.washi-tape {
+  position: absolute;
+  width: 96px;
+  height: 30px;
+  background:
+    repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.28) 0 5px, rgba(255, 255, 255, 0) 5px 10px),
+    var(--tape, rgba(20, 125, 117, 0.55));
+  clip-path: polygon(2% 0%, 98% 1%, 100% 12%, 98% 25%, 100% 40%, 97% 55%, 100% 70%, 98% 85%, 96% 100%, 3% 99%, 0% 88%, 2% 72%, 0% 58%, 2% 42%, 0% 28%, 1% 12%);
+  opacity: 0.9;
+  box-shadow: 0 2px 5px rgba(21, 34, 59, 0.12);
+  pointer-events: none;
+}
+
+/* Handwritten marginalia voice. Caveat is self-hosted via next/font
+   (--font-hand on <html>); the stack below is the offline fallback. */
+.font-hand {
+  font-family: var(--font-hand), "Segoe Print", "Bradley Hand", "Chalkboard SE", cursive;
+}
+
+/* Zero-JS mobile collapsible (the mobile-compact rule). */
+.craft-details {
+  background: #fffdf7;
+  border: 1px solid #e7dfcc;
+  border-radius: 10px 12px 11px 13px;
+  box-shadow:
+    0 1px 1px rgba(21, 34, 59, 0.06),
+    0 10px 24px -18px rgba(21, 34, 59, 0.35);
+  overflow: hidden;
+}
+.craft-details-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 52px;
+  padding: 0.65rem 1.1rem;
+  cursor: pointer;
+  list-style: none;
+}
+.craft-details-summary::-webkit-details-marker {
+  display: none;
+}
+.craft-details-summary::marker {
+  content: "";
+}
+/* Branded focus ring on the summary (authored-details rule, A P2-8). */
+.craft-details-summary:focus-visible {
+  outline: 3px solid var(--color-academy-teal);
+  outline-offset: -3px;
+  border-radius: 10px;
+}
+.craft-details-body {
+  padding: 0.25rem 1.1rem 1.15rem;
 }

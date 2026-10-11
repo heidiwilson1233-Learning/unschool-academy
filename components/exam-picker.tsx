@@ -115,10 +115,10 @@ export function ExamGoalPicker({ data, headingId = "exam-goal-picker-heading" }:
           >
             Check where you stand
           </Link>
-          <span className="text-slate"> — 10 free questions, about five minutes, no account. Your gaps, topic by topic, with a starter plan.</span>
+          <span className="text-slate">: 10 free questions, about five minutes, no account. Your gaps, topic by topic, with a starter plan.</span>
         </p>
         <p className="mt-1 font-mono text-[11px] uppercase tracking-[0.14em] text-slate">
-          Practice + mocks — in staged review
+          Practice + mocks: in staged review
         </p>
       </div>
 

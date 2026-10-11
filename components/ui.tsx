@@ -33,7 +33,11 @@ export function Button({
   ariaDescribedby,
 }: ButtonProps) {
   const base =
-    "inline-flex items-center justify-center gap-2 font-semibold rounded-xl transition-[color,background-color,border-color,box-shadow,transform] duration-200 select-none active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-academy-teal";
+    /* Run 69 (C P1-2): box-shadow removed from the transition list — shadow
+       transitions run on the paint thread (non-GPU). The shadow still
+       changes on hover; it just steps instead of animating, identical at
+       200ms on low-end hardware. */
+    "inline-flex items-center justify-center gap-2 font-semibold rounded-xl transition-[color,background-color,border-color,transform] duration-200 select-none active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-academy-teal";
   const sizes = {
     sm: "px-4 py-2 text-sm",
     md: "px-6 py-3 text-base",
@@ -87,7 +91,7 @@ export function SectionHeading({
   tone = "default",
 }: {
   eyebrow?: string;
-  title: string;
+  title: ReactNode;
   sub?: string;
   align?: "center" | "left";
   tone?: "default" | "kids";
@@ -126,7 +130,7 @@ export function Card({
   return (
     <div
       className={`bg-paper border border-border rounded-2xl p-6 md:p-8 shadow-sm ${
-        hover ? "transition-[box-shadow,transform] duration-200 ease-[var(--ease-signature)] hover:shadow-md hover:-translate-y-0.5" : ""
+        hover ? "transition-[transform] duration-200 ease-[var(--ease-signature)] hover:shadow-md hover:-translate-y-0.5" : ""
       } ${className}`}
     >
       {children}

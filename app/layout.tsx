@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Noto_Sans, Noto_Sans_JP } from "next/font/google";
+import { Noto_Sans, Noto_Sans_JP, Caveat } from "next/font/google";
 import { SiteHeader } from "@/components/chrome";
 import { GlobalFooter } from "@/components/chrome";
 import "./globals.css";
@@ -16,6 +16,15 @@ const notoSansJP = Noto_Sans_JP({
   weight: ["400", "500", "600", "700"],
   display: "swap",
   variable: "--font-noto-sans-jp",
+});
+
+/* Handwritten voice for the craft kit's marginalia (run 69). Self-hosted via
+   next/font — one small latin face, zero render-blocking request. */
+const caveat = Caveat({
+  subsets: ["latin"],
+  weight: ["600", "700"],
+  display: "swap",
+  variable: "--font-hand",
 });
 
 export const metadata: Metadata = {
@@ -40,7 +49,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${notoSans.variable} ${notoSansJP.variable} h-full`}
+      className={`${notoSans.variable} ${notoSansJP.variable} ${caveat.variable} h-full`}
     >
       <body className="min-h-full flex flex-col bg-canvas text-ink antialiased">
         <a
