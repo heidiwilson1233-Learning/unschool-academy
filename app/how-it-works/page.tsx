@@ -51,7 +51,7 @@ const KIDS_METHOD = [
   "3 correct in a row → silently harder. A struggle → hints, never a red X.",
   "Characters remember: “Last time we counted to 10! Shall we try 12?”",
   "One 15-minute quest chain → celebration → off-screen play. Then it ends.",
-  "500 books × 7 quest kinds ≈ 4,000 quests. One new book every week.",
+  "500 books × 7 quest kinds = 3,500 quests. One new book every week.",
 ];
 
 function StepLink({ href, children }: { href: string; children: ReactNode }) {
