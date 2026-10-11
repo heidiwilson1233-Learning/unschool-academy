@@ -39,7 +39,7 @@ export const FAQS: Record<FaqTab, FaqItem[]> = {
   Kids: [
     {
       q: "What ages is Unschool Kids for?",
-      a: "For ages 2 through Grade 5, in six tracks from parent-guided Little Explorers (ages 2–3) to Young Explorers (Grade 5).",
+      a: "For ages 5 through Grade 5, in four tracks from School Starters (ages 5–6) to Young Explorers (Grade 5). Ages 2–4 are a future parent-assisted track, not supported yet.",
     },
     {
       q: "Will my child see ads or purchase prompts?",

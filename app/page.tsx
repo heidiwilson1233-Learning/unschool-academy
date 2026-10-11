@@ -370,7 +370,7 @@ export default function HomePage() {
           align="left"
           eyebrow="Method"
           title="One honest loop, every age"
-          sub="The same learning rhythm for a 30-year-old exam candidate and a 4-year-old counter: try, get feedback, try smarter."
+          sub="The same learning rhythm for a 30-year-old exam candidate and a 5-year-old counter: try, get feedback, try smarter."
         />
         {/* Default open on mobile (A P1-3): the four credibility steps are
             the conversion content — a closed accordion would tax the exact
