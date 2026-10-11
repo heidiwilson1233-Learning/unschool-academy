@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { MailCheck } from "lucide-react";
+import { Eye, EyeOff, MailCheck } from "lucide-react";
 import { Button, Card, Callout } from "@/components/ui";
 import { AcademyLogo } from "@/components/chrome";
 
@@ -29,6 +29,9 @@ export function AuthForm({ mode }: { mode: Mode }) {
      the banner to the offending field ("form" = non-field errors). */
   const [errorFor, setErrorFor] = useState<"email" | "password" | "form" | null>(null);
   const [done, setDone] = useState<string | null>(null);
+  /* Show/hide password toggle state (run 64, A-P0/B-P1: signup's highest-friction
+     field is invisible by default; a typo'd new password becomes a dead account). */
+  const [showPassword, setShowPassword] = useState(false);
   /* Forgot-mode only: successful request swaps the form for a confirmation
      panel (industry-standard "check your email" state). Never set in the
      unconfigured stub path — showing it there would imply a link was sent. */
@@ -53,7 +56,7 @@ export function AuthForm({ mode }: { mode: Mode }) {
 
   const titles: Record<Mode, string> = {
     login: "Welcome back",
-    signup: "Start learning free",
+    signup: "Start learning for free",
     forgot: "Reset your password",
   };
 
@@ -96,7 +99,7 @@ export function AuthForm({ mode }: { mode: Mode }) {
       } else if (mode === "signup") {
         const { error } = await sb.auth.signUp({ email: clean, password });
         if (error) throw error;
-        setDone("Account created — check your email to verify, then sign in.");
+        setDone("Account created. Check your email to verify, then sign in.");
       } else {
         const { error } = await sb.auth.resetPasswordForEmail(clean, {
           redirectTo: `${window.location.origin}/login`,
@@ -115,6 +118,17 @@ export function AuthForm({ mode }: { mode: Mode }) {
   const field = "w-full rounded-xl border border-border px-4 py-3 text-base focus:border-academy-blue bg-paper";
 
   const emailId = "auth-email";
+
+  /* aria-describedby composition for the password input: the signup-mode hint is
+     always present (WCAG 3.3.2 — show requirements upfront), the error id is
+     appended when an error is pinned to the field. */
+  const passwordDescribedBy =
+    [
+      mode === "signup" ? "auth-pass-hint" : null,
+      errorFor === "password" || errorFor === "form" ? "auth-error" : null,
+    ]
+      .filter(Boolean)
+      .join(" ") || undefined;
 
   return (
     <div className="min-h-[70vh] flex items-center justify-center px-4 py-12">
@@ -138,7 +152,7 @@ export function AuthForm({ mode }: { mode: Mode }) {
               reset link shortly.
             </p>
             <p className="text-sm text-slate text-center mt-2">
-              Check your inbox — and the spam folder.
+              Check your inbox, and the spam folder.
             </p>
             <div className="mt-6 space-y-3">
               <Button href="/login" variant="secondary" className="w-full">
@@ -165,7 +179,7 @@ export function AuthForm({ mode }: { mode: Mode }) {
           <>
             <h1 className="text-2xl font-extrabold text-ink text-center">{titles[mode]}</h1>
             <p className="text-sm text-slate text-center mt-2">
-              {mode === "signup" && "Free diagnostic and sample quests need no account — this is for saving progress later."}
+              {mode === "signup" && "Create an account to save your diagnostic results, streaks, and mastery, free. The free diagnostic and sample quests need no account."}
               {mode === "login" && "Pilot sign-in for learner and parent accounts. The free diagnostic and practice need no account."}
               {mode === "forgot" && "Enter the email your account uses."}
             </p>
@@ -196,22 +210,52 @@ export function AuthForm({ mode }: { mode: Mode }) {
               {mode !== "forgot" && (
                 <div>
                   <label htmlFor="auth-pass" className="block font-semibold text-ink mb-1.5 text-sm">Password</label>
-                  <input
-                    id="auth-pass"
-                    type="password"
-                    autoComplete={mode === "login" ? "current-password" : "new-password"}
-                    className={field}
-                    value={password}
-                    aria-invalid={errorFor === "password" ? true : undefined}
-                    aria-describedby={errorFor === "password" || errorFor === "form" ? "auth-error" : undefined}
-                    onChange={(e) => {
-                      setPassword(e.target.value);
-                      if (errorFor === "password" || errorFor === "form") {
-                        setError(null);
-                        setErrorFor(null);
-                      }
-                    }}
-                  />
+                  <div className="relative">
+                    <input
+                      id="auth-pass"
+                      type={showPassword ? "text" : "password"}
+                      autoComplete={mode === "login" ? "current-password" : "new-password"}
+                      className={`${field} pr-12`}
+                      value={password}
+                      aria-invalid={errorFor === "password" ? true : undefined}
+                      aria-describedby={passwordDescribedBy}
+                      onChange={(e) => {
+                        setPassword(e.target.value);
+                        if (errorFor === "password" || errorFor === "form") {
+                          setError(null);
+                          setErrorFor(null);
+                        }
+                      }}
+                    />
+                    {/* Show/hide toggle — the page's signature micro-interaction
+                        (run 64 premium pattern): keyboard-focusable button with
+                        brand focus ring, 180ms :active squish, GPU-only,
+                        reduced-motion-safe. */}
+                    <button
+                      type="button"
+                      onClick={() => setShowPassword((v) => !v)}
+                      aria-pressed={showPassword}
+                      aria-label={showPassword ? "Hide password" : "Show password"}
+                      className="absolute right-1.5 top-1/2 -translate-y-1/2 inline-flex h-10 w-10 items-center justify-center rounded-lg text-slate hover:text-ink hover:bg-ink/5 active:scale-95 motion-reduce:transform-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-academy-teal"
+                    >
+                      {showPassword ? (
+                        <EyeOff className="h-5 w-5" aria-hidden="true" />
+                      ) : (
+                        <Eye className="h-5 w-5" aria-hidden="true" />
+                      )}
+                    </button>
+                  </div>
+                  {/* Visible requirement hint, signup mode only — the rule is shown
+                      upfront rather than revealed by a failed submit (WCAG 3.3.2).
+                      Single-line satisfied state (A+B, run 64). */}
+                  {mode === "signup" && (
+                    <p
+                      id="auth-pass-hint"
+                      className={`text-xs mt-1.5 transition-colors duration-200 motion-reduce:transition-none ${password.length >= 8 ? "text-academy-teal font-semibold" : "text-slate"}`}
+                    >
+                      {password.length >= 8 ? "Good. 8+ characters." : "At least 8 characters."}
+                    </p>
+                  )}
                 </div>
               )}
               {error && (
@@ -236,6 +280,14 @@ export function AuthForm({ mode }: { mode: Mode }) {
                   {done}
                 </p>
               )}
+              {/* Busy-state announcement (run 64, B+C): the submit button is disabled
+                  while busy, so a disabled button's label change is not reliably
+                  announced — a dedicated polite live region covers it. */}
+              {busy && (
+                <p className="sr-only" role="status">
+                  Working. Please wait.
+                </p>
+              )}
               <Button type="submit" size="lg" className="w-full" disabled={busy}>
                 {busy ? "Working…" : mode === "login" ? "Sign in" : mode === "signup" ? "Create account" : "Send reset link"}
               </Button>
@@ -243,8 +295,8 @@ export function AuthForm({ mode }: { mode: Mode }) {
             {!CONFIGURED && (
               <div className="mt-4">
                 <Callout title="Accounts not connected yet" tone="info">
-                  Sign-in is staged until a Supabase project is connected. Forms validate honestly and create nothing —
-                  no fake sessions, no stored credentials.
+                  Sign-in is staged until a Supabase project is connected. Forms validate honestly and create nothing.
+                  No fake sessions, no stored credentials.
                 </Callout>
               </div>
             )}
@@ -264,7 +316,23 @@ export function AuthForm({ mode }: { mode: Mode }) {
                   <Link href="/free-practice" className="text-academy-blue hover:underline font-semibold">
                     Try the free diagnostic
                   </Link>{" "}
-                  — no account needed.
+                  No account needed.
+                </p>
+              </div>
+            )}
+            {/* Signup-mode frictionless-entry rail (portal move 8, A+B run 64): the
+               login run shipped this escape target, signup only ever had the
+               non-linked honesty sentence — a visitor landing here gets a real
+               way around the staged stub instead of into it. noindex makes
+               link-farm risk nil (run-60 precedent). */}
+            {mode === "signup" && (
+              <div className="mt-4 border-t border-border pt-4">
+                <p className="text-center text-sm text-slate">
+                  Not sure you need an account yet?{" "}
+                  <Link href="/free-practice" className="text-academy-blue hover:underline font-semibold">
+                    Try the free diagnostic
+                  </Link>{" "}
+                  No account needed.
                 </p>
               </div>
             )}
