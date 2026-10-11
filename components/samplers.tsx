@@ -20,10 +20,11 @@ const JFT_TIPS: Record<string, string> = {
   c: "さようなら (sayōnara) is for parting — and you've just met.",
 };
 
-function DraftBadge() {
+/* A playable demo is labelled demo everywhere — never draft. */
+function DemoBadge() {
   return (
-    <span className="ml-2 inline-block rounded-full bg-amber-100 px-2 py-0.5 align-middle text-[11px] font-bold uppercase tracking-wide text-amber-800">
-      Draft — pending expert review
+    <span className="ml-2 inline-block rounded-full bg-academy-teal/15 px-2 py-0.5 align-middle text-[11px] font-bold uppercase tracking-wide text-academy-teal-dark">
+      Demo · playable sample
     </span>
   );
 }
@@ -37,7 +38,7 @@ export function JftSampler() {
   return (
     <div className="rounded-xl border border-border bg-canvas p-5 md:p-6">
       <h3 className="text-xs font-bold uppercase tracking-widest text-academy-teal-dark mb-4">
-        Try it — JFT-Basic sample
+        Try it — JFT-Basic demo
       </h3>
       <fieldset>
         <legend className="mb-4">
@@ -101,7 +102,7 @@ export function JftSampler() {
               <span className="font-semibold text-ink">Why:</span> こんばんは
               (konbanwa) is the standard evening greeting. おはよう is for
               mornings, さようなら when parting.
-              <DraftBadge />
+              <DemoBadge />
             </span>
           </p>
         )}

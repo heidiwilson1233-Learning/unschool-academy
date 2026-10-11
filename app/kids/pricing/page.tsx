@@ -6,12 +6,12 @@ import { CheckoutButton } from "@/components/checkout-button";
 export const metadata: Metadata = {
   title: "Kids Learning Plans & Pricing — Unschool Academy",
   description:
-    "Two free sample quests, no account needed. Family Plan: ₹249/month for up to 3 children, or ₹399 one-time Founding plan. Pilot billing, no real charges.",
+    "Two free demo quests, no account needed. Family Plan: ₹249/month for up to 3 children, or ₹399 one-time Founding plan. Pilot billing, no real charges.",
   alternates: { canonical: "/kids/pricing" },
   openGraph: {
     title: "Kids Learning Plans & Pricing — Unschool Academy",
     description:
-      "Two free sample quests, no account needed. ₹249/month family plan for up to 3 children, or ₹399 one-time Founding plan. Pilot billing, no real charges.",
+      "Two free demo quests, no account needed. ₹249/month family plan for up to 3 children, or ₹399 one-time Founding plan. Pilot billing, no real charges.",
     type: "website",
     url: "/kids/pricing",
   },
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     card: "summary",
     title: "Kids Learning Plans & Pricing — Unschool Academy",
     description:
-      "Two free sample quests, no account needed. ₹249/month or ₹399 one-time Founding plan. Pilot billing, no real charges.",
+      "Two free demo quests, no account needed. ₹249/month or ₹399 one-time Founding plan. Pilot billing, no real charges.",
   },
 };
 
@@ -123,7 +123,7 @@ export default function KidsPricingPage() {
             Family plans, in plain family terms
           </h1>
           <p className="mt-6 text-lg text-slate leading-relaxed max-w-2xl">
-            Sample quests are free, and they are complete stories. No quest is ever cut off
+            Demo quests are free, and they are complete stories. No quest is ever cut off
             mid-story to force a payment. Paid plans add the full library as it grows and
             the parent dashboard.
           </p>
@@ -139,10 +139,10 @@ export default function KidsPricingPage() {
                 Start here · free
               </p>
               <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight text-ink">
-                Play two complete sample quests before you decide anything
+                Play two complete demo quests before you decide anything
               </h2>
               <p className="mt-3 text-slate leading-relaxed max-w-xl">
-                Two complete sample quests: Momo&rsquo;s counting adventure and
+                Two complete demo quests: Momo&rsquo;s counting adventure and
                 Tara&rsquo;s story. No account, no card, no paywall mid-story. Watch
                 your child play, then pick a plan only if the quests feel right.
               </p>

@@ -46,7 +46,7 @@ const PROOF = [
 
 const STEPS = [
   { n: "01", title: "Explore", body: "Find the exam or age track that fits. Read verified syllabi and learning goals. Plain facts, zero hype." },
-  { n: "02", title: "Try", body: "Take the free diagnostic or play a full sample quest. Real questions, real interactions, nothing held back." },
+  { n: "02", title: "Try", body: "Take the free diagnostic or play a full demo quest. Real questions, real interactions, nothing held back." },
   { n: "03", title: "Learn", body: "Follow a topic-by-topic plan: original practice, honest explanations for every answer (labelled draft or reviewed, never mixed), and hints that teach instead of telling." },
   { n: "04", title: "See progress", body: "Topic-level scores and observed skills. Honest evidence of what clicked and what still needs work." },
 ];
@@ -357,7 +357,7 @@ export default function HomePage() {
           align="left"
           eyebrow="Try it now"
           title="A taste of the village"
-          sub="A moment from Momo's mango quest. The real interaction, right here: no signup, no paywall, no sales pitch."
+          sub="Demo: a moment from Momo's mango quest. The real interaction, right here: no signup, no paywall, no sales pitch."
         />
         <KidsSampler />
       </Section>
@@ -429,7 +429,7 @@ export default function HomePage() {
               align="left"
               eyebrow="Review standards"
               title={<>Every answer has a <HandUnderline>source</HandUnderline>. Every claim has a reviewer.</>}
-              sub="Our practice content passes a real pipeline (drafting, fact and language checks, subject-expert review, accessibility check, QA) before it reaches you. Drafts never ship as live content, and reviewers never grade their own work."
+              sub="Our practice content passes a real pipeline (drafting, fact and language checks, subject-expert review, accessibility check, QA) before it reaches you. One vocabulary, everywhere: drafts ship labeled draft, demos ship labeled demo, and nothing ships as published until it passes review — reviewers never grade their own work."
             />
             <ul className="mt-8 space-y-4 text-slate">
               <li className="flex gap-3">
@@ -442,7 +442,7 @@ export default function HomePage() {
               </li>
               <li className="flex gap-3">
                 <span aria-hidden className="mt-[9px] h-2 w-2 shrink-0 bg-academy-teal" />
-                <span>Every kids quest passes educator review before it joins the full library. The sampler on this page is a draft, still in staged review</span>
+                <span>Every kids quest passes educator review before it joins the full library. The sampler on this page is a demo — a playable sample, still in staged review</span>
               </li>
               <li className="flex gap-3">
                 <span aria-hidden className="mt-[9px] h-2 w-2 shrink-0 bg-academy-teal" />
@@ -472,7 +472,7 @@ export default function HomePage() {
               align="left"
               eyebrow="Pricing"
               title="Start free. Pay only for depth."
-              sub="The diagnostic and sample quests are free forever: no trial clock, no card required. Paid plans are finite, clearly scoped, and easy to cancel."
+              sub="The diagnostic and demo quests are free forever: no trial clock, no card required. Paid plans are finite, clearly scoped, and easy to cancel."
             />
             <p className="mt-4 text-sm text-slate leading-relaxed">
               <Stamp tone="amber" tilt={-4} className="mr-2 align-middle">Staged</Stamp>
@@ -487,7 +487,7 @@ export default function HomePage() {
             <li className="py-6 flex items-baseline justify-between gap-6">
               <div>
                 <h3 className="text-lg font-bold text-ink">Free</h3>
-                <p className="mt-1 text-sm text-slate">JFT diagnostic + sample quests, forever.</p>
+                <p className="mt-1 text-sm text-slate">JFT diagnostic + demo quests, forever.</p>
               </div>
               <p className="text-2xl md:text-3xl font-extrabold text-ink shrink-0">
                 <span className="sr-only">Price: </span>₹0

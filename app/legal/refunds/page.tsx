@@ -42,7 +42,7 @@ function Summary() {
     <div className="rounded-2xl border border-border bg-paper p-6 sm:p-7 mb-12">
       <MicroLabel>In one minute</MicroLabel>
       <ul className="mt-4 space-y-3 font-display text-lg sm:text-xl leading-snug text-ink">
-        <li>The diagnostic sampler and sample quests are free forever. We never charge for them, so there is nothing to refund and nothing to cancel.</li>
+        <li>The diagnostic sampler and demo quests are free forever. We never charge for them, so there is nothing to refund and nothing to cancel.</li>
         <li>One-time passes are fully refundable within 7 days of purchase when the paid content has not been started. After that, refunds for unused time are pro-rated and decided case by case.</li>
         <li>Subscriptions can be cancelled any time. You keep access until the end of the paid period and are not charged again. Refunds are considered case by case within 7 days of a renewal.</li>
         <li>To ask for a refund, use the contact form and choose &ldquo;Billing&rdquo; as the topic. A real person replies within 2 business days during the pilot.</li>
@@ -54,7 +54,7 @@ function Summary() {
 
 const LEDGER: { purchase: string; terms: string; status: string }[] = [
   {
-    purchase: "Free: diagnostic, sample quests",
+    purchase: "Free: diagnostic, demo quests",
     terms: "Nothing to refund, nothing to cancel. We never charge for them.",
     status: "Live",
   },
@@ -152,7 +152,7 @@ export default function RefundsPage() {
       <ol role="list" className="list-none space-y-10">
         <Sec n="01" label="Free" title="Free products">
           <p>
-            The diagnostic sampler and sample quests are free forever. We never charge for them,
+            The diagnostic sampler and demo quests are free forever. We never charge for them,
             so there is nothing to refund and nothing to cancel.
           </p>
         </Sec>

@@ -127,12 +127,12 @@ const SAMPLES = [
   {
     href: "/kids/sample/momo-mangoes",
     title: "Momo's Three Mangoes",
-    desc: "A complete sample quest with Momo. Count along, one mango at a time.",
+    desc: "A complete demo quest with Momo. Count along, one mango at a time.",
   },
   {
     href: "/kids/sample/tara-story",
     title: "Tara's Four-Card Story",
-    desc: "A complete sample quest with Tara. Order the picture cards and retell the tale.",
+    desc: "A complete demo quest with Tara. Order the picture cards and retell the tale.",
   },
 ];
 
@@ -347,7 +347,7 @@ export default function KidsRoadmapPage() {
         <SectionHeading
           eyebrow="No false demos"
           title="What you can actually play today."
-          sub="Two complete sample quests, playable now and still awaiting educator signoff. Everything else on this page is a brief, and it says so."
+          sub="Two complete demo quests, playable now and still awaiting educator signoff. Everything else on this page is a brief, and it says so."
         />
         <div className="grid gap-4 md:grid-cols-2">
           {SAMPLES.map((s) => (
