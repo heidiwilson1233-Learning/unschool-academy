@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Unschool Academy — hand-crafted studio asset (A09, cycle 2026-10-12 11:40 IST)
+  "exam-catalogue-band-four-gates.svg" — the four-gates trail band for the /exams
+  catalogue craft band: a hand-drawn winding path with four wooden signposts,
+  one per publishing gate from app/exams/page.tsx (GATES const):
+  01 facts checked, 02 syllabus map, 03 honest practice, 04 free sample.
+  Tara's paw-print trail winds between the posts toward a pennant flag.
+  100% original, authored by hand (no templates, no stock, no AI-generated imagery).
+  Light surfaces only; hand-lettered title in the studio cursive stack.
+  Companions: studio-0940/levels-ladder.svg (same signpost/diagram language),
+  studio-1140/exam-catalogue-band-bunting.svg and -study-nook.svg.
+  Usage: /exams "Our publishing promise" section band, full-width, ~300px tall.
+  License note: original work created for Unschool Academy; do not reuse raw SVG
+  elsewhere without A17 editorial sign-off.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" role="img" aria-label="Hand-drawn trail with four wooden signposts for the four publishing gates">
+  <rect x="0" y="0" width="1200" height="300" fill="#fdf6e9"/>
+
+  <!-- hand-drawn deckle frame -->
+  <path d="M14 18 C 300 10, 600 18, 900 14 C 1050 12, 1130 16, 1186 14 C 1190 90, 1184 180, 1188 240 C 1190 260, 1186 276, 1188 284 C 900 290, 600 284, 300 288 C 180 290, 80 286, 14 288 C 10 200, 16 110, 12 60 C 10 40, 14 28, 14 18 Z"
+        fill="none" stroke="#8a5a3b" stroke-width="3" stroke-linecap="round"/>
+  <!-- inner stitch -->
+  <path d="M28 30 C 310 24, 600 30, 890 26 C 1040 24, 1120 28, 1172 26 C 1176 100, 1170 190, 1174 240 C 1176 256, 1172 268, 1174 272 C 890 278, 600 272, 310 276 C 190 278, 90 274, 28 276 C 24 190, 30 110, 26 66 C 24 50, 28 40, 28 30 Z"
+        fill="none" stroke="#d9a45f" stroke-width="1.4" stroke-dasharray="7 8" stroke-linecap="round"/>
+
+  <!-- title -->
+  <text x="600" y="62" text-anchor="middle" font-family="'Segoe Print','Bradley Hand','Comic Sans MS',cursive" font-size="40" font-weight="bold" fill="#5b3a22">Four gates to the catalogue</text>
+  <text x="600" y="90" text-anchor="middle" font-family="'Trebuchet MS','Segoe UI',sans-serif" font-size="17" fill="#7a5a3a" font-style="italic">every listed exam passes all four — the rest stay research</text>
+  <path d="M440 102 C 540 110, 660 96, 760 104" fill="none" stroke="#d9822b" stroke-width="3" stroke-linecap="round"/>
+  <path d="M752 98 c 10 2, 16 6, 20 12" fill="none" stroke="#d9822b" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- cloud doodles -->
+  <g fill="none" stroke="#a8845c" stroke-width="2.2" stroke-linecap="round">
+    <path d="M40 140 c 8 -10, 26 -10, 34 -2 c 7 -7, 21 -7, 26 2 c 9 -2, 16 5, 12 12 c -18 5, -60 5, -78 0 c -4 -7, 2 -12, 6 -12 z"/>
+    <path d="M1090 128 c 8 -10, 26 -10, 34 -2 c 7 -7, 21 -7, 26 2 c 9 -2, 16 5, 12 12 c -18 5, -60 5, -78 0 c -4 -7, 2 -12, 6 -12 z"/>
+  </g>
+
+  <!-- winding trail -->
+  <path d="M80 240 C 200 210, 280 260, 400 235 C 520 210, 600 250, 720 228 C 840 206, 920 246, 1040 222"
+        fill="none" stroke="#7a4a2b" stroke-width="4" stroke-linecap="round"/>
+  <path d="M80 240 C 200 210, 280 260, 400 235 C 520 210, 600 250, 720 228 C 840 206, 920 246, 1040 222"
+        fill="none" stroke="#d9a45f" stroke-width="1.6" stroke-dasharray="6 8" stroke-linecap="round"/>
+
+  <!-- Tara's paw-print trail along the path -->
+  <g fill="#d9822b" opacity="0.75">
+    <g transform="rotate(-12 150 228)">
+      <ellipse cx="150" cy="228" rx="3.6" ry="3"/><circle cx="145" cy="223" r="1.4"/><circle cx="150" cy="222" r="1.4"/><circle cx="155" cy="223" r="1.4"/>
+    </g>
+    <g transform="rotate(10 330 244)">
+      <ellipse cx="330" cy="244" rx="3.6" ry="3"/><circle cx="325" cy="239" r="1.4"/><circle cx="330" cy="238" r="1.4"/><circle cx="335" cy="239" r="1.4"/>
+    </g>
+    <g transform="rotate(-8 560 232)">
+      <ellipse cx="560" cy="232" rx="3.6" ry="3"/><circle cx="555" cy="227" r="1.4"/><circle cx="560" cy="226" r="1.4"/><circle cx="565" cy="227" r="1.4"/>
+    </g>
+    <g transform="rotate(12 770 236)">
+      <ellipse cx="770" cy="236" rx="3.6" ry="3"/><circle cx="765" cy="231" r="1.4"/><circle cx="770" cy="230" r="1.4"/><circle cx="775" cy="231" r="1.4"/>
+    </g>
+    <g transform="rotate(-10 960 230)">
+      <ellipse cx="960" cy="230" rx="3.6" ry="3"/><circle cx="955" cy="225" r="1.4"/><circle cx="960" cy="224" r="1.4"/><circle cx="965" cy="225" r="1.4"/>
+    </g>
+  </g>
+
+  <!-- ===== signpost 1 : facts checked ===== -->
+  <g>
+    <rect x="175" y="100" width="10" height="155" fill="#a9764f" stroke="#7a4a2b" stroke-width="2.5"/>
+    <circle cx="180" cy="112" r="17" fill="#fdf6e9" stroke="#7a4a2b" stroke-width="2.5"/>
+    <text x="180" y="119" text-anchor="middle" font-family="'Segoe Print','Bradley Hand',cursive" font-size="18" font-weight="bold" fill="#5b3a22">01</text>
+    <path d="M85 132 C 130 128, 230 134, 275 130 L 275 188 C 230 192, 130 186, 85 190 Z"
+          fill="#e8c88f" stroke="#8a5a3b" stroke-width="3" stroke-linejoin="round"/>
+    <text x="180" y="158" text-anchor="middle" font-family="'Trebuchet MS','Segoe UI',sans-serif" font-size="20" font-weight="bold" fill="#5b3a22">facts checked</text>
+    <text x="180" y="178" text-anchor="middle" font-family="'Trebuchet MS','Segoe UI',sans-serif" font-size="13.5" fill="#7a5a3a">against official pages</text>
+  </g>
+
+  <!-- ===== signpost 2 : syllabus map ===== -->
+  <g>
+    <rect x="415" y="100" width="10" height="155" fill="#a9764f" stroke="#7a4a2b" stroke-width="2.5"/>
+    <circle cx="420" cy="112" r="17" fill="#fdf6e9" stroke="#7a4a2b" stroke-width="2.5"/>
+    <text x="420" y="119" text-anchor="middle" font-family="'Segoe Print','Bradley Hand',cursive" font-size="18" font-weight="bold" fill="#5b3a22">02</text>
+    <path d="M325 130 C 370 126, 470 132, 515 128 L 515 186 C 470 190, 370 184, 325 188 Z"
+          fill="#e8c88f" stroke="#8a5a3b" stroke-width="3" stroke-linejoin="round"/>
+    <text x="420" y="156" text-anchor="middle" font-family="'Trebuchet MS','Segoe UI',sans-serif" font-size="20" font-weight="bold" fill="#5b3a22">syllabus map</text>
+    <text x="420" y="176" text-anchor="middle" font-family="'Trebuchet MS','Segoe UI',sans-serif" font-size="13.5" fill="#7a5a3a">topic-by-topic review</text>
+  </g>
+
+  <!-- ===== signpost 3 : honest practice ===== -->
+  <g>
+    <rect x="655" y="100" width="10" height="155" fill="#a9764f" stroke="#7a4a2b" stroke-width="2.5"/>
+    <circle cx="660" cy="112" r="17" fill="#fdf6e9" stroke="#7a4a2b" stroke-width="2.5"/>
+    <text x="660" y="119" text-anchor="middle" font-family="'Segoe Print','Bradley Hand',cursive" font-size="18" font-weight="bold" fill="#5b3a22">03</text>
+    <path d="M565 132 C 610 128, 710 134, 755 130 L 755 188 C 710 192, 610 186, 565 190 Z"
+          fill="#e8c88f" stroke="#8a5a3b" stroke-width="3" stroke-linejoin="round"/>
+    <text x="660" y="158" text-anchor="middle" font-family="'Trebuchet MS','Segoe UI',sans-serif" font-size="20" font-weight="bold" fill="#5b3a22">honest practice</text>
+    <text x="660" y="178" text-anchor="middle" font-family="'Trebuchet MS','Segoe UI',sans-serif" font-size="13.5" fill="#7a5a3a">draft status disclosed</text>
+  </g>
+
+  <!-- ===== signpost 4 : free sample ===== -->
+  <g>
+    <rect x="895" y="100" width="10" height="155" fill="#a9764f" stroke="#7a4a2b" stroke-width="2.5"/>
+    <circle cx="900" cy="112" r="17" fill="#fdf6e9" stroke="#7a4a2b" stroke-width="2.5"/>
+    <text x="900" y="119" text-anchor="middle" font-family="'Segoe Print','Bradley Hand',cursive" font-size="18" font-weight="bold" fill="#5b3a22">04</text>
+    <path d="M805 130 C 850 126, 950 132, 995 128 L 995 186 C 950 190, 850 184, 805 188 Z"
+          fill="#e8c88f" stroke="#8a5a3b" stroke-width="3" stroke-linejoin="round"/>
+    <text x="900" y="156" text-anchor="middle" font-family="'Trebuchet MS','Segoe UI',sans-serif" font-size="20" font-weight="bold" fill="#5b3a22">free sample</text>
+    <text x="900" y="176" text-anchor="middle" font-family="'Trebuchet MS','Segoe UI',sans-serif" font-size="13.5" fill="#7a5a3a">try before anything paid</text>
+  </g>
+
+  <!-- ===== pennant flag at trail's end ===== -->
+  <g>
+    <rect x="1086" y="170" width="6" height="72" fill="#a9764f" stroke="#7a4a2b" stroke-width="2"/>
+    <path d="M1092 172 C 1112 168, 1128 172, 1144 168 L 1140 192 C 1124 196, 1110 192, 1092 196 Z"
+          fill="#f6c453" stroke="#7a4a2b" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M1104 178 l 5 6 l 10 -13" stroke="#7a4a2b" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- grass tufts -->
+  <g stroke="#4d7a63" stroke-width="2.2" stroke-linecap="round" fill="none">
+    <path d="M120 262 c -2 -10, -4 -16, -8 -22 M128 262 c 0 -12, 2 -18, 2 -26 M136 262 c 4 -10, 8 -14, 12 -20"/>
+    <path d="M480 268 c -2 -10, -4 -16, -8 -22 M488 268 c 0 -12, 2 -18, 2 -26 M496 268 c 4 -10, 8 -14, 12 -20"/>
+    <path d="M840 264 c -2 -10, -4 -16, -8 -22 M848 264 c 0 -12, 2 -18, 2 -26 M856 264 c 4 -10, 8 -14, 12 -20"/>
+    <path d="M1130 268 c -2 -10, -4 -16, -8 -22 M1138 268 c 0 -12, 2 -18, 2 -26 M1146 268 c 4 -10, 8 -14, 12 -20"/>
+  </g>
+  <!-- tiny flowers -->
+  <g>
+    <circle cx="240" cy="262" r="4" fill="#f28f6b" stroke="#a85a3a" stroke-width="1.5"/>
+    <circle cx="240" cy="262" r="1.4" fill="#f6c453"/>
+    <circle cx="700" cy="266" r="4" fill="#7fb5d9" stroke="#4a6a8a" stroke-width="1.5"/>
+    <circle cx="700" cy="266" r="1.4" fill="#f6c453"/>
+  </g>
+</svg>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Unschool Academy — hand-crafted studio asset (A09, cycle 2026-10-12 11:40 IST)
+  "exam-catalogue-band-study-nook.svg" — study-nook scene divider for the /exams
+  catalogue craft band: a hand-drawn desk with book stacks, an open book, a
+  pencil cup and a lamp; Tara reads on the open book while Bobo and Momo peek
+  from behind the desk clutter.
+  100% original, authored by hand (no photorealism, no stock shapes,
+  no AI-generated imagery).
+  Character identity: Tara orange squirrel (#f0a04b / #d9822b / #7a4a2b),
+  Momo lavender elephant (#c9b8e8 / #8e76c4 / #6b5a8a),
+  Bobo mint-green tortoise (#7fc79a / #9fd8b4 / #4d7a63). Light surfaces only.
+  Companions: studio-0340/village-scene-divider.svg (same scene-divider language),
+  studio-1140/exam-catalogue-band-bunting.svg and -four-gates.svg.
+  Usage: /exams catalogue craft band scene divider, full-width, ~260-300px tall.
+  License note: original work created for Unschool Academy; do not reuse raw SVG
+  elsewhere without A17 editorial sign-off.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 280" role="img" aria-label="Hand-drawn study desk with books, a lamp and the three kids characters preparing for exams">
+  <!-- sky is transparent: sits on page surface -->
+  <!-- hand-drawn sun -->
+  <g>
+    <circle cx="1075" cy="52" r="26" fill="#f6c453" stroke="#c98f2e" stroke-width="2.5"/>
+    <g stroke="#c98f2e" stroke-width="2.5" stroke-linecap="round">
+      <path d="M1075 14 l 0 -7 M1037 52 l -9 0 M1113 52 l 9 0 M1048 25 l -6 -6 M1102 25 l 6 -6 M1048 79 l -6 6 M1102 79 l 6 6"/>
+    </g>
+  </g>
+  <!-- drifting hand-drawn clouds -->
+  <g fill="#ffffff" stroke="#c9b98a" stroke-width="2">
+    <path d="M180 52 c -14 0, -22 8, -20 15 c -10 -2, -18 4, -16 11 c 2 6, 12 8, 22 7 c 8 3, 30 3, 40 -1 c 10 1, 20 -2, 19 -8 c -1 -6, -10 -9, -17 -8 c 2 -8, -14 -16, -28 -16 z" opacity="0.95"/>
+    <path d="M640 38 c -10 0, -16 6, -15 11 c -8 -1, -13 3, -12 8 c 2 5, 9 6, 17 5 c 6 2, 22 2, 30 -1 c 7 1, 15 -2, 14 -6 c -1 -4, -7 -7, -13 -6 c 1 -6, -10 -11, -21 -11 z" opacity="0.95"/>
+  </g>
+
+  <!-- rolling ground (paper-cut layers) -->
+  <path d="M0 218 C 160 198, 320 232, 500 216 C 680 200, 840 234, 1200 214 L 1200 280 L 0 280 Z"
+        fill="#cfe8b8" stroke="#8fb573" stroke-width="2"/>
+  <path d="M0 244 C 180 228, 340 258, 520 244 C 700 230, 880 260, 1200 242 L 1200 280 L 0 280 Z"
+        fill="#b7d99a" stroke="#7fa85f" stroke-width="2"/>
+  <!-- hand-drawn grass tufts -->
+  <g stroke="#6f9a54" stroke-width="2" fill="none" stroke-linecap="round">
+    <path d="M150 252 l 2 -9 M157 252 l 4 -8 M164 252 l 2 -10"/>
+    <path d="M560 260 l 2 -9 M567 260 l 4 -8 M574 260 l 2 -10"/>
+    <path d="M1020 254 l 2 -9 M1027 254 l 4 -8 M1034 254 l 2 -10"/>
+  </g>
+  <!-- tiny hand-drawn flowers -->
+  <g>
+    <path d="M250 268 l 0 -12" stroke="#6f9a54" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="250" cy="250" r="4.5" fill="#f28f6b" stroke="#a85a3a" stroke-width="1.5"/>
+    <circle cx="250" cy="250" r="1.6" fill="#f6c453"/>
+    <path d="M940 270 l 0 -12" stroke="#6f9a54" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="940" cy="252" r="4.5" fill="#7fb5d9" stroke="#4a6a8a" stroke-width="1.5"/>
+    <circle cx="940" cy="252" r="1.6" fill="#f6c453"/>
+  </g>
+
+  <!-- ===== desk legs and crossbar (behind tabletop) ===== -->
+  <rect x="348" y="188" width="20" height="70" fill="#b98a5e" stroke="#7a4a2b" stroke-width="2.5"/>
+  <rect x="832" y="188" width="20" height="70" fill="#b98a5e" stroke="#7a4a2b" stroke-width="2.5"/>
+  <rect x="348" y="216" width="504" height="10" fill="#b98a5e" stroke="#7a4a2b" stroke-width="2"/>
+
+  <!-- ===== desk tabletop (hand-wobbled) ===== -->
+  <path d="M306 164 C 480 158, 680 166, 884 160 L 886 186 C 700 192, 500 186, 308 192 Z"
+        fill="#d9a876" stroke="#7a4a2b" stroke-width="3" stroke-linejoin="round"/>
+  <!-- wood grain -->
+  <g stroke="#a9764f" stroke-width="1.6" fill="none" stroke-linecap="round" opacity="0.8">
+    <path d="M360 174 c 60 -4, 130 4, 200 0"/>
+    <path d="M620 176 c 60 4, 140 -4, 210 0"/>
+  </g>
+
+  <!-- ===== Bobo peeking from behind the book stack (drawn before books) ===== -->
+  <g>
+    <path d="M332 104 c 0 -16, 10 -26, 24 -26 c 14 0, 24 10, 24 26 l -48 0 z"
+          fill="#7fc79a" stroke="#4d7a63" stroke-width="2.5"/>
+    <path d="M344 88 c 1.5 5, 1.5 10, 0 14 m 10 -14 c -1.5 5, -1.5 10, 0 14 m 10 -15 c 1 5, 1 11, 0 15" stroke="#4d7a63" stroke-width="1.4" fill="none"/>
+    <circle cx="326" cy="100" r="9" fill="#9fd8b4" stroke="#4d7a63" stroke-width="2.2"/>
+    <circle cx="324" cy="98" r="1.8" fill="#2f4a3b"/>
+  </g>
+
+  <!-- ===== book stack (left) ===== -->
+  <g stroke-width="2.5" stroke-linejoin="round">
+    <rect x="368" y="136" width="104" height="28" rx="3" fill="#f28f6b" stroke="#7a4a2b"/>
+    <path d="M390 150 c 10 -2, 22 2, 34 0" stroke="#7a4a2b" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+    <rect x="378" y="110" width="92" height="26" rx="3" fill="#7fb5d9" stroke="#4a6a8a"/>
+    <path d="M398 123 c 9 -2, 20 2, 30 0" stroke="#4a6a8a" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+    <rect x="364" y="86" width="100" height="24" rx="3" fill="#9fd8b4" stroke="#4d7a63"/>
+    <path d="M386 98 c 10 -2, 22 2, 34 0" stroke="#4d7a63" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+    <rect x="380" y="64" width="88" height="22" rx="3" fill="#f6c453" stroke="#7a4a2b"/>
+    <path d="M400 75 c 9 -2, 20 2, 30 0" stroke="#7a4a2b" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+    <!-- hand-drawn page edges on the right side -->
+    <path d="M464 140 l 0 20 M468 112 l 0 20 M456 88 l 0 18" stroke="#7a4a2b" stroke-width="1.4" fill="none" opacity="0.7"/>
+  </g>
+
+  <!-- ===== loose paper stack ===== -->
+  <g stroke="#8a5a3b" stroke-width="2">
+    <rect x="492" y="126" width="54" height="38" rx="2" fill="#f3e9d2"/>
+    <rect x="500" y="118" width="54" height="38" rx="2" fill="#fffdf6"/>
+    <g stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.8">
+      <path d="M510 130 c 8 -2, 18 2, 28 0"/>
+      <path d="M510 138 c 8 -2, 18 2, 28 0"/>
+      <path d="M510 146 c 6 -2, 14 2, 22 0"/>
+    </g>
+  </g>
+
+  <!-- ===== open book (center) ===== -->
+  <g stroke="#8a5a3b" stroke-width="2.5" stroke-linejoin="round">
+    <path d="M560 130 C 595 122, 620 122, 638 130 L 638 160 C 620 152, 595 152, 560 160 Z" fill="#fffdf6"/>
+    <path d="M638 130 C 656 122, 681 122, 698 130 L 698 160 C 681 152, 656 152, 638 160 Z" fill="#fffdf6"/>
+    <path d="M638 130 L 638 160" fill="none"/>
+    <g stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.75">
+      <path d="M572 140 c 8 -2, 18 2, 26 0"/>
+      <path d="M572 148 c 8 -2, 18 2, 26 0"/>
+      <path d="M650 140 c 8 -2, 16 2, 24 0"/>
+      <path d="M650 148 c 8 -2, 16 2, 24 0"/>
+    </g>
+  </g>
+
+  <!-- ===== Tara reading on the open book ===== -->
+  <g>
+    <path d="M646 128 C 624 130, 612 114, 618 100 C 622 90, 636 88, 642 96 C 646 102, 640 110, 632 108"
+          fill="#d9822b" stroke="#7a4a2b" stroke-width="2.5"/>
+    <ellipse cx="660" cy="112" rx="13" ry="15" fill="#f0a04b" stroke="#7a4a2b" stroke-width="2.5"/>
+    <path d="M652 98 l -5 -11 l 10 6 z" fill="#d9822b" stroke="#7a4a2b" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M668 98 l 5 -11 l -10 6 z" fill="#d9822b" stroke="#7a4a2b" stroke-width="2" stroke-linejoin="round"/>
+    <circle cx="664" cy="108" r="2" fill="#3a2a1a"/>
+    <path d="M654 118 c -3 4, -6 6, -9 8" fill="none" stroke="#7a4a2b" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- ===== Momo peeking from behind the pencil cup (drawn before cup) ===== -->
+  <g>
+    <ellipse cx="792" cy="126" rx="8" ry="12" fill="#8e76c4" stroke="#6b5a8a" stroke-width="2.2"/>
+    <circle cx="806" cy="128" r="15" fill="#c9b8e8" stroke="#6b5a8a" stroke-width="2.5"/>
+    <path d="M814 134 c 9 4, 11 12, 5 19" fill="none" stroke="#6b5a8a" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="810" cy="124" r="1.8" fill="#3d3355"/>
+  </g>
+
+  <!-- ===== pencil cup ===== -->
+  <g>
+    <g stroke-linecap="round">
+      <path d="M754 120 l -10 -36" stroke="#f28f6b" stroke-width="5"/>
+      <path d="M768 120 l -3 -40" stroke="#7fb5d9" stroke-width="5"/>
+      <path d="M780 120 l 6 -38" stroke="#9fd8b4" stroke-width="5"/>
+      <path d="M790 120 l 13 -33" stroke="#f6c453" stroke-width="5"/>
+    </g>
+    <g fill="#f6e8c8" stroke="#7a4a2b" stroke-width="1.4">
+      <circle cx="744" cy="84" r="3.2"/><circle cx="765" cy="80" r="3.2"/>
+      <circle cx="786" cy="82" r="3.2"/><circle cx="803" cy="87" r="3.2"/>
+    </g>
+    <path d="M738 118 L 798 118 L 790 164 L 746 164 Z"
+          fill="#e8c88f" stroke="#7a4a2b" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M740 132 L 796 132" stroke="#7a4a2b" stroke-width="1.6" stroke-dasharray="5 4" fill="none"/>
+  </g>
+
+  <!-- ===== desk lamp ===== -->
+  <g>
+    <ellipse cx="862" cy="162" rx="17" ry="7" fill="#8a5a3b"/>
+    <path d="M862 158 C 860 132, 866 114, 884 102" fill="none" stroke="#8a5a3b" stroke-width="5.5" stroke-linecap="round"/>
+    <path d="M884 102 C 894 96, 902 94, 910 94" fill="none" stroke="#8a5a3b" stroke-width="5.5" stroke-linecap="round"/>
+    <circle cx="862" cy="158" r="5" fill="#6b4a2e"/>
+    <circle cx="884" cy="102" r="5" fill="#6b4a2e"/>
+    <path d="M904 86 L 898 58 L 934 66 L 928 92 Z" fill="#f6c453" stroke="#7a4a2b" stroke-width="2.5" stroke-linejoin="round"/>
+    <g stroke="#d9a45f" stroke-width="1.8" stroke-dasharray="4 4" fill="none" stroke-linecap="round" opacity="0.9">
+      <path d="M908 100 c 6 7, 18 7, 24 0"/>
+      <path d="M904 108 c 8 9, 26 9, 34 0"/>
+    </g>
+  </g>
+</svg>
