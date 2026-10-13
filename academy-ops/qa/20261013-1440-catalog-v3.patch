@@ -1,0 +1,101 @@
+diff --git a/components/catalog-browser.tsx b/components/catalog-browser.tsx
+index 6cbb5a5..e412651 100644
+--- a/components/catalog-browser.tsx
++++ b/components/catalog-browser.tsx
+@@ -65,7 +65,9 @@ export default function CatalogBrowser({ rows }: { rows: CatalogRow[] }) {
+       if (kind && r.kind !== kind) return false;
+       if (status && r.status !== status) return false;
+       if (q) {
+-        const hay = `${r.id} ${r.name} ${r.issuingBody} ${r.examFamily} ${r.categoryName}`.toLowerCase();
++        // Status labels are searchable too, so "practice", "verified",
++        // "retired" and "research" find exactly the rows the status filter shows.
++        const hay = `${r.id} ${r.name} ${r.issuingBody} ${r.examFamily} ${r.categoryName} ${r.statusLabel}`.toLowerCase();
+         if (!hay.includes(q)) return false;
+       }
+       return true;
+@@ -81,7 +83,7 @@ export default function CatalogBrowser({ rows }: { rows: CatalogRow[] }) {
+     setStatus("");
+     setPage(1);
+   };
+-  const hasFilters = queryInput || category || region || kind || status;
++  const hasFilters = Boolean(queryInput || category || region || kind || status);
+   // Active-filter count for the mobile disclosure badge (search is separate).
+   const activeFilterCount =
+     (category ? 1 : 0) + (region ? 1 : 0) + (kind ? 1 : 0) + (status ? 1 : 0);
+@@ -136,6 +138,9 @@ export default function CatalogBrowser({ rows }: { rows: CatalogRow[] }) {
+         <input
+           id="catalog-search"
+           type="search"
++          autoComplete="off"
++          spellCheck={false}
++          enterKeyHint="search"
+           value={queryInput}
+           onChange={(e) => setQueryInput(e.target.value)}
+           placeholder="Search by exam name, ID (EX-299), issuer…"
+@@ -218,5 +223,5 @@ export default function CatalogBrowser({ rows }: { rows: CatalogRow[] }) {
+         {hasFilters && (
+-          <button onClick={clearAll} className="inline-flex min-h-[44px] items-center text-sm text-academy-blue font-semibold hover:underline">
++          <button type="button" onClick={clearAll} className="inline-flex min-h-[44px] items-center text-sm text-academy-blue font-semibold hover:underline">
+             Clear all filters
+           </button>
+         )}
+@@ -239,7 +244,7 @@ export default function CatalogBrowser({ rows }: { rows: CatalogRow[] }) {
+               </>
+             }
+             action={
+-              <button onClick={clearAll} className="inline-flex min-h-[44px] items-center text-academy-blue font-semibold hover:underline">
++              <button type="button" onClick={clearAll} className="inline-flex min-h-[44px] items-center text-academy-blue font-semibold hover:underline">
+                 Clear all filters <span aria-hidden="true">→</span>
+               </button>
+             }
+@@ -279,19 +284,19 @@ export default function CatalogBrowser({ rows }: { rows: CatalogRow[] }) {
+             ))}
+           </ul>
+           {totalPages > 1 && (
+-            <nav aria-label="Catalog pages" className="mt-5 sm:mt-8 flex items-center justify-center gap-1.5 flex-wrap">
++            <nav aria-label="Catalog pages" className="mt-5 sm:mt-8 flex items-center justify-center gap-1 sm:gap-1.5 flex-wrap">
+               <button
+                 type="button"
+                 disabled={safePage === 1}
+                 onClick={() => gotoPage(safePage - 1)}
+                 aria-label="Previous page"
+-                className="min-w-10 rounded-xl border border-border bg-white px-3 py-1.5 sm:py-2 min-h-[44px] text-sm font-semibold text-ink hover:border-academy-blue hover:text-academy-blue transition-colors disabled:opacity-40 disabled:hover:border-border disabled:hover:text-ink"
++                className="min-w-9 sm:min-w-10 rounded-xl border border-border bg-white px-2.5 sm:px-3 py-1.5 sm:py-2 min-h-[44px] text-sm font-semibold text-ink hover:border-academy-blue hover:text-academy-blue transition-colors disabled:opacity-40 disabled:hover:border-border disabled:hover:text-ink"
+               >
+                 ← Prev
+               </button>
+               {pageNumbers().map((p, i) =>
+                 p === "…" ? (
+-                  <span key={`e${i}`} aria-hidden className="px-1 text-sm text-slate">
++                  <span key={`e${i}`} aria-hidden className="hidden px-1 text-sm text-slate sm:block">
+                     …
+                   </span>
+                 ) : (
+@@ -301,7 +306,7 @@ export default function CatalogBrowser({ rows }: { rows: CatalogRow[] }) {
+                     onClick={() => gotoPage(p)}
+                     aria-label={`Page ${p}`}
+                     aria-current={p === safePage ? "page" : undefined}
+-                    className={`min-w-10 rounded-xl border px-3 py-1.5 sm:py-2 min-h-[44px] text-sm font-semibold transition-colors ${
++                    className={`hidden sm:block min-w-10 rounded-xl border px-3 py-1.5 sm:py-2 min-h-[44px] text-sm font-semibold transition-colors ${
+                       p === safePage
+                         ? "border-academy-blue bg-academy-blue text-white"
+                         : "border-border bg-white text-ink hover:border-academy-blue hover:text-academy-blue"
+@@ -311,12 +316,17 @@ export default function CatalogBrowser({ rows }: { rows: CatalogRow[] }) {
+                   </button>
+                 )
+               )}
++              {/* Mobile-compact: numbered buttons collapse to a "Page X of Y" readout;
++                  Prev/Next stay as the touch targets. Full numbered nav at sm+. */}
++              <span className="sm:hidden px-2 text-sm font-semibold text-slate">
++                Page {safePage} of {totalPages}
++              </span>
+               <button
+                 type="button"
+                 disabled={safePage === totalPages}
+                 onClick={() => gotoPage(safePage + 1)}
+                 aria-label="Next page"
+-                className="min-w-10 rounded-xl border border-border bg-white px-3 py-1.5 sm:py-2 min-h-[44px] text-sm font-semibold text-ink hover:border-academy-blue hover:text-academy-blue transition-colors disabled:opacity-40 disabled:hover:border-border disabled:hover:text-ink"
++                className="min-w-9 sm:min-w-10 rounded-xl border border-border bg-white px-2.5 sm:px-3 py-1.5 sm:py-2 min-h-[44px] text-sm font-semibold text-ink hover:border-academy-blue hover:text-academy-blue transition-colors disabled:opacity-40 disabled:hover:border-border disabled:hover:text-ink"
+               >
+                 Next →
+               </button>
