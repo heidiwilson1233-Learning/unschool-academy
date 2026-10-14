@@ -1,0 +1,18 @@
+/* Unschool Academy — Direction C "Discovery Window" brand tokens (locked 2026-10-12) */
+:root {
+  --ink: #15223B;
+  --teal: #147D75;
+  --terracotta: #D96C4F;
+  --morning: #F5D67B;
+  --paper: #F7F1E2;
+  --canvas: #FCFBF8;
+  --kids-cream: #FFF7E9;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--canvas);
+  color: var(--ink);
+  font-family: Georgia, 'Times New Roman', serif;
+  -webkit-font-smoothing: antialiased;
+}

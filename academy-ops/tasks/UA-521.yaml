@@ -1,0 +1,28 @@
+id: UA-521
+title: "Backend continuation: progress-integrity next step (cycle-0940)"
+status: done
+owner: agent-a15
+implementer: agent-a15
+reviewer: a18
+base_commit: fe3635017d1705c0082730dad3dba7af7f031623
+owned_paths:
+  - "lib/progress/**"
+  - "academy-ops/qa/0940-backend-a15.md"
+dependencies: []
+problem: >
+  Continue the backend thread from UA-497 (progress-integrity). Next step: review the progress/attempts data layer for integrity gaps (payload validation, defensive guards, migration safety) following the sibling pattern already on main (lib/attempts.ts defensive guard). New checks go in lib/progress/**; do not modify lib/attempts.ts. Report: academy-ops/qa/0940-backend-a15.md. Work in an isolated git worktree at ~/workspace/unschool-academy/worktrees/<branch> created with: git -C ~/workspace/unschool-academy/build worktree add <path> -b <branch> origin/main. NEVER work in the shared build dir. NEVER git stash. NEVER touch or print any line of ~/.git-credentials-unschool (push via configured credential helper). Never force-push, never commit to main. After commit: git push -u origin <branch>, verify local==origin via git rev-parse, then remove the worktree. Base: origin/main @ fe36350.
+acceptance:
+  - "Progress-integrity review + new defensive checks in lib/progress/**"
+  - "lib/attempts.ts untouched"
+  - "tsc --noEmit --strict clean"
+  - "Branch pushed to origin, local==origin verified"
+evidence_required:
+  - "tsc exit code"
+  - "push verification"
+  - "integrity report"
+permission_class: reversible-local-work
+branch: academy/20261014-0940-ua521-backend-a15
+lease_expires_at: null
+checkpoint: "2026-10-14 ~09:10 IST — DONE. Branch academy/20261014-0940-ua521-backend-a15 @ f469023 pushed to origin, local==origin verified. New: lib/progress/guards.ts (per-entry validation + legacy migration exam/contentVersion defaults + audit evidence) and lib/progress/store.ts (safe readers). lib/attempts.ts untouched. tsc --noEmit --strict exit 0. Report: academy-ops/qa/0940-backend-a15.md. Worktree removed."
+attempt: 1
+checkpoint_history: []

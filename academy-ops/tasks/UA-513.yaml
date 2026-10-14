@@ -1,0 +1,47 @@
+id: UA-513
+title: "Analytics continuation (cycle-0940)"
+status: done
+owner: agent-a20
+implementer: agent-a20
+reviewer: a18
+base_commit: fe3635017d1705c0082730dad3dba7af7f031623
+owned_paths:
+  - "academy-ops/0940-events-a20.md"
+  - "lib/analytics-0940.ts"
+dependencies: []
+problem: >
+  Continue the analytics thread from UA-489 (analytics reliability + service-health note). This cycle: extend the event spec for newly shipped surfaces (homepage sections from recent cycles, ORIG-Q14/Q15), and add the service-health note for the current production state (lr98/inhh 404, Vercel cap). Report: academy-ops/0940-events-a20.md; one new instrumentation file max (lib/analytics-0940.ts) if code is needed. Event names must be unique; payload keys consistent. Work in an isolated git worktree at ~/workspace/unschool-academy/worktrees/<branch> created with: git -C ~/workspace/unschool-academy/build worktree add <path> -b <branch> origin/main. NEVER work in the shared build dir. NEVER git stash. NEVER touch or print any line of ~/.git-credentials-unschool (push via configured credential helper). Never force-push, never commit to main. After commit: git push -u origin <branch>, verify local==origin via git rev-parse, then remove the worktree. Base: origin/main @ fe36350.
+acceptance:
+  - "Events spec extended for new surfaces"
+  - "Service-health note"
+  - "Event-name uniqueness check"
+  - "Branch pushed to origin, local==origin verified"
+evidence_required:
+  - "uniqueness check"
+  - "push verification"
+  - "spec summary"
+permission_class: reversible-local-work
+branch: academy/20261014-0940-ua513-analytics-a20
+lease_expires_at: null
+checkpoint:
+  cycle: "0940"
+  at: "2026-10-14T09:10:00+05:30"
+  branch: academy/20261014-0940-ua513-analytics-a20
+  commit: 290bab0e0765d8cbe5f2f0b04d653092e5545201
+  pushed: true
+  local_eq_origin: true
+  files:
+    - lib/analytics-0940.ts
+    - academy-ops/0940-events-a20.md
+  new_events:
+    - home_answers_band_viewed
+    - quest_draw_completed
+  uniqueness_check: "90 prior registry events (30+30+30) audited; 0 collisions; 0 duplicates; assertEventNameUniqueness() PASS; embedded PRIOR_REGISTRY_EVENT_NAMES verified exact vs sources"
+  service_health_note: "lr98/inhh 404 DEPLOYMENT_NOT_FOUND ~42h; Vercel Hobby 100-deploy/day cap until ~15:05 IST Oct 14; 0 merges this cycle"
+  evidence:
+    - uniqueness check
+    - push verification
+    - spec summary
+  status: delivered
+attempt: 0
+checkpoint_history: []

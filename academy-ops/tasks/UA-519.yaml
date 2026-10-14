@@ -1,0 +1,26 @@
+id: UA-519
+title: "Curriculum review + source-coverage register (cycle-0940)"
+status: done
+owner: agent-a16
+implementer: agent-a16
+reviewer: a18
+base_commit: fe3635017d1705c0082730dad3dba7af7f031623
+owned_paths:
+  - "academy-ops/reviews/0940-curriculum-a16.md"
+dependencies: []
+problem: >
+  Curriculum review thread (from UA-495): review the source-coverage register against the 5 new 0940 packs + recent factory batches. Check: L1->L4 sequencing integrity, prerequisites KEY compliance on L2+ in the newest landed branches, draft-pending-sme-review status correctness, source-field quality (edition/page-level, never bare domain). Report: academy-ops/reviews/0940-curriculum-a16.md with findings + recommendations. Read-only review - no content rewrites. Work in an isolated git worktree at ~/workspace/unschool-academy/worktrees/<branch> created with: git -C ~/workspace/unschool-academy/build worktree add <path> -b <branch> origin/main. NEVER work in the shared build dir. NEVER git stash. NEVER touch or print any line of ~/.git-credentials-unschool (push via configured credential helper). Never force-push, never commit to main. After commit: git push -u origin <branch>, verify local==origin via git rev-parse, then remove the worktree. Base: origin/main @ fe36350.
+acceptance:
+  - "Curriculum review report with findings"
+  - "Sequencing + prereq + source-field checks"
+  - "Branch pushed to origin, local==origin verified"
+evidence_required:
+  - "push verification"
+  - "review findings"
+permission_class: reversible-local-work
+branch: academy/20261014-0940-ua519-curriculum-a16
+lease_expires_at: null
+checkpoint: "2026-10-14 ~09:10 IST — DONE. Reviewed the 4 landed 0840 factory branches (UA-490..493): 420/420 questions PASS on all 4 curriculum dimensions (prereq-key 0 violations on 266 L2+ Qs; 420/420 draft-pending-sme-review; 0 bare-domain sources; L1->L4 sequencing clean; first-ever L3 CAT-210 and L4 UPSC-18/SSC-40 staged). 0940 packs (UA-514..518) had not landed by 09:05 IST cutoff — deferred to A18 UA-520 / next-cycle A16. Source-coverage register updated (on-main bank 3,111 Qs + staged view; post-merge projection 3,531 Qs / L3 296 / L4 58). 160 on-main L2 prereq violations + 0840 P1/P2/P3 proposals carried forward. Report: academy-ops/reviews/0940-curriculum-a16.md. Branch academy/20261014-0940-ua519-curriculum-a16 pushed, local==origin verified at 450794a5b255d0f351afd05e48a19bba9e09cad3. Worktree removed."
+attempt: 1
+checkpoint_history:
+  - "2026-10-14 ~09:10 IST — DONE; report pushed at 450794a; local==origin verified; worktree removed."

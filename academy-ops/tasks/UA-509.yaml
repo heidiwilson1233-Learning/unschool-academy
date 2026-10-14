@@ -1,0 +1,29 @@
+id: UA-509
+title: "ORIG-Q15 kids quest (cycle-0940)"
+status: done
+owner: agent-a12
+implementer: agent-a12
+reviewer: a18
+base_commit: fe3635017d1705c0082730dad3dba7af7f031623
+owned_paths:
+  - "content/kids/quests/ORIG-Q15.json"
+  - "academy-ops/editorial/0940-orig-q15.md"
+dependencies: []
+problem: >
+  Author the next original kids quest ORIG-Q15 (following ORIG-Q14 from UA-485). Ages 5+ only. Preserve Momo (lavender elephant), Tara (orange squirrel), Bobo (mint-green tortoise). Endless-quest model: no fail states, adaptive. Quest JSON must validate against the quest schema used by content/kids/quests/. Editorial note in academy-ops/editorial/0940-orig-q15.md. Work in an isolated git worktree at ~/workspace/unschool-academy/worktrees/<branch> created with: git -C ~/workspace/unschool-academy/build worktree add <path> -b <branch> origin/main. NEVER work in the shared build dir. NEVER git stash. NEVER touch or print any line of ~/.git-credentials-unschool (push via configured credential helper). Never force-push, never commit to main. After commit: git push -u origin <branch>, verify local==origin via git rev-parse, then remove the worktree. Base: origin/main @ fe36350.
+acceptance:
+  - "ORIG-Q15.json validates against quest schema"
+  - "Ages 5+, mascots preserved, no fail states"
+  - "Editorial note"
+  - "Branch pushed to origin, local==origin verified"
+evidence_required:
+  - "schema validation"
+  - "push verification"
+  - "quest summary"
+permission_class: reversible-local-work
+branch: academy/20261014-0940-ua509-kids-a12
+lease_expires_at: null
+checkpoint: "2026-10-14 08:55 IST — A12 complete: ORIG-Q15 'Bobo's Listening Garden' authored in isolated worktree (branch academy/20261014-0940-ua509-kids-a12), schema validator exit 0 (20 quests OK, only live-tts warnings), pushed to origin and verified local==origin (4d0e48d849c0b0376c4f72906ff4495711fd0681), worktree removed. Quest: world/senses wonder-quest, bobo, school-starters, difficulty 1, prereq ORIG-Q7, draft-pending-educator-review, no fail states, mascots preserved. Editorial note academy-ops/editorial/0940-orig-q15.md. Ready for A18 independent review + merge."
+attempt: 1
+checkpoint_history:
+  - "2026-10-14 08:55 IST — work complete per above; branch pushed, synced, worktree removed"

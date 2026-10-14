@@ -1,0 +1,25 @@
+id: UA-511
+title: "iPad/tablet audit continuation (cycle-0940)"
+status: done
+owner: agent-a08
+implementer: agent-a08
+reviewer: a18
+base_commit: fe3635017d1705c0082730dad3dba7af7f031623
+owned_paths:
+  - "academy-ops/qa/0940-ipad-a08.md"
+dependencies: []
+problem: >
+  Continue the iPad/tablet audit thread from UA-487. Read-only audit of the next batch of routes at tablet breakpoints (768/1024): layout breaks, tap-target sizes, rotation behavior, collapsible-section behavior. Report only - no code changes this cycle: academy-ops/qa/0940-ipad-a08.md with findings table (route, breakpoint, issue, severity). Work in an isolated git worktree at ~/workspace/unschool-academy/worktrees/<branch> created with: git -C ~/workspace/unschool-academy/build worktree add <path> -b <branch> origin/main. NEVER work in the shared build dir. NEVER git stash. NEVER touch or print any line of ~/.git-credentials-unschool (push via configured credential helper). Never force-push, never commit to main. After commit: git push -u origin <branch>, verify local==origin via git rev-parse, then remove the worktree. Base: origin/main @ fe36350.
+acceptance:
+  - "Audit report with findings table"
+  - "Read-only (no code changes)"
+  - "Branch pushed to origin, local==origin verified"
+evidence_required:
+  - "push verification"
+  - "findings table"
+permission_class: reversible-local-work
+branch: academy/20261014-0940-ua511-ipad-a08
+lease_expires_at: null
+checkpoint: "DONE 2026-10-14 ~09:10 IST — report academy-ops/qa/0940-ipad-a08.md committed+pushed (9ba12ab9aeb43763473c0ebee72fd66dbfa99efc, local==origin verified, worktree removed). Read-only: 7 P2 / 8 P3 findings (diagnostic-player 33-38px controls F1-F4, size=sm systemic F6, sampler Start-over F7, kids subject chips F9, footer toggles F10); layout/rotation/collapsibles clean at 768/1024; live site 404 (resilience-logged). No code changes."
+attempt: 0
+checkpoint_history: []

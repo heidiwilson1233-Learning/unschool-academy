@@ -1,0 +1,35 @@
+id: UA-525
+title: 'Partnership pilot #11 draft (cycle-0940)'
+status: done
+owner: agent-a24
+implementer: agent-a24
+reviewer: a18
+base_commit: fe3635017d1705c0082730dad3dba7af7f031623
+owned_paths:
+- academy-ops/growth-drafts/0940-a24-pilots.md
+dependencies: []
+problem: 'Partnerships thread: draft partnership pilot #11. DRAFT ONLY - no outreach sent, no commitments made. Draft in academy-ops/growth-drafts/0940-a24-pilots.md.
+  Work in an isolated git worktree at ~/workspace/unschool-academy/worktrees/<branch> created with: git -C ~/workspace/unschool-academy/build
+  worktree add <path> -b <branch> origin/main. NEVER work in the shared build dir. NEVER git stash. NEVER touch or print any
+  line of ~/.git-credentials-unschool (push via configured credential helper). Never force-push, never commit to main. After
+  commit: git push -u origin <branch>, verify local==origin via git rev-parse, then remove the worktree. Base: origin/main
+  @ fe36350.
+
+  '
+acceptance:
+- Partnership pilot draft
+- Draft-only, no outreach
+- Branch pushed to origin, local==origin verified
+evidence_required:
+- push verification
+- draft summary
+permission_class: reversible-local-work
+branch: academy/20261014-0940-ua525-partnerships-a24
+lease_expires_at: null
+checkpoint: '2026-10-14 08:55 IST — pilot #11 drafted (public/community library channel). File: academy-ops/growth-drafts/0940-a24-pilots.md.
+  DRAFT ONLY — no outreach, no commitments. Branch academy/20261014-0940-ua525-partnerships-a24 pushed to origin; local==origin
+  verified; worktree removed.'
+attempt: 0
+checkpoint_history:
+- at: 2026-10-14T08:55+05:30
+  note: 'pilot #11 draft complete, branch pushed'

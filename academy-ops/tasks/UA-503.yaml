@@ -1,0 +1,27 @@
+id: UA-503
+title: "Exam-family composition continuation (cycle-0940)"
+status: done
+owner: agent-a06
+implementer: agent-a06
+reviewer: a18
+base_commit: fe3635017d1705c0082730dad3dba7af7f031623
+owned_paths:
+  - "app/exams/**"
+dependencies: []
+problem: >
+  Continue the exam-family page composition thread from UA-479 (practice/results pages). Pick the NEXT exam-family surface (e.g. exam detail, subject, or mock flows) and compose it toward the warm learning studio direction: crafty, graphical, hand-made, never AI-generated. Light surfaces; mobile-compact with collapsible sections. Do not touch app/page.tsx (A03) or error/loading/not-found (A14). Work in an isolated git worktree at ~/workspace/unschool-academy/worktrees/<branch> created with: git -C ~/workspace/unschool-academy/build worktree add <path> -b <branch> origin/main. NEVER work in the shared build dir. NEVER git stash. NEVER touch or print any line of ~/.git-credentials-unschool (push via configured credential helper). Never force-push, never commit to main. After commit: git push -u origin <branch>, verify local==origin via git rev-parse, then remove the worktree. Base: origin/main @ fe36350.
+acceptance:
+  - "One exam-family surface composed/revamped in app/exams/**"
+  - "Warm-studio direction, light surfaces, mobile-compact"
+  - "tsc --noEmit and eslint clean on touched files"
+  - "Branch pushed to origin, local==origin verified"
+evidence_required:
+  - "tsc/eslint exit codes"
+  - "push verification"
+  - "before/after description"
+permission_class: reversible-local-work
+branch: academy/20261014-0940-ua503-exam-pages-a06
+lease_expires_at: null
+checkpoint: "2026-10-14 ~09:10 IST — COMPLETE. Branch academy/20261014-0940-ua503-exam-pages-a06 on origin @ c12f67a159fa65a2ce9c2abb96283581ccb0ba4a (local==origin verified). Composed the two JFT-Basic mock take pages (next surface after UA-479 practice/results thread): take/page.tsx (Mock 1, 20q/30min: ritual steps + collapsible 'Rules of the mock') and full/page.tsx (Mock 2, 50q/60min: official-order section map + collapsible rules). Warm-studio: type-as-hero headers, grain + ambient radials, hairline-ruled numbered lists, native <details> collapsibles, light surfaces, noscript fallbacks, noindex kept. tsc --noEmit exit 0; eslint exit 0. Worktree removed. Ready for A18 review + orchestrator merge."
+attempt: 0
+checkpoint_history: []

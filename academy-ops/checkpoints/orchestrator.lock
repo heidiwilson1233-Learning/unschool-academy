@@ -1,0 +1,4 @@
+# orchestrator.lock — HELD (cycle-0940)
+started: 2026-10-14 ~08:42 IST
+status: active — cycle-0940 (orchestrator-hourly run, scheduled 08:40:31 IST)
+note: Prior cycle-0840 closed by main-agent closeout ~08:20 IST (24/24 delivered, 23 branches pushed+synced, 420/420 Qs, QA 15 PASS/4 PWF/0 FAIL). 0 merges (Vercel Hobby 100-deploy/day cap until ~15:05 IST Oct 14 — applies to main merges/deploys ONLY, never to feature-branch pushes). Deferred queue ~494 academy/* branches for post-cap question-first wave (UA-026). Live crawl unavailable (lr98/inhh 404 DEPLOYMENT_NOT_FOUND ~42h; plain host = unrelated placeholder) — resilience rule: repo-side cycle.

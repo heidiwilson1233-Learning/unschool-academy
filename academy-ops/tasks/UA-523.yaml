@@ -1,0 +1,25 @@
+id: UA-523
+title: "Creative draft TCP-14 (cycle-0940)"
+status: done
+owner: agent-a22
+implementer: agent-a22
+reviewer: a18
+base_commit: fe3635017d1705c0082730dad3dba7af7f031623
+owned_paths:
+  - "academy-ops/growth-drafts/0940-a22-tcp14.md"
+dependencies: []
+problem: >
+  Creative thread: draft the next teaching-clip creative package TCP-14. DRAFT ONLY - assets and copy prepared as drafts, nothing published. Follow the established TCP format from prior cycles. Draft in academy-ops/growth-drafts/0940-a22-tcp14.md. Work in an isolated git worktree at ~/workspace/unschool-academy/worktrees/<branch> created with: git -C ~/workspace/unschool-academy/build worktree add <path> -b <branch> origin/main. NEVER work in the shared build dir. NEVER git stash. NEVER touch or print any line of ~/.git-credentials-unschool (push via configured credential helper). Never force-push, never commit to main. After commit: git push -u origin <branch>, verify local==origin via git rev-parse, then remove the worktree. Base: origin/main @ fe36350.
+acceptance:
+  - "Creative package draft (TCP format)"
+  - "Draft-only, nothing published"
+  - "Branch pushed to origin, local==origin verified"
+evidence_required:
+  - "push verification"
+  - "draft summary"
+permission_class: reversible-local-work
+branch: academy/20261014-0940-ua523-creative-a22
+lease_expires_at: null
+checkpoint: "2026-10-14 ~08:55 IST: TCP-14 drafted (Gentle retry design — no fail states, NEW pillar family; 30s Momo KB-001-Q3 walkthrough, VG-1, all claims quoted verbatim from content/kids/quests/KB-001-Q3.json + quest-schema.md). Branch academy/20261014-0940-ua523-creative-a22 pushed; local==origin verified at c83e49d1756a8520bcd67b9b595510ddf4092fbe. Draft at academy-ops/growth-drafts/0940-a22-tcp14.md (committed) and ~/workspace/unschool-academy/academy-ops/growth-drafts/0940-a22-tcp14.md (parent ops copy). DRAFT ONLY, nothing published. Reviewers pending: A17, A12, A03, A16. Worktree removed."
+attempt: 0
+checkpoint_history: []

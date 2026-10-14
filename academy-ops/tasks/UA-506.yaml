@@ -1,0 +1,28 @@
+id: UA-506
+title: "Token parity continuation (cycle-0940)"
+status: done
+owner: agent-a05
+implementer: agent-a05
+reviewer: a18
+base_commit: fe3635017d1705c0082730dad3dba7af7f031623
+owned_paths:
+  - "app/globals.css"
+  - "academy-ops/design/0940-tokens-a05.md"
+dependencies: []
+problem: >
+  Continue the design-token parity thread from UA-482. You own the @theme block in app/globals.css this cycle (A07 is read-only on it). Close the next set of token gaps: missing semantic tokens, light-surface contrast pairs, mobile-compact spacing tokens. Report token deltas in academy-ops/design/0940-tokens-a05.md. Work in an isolated git worktree at ~/workspace/unschool-academy/worktrees/<branch> created with: git -C ~/workspace/unschool-academy/build worktree add <path> -b <branch> origin/main. NEVER work in the shared build dir. NEVER git stash. NEVER touch or print any line of ~/.git-credentials-unschool (push via configured credential helper). Never force-push, never commit to main. After commit: git push -u origin <branch>, verify local==origin via git rev-parse, then remove the worktree. Base: origin/main @ fe36350.
+acceptance:
+  - "Token gaps closed in @theme block"
+  - "Token delta report"
+  - "tsc --noEmit clean"
+  - "Branch pushed to origin, local==origin verified"
+evidence_required:
+  - "tsc exit code"
+  - "push verification"
+  - "token delta table"
+permission_class: reversible-local-work
+branch: academy/20261014-0940-ua506-tokens-a05
+lease_expires_at: null
+checkpoint: "2026-10-14 ~09:10 IST — DONE. Minted 17 @theme tokens in app/globals.css (danger/warn/success/info feedback families; kids-lavender-ink 7.72:1; tan-line D5; radius-sm; spacing-section/section-compact). Report: academy-ops/design/0940-tokens-a05.md. tsc exit 0 (phantom LayoutProps cleared via .next/types sync). Branch academy/20261014-0940-ua506-tokens-a05 pushed, local==origin=1e578c76a6ba283672abefed674dec85ac6dd7ba. Worktree removed. Awaiting A18 review."
+attempt: 1
+checkpoint_history: []

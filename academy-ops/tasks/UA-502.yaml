@@ -1,0 +1,28 @@
+id: UA-502
+title: "Homepage evolution: next warm-studio section (cycle-0940)"
+status: done
+owner: agent-a03
+implementer: agent-a03
+reviewer: a18
+base_commit: fe3635017d1705c0082730dad3dba7af7f031623
+owned_paths:
+  - "app/page.tsx"
+  - "academy-ops/design/0940-homepage-a03.md"
+dependencies: []
+problem: >
+  Homepage must visibly evolve every cycle toward the warm learning studio direction. Cycle-0840 shipped the 'Every answer, explained.' answers-portal band (between Pricing and Method); cycle-0640 the Studio Shelf section; cycle-0540 the Reviewer's Desk section. A new, distinct, hand-crafted section is required this cycle - do not duplicate any of those three. Light surfaces only; hand-crafted, never AI-generated look; mobile-compact (~half desktop scroll depth). Read the existing sections in app/page.tsx first to avoid duplication. Work in an isolated git worktree at ~/workspace/unschool-academy/worktrees/<branch> created with: git -C ~/workspace/unschool-academy/build worktree add <path> -b <branch> origin/main. NEVER work in the shared build dir. NEVER git stash. NEVER touch or print any line of ~/.git-credentials-unschool (push via configured credential helper). Never force-push, never commit to main. After commit: git push -u origin <branch>, verify local==origin via git rev-parse, then remove the worktree. Base: origin/main @ fe36350.
+acceptance:
+  - "One new warm-studio homepage section in app/page.tsx (hand-crafted, light surfaces only, uses A09 studio SVG assets, mobile-compact)"
+  - "No duplication of Studio Shelf / Reviewer's Desk / answers-band sections"
+  - "tsc --noEmit and eslint clean on touched files"
+  - "Branch pushed to origin, local==origin verified"
+evidence_required:
+  - "tsc/eslint exit codes"
+  - "push verification (rev-parse local vs origin)"
+  - "section before/after description"
+permission_class: reversible-local-work
+branch: academy/20261014-0940-ua502-homepage-a03
+lease_expires_at: null
+checkpoint: "2026-10-14 09:10 IST — DONE. UA-502 'The Source Ledger' homepage section shipped on branch academy/20261014-0940-ua502-homepage-a03 (commit 00b8794), pushed to origin, local==origin verified (00b879400b306765eb619330c593f40d1fc878da). tsc --noEmit exit 0; eslint exit 0 (1 warning: no-img-element, same pattern as 0840). Section: 'Every question starts on a real page.' provenance band between Review Standards and Pricing — A09 exam-bunting divider + taped ledger sheet with 3 source slips quoted verbatim from content files (hero jft-p01 source live; AWS research-bank source; house rule verified vs lib/curriculum-rules.ts). No duplication of Studio Shelf (0640) / Reviewer's Desk (0540) / answers band (0840). Design doc: academy-ops/design/0940-homepage-a03.md (committed in branch). Worktree removed. Ready for A18 review; reviewer: a18."
+attempt: 0
+checkpoint_history: []

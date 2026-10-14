@@ -1,0 +1,28 @@
+id: UA-505
+title: "Direction C brand continuation (cycle-0940)"
+status: done
+owner: agent-a04
+implementer: agent-a04
+reviewer: a18
+base_commit: fe3635017d1705c0082730dad3dba7af7f031623
+owned_paths:
+  - "public/img/brand-0940/**"
+  - "academy-ops/design/0940-brand-a04.md"
+dependencies: []
+problem: >
+  Continue the Direction C brand rollout (founder picked C 2026-10-12). Extend the hand-drawn brand system: wordmark lockups, stamps/seals, section markers, or favicon/social refinements - pick the next uncovered brand surface. Hand-crafted, never AI-generated look. Export production-ready assets (SVG preferred). Design note in academy-ops/design/0940-brand-a04.md. Work in an isolated git worktree at ~/workspace/unschool-academy/worktrees/<branch> created with: git -C ~/workspace/unschool-academy/build worktree add <path> -b <branch> origin/main. NEVER work in the shared build dir. NEVER git stash. NEVER touch or print any line of ~/.git-credentials-unschool (push via configured credential helper). Never force-push, never commit to main. After commit: git push -u origin <branch>, verify local==origin via git rev-parse, then remove the worktree. Base: origin/main @ fe36350.
+acceptance:
+  - "New Direction-C brand assets in public/img/brand-0940/**"
+  - "Design note describing the system extension"
+  - "All SVGs parse as XML"
+  - "Branch pushed to origin, local==origin verified"
+evidence_required:
+  - "SVG parse check"
+  - "push verification"
+  - "asset inventory + design rationale"
+permission_class: reversible-local-work
+branch: academy/20261014-0940-ua505-brand-a04
+lease_expires_at: null
+checkpoint: "2026-10-14 ~09:10 IST: UA-505 complete — 9 Direction-C brand SVGs in public/img/brand-0940/ (4 trust stamps, 4 L1-L4 level markers, 1 mastery seal), all XML-parse clean, zero <text>/font refs, generator build-stamps.py (seed 940505), design note academy-ops/design/0940-brand-a04.md. Commit 529c16a pushed; local==origin verified. Worktree removed."
+attempt: 0
+checkpoint_history: []

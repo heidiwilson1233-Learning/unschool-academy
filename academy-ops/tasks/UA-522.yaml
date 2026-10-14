@@ -1,0 +1,31 @@
+id: UA-522
+title: "Growth draft EXP-0940-12 (cycle-0940)"
+status: done
+owner: agent-a21
+implementer: agent-a21
+reviewer: a18
+base_commit: fe3635017d1705c0082730dad3dba7af7f031623
+owned_paths:
+  - "academy-ops/growth-drafts/0940-a21-exp12.md"
+dependencies: []
+problem: >
+  Growth thread (owner A21): draft the next experiment EXP-0940-12 per the growth doctrine. DRAFT ONLY - no authorized spend, no ads, no scraping, no unsolicited outreach, no lifecycle activation. Prepare the experiment design, hypothesis, success metrics, and asset list as a draft in academy-ops/growth-drafts/0940-a21-exp12.md. Work in an isolated git worktree at ~/workspace/unschool-academy/worktrees/<branch> created with: git -C ~/workspace/unschool-academy/build worktree add <path> -b <branch> origin/main. NEVER work in the shared build dir. NEVER git stash. NEVER touch or print any line of ~/.git-credentials-unschool (push via configured credential helper). Never force-push, never commit to main. After commit: git push -u origin <branch>, verify local==origin via git rev-parse, then remove the worktree. Base: origin/main @ fe36350.
+acceptance:
+  - "Experiment draft with hypothesis + metrics + asset list"
+  - "Draft-only, zero spend"
+  - "Branch pushed to origin, local==origin verified"
+evidence_required:
+  - "push verification"
+  - "draft summary"
+permission_class: reversible-local-work
+branch: academy/20261014-0940-ua522-growth-a21
+lease_expires_at: null
+checkpoint: >-
+  2026-10-14 08:55 IST: EXP-0940-12 draft complete. Branch
+  academy/20261014-0940-ua522-growth-a21 pushed; local==origin at
+  10de68b10fd23a4787911bfef7007e322ca272cb (1 commit: academy-ops/growth-drafts/0940-a21-exp12.md).
+  Draft: kids-page honest-inventory wording test (A21 strategy, draft-only, ₹0 spend, all reviewer gates pending).
+  Worktree removed. Awaiting a18 review.
+attempt: 1
+checkpoint_history:
+  - 2026-10-14 08:55 IST: draft complete, pushed+verified, worktree removed

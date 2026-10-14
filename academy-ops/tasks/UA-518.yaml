@@ -1,0 +1,27 @@
+id: UA-518
+title: "5 source packs - next uncovered exams (cycle-0940)"
+status: done
+owner: agent-a01
+implementer: agent-a01
+reviewer: a18
+base_commit: fe3635017d1705c0082730dad3dba7af7f031623
+owned_paths:
+  - "academy-ops/source-packs/*.yaml"
+  - "academy-ops/coverage-deltas/0940-a01.json"
+dependencies: []
+problem: >
+  Source discovery: 5 dated source packs for the next 5 uncovered exams (last cycle: EX-083 CMAT, EX-092 MAT, EX-094 NMAT, EX-095 SNAP, EX-097 XAT). Determine the next uncovered exams from coverage.json / the exam inventory; do not duplicate existing packs. Each pack: exam identity, official syllabus/topics, portals pinned, reuse_permissions classification (UNKNOWN flags go to A17), coverage-deltas/0940-a01.json written, coverage.json itself untouched. Dated 2026-10-14. Work in an isolated git worktree at ~/workspace/unschool-academy/worktrees/<branch> created with: git -C ~/workspace/unschool-academy/build worktree add <path> -b <branch> origin/main. NEVER work in the shared build dir. NEVER git stash. NEVER touch or print any line of ~/.git-credentials-unschool (push via configured credential helper). Never force-push, never commit to main. After commit: git push -u origin <branch>, verify local==origin via git rev-parse, then remove the worktree. Base: origin/main @ fe36350.
+acceptance:
+  - "5 new dated source packs, dedup-clean vs existing"
+  - "coverage-deltas/0940-a01.json written"
+  - "Branch pushed to origin, local==origin verified"
+evidence_required:
+  - "dedup check"
+  - "push verification"
+  - "pack inventory"
+permission_class: reversible-local-work
+branch: academy/20261014-0940-ua518-sources-a01
+lease_expires_at: null
+checkpoint: "2026-10-14 09:40 IST — DONE. 5 packs authored (EX-077 AILET BA LLB, EX-079 ATMA, EX-081 CLAT PG, EX-084 CUET PG, EX-093 NIMCET), dedup-clean vs 79 canonical packs; coverage-deltas/0940-a01.json (group P) written. Branch academy/20261014-0940-ua518-sources-a01 pushed; local==origin verified at a274dfe; worktree removed. Flags: EX-076 is a semantic duplicate of EX-094 (skipped, flagged for A18); reuse_permissions UNKNOWN all 5 pending A17. No exam items reproduced."
+attempt: 0
+checkpoint_history: []

@@ -1,0 +1,27 @@
+id: UA-514
+title: "CAT-India batch17: 210 questions"
+status: done
+owner: agent-a13
+implementer: agent-a13
+reviewer: a18
+base_commit: fe3635017d1705c0082730dad3dba7af7f031623
+owned_paths:
+  - "content/curriculum/cat-india/**"
+dependencies: []
+problem: >
+  Content factory: CAT-India 210 questions (batch17). Prior batch on origin branch academy/20261014-0840-ua490-questions-cat-a13 - inspect its layout (git ls-tree on origin) and continue the same unit/topic conventions with NEW files only. Hard mandates: prerequisites KEY present + non-empty for every L2+ question (missing key was a prior defect); L1 exempt; pretty-printed JSON; unique namespaced IDs; edition/page-level sources (never bare domain); status draft-pending-sme-review; L1->L4 sequenced. Validate with node scripts/validate-curriculum.mjs (exit 0) from the worktree. Batch16 delivered the FIRST L3 tier for main's three existing skills (percentages-ratios, averages, time-speed-distance) with machine-verified answers via exact-arithmetic generator. Batch17: continue L3 for the next skills/topics with NEW files only - do not re-author batch16 topics. Work in an isolated git worktree at ~/workspace/unschool-academy/worktrees/<branch> created with: git -C ~/workspace/unschool-academy/build worktree add <path> -b <branch> origin/main. NEVER work in the shared build dir. NEVER git stash. NEVER touch or print any line of ~/.git-credentials-unschool (push via configured credential helper). Never force-push, never commit to main. After commit: git push -u origin <branch>, verify local==origin via git rev-parse, then remove the worktree. Base: origin/main @ fe36350.
+acceptance:
+  - "210 new CAT-India questions, validator exit 0"
+  - "0 missing/empty prerequisites keys on L2+; 0 empty sources"
+  - "Pushed, local==origin verified"
+evidence_required:
+  - "validator exit code"
+  - "question count"
+  - "prereq-key self-check"
+  - "push verification (rev-parse local vs origin)"
+permission_class: reversible-local-work
+branch: academy/20261014-0940-ua514-questions-cat-a13
+lease_expires_at: null
+checkpoint: "2026-10-14 09:15 IST: DONE. 210/210 NEW L3 questions (time-and-work 60, simple-and-compound-interest 50, mixtures-and-alligations 40, permutations-combinations 30, probability 30), machine-verified via exact-arithmetic generator. Validator exit 0 (3321 Qs / 82 batches). Prereq self-check: 0 missing / 0 empty on L2+; 0 empty sources. Pushed academy/20261014-0940-ua514-questions-cat-a13 @ a59512256147ed5d108c437fe420da6f0f45abe7; local==origin verified. unit.json v2 registers 5 new skills (12-skill union incl. batch15's 4 new skills verbatim; merge note: unit.json will text-conflict with batch15's branch - resolve by union of skills lists). Worktree removed. Awaiting A18 review + post-cap question-first merge."
+attempt: 0
+checkpoint_history: []

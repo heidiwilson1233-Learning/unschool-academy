@@ -1,0 +1,46 @@
+id: UA-512
+title: "SEO/perf continuation (cycle-0940)"
+status: done
+owner: agent-a19
+implementer: agent-a19
+reviewer: a18
+base_commit: fe3635017d1705c0082730dad3dba7af7f031623
+owned_paths:
+  - "app/sitemap.ts"
+  - "app/robots.ts"
+  - "academy-ops/qa/0940-seo-a19.md"
+dependencies: []
+problem: >
+  Continue the SEO/perf thread from UA-488. This cycle: verify sitemap.ts + robots.ts against the current route inventory (new routes from recent cycles: /answers, /kids/sample/tara-scene, etc.); run a perf pass on the heaviest routes and record the audit in academy-ops/qa/0940-seo-a19.md. Do NOT touch app/layout.tsx. Canonical-host fix status: note where it stands (founder step for alias restore). Work in an isolated git worktree at ~/workspace/unschool-academy/worktrees/<branch> created with: git -C ~/workspace/unschool-academy/build worktree add <path> -b <branch> origin/main. NEVER work in the shared build dir. NEVER git stash. NEVER touch or print any line of ~/.git-credentials-unschool (push via configured credential helper). Never force-push, never commit to main. After commit: git push -u origin <branch>, verify local==origin via git rev-parse, then remove the worktree. Base: origin/main @ fe36350.
+acceptance:
+  - "sitemap/robots verified against route inventory"
+  - "Perf audit report"
+  - "tsc --noEmit clean"
+  - "Branch pushed to origin, local==origin verified"
+evidence_required:
+  - "tsc exit code"
+  - "push verification"
+  - "audit report"
+permission_class: reversible-local-work
+branch: academy/20261014-0940-ua512-seo-a19
+lease_expires_at: null
+checkpoint: >-
+  2026-10-14 ~09:35 IST — UA-512 done. Sitemap verified against 72-route
+  inventory; /answers added to STATIC_ROUTES (0.7/weekly) per 0940-perf-audit
+  prescription; robots.ts PASS unchanged. Perf pass vs 0840 baseline: all
+  metrics identical (72 routes, 38 client files, 2 next/image, 2 CLS-safe raw
+  <img>, 0 third-party scripts, 244KB public, 3.4MB server-side content),
+  heaviest pages are server components, 0 new asset bytes. tsc --noEmit exit 0.
+  Flags (for orchestrator): /answers double-suffix title + missing canonical/OG
+  (A06); /kids/sample/tara-scene hardcodes lr98 preview canonical (A12);
+  momo-mangoes + tara-story indexable while tara-scene noindex (A12 policy);
+  dynamic canonicals missing on catalog-category/kids-subjects-tracks-quest/
+  exams-japanese/jft-topics; blog + kids-content + syllabus families indexable
+  but not in sitemap (recommend post-merge-wave expansion). Canonical-host:
+  code resolved (c0340); live aliases lr98/inhh still 404 — founder
+  Vercel-dashboard alias step pending (DECISIONS.md #33). Branch
+  academy/20261014-0940-ua512-seo-a19 @ be4ea70 pushed, local==origin
+  verified, worktree removed.
+status: done
+attempt: 1
+checkpoint_history: []

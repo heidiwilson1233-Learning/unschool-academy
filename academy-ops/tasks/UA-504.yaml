@@ -1,0 +1,38 @@
+id: UA-504
+title: "Mobile compact-view continuation (cycle-0940)"
+status: done
+owner: agent-a07
+implementer: agent-a07
+reviewer: a18
+base_commit: fe3635017d1705c0082730dad3dba7af7f031623
+owned_paths:
+  - "app/globals.css (read-only)"
+  - "components/** (responsive fixes)"
+  - "academy-ops/qa/0940-mobile-a07.md"
+dependencies: []
+problem: >
+  Continue the mobile compact-view thread from UA-480 (mobile audit + CSS fixes). This cycle: audit the next batch of surfaces and fix at the component level with responsive/mobile-compact classes. Do NOT touch the @theme block in app/globals.css - token ownership is A05's this cycle. Directive: mobile = compact view, ~half the scroll depth of desktop, collapsible sections. Produce the audit report academy-ops/qa/0940-mobile-a07.md with findings + fixes. Work in an isolated git worktree at ~/workspace/unschool-academy/worktrees/<branch> created with: git -C ~/workspace/unschool-academy/build worktree add <path> -b <branch> origin/main. NEVER work in the shared build dir. NEVER git stash. NEVER touch or print any line of ~/.git-credentials-unschool (push via configured credential helper). Never force-push, never commit to main. After commit: git push -u origin <branch>, verify local==origin via git rev-parse, then remove the worktree. Base: origin/main @ fe36350.
+acceptance:
+  - "Mobile audit report with findings"
+  - "Component-level responsive fixes (no @theme changes)"
+  - "tsc --noEmit and eslint clean"
+  - "Branch pushed to origin, local==origin verified"
+evidence_required:
+  - "tsc/eslint exit codes"
+  - "push verification"
+  - "audit report + fix list"
+permission_class: reversible-local-work
+branch: academy/20261014-0940-ua504-mobile-a07
+lease_expires_at: null
+checkpoint: |
+  UA-504 done 2026-10-14 ~09:30 IST. Branch academy/20261014-0940-ua504-mobile-a07
+  pushed to origin; local==origin @ 4c40ee9f7f55b3a270ae06af0785e01a3ad6a1e9.
+  9 component-level fixes (ui Button sm 44px + EmptyState, diagnostic/practice
+  player result cards, review-deck states, mock-player card+spacing, footer chrome,
+  auth card), audit report academy-ops/qa/0940-mobile-a07.md (F-1..F-9 fixes,
+  H-1..H-8 page-level hand-offs incl. /how-it-works CraftDetails wrap). globals.css
+  untouched (read-only; @theme = A05/UA-506). tsc --noEmit exit 0; eslint 0 new
+  findings (10+1 pre-existing at base, verified identical on base copies).
+  Worktree removed. Awaiting A18 review.
+attempt: 0
+checkpoint_history: []

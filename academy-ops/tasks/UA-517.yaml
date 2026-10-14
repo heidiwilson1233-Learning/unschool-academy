@@ -1,0 +1,29 @@
+id: UA-517
+title: "JEE-Main/NEET-UG batch11: ~70 questions"
+status: done
+owner: agent-a17
+implementer: agent-a17
+reviewer: a18
+base_commit: fe3635017d1705c0082730dad3dba7af7f031623
+owned_paths:
+  - "content/curriculum/jee-main/**"
+  - "content/curriculum/neet-ug/**"
+dependencies: []
+problem: >
+  Content factory: JEE-Main/NEET-UG ~70 questions (batch11). Prior batch on origin branch academy/20261014-0840-ua491-questions-jeeneet-a11 - inspect its layout (git ls-tree on origin) and continue the same unit/topic conventions with NEW files only. Hard mandates: prerequisites KEY present + non-empty for every L2+ question (missing key was a prior defect); L1 exempt; pretty-printed JSON; unique namespaced IDs; edition/page-level sources (never bare domain); status draft-pending-sme-review; L1->L4 sequenced. Validate with node scripts/validate-curriculum.mjs (exit 0) from the worktree. Split sensibly between jee-main and neet-ug dirs. Work in an isolated git worktree at ~/workspace/unschool-academy/worktrees/<branch> created with: git -C ~/workspace/unschool-academy/build worktree add <path> -b <branch> origin/main. NEVER work in the shared build dir. NEVER git stash. NEVER touch or print any line of ~/.git-credentials-unschool (push via configured credential helper). Never force-push, never commit to main. After commit: git push -u origin <branch>, verify local==origin via git rev-parse, then remove the worktree. Base: origin/main @ fe36350.
+acceptance:
+  - "~70 new JEE-Main/NEET-UG questions, validator exit 0"
+  - "0 missing/empty prerequisites keys on L2+; 0 empty sources"
+  - "Pushed, local==origin verified"
+evidence_required:
+  - "validator exit code"
+  - "question count"
+  - "prereq-key self-check"
+  - "push verification (rev-parse local vs origin)"
+permission_class: reversible-local-work
+branch: academy/20261014-0940-ua517-questions-jeeneet-a17
+lease_expires_at: null
+checkpoint: "2026-10-14 ~08:55 IST: DONE — 70/70 questions written (35 jee-main + 35 neet-ug), validator exit 0 (3181 questions/85 batch files), 0 L2+ missing prereqs, pushed to origin/academy/20261014-0940-ua517-questions-jeeneet-a17 (a096ee5, local==origin verified), worktree removed"
+attempt: 1
+checkpoint_history:
+  - "2026-10-14 ~08:55 IST: batch11 complete — see checkpoint"

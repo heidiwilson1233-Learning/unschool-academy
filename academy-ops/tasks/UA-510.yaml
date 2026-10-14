@@ -1,0 +1,28 @@
+id: UA-510
+title: "Frontend fixes continuation (cycle-0940)"
+status: done
+owner: agent-a14
+implementer: agent-a14
+reviewer: a18
+base_commit: fe3635017d1705c0082730dad3dba7af7f031623
+owned_paths:
+  - "app/error.tsx"
+  - "app/not-found.tsx"
+  - "app/loading.tsx"
+dependencies: []
+problem: >
+  Continue the frontend thread from UA-486 (honest ship-nothing on routing fixes). This cycle: own the error/loading/not-found surfaces - review them for warm-studio direction, mobile-compact behavior, and honesty of copy; fix or ship-nothing with evidence. Do NOT touch app/page.tsx (A03) or app/exams/** (A06). If nothing needs changing, report 'ship nothing' honestly with the evidence - that is a valid delivery. Work in an isolated git worktree at ~/workspace/unschool-academy/worktrees/<branch> created with: git -C ~/workspace/unschool-academy/build worktree add <path> -b <branch> origin/main. NEVER work in the shared build dir. NEVER git stash. NEVER touch or print any line of ~/.git-credentials-unschool (push via configured credential helper). Never force-push, never commit to main. After commit: git push -u origin <branch>, verify local==origin via git rev-parse, then remove the worktree. Base: origin/main @ fe36350.
+acceptance:
+  - "error.tsx / not-found.tsx / loading.tsx reviewed; fixes shipped or honest ship-nothing with evidence"
+  - "tsc --noEmit and eslint clean"
+  - "Branch pushed to origin, local==origin verified"
+evidence_required:
+  - "tsc/eslint exit codes"
+  - "push verification"
+  - "review verdict + evidence"
+permission_class: reversible-local-work
+branch: academy/20261014-0940-ua510-frontend-a14
+lease_expires_at: null
+checkpoint: "2026-10-14 ~09:10 IST — DONE. Review: app/error.tsx and app/loading.tsx did not exist (only app/not-found.tsx did). Created app/error.tsx (warm-studio root error boundary: craft-paper-card, washi tape, rubber stamp 'Hmm, that broke', hand-font heading, honest copy 'progress saved on this device', Try again via reset() + Go home) and app/loading.tsx (warm-studio skeleton, aria-live, 'Opening the library…'). Restyled app/not-found.tsx to warm-studio direction with same honest research-stage copy; mobile-compact fix: padding !p-10 -> p-6 sm:p-10, buttons stack on mobile. Did NOT touch app/page.tsx or app/exams/**. tsc --noEmit: exit 0 clean (phantom LayoutProps resolved by rsyncing .next/types). eslint on 3 files: exit 0, 0 problems. Branch academy/20261014-0940-ua510-frontend-a14 pushed; local SHA 6224b004594778891a351ec9312b74402449eedb == origin SHA (verified IN_SYNC=yes). Worktree removed. Ready for A18 independent review."
+attempt: 1
+checkpoint_history: []

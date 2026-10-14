@@ -1,0 +1,28 @@
+id: UA-520
+title: "QA wave 0940: independent review (cycle-0940)"
+status: done
+owner: agent-a18
+implementer: agent-a18
+reviewer: a18
+base_commit: fe3635017d1705c0082730dad3dba7af7f031623
+owned_paths:
+  - "academy-ops/qa/0940-qa-wave.md"
+dependencies: []
+problem: >
+  Independent QA wave for cycle-0940. Part 1: review the 4 landed cycle-0840 factory branches (academy/20261014-0840-ua490-questions-cat-a13, academy/20261014-0840-ua491-questions-jeeneet-a11, academy/20261014-0840-ua492-questions-upsc-a02, academy/20261014-0840-ua493-questions-ssc-a17): run the curriculum validator on each, check prerequisites KEY present+non-empty on L2+, unique IDs, source spot-checks (edition/page-level), pretty-printed JSON. Part 2: sweep the 20 new cycle-0940 branches as they land on origin (poll; they complete over ~60-90 min): tsc --noEmit on code branches, validator on question branches, SVG/XML/YAML parse checks, secret scan. Verdicts: PASS / PASS-WITH-FLAGS / FAIL with evidence. Write academy-ops/qa/0940-qa-wave.md with the full per-branch table. Read-only review + your own report branch. Work in an isolated git worktree at ~/workspace/unschool-academy/worktrees/<branch> created with: git -C ~/workspace/unschool-academy/build worktree add <path> -b <branch> origin/main. NEVER work in the shared build dir. NEVER git stash. NEVER touch or print any line of ~/.git-credentials-unschool (push via configured credential helper). Never force-push, never commit to main. After commit: git push -u origin <branch>, verify local==origin via git rev-parse, then remove the worktree. Base: origin/main @ fe36350.
+acceptance:
+  - "QA wave report with per-branch verdicts"
+  - "0840 factory batches reviewed (validator + prereq KEY + IDs + sources)"
+  - "New 0940 branches swept as they land"
+  - "Branch pushed to origin, local==origin verified"
+evidence_required:
+  - "validator exit codes per branch"
+  - "tsc exit codes"
+  - "push verification"
+  - "verdict table"
+permission_class: reversible-local-work
+branch: academy/20261014-0940-ua520-qa-a18
+lease_expires_at: null
+checkpoint: "2026-10-14 ~09:55 IST — QA wave COMPLETE. Reviewed 27 branches: Part 1 (4 landed 0840 factory): validator exit 0 all (420 Qs), prereqs 378/378 L2+ compliant, IDs unique vs 3,111-bank, sources edition-level. Part 2 (23 new 0940): tsc clean 9 code branches (0 branch-file errors; only documented phantom LayoutProps in untouched app/layout.tsx), validator exit 0 on 4 question branches (422 Qs: CAT batch17 210, UPSC batch11 72, SSC batch11 70, JEE/NEET batch11 70), SVG/YAML/JSON parse OK, 0 true secret hits. Verdicts: 20 PASS / 7 PWF / 0 FAIL. PWF reasons: cosmetic JSON formatting pre-merge reformat (ua490, ua491, ua492, ua509, ua515, ua517) + one arithmetic typo in A16 review (ua519). Notes: ua506+ua508 both append to app/globals.css (merge-time concat conflict); pre-existing ORIG-Q6 dead prereq link on main (repair candidate); live site 404 during cycle (resilience rule — not a failure). Report: academy-ops/qa/0940-qa-wave.md on branch academy/20261014-0940-ua520-qa-a18, pushed, local==origin @ fa85352. Worktree removed. Task status -> done."
+attempt: 1
+checkpoint_history: []

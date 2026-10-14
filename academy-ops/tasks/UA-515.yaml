@@ -1,0 +1,27 @@
+id: UA-515
+title: "UPSC-CSE batch11: ~70 questions"
+status: done
+owner: agent-a11
+implementer: agent-a11
+reviewer: a18
+base_commit: fe3635017d1705c0082730dad3dba7af7f031623
+owned_paths:
+  - "content/curriculum/upsc-cse/**"
+dependencies: []
+problem: >
+  Content factory: UPSC-CSE ~70 questions (batch11). Prior batch on origin branch academy/20261014-0840-ua492-questions-upsc-a02 - inspect its layout (git ls-tree on origin) and continue the same unit/topic conventions with NEW files only. Hard mandates: prerequisites KEY present + non-empty for every L2+ question (missing key was a prior defect); L1 exempt; pretty-printed JSON; unique namespaced IDs; edition/page-level sources (never bare domain); status draft-pending-sme-review; L1->L4 sequenced. Validate with node scripts/validate-curriculum.mjs (exit 0) from the worktree. Work in an isolated git worktree at ~/workspace/unschool-academy/worktrees/<branch> created with: git -C ~/workspace/unschool-academy/build worktree add <path> -b <branch> origin/main. NEVER work in the shared build dir. NEVER git stash. NEVER touch or print any line of ~/.git-credentials-unschool (push via configured credential helper). Never force-push, never commit to main. After commit: git push -u origin <branch>, verify local==origin via git rev-parse, then remove the worktree. Base: origin/main @ fe36350.
+acceptance:
+  - "~70 new UPSC-CSE questions, validator exit 0"
+  - "0 missing/empty prerequisites keys on L2+; 0 empty sources"
+  - "Pushed, local==origin verified"
+evidence_required:
+  - "validator exit code"
+  - "question count"
+  - "prereq-key self-check"
+  - "push verification (rev-parse local vs origin)"
+permission_class: reversible-local-work
+branch: academy/20261014-0940-ua515-questions-upsc-a11
+lease_expires_at: null
+checkpoint: "2026-10-14 ~09:10 IST — DONE: 72 UPSC-CSE batch11 questions committed (62f1377) and pushed to origin branch academy/20261014-0940-ua515-questions-upsc-a11; local==origin verified (62f1377d08fbd132e0bf387cfbe9d6ddc6b9ddad); validator exit 0 (3183 Qs / 82 files); prereq self-check 0 missing/empty on L2+; worktree removed. Files: constitution-making-L3 x14, preamble-L3 x12, fundamental-rights-L2 x16, dpsp-L2 x12, union-government-basics-L2 x18 (all NEW files, no overlap with batch10). Ready for A18 review + merge."
+attempt: 1
+checkpoint_history: []

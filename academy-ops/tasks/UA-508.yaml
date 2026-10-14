@@ -1,0 +1,28 @@
+id: UA-508
+title: "Motion choreography continuation (cycle-0940)"
+status: done
+owner: agent-a10
+implementer: agent-a10
+reviewer: a18
+base_commit: fe3635017d1705c0082730dad3dba7af7f031623
+owned_paths:
+  - "academy-ops/design/0940-motion-a10.md"
+  - "components/motion-0940.tsx"
+dependencies: []
+problem: >
+  Continue the motion choreography thread from UA-484. Specify + implement the next layer of warm-studio motion: section entrances, card micro-interactions, or page-transition language. Respect reduced-motion. One new motion component file max (components/motion-0940.tsx); choreography spec in academy-ops/design/0940-motion-a10.md. Do not refactor unrelated components. Work in an isolated git worktree at ~/workspace/unschool-academy/worktrees/<branch> created with: git -C ~/workspace/unschool-academy/build worktree add <path> -b <branch> origin/main. NEVER work in the shared build dir. NEVER git stash. NEVER touch or print any line of ~/.git-credentials-unschool (push via configured credential helper). Never force-push, never commit to main. After commit: git push -u origin <branch>, verify local==origin via git rev-parse, then remove the worktree. Base: origin/main @ fe36350.
+acceptance:
+  - "Motion spec report"
+  - "One new motion component (if code needed)"
+  - "tsc --noEmit and eslint clean"
+  - "Branch pushed to origin, local==origin verified"
+evidence_required:
+  - "tsc/eslint exit codes"
+  - "push verification"
+  - "motion spec summary"
+permission_class: reversible-local-work
+branch: academy/20261014-0940-ua508-motion-a10
+lease_expires_at: null
+checkpoint: "DONE 2026-10-14 ~09:00 IST — branch academy/20261014-0940-ua508-motion-a10 @aee95e9 pushed, local==origin verified; components/motion-0940.tsx (CardMotion + PressableCard) + app/globals.css .cm-0940 block (append-only); spec academy-ops/design/0940-motion-a10.md; tsc exit 0, eslint exit 0; worktree removed; awaits A18 independent review"
+attempt: 1
+checkpoint_history: []

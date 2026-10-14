@@ -1,0 +1,27 @@
+id: UA-516
+title: "SSC-CGL batch11: ~70 questions"
+status: done
+owner: agent-a02
+implementer: agent-a02
+reviewer: a18
+base_commit: fe3635017d1705c0082730dad3dba7af7f031623
+owned_paths:
+  - "content/curriculum/ssc-cgl/**"
+dependencies: []
+problem: >
+  Content factory: SSC-CGL ~70 questions (batch11). Prior batch on origin branch academy/20261014-0840-ua493-questions-ssc-a17 - inspect its layout (git ls-tree on origin) and continue the same unit/topic conventions with NEW files only. Hard mandates: prerequisites KEY present + non-empty for every L2+ question (missing key was a prior defect); L1 exempt; pretty-printed JSON; unique namespaced IDs; edition/page-level sources (never bare domain); status draft-pending-sme-review; L1->L4 sequenced. Validate with node scripts/validate-curriculum.mjs (exit 0) from the worktree. Work in an isolated git worktree at ~/workspace/unschool-academy/worktrees/<branch> created with: git -C ~/workspace/unschool-academy/build worktree add <path> -b <branch> origin/main. NEVER work in the shared build dir. NEVER git stash. NEVER touch or print any line of ~/.git-credentials-unschool (push via configured credential helper). Never force-push, never commit to main. After commit: git push -u origin <branch>, verify local==origin via git rev-parse, then remove the worktree. Base: origin/main @ fe36350.
+acceptance:
+  - "~70 new SSC-CGL questions, validator exit 0"
+  - "0 missing/empty prerequisites keys on L2+; 0 empty sources"
+  - "Pushed, local==origin verified"
+evidence_required:
+  - "validator exit code"
+  - "question count"
+  - "prereq-key self-check"
+  - "push verification (rev-parse local vs origin)"
+permission_class: reversible-local-work
+branch: academy/20261014-0940-ua516-questions-ssc-a02
+lease_expires_at: null
+checkpoint: "2026-10-14 ~09:05 IST: DONE — 70/70 SSC-CGL batch11 questions written (5 new files: number-systems / simplification / percentages / ratio-proportion / averages L2 x14 each; ids ssc-qa-ns-104..117, ssc-qa-sp-081..094, ssc-qa-pc-113..126, ssc-qa-rp-163..176, ssc-qa-av-169..182). Validator exit 0 (3181 questions / 82 batch files). Prereq self-check: 0 missing/empty on L2+, 0 empty sources. Committed 020cf6c, pushed branch academy/20261014-0940-ua516-questions-ssc-a02; local==origin SHA 020cf6cd8d37b71b57a5c814e29513ea0b4099e8 verified. Worktree removed."
+attempt: 0
+checkpoint_history: []

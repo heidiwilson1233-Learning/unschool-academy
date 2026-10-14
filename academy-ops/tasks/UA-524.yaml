@@ -1,0 +1,25 @@
+id: UA-524
+title: "Lifecycle drafts (cycle-0940)"
+status: done
+owner: agent-a23
+implementer: agent-a23
+reviewer: a18
+base_commit: fe3635017d1705c0082730dad3dba7af7f031623
+owned_paths:
+  - "academy-ops/growth-drafts/0940-a23-flows.md"
+dependencies: []
+problem: >
+  Lifecycle thread: draft the next lifecycle flow(s) per LIFECYCLE_FLOWS.md. DRAFT ONLY - no lifecycle sending activated, no emails sent. Draft in academy-ops/growth-drafts/0940-a23-flows.md. Work in an isolated git worktree at ~/workspace/unschool-academy/worktrees/<branch> created with: git -C ~/workspace/unschool-academy/build worktree add <path> -b <branch> origin/main. NEVER work in the shared build dir. NEVER git stash. NEVER touch or print any line of ~/.git-credentials-unschool (push via configured credential helper). Never force-push, never commit to main. After commit: git push -u origin <branch>, verify local==origin via git rev-parse, then remove the worktree. Base: origin/main @ fe36350.
+acceptance:
+  - "Lifecycle flow draft(s)"
+  - "Draft-only, no sending activated"
+  - "Branch pushed to origin, local==origin verified"
+evidence_required:
+  - "push verification"
+  - "draft summary"
+permission_class: reversible-local-work
+branch: academy/20261014-0940-ua524-lifecycle-a23
+lease_expires_at: null
+checkpoint: "2026-10-14 ~09:15 IST — Flow E1 + Flow E2 exam-funnel drafts committed and pushed to origin/academy/20261014-0940-ua524-lifecycle-a23 (f2bd9528, local==origin verified). DRAFT ONLY, no sending. A18 review pending. Worktree removed."
+attempt: 0
+checkpoint_history: []

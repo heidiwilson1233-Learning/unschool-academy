@@ -1,0 +1,27 @@
+id: UA-507
+title: "Studio SVG set E (cycle-0940)"
+status: done
+owner: agent-a09
+implementer: agent-a09
+reviewer: a18
+base_commit: fe3635017d1705c0082730dad3dba7af7f031623
+owned_paths:
+  - "public/img/studio-0940/**"
+dependencies: []
+problem: >
+  Continue the studio illustration program (set D shipped in UA-483). Produce studio SVG set E: hand-drawn, crafty illustration assets for the warm learning studio direction (study-nook motifs, subject icons, section dividers - pick the next uncovered set). Warm palette, hand-made linework, never AI-generated look. All SVGs must parse as XML. Work in an isolated git worktree at ~/workspace/unschool-academy/worktrees/<branch> created with: git -C ~/workspace/unschool-academy/build worktree add <path> -b <branch> origin/main. NEVER work in the shared build dir. NEVER git stash. NEVER touch or print any line of ~/.git-credentials-unschool (push via configured credential helper). Never force-push, never commit to main. After commit: git push -u origin <branch>, verify local==origin via git rev-parse, then remove the worktree. Base: origin/main @ fe36350.
+acceptance:
+  - "New studio SVG set E in public/img/studio-0940/**"
+  - "All SVGs parse as XML"
+  - "Hand-drawn warm-studio style"
+  - "Branch pushed to origin, local==origin verified"
+evidence_required:
+  - "SVG parse check"
+  - "push verification"
+  - "asset inventory"
+permission_class: reversible-local-work
+branch: academy/20261014-0940-ua507-illustrations-a09
+lease_expires_at: null
+checkpoint: "2026-10-14 ~09:05 IST — Set E shipped: 6 subject-icon SVGs (quant, reasoning, english, general-awareness, science, current-affairs) in public/img/studio-0940/, all XML-parse-clean. Branch academy/20261014-0940-ua507-illustrations-a09 pushed, local==origin verified, worktree removed."
+attempt: 0
+checkpoint_history: []
